@@ -1,0 +1,917 @@
+%══════════════════════════════════════════════════════════════════════════════
+% فصل ۱: مقدمه — چرا این کتاب؟
+% از بحران تا بالندگی
+%══════════════════════════════════════════════════════════════════════════════
+
+\chapter{مقدمه: چرا این کتاب؟}
+\label{ch:introduction}
+
+%──────────────────────────────────────────────────────────────────────────────
+% کادر خلاصه فصل
+%──────────────────────────────────────────────────────────────────────────────
+\begin{kholasebox}
+این فصل به سه پرسش بنیادین پاسخ می‌دهد: چرا گذار دموکراتیک ضروری است؟ چرا اکنون لحظه مناسبی است؟ و چرا این کتاب رویکرد متفاوتی دارد؟ استدلال اصلی این است که وضعیت موجود نه پایدار است و نه مطلوب؛ بحران‌های آب، اقتصاد، و مشروعیت در حال تعمیق‌اند و ادامه مسیر فعلی به فروپاشی منجر خواهد شد. اما گذار موفق نیازمند رویکردی متفاوت است: نه کپی‌برداری کور از مدل‌های غربی، نه بازگشت به استبداد سنتی، بلکه «دموکراسی بومی‌شده» که ریشه در واقعیات این سرزمین داشته باشد. اصل محوری این رویکرد، «آبادانی ملموس و فوری» است.
+\end{kholasebox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{بیان مسئله: بن‌بست تاریخی}
+\label{sec:problem}
+%══════════════════════════════════════════════════════════════════════════════
+
+ما در نقطه‌ای از تاریخ ایستاده‌ایم که ادامه مسیر فعلی نه ممکن است و نه مطلوب. کشور با مجموعه‌ای از بحران‌های به‌هم‌پیوسته مواجه است که هر یک به تنهایی می‌تواند ویرانگر باشد، و ترکیب آنها وضعیتی انفجاری ایجاد کرده است.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.8cm,
+    crisis/.style={
+        ellipse,
+        minimum width=3cm,
+        minimum height=1.5cm,
+        text centered,
+        font=\small,
+        draw=rougerevolution,
+        fill=rougelight,
+        line width=1pt
+    },
+    center/.style={
+        circle,
+        minimum size=2.5cm,
+        text centered,
+        font=\small\bfseries,
+        draw=black,
+        fill=grislight,
+        line width=2pt
+    },
+    link/.style={<->, >=Stealth, thick, color=rougemid}
+]
+
+% مرکز
+\node[center] (c) at (0,0) {
+    \begin{tabular}{c}
+    بن‌بست\\
+    تاریخی
+    \end{tabular}
+};
+
+% بحران‌ها
+\node[crisis] (c1) at (90:3.5cm) {
+    \begin{tabular}{c}
+    بحران آب\\
+    {\scriptsize فروپاشی سفره‌ها}
+    \end{tabular}
+};
+\node[crisis] (c2) at (30:3.5cm) {
+    \begin{tabular}{c}
+    بحران اقتصادی\\
+    {\scriptsize تحریم + تورم}
+    \end{tabular}
+};
+\node[crisis] (c3) at (330:3.5cm) {
+    \begin{tabular}{c}
+    بحران سیاسی\\
+    {\scriptsize انسداد + فساد}
+    \end{tabular}
+};
+\node[crisis] (c4) at (270:3.5cm) {
+    \begin{tabular}{c}
+    بحران اجتماعی\\
+    {\scriptsize بی‌اعتمادی}
+    \end{tabular}
+};
+\node[crisis] (c5) at (210:3.5cm) {
+    \begin{tabular}{c}
+    بحران هویتی\\
+    {\scriptsize تنش قومی}
+    \end{tabular}
+};
+\node[crisis] (c6) at (150:3.5cm) {
+    \begin{tabular}{c}
+    بحران امنیتی\\
+    {\scriptsize ژئوپلیتیک}
+    \end{tabular}
+};
+
+% اتصالات
+\draw[link] (c) -- (c1);
+\draw[link] (c) -- (c2);
+\draw[link] (c) -- (c3);
+\draw[link] (c) -- (c4);
+\draw[link] (c) -- (c5);
+\draw[link] (c) -- (c6);
+
+% اتصالات بین بحران‌ها
+\draw[link, dashed, color=gray] (c1) -- (c2);
+\draw[link, dashed, color=gray] (c2) -- (c3);
+\draw[link, dashed, color=gray] (c3) -- (c4);
+\draw[link, dashed, color=gray] (c4) -- (c5);
+\draw[link, dashed, color=gray] (c5) -- (c6);
+\draw[link, dashed, color=gray] (c6) -- (c1);
+
+\end{tikzpicture}
+\caption{شبکه بحران‌های به‌هم‌پیوسته}
+\label{fig:crisis-network}
+\end{figure}
+
+\subsection{ابعاد بن‌بست}
+
+\begin{databox}
+\textbf{آمار تکان‌دهنده:}
+\begin{itemize}[nosep]
+    \item ۷۰\% سفره‌های زیرزمینی در وضعیت بحرانی یا فروپاشی
+    \item تورم سالانه بالای ۴۰\% به مدت یک دهه
+    \item رتبه ۱۵۰+ در شاخص شفافیت و فساد
+    \item فرار سالانه ۱۵۰,۰۰۰ نفر نیروی متخصص
+    \item بیکاری جوانان بالای ۲۵\%
+\end{itemize}
+\end{databox}
+
+این ارقام صرفاً آمار نیستند؛ هر یک بازتاب‌دهنده میلیون‌ها زندگی است که در معرض تهدید قرار دارد. بحران آب به تنهایی می‌تواند طی ۱۰-۱۵ سال آینده مهاجرت اجباری ده‌ها میلیون نفر را رقم بزند. تورم مزمن طبقه متوسط را نابود کرده و فقر را گسترش داده است. فساد سیستماتیک هرگونه امکان اصلاح از درون را مسدود کرده است.
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{چرا اکنون؟ فرصت و تهدید}
+\label{sec:why-now}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{پنجره فرصت}
+
+تاریخ نشان می‌دهد که گذارهای دموکراتیک معمولاً در «پنجره‌های فرصت» رخ می‌دهند — لحظاتی که ترکیب خاصی از شرایط داخلی و خارجی، تغییر را ممکن می‌سازد. این پنجره‌ها موقتی‌اند و اگر از آنها استفاده نشود، بسته می‌شوند.
+
+\begin{table}[H]
+\centering
+\caption{عوامل باز شدن پنجره فرصت}
+\label{tab:opportunity-window}
+\begin{tabular}{C{1.5cm} L{5cm} L{6cm}}
+\toprule
+\headmark نوع & \headmark عامل & \headmark توضیح \\
+\midrule
+\rowcolor{vertlight}
+داخلی & فرسایش مشروعیت نظام & ناتوانی در ارائه خدمات پایه \\
+\rowcolor{vertlight}
+داخلی & رشد جامعه مدنی & علی‌رغم سرکوب، شبکه‌های مدنی باقی‌اند \\
+\rowcolor{vertlight}
+داخلی & نسل جوان تحصیل‌کرده & ۶۰\% جمعیت زیر ۳۰ سال \\
+\rowcolor{bleulight}
+خارجی & تغییر ژئوپلیتیک منطقه‌ای & بازآرایی قدرت‌های بزرگ \\
+\rowcolor{bleulight}
+خارجی & فشار بین‌المللی حقوق بشری & توجه جهانی به وضعیت داخلی \\
+\rowcolor{bleulight}
+خارجی & تجربه موفق کشورهای مشابه & الگوهای قابل یادگیری \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{تهدید تأخیر}
+
+\begin{enghelabbox}[title={\hfill \textbf{هشدار: نقطه بی‌بازگشت}}]
+برخی بحران‌ها — به‌ویژه بحران آب — نقاط بی‌بازگشت دارند. اگر سفره‌های زیرزمینی تا حد معینی تخلیه شوند، احیای آنها غیرممکن یا بسیار پرهزینه خواهد بود. برآوردها نشان می‌دهد که بدون اقدام فوری، تا ۱۵ سال آینده بخش‌های وسیعی از کشور غیرقابل سکونت خواهند شد.
+\end{enghelabbox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{چرا دموکراسی؟ نقد آلترناتیوها}
+\label{sec:why-democracy}
+%══════════════════════════════════════════════════════════════════════════════
+
+پیش از ادامه، باید به یک پرسش بنیادین پاسخ دهیم: چرا دموکراسی؟ چرا نه یک «مستبد خیرخواه» که سریع‌تر تصمیم بگیرد؟ چرا نه یک نظام تک‌حزبی به سبک چین که ثبات داشته باشد؟
+
+\subsection{نقد اقتدارگرایی توسعه‌گرا}
+
+\begin{naghlbox}
+«توسعه بدون آزادی، نه پایدار است و نه مطلوب. انسان‌ها صرفاً مصرف‌کننده کالا نیستند؛ آنها شهروندانی‌اند که می‌خواهند در سرنوشت خود نقش داشته باشند.»
+
+\hfill --- آمارتیا سن، \textit{توسعه به‌مثابه آزادی}، ۱۹۹۹
+\end{naghlbox}
+
+استدلال‌های له اقتدارگرایی توسعه‌گرا و پاسخ به آنها:
+
+\begin{table}[H]
+\centering
+\caption{نقد استدلال‌های له اقتدارگرایی}
+\label{tab:authoritarianism-critique}
+\begin{tabular}{L{4cm} L{8.5cm}}
+\toprule
+\headmark استدلال & \headmark پاسخ \\
+\midrule
+\rowcolor{bleulight}
+«تصمیم‌گیری سریع‌تر» & 
+تصمیم‌های سریع اما غلط فاجعه‌بارترند. دموکراسی با ایجاد بازخورد، از خطاهای بزرگ جلوگیری می‌کند. \\
+
+«ثبات بیشتر» & 
+ثبات اقتدارگرایی شکننده است؛ سقوط ناگهانی شوروی، عراق، لیبی نمونه‌اند. \\
+
+\rowcolor{bleulight}
+«چین موفق بوده» & 
+چین استثناست نه قاعده. اکثر اقتدارگرایی‌ها شکست خورده‌اند. \\
+
+«مردم آماده نیستند» & 
+این استدلال همیشه برای توجیه استبداد استفاده شده. هند با بی‌سوادی ۸۰\% دموکراسی را آغاز کرد. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{مزیت‌های دموکراسی}
+
+\begin{olgoobox}[title={\hfill \textbf{شواهد تجربی}}]
+تحقیقات \lr{Acemoglu} و \lr{Robinson} (۲۰۱۹) با بررسی ۱۷۵ کشور طی ۱۹۶۰-۲۰۱۰ نشان می‌دهد:
+\begin{itemize}[nosep]
+    \item دموکراتیزاسیون به‌طور متوسط GDP سرانه را ۲۰\% افزایش می‌دهد (طی ۲۵ سال)
+    \item این اثر از طریق سرمایه‌گذاری در آموزش و بهداشت، کاهش ناآرامی، و اصلاحات اقتصادی حاصل می‌شود
+    \item دموکراسی‌ها در مقایسه با اقتدارگرایی‌ها، قحطی ندارند (آمارتیا سن)
+\end{itemize}
+\end{olgoobox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{دموکراسی بومی‌شده: نه کپی، نه رد}
+\label{sec:indigenous-democracy}
+%══════════════════════════════════════════════════════════════════════════════
+
+این کتاب نه دموکراسی لیبرال غربی را به‌شکل کپی‌برداری تجویز می‌کند، و نه به بهانه «فرهنگ متفاوت» استبداد را توجیه می‌کند. رویکرد ما «دموکراسی بومی‌شده» است:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=2cm,
+    mainbox/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=4cm,
+        minimum height=2cm,
+        text centered,
+        font=\small,
+        line width=1.5pt
+    },
+    arrow/.style={->, >=Stealth, thick}
+]
+
+% سه منبع
+\node[mainbox, draw=bleurepublique, fill=bleulight] (a) at (0,3) {
+    \begin{tabular}{c}
+    \textbf{اصول جهانی}\\[3pt]
+    {\scriptsize حقوق بشر}\\
+    {\scriptsize دموکراسی}\\
+    {\scriptsize حاکمیت قانون}
+    \end{tabular}
+};
+
+\node[mainbox, draw=orroyal, fill=orroyallight] (b) at (5,3) {
+    \begin{tabular}{c}
+    \textbf{میراث بومی}\\[3pt]
+    {\scriptsize سنت‌های مشورتی}\\
+    {\scriptsize نهادهای محلی}\\
+    {\scriptsize خرد جمعی}
+    \end{tabular}
+};
+
+\node[mainbox, draw=vertnapoleon, fill=vertlight] (c) at (10,3) {
+    \begin{tabular}{c}
+    \textbf{واقعیت تنوع}\\[3pt]
+    {\scriptsize اقوام}\\
+    {\scriptsize زبان‌ها}\\
+    {\scriptsize مذاهب}
+    \end{tabular}
+};
+
+% تلفیق
+\node[mainbox, draw=violetempire, fill=violetlight, minimum width=5cm, minimum height=2.5cm] (d) at (5,0) {
+    \begin{tabular}{c}
+    \textbf{دموکراسی بومی‌شده}\\[5pt]
+    {\small ترکیب خلاقانه}\\
+    {\small نه کپی، نه رد}
+    \end{tabular}
+};
+
+% نتایج
+\node[mainbox, draw=rougerevolution, fill=rougelight, minimum width=2.5cm, minimum height=1.2cm] (e1) at (1,-3) {
+    \begin{tabular}{c}
+    مشروعیت
+    \end{tabular}
+};
+\node[mainbox, draw=phase2, fill=phase2!20, minimum width=2.5cm, minimum height=1.2cm] (e2) at (5,-3) {
+    \begin{tabular}{c}
+    کارآمدی
+    \end{tabular}
+};
+\node[mainbox, draw=phase4, fill=phase4!20, minimum width=2.5cm, minimum height=1.2cm] (e3) at (9,-3) {
+    \begin{tabular}{c}
+    پایداری
+    \end{tabular}
+};
+
+% فلش‌ها
+\draw[arrow, color=bleurepublique] (a) -- (d);
+\draw[arrow, color=orroyal] (b) -- (d);
+\draw[arrow, color=vertnapoleon] (c) -- (d);
+\draw[arrow, color=violetempire] (d) -- (e1);
+\draw[arrow, color=violetempire] (d) -- (e2);
+\draw[arrow, color=violetempire] (d) -- (e3);
+
+\end{tikzpicture}
+\caption{مدل دموکراسی بومی‌شده}
+\label{fig:indigenous-democracy}
+\end{figure}
+
+\subsection{اصول جهانی غیرقابل مذاکره}
+
+برخی اصول جهانی‌اند و با بهانه «فرهنگ متفاوت» قابل نقض نیستند:
+
+\begin{itemize}[nosep]
+    \item کرامت ذاتی انسان و حقوق بنیادین
+    \item برابری شهروندان در مقابل قانون
+    \item حق مشارکت در تعیین سرنوشت جمعی
+    \item محدودیت قدرت و پاسخگویی حاکمان
+    \item آزادی بیان، اجتماع، و اندیشه
+\end{itemize}
+
+\subsection{انعطاف در شکل نهادها}
+
+اما شکل نهادی تحقق این اصول می‌تواند متنوع باشد:
+
+\begin{table}[H]
+\centering
+\caption{انعطاف در طراحی نهادها}
+\label{tab:institutional-flexibility}
+\begin{tabular}{L{3.5cm} L{4.5cm} L{4.5cm}}
+\toprule
+\headmark حوزه & \headmark اصل ثابت & \headmark شکل منعطف \\
+\midrule
+\rowcolor{bleulight}
+مشارکت سیاسی & حق رأی همگانی & نظام ریاستی/پارلمانی/ترکیبی \\
+مدیریت تنوع & حقوق اقلیت‌ها & فدرالیسم/خودمختاری/وحدت‌گرا \\
+\rowcolor{bleulight}
+نظام انتخاباتی & انتخابات آزاد و منصفانه & تناسبی/اکثریتی/ترکیبی \\
+نقش دین & آزادی مذهب & لائیسیته/جدایی/همکاری \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{اصل محوری: آبادانی ملموس و فوری}
+\label{sec:tangible-development}
+%══════════════════════════════════════════════════════════════════════════════
+
+اگر این کتاب یک پیام داشته باشد، این است: \textbf{دموکراسی باید نان بیاورد تا ریشه بدواند.}
+
+\begin{naghlbox}
+«مردم برای ایده‌های انتزاعی مانند دموکراسی و حقوق بشر، صبر محدودی دارند. آنها می‌خواهند بدانند آیا فردا آب خواهند داشت، آیا فرزندانشان شغل پیدا می‌کنند، آیا می‌توانند بدون رشوه دادن به پزشک بروند. اگر نظام جدید در این امور ملموس تفاوتی ایجاد نکند، مردم به گذشته حسرت خواهند خورد — حتی اگر آن گذشته استبداد بوده باشد.»
+
+\hfill --- درس کلیدی از گذارهای ناموفق (مصر ۲۰۱۱-۲۰۱۳)
+\end{naghlbox}
+
+\subsection{چرا این اصل حیاتی است؟}
+
+تجربه جهانی گذارهای دموکراتیک یک الگوی واضح نشان می‌دهد:
+
+\begin{table}[H]
+\centering
+\caption{رابطه بهبود معیشتی و موفقیت گذار}
+\label{tab:livelihood-transition}
+\begin{tabular}{L{3cm} L{4cm} L{4cm} C{2cm}}
+\toprule
+\headmark کشور & \headmark بهبود اولیه & \headmark وضعیت معیشت & \headmark نتیجه گذار \\
+\midrule
+\rowcolor{vertlight}
+اسپانیا & رشد اقتصادی ۴\%+ & بهبود محسوس & \textcolor{vertnapoleon}{\textbf{موفق}} \\
+\rowcolor{vertlight}
+کره جنوبی & رشد سریع ادامه یافت & بهبود چشمگیر & \textcolor{vertnapoleon}{\textbf{موفق}} \\
+\rowcolor{vertlight}
+لهستان & شوک اولیه، سپس بهبود & مختلط & \textcolor{vertnapoleon}{\textbf{موفق}} \\
+\rowcolor{rougelight}
+روسیه دهه ۹۰ & سقوط ۴۰\% GDP & فاجعه‌بار & \textcolor{rougerevolution}{\textbf{عقب‌گرد}} \\
+\rowcolor{rougelight}
+مصر ۲۰۱۱-۱۳ & رکود اقتصادی & وخامت & \textcolor{rougerevolution}{\textbf{شکست}} \\
+\rowcolor{rougelight}
+اوکراین ۲۰۰۴ & بهبود اندک & راکد & \textcolor{orroyal}{\textbf{ناقص}} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{مکانیزم اثرگذاری}
+
+چرا بهبود معیشتی برای موفقیت گذار حیاتی است؟
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.2cm,
+    box/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=3.2cm,
+        minimum height=1.4cm,
+        text centered,
+        font=\small,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1pt
+    },
+    arrow/.style={->, >=Stealth, thick, color=bleurepublique}
+]
+
+% مسیر علّی
+\node[box] (a) at (0,0) {
+    \begin{tabular}{c}
+    بهبود\\
+    ملموس
+    \end{tabular}
+};
+
+\node[box] (b) at (4,0) {
+    \begin{tabular}{c}
+    امید به\\
+    آینده
+    \end{tabular}
+};
+
+\node[box] (c) at (8,0) {
+    \begin{tabular}{c}
+    صبر\\
+    استراتژیک
+    \end{tabular}
+};
+
+\node[box] (d) at (12,0) {
+    \begin{tabular}{c}
+    اعتماد به\\
+    نظام جدید
+    \end{tabular}
+};
+
+\node[box, fill=vertlight, draw=vertnapoleon] (e) at (6,-2.5) {
+    \begin{tabular}{c}
+    تثبیت\\
+    دموکراسی
+    \end{tabular}
+};
+
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\draw[arrow] (d) -- (e);
+\draw[arrow] (a) to[bend right=30] (e);
+
+\end{tikzpicture}
+\caption{مکانیزم تأثیر بهبود معیشتی بر تثبیت دموکراسی}
+\label{fig:livelihood-mechanism}
+\end{figure}
+
+\subsection{چه چیزی باید در ۱۰۰ روز اول تغییر کند؟}
+
+\begin{table}[H]
+\centering
+\caption{تغییرات ملموس مورد انتظار در ۱۰۰ روز اول}
+\label{tab:100days-tangible}
+\begin{tabular}{L{3cm} L{4cm} L{5.5cm}}
+\toprule
+\headmark حوزه & \headmark تغییر ملموس & \headmark چگونه مردم آن را احساس می‌کنند \\
+\midrule
+\rowcolor{bleulight}
+آب & توزیع آب در مناطق بحرانی & شیر آب باز می‌شود؛ صف تانکر کوتاه می‌شود \\
+برق & کاهش قطعی & یخچال خاموش نمی‌شود؛ کارخانه تعطیل نمی‌شود \\
+\rowcolor{bleulight}
+نان و غذا & کاهش صف و قیمت & خرید راحت‌تر؛ سفره پُرتر \\
+سوخت & عرضه پایدار & صف پمپ بنزین کوتاه می‌شود \\
+\rowcolor{bleulight}
+امنیت & کاهش سرکوب & مردم می‌توانند آزادانه صحبت کنند \\
+بوروکراسی & ساده‌سازی خدمات & بدون رشوه کار انجام می‌شود \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{enghelabbox}[title={\hfill \textbf{درس از شکست مصر}}]
+در مصر پس از انقلاب ۲۰۱۱، دولت‌های موقت بر مباحث سیاسی متمرکز شدند و وضعیت اقتصادی رها شد. تورم افزایش یافت، بیکاری بالا رفت، و صف نان طولانی‌تر شد. این امر زمینه بازگشت نظامیان در ۲۰۱۳ را فراهم کرد. مردم عادی که زندگی‌شان سخت‌تر شده بود، از کودتا استقبال کردند.
+\end{enghelabbox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{چرخه‌های باطل و فاضل}
+\label{sec:cycles}
+%══════════════════════════════════════════════════════════════════════════════
+
+یکی از مفاهیم تحلیلی کلیدی این کتاب، تمایز بین «چرخه‌های باطل» (دورهای معیوب) و «چرخه‌های فاضل» (دورهای مطلوب) است. وضعیت فعلی کشور اسیر چندین چرخه باطل است که یکدیگر را تقویت می‌کنند.
+
+\subsection{چرخه باطل فساد-بی‌اعتمادی}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=2.5cm,
+    cyclebox/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3cm,
+        minimum height=1.3cm,
+        text centered,
+        font=\small,
+        draw=rougerevolution,
+        fill=rougelight,
+        line width=1.5pt
+    },
+    arrow/.style={->, >=Stealth, very thick, color=rougerevolution}
+]
+
+\node[cyclebox] (a) at (0,0) {فساد گسترده};
+\node[cyclebox] (b) at (4.5,2) {ناکارآمدی دولت};
+\node[cyclebox] (c) at (9,0) {بی‌اعتمادی مردم};
+\node[cyclebox] (d) at (4.5,-2) {فرار از مالیات};
+
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\draw[arrow] (d) -- (a);
+
+\node[font=\small, color=rougerevolution] at (2.2,1.5) {کاهش کیفیت خدمات};
+\node[font=\small, color=rougerevolution] at (7,1.5) {چرا مالیات بدهم؟};
+\node[font=\small, color=rougerevolution] at (7,-1.5) {کاهش درآمد دولت};
+\node[font=\small, color=rougerevolution] at (2.2,-1.5) {بیشتر دزدی می‌شود};
+
+\node[font=\large\bfseries, color=rougerevolution] at (4.5,0) {چرخه باطل};
+
+\end{tikzpicture}
+\caption{چرخه باطل فساد و بی‌اعتمادی}
+\label{fig:corruption-cycle}
+\end{figure}
+
+\subsection{چرخه باطل آب-فقر-مهاجرت}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=2.5cm,
+    cyclebox/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3cm,
+        minimum height=1.3cm,
+        text centered,
+        font=\small,
+        draw=rougerevolution,
+        fill=rougelight,
+        line width=1.5pt
+    },
+    arrow/.style={->, >=Stealth, very thick, color=rougerevolution}
+]
+
+\node[cyclebox] (a) at (0,0) {کمبود آب};
+\node[cyclebox] (b) at (4,2.5) {
+    \begin{tabular}{c}
+    نابودی\\
+    کشاورزی
+    \end{tabular}
+};
+\node[cyclebox] (c) at (8,0) {بیکاری و فقر};
+\node[cyclebox] (d) at (4,-2.5) {
+    \begin{tabular}{c}
+    مهاجرت به\\
+    شهرها
+    \end{tabular}
+};
+
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\draw[arrow] (d) -- (a);
+
+\node[font=\scriptsize, color=rougerevolution, text width=2cm, align=center] at (1.5,1.8) {محصولات از بین می‌روند};
+\node[font=\scriptsize, color=rougerevolution, text width=2cm, align=center] at (6.5,1.8) {کشاورزان ورشکست می‌شوند};
+\node[font=\scriptsize, color=rougerevolution, text width=2cm, align=center] at (6.5,-1.8) {روستا خالی می‌شود};
+\node[font=\scriptsize, color=rougerevolution, text width=2.5cm, align=center] at (1.5,-1.8) {فشار بر آب شهری افزایش می‌یابد};
+
+\end{tikzpicture}
+\caption{چرخه باطل آب، فقر و مهاجرت}
+\label{fig:water-poverty-cycle}
+\end{figure}
+
+\subsection{تبدیل به چرخه فاضل}
+
+هدف این طرح، شکستن این چرخه‌های باطل و جایگزینی آنها با چرخه‌های فاضل است:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=2.5cm,
+    cyclebox/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3cm,
+        minimum height=1.3cm,
+        text centered,
+        font=\small,
+        draw=vertnapoleon,
+        fill=vertlight,
+        line width=1.5pt
+    },
+    arrow/.style={->, >=Stealth, very thick, color=vertnapoleon}
+]
+
+\node[cyclebox] (a) at (0,0) {شفافیت};
+\node[cyclebox] (b) at (4.5,2) {کارآمدی دولت};
+\node[cyclebox] (c) at (9,0) {اعتماد مردم};
+\node[cyclebox] (d) at (4.5,-2) {پرداخت مالیات};
+
+\draw[arrow] (a) -- (b);
+\draw[arrow] (b) -- (c);
+\draw[arrow] (c) -- (d);
+\draw[arrow] (d) -- (a);
+
+\node[font=\small, color=vertnapoleon] at (2.2,1.5) {خدمات بهتر};
+\node[font=\small, color=vertnapoleon] at (7,1.5) {رضایت شهروندان};
+\node[font=\small, color=vertnapoleon] at (7,-1.5) {درآمد پایدار دولت};
+\node[font=\small, color=vertnapoleon] at (2.2,-1.5) {امکان سرمایه‌گذاری};
+
+\node[font=\large\bfseries, color=vertnapoleon] at (4.5,0) {چرخه فاضل};
+
+\end{tikzpicture}
+\caption{چرخه فاضل شفافیت و اعتماد}
+\label{fig:trust-cycle}
+\end{figure}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{روش‌شناسی این پژوهش}
+\label{sec:methodology}
+%══════════════════════════════════════════════════════════════════════════════
+
+این کتاب یک پژوهش کاربردی است که از چندین روش بهره می‌گیرد:
+
+\subsection{تحلیل تطبیقی-تاریخی}
+
+مطالعه عمیق گذارهای دموکراتیک در ۱۵ کشور با تمرکز بر:
+\begin{itemize}[nosep]
+    \item گذارهای موفق: اسپانیا، کره جنوبی، آفریقای جنوبی، اندونزی، غنا، شیلی
+    \item گذارهای ناموفق/ناقص: عراق، لیبی، مصر، یمن، ونزوئلا
+    \item کشورهای با تنوع قومی: هند، سوئیس، کانادا، بلژیک، نیجریه
+\end{itemize}
+
+\subsection{چارچوب نظری}
+
+\begin{table}[H]
+\centering
+\caption{نظریه‌های پایه این پژوهش}
+\label{tab:theories}
+\begin{tabular}{L{3.5cm} L{4cm} L{5cm}}
+\toprule
+\headmark حوزه & \headmark نظریه‌پرداز & \headmark مفهوم کلیدی \\
+\midrule
+\rowcolor{bleulight}
+گذار دموکراتیک & Linz \& Stepan & تمایز گذار و تحکیم \\
+مدیریت تنوع & Lijphart & توافق‌گرایی \\
+\rowcolor{bleulight}
+توسعه & Sen & توسعه به‌مثابه آزادی \\
+نهادها & North & نقش نهادها در توسعه \\
+\rowcolor{bleulight}
+ملت‌سازی & Brubaker & هویت مدنی vs قومی \\
+منابع مشترک & Ostrom & حکمرانی منابع \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{رویکرد طراحی مبتنی بر شواهد}
+
+\begin{olgoobox}[title={\hfill \textbf{اصل راهنما}}]
+هر توصیه در این کتاب باید حداقل یکی از این معیارها را داشته باشد:
+\begin{itemize}[nosep]
+    \item مبتنی بر تجربه موفق حداقل یک کشور مشابه
+    \item پشتیبانی‌شده توسط پژوهش‌های معتبر آکادمیک
+    \item توصیه‌شده توسط نهادهای بین‌المللی معتبر (UN, World Bank, IDEA)
+    \item سازگار با واقعیات بومی (منابع، فرهنگ، ظرفیت)
+\end{itemize}
+\end{olgoobox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{تاریخ از پایین و از بالا}
+\label{sec:history-above-below}
+%══════════════════════════════════════════════════════════════════════════════
+
+این کتاب می‌کوشد دو منظر را ترکیب کند که معمولاً جدا از هم دیده می‌شوند:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    levelbox/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=5cm,
+        minimum height=1.5cm,
+        text centered,
+        font=\small,
+        line width=1pt
+    },
+    arrow/.style={<->, >=Stealth, thick, color=violetempire}
+]
+
+% بالا
+\node[levelbox, draw=bleurepublique, fill=bleulight] (top) at (0,3) {
+    \begin{tabular}{c}
+    \textbf{تاریخ از بالا}\\[3pt]
+    نخبگان، رهبران، نهادها، سیاست‌ها
+    \end{tabular}
+};
+
+% وسط
+\node[levelbox, draw=violetempire, fill=violetlight, minimum width=6cm, minimum height=2cm] (mid) at (0,0) {
+    \begin{tabular}{c}
+    \textbf{تعامل و دیالکتیک}\\[5pt]
+    ساختار و عاملیت\\
+    فشار از پایین، پاسخ از بالا
+    \end{tabular}
+};
+
+% پایین
+\node[levelbox, draw=vertnapoleon, fill=vertlight] (bot) at (0,-3) {
+    \begin{tabular}{c}
+    \textbf{تاریخ از پایین}\\[3pt]
+    مردم عادی، زندگی روزمره، ذهنیت‌ها
+    \end{tabular}
+};
+
+\draw[arrow] (top) -- (mid);
+\draw[arrow] (mid) -- (bot);
+
+% توضیحات کناری
+\node[font=\scriptsize, text width=3.5cm, align=right] at (-5,3) {
+    تصمیمات کلان\\
+    قانون‌گذاری\\
+    دیپلماسی
+};
+
+\node[font=\scriptsize, text width=3.5cm, align=right] at (-5,-3) {
+    تجربه زیسته\\
+    فرهنگ سیاسی\\
+    انتظارات و باورها
+};
+
+\end{tikzpicture}
+\caption{ترکیب دو منظر: تاریخ از بالا و از پایین}
+\label{fig:history-above-below}
+\end{figure}
+
+\subsection{چرا این ترکیب مهم است؟}
+
+\begin{itemize}
+    \item \textbf{درک عمیق‌تر:} تحلیل‌هایی که فقط بر نخبگان متمرکزند، نقش توده‌ها را نادیده می‌گیرند. تحلیل‌هایی که فقط بر جنبش‌های مردمی متمرکزند، نقش ساختارها و نهادها را کم‌اهمیت می‌شمارند.
+    
+    \item \textbf{طراحی بهتر:} سیاست‌هایی که بدون توجه به ذهنیت و انتظارات مردم طراحی شوند، محکوم به شکست‌اند. سیاست‌هایی که فقط بر خواست‌های فوری مردم تکیه کنند، ممکن است ناپایدار باشند.
+    
+    \item \textbf{مشروعیت:} یک نظام دموکراتیک هم باید از نظر نخبگان کارآمد باشد و هم از نظر مردم عادی مشروع و پاسخگو.
+\end{itemize}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{ساختار این کتاب}
+\label{sec:book-structure}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=0.8cm,
+    partbox/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=13cm,
+        minimum height=1.2cm,
+        text centered,
+        font=\small\bfseries,
+        text=white,
+        line width=0pt,
+        drop shadow
+    },
+    chapbox/.style={
+        rectangle,
+        minimum width=5.5cm,
+        minimum height=0.8cm,
+        text centered,
+        font=\scriptsize,
+        fill=white,
+        draw=gray,
+        line width=0.5pt
+    }
+]
+
+% بخش ۱
+\node[partbox, fill=phase1] (p1) at (0,0) {بخش اول: مبانی};
+\node[chapbox, below=0.3cm of p1, xshift=-3.2cm] {فصل ۰-۱: خلاصه و مقدمه};
+\node[chapbox, below=0.3cm of p1, xshift=3.2cm] {فصل ۲-۳: تشخیص و نظریه};
+
+% بخش ۲
+\node[partbox, fill=phase2, below=1.5cm of p1] (p2) {بخش دوم: تجارب جهانی};
+\node[chapbox, below=0.3cm of p2, xshift=-3.2cm] {فصل ۴-۵: موفق و ناموفق};
+\node[chapbox, below=0.3cm of p2, xshift=3.2cm] {فصل ۶: مدیریت آب};
+
+% بخش ۳
+\node[partbox, fill=phase3, below=1.5cm of p2] (p3) {بخش سوم: طرح جامع};
+\node[chapbox, below=0.3cm of p3, xshift=-3.2cm] {فصل ۷: چشم‌انداز};
+\node[chapbox, below=0.3cm of p3, xshift=3.2cm] {فصل ۸-۱۱: پنج فاز};
+
+% بخش ۴
+\node[partbox, fill=phase4, below=1.5cm of p3] (p4) {بخش چهارم: حوزه‌های تخصصی};
+\node[chapbox, below=0.3cm of p4, xshift=-3.2cm] {فصل ۱۲: تنوع قومی};
+\node[chapbox, below=0.3cm of p4, xshift=3.2cm] {فصل ۱۳-۱۴: اقتصاد و آب};
+
+% بخش ۵
+\node[partbox, fill=phase5, below=1.5cm of p4] (p5) {بخش پنجم: اجرا و پایش};
+\node[chapbox, below=0.3cm of p5] {فصل ۱۵: نظام پایش و ارزیابی};
+
+\end{tikzpicture}
+\caption{ساختار کلی کتاب}
+\label{fig:book-structure}
+\end{figure}
+
+\subsection{راهنمای خواندن}
+
+\begin{table}[H]
+\centering
+\caption{راهنمای خواندن برای مخاطبان مختلف}
+\label{tab:reading-guide}
+\begin{tabular}{L{3cm} L{4cm} L{5.5cm}}
+\toprule
+\headmark مخاطب & \headmark اولویت خواندن & \headmark چرا؟ \\
+\midrule
+\rowcolor{bleulight}
+سیاست‌گذار & فصل ۰، ۷، ۸، ۱۵ & تمرکز بر طرح عملیاتی و اجرا \\
+فعال مدنی & فصل ۱، ۴، ۱۲ & درک مبانی و نقش جامعه مدنی \\
+\rowcolor{bleulight}
+پژوهشگر & فصل ۳، ۴، ۵ & عمق نظری و تطبیقی \\
+شهروند علاقه‌مند & فصل ۰، ۱، ۷ & تصویر کلی و چشم‌انداز \\
+\rowcolor{bleulight}
+متخصص آب/محیط زیست & فصل ۶، ۱۴ & حوزه تخصصی \\
+اقتصاددان & فصل ۱۳ & بازسازی اقتصادی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{محدودیت‌ها و احتیاط‌ها}
+\label{sec:limitations}
+%══════════════════════════════════════════════════════════════════════════════
+
+صداقت علمی ایجاب می‌کند که محدودیت‌های این اثر را صریحاً بیان کنیم:
+
+\begin{noktebox}
+\textbf{این کتاب چه نیست:}
+\begin{itemize}[nosep]
+    \item یک پیش‌بینی قطعی نیست — آینده غیرقابل پیش‌بینی است
+    \item یک نسخه جادویی نیست — هیچ تضمینی برای موفقیت وجود ندارد
+    \item یک برنامه خشک و انعطاف‌ناپذیر نیست — باید با شرایط تطبیق یابد
+    \item بی‌طرف محض نیست — نویسنده متعهد به ارزش‌های دموکراتیک است
+    \item کامل نیست — همیشه جای بهبود و نقد وجود دارد
+\end{itemize}
+\end{noktebox}
+
+\begin{olgoobox}[title={\hfill \textbf{در عین حال:}}]
+\begin{itemize}[nosep]
+    \item این کتاب مبتنی بر بهترین شواهد موجود است
+    \item تجارب متعدد جهانی را بررسی کرده است
+    \item واقعیات بومی را در نظر گرفته است
+    \item رویکردی واقع‌بینانه و تدریجی دارد
+    \item قابل نقد و اصلاح است
+\end{itemize}
+\end{olgoobox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{دعوت به گفتگو}
+\label{sec:invitation}
+%══════════════════════════════════════════════════════════════════════════════
+
+این کتاب آغاز یک گفتگوست، نه پایان آن. نویسنده امیدوار است که این اثر بتواند:
+
+\begin{itemize}
+    \item زمینه‌ساز بحث جدی درباره آینده باشد
+    \item الهام‌بخش طرح‌های بهتر و دقیق‌تر شود
+    \item نقد شود و از دل نقدها ایده‌های بهتری بیرون آید
+    \item پلی باشد بین تجربه جهانی و واقعیت بومی
+\end{itemize}
+
+\begin{naghlbox}
+«بهترین زمان برای کاشتن درخت بیست سال پیش بود. دومین بهترین زمان، همین الان است.»
+
+\hfill --- ضرب‌المثل چینی
+\end{naghlbox}
+
+\vspace{0.5cm}
+
+آینده ساخته می‌شود. پرسش این است که چه کسانی و با چه طرحی آن را می‌سازند. این کتاب تلاشی است برای پاسخ به این پرسش.
+
+%══════════════════════════════════════════════════════════════════════════════
+\section*{منابع فصل}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{enumerate}[nosep, label={[\arabic*]}]
+    \item Acemoglu, D. \& Robinson, J. (2019). "Democracy Does Cause Growth." \textit{Journal of Political Economy}, 127(1).
+    
+    \item Huntington, S. (1991). \textit{The Third Wave: Democratization in the Late Twentieth Century}. University of Oklahoma Press.
+    
+    \item Linz, J. \& Stepan, A. (1996). \textit{Problems of Democratic Transition and Consolidation}. Johns Hopkins University Press.
+    
+    \item Sen, A. (1999). \textit{Development as Freedom}. Oxford University Press.
+    
+    \item Przeworski, A. et al. (2000). \textit{Democracy and Development}. Cambridge University Press.
+    
+    \item North, D. (1990). \textit{Institutions, Institutional Change and Economic Performance}. Cambridge University Press.
+    
+    \item Lijphart, A. (2012). \textit{Patterns of Democracy}. 2nd ed. Yale University Press.
+    
+    \item Diamond, L. (2008). \textit{The Spirit of Democracy}. Times Books.
+    
+    \item Freedom House. (2024). \textit{Freedom in the World 2024}. freedomhouse.org.
+    
+    \item World Bank. (2023). \textit{World Development Indicators}. data.worldbank.org.
+\end{enumerate}

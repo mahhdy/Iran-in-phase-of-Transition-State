@@ -1,0 +1,1298 @@
+
+
+% ch13-economy.tex
+% فصل سیزدهم: بازسازی اقتصادی و رهایی از تحریم
+% نویسنده: مهدی سالم | ریچموندهیل | ۱۴۰۴
+
+\chapter{بازسازی اقتصادی و رهایی از تحریم}
+\label{ch:economy}
+
+\begin{kholasebox}
+اقتصاد ایران با چالش‌های ساختاری عمیق مواجه است: تورم مزمن (۴۵-۵۰٪)، بیکاری بالا (۱۲٪ رسمی، واقعی بیشتر)، وابستگی به نفت (۳۵٪ بودجه)، تحریم‌های گسترده (۳۸۰۰+ تحریم)، فساد سیستماتیک (رتبه ۱۴۹ جهان)، و فرار سرمایه و مغزها. این فصل نقشه راهی برای بازسازی اقتصادی ارائه می‌دهد: رفع تحریم‌ها در کوتاه‌مدت، تثبیت اقتصاد کلان در میان‌مدت، و تحول ساختاری به اقتصاد متنوع و دانش‌بنیان در بلندمدت. اصل راهنما: \textbf{«آبادانی ملموس و فوری»} — مردم باید بهبود را در زندگی روزمره خود احساس کنند.
+\end{kholasebox}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{مقدمه: اقتصاد بیمار، دموکراسی شکننده}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\begin{naghlbox}
+«دموکراسی‌ها به ندرت در فقر زنده می‌مانند. هیچ دموکراسی‌ای با درآمد سرانه زیر ۶۰۰۰ دلار تاکنون پایدار نمانده است. اقتصاد سالم شرط لازم — هرچند نه کافی — برای دموکراسی پایدار است.»
+\sourceline{آدام پرزورسکی، «دموکراسی و توسعه»، ۲۰۰۰}
+\end{naghlbox}
+
+موفقیت گذار دموکراتیک به شدت به عملکرد اقتصادی گره خورده است. مردم از نظام جدید انتظار بهبود زندگی دارند. اگر این انتظار برآورده نشود، مشروعیت دموکراسی زیر سؤال می‌رود و راه برای بازگشت اقتدارگرایی یا هرج‌ومرج باز می‌شود.
+
+\subsection{چرا اقتصاد اولویت است؟}
+
+\begin{center}
+\begin{tikzpicture}[
+    node distance=2cm,
+    box/.style={
+        rectangle,
+        rounded corners=8pt,
+        draw=#1!70,
+        fill=#1!15,
+        thick,
+        minimum width=4cm,
+        minimum height=1.8cm,
+        align=center,
+        font=\small
+    },
+    arrow/.style={->, thick, >=stealth}
+]
+% چرخه مثبت
+\node[box=green] (econ) {\textbf{اقتصاد سالم}\\ رشد، اشتغال، ثبات};
+\node[box=blue, right=2.5cm of econ] (legit) {\textbf{مشروعیت}\\ اعتماد به نظام جدید};
+\node[box=purple, below=2cm of legit] (stab) {\textbf{ثبات سیاسی}\\ امکان اصلاحات بیشتر};
+\node[box=orange, below=2cm of econ] (invest) {\textbf{سرمایه‌گذاری}\\ داخلی و خارجی};
+
+\draw[arrow, green!60!black] (econ) -- (legit);
+\draw[arrow, blue!60!black] (legit) -- (stab);
+\draw[arrow, purple!60!black] (stab) -- (invest);
+\draw[arrow, orange!60!black] (invest) -- (econ);
+
+% عنوان
+\node[above=0.5cm of econ, xshift=2cm, font=\large\bfseries] {چرخه فضیلت اقتصاد و دموکراسی};
+
+% چرخه منفی (کوچک‌تر، در کنار)
+\node[box=red, scale=0.7, right=5cm of legit] (crisis) {\textbf{بحران اقتصادی}};
+\node[box=red, scale=0.7, below=1cm of crisis] (distrust) {\textbf{بی‌اعتمادی}};
+\node[box=red, scale=0.7, below=1cm of distrust] (instab) {\textbf{بی‌ثباتی}};
+
+\draw[arrow, red!60] (crisis) -- (distrust);
+\draw[arrow, red!60] (distrust) -- (instab);
+\draw[arrow, red!60] (instab.west) -- ++(-0.5,0) |- (crisis.west);
+
+\node[above=0.3cm of crisis, font=\small\bfseries, red!70] {چرخه باطل};
+\end{tikzpicture}
+\end{center}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{تشخیص: وضعیت اقتصاد ایران}
+\label{sec:economic-diagnosis}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{شاخص‌های کلان اقتصادی}
+
+\begin{table}[htbp]
+\centering
+\caption{شاخص‌های کلیدی اقتصاد ایران (۱۴۰۳/۲۰۲۴)}
+\label{tab:economic-indicators}
+\begin{tabular}{>{\columncolor{red!8}}r l c c p{3cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{ردیف} & \textbf{شاخص} & \textbf{مقدار} & \textbf{رتبه جهانی} & \textbf{وضعیت} \\
+\midrule
+۱ & GDP (PPP) & ۱.۳ تریلیون \$ & ۲۱ & متوسط \\
+\rowcolor{gray!10}
+۲ & GDP سرانه (PPP) & ۱۵,۰۰۰ \$ & ۷۰ & پایین‌تر از پتانسیل \\
+۳ & رشد اقتصادی & ۲-۳٪ & — & ناکافی \\
+\rowcolor{gray!10}
+۴ & نرخ تورم & ۴۵-۵۰٪ & ۵ بدترین & بحرانی \\
+۵ & نرخ بیکاری (رسمی) & ۱۲٪ & — & بالا \\
+\rowcolor{gray!10}
+۶ & بیکاری جوانان & ۲۸٪ & — & بحرانی \\
+۷ & نرخ فقر & ۳۰٪+ & — & بالا \\
+\rowcolor{gray!10}
+۸ & ضریب جینی & ۰.۴۲ & — & نابرابری بالا \\
+۹ & بدهی دولت (٪ GDP) & ۴۵٪ & — & قابل مدیریت \\
+\rowcolor{gray!10}
+۱۰ & ذخایر ارزی & ۲۰-۳۰ میلیارد \$ & — & ناکافی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{مشکلات ساختاری}
+
+\begin{center}
+\begin{tikzpicture}[
+    problem/.style={
+        rectangle,
+        rounded corners=5pt,
+        draw=red!70,
+        fill=red!10,
+        thick,
+        minimum width=5cm,
+        minimum height=1.2cm,
+        align=center,
+        font=\small
+    }
+]
+% عنوان
+\node[font=\large\bfseries] at (0,5) {هشت مشکل ساختاری اقتصاد ایران};
+
+% مشکلات
+\node[problem] at (-4,3.5) (p1) {\textbf{۱. وابستگی به نفت}\\ ۳۵٪ بودجه، ۶۰٪ صادرات};
+\node[problem] at (4,3.5) (p2) {\textbf{۲. تحریم‌های گسترده}\\ ۳۸۰۰+ تحریم فعال};
+\node[problem] at (-4,2) (p3) {\textbf{۳. تورم مزمن}\\ ۴۵-۵۰٪ سالانه};
+\node[problem] at (4,2) (p4) {\textbf{۴. فساد سیستماتیک}\\ رتبه ۱۴۹ از ۱۸۰};
+\node[problem] at (-4,0.5) (p5) {\textbf{۵. ناکارآمدی بنگاه‌های دولتی}\\ ۴۰٪ اقتصاد دولتی};
+\node[problem] at (4,0.5) (p6) {\textbf{۶. نظام بانکی ورشکسته}\\ NPL بالای ۲۰٪};
+\node[problem] at (-4,-1) (p7) {\textbf{۷. فرار سرمایه}\\ ۵-۱۰ میلیارد \$/سال};
+\node[problem] at (4,-1) (p8) {\textbf{۸. فرار مغزها}\\ ۱۵۰,۰۰۰ نخبه/سال};
+
+% اتصال به مرکز
+\node[ellipse, draw=red!70, fill=red!20, thick, minimum width=3cm] at (0,1.2) (center) 
+    {\textbf{بحران اقتصادی}};
+\foreach \p in {p1,p2,p3,p4,p5,p6,p7,p8} {
+    \draw[thick, red!40, dashed] (\p) -- (center);
+}
+\end{tikzpicture}
+\end{center}
+
+\subsection{تحریم‌ها: چالش اصلی}
+
+\begin{table}[htbp]
+\centering
+\caption{تحریم‌های بین‌المللی علیه ایران}
+\label{tab:sanctions}
+\begin{tabular}{>{\columncolor{orange!8}}l c p{6cm}}
+\toprule
+\rowcolor{orange!25}
+\textbf{نوع تحریم} & \textbf{تعداد تقریبی} & \textbf{تأثیر اصلی} \\
+\midrule
+تحریم‌های آمریکا & ۲,۵۰۰+ & قطع از سیستم دلاری، تحریم ثانویه \\
+\rowcolor{gray!10}
+تحریم‌های اتحادیه اروپا & ۸۰۰+ & محدودیت تجارت، بانکی \\
+تحریم‌های سازمان ملل & ۵۰+ & تسلیحاتی، هسته‌ای (بخشی لغو شده) \\
+\rowcolor{gray!10}
+تحریم‌های سایر کشورها & ۴۰۰+ & کانادا، استرالیا، ژاپن و... \\
+\midrule
+\textbf{مجموع} & \textbf{۳,۸۰۰+} & قطع از سیستم مالی جهانی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{enghelabbox}
+\textbf{هشدار: هزینه واقعی تحریم‌ها}
+
+تحریم‌ها هزینه‌های سنگینی بر اقتصاد ایران تحمیل کرده‌اند:
+\begin{itemize}[nosep]
+\item \textbf{صادرات نفت}: از ۲.۵ میلیون بشکه/روز به کمتر از ۱ میلیون
+\item \textbf{درآمد ارزی}: کاهش ۶۰-۷۰٪
+\item \textbf{ارزش ریال}: سقوط از ۳,۵۰۰ به ۵۰۰,۰۰۰+ در برابر دلار
+\item \textbf{تجارت خارجی}: محدودیت شدید واردات و صادرات
+\item \textbf{سرمایه‌گذاری خارجی}: نزدیک به صفر
+\item \textbf{هزینه انسانی}: کمبود دارو، تجهیزات پزشکی، تورم و فقر
+\end{itemize}
+\textbf{نتیجه}: رفع تحریم‌ها اولویت اول است، اما کافی نیست — اصلاحات ساختاری ضروری است.
+\end{enghelabbox}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{استراتژی سه‌مرحله‌ای بازسازی اقتصادی}
+\label{sec:economic-strategy}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\begin{center}
+\begin{tikzpicture}[
+    phase/.style={
+        rectangle,
+        rounded corners=10pt,
+        draw=#1!70,
+        fill=#1!15,
+        thick,
+        minimum width=4cm,
+        minimum height=3cm,
+        align=center
+    }
+]
+% سه فاز
+\node[phase=red] (p1) at (0,0) {
+    \textbf{فاز ۱}\\ 
+    \textbf{تثبیت}\\ 
+    (سال ۱-۲)\\[0.3cm]
+    \scriptsize رفع تحریم\\
+    \scriptsize کنترل تورم\\
+    \scriptsize ثبات ارزی
+};
+
+\node[phase=orange] (p2) at (5.5,0) {
+    \textbf{فاز ۲}\\
+    \textbf{بازسازی}\\
+    (سال ۳-۷)\\[0.3cm]
+    \scriptsize اصلاحات ساختاری\\
+    \scriptsize جذب سرمایه\\
+    \scriptsize نوسازی صنایع
+};
+
+\node[phase=green] (p3) at (11,0) {
+    \textbf{فاز ۳}\\
+    \textbf{تحول}\\
+    (سال ۸-۱۵)\\[0.3cm]
+    \scriptsize اقتصاد دانش‌بنیان\\
+    \scriptsize تنوع صادرات\\
+    \scriptsize رفاه فراگیر
+};
+
+% فلش‌ها
+\draw[->, ultra thick, red!60] (p1) -- (p2);
+\draw[->, ultra thick, orange!60] (p2) -- (p3);
+
+% شاخص‌های هدف
+\node[below=0.5cm of p1, font=\scriptsize, align=center] {تورم: ۵۰٪→۱۵٪\\ رشد: ۲٪→۵٪};
+\node[below=0.5cm of p2, font=\scriptsize, align=center] {تورم: ۱۵٪→۵٪\\ رشد: ۵٪→۸٪};
+\node[below=0.5cm of p3, font=\scriptsize, align=center] {تورم: ۵٪→۲٪\\ رشد: ۶٪ پایدار};
+\end{tikzpicture}
+\captionof{figure}{استراتژی سه‌مرحله‌ای بازسازی اقتصادی}
+\label{fig:economic-strategy}
+\end{center}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{فاز اول: تثبیت (سال ۱-۲)}
+\label{sec:stabilization}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{اولویت اول: رفع تحریم‌ها}
+
+\begin{table}[htbp]
+\centering
+\caption{نقشه راه رفع تحریم‌ها}
+\label{tab:sanctions-roadmap}
+\begin{tabular}{>{\columncolor{blue!8}}c p{3.5cm} p{3.5cm} p{3.5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{مرحله} & \textbf{اقدام ایران} & \textbf{اقدام طرف مقابل} & \textbf{زمان‌بندی} \\
+\midrule
+۱ & اعلام پایبندی به NPT، توقف غنی‌سازی بالای ۵٪ & تعلیق تحریم‌های نفتی & ماه ۱-۳ \\
+\rowcolor{gray!10}
+۲ & پذیرش بازرسی‌های IAEA، شفافیت کامل & رفع تحریم‌های بانکی (SWIFT) & ماه ۳-۶ \\
+۳ & امضای پروتکل الحاقی & رفع تحریم‌های تجاری & ماه ۶-۱۲ \\
+\rowcolor{gray!10}
+۴ & تعهد به عدم توسعه سلاح & رفع تحریم‌های ثانویه آمریکا & ماه ۱۲-۱۸ \\
+۵ & بازگشت به برجام+ یا توافق جدید & آزادسازی دارایی‌های بلوکه‌شده & ماه ۱۸-۲۴ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{naghlbox}
+«رفع تحریم‌ها شرط لازم است، اما کافی نیست. کشورهای زیادی بدون تحریم هم فقیر مانده‌اند. آنچه تعیین‌کننده است، کیفیت نهادها و سیاست‌های اقتصادی است.»
+\sourceline{دارون عجم‌اوغلو و جیمز رابینسون، «چرا ملت‌ها شکست می‌خورند»، ۲۰۱۲}
+\end{naghlbox}
+
+\subsection{کنترل تورم}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه کنترل تورم در دو سال اول}
+\label{tab:inflation-control}
+\begin{tabular}{>{\columncolor{green!8}}r p{4cm} p{5.5cm}}
+\toprule
+\rowcolor{green!25}
+\textbf{ابزار} & \textbf{اقدام} & \textbf{اثر مورد انتظار} \\
+\midrule
+سیاست پولی & استقلال بانک مرکزی، هدف‌گذاری تورم & توقف چاپ پول برای کسری بودجه \\
+\rowcolor{gray!10}
+سیاست مالی & کاهش کسری بودجه به زیر ۳٪ GDP & کاهش فشار تقاضا \\
+سیاست ارزی & یکسان‌سازی نرخ ارز، شناورسازی مدیریت‌شده & حذف رانت ارزی، ثبات \\
+\rowcolor{gray!10}
+یارانه‌ها & هدفمندسازی واقعی (نقدی به دهک‌های پایین) & کاهش هزینه دولت، کارایی \\
+واردات & تسهیل واردات کالاهای اساسی & افزایش عرضه، کاهش قیمت \\
+\rowcolor{gray!10}
+ذخایر ارزی & افزایش به ۱۰۰ میلیارد دلار (هدف ۵ ساله) & اعتماد و ثبات ارزی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=6cm,
+    xlabel={ماه},
+    ylabel={نرخ تورم (درصد سالانه)},
+    xmin=0, xmax=25,
+    ymin=0, ymax=55,
+    xtick={0,6,12,18,24},
+    xticklabels={شروع, ماه ۶, ماه ۱۲, ماه ۱۸, ماه ۲۴},
+    legend pos=north east,
+    grid=major,
+    grid style={dashed, gray!30}
+]
+% مسیر تورم هدف
+\addplot[color=green!70!black, mark=*, thick, line width=1.5pt] coordinates {
+    (0, 50) (3, 45) (6, 38) (9, 30) (12, 25) (15, 20) (18, 17) (21, 15) (24, 12)
+};
+% مسیر بدون اصلاحات
+\addplot[color=red, mark=triangle*, dashed, thick] coordinates {
+    (0, 50) (6, 52) (12, 55) (18, 53) (24, 50)
+};
+
+\legend{با اصلاحات, بدون اصلاحات}
+
+% ناحیه هدف
+\fill[green!20, opacity=0.3] (axis cs:18,0) rectangle (axis cs:24,15);
+\node[font=\scriptsize] at (axis cs:21,8) {هدف};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{مسیر کاهش تورم در دو سال اول}
+\label{fig:inflation-path}
+\end{center}
+
+\subsection{برنامه ۱۰۰ روز اول اقتصادی}
+
+\begin{table}[htbp]
+\centering
+\caption{اقدامات اقتصادی فوری در ۱۰۰ روز اول}
+\label{tab:100-days-economic}
+\begin{tabular}{>{\columncolor{orange!8}}c p{4cm} p{5.5cm}}
+\toprule
+\rowcolor{orange!25}
+\textbf{روز} & \textbf{اقدام} & \textbf{هدف فوری} \\
+\midrule
+۱-۷ & اعلام سیاست اقتصادی جدید & ایجاد اعتماد، جلوگیری از پانیک \\
+\rowcolor{gray!10}
+۱-۱۴ & تماس با IMF و بانک جهانی & درخواست مشاوره و کمک فنی \\
+۱-۳۰ & یکسان‌سازی نرخ ارز & حذف رانت، شفافیت \\
+\rowcolor{gray!10}
+۱-۳۰ & آزادسازی واردات کالاهای اساسی & کاهش فوری قیمت‌ها \\
+۳۰-۶۰ & اصلاح قانون بانک مرکزی & استقلال پولی \\
+\rowcolor{gray!10}
+۳۰-۶۰ & شروع مذاکرات رفع تحریم & سیگنال به بازارها \\
+۶۰-۱۰۰ & ارائه لایحه بودجه اصلاح‌شده & کاهش کسری، شفافیت \\
+\rowcolor{gray!10}
+۶۰-۱۰۰ & پرداخت یارانه نقدی هدفمند & حمایت از اقشار آسیب‌پذیر \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{حمایت از اقشار آسیب‌پذیر}
+
+\begin{olgoobox}
+\textbf{الگوی موفق: برزیل — برنامه بولسا فامیلیا}
+
+برزیل با برنامه یارانه نقدی مشروط (Bolsa Família) توانست فقر را به شدت کاهش دهد:
+\begin{itemize}[nosep]
+\item پرداخت نقدی به ۱۴ میلیون خانوار فقیر
+\item شرط: فرستادن کودکان به مدرسه، واکسیناسیون، معاینات پزشکی
+\item هزینه: کمتر از ۰.۵٪ GDP
+\item نتیجه: کاهش فقر از ۲۶٪ به ۱۰٪ در ۱۵ سال
+\item \textbf{درس برای ایران}: یارانه نقدی هدفمند + شرایط توانمندسازی
+\end{itemize}
+\end{olgoobox}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه حمایت اجتماعی در دوره گذار}
+\label{tab:social-protection}
+\begin{tabular}{>{\columncolor{purple!8}}r p{4cm} c p{3.5cm}}
+\toprule
+\rowcolor{purple!25}
+\textbf{برنامه} & \textbf{گروه هدف} & \textbf{بودجه سالانه} & \textbf{پوشش} \\
+\midrule
+یارانه نقدی تقویت‌شده & دهک‌های ۱-۴ & ۲۰ میلیارد \$ & ۳۰ میلیون نفر \\
+\rowcolor{gray!10}
+بیمه بیکاری موقت & کارگران تعدیل‌شده & ۵ میلیارد \$ & ۲ میلیون نفر \\
+سبد کالای اساسی & فقر مطلق & ۳ میلیارد \$ & ۱۰ میلیون نفر \\
+\rowcolor{gray!10}
+کمک مسکن & بی‌سرپناهان، مستأجران & ۴ میلیارد \$ & ۵ میلیون نفر \\
+بهداشت رایگان & همه & ۱۵ میلیارد \$ & ۸۷ میلیون نفر \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{فاز دوم: بازسازی (سال ۳-۷)}
+\label{sec:reconstruction}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{اصلاحات ساختاری}
+
+\begin{table}[htbp]
+\centering
+\caption{بسته اصلاحات ساختاری اقتصادی}
+\label{tab:structural-reforms}
+\begin{tabular}{>{\columncolor{blue!8}}r p{3cm} p{3.5cm} p{3.5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{حوزه} & \textbf{مشکل فعلی} & \textbf{اصلاح پیشنهادی} & \textbf{زمان‌بندی} \\
+\midrule
+بنگاه‌های دولتی & ناکارآمدی، زیان‌دهی & خصوصی‌سازی شفاف & سال ۳-۷ \\
+\rowcolor{gray!10}
+نظام بانکی & NPL بالا، ورشکستگی & تجدید ساختار، ادغام & سال ۲-۵ \\
+نظام مالیاتی & فرار مالیاتی گسترده & اصلاح قانون، دیجیتال‌سازی & سال ۲-۴ \\
+\rowcolor{gray!10}
+بازار کار & صلبیت، غیررسمی بالا & انعطاف‌پذیری، حمایت از کارگر & سال ۳-۵ \\
+رقابت & انحصارات گسترده & قانون رقابت، شکستن انحصار & سال ۲-۵ \\
+\rowcolor{gray!10}
+زمین و مسکن & سوداگری، قیمت بالا & مالیات بر زمین، عرضه مسکن & سال ۲-۷ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{خصوصی‌سازی: این‌بار درست}
+
+\begin{enghelabbox}
+\textbf{هشدار: درس‌های خصوصی‌سازی ناموفق}
+
+خصوصی‌سازی در ایران (اصل ۴۴) عمدتاً شکست خورده:
+\begin{itemize}[nosep]
+\item انتقال به «خودی‌ها» و نهادهای شبه‌دولتی
+\item فساد گسترده در واگذاری‌ها
+\item عدم بهبود کارایی
+\item تمرکز ثروت در دست عده‌ای
+\end{itemize}
+
+\textbf{اصول خصوصی‌سازی صحیح}:
+\begin{itemize}[nosep]
+\item شفافیت کامل: مزایده علنی، قیمت‌گذاری مستقل
+\item ممنوعیت خرید توسط نهادهای وابسته به دولت
+\item حفظ حقوق کارگران: بازآموزی، بیمه بیکاری
+\item رقابت: جلوگیری از انحصار خصوصی
+\item نظارت مستقل بر فرآیند
+\end{itemize}
+\end{enghelabbox}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه خصوصی‌سازی اولویت‌بندی‌شده}
+\label{tab:privatization-plan}
+\begin{tabular}{>{\columncolor{cyan!8}}l c c p{3.5cm}}
+\toprule
+\rowcolor{cyan!25}
+\textbf{بخش} & \textbf{سهم دولت فعلی} & \textbf{هدف سال ۷} & \textbf{روش} \\
+\midrule
+مخابرات & ۶۰٪ & ۲۰٪ & فروش سهام در بورس \\
+\rowcolor{gray!10}
+بانک‌ها & ۷۰٪ & ۳۰٪ & ادغام و عرضه عمومی \\
+خودروسازی & ۸۵٪ & ۲۰٪ & مشارکت خارجی + IPO \\
+\rowcolor{gray!10}
+فولاد و معدن & ۵۰٪ & ۲۵٪ & مزایده بین‌المللی \\
+حمل‌ونقل & ۹۰٪ & ۴۰٪ & واگذاری تدریجی \\
+\rowcolor{gray!10}
+نفت و گاز & ۱۰۰٪ & ۸۰٪ & حفظ مالکیت ملی، قراردادهای جدید \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{جذب سرمایه‌گذاری خارجی}
+
+\begin{table}[htbp]
+\centering
+\caption{اهداف جذب سرمایه‌گذاری خارجی (FDI)}
+\label{tab:fdi-targets}
+\begin{tabular}{>{\columncolor{green!8}}l c c c c c}
+\toprule
+\rowcolor{green!25}
+\textbf{شاخص} & \textbf{۱۴۰۳} & \textbf{سال ۳} & \textbf{سال ۵} & \textbf{سال ۷} & \textbf{سال ۱۰} \\
+\midrule
+FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
+\rowcolor{gray!10}
+موجودی FDI (میلیارد \$) & ۶۰ & ۸۰ & ۱۳۰ & ۲۰۰ & ۳۵۰ \\
+رتبه سهولت کسب‌وکار & ۱۲۷ & ۸۰ & ۵۰ & ۳۵ & ۲۵ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=6cm,
+    ybar,
+    bar width=15pt,
+    ylabel={میلیارد دلار},
+    xlabel={سال},
+    ymin=0,
+    ymax=70,
+    xtick=data,
+    xticklabels={۱۴۰۳, سال ۳, سال ۵, سال ۷, سال ۱۰},
+    nodes near coords,
+    every node near coord/.append style={font=\small},
+    legend pos=north west,
+    grid=major,
+    grid style={dashed, gray!30}
+]
+\addplot[fill=blue!60, draw=blue!80] coordinates {
+    (1, 1) (2, 10) (3, 25) (4, 40) (5, 60)
+};
+% خط ترکیه برای مقایسه
+\addplot[mark=*, red, thick] coordinates {
+    (1, 13) (2, 13) (3, 13) (4, 13) (5, 13)
+};
+
+\legend{ایران (هدف), ترکیه (میانگین)}
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{اهداف جذب سرمایه‌گذاری خارجی}
+\label{fig:fdi-targets}
+\end{center}
+
+\textbf{اقدامات کلیدی برای جذب FDI}:
+\begin{itemize}[nosep]
+\item قانون جدید سرمایه‌گذاری خارجی با تضمین‌های قوی
+\item داوری بین‌المللی برای اختلافات
+\item مناطق آزاد واقعی (نه صوری)
+\item حذف بوروکراسی: مجوز یکپارچه
+\item ثبات سیاسی و حاکمیت قانون
+\end{itemize}
+
+\subsection{نوسازی صنایع}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه نوسازی صنایع کلیدی}
+\label{tab:industry-modernization}
+\begin{tabular}{>{\columncolor{orange!8}}l p{3cm} c p{4cm}}
+\toprule
+\rowcolor{orange!25}
+\textbf{صنعت} & \textbf{چالش فعلی} & \textbf{سرمایه‌گذاری} & \textbf{هدف} \\
+\midrule
+خودرو & کیفیت پایین، فناوری قدیمی & ۲۰ میلیارد \$ & مشارکت با برندهای جهانی \\
+\rowcolor{gray!10}
+پتروشیمی & ظرفیت خام‌فروشی & ۳۰ میلیارد \$ & زنجیره ارزش کامل \\
+فولاد & انرژی‌بر، آلاینده & ۱۵ میلیارد \$ & فناوری سبز، صادرات \\
+\rowcolor{gray!10}
+نساجی & رقابت‌پذیری پایین & ۵ میلیارد \$ & برندسازی، کیفیت \\
+غذایی & وابستگی به واردات & ۱۰ میلیارد \$ & خودکفایی، صادرات \\
+\rowcolor{gray!10}
+دارو و تجهیزات پزشکی & واردات بالا & ۸ میلیارد \$ & تولید داخلی ۸۰٪ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{فاز سوم: تحول ساختاری (سال ۸-۱۵)}
+\label{sec:transformation}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{تنوع‌بخشی به اقتصاد}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=13cm,
+    height=7cm,
+    ybar stacked,
+    bar width=20pt,
+    ylabel={درصد صادرات},
+    xlabel={},
+    ymin=0,
+    ymax=100,
+    xtick={1,2,3,4},
+    xticklabels={۱۴۰۳ (مبدأ), سال ۵, سال ۱۰, سال ۱۵},
+    legend style={
+        at={(0.5,-0.15)},
+        anchor=north,
+        legend columns=3,
+        font=\small
+    },
+    nodes near coords,
+    every node near coord/.append style={font=\tiny},
+    grid=major,
+    grid style={dashed, gray!30}
+]
+% نفت خام
+\addplot[fill=gray!70, draw=gray!90] coordinates {(1,60) (2,45) (3,30) (4,20)};
+% پتروشیمی
+\addplot[fill=blue!50, draw=blue!70] coordinates {(1,20) (2,22) (3,22) (4,20)};
+% صنایع
+\addplot[fill=green!50, draw=green!70] coordinates {(1,10) (2,15) (3,22) (4,25)};
+% خدمات و گردشگری
+\addplot[fill=orange!50, draw=orange!70] coordinates {(1,5) (2,10) (3,15) (4,20)};
+% فناوری و دانش‌بنیان
+\addplot[fill=purple!50, draw=purple!70] coordinates {(1,5) (2,8) (3,11) (4,15)};
+
+\legend{نفت خام, پتروشیمی, صنایع, خدمات و گردشگری, فناوری و دانش‌بنیان}
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{تنوع‌بخشی به سبد صادراتی ایران}
+\label{fig:export-diversification}
+\end{center}
+
+\subsection{موتورهای رشد جدید}
+
+\begin{table}[htbp]
+\centering
+\caption{پنج موتور رشد اقتصادی آینده ایران}
+\label{tab:growth-engines}
+\begin{tabular}{>{\columncolor{teal!8}}r p{2.5cm} p{2.5cm} p{2.5cm} p{2.5cm}}
+\toprule
+\rowcolor{teal!25}
+\textbf{موتور} & \textbf{پتانسیل} & \textbf{هدف سال ۱۵} & \textbf{سرمایه‌گذاری} & \textbf{اشتغال} \\
+\midrule
+گردشگری & ۵۰ سایت یونسکو، تنوع & ۳۰ میلیون گردشگر & ۵۰ میلیارد \$ & ۳ میلیون \\
+\rowcolor{gray!10}
+ترانزیت & موقعیت ژئوپلتیک & ۵۰ میلیارد \$ درآمد & ۴۰ میلیارد \$ & ۱ میلیون \\
+فناوری اطلاعات & نیروی کار تحصیل‌کرده & ۲۰ میلیارد \$ صادرات & ۱۵ میلیارد \$ & ۱ میلیون \\
+\rowcolor{gray!10}
+انرژی‌های تجدیدپذیر & آفتاب، باد فراوان & ۱۰ میلیارد \$ صادرات برق & ۸۰ میلیارد \$ & ۵۰۰ هزار \\
+کشاورزی مدرن & آب و هوا متنوع & خودکفایی + صادرات & ۳۰ میلیارد \$ & ۲ میلیون \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{گردشگری: گنج پنهان}
+
+\begin{olgoobox}
+\textbf{پتانسیل گردشگری ایران}
+
+ایران یکی از ۱۰ کشور برتر جهان از نظر جاذبه‌های گردشگری است:
+\begin{itemize}[nosep]
+\item \textbf{میراث فرهنگی}: ۲۷ سایت ثبت یونسکو (رتبه ۱۰ جهان)
+\item \textbf{تنوع طبیعی}: کویر، جنگل، کوه، ساحل
+\item \textbf{تنوع فرهنگی}: موسیقی، غذا، صنایع‌دستی اقوام
+\item \textbf{گردشگری سلامت}: پزشکی ارزان و باکیفیت
+\item \textbf{گردشگری مذهبی}: مشهد، قم (۲۰+ میلیون زائر/سال)
+\end{itemize}
+
+\textbf{مقایسه}:
+\begin{itemize}[nosep]
+\item ترکیه: ۵۰ میلیون گردشگر، ۳۵ میلیارد دلار
+\item امارات: ۲۰ میلیون گردشگر، ۴۰ میلیارد دلار
+\item ایران (فعلی): ۵ میلیون گردشگر، ۳ میلیارد دلار
+\item \textbf{ایران (هدف ۱۵ سال)}: ۳۰ میلیون گردشگر، ۵۰ میلیارد دلار
+\end{itemize}
+\end{olgoobox}
+
+\subsubsection{ترانزیت: پل بین قاره‌ها}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.8]
+% نقشه ساده
+\draw[thick, fill=blue!10] (0,0) ellipse (6cm and 3cm);
+\node[font=\large\bfseries] at (0,2.5) {ایران: هاب ترانزیت منطقه‌ای};
+
+% مسیرها
+\node[circle, fill=green!50, minimum size=0.8cm] (n1) at (-5,0) {\scriptsize اروپا};
+\node[circle, fill=orange!50, minimum size=0.8cm] (n2) at (5,0) {\scriptsize چین};
+\node[circle, fill=blue!50, minimum size=0.8cm] (n3) at (0,2) {\scriptsize روسیه};
+\node[circle, fill=red!50, minimum size=0.8cm] (n4) at (0,-2) {\scriptsize هند};
+\node[circle, fill=purple!50, minimum size=0.8cm] (n5) at (-3,-1.5) {\scriptsize خلیج فارس};
+\node[circle, fill=teal!50, minimum size=0.8cm] (n6) at (3,1.5) {\scriptsize آسیای مرکزی};
+
+% ایران در مرکز
+\node[rectangle, rounded corners, fill=yellow!50, minimum width=1.5cm] (iran) at (0,0) {\textbf{ایران}};
+
+% مسیرها
+\draw[thick, ->] (n1) -- (iran);
+\draw[thick, ->] (n2) -- (iran);
+\draw[thick, ->] (n3) -- (iran);
+\draw[thick, ->] (n4) -- (iran);
+\draw[thick, ->] (n5) -- (iran);
+\draw[thick, ->] (n6) -- (iran);
+
+% کریدورها
+\node[font=\scriptsize, below=3.5cm of iran, align=center] {
+    کریدور شمال-جنوب (INSTC) | کریدور شرق-غرب | راه ابریشم جدید
+};
+\end{tikzpicture}
+\end{center}
+
+\subsection{اشتغال‌زایی}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه اشتغال‌زایی ۱۰ میلیون شغل در ۱۰ سال}
+\label{tab:job-creation}
+\begin{tabular}{>{\columncolor{purple!8}}l c c p{4cm}}
+\toprule
+\rowcolor{purple!25}
+\textbf{بخش} & \textbf{اشتغال فعلی (م)} & \textbf{هدف سال ۱۰ (م)} & \textbf{راهبرد} \\
+\midrule
+گردشگری و هتلداری & ۰.۵ & ۳ & زیرساخت، ویزا، بازاریابی \\
+\rowcolor{gray!10}
+ساختمان و مسکن & ۳ & ۵ & پروژه مسکن ملی \\
+صنایع تولیدی & ۴ & ۶ & نوسازی، صادرات‌محور \\
+\rowcolor{gray!10}
+فناوری اطلاعات & ۰.۳ & ۱.۳ & استارتاپ‌ها، صادرات خدمات \\
+کشاورزی مدرن & ۴ & ۴.۵ & مکانیزاسیون، ارزش‌افزوده \\
+\rowcolor{gray!10}
+خدمات & ۸ & ۱۲ & مالی، بهداشت، آموزش \\
+انرژی‌های نو & ۰.۱ & ۰.۵ & تولید و نصب \\
+\midrule
+\textbf{مجموع} & \textbf{۲۴} & \textbf{۳۴} & \textbf{۱۰ میلیون شغل جدید} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{مبارزه با فساد اقتصادی}
+\label{sec:anti-corruption}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\begin{naghlbox}
+«فساد بزرگ‌ترین دشمن توسعه است. هر دلاری که به جیب فاسدان می‌رود، از مدرسه، بیمارستان و زیرساخت کم می‌شود. بدون مبارزه جدی با فساد، هیچ برنامه اقتصادی موفق نخواهد شد.»
+\sourceline{بانک جهانی، گزارش فساد و توسعه، ۲۰۱۷}
+\end{naghlbox}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه جامع مبارزه با فساد اقتصادی}
+\label{tab:anti-corruption-plan}
+\begin{tabular}{>{\columncolor{red!8}}r p{4cm} p{5.5cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{محور} & \textbf{اقدام} & \textbf{نتیجه مورد انتظار} \\
+\midrule
+شفافیت & ثبت الکترونیک همه معاملات دولتی & حذف رانت اطلاعاتی \\
+\rowcolor{gray!10}
+نظارت & کمیسیون مستقل ضدفساد با اختیارات کامل & بازداشت و محاکمه مفسدان \\
+قوانین & قانون «از کجا آورده‌ای» با ضمانت اجرا & مصادره اموال نامشروع \\
+\rowcolor{gray!10}
+تعارض منافع & ممنوعیت فعالیت اقتصادی مقامات و خانواده & جلوگیری از سوءاستفاده \\
+مناقصات & الکترونیکی، علنی، با داوری مستقل & کاهش فساد در قراردادها \\
+\rowcolor{gray!10}
+حفاظت از گزارشگران & قانون whistleblower، پاداش & تشویق افشاگری \\
+مجازات & سلب مصونیت همه مقامات، مجازات سنگین & بازدارندگی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=6cm,
+    xlabel={سال},
+    ylabel={رتبه شاخص CPI (از ۱۸۰ کشور)},
+    xmin=0, xmax=16,
+    ymin=0, ymax=160,
+    xtick={0,5,10,15},
+    xticklabels={۱۴۰۳, سال ۵, سال ۱۰, سال ۱۵},
+    legend pos=north east,
+    grid=major,
+    grid style={dashed, gray!30},
+    y dir=reverse
+]
+% مسیر ایران
+\addplot[color=green!70!black, mark=*, thick, line width=1.5pt] coordinates {
+    (0, 149) (5, 100) (10, 70) (15, 45)
+};
+% خط ترکیه
+\addplot[color=blue, dashed, thick] coordinates {
+    (0, 101) (5, 101) (10, 101) (15, 101)
+};
+% خط امارات
+\addplot[color=orange, dashed, thick] coordinates {
+    (0, 24) (5, 24) (10, 24) (15, 24)
+};
+
+\legend{ایران (هدف), ترکیه (فعلی), امارات (فعلی)}
+
+\node[font=\scriptsize, green!70!black] at (axis cs:12,60) {هدف: رتبه ۴۵};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{مسیر بهبود رتبه ایران در شاخص فساد}
+\label{fig:corruption-improvement}
+\end{center}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{نظام مالیاتی جدید}
+\label{sec:tax-reform}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{اصلاح ساختار مالیاتی}
+
+\begin{table}[htbp]
+\centering
+\caption{مقایسه نظام مالیاتی فعلی و پیشنهادی}
+\label{tab:tax-comparison}
+\begin{tabular}{>{\columncolor{blue!8}}l c c p{3.5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{شاخص} & \textbf{فعلی} & \textbf{هدف سال ۱۰} & \textbf{توضیح} \\
+\midrule
+نسبت مالیات به GDP & ۷٪ & ۱۸٪ & میانگین OECD: ۳۴٪ \\
+\rowcolor{gray!10}
+مالیات بر درآمد (حداکثر) & ۳۵٪ & ۴۵٪ & تصاعدی، عادلانه \\
+مالیات بر شرکت‌ها & ۲۵٪ & ۲۰٪ & کاهش برای جذب سرمایه \\
+\rowcolor{gray!10}
+مالیات بر ارزش‌افزوده & ۹٪ & ۱۵٪ & استاندارد جهانی \\
+مالیات بر ثروت & — & ۱-۲٪ & جدید، برای عدالت \\
+\rowcolor{gray!10}
+مالیات بر املاک & ناچیز & ۱٪ ارزش & ضد سوداگری \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{اصول نظام مالیاتی جدید}:
+\begin{enumerate}[nosep]
+\item \textbf{عدالت}: ثروتمندان بیشتر بپردازند (تصاعدی)
+\item \textbf{کارایی}: حذف معافیت‌های ناکارآمد
+\item \textbf{سادگی}: فرم‌های ساده، پرداخت الکترونیک
+\item \textbf{شفافیت}: همه مالیات‌دهندگان ببینند پولشان کجا می‌رود
+\item \textbf{اجرای قاطع}: مجازات سنگین برای فرار مالیاتی
+\end{enumerate}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{ادغام در اقتصاد جهانی}
+\label{sec:global-integration}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\begin{table}[htbp]
+\centering
+\caption{نقشه راه ادغام در اقتصاد جهانی}
+\label{tab:global-integration}
+\begin{tabular}{>{\columncolor{green!8}}c p{4cm} p{5.5cm}}
+\toprule
+\rowcolor{green!25}
+\textbf{سال} & \textbf{اقدام} & \textbf{دستاورد} \\
+\midrule
+۱-۲ & رفع تحریم‌ها، اتصال به SWIFT & دسترسی به سیستم مالی جهانی \\
+\rowcolor{gray!10}
+۲-۳ & عضویت ناظر در WTO & شروع مذاکرات الحاق \\
+۳-۵ & توافقات تجارت آزاد دوجانبه & ترکیه، هند، چین، اوراسیا \\
+\rowcolor{gray!10}
+۵-۷ & عضویت کامل در WTO & دسترسی به بازار ۱۶۴ کشور \\
+۷-۱۰ & توافق تجاری با اتحادیه اروپا & بزرگ‌ترین بازار جهان \\
+\rowcolor{gray!10}
+۱۰-۱۵ & عضویت در OECD (هدف) & استانداردهای جهانی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{توافقات تجاری هدف}
+
+\begin{center}
+\begin{tikzpicture}[
+    partner/.style={
+        ellipse,
+        draw=#1!70,
+        fill=#1!20,
+        thick,
+        minimum width=2.5cm,
+        minimum height=1.2cm,
+        align=center,
+        font=\small
+    }
+]
+% ایران در مرکز
+\node[rectangle, rounded corners=10pt, draw=blue!70, fill=blue!20,
+      thick, minimum width=2.5cm, minimum height=1.5cm] (iran) 
+    {\textbf{ایران}\\هاب تجاری};
+
+% شرکای تجاری
+\node[partner=green, above=2cm of iran] (eu) {اتحادیه اروپا\\ \scriptsize ۴۵۰ میلیون نفر};
+\node[partner=red, above right=1.5cm of iran] (china) {چین\\ \scriptsize ۱.۴ میلیارد};
+\node[partner=orange, right=2.5cm of iran] (india) {هند\\ \scriptsize ۱.۴ میلیارد};
+\node[partner=purple, below right=1.5cm of iran] (gulf) {خلیج فارس\\ \scriptsize ۵۰ میلیون};
+\node[partner=teal, below=2cm of iran] (africa) {آفریقا\\ \scriptsize ۱.۴ میلیارد};
+\node[partner=darkyellow, below left=1.5cm of iran] (eurasia) {اوراسیا\\ \scriptsize ۲۰۰ میلیون};
+\node[partner=cyan, left=2.5cm of iran] (turkey) {ترکیه\\ \scriptsize ۸۵ میلیون};
+\node[partner=pink, above left=1.5cm of iran] (cis) {آسیای مرکزی\\ \scriptsize ۷۵ میلیون};
+
+% اتصالات با حجم تجارت هدف
+\draw[thick, green!60, ->] (iran) -- node[right, font=\tiny] {۵۰B\$} (eu);
+\draw[thick, red!60, ->] (iran) -- node[above, font=\tiny] {۴۰B\$} (china);
+\draw[thick, orange!60, ->] (iran) -- node[above, font=\tiny] {۳۰B\$} (india);
+\draw[thick, purple!60, ->] (iran) -- node[right, font=\tiny] {۲۵B\$} (gulf);
+\draw[thick, teal!60, ->] (iran) -- node[left, font=\tiny] {۱۵B\$} (africa);
+\draw[thick, yellow!60!black, ->] (iran) -- node[left, font=\tiny] {۲۰B\$} (eurasia);
+\draw[thick, cyan!60, ->] (iran) -- node[above, font=\tiny] {۳۰B\$} (turkey);
+\draw[thick, pink!60, ->] (iran) -- node[left, font=\tiny] {۱۵B\$} (cis);
+
+% عنوان
+\node[above=3.5cm of iran, font=\large\bfseries] {شبکه تجاری هدف ایران — افق ۱۵ ساله};
+\end{tikzpicture}
+\end{center}
+
+\subsection{هدف صادرات}
+
+\begin{table}[htbp]
+\centering
+\caption{اهداف صادراتی ایران در افق ۱۵ ساله}
+\label{tab:export-targets}
+\begin{tabular}{>{\columncolor{orange!8}}l c c c c}
+\toprule
+\rowcolor{orange!25}
+\textbf{بخش} & \textbf{۱۴۰۳ (میلیارد \$)} & \textbf{سال ۵} & \textbf{سال ۱۰} & \textbf{سال ۱۵} \\
+\midrule
+نفت و گاز & ۵۰ & ۸۰ & ۱۰۰ & ۸۰ \\
+\rowcolor{gray!10}
+پتروشیمی & ۱۵ & ۲۵ & ۴۰ & ۵۰ \\
+صنایع و معدن & ۱۰ & ۲۰ & ۳۵ & ۵۰ \\
+\rowcolor{gray!10}
+کشاورزی و غذا & ۵ & ۱۰ & ۱۸ & ۲۵ \\
+خدمات (گردشگری، IT) & ۵ & ۱۵ & ۳۵ & ۶۰ \\
+\rowcolor{gray!10}
+فناوری و دانش‌بنیان & ۲ & ۸ & ۱۷ & ۳۵ \\
+\midrule
+\textbf{مجموع صادرات} & \textbf{۸۷} & \textbf{۱۵۸} & \textbf{۲۴۵} & \textbf{۳۰۰} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{نظام بانکی و مالی}
+\label{sec:banking-reform}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{بحران نظام بانکی}
+
+\begin{enghelabbox}
+\textbf{هشدار: بانک‌های ایران در وضعیت بحرانی هستند}
+
+وضعیت نظام بانکی ایران نگران‌کننده است:
+\begin{itemize}[nosep]
+\item \textbf{مطالبات معوق (NPL)}: بالای ۲۰٪ (استاندارد جهانی: زیر ۵٪)
+\item \textbf{کفایت سرمایه}: بسیاری زیر حداقل استاندارد
+\item \textbf{بانک‌های ورشکسته}: چندین بانک عملاً ورشکسته
+\item \textbf{بنگاه‌داری}: بانک‌ها مالک شرکت‌های زیان‌ده
+\item \textbf{فساد}: وام‌های کلان به افراد مرتبط
+\end{itemize}
+\textbf{نتیجه}: بدون اصلاح نظام بانکی، رشد اقتصادی پایدار ممکن نیست.
+\end{enghelabbox}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه اصلاح نظام بانکی}
+\label{tab:banking-reform}
+\begin{tabular}{>{\columncolor{blue!8}}r p{4cm} p{5.5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{مرحله} & \textbf{اقدام} & \textbf{زمان‌بندی و هدف} \\
+\midrule
+۱ & ارزیابی مستقل (Asset Quality Review) & ماه ۱-۶: شناسایی وضعیت واقعی \\
+\rowcolor{gray!10}
+۲ & تفکیک بانک‌ها به سالم/قابل‌نجات/ورشکسته & ماه ۶-۱۲ \\
+۳ & تزریق سرمایه به بانک‌های قابل‌نجات & سال ۱-۲: ۳۰ میلیارد دلار \\
+\rowcolor{gray!10}
+۴ & ادغام یا انحلال بانک‌های ورشکسته & سال ۱-۳ \\
+۵ & فروش بنگاه‌های غیربانکی & سال ۲-۵ \\
+\rowcolor{gray!10}
+۶ & پیاده‌سازی استانداردهای بازل III & سال ۳-۷ \\
+۷ & ورود بانک‌های خارجی & سال ۳+ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{توسعه بازار سرمایه}
+
+\begin{table}[htbp]
+\centering
+\caption{اهداف توسعه بازار سرمایه}
+\label{tab:capital-market}
+\begin{tabular}{>{\columncolor{green!8}}l c c c}
+\toprule
+\rowcolor{green!25}
+\textbf{شاخص} & \textbf{۱۴۰۳} & \textbf{سال ۵} & \textbf{سال ۱۰} \\
+\midrule
+ارزش بازار سهام (٪ GDP) & ۳۵٪ & ۶۰٪ & ۱۰۰٪ \\
+\rowcolor{gray!10}
+ارزش اوراق بدهی (٪ GDP) & ۵٪ & ۲۰٪ & ۴۰٪ \\
+تعداد شرکت‌های بورسی & ۷۰۰ & ۱,۲۰۰ & ۲,۰۰۰ \\
+\rowcolor{gray!10}
+سرمایه‌گذاران خارجی (٪) & ۱٪ & ۱۰٪ & ۲۵٪ \\
+صندوق‌های سرمایه‌گذاری & ۲۰۰ & ۵۰۰ & ۱,۰۰۰ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{فین‌تک و بانکداری دیجیتال}
+
+\begin{olgoobox}
+\textbf{فرصت: جهش به بانکداری دیجیتال}
+
+ایران می‌تواند از «عقب‌ماندگی» به «پیشتازی» برسد:
+\begin{itemize}[nosep]
+\item \textbf{نسل جوان دیجیتال}: ۷۰٪ جمعیت زیر ۴۰ سال
+\item \textbf{نفوذ اینترنت}: ۸۰٪+ جمعیت
+\item \textbf{استارتاپ‌های فین‌تک}: زیرساخت موجود
+\item \textbf{الگوهای موفق}: کنیا (M-Pesa)، هند (UPI)، چین (Alipay)
+\end{itemize}
+
+\textbf{اهداف}:
+\begin{itemize}[nosep]
+\item ۹۰٪ پرداخت‌ها دیجیتال تا سال ۵
+\item ریال دیجیتال بانک مرکزی (CBDC) تا سال ۳
+\item بانکداری باز (Open Banking) تا سال ۴
+\item هویت دیجیتال یکپارچه تا سال ۲
+\end{itemize}
+\end{olgoobox}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{انرژی و پایداری اقتصادی}
+\label{sec:energy-economy}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{اصلاح یارانه انرژی}
+
+\begin{table}[htbp]
+\centering
+\caption{یارانه‌های انرژی و برنامه اصلاح}
+\label{tab:energy-subsidies}
+\begin{tabular}{>{\columncolor{red!8}}l c c c p{2.5cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{حامل} & \textbf{قیمت فعلی} & \textbf{قیمت جهانی} & \textbf{یارانه سالانه} & \textbf{هدف سال ۵} \\
+\midrule
+بنزین (لیتر) & ۳,۰۰۰ تومان & ۵۰,۰۰۰ تومان & ۳۰ میلیارد \$ & قیمت منطقه‌ای \\
+\rowcolor{gray!10}
+گازوئیل (لیتر) & ۱,۵۰۰ تومان & ۴۵,۰۰۰ تومان & ۲۰ میلیارد \$ & قیمت منطقه‌ای \\
+گاز طبیعی (م۳) & ۱,۰۰۰ تومان & ۱۵,۰۰۰ تومان & ۲۵ میلیارد \$ & تدریجی \\
+\rowcolor{gray!10}
+برق (کیلووات) & ۵۰۰ تومان & ۵,۰۰۰ تومان & ۱۵ میلیارد \$ & تدریجی \\
+\midrule
+\textbf{مجموع یارانه انرژی} & & & \textbf{۹۰ میلیارد \$/سال} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{naghlbox}
+«یارانه انرژی در ایران معادل کل بودجه بهداشت و آموزش است. این پول عمدتاً به ثروتمندان می‌رسد که مصرف بیشتری دارند. اصلاح یارانه‌ها هم عدالت است، هم کارایی.»
+\sourceline{صندوق بین‌المللی پول، گزارش یارانه انرژی، ۲۰۲۳}
+\end{naghlbox}
+
+\textbf{اصول اصلاح یارانه انرژی}:
+\begin{enumerate}[nosep]
+\item \textbf{تدریجی}: افزایش قیمت در ۵ سال، نه یک‌شبه
+\item \textbf{جبرانی}: یارانه نقدی به دهک‌های ۱-۵
+\item \textbf{صنعتی}: قیمت‌های متفاوت برای صنایع (دوره انتقال)
+\item \textbf{حمل‌ونقل عمومی}: سوبسید برای اتوبوس و مترو
+\item \textbf{شفاف}: نشان‌دادن هزینه واقعی به مردم
+\end{enumerate}
+
+\subsection{سرمایه‌گذاری در انرژی‌های تجدیدپذیر}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه سرمایه‌گذاری در انرژی تجدیدپذیر}
+\label{tab:renewable-investment}
+\begin{tabular}{>{\columncolor{green!8}}l c c c c}
+\toprule
+\rowcolor{green!25}
+\textbf{منبع} & \textbf{ظرفیت فعلی (GW)} & \textbf{سال ۵} & \textbf{سال ۱۰} & \textbf{سرمایه‌گذاری} \\
+\midrule
+خورشیدی & ۱ & ۱۵ & ۵۰ & ۵۰ میلیارد \$ \\
+\rowcolor{gray!10}
+بادی & ۰.۵ & ۵ & ۲۰ & ۲۵ میلیارد \$ \\
+برق‌آبی & ۱۲ & ۱۴ & ۱۶ & ۱۰ میلیارد \$ \\
+\rowcolor{gray!10}
+سایر (زمین‌گرمایی، زیست‌توده) & ۰.۱ & ۱ & ۴ & ۵ میلیارد \$ \\
+\midrule
+\textbf{مجموع تجدیدپذیر} & \textbf{۱۳.۶} & \textbf{۳۵} & \textbf{۹۰} & \textbf{۹۰ میلیارد \$} \\
+\textbf{سهم از تولید برق} & \textbf{۸٪} & \textbf{۲۵٪} & \textbf{۵۰٪} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{مسکن و زمین}
+\label{sec:housing}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{بحران مسکن}
+
+\begin{table}[htbp]
+\centering
+\caption{شاخص‌های بحران مسکن در ایران}
+\label{tab:housing-crisis}
+\begin{tabular}{>{\columncolor{orange!8}}l c c p{4cm}}
+\toprule
+\rowcolor{orange!25}
+\textbf{شاخص} & \textbf{ایران} & \textbf{استاندارد جهانی} & \textbf{توضیح} \\
+\midrule
+نسبت قیمت مسکن به درآمد & ۲۵-۳۰ & ۳-۵ & بحرانی \\
+\rowcolor{gray!10}
+نرخ مالکیت مسکن & ۶۵٪ & ۶۵٪ & قابل قبول \\
+متراژ سرانه مسکن & ۲۵ م۲ & ۴۰ م۲ & پایین \\
+\rowcolor{gray!10}
+واحدهای خالی & ۲.۵ میلیون & — & سوداگری \\
+کمبود سالانه مسکن & ۷۰۰,۰۰۰ واحد & — & تولید ناکافی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{برنامه جامع مسکن}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه جامع مسکن ملی}
+\label{tab:housing-program}
+\begin{tabular}{>{\columncolor{blue!8}}r p{5cm} p{4.5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{محور} & \textbf{اقدام} & \textbf{هدف کمّی} \\
+\midrule
+عرضه زمین & آزادسازی زمین‌های دولتی برای مسکن & ۱۰۰,۰۰۰ هکتار در ۵ سال \\
+\rowcolor{gray!10}
+مالیات & مالیات ۲٪ بر خانه‌های خالی و دوم به بعد & کاهش سوداگری \\
+تولید & پروژه ملی ساخت مسکن ارزان & ۱ میلیون واحد/سال \\
+\rowcolor{gray!10}
+تسهیلات & وام مسکن بلندمدت با نرخ واقعی & ۲۰ سال، نرخ تورم+۲٪ \\
+اجاره & حمایت از مستأجران، یارانه اجاره & ۲ میلیون خانوار \\
+\rowcolor{gray!10}
+مسکن اجتماعی & ساخت مسکن استیجاری دولتی & ۵۰۰,۰۰۰ واحد در ۱۰ سال \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{شاخص‌های کلیدی و اهداف}
+\label{sec:economic-kpis}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\begin{table}[htbp]
+\centering
+\caption{شاخص‌های کلیدی اقتصادی و اهداف ۱۵ ساله}
+\label{tab:economic-kpis}
+\small
+\begin{tabular}{>{\columncolor{teal!8}}r l c c c c c}
+\toprule
+\rowcolor{teal!25}
+& \textbf{شاخص} & \textbf{۱۴۰۳} & \textbf{س۲} & \textbf{س۵} & \textbf{س۱۰} & \textbf{س۱۵} \\
+\midrule
+۱ & رشد GDP (٪) & ۲ & ۵ & ۷ & ۶ & ۵ \\
+\rowcolor{gray!10}
+۲ & تورم (٪) & ۵۰ & ۱۵ & ۷ & ۴ & ۲ \\
+۳ & بیکاری (٪) & ۱۲ & ۱۰ & ۸ & ۶ & ۵ \\
+\rowcolor{gray!10}
+۴ & GDP سرانه (\$K PPP) & ۱۵ & ۱۷ & ۲۲ & ۳۲ & ۴۵ \\
+۵ & صادرات (میلیارد \$) & ۸۷ & ۱۱۰ & ۱۵۸ & ۲۴۵ & ۳۰۰ \\
+\rowcolor{gray!10}
+۶ & FDI سالانه (میلیارد \$) & ۱ & ۵ & ۲۵ & ۵۰ & ۶۰ \\
+۷ & نسبت مالیات/GDP (٪) & ۷ & ۹ & ۱۲ & ۱۶ & ۱۸ \\
+\rowcolor{gray!10}
+۸ & سهم نفت از بودجه (٪) & ۳۵ & ۳۰ & ۲۲ & ۱۵ & ۱۰ \\
+۹ & رتبه فساد (CPI) & ۱۴۹ & ۱۲۰ & ۸۵ & ۶۰ & ۴۵ \\
+\rowcolor{gray!10}
+۱۰ & رتبه کسب‌وکار & ۱۲۷ & ۹۰ & ۵۰ & ۳۵ & ۲۵ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    width=13cm,
+    height=7cm,
+    xlabel={سال},
+    ylabel={GDP سرانه (هزار دلار PPP)},
+    xmin=0, xmax=16,
+    ymin=10, ymax=50,
+    xtick={0,2,5,10,15},
+    xticklabels={۱۴۰۳, سال ۲, سال ۵, سال ۱۰, سال ۱۵},
+    legend pos=north west,
+    grid=major,
+    grid style={dashed, gray!30}
+]
+% مسیر ایران
+\addplot[color=blue, mark=*, thick, line width=2pt] coordinates {
+    (0, 15) (2, 17) (5, 22) (10, 32) (15, 45)
+};
+% مقایسه با ترکیه
+\addplot[color=orange, dashed, thick] coordinates {
+    (0, 28) (5, 32) (10, 38) (15, 45)
+};
+% مقایسه با مالزی
+\addplot[color=green!70!black, dashed, thick] coordinates {
+    (0, 30) (5, 35) (10, 42) (15, 50)
+};
+
+\legend{ایران (هدف), ترکیه (پیش‌بینی), مالزی (پیش‌بینی)}
+
+% نقطه همگرایی
+\fill[red] (axis cs:15,45) circle (4pt);
+\node[font=\scriptsize, above right] at (axis cs:15,45) {همگرایی};
+\end{axis}
+\end{tikzpicture}
+\captionof{figure}{مسیر رشد GDP سرانه ایران در مقایسه با کشورهای مشابه}
+\label{fig:gdp-trajectory}
+\end{center}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{ریسک‌ها و سناریوها}
+\label{sec:economic-risks}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\begin{table}[htbp]
+\centering
+\caption{ریسک‌های اصلی برنامه اقتصادی و راهکارها}
+\label{tab:economic-risks}
+\begin{tabular}{>{\columncolor{red!8}}l c p{5cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{ریسک} & \textbf{احتمال} & \textbf{راهکار کاهش} \\
+\midrule
+شکست مذاکرات رفع تحریم & متوسط & تنوع شرکا، اقتصاد مقاومتی هوشمند \\
+\rowcolor{gray!10}
+مقاومت گروه‌های ذی‌نفع & بالا & ائتلاف‌سازی، جبران بازندگان \\
+بحران مالی جهانی & متوسط & صندوق ذخیره، تنوع صادرات \\
+\rowcolor{gray!10}
+ناآرامی اجتماعی از اصلاحات & متوسط & تدریج، حمایت از آسیب‌پذیران \\
+فرار سرمایه و مغزها & بالا & ثبات، فرصت، کیفیت زندگی \\
+\rowcolor{gray!10}
+سقوط قیمت نفت & متوسط & تنوع‌بخشی سریع‌تر، صندوق ذخیره \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{سه سناریوی اقتصادی}
+
+\begin{table}[htbp]
+\centering
+\caption{سه سناریوی اقتصادی برای ایران در سال ۱۵}
+\label{tab:economic-scenarios}
+\begin{tabular}{>{\columncolor{gray!8}}l p{3.5cm} p{3.5cm} p{3.5cm}}
+\toprule
+\rowcolor{gray!25}
+\textbf{شاخص} & \textbf{خوش‌بینانه} & \textbf{محتمل} & \textbf{بدبینانه} \\
+\midrule
+\rowcolor{green!15}
+GDP سرانه & \$۵۵,۰۰۰ & \$۴۵,۰۰۰ & \$۳۰,۰۰۰ \\
+\rowcolor{gray!10}
+تورم & ۱٪ & ۳٪ & ۱۰٪ \\
+\rowcolor{green!15}
+بیکاری & ۳٪ & ۵٪ & ۱۰٪ \\
+\rowcolor{gray!10}
+رتبه فساد & ۳۰ & ۴۵ & ۸۰ \\
+\rowcolor{green!15}
+FDI سالانه & ۸۰ میلیارد \$ & ۶۰ میلیارد \$ & ۲۰ میلیارد \$ \\
+\rowcolor{gray!10}
+سهم نفت از صادرات & ۱۰٪ & ۲۰٪ & ۴۰٪ \\
+\midrule
+\textbf{احتمال} & ۲۰٪ & ۵۵٪ & ۲۵٪ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%═══════════════════════════════════════════════════════════════════════════════
+\section{جمع‌بندی: اقتصادی که برای همه کار می‌کند}
+\label{sec:economic-conclusion}
+%═══════════════════════════════════════════════════════════════════════════════
+
+\begin{olgoobox}
+\textbf{پیام کلیدی فصل}
+
+بازسازی اقتصادی ایران ممکن است — اگر این اصول رعایت شود:
+\begin{itemize}[nosep]
+\item \textbf{اولویت رفع تحریم}: بدون اتصال به اقتصاد جهانی، رشد پایدار ممکن نیست
+\item \textbf{ثبات اقتصاد کلان}: کنترل تورم و ثبات ارزی، پیش‌شرط هر کاری
+\item \textbf{اصلاحات ساختاری}: بدون تغییر نهادها، رشد موقتی خواهد بود
+\item \textbf{تنوع‌بخشی}: رهایی از نفرین نفت با توسعه گردشگری، فناوری، صنایع
+\item \textbf{مبارزه با فساد}: فساد بزرگ‌ترین مانع توسعه است
+\item \textbf{عدالت}: رشد باید شامل همه شود، نه فقط ثروتمندان
+\item \textbf{آبادانی ملموس}: مردم باید بهبود را در زندگی روزمره احساس کنند
+\end{itemize}
+
+\textbf{هدف}: اقتصادی که برای همه ایرانیان کار می‌کند — پویا، عادلانه، پایدار.
+\end{olgoobox}
+
+\begin{naghlbox}
+«اقتصاد خوب همیشه به سیاست خوب نیاز دارد. بدون ثبات سیاسی، حاکمیت قانون، و نهادهای کارآمد، هیچ سیاست اقتصادی موفق نخواهد شد. برعکس، اقتصاد بیمار دموکراسی را تضعیف می‌کند. اقتصاد و سیاست دو روی یک سکه‌اند.»
+\sourceline{نویسنده}
+\end{naghlbox}
+
+%═══════════════════════════════════════════════════════════════════════════════
+% منابع فصل
+%═══════════════════════════════════════════════════════════════════════════════
+
+\section*{منابع فصل سیزدهم}
+\addcontentsline{toc}{section}{منابع فصل سیزدهم}
+
+\begin{itemize}[nosep, font=\small]
+\item Acemoglu, D., \& Robinson, J. A. (2012). \textit{Why Nations Fail}. Crown Business.
+\item Przeworski, A. et al. (2000). \textit{Democracy and Development}. Cambridge University Press.
+\item Rodrik, D. (2007). \textit{One Economics, Many Recipes}. Princeton University Press.
+\item Stiglitz, J. E. (2002). \textit{Globalization and Its Discontents}. W.W. Norton.
+\item World Bank. (2023). \textit{Doing Business Report}.
+\item IMF. (2023). \textit{World Economic Outlook}.
+\item IMF. (2023). \textit{Energy Subsidies Report}.
+\item Transparency International. (2023). \textit{Corruption Perceptions Index}.
+\item UNCTAD. (2023). \textit{World Investment Report}.
+\item WTO. (2023). \textit{Trade Statistics}.
+\item بانک مرکزی ایران. (۱۴۰۲). \textit{گزارش اقتصادی و ترازنامه}.
+\item مرکز پژوهش‌های مجلس. (۱۴۰۲). \textit{گزارش‌های اقتصادی}.
+\item صندوق بین‌المللی پول. (۱۴۰۲). \textit{گزارش ماده چهار ایران}.
+\item مرکز آمار ایران. (۱۴۰۲). \textit{حساب‌های ملی و شاخص‌های اقتصادی}.
+\end{itemize}

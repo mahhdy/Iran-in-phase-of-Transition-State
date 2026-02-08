@@ -1,0 +1,348 @@
+%══════════════════════════════════════════════════════════════════════════════
+% preamble.tex — تنظیمات و پکیج‌های کتاب
+% از بحران تا بالندگی: طرح جامع تأسیس دموکراسی پایدار
+% نویسنده: مهدی سالم | ریچموندهیل | ۱۴۰۴
+%══════════════════════════════════════════════════════════════════════════════
+
+%──────────────────────────────────────────────────────────────────────────────
+% پکیج‌های اصلی
+%──────────────────────────────────────────────────────────────────────────────
+\usepackage{amsmath,amssymb}
+\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgf-pie}           % برای نمودارهای دایره‌ای (\pie)
+\usepackage{tcolorbox}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{pdflscape}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{titlesec}
+\usepackage{etoolbox}
+
+%──────────────────────────────────────────────────────────────────────────────
+% تنظیمات صفحه
+%──────────────────────────────────────────────────────────────────────────────
+\geometry{
+    a4paper,
+    top=2.5cm,
+    bottom=2.5cm,
+    left=2.5cm,
+    right=3cm,
+    headheight=15pt,
+    bindingoffset=0.5cm
+}
+
+%──────────────────────────────────────────────────────────────────────────────
+% کتابخانه‌های TikZ و pgfplots
+%──────────────────────────────────────────────────────────────────────────────
+\usetikzlibrary{
+    shapes.geometric, 
+    arrows.meta, 
+    positioning, 
+    calc, 
+    decorations.pathreplacing, 
+    backgrounds,
+    fit,
+    matrix,
+    chains,
+    scopes,
+    shadows
+}
+\pgfplotsset{compat=1.18}
+\usepgfplotslibrary{polar}     % برای نمودارهای راداری (polaraxis)
+
+%──────────────────────────────────────────────────────────────────────────────
+% تعریف رنگ‌ها — پالت اصلی
+%──────────────────────────────────────────────────────────────────────────────
+% رنگ‌های اصلی
+\definecolor{bleurepublique}{RGB}{0, 85, 164}
+\definecolor{rougerevolution}{RGB}{190, 30, 45}
+\definecolor{orroyal}{RGB}{218, 165, 32}
+\definecolor{orroyaldark}{RGB}{184, 134, 11}
+\definecolor{vertnapoleon}{RGB}{0, 102, 51}
+\definecolor{violetempire}{RGB}{102, 51, 153}
+\definecolor{gris}{RGB}{128, 128, 128}
+
+% رنگ‌های روشن (پس‌زمینه کادرها)
+\definecolor{bleulight}{RGB}{230, 240, 250}
+\definecolor{rougelight}{RGB}{255, 230, 230}
+\definecolor{orroyallight}{RGB}{255, 248, 220}
+\definecolor{vertlight}{RGB}{230, 250, 230}
+\definecolor{violetlight}{RGB}{245, 235, 255}
+\definecolor{grislight}{RGB}{245, 245, 245}
+
+% رنگ‌های میانه (نمودارها)
+\definecolor{bleumid}{RGB}{100, 149, 237}
+\definecolor{rougemid}{RGB}{220, 100, 100}
+\definecolor{vertmid}{RGB}{100, 180, 100}
+\definecolor{violetmid}{RGB}{180, 140, 200}
+\definecolor{orroyalmid}{RGB}{238, 201, 0}
+
+% رنگ‌های فازها
+\definecolor{phase1}{RGB}{70, 130, 180}
+\definecolor{phase2}{RGB}{60, 179, 113}
+\definecolor{phase3}{RGB}{255, 165, 0}
+\definecolor{phase4}{RGB}{147, 112, 219}
+\definecolor{phase5}{RGB}{220, 20, 60}
+
+% ─── رنگ‌های معنایی پروژه (استفاده در پیوست‌ها و نمودارها) ──────────────────
+\definecolor{DemocracyBlue}{RGB}{41, 128, 185}
+\definecolor{SuccessGreen}{RGB}{39, 174, 96}
+\definecolor{WisdomGold}{RGB}{241, 196, 15}
+\definecolor{WarningRed}{RGB}{231, 76, 60}
+% نسخه‌های روشن‌تر (برای زیرمجموعه‌ها در استایل‌های پارامتری)
+\colorlet{lightSuccessGreen}{SuccessGreen!70}
+\colorlet{lightWisdomGold}{WisdomGold!70}
+% رنگ‌های ترکیبی از‌پیش‌ساخته (جلوگیری از خطای xcolor)
+\colorlet{darkyellow}{yellow!80!black}
+\colorlet{darkgreen}{green!60!black}
+
+% رنگ‌های اضافی برای نمودارها
+\definecolor{chart1}{RGB}{31, 119, 180}
+\definecolor{chart2}{RGB}{255, 127, 14}
+\definecolor{chart3}{RGB}{44, 160, 44}
+\definecolor{chart4}{RGB}{214, 39, 40}
+\definecolor{chart5}{RGB}{148, 103, 189}
+
+%──────────────────────────────────────────────────────────────────────────────
+% تنظیمات tcolorbox
+%──────────────────────────────────────────────────────────────────────────────
+\tcbuselibrary{skins, breakable}
+
+% کادر خلاصه فصل (آبی)
+\newtcolorbox{kholasebox}[1][]{
+    colback=bleulight,
+    colframe=bleurepublique,
+    fonttitle=\bfseries\large,
+    title={\hfill خلاصه فصل},
+    breakable,
+    enhanced,
+    boxrule=1.5pt,
+    arc=4pt,
+    left=12pt, right=12pt, top=12pt, bottom=12pt,
+    #1
+}
+
+% کادر نقل قول (طلایی)
+\newtcolorbox{naghlbox}[1][]{
+    colback=orroyallight,
+    colframe=orroyaldark,
+    fonttitle=\bfseries,
+    breakable,
+    enhanced,
+    boxrule=1pt,
+    arc=3pt,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    borderline west={4pt}{0pt}{orroyal},
+    #1
+}
+
+% کادر الگو و درس (سبز)
+\newtcolorbox{olgoobox}[1][]{
+    colback=vertlight,
+    colframe=vertnapoleon,
+    fonttitle=\bfseries,
+    title={\hfill \textbf{الگو و درس}},
+    breakable,
+    enhanced,
+    boxrule=1pt,
+    arc=3pt,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    #1
+}
+
+% کادر هشدار (قرمز)
+\newtcolorbox{enghelabbox}[1][]{
+    colback=rougelight,
+    colframe=rougerevolution,
+    fonttitle=\bfseries,
+    title={\hfill \textbf{هشدار}},
+    halign title=right,    
+    breakable,
+    enhanced,
+    boxrule=1.5pt,
+    arc=3pt,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    #1
+}
+
+% کادر تحلیل (بنفش)
+\newtcolorbox{tahlilbox}[1][]{
+    colback=violetlight,
+    colframe=violetempire,
+    fonttitle=\bfseries,
+    title={\hfill \textbf{تحلیل}},
+    breakable,
+    enhanced,
+    boxrule=1pt,
+    arc=3pt,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    #1
+}
+
+% کادر نکته (خاکستری)
+\newtcolorbox{noktebox}[1][]{
+    colback=grislight,
+    colframe=gris,
+    fonttitle=\bfseries,
+    breakable,
+    enhanced,
+    boxrule=1pt,
+    arc=3pt,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    #1
+}
+
+% کادر مورد مطالعاتی (آبی روشن)
+\newtcolorbox{casebox}[2][]{
+    colback=bleulight,
+    colframe=bleumid,
+    fonttitle=\bfseries,
+    title={\hfill \textbf{مورد مطالعاتی: #2}},
+    breakable,
+    enhanced,
+    boxrule=1pt,
+    arc=3pt,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    #1
+}
+
+% کادر داده‌های کلیدی
+\newtcolorbox{databox}[1][]{
+    colback=white,
+    colframe=bleurepublique,
+    fonttitle=\bfseries,
+    title={\hfill \textbf{داده‌های کلیدی}},
+    breakable,
+    enhanced,
+    boxrule=2pt,
+    arc=0pt,
+    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    #1
+}
+
+%──────────────────────────────────────────────────────────────────────────────
+% دستورات سفارشی برای جداول
+%──────────────────────────────────────────────────────────────────────────────
+\newcommand{\tablemark}{\cellcolor{bleulight}}
+\newcommand{\headmark}{\cellcolor{bleurepublique}\color{white}\bfseries}
+\newcommand{\rowmark}{\rowcolor{bleulight}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+%──────────────────────────────────────────────────────────────────────────────
+% نمادهای سفارشی
+%──────────────────────────────────────────────────────────────────────────────
+\newcommand{\yes}{\textcolor{vertnapoleon}{\checkmark}}
+\newcommand{\no}{\textcolor{rougerevolution}{$\times$}}
+\newcommand{\somewhat}{\textcolor{orroyal}{$\circ$}}
+
+% فازها
+\newcommand{\phmark}[1]{\textcolor{phase#1}{\textbf{فاز #1}}}
+
+%──────────────────────────────────────────────────────────────────────────────
+% تنظیمات سربرگ و پاورقی
+%──────────────────────────────────────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\small\nouppercase{\leftmark}}
+\fancyhead[RO]{\small\nouppercase{\rightmark}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% صفحه اول فصل‌ها
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+%──────────────────────────────────────────────────────────────────────────────
+% تنظیمات hyperref
+%──────────────────────────────────────────────────────────────────────────────
+\hypersetup{
+    colorlinks=true,
+    linkcolor=bleurepublique,
+    citecolor=vertnapoleon,
+    urlcolor=violetempire,
+    bookmarksnumbered=true,
+    pdfauthor={مهدی سالم},
+    pdftitle={از بحران تا بالندگی},
+    pdfsubject={طرح جامع تأسیس دموکراسی پایدار}
+}
+
+%──────────────────────────────────────────────────────────────────────────────
+% تنظیمات فاصله خطوط
+%──────────────────────────────────────────────────────────────────────────────
+\onehalfspacing
+
+%──────────────────────────────────────────────────────────────────────────────
+% نماد تیک (✓) برای جداول — جایگزین \mark
+%──────────────────────────────────────────────────────────────────────────────
+\newcommand{\cmark}{\textcolor{vertnapoleon}{\checkmark}}
+
+%──────────────────────────────────────────────────────────────────────────────
+% دستور منبع نقل‌قول
+%──────────────────────────────────────────────────────────────────────────────
+\newcommand{\sourceline}[1]{%
+    \par\vspace{4pt}%
+    \begin{flushleft}%
+    {\small\color{gris}— #1}%
+    \end{flushleft}%
+}
+
+%──────────────────────────────────────────────────────────────────────────────
+% محیط منابع فصل (جایگزین refsection بدون biblatex)
+%──────────────────────────────────────────────────────────────────────────────
+\newenvironment{refsection}{%
+    \begin{quote}%
+}{%
+    \end{quote}%
+}
+
+%──────────────────────────────────────────────────────────────────────────────
+% فونت و زبان فارسی (حتماً آخرین پکیج)
+%──────────────────────────────────────────────────────────────────────────────
+\usepackage{xepersian}
+\settextfont{Vazirmatn}
+\setdigitfont{Vazirmatn}
+% اگر Linux Libertine O نصب نیست، از Times New Roman استفاده می‌شود
+\IfFontExistsTF{Linux Libertine O}{%
+    \setlatintextfont{Linux Libertine O}%
+}{%
+    \IfFontExistsTF{Times New Roman}{%
+        \setlatintextfont{Times New Roman}%
+    }{%
+        \setlatintextfont{FreeSerif}%
+    }%
+}
+
+%──────────────────────────────────────────────────────────────────────────────
+% عنوان‌بندی فارسی
+%──────────────────────────────────────────────────────────────────────────────
+\renewcommand{\contentsname}{فهرست مطالب}
+\renewcommand{\listfigurename}{فهرست شکل‌ها}
+\renewcommand{\listtablename}{فهرست جدول‌ها}
+\renewcommand{\bibname}{کتابشناسی}
+\renewcommand{\indexname}{نمایه}
+\renewcommand{\figurename}{شکل}
+\renewcommand{\tablename}{جدول}
+\renewcommand{\partname}{بخش}
+\renewcommand{\chaptername}{فصل}
+\renewcommand{\appendixname}{پیوست}

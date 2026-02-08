@@ -1,0 +1,633 @@
+%══════════════════════════════════════════════════════════════════════════════
+% فصل ۵: درس‌های گذارهای ناموفق
+% از بحران تا بالندگی
+%══════════════════════════════════════════════════════════════════════════════
+
+\chapter{درس‌های گذارهای ناموفق}
+\label{ch:failure}
+
+%──────────────────────────────────────────────────────────────────────────────
+% کادر خلاصه فصل
+%──────────────────────────────────────────────────────────────────────────────
+\begin{kholasebox}
+این فصل پنج گذار ناموفق یا ناقص را بررسی می‌کند: عراق (۲۰۰۳-امروز)، لیبی (۲۰۱۱-امروز)، مصر (۲۰۱۱-۲۰۱۳)، یمن (۲۰۱۱-۲۰۱۵) و ونزوئلا (۱۹۹۹-امروز). هر یک به دلایل متفاوتی شکست خوردند: مداخله خارجی نادرست، فروپاشی نهادها، ناتوانی در ائتلاف‌سازی، پوپولیسم ویرانگر، یا ترکیبی از اینها. الگوهای مشترک شکست شامل: فقدان توافق نخبگان، تقسیمات عمیق اجتماعی، شکست اقتصادی، و مداخله خارجی مخرب است. مهم‌ترین درس: آنچه نباید کرد به اندازه آنچه باید کرد، آموزنده است.
+\end{kholasebox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{چرا شکست‌ها را مطالعه کنیم؟}
+\label{sec:why-failures}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{naghlbox}
+«تاریخ نه‌تنها از موفقیت‌ها، بلکه از شکست‌ها نیز درس می‌دهد — شاید بیشتر. دانستن آنچه نباید کرد، گاه مهم‌تر از دانستن آنچه باید کرد است.»
+
+\hfill --- جورج سانتایانا
+\end{naghlbox}
+
+\begin{table}[H]
+\centering
+\caption{مقایسه اجمالی پنج گذار ناموفق}
+\label{tab:five-failures}
+\begin{tabular}{L{2cm} C{2cm} L{3cm} L{3.5cm} C{2cm}}
+\toprule
+\headmark کشور & \headmark سال & \headmark نوع شکست & \headmark علت اصلی & \headmark وضعیت فعلی \\
+\midrule
+\rowcolor{rougelight}
+عراق & ۲۰۰۳ & دولت شکننده & مداخله خارجی + فرقه‌گرایی & بی‌ثبات \\
+\rowcolor{rougelight}
+لیبی & ۲۰۱۱ & فروپاشی & فقدان نهاد + قبیله‌گرایی & جنگ داخلی \\
+\rowcolor{orroyallight}
+مصر & ۲۰۱۱-۱۳ & بازگشت & شکست ائتلاف + اقتصاد & اقتدارگرایی \\
+\rowcolor{rougelight}
+یمن & ۲۰۱۱ & فروپاشی & گفتگو بدون پشتوانه & جنگ داخلی \\
+\rowcolor{orroyallight}
+ونزوئلا & ۱۹۹۹ & تحلیل تدریجی & پوپولیسم + نفرین نفت & بحران \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{عراق: فروپاشی نهادها و فرقه‌گرایی}
+\label{sec:iraq}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{اشتباهات کلیدی}
+
+\begin{enghelabbox}[title={\hfill \textbf{اشتباه مرگبار: انحلال ارتش و De-Ba'athification}}]
+پل برمر، حاکم آمریکایی عراق، دو تصمیم فاجعه‌بار گرفت:
+
+\begin{enumerate}[nosep]
+    \item \textbf{انحلال ارتش:} ۴۰۰,۰۰۰ نظامی مسلح و بیکار شدند — بسیاری به داعش پیوستند
+    \item \textbf{پاکسازی بعثی‌ها:} ۵۰۰,۰۰۰ کارمند دولتی اخراج شدند — دولت فلج شد
+\end{enumerate}
+
+\textbf{درس:} نهادها را نابود نکنید، اصلاح کنید. حتی نهادهای رژیم قبلی بهتر از هیچ‌اند.
+\end{enghelabbox}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    errorbox/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=3.5cm,
+        minimum height=1.3cm,
+        text centered,
+        font=\small,
+        draw=rougerevolution,
+        fill=rougelight,
+        line width=1pt
+    },
+    resultbox/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=3.5cm,
+        minimum height=1.3cm,
+        text centered,
+        font=\small,
+        draw=black,
+        fill=grislight,
+        line width=1pt
+    },
+    arrow/.style={->, >=Stealth, thick, color=rougerevolution}
+]
+
+% اشتباهات
+\node[errorbox] (e1) at (0,3) {انحلال ارتش};
+\node[errorbox] (e2) at (4.5,3) {پاکسازی بعثی‌ها};
+\node[errorbox] (e3) at (9,3) {تقسیم قدرت فرقه‌ای};
+
+% نتایج میانی
+\node[resultbox] (r1) at (0,0) {نظامیان مسلح بیکار};
+\node[resultbox] (r2) at (4.5,0) {فلج اداری};
+\node[resultbox] (r3) at (9,0) {تعمیق شکاف‌ها};
+
+% نتیجه نهایی
+\node[errorbox, minimum width=10cm, minimum height=1.5cm] (final) at (4.5,-3) {
+    \textbf{داعش + جنگ داخلی + دولت شکننده}
+};
+
+% فلش‌ها
+\draw[arrow] (e1) -- (r1);
+\draw[arrow] (e2) -- (r2);
+\draw[arrow] (e3) -- (r3);
+\draw[arrow] (r1) -- (final);
+\draw[arrow] (r2) -- (final);
+\draw[arrow] (r3) -- (final);
+
+\end{tikzpicture}
+\caption{زنجیره علّی شکست عراق}
+\label{fig:iraq-chain}
+\end{figure}
+
+\subsection{مشکل محاصصه فرقه‌ای}
+
+\begin{table}[H]
+\centering
+\caption{سیستم محاصصه در عراق}
+\label{tab:iraq-muhasasa}
+\begin{tabular}{L{3cm} L{2.5cm} L{7cm}}
+\toprule
+\headmark پست & \headmark سهم & \headmark مشکل \\
+\midrule
+\rowcolor{bleulight}
+رئیس‌جمهور & کُرد & نقش تشریفاتی — کُردها از حکومت مرکزی فاصله می‌گیرند \\
+نخست‌وزیر & شیعه & قدرت واقعی اینجاست — تنش دائمی با سُنی‌ها \\
+\rowcolor{bleulight}
+رئیس پارلمان & سُنی & سُنی‌ها احساس طرد و حاشیه‌نشینی می‌کنند \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{naghlbox}
+«محاصصه فرقه‌ای به جای حل مشکل، آن را نهادینه کرد. سیاستمداران انگیزه داشتند هویت فرقه‌ای را تقویت کنند چون کرسی‌شان به آن وابسته بود.»
+
+\hfill --- تحلیل‌گر سیاسی عراقی
+\end{naghlbox}
+
+\subsection{درس‌های عراق برای ما}
+
+\begin{table}[H]
+\centering
+\caption{چه نباید کرد: درس‌های عراق}
+\label{tab:iraq-lessons}
+\begin{tabular}{L{4cm} L{4.5cm} L{4cm}}
+\toprule
+\headmark اشتباه عراق & \headmark چرا اشتباه بود & \headmark جایگزین صحیح \\
+\midrule
+\rowcolor{rougelight}
+انحلال ارتش & نظامیان مسلح بیکار = شورشی & اصلاح تدریجی، بازآموزی \\
+\rowcolor{rougelight}
+پاکسازی گسترده & فلج اداری & پاکسازی محدود سران \\
+\rowcolor{rougelight}
+محاصصه فرقه‌ای & نهادینه کردن شکاف‌ها & سهمیه موقت + احزاب فراقومی \\
+\rowcolor{rougelight}
+مداخله بدون برنامه & فقدان استراتژی خروج & برنامه‌ریزی بلندمدت \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{لیبی: دولت‌سازی بدون ملت‌سازی}
+\label{sec:libya}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{میراث قذافی: فقدان نهاد}
+
+\begin{enghelabbox}[title={\hfill \textbf{مشکل بنیادین: کشور بدون دولت}}]
+معمر قذافی طی ۴۲ سال حکومت:
+\begin{itemize}[nosep]
+    \item هیچ نهاد دولتی واقعی نساخت — همه چیز شخصی بود
+    \item ارتش را عمداً ضعیف نگه داشت (ترس از کودتا)
+    \item جامعه مدنی را سرکوب کرد
+    \item بر قبیله‌گرایی تکیه کرد
+\end{itemize}
+
+\textbf{نتیجه:} وقتی قذافی سقوط کرد، هیچ چیزی برای ساختن روی آن وجود نداشت.
+\end{enghelabbox}
+
+\subsection{تکه‌تکه شدن}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    fragbox/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=3cm,
+        minimum height=1.2cm,
+        text centered,
+        font=\small,
+        line width=1pt
+    }
+]
+
+% قبل
+\node[fragbox, draw=gris, fill=grislight] (before) at (0,0) {
+    \begin{tabular}{c}
+    لیبی واحد\\
+    (تحت قذافی)
+    \end{tabular}
+};
+
+% بعد - تکه‌ها
+\node[fragbox, draw=rougerevolution, fill=rougelight] (f1) at (6,2) {دولت طرابلس};
+\node[fragbox, draw=rougerevolution, fill=rougelight] (f2) at (6,0) {دولت بنغازی};
+\node[fragbox, draw=rougerevolution, fill=rougelight] (f3) at (6,-2) {میلیشیاهای محلی};
+\node[fragbox, draw=orroyal, fill=orroyallight] (f4) at (10,1) {ژنرال حفتر};
+\node[fragbox, draw=orroyal, fill=orroyallight] (f5) at (10,-1) {قبایل جنوب};
+
+% فلش‌ها
+\draw[->, >=Stealth, very thick, color=rougerevolution] (before) -- node[above, font=\small] {سقوط ۲۰۱۱} (3,0);
+\draw[->, >=Stealth, thick, color=gris] (3,0) -- (f1);
+\draw[->, >=Stealth, thick, color=gris] (3,0) -- (f2);
+\draw[->, >=Stealth, thick, color=gris] (3,0) -- (f3);
+\draw[->, >=Stealth, thick, color=gris] (f1) -- (f4);
+\draw[->, >=Stealth, thick, color=gris] (f2) -- (f5);
+
+\end{tikzpicture}
+\caption{تکه‌تکه شدن لیبی پس از سقوط قذافی}
+\label{fig:libya-fragmentation}
+\end{figure}
+
+\subsection{درس‌های لیبی}
+
+\begin{table}[H]
+\centering
+\caption{درس‌های لیبی}
+\label{tab:libya-lessons}
+\begin{tabular}{L{4cm} L{8.5cm}}
+\toprule
+\headmark درس & \headmark توضیح \\
+\midrule
+\rowcolor{rougelight}
+نهادها مهم‌اند & بدون نهاد، حتی سقوط دیکتاتور به هرج‌ومرج منجر می‌شود \\
+\rowcolor{rougelight}
+مداخله ناقص خطرناک است & ناتو قذافی را سرنگون کرد اما برنامه‌ای برای بعد نداشت \\
+\rowcolor{rougelight}
+سلاح را کنترل کنید & میلیشیاهای مسلح = جنگ داخلی \\
+\rowcolor{rougelight}
+قبیله‌گرایی مهار شود & هویت‌های پیشامدرن در خلأ نهادی غالب می‌شوند \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{مصر: شکست ائتلاف و بازگشت نظامیان}
+\label{sec:egypt}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{چرا انقلاب ۲۰۱۱ شکست خورد؟}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=0.5cm,
+    eventbox/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=2.5cm,
+        minimum height=1.2cm,
+        text centered,
+        font=\scriptsize,
+        line width=1pt
+    }
+]
+
+% خط زمان
+\draw[line width=2pt, color=gris] (0,0) -- (14,0);
+
+% رویدادها
+\node[eventbox, draw=vertnapoleon, fill=vertlight, above] at (0,0.5) {
+    \begin{tabular}{c}
+    ژانویه ۲۰۱۱\\
+    انقلاب
+    \end{tabular}
+};
+
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (3.5,0.5) {
+    \begin{tabular}{c}
+    فوریه ۲۰۱۱\\
+    سقوط مبارک
+    \end{tabular}
+};
+
+\node[eventbox, draw=orroyal, fill=orroyallight, above] at (7,0.5) {
+    \begin{tabular}{c}
+    ژوئن ۲۰۱۲\\
+    مرسی رئیس‌جمهور
+    \end{tabular}
+};
+
+\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (10.5,0.5) {
+    \begin{tabular}{c}
+    ژوئیه ۲۰۱۳\\
+    کودتای سیسی
+    \end{tabular}
+};
+
+\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (14,0.5) {
+    \begin{tabular}{c}
+    ۲۰۱۴-امروز\\
+    اقتدارگرایی جدید
+    \end{tabular}
+};
+
+% نقاط
+\foreach \x in {0,3.5,7,10.5,14} {
+    \fill[black] (\x,0) circle (4pt);
+}
+
+\end{tikzpicture}
+\caption{خط زمانی شکست گذار مصر}
+\label{fig:egypt-timeline}
+\end{figure}
+
+\begin{enghelabbox}[title={\hfill \textbf{سه دلیل اصلی شکست مصر}}]
+\begin{enumerate}[nosep]
+    \item \textbf{شکست ائتلاف:} اخوان‌المسلمین و لیبرال‌ها نتوانستند همکاری کنند
+    \item \textbf{شکست اقتصادی:} معیشت مردم بدتر شد — صف نان طولانی‌تر
+    \item \textbf{ناتوانی در حکمرانی:} مرسی تجربه اداره کشور نداشت
+\end{enumerate}
+
+\textbf{نتیجه:} وقتی سیسی کودتا کرد، بسیاری از مردم (حتی انقلابیون) استقبال کردند.
+\end{enghelabbox}
+
+\begin{naghlbox}
+«ما فکر می‌کردیم دشمن ما فقط مبارک است. نفهمیدیم که دشمن واقعی، ناتوانی ما در ساختن ائتلاف و بهبود زندگی مردم بود.»
+
+\hfill --- فعال مصری، ۲۰۱۵
+\end{naghlbox}
+
+\subsection{درس کلیدی مصر}
+
+\begin{olgoobox}[title={\hfill \textbf{درس حیاتی برای ما}}]
+\textbf{مصر ثابت کرد که سرنگونی دیکتاتور کافی نیست.} شما باید:
+\begin{itemize}[nosep]
+    \item ائتلاف گسترده بسازید — حتی با کسانی که دوست‌شان ندارید
+    \item اقتصاد را مدیریت کنید — مردم نان می‌خواهند نه فقط آزادی
+    \item ظرفیت حکمرانی داشته باشید — ایده کافی نیست، باید بتوانید اجرا کنید
+    \item ارتش را مدیریت کنید — یا با شما باشد یا بی‌طرف
+\end{itemize}
+\end{olgoobox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{یمن: گفتگوی ملی بدون پشتوانه}
+\label{sec:yemen}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{چرا گفتگوی ملی یمن شکست خورد؟}
+
+یمن پس از ۲۰۱۱ یک «گفتگوی ملی» بسیار جامع برگزار کرد (۲۰۱۳-۲۰۱۴) با:
+\begin{itemize}[nosep]
+    \item ۵۶۵ نماینده از همه گروه‌ها
+    \item ۱۰ ماه مذاکره
+    \item توافق بر فدرالیسم ۶ منطقه‌ای
+\end{itemize}
+
+\textbf{اما شکست خورد چون:}
+
+\begin{table}[H]
+\centering
+\caption{دلایل شکست گفتگوی ملی یمن}
+\label{tab:yemen-failure}
+\begin{tabular}{C{1cm} L{4cm} L{7cm}}
+\toprule
+\headmark \# & \headmark دلیل & \headmark توضیح \\
+\midrule
+\rowcolor{rougelight}
+۱ & حوثی‌ها بیرون ماندند & گروه مسلح قدرتمند در فرآیند نبود \\
+\rowcolor{rougelight}
+۲ & پشتوانه نظامی نبود & هیچ نیرویی توافق را تضمین نمی‌کرد \\
+\rowcolor{rougelight}
+۳ & اقتصاد فروپاشید & مردم گرسنه بودند \\
+\rowcolor{rougelight}
+۴ & مداخله خارجی & عربستان و ایران وارد شدند \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{enghelabbox}[title={\hfill \textbf{درس یمن}}]
+\textbf{گفتگوی ملی بدون پشتوانه اجرایی، فقط کاغذ است.} شما باید:
+\begin{itemize}[nosep]
+    \item همه گروه‌های مسلح را پای میز بیاورید
+    \item مکانیزم اجرا داشته باشید
+    \item مداخله خارجی را مدیریت کنید
+    \item اقتصاد را فراموش نکنید
+\end{itemize}
+\end{enghelabbox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{ونزوئلا: پوپولیسم و نفرین منابع}
+\label{sec:venezuela}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{مسیر فروپاشی}
+
+ونزوئلا یک دموکراسی نسبتاً پایدار بود که از درون فروپاشید:
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    stagebox/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=3.5cm,
+        minimum height=1.5cm,
+        text centered,
+        font=\small,
+        line width=1pt
+    },
+    arrow/.style={->, >=Stealth, thick}
+]
+
+% مراحل
+\node[stagebox, draw=bleurepublique, fill=bleulight] (s1) at (0,0) {
+    \begin{tabular}{c}
+    ۱۹۵۸-۱۹۹۸\\
+    دموکراسی نفتی
+    \end{tabular}
+};
+
+\node[stagebox, draw=orroyal, fill=orroyallight] (s2) at (5,0) {
+    \begin{tabular}{c}
+    ۱۹۹۹-۲۰۱۳\\
+    چاوز: پوپولیسم
+    \end{tabular}
+};
+
+\node[stagebox, draw=rougerevolution, fill=rougelight] (s3) at (10,0) {
+    \begin{tabular}{c}
+    ۲۰۱۳-امروز\\
+    مادورو: فروپاشی
+    \end{tabular}
+};
+
+% فلش‌ها
+\draw[arrow, color=orroyal] (s1) -- node[above, font=\scriptsize] {فساد + نابرابری} (s2);
+\draw[arrow, color=rougerevolution] (s2) -- node[above, font=\scriptsize] {سقوط قیمت نفت} (s3);
+
+% شاخص‌ها زیر
+\node[font=\scriptsize, text width=3cm, align=center, below=0.5cm of s1] {
+    GDP بالا\\
+    نابرابری بالا
+};
+\node[font=\scriptsize, text width=3cm, align=center, below=0.5cm of s2] {
+    کاهش فقر\\
+    تخریب نهادها
+};
+\node[font=\scriptsize, text width=3cm, align=center, below=0.5cm of s3] {
+    تورم ۱,۰۰۰,۰۰۰٪\\
+    مهاجرت ۷ میلیون
+};
+
+\end{tikzpicture}
+\caption{مسیر فروپاشی ونزوئلا}
+\label{fig:venezuela-path}
+\end{figure}
+
+\begin{enghelabbox}[title={\hfill \textbf{دام ونزوئلایی}}]
+چاوز با درآمد نفت:
+\begin{itemize}[nosep]
+    \item برنامه‌های اجتماعی گسترده اجرا کرد — فقر کاهش یافت
+    \item اما نهادها را تخریب کرد — قوه قضائیه، بانک مرکزی، رسانه
+    \item اقتصاد را متنوع نکرد — ۹۵٪ صادرات = نفت
+    \item وقتی قیمت نفت سقوط کرد، همه چیز فروپاشید
+\end{itemize}
+
+\textbf{درس:} پوپولیسم نفتی می‌تواند کوتاه‌مدت محبوب باشد، اما بدون نهادسازی و تنوع اقتصادی، فاجعه‌بار است.
+\end{enghelabbox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{الگوهای مشترک شکست}
+\label{sec:failure-patterns}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    factor/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3.5cm,
+        minimum height=1.5cm,
+        text centered,
+        font=\small,
+        draw=rougerevolution,
+        fill=rougelight,
+        line width=1.5pt
+    },
+    center/.style={
+        circle,
+        minimum size=3cm,
+        text centered,
+        font=\small\bfseries,
+        draw=black,
+        fill=grislight,
+        line width=2pt
+    }
+]
+
+% مرکز
+\node[center] (c) at (0,0) {
+    \begin{tabular}{c}
+    گذار\\
+    ناموفق
+    \end{tabular}
+};
+
+% عوامل
+\node[factor] (f1) at (90:4.5cm) {
+    \begin{tabular}{c}
+    فقدان توافق\\
+    {\scriptsize نخبگان متفرق}
+    \end{tabular}
+};
+
+\node[factor] (f2) at (30:4.5cm) {
+    \begin{tabular}{c}
+    شکست اقتصادی\\
+    {\scriptsize معیشت بدتر}
+    \end{tabular}
+};
+
+\node[factor] (f3) at (330:4.5cm) {
+    \begin{tabular}{c}
+    مداخله خارجی مخرب\\
+    {\scriptsize بدون برنامه}
+    \end{tabular}
+};
+
+\node[factor] (f4) at (270:4.5cm) {
+    \begin{tabular}{c}
+    فروپاشی نهادها\\
+    {\scriptsize بدون جایگزین}
+    \end{tabular}
+};
+
+\node[factor] (f5) at (210:4.5cm) {
+    \begin{tabular}{c}
+    تقسیمات عمیق\\
+    {\scriptsize قومی/فرقه‌ای}
+    \end{tabular}
+};
+
+\node[factor] (f6) at (150:4.5cm) {
+    \begin{tabular}{c}
+    گروه‌های مسلح\\
+    {\scriptsize خارج از کنترل}
+    \end{tabular}
+};
+
+% اتصالات
+\foreach \f in {f1,f2,f3,f4,f5,f6} {
+    \draw[->, >=Stealth, thick, color=rougerevolution] (\f) -- (c);
+}
+
+\end{tikzpicture}
+\caption{شش عامل مشترک گذارهای ناموفق}
+\label{fig:failure-factors}
+\end{figure}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{چک‌لیست: آنچه نباید کرد}
+\label{sec:donts-checklist}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{table}[H]
+\centering
+\caption{چک‌لیست جامع اشتباهات قابل اجتناب}
+\label{tab:donts-checklist}
+\begin{tabular}{C{1cm} L{5cm} L{3.5cm} L{3.5cm}}
+\toprule
+\headmark \# & \headmark اشتباه & \headmark نمونه & \headmark جایگزین \\
+\midrule
+\rowcolor{rougelight}
+۱ & انحلال نهادهای موجود & عراق & اصلاح تدریجی \\
+\rowcolor{rougelight}
+۲ & پاکسازی گسترده & عراق & پاکسازی محدود سران \\
+\rowcolor{rougelight}
+۳ & نهادینه کردن شکاف‌ها & عراق، لبنان & سهمیه موقت + فراگیری \\
+\rowcolor{rougelight}
+۴ & فراموش کردن اقتصاد & مصر، یمن & بهبود معیشت فوری \\
+\rowcolor{rougelight}
+۵ & طرد گروه‌های مسلح & یمن & آوردن همه پای میز \\
+\rowcolor{rougelight}
+۶ & مداخله بدون برنامه & لیبی & برنامه بلندمدت \\
+\rowcolor{rougelight}
+۷ & پوپولیسم نفتی & ونزوئلا & نهادسازی + تنوع اقتصادی \\
+\rowcolor{rougelight}
+۸ & تخریب نهادهای نظارتی & ونزوئلا & تقویت نظارت \\
+\rowcolor{rougelight}
+۹ & انتظار نتیجه فوری & همه & صبر استراتژیک \\
+\rowcolor{rougelight}
+۱۰ & تقلید کورکورانه & همه & بومی‌سازی خلاقانه \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section*{منابع فصل}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{enumerate}[nosep, label={[\arabic*]}]
+    \item Dodge, T. (2012). \textit{Iraq: From War to a New Authoritarianism}. Routledge.
+    
+    \item Wehrey, F. (2018). \textit{The Burning Shores: Inside the Battle for the New Libya}. FSG.
+    
+    \item Kandil, H. (2015). \textit{Inside the Brotherhood}. Polity Press.
+    
+    \item Lackner, H. (2017). \textit{Yemen in Crisis}. Saqi Books.
+    
+    \item Corrales, J. \& Penfold, M. (2011). \textit{Dragon in the Tropics: Hugo Chavez}. Brookings.
+    
+    \item Diamond, L. (2015). "Facing Up to the Democratic Recession." \textit{Journal of Democracy}, 26(1).
+    
+    \item Brownlee, J. et al. (2015). \textit{The Arab Spring: Pathways of Repression and Reform}. Oxford.
+    
+    \item Brancati, D. (2016). \textit{Democracy Protests}. Cambridge University Press.
+\end{enumerate}

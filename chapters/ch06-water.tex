@@ -1,0 +1,490 @@
+%══════════════════════════════════════════════════════════════════════════════
+% فصل ۶: درس‌های مدیریت بحران آب
+% از بحران تا بالندگی
+%══════════════════════════════════════════════════════════════════════════════
+
+\chapter{درس‌های مدیریت بحران آب}
+\label{ch:water}
+
+%──────────────────────────────────────────────────────────────────────────────
+% کادر خلاصه فصل
+%──────────────────────────────────────────────────────────────────────────────
+\begin{kholasebox}
+این فصل تجارب موفق جهانی در مدیریت بحران آب را بررسی می‌کند: اسرائیل (از کمبود به صادرات فناوری)، سنگاپور (چهار شیر ملی)، استرالیا (مدیریت خشکسالی هزاره)، و اسپانیا (انتقال آب و تنش‌ها). درس‌های کلیدی شامل: مدیریت تقاضا مهم‌تر از افزایش عرضه است؛ قیمت‌گذاری واقعی ضروری است؛ فناوری‌های جدید (شیرین‌سازی، بازچرخانی) تحول‌آفرین‌اند؛ و حکمرانی آب باید یکپارچه باشد. برای کشور ما که با فروپاشی سفره‌های زیرزمینی مواجه است، این تجارب راهگشایند.
+\end{kholasebox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{چرا مدیریت آب حیاتی است؟}
+\label{sec:water-importance}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{enghelabbox}[title={\hfill \textbf{یادآوری: بحران آب ما}}]
+همان‌طور که در فصل ۲ دیدیم:
+\begin{itemize}[nosep]
+    \item ۷۰٪ سفره‌های زیرزمینی در وضعیت بحرانی یا ممنوعه
+    \item برداشت مازاد سالانه: ۷+ میلیارد مترمکعب
+    \item ۹۰٪ مصرف آب: کشاورزی (اغلب ناکارآمد)
+    \item بدون اقدام: ۳۰-۵۰ میلیون آواره اقلیمی تا ۲۰۴۰
+\end{itemize}
+
+این فصل نشان می‌دهد که \textbf{راه‌حل وجود دارد} — اگر اراده سیاسی باشد.
+\end{enghelabbox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{اسرائیل: از کمبود به فراوانی}
+\label{sec:israel-water}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{معجزه آب اسرائیل}
+
+اسرائیل کشوری است که ۶۰٪ آن بیابان است، اما امروز:
+\begin{itemize}[nosep]
+    \item صادرکننده محصولات کشاورزی است
+    \item صادرکننده فناوری آب به ۱۵۰ کشور است
+    \item مازاد آب دارد و به همسایگان می‌فروشد
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=13cm,
+    height=7cm,
+    xlabel={سال},
+    ylabel={میلیون مترمکعب در سال},
+    xmin=1960, xmax=2025,
+    ymin=0, ymax=2500,
+    legend style={at={(0.02,0.98)}, anchor=north west},
+    grid=both,
+    grid style={line width=0.2pt, draw=gray!30}
+]
+
+% منابع سنتی
+\addplot[color=bleurepublique, very thick, mark=*] coordinates {
+    (1960,1400) (1970,1500) (1980,1600) (1990,1650) (2000,1600) (2010,1500) (2020,1400)
+};
+
+% شیرین‌سازی
+\addplot[color=vertnapoleon, very thick, mark=square*] coordinates {
+    (1960,0) (1970,0) (1980,0) (1990,0) (2000,50) (2010,300) (2020,700)
+};
+
+% بازچرخانی
+\addplot[color=orroyal, very thick, mark=triangle*] coordinates {
+    (1960,0) (1970,50) (1980,100) (1990,200) (2000,300) (2010,450) (2020,600)
+};
+
+\legend{منابع طبیعی, شیرین‌سازی, بازچرخانی فاضلاب}
+
+\end{axis}
+\end{tikzpicture}
+\caption{تحول ترکیب منابع آب اسرائیل}
+\label{fig:israel-water-sources}
+\end{figure}
+
+\subsection{چهار ستون موفقیت اسرائیل}
+
+\begin{olgoobox}[title={\hfill \textbf{الگوی اسرائیل}}]
+\begin{enumerate}[nosep]
+    \item \textbf{آبیاری قطره‌ای:} اختراع اسرائیلی — ۹۰٪ صرفه‌جویی در آب کشاورزی
+    \item \textbf{شیرین‌سازی:} ۵ کارخانه بزرگ — ۷۰٪ آب شرب
+    \item \textbf{بازچرخانی فاضلاب:} ۸۷٪ فاضلاب بازچرخانی می‌شود (رتبه اول جهان)
+    \item \textbf{قیمت‌گذاری واقعی:} آب ارزان نیست — انگیزه صرفه‌جویی
+\end{enumerate}
+\end{olgoobox}
+
+\begin{table}[H]
+\centering
+\caption{مقایسه شاخص‌های آب: اسرائیل و کشور ما}
+\label{tab:israel-comparison}
+\begin{tabular}{L{5cm} C{3cm} C{3cm}}
+\toprule
+\headmark شاخص & \headmark اسرائیل & \headmark کشور ما \\
+\midrule
+\rowcolor{vertlight}
+بارش سالانه (میلیمتر) & ۵۰۰ & ۲۵۰ \\
+\rowcolor{rougelight}
+بازچرخانی فاضلاب & ۸۷٪ & کمتر از ۱۰٪ \\
+\rowcolor{vertlight}
+آبیاری قطره‌ای/بارانی & ۷۵٪ اراضی & کمتر از ۱۵٪ \\
+\rowcolor{rougelight}
+اتلاف در شبکه توزیع & ۱۰٪ & ۳۰٪+ \\
+\rowcolor{vertlight}
+شیرین‌سازی & ۷۰٪ آب شرب & نزدیک صفر \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{درس‌های اسرائیل}
+
+\begin{table}[H]
+\centering
+\caption{درس‌های قابل انتقال از اسرائیل}
+\label{tab:israel-lessons}
+\begin{tabular}{L{3.5cm} L{4.5cm} L{4.5cm}}
+\toprule
+\headmark درس & \headmark کاربرد & \headmark چالش اجرا \\
+\midrule
+\rowcolor{vertlight}
+آبیاری قطره‌ای & تغییر الگوی آبیاری & سرمایه اولیه بالا \\
+\rowcolor{vertlight}
+شیرین‌سازی & مناطق ساحلی جنوب & هزینه انرژی \\
+\rowcolor{vertlight}
+بازچرخانی فاضلاب & همه شهرهای بزرگ & زیرساخت + پذیرش فرهنگی \\
+\rowcolor{bleulight}
+قیمت‌گذاری واقعی & کاهش مصرف ناکارآمد & مقاومت سیاسی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{سنگاپور: چهار شیر ملی}
+\label{sec:singapore-water}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{چالش سنگاپور}
+
+سنگاپور جزیره کوچکی است با:
+\begin{itemize}[nosep]
+    \item ۷۲۰ کیلومتر مربع مساحت
+    \item ۵.۵ میلیون جمعیت
+    \item بدون رودخانه یا دریاچه مهم
+    \item تا ۱۹۶۵: ۱۰۰٪ وابسته به واردات آب از مالزی
+\end{itemize}
+
+\subsection{استراتژی چهار شیر ملی}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=2cm,
+    tapbox/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3.5cm,
+        minimum height=2cm,
+        text centered,
+        font=\small,
+        line width=1.5pt
+    }
+]
+
+% چهار شیر
+\node[tapbox, draw=bleurepublique, fill=bleulight] (t1) at (0,0) {
+    \begin{tabular}{c}
+    \textbf{شیر ۱}\\[3pt]
+    آب وارداتی\\
+    {\scriptsize از مالزی}\\[3pt]
+    {\footnotesize ۴۰٪}
+    \end{tabular}
+};
+
+\node[tapbox, draw=vertnapoleon, fill=vertlight] (t2) at (5,0) {
+    \begin{tabular}{c}
+    \textbf{شیر ۲}\\[3pt]
+    جمع‌آوری باران\\
+    {\scriptsize ۱۷ مخزن}\\[3pt]
+    {\footnotesize ۲۰٪}
+    \end{tabular}
+};
+
+\node[tapbox, draw=violetempire, fill=violetlight] (t3) at (10,0) {
+    \begin{tabular}{c}
+    \textbf{شیر ۳}\\[3pt]
+    NEWater\\
+    {\scriptsize بازچرخانی}\\[3pt]
+    {\footnotesize ۳۰٪}
+    \end{tabular}
+};
+
+\node[tapbox, draw=orroyal, fill=orroyallight] (t4) at (15,0) {
+    \begin{tabular}{c}
+    \textbf{شیر ۴}\\[3pt]
+    شیرین‌سازی\\
+    {\scriptsize دریا}\\[3pt]
+    {\footnotesize ۱۰٪}
+    \end{tabular}
+};
+
+% هدف آینده
+\node[font=\small, text width=12cm, align=center] at (7.5,-2.5) {
+    \textbf{هدف ۲۰۶۰:} کاهش وابستگی به مالزی به صفر\\
+    NEWater: ۵۵٪ | شیرین‌سازی: ۲۵٪ | جمع‌آوری باران: ۲۰٪
+};
+
+\end{tikzpicture}
+\caption{استراتژی چهار شیر ملی سنگاپور}
+\label{fig:singapore-taps}
+\end{figure}
+
+\begin{olgoobox}[title={\hfill \textbf{NEWater: انقلاب بازچرخانی}}]
+NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است:
+\begin{itemize}[nosep]
+    \item سه مرحله تصفیه: میکروفیلتراسیون + اسمز معکوس + UV
+    \item کیفیت بالاتر از استانداردهای آب آشامیدنی WHO
+    \item مصرف: صنعت (wafer fabrication) + مخلوط با آب آشامیدنی
+    \item پذیرش عمومی: کمپین آموزشی گسترده + بازدید از کارخانه
+\end{itemize}
+
+\textbf{درس:} با فناوری و آموزش، حتی بازچرخانی فاضلاب قابل پذیرش است.
+\end{olgoobox}
+
+\subsection{درس‌های سنگاپور}
+
+\begin{table}[H]
+\centering
+\caption{درس‌های قابل انتقال از سنگاپور}
+\label{tab:singapore-lessons}
+\begin{tabular}{L{4cm} L{8.5cm}}
+\toprule
+\headmark درس & \headmark توضیح \\
+\midrule
+\rowcolor{vertlight}
+تنوع منابع & وابستگی به یک منبع = آسیب‌پذیری \\
+\rowcolor{vertlight}
+بازچرخانی پیشرفته & با فناوری، فاضلاب به آب آشامیدنی تبدیل می‌شود \\
+\rowcolor{vertlight}
+آموزش عمومی & پذیرش فرهنگی به اندازه فناوری مهم است \\
+\rowcolor{vertlight}
+افق بلندمدت & برنامه‌ریزی ۵۰ ساله — نه فقط برای انتخابات بعدی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{استرالیا: مدیریت خشکسالی هزاره}
+\label{sec:australia-water}
+%══════════════════════════════════════════════════════════════════════════════
+
+\subsection{بحران Murray-Darling}
+
+حوضه Murray-Darling سبد غذایی استرالیا است، اما خشکسالی ۱۹۹۷-۲۰۱۰ آن را به بحران کشاند:
+\begin{itemize}[nosep]
+    \item کاهش ۷۰٪ جریان رودخانه
+    \item ورشکستگی هزاران کشاورز
+    \item مرگ اکوسیستم‌های آبی
+\end{itemize}
+
+\subsection{راه‌حل: بازار آب}
+
+\begin{olgoobox}[title={\hfill \textbf{الگوی استرالیا: حقوق قابل معامله آب}}]
+استرالیا «حقوق آب» را از «زمین» جدا کرد:
+\begin{itemize}[nosep]
+    \item کشاورزان سهمی از آب دارند (نه آب نامحدود)
+    \item می‌توانند این سهم را بفروشند یا بخرند
+    \item قیمت بازاری تعیین می‌شود — کمیابی منعکس می‌شود
+    \item کسانی که آب را کارآمدتر مصرف می‌کنند، سود می‌برند
+\end{itemize}
+
+\textbf{نتیجه:} آب به سمت مصارف با ارزش بالاتر رفت. صرفه‌جویی ۳۰٪.
+\end{olgoobox}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    box/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=4cm,
+        minimum height=1.5cm,
+        text centered,
+        font=\small,
+        line width=1pt
+    },
+    arrow/.style={->, >=Stealth, thick}
+]
+
+% قبل
+\node[box, draw=rougerevolution, fill=rougelight] (b1) at (0,0) {
+    \begin{tabular}{c}
+    \textbf{قبل}\\
+    آب = حق نامحدود\\
+    هدررفت گسترده
+    \end{tabular}
+};
+
+% بعد
+\node[box, draw=vertnapoleon, fill=vertlight] (b2) at (8,0) {
+    \begin{tabular}{c}
+    \textbf{بعد}\\
+    آب = دارایی قابل معامله\\
+    مصرف کارآمد
+    \end{tabular}
+};
+
+% فلش
+\draw[arrow, very thick, color=bleurepublique] (b1) -- node[above, font=\small] {اصلاحات ۲۰۰۴-۲۰۰۷} (b2);
+
+\end{tikzpicture}
+\caption{تحول مدل حکمرانی آب در استرالیا}
+\label{fig:australia-reform}
+\end{figure}
+
+\subsection{درس‌های استرالیا}
+
+\begin{table}[H]
+\centering
+\caption{درس‌های قابل انتقال از استرالیا}
+\label{tab:australia-lessons}
+\begin{tabular}{L{4cm} L{4.5cm} L{4cm}}
+\toprule
+\headmark درس & \headmark کاربرد & \headmark چالش \\
+\midrule
+\rowcolor{vertlight}
+بازار آب & تخصیص کارآمد & نیاز به حقوق مالکیت روشن \\
+\rowcolor{vertlight}
+سقف برداشت & جلوگیری از تخلیه بیش از حد & مقاومت کشاورزان \\
+\rowcolor{bleulight}
+جبران کشاورزان & خرید حقوق آب توسط دولت & هزینه بالا \\
+\rowcolor{bleulight}
+نظارت دقیق & کنتورهای هوشمند & زیرساخت \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{جمع‌بندی: اصول جهانی مدیریت پایدار آب}
+\label{sec:water-principles}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[
+    node distance=1.5cm,
+    principle/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=4cm,
+        minimum height=1.8cm,
+        text centered,
+        font=\small,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt
+    }
+]
+
+% اصول
+\node[principle] (p1) at (0,3) {
+    \begin{tabular}{c}
+    \textbf{۱. مدیریت تقاضا}\\
+    {\scriptsize مهم‌تر از افزایش عرضه}
+    \end{tabular}
+};
+
+\node[principle] (p2) at (6,3) {
+    \begin{tabular}{c}
+    \textbf{۲. قیمت‌گذاری واقعی}\\
+    {\scriptsize آب رایگان = هدررفت}
+    \end{tabular}
+};
+
+\node[principle] (p3) at (12,3) {
+    \begin{tabular}{c}
+    \textbf{۳. تنوع منابع}\\
+    {\scriptsize وابستگی به یک منبع = ریسک}
+    \end{tabular}
+};
+
+\node[principle] (p4) at (0,0) {
+    \begin{tabular}{c}
+    \textbf{۴. فناوری}\\
+    {\scriptsize شیرین‌سازی + بازچرخانی}
+    \end{tabular}
+};
+
+\node[principle] (p5) at (6,0) {
+    \begin{tabular}{c}
+    \textbf{۵. حکمرانی یکپارچه}\\
+    {\scriptsize یک نهاد مسئول}
+    \end{tabular}
+};
+
+\node[principle] (p6) at (12,0) {
+    \begin{tabular}{c}
+    \textbf{۶. مشارکت محلی}\\
+    {\scriptsize ذینفعان در تصمیم‌گیری}
+    \end{tabular}
+};
+
+% مرکز
+\node[circle, minimum size=2.5cm, draw=vertnapoleon, fill=vertlight, line width=2pt] at (6,-3) {
+    \begin{tabular}{c}
+    \textbf{آب}\\
+    \textbf{پایدار}
+    \end{tabular}
+};
+
+% اتصالات
+\foreach \p in {p1,p2,p3,p4,p5,p6} {
+    \draw[->, >=Stealth, thick, color=vertnapoleon] (\p) -- (6,-1.5);
+}
+
+\end{tikzpicture}
+\caption{شش اصل جهانی مدیریت پایدار آب}
+\label{fig:water-principles}
+\end{figure}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section{کاربرد برای کشور ما}
+\label{sec:water-application}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{table}[H]
+\centering
+\caption{برنامه پیشنهادی مدیریت آب بر اساس تجارب جهانی}
+\label{tab:water-plan}
+\small
+\begin{tabular}{L{3cm} L{4cm} L{3.5cm} C{2cm}}
+\toprule
+\headmark اقدام & \headmark الگوی جهانی & \headmark اولویت مکانی & \headmark فاز \\
+\midrule
+\rowcolor{bleulight}
+کاهش اتلاف شبکه & همه کشورها & شهرهای بزرگ & ۱ \\
+تغییر الگوی کشت & اسرائیل، استرالیا & مناطق بحرانی & ۱-۲ \\
+\rowcolor{bleulight}
+آبیاری قطره‌ای & اسرائیل & دشت‌های مرکزی & ۱-۳ \\
+بازچرخانی فاضلاب & سنگاپور، اسرائیل & شهرهای بزرگ & ۲-۳ \\
+\rowcolor{bleulight}
+شیرین‌سازی & اسرائیل، سنگاپور & ساحل جنوب & ۲-۴ \\
+بازار حقوق آب & استرالیا & حوضه‌های بحرانی & ۳-۴ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{tahlilbox}[title={\hfill \textbf{نتیجه‌گیری}}]
+بحران آب ما قابل حل است — اگر:
+\begin{enumerate}[nosep]
+    \item \textbf{اراده سیاسی} باشد: تصمیمات سخت گرفته شود
+    \item \textbf{مدیریت تقاضا} اولویت باشد: نه فقط سد و انتقال
+    \item \textbf{قیمت‌گذاری} واقعی شود: یارانه هدفمند به فقرا
+    \item \textbf{فناوری} وارد شود: بازچرخانی و شیرین‌سازی
+    \item \textbf{کشاورزی} متحول شود: تغییر الگوی کشت و آبیاری
+    \item \textbf{حکمرانی} یکپارچه باشد: یک نهاد مسئول
+\end{enumerate}
+
+کشورهایی با شرایط بدتر از ما (اسرائیل، سنگاپور) موفق شدند. ما هم می‌توانیم.
+\end{tahlilbox}
+
+%══════════════════════════════════════════════════════════════════════════════
+\section*{منابع فصل}
+%══════════════════════════════════════════════════════════════════════════════
+
+\begin{enumerate}[nosep, label={[\arabic*]}]
+    \item Siegel, S. (2015). \textit{Let There Be Water: Israel's Solution for a Water-Starved World}. Thomas Dunne.
+    
+    \item Tortajada, C. et al. (2013). \textit{The Singapore Water Story}. Routledge.
+    
+    \item Grafton, R.Q. et al. (2011). "Determinants of Residential Water Consumption." \textit{Land Economics}, 87(4).
+    
+    \item World Bank. (2017). \textit{Water Scarce Cities: Thriving in a Finite World}. WB Publications.
+    
+    \item FAO. (2020). \textit{The State of Food and Agriculture: Water}. Rome: FAO.
+    
+    \item Gleick, P. (2014). \textit{The World's Water Volume 8}. Island Press.
+    
+    \item OECD. (2015). \textit{Water and Cities: Ensuring Sustainable Futures}. OECD Publishing.
+    
+    \item PUB Singapore. (2023). \textit{Our Water, Our Future}. pub.gov.sg.
+\end{enumerate}

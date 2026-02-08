@@ -1,0 +1,1750 @@
+%═══════════════════════════════════════════════════════════════════════════════
+% فصل ۹: فاز ۲ — نهادسازی (سال ۳-۵)
+% فایل: chapters/ch09-phase2.tex
+%═══════════════════════════════════════════════════════════════════════════════
+
+\chapter{فاز ۲: نهادسازی (سال ۳-۵)}
+\label{chap:phase2}
+
+\begin{kholasebox}
+\textbf{خلاصه فصل:}
+فاز دوم گذار به ساختن نهادهای پایدار دموکراتیک اختصاص دارد. در این سه سال، قانون اساسی جدید اجرایی می‌شود، ساختار فدرالی کشور شکل می‌گیرد، قوه قضائیه مستقل بنا می‌شود، نظام آموزشی بازسازی می‌گردد، و جامعه مدنی تقویت می‌شود. این فصل نقشه راه تفصیلی نهادسازی را با تأکید بر تجربه کشورهایی که در این فاز موفق بودند (آلمان، ژاپن، اسپانیا) ارائه می‌دهد. چالش اصلی این دوره، تبدیل وعده‌های قانون اساسی به واقعیت‌های نهادی است.
+\end{kholasebox}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{مقدمه: از قانون تا نهاد}
+\label{sec:phase2-intro}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{naghlbox}
+«قانون اساسی کاغذی است اگر نهادهایی برای اجرایش وجود نداشته باشد. نهادها استخوان‌بندی دموکراسی‌اند؛ بدون آن‌ها، دموکراسی تنها شعار است.»
+\sourceline{داگلاس نورث، برنده نوبل اقتصاد}
+\end{naghlbox}
+
+با پایان فاز اول، ایران دارای قانون اساسی جدید و دولت منتخب است. اما این تازه آغاز راه است. تجربه جهانی نشان می‌دهد که بسیاری از کشورها قانون اساسی دموکراتیک دارند اما دموکراسی واقعی ندارند. تفاوت در \textbf{نهادسازی} است.
+
+\subsection{تعریف نهاد}
+
+\begin{olgoobox}
+\textbf{نهاد چیست؟}
+
+نهاد (Institution) مجموعه‌ای از قواعد، رویه‌ها، و سازمان‌هاست که:
+\begin{itemize}[nosep]
+    \item رفتار افراد و گروه‌ها را شکل می‌دهد
+    \item پایدار و مستقل از افراد خاص است
+    \item خودتقویت‌کننده است (نقض آن هزینه دارد)
+    \item مشروعیت اجتماعی دارد
+\end{itemize}
+
+\textbf{مثال:} دادگاه قانون اساسی یک نهاد است — فراتر از قضات فعلی، با رویه‌های مشخص، و مورد احترام جامعه.
+\end{olgoobox}
+
+\subsection{اولویت‌های نهادسازی فاز دوم}
+
+% نمودار اولویت‌های نهادسازی
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    priority/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3.2cm,
+        minimum height=1.4cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\small\bfseries,
+        align=center
+    }
+]
+
+% ستون اول - اولویت حیاتی
+\node[font=\bfseries, text=red!70] at (0,4) {اولویت حیاتی};
+\node[priority=red] (p1) at (0,2.5) {
+    \begin{tabular}{c}
+    استقلال\\
+    قوه قضائیه
+    \end{tabular}
+};
+\node[priority=red] (p2) at (0,0.5) {
+    \begin{tabular}{c}
+    نظام فدرالی\\
+    و استان‌ها
+    \end{tabular}
+};
+
+% ستون دوم - اولویت بالا
+\node[font=\bfseries, text=orange!70] at (4.5,4) {اولویت بالا};
+\node[priority=orange] (p3) at (4.5,2.5) {
+    \begin{tabular}{c}
+    نهادهای\\
+    نظارتی مستقل
+    \end{tabular}
+};
+\node[priority=orange] (p4) at (4.5,0.5) {
+    \begin{tabular}{c}
+    اصلاح نظام\\
+    آموزشی
+    \end{tabular}
+};
+
+% ستون سوم - اولویت متوسط
+\node[font=\bfseries, text=yellow!70!black] at (9,4) {اولویت متوسط};
+\node[priority=yellow] (p5) at (9,2.5) {
+    \begin{tabular}{c}
+    تقویت\\
+    جامعه مدنی
+    \end{tabular}
+};
+\node[priority=yellow] (p6) at (9,0.5) {
+    \begin{tabular}{c}
+    اصلاح\\
+    بوروکراسی
+    \end{tabular}
+};
+
+% ستون چهارم - در حال انجام
+\node[font=\bfseries, text=green!70!black] at (13.5,4) {تداوم از فاز ۱};
+\node[priority=green] (p7) at (13.5,2.5) {
+    \begin{tabular}{c}
+    رفع تحریم\\
+    و بازسازی اقتصاد
+    \end{tabular}
+};
+\node[priority=green] (p8) at (13.5,0.5) {
+    \begin{tabular}{c}
+    عدالت\\
+    انتقالی
+    \end{tabular}
+};
+
+% خط پایه
+\draw[thick, gray!40] (-1.5,-0.8) -- (15,-0.8);
+\node[below, font=\small, text=gray] at (6.75,-1.2) {سال ۳ تا ۵ پس از گذار};
+
+\end{tikzpicture}
+\caption{اولویت‌بندی نهادسازی در فاز دوم}
+\label{fig:phase2-priorities}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{استقرار ساختار فدرالی}
+\label{sec:federal-structure}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{enghelabbox}
+\textbf{چرا فدرالیسم برای ایران ضروری است؟}
+\begin{itemize}[nosep]
+    \item تنوع قومی-زبانی: ۴۰٪ جمعیت غیرفارس‌زبان
+    \item بی‌اعتمادی تاریخی به مرکز: ۱۰۰ سال تمرکزگرایی
+    \item نابرابری منطقه‌ای: شکاف ۴ برابری درآمد سرانه
+    \item وسعت جغرافیایی: ۱.۶ میلیون کیلومتر مربع
+    \item تجربه همسایگان: موفقیت فدرالیسم در هند و شکست تمرکز در عراق
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{مدل فدرالیسم همبسته برای ایران}
+
+\begin{table}[htbp]
+\centering
+\caption{مقایسه مدل‌های فدرالیسم و انتخاب برای ایران}
+\label{tab:federalism-models}
+\begin{tabular}{>{\columncolor{blue!8}}r p{2.5cm} p{2.5cm} p{2.5cm} p{2.5cm} p{2cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{ویژگی} & \textbf{آمریکا} & \textbf{آلمان} & \textbf{هند} & \textbf{سوئیس} & \textbf{پیشنهاد ایران} \\
+\midrule
+نوع & دوگانه & همبسته & نامتقارن & مشارکتی & همبسته \\
+\rowcolor{gray!10}
+تعداد واحدها & ۵۰ & ۱۶ & ۲۸ & ۲۶ & ۵ منطقه + ۳۱ استان \\
+استقلال مالی & بالا & متوسط & پایین & بالا & متوسط \\
+\rowcolor{gray!10}
+زبان رسمی & ۱ & ۱ & ۲۲ & ۴ & ۱ ملی + ۶ منطقه‌ای \\
+انحلال واحد & ممکن نیست & ممکن نیست & ممکن & ممکن نیست & ممکن نیست \\
+\rowcolor{gray!10}
+مجلس دوم & سنا (ایالتی) & بوندسرات & راجیا سابا & شورای ایالات & مجلس اقوام \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{تقسیمات پیشنهادی کشوری}
+
+% نمودار ساختار سه‌لایه
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8,
+    transform shape,
+    level/.style={
+        rectangle,
+        rounded corners=6pt,
+        minimum height=1.8cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\small\bfseries,
+        align=center
+    }
+]
+
+% سطح ملی
+\node[level=purple, minimum width=14cm] (national) at (0,6) {
+    \begin{tabular}{c}
+    سطح ملی (فدرال)\\
+    \small دولت مرکزی — پارلمان دو مجلسی — دادگاه قانون اساسی
+    \end{tabular}
+};
+
+% سطح منطقه‌ای
+\node[level=blue, minimum width=14cm] (regional) at (0,3) {
+    \begin{tabular}{c}
+    سطح منطقه‌ای (۵ منطقه خودمختار)\\
+    \small آذربایجان | کردستان | بلوچستان | عرب‌نشین | مرکزی
+    \end{tabular}
+};
+
+% سطح استانی
+\node[level=green, minimum width=14cm] (provincial) at (0,0) {
+    \begin{tabular}{c}
+    سطح استانی (۳۱ استان)\\
+    \small استاندار منتخب — شورای استان — دادگاه‌های استانی
+    \end{tabular}
+};
+
+% سطح محلی
+\node[level=orange, minimum width=14cm] (local) at (0,-3) {
+    \begin{tabular}{c}
+    سطح محلی (شهرها و دهستان‌ها)\\
+    \small شهردار منتخب — شورای شهر/روستا — خدمات محلی
+    \end{tabular}
+};
+
+% فلش‌ها
+\draw[->, very thick, gray!60] (national) -- (regional) node[midway, right, font=\scriptsize] {تفویض اختیار};
+\draw[->, very thick, gray!60] (regional) -- (provincial) node[midway, right, font=\scriptsize] {هماهنگی};
+\draw[->, very thick, gray!60] (provincial) -- (local) node[midway, right, font=\scriptsize] {نظارت};
+
+% بازخورد
+\draw[->, thick, red!40] (local.west) -- ++(-1,0) -- ++(0,9) -- (national.west);
+\node[font=\tiny, text=red!60, rotate=90] at (-8.5,1.5) {نمایندگی و مشارکت};
+
+\end{tikzpicture}
+\caption{ساختار چهارلایه حکومت در نظام فدرالی پیشنهادی}
+\label{fig:federal-layers}
+\end{figure}
+
+\subsection{پنج منطقه خودمختار}
+
+\begin{table}[htbp]
+\centering
+\caption{مشخصات پنج منطقه خودمختار پیشنهادی}
+\label{tab:autonomous-regions}
+\begin{tabular}{>{\columncolor{teal!8}}r p{2.3cm} c c p{2.5cm} p{3cm}}
+\toprule
+\rowcolor{teal!25}
+\textbf{منطقه} & \textbf{استان‌ها} & \textbf{جمعیت (م)} & \textbf{مساحت (هزار km²)} & \textbf{زبان منطقه‌ای} & \textbf{مرکز پیشنهادی} \\
+\midrule
+آذربایجان & شرقی، غربی، اردبیل، زنجان & ۱۲ & ۱۰۵ & ترکی آذربایجانی & تبریز \\
+\rowcolor{gray!10}
+کردستان & کردستان، کرمانشاه، ایلام، بخشی از همدان & ۶ & ۶۵ & کردی & سنندج \\
+بلوچستان & سیستان و بلوچستان & ۳ & ۱۸۷ & بلوچی & زاهدان \\
+\rowcolor{gray!10}
+عربستان & خوزستان & ۵ & ۶۴ & عربی & اهواز \\
+مرکزی & ۲۳ استان باقیمانده & ۵۹ & ۱,۲۲۷ & فارسی & تهران \\
+\midrule
+\rowcolor{teal!15}
+\textbf{جمع} & \textbf{۳۱} & \textbf{۸۵} & \textbf{۱,۶۴۸} & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{olgoobox}
+\textbf{الگوی اسپانیا: «دولت خودمختاری‌ها»}
+
+اسپانیا با ۱۷ منطقه خودمختار (Comunidades Autónomas) نشان داد که فدرالیسم نامتقارن می‌تواند هم وحدت ملی را حفظ کند و هم به خواسته‌های قومی پاسخ دهد. کاتالونیا و باسک بیشترین خودمختاری را دارند (پلیس محلی، آموزش به زبان محلی، مالیات مستقل) درحالی‌که مناطق دیگر کمتر. این انعطاف، جدایی‌طلبی را کنترل کرده است.
+\end{olgoobox}
+
+\subsection{تقسیم صلاحیت‌ها}
+
+\begin{table}[htbp]
+\centering
+\caption{تقسیم صلاحیت‌ها بین سطوح حکومتی}
+\label{tab:competence-division}
+\begin{tabular}{>{\columncolor{purple!8}}r p{4cm} c c c c}
+\toprule
+\rowcolor{purple!25}
+\textbf{ردیف} & \textbf{حوزه} & \textbf{ملی} & \textbf{منطقه} & \textbf{استان} & \textbf{محلی} \\
+\midrule
+۱ & دفاع و امنیت ملی & \cmark & & & \\
+\rowcolor{gray!10}
+۲ & سیاست خارجی & \cmark & & & \\
+۳ & پول و بانکداری & \cmark & & & \\
+\rowcolor{gray!10}
+۴ & گمرک و تجارت خارجی & \cmark & & & \\
+۵ & شهروندی و مهاجرت & \cmark & & & \\
+\rowcolor{gray!10}
+۶ & انرژی (نفت، گاز، برق) & \cmark & \cmark & & \\
+۷ & حمل‌ونقل بین‌استانی & \cmark & \cmark & & \\
+\rowcolor{gray!10}
+۸ & آموزش عالی & \cmark & \cmark & & \\
+۹ & بهداشت (سیاست‌گذاری) & \cmark & \cmark & & \\
+\rowcolor{gray!10}
+۱۰ & مدیریت آب (حوضه‌ها) & & \cmark & & \\
+۱۱ & آموزش (ابتدایی و متوسطه) & & \cmark & \cmark & \\
+\rowcolor{gray!10}
+۱۲ & پلیس محلی & & & \cmark & \\
+۱۳ & بهداشت (اجرا) & & & \cmark & \\
+\rowcolor{gray!10}
+۱۴ & رسانه محلی & & & \cmark & \\
+۱۵ & حمل‌ونقل درون‌شهری & & & & \cmark \\
+\rowcolor{gray!10}
+۱۶ & مسکن و شهرسازی & & & & \cmark \\
+۱۷ & آب و فاضلاب شهری & & & & \cmark \\
+\rowcolor{gray!10}
+۱۸ & فضای سبز و پارک‌ها & & & & \cmark \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{نظام مالی فدرالی}
+
+% نمودار جریان مالی
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.75,
+    transform shape,
+    box/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=2.5cm,
+        minimum height=1.2cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    },
+    flow/.style={
+        ->,
+        >=stealth,
+        thick,
+        draw=#1!60
+    }
+]
+
+% منابع درآمد
+\node[box=green] (oil) at (-6,4) {درآمد نفت و گاز};
+\node[box=green] (vat) at (-6,2) {مالیات ارزش افزوده};
+\node[box=green] (income) at (-6,0) {مالیات درآمد};
+\node[box=green] (customs) at (-6,-2) {گمرک و تعرفه};
+
+% خزانه ملی
+\node[box=purple, minimum width=3cm, minimum height=3cm] (treasury) at (0,1) {
+    \begin{tabular}{c}
+    خزانه ملی\\
+    \\
+    \tiny توزیع بر اساس\\
+    \tiny فرمول عدالت
+    \end{tabular}
+};
+
+% توزیع
+\node[box=blue] (fed) at (6,4) {بودجه فدرال (۵۰٪)};
+\node[box=teal] (region) at (6,2) {سهم مناطق (۲۰٪)};
+\node[box=orange] (province) at (6,0) {سهم استان‌ها (۲۰٪)};
+\node[box=yellow] (equal) at (6,-2) {صندوق توازن (۱۰٪)};
+
+% جریان ورودی
+\draw[flow=green] (oil) -- (treasury);
+\draw[flow=green] (vat) -- (treasury);
+\draw[flow=green] (income) -- (treasury);
+\draw[flow=green] (customs) -- (treasury);
+
+% جریان خروجی
+\draw[flow=blue] (treasury) -- (fed);
+\draw[flow=teal] (treasury) -- (region);
+\draw[flow=orange] (treasury) -- (province);
+\draw[flow=yellow] (treasury) -- (equal);
+
+% صندوق توازن
+\node[box=red, minimum width=2.5cm] (poor) at (10,-2) {
+    \begin{tabular}{c}
+    مناطق محروم\\
+    \tiny (سیستان، کردستان، ...)
+    \end{tabular}
+};
+\draw[flow=red] (equal) -- (poor);
+
+% توضیح
+\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=right,
+      text width=4cm] at (0,-3.5) {
+    \textbf{فرمول توزیع:}\\
+    ۴۰٪ بر اساس جمعیت\\
+    ۳۰٪ بر اساس محرومیت\\
+    ۲۰٪ بر اساس مساحت\\
+    ۱۰٪ بر اساس تولید
+};
+
+\end{tikzpicture}
+\caption{نظام مالی فدرالی: جریان درآمدها و توزیع بودجه}
+\label{fig:fiscal-federalism}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{بازسازی قوه قضائیه}
+\label{sec:judiciary-reform}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{enghelabbox}
+\textbf{وضعیت قوه قضائیه ایران در نقطه گذار:}
+\begin{itemize}[nosep]
+    \item وابستگی کامل به رهبری — فقدان استقلال
+    \item قضات شرعی بدون تحصیلات حقوقی مدرن
+    \item دادگاه‌های انقلاب با رویه‌های غیراستاندارد
+    \item شکنجه و اعترافات اجباری رایج
+    \item فساد گسترده در دستگاه قضا
+    \item تبعیض جنسیتی در شهادت و دیه
+\end{itemize}
+بازسازی قوه قضائیه از صفر ضروری است.
+\end{enghelabbox}
+
+\subsection{ساختار جدید قوه قضائیه}
+
+% نمودار ساختار قضایی
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8,
+    transform shape,
+    court/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3cm,
+        minimum height=1.3cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% دادگاه قانون اساسی - بالاترین
+\node[court=purple, minimum width=5cm] (const) at (0,6) {
+    \begin{tabular}{c}
+    دادگاه قانون اساسی\\
+    \small ۱۵ قاضی — دوره ۱۲ ساله
+    \end{tabular}
+};
+
+% دیوان عالی
+\node[court=red, minimum width=4cm] (supreme) at (0,4) {
+    \begin{tabular}{c}
+    دیوان عالی کشور\\
+    \small ۳۰ قاضی — مرجع تجدیدنظر نهایی
+    \end{tabular}
+};
+
+% دادگاه‌های تجدیدنظر
+\node[court=orange] (appeal1) at (-4,2) {دادگاه تجدیدنظر منطقه};
+\node[court=orange] (appeal2) at (4,2) {دادگاه تجدیدنظر منطقه};
+
+% دادگاه‌های بدوی
+\node[court=green] (trial1) at (-6,0) {دادگاه‌های استان};
+\node[court=green] (trial2) at (-2,0) {دادگاه‌های استان};
+\node[court=green] (trial3) at (2,0) {دادگاه‌های استان};
+\node[court=green] (trial4) at (6,0) {دادگاه‌های استان};
+
+% دادگاه‌های تخصصی
+\node[court=blue] (admin) at (-5,-2) {دیوان عدالت اداری};
+\node[court=teal] (labor) at (0,-2) {دادگاه‌های کار};
+\node[court=cyan] (family) at (5,-2) {دادگاه‌های خانواده};
+
+% اتصالات
+\draw[->, gray!60] (const) -- (supreme);
+\draw[->, gray!60] (supreme) -- (appeal1);
+\draw[->, gray!60] (supreme) -- (appeal2);
+\draw[->, gray!60] (appeal1) -- (trial1);
+\draw[->, gray!60] (appeal1) -- (trial2);
+\draw[->, gray!60] (appeal2) -- (trial3);
+\draw[->, gray!60] (appeal2) -- (trial4);
+
+% خط جدا
+\draw[dashed, gray!40] (-7,-1) -- (7,-1);
+\node[font=\tiny, text=gray] at (0,-1.3) {دادگاه‌های تخصصی};
+
+% دادستانی مستقل
+\node[court=yellow, minimum width=3.5cm] (prosecutor) at (8,4) {
+    \begin{tabular}{c}
+    دادستانی کل\\
+    \small مستقل از قوه مجریه
+    \end{tabular}
+};
+
+\draw[<->, gray!60] (supreme) -- (prosecutor);
+
+\end{tikzpicture}
+\caption{ساختار پیشنهادی قوه قضائیه مستقل}
+\label{fig:judiciary-structure}
+\end{figure}
+
+\subsection{اصول کلیدی قضایی}
+
+\begin{table}[htbp]
+\centering
+\caption{اصول بنیادین نظام قضایی جدید}
+\label{tab:judicial-principles}
+\begin{tabular}{>{\columncolor{red!8}}r p{3.5cm} p{7cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{ردیف} & \textbf{اصل} & \textbf{تضمین اجرایی} \\
+\midrule
+۱ & استقلال قضات & انتخاب توسط شورای قضایی مستقل، نه دولت \\
+\rowcolor{gray!10}
+۲ & تصدی مادام‌العمر & عزل تنها به حکم دادگاه انتظامی قضات \\
+۳ & برابری در برابر قانون & حذف تبعیض جنسیتی، قومی، دینی \\
+\rowcolor{gray!10}
+۴ & اصل برائت & متهم بی‌گناه است تا اثبات جرم \\
+۵ & حق وکیل & وکیل رایگان برای ناتوانان مالی \\
+\rowcolor{gray!10}
+۶ & منع شکنجه & اعترافات تحت فشار باطل است \\
+۷ & علنی بودن محاکمات & جز در موارد استثنایی \\
+\rowcolor{gray!10}
+۸ & حق تجدیدنظر & حداقل دو درجه رسیدگی \\
+۹ & تناسب مجازات & ممنوعیت مجازات‌های غیرانسانی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{دادگاه قانون اساسی}
+
+\begin{olgoobox}
+\textbf{الگوی دادگاه قانون اساسی آلمان (Bundesverfassungsgericht):}
+
+معتبرترین دادگاه قانون اساسی جهان با ویژگی‌های:
+\begin{itemize}[nosep]
+    \item ۱۶ قاضی منتخب بوندستاگ و بوندسرات (نصف-نصف)
+    \item دوره ۱۲ ساله بدون تمدید — استقلال از فشار سیاسی
+    \item صلاحیت گسترده: ابطال قوانین، حل اختلاف قوا، حمایت از حقوق فردی
+    \item دسترسی مستقیم شهروندان (Verfassungsbeschwerde)
+    \item ۹۹٪ آلمانی‌ها به آن اعتماد دارند
+\end{itemize}
+\end{olgoobox}
+
+\begin{table}[htbp]
+\centering
+\caption{ترکیب و صلاحیت‌های دادگاه قانون اساسی پیشنهادی}
+\label{tab:constitutional-court}
+\begin{tabular}{>{\columncolor{purple!8}}r p{4cm} p{6.5cm}}
+\toprule
+\rowcolor{purple!25}
+\textbf{بند} & \textbf{موضوع} & \textbf{مشخصات} \\
+\midrule
+۱ & تعداد قضات & ۱۵ نفر (۳ شعبه ۵ نفره) \\
+\rowcolor{gray!10}
+۲ & نحوه انتخاب & ۵ توسط مجلس، ۵ توسط مجلس اقوام، ۵ توسط قضات دیوان عالی \\
+۳ & شرایط & حداقل ۲۰ سال سابقه قضایی یا حقوقی \\
+\rowcolor{gray!10}
+۴ & دوره & ۱۲ سال، غیرقابل تمدید \\
+۵ & صلاحیت‌ها & بررسی انطباق قوانین با قانون اساسی \\
+\rowcolor{gray!10}
+۶ & & حل اختلاف بین قوا \\
+۷ & & حل اختلاف بین مرکز و مناطق \\
+\rowcolor{gray!10}
+۸ & & رسیدگی به شکایات حقوق بنیادین \\
+۹ & & نظارت بر انتخابات \\
+\rowcolor{gray!10}
+۱۰ & & انحلال احزاب ضددموکراتیک \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{بازآموزی و جایگزینی قضات}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8,
+    transform shape,
+    step/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=2.5cm,
+        minimum height=1.4cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% مراحل
+\node[step=red] (assess) at (0,0) {
+    \begin{tabular}{c}
+    ارزیابی\\
+    قضات موجود\\
+    \tiny (۸,۰۰۰ نفر)
+    \end{tabular}
+};
+
+\node[step=orange] (vetting) at (4,0) {
+    \begin{tabular}{c}
+    تطهیر\\
+    \tiny بررسی پرونده\\
+    \tiny حقوق بشری
+    \end{tabular}
+};
+
+\node[step=yellow] (retrain) at (8,2) {
+    \begin{tabular}{c}
+    بازآموزی\\
+    \tiny دوره ۶ ماهه\\
+    \tiny ۴,۰۰۰ نفر
+    \end{tabular}
+};
+
+\node[step=red] (dismiss) at (8,-2) {
+    \begin{tabular}{c}
+    اخراج/بازنشستگی\\
+    \tiny ۳,۰۰۰ نفر\\
+    \tiny (ناقضان حقوق بشر)
+    \end{tabular}
+};
+
+\node[step=green] (new) at (12,0) {
+    \begin{tabular}{c}
+    استخدام جدید\\
+    \tiny ۵,۰۰۰ نفر\\
+    \tiny (وکلا، حقوقدانان)
+    \end{tabular}
+};
+
+\node[step=blue] (deploy) at (16,0) {
+    \begin{tabular}{c}
+    استقرار\\
+    \tiny ۱۰,۰۰۰ قاضی\\
+    \tiny در سال ۵
+    \end{tabular}
+};
+
+% فلش‌ها
+\draw[->, thick, gray!60] (assess) -- (vetting);
+\draw[->, thick, gray!60] (vetting) -- (retrain) node[midway, above, font=\tiny] {۵۰٪};
+\draw[->, thick, gray!60] (vetting) -- (dismiss) node[midway, below, font=\tiny] {۴۰٪};
+\draw[->, thick, gray!60] (retrain) -- (deploy);
+\draw[->, thick, gray!60] (new) -- (deploy);
+\draw[->, thick, gray!60] (8,0) -- (new) node[midway, above, font=\tiny] {کمبود ۵۰٪};
+
+% جدول زمانی
+\draw[thick, gray!40] (-1,-3.5) -- (17,-3.5);
+\foreach \x/\y in {0/سال ۳, 4/سال ۳.۵, 8/سال ۴, 12/سال ۴.۵, 16/سال ۵} {
+    \draw[gray!40] (\x,-3.4) -- (\x,-3.6);
+    \node[below, font=\tiny] at (\x,-3.6) {\y};
+}
+
+\end{tikzpicture}
+\caption{فرآیند بازسازی کادر قضایی}
+\label{fig:judge-reform}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{نهادهای نظارتی مستقل}
+\label{sec:independent-institutions}
+%───────────────────────────────────────────────────────────────────────────────
+
+برای تضمین پاسخگویی و جلوگیری از فساد، نهادهای نظارتی مستقل از قوای سه‌گانه ضروری هستند.
+
+\subsection{معماری نهادهای نظارتی}
+
+\begin{table}[htbp]
+\centering
+\caption{نهادهای نظارتی مستقل پیشنهادی}
+\label{tab:oversight-bodies}
+\begin{tabular}{>{\columncolor{orange!8}}r p{3cm} p{3.5cm} p{2.5cm} p{2.5cm}}
+\toprule
+\rowcolor{orange!25}
+\textbf{نهاد} & \textbf{وظیفه اصلی} & \textbf{نحوه انتخاب رئیس} & \textbf{تعداد اعضا} & \textbf{دوره} \\
+\midrule
+کمیسیون انتخابات & نظارت بر انتخابات & اجماع پارلمان & ۹ & ۷ سال \\
+\rowcolor{gray!10}
+دیوان محاسبات & حسابرسی مالی دولت & مجلس اقوام & ۱۵ & ۹ سال \\
+کمیسیون حقوق بشر & حمایت از حقوق بنیادین & رئیس‌جمهور + تأیید مجلس & ۱۱ & ۶ سال \\
+\rowcolor{gray!10}
+سازمان بازرسی کل & مبارزه با فساد & شورای قضایی & ۱ & ۵ سال \\
+بانک مرکزی مستقل & سیاست پولی & کابینه + تأیید مجلس & ۹ شورا & ۸ سال \\
+\rowcolor{gray!10}
+سازمان صداوسیما & رسانه عمومی بی‌طرف & هیئت امنای منتخب & ۱۳ & ۶ سال \\
+کمیسیون رقابت & جلوگیری از انحصار & مجلس & ۵ & ۵ سال \\
+\rowcolor{gray!10}
+آمبادزمن (دادستان مردم) & شکایات شهروندان & رأی مستقیم مجلس & ۱ & ۷ سال \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{کمیسیون ملی انتخابات}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    unit/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=2.5cm,
+        minimum height=1.1cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% کمیسیون مرکزی
+\node[unit=purple, minimum width=6cm, minimum height=1.8cm] (central) at (0,4) {
+    \begin{tabular}{c}
+    کمیسیون ملی انتخابات\\
+    \small ۹ عضو — اجماع پارلمانی — دوره ۷ ساله
+    \end{tabular}
+};
+
+% واحدهای زیرمجموعه
+\node[unit=blue] (register) at (-5,1.5) {
+    \begin{tabular}{c}
+    ثبت‌نام\\
+    رأی‌دهندگان
+    \end{tabular}
+};
+
+\node[unit=green] (candidate) at (-2,1.5) {
+    \begin{tabular}{c}
+    تأیید\\
+    نامزدها
+    \end{tabular}
+};
+
+\node[unit=orange] (campaign) at (1,1.5) {
+    \begin{tabular}{c}
+    نظارت بر\\
+    تبلیغات
+    \end{tabular}
+};
+
+\node[unit=red] (voting) at (4,1.5) {
+    \begin{tabular}{c}
+    برگزاری\\
+    رأی‌گیری
+    \end{tabular}
+};
+
+\node[unit=teal] (count) at (7,1.5) {
+    \begin{tabular}{c}
+    شمارش و\\
+    اعلام نتایج
+    \end{tabular}
+};
+
+% کمیسیون‌های استانی
+\node[unit=gray, minimum width=12cm] (provincial) at (1,-0.5) {
+    کمیسیون‌های استانی (۳۱ کمیسیون) — نظارت محلی
+};
+
+% اتصالات
+\draw[->, gray!60] (central) -- (register);
+\draw[->, gray!60] (central) -- (candidate);
+\draw[->, gray!60] (central) -- (campaign);
+\draw[->, gray!60] (central) -- (voting);
+\draw[->, gray!60] (central) -- (count);
+\draw[->, gray!60] (1,0.9) -- (provincial);
+
+% تضمینات
+\node[rectangle, draw=green!60, fill=green!10, font=\tiny, align=right,
+      text width=4cm] at (-5,-2.5) {
+    \textbf{تضمینات استقلال:}\\
+    • بودجه مستقل (۰.۵٪ بودجه ملی)\\
+    • عزل تنها با ۲/۳ پارلمان\\
+    • ممنوعیت عضویت حزبی\\
+    • انتشار عمومی همه تصمیمات
+};
+
+\node[rectangle, draw=blue!60, fill=blue!10, font=\tiny, align=right,
+      text width=4cm] at (7,-2.5) {
+    \textbf{ناظران:}\\
+    • ناظران داخلی: احزاب\\
+    • ناظران بین‌المللی: UN، EU\\
+    • ناظران مدنی: NGOها\\
+    • رسانه‌ها: دسترسی کامل
+};
+
+\end{tikzpicture}
+\caption{ساختار کمیسیون ملی انتخابات}
+\label{fig:election-commission}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{اصلاح نظام آموزشی}
+\label{sec:education-reform}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{enghelabbox}
+\textbf{وضعیت آموزش در ایران:}
+\begin{itemize}[nosep]
+    \item محتوای ایدئولوژیک: ۳۰٪ برنامه درسی مذهبی/سیاسی
+    \item تبعیض جنسیتی: محدودیت رشته‌ها برای دختران
+    \item سرکوب زبان‌های محلی: آموزش فقط به فارسی
+    \item فرار مغزها: ۱۵۰,۰۰۰ نخبه سالانه مهاجرت می‌کنند
+    \item کیفیت پایین: رتبه ۹۰+ در آزمون‌های بین‌المللی
+    \item تاریخ‌نگاری جعلی: حذف بخش‌هایی از تاریخ معاصر
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{اهداف اصلاح آموزشی}
+
+\begin{table}[htbp]
+\centering
+\caption{اهداف پنج‌ساله اصلاح نظام آموزشی}
+\label{tab:education-goals}
+\begin{tabular}{>{\columncolor{blue!8}}r p{4cm} c c p{3.5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{هدف} & \textbf{شاخص} & \textbf{وضعیت فعلی} & \textbf{هدف سال ۵} & \textbf{اقدام کلیدی} \\
+\midrule
+سکولاریزه کردن & سهم محتوای مذهبی & ۳۰٪ & ۵٪ (اختیاری) & بازنویسی کتب \\
+\rowcolor{gray!10}
+چندزبانگی & آموزش به زبان مادری & ۰٪ & ۱۰۰٪ مناطق قومی & معلم و کتاب محلی \\
+برابری جنسیتی & رشته‌های باز برای دختران & ۷۰٪ & ۱۰۰٪ & لغو محدودیت‌ها \\
+\rowcolor{gray!10}
+کیفیت & رتبه PISA & — & جزو ۵۰ کشور & اصلاح برنامه درسی \\
+تفکر انتقادی & ساعات بحث/پروژه & ۵٪ & ۳۰٪ & آموزش معلمان \\
+\rowcolor{gray!10}
+تاریخ واقعی & پوشش تاریخ معاصر & سانسورشده & کامل و بی‌طرف & کتب جدید \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{ساختار جدید آموزش}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8,
+    transform shape,
+    level/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum height=1.3cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% مقاطع تحصیلی
+\node[level=red, minimum width=3cm] (preschool) at (0,0) {
+    \begin{tabular}{c}
+    پیش‌دبستانی\\
+    \tiny سن ۴-۶
+    \end{tabular}
+};
+
+\node[level=orange, minimum width=4cm] (primary) at (4,0) {
+    \begin{tabular}{c}
+    دبستان\\
+    \tiny سن ۶-۱۲ | ۶ سال
+    \end{tabular}
+};
+
+\node[level=yellow, minimum width=3cm] (middle) at (8,0) {
+    \begin{tabular}{c}
+    راهنمایی\\
+    \tiny سن ۱۲-۱۵ | ۳ سال
+    \end{tabular}
+};
+
+\node[level=green, minimum width=3cm] (high) at (12,0) {
+    \begin{tabular}{c}
+    دبیرستان\\
+    \tiny سن ۱۵-۱۸ | ۳ سال
+    \end{tabular}
+};
+
+\node[level=blue, minimum width=3cm] (uni) at (16,0) {
+    \begin{tabular}{c}
+    دانشگاه\\
+    \tiny سن ۱۸+
+    \end{tabular}
+};
+
+% فلش‌ها
+\draw[->, thick, gray!60] (preschool) -- (primary);
+\draw[->, thick, gray!60] (primary) -- (middle);
+\draw[->, thick, gray!60] (middle) -- (high);
+\draw[->, thick, gray!60] (high) -- (uni);
+
+% شاخه‌های دبیرستان
+\node[level=green, minimum width=2cm] (academic) at (10.5,-2) {\tiny نظری};
+\node[level=green, minimum width=2cm] (vocational) at (13.5,-2) {\tiny فنی-حرفه‌ای};
+\draw[->, gray!40] (high) -- (academic);
+\draw[->, gray!40] (high) -- (vocational);
+
+% زبان آموزش
+\node[rectangle, draw=purple!60, fill=purple!10, font=\tiny, align=center,
+      minimum width=14cm] at (8,2) {
+    زبان آموزش: فارسی + زبان منطقه‌ای (در مناطق قومی) | انگلیسی اجباری از سال سوم
+};
+
+% ویژگی‌ها
+\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=right,
+      text width=5cm] at (4,-3) {
+    \textbf{ویژگی‌های کلیدی:}\\
+    • رایگان و اجباری تا پایان راهنمایی\\
+    • کتب درسی بازنگری‌شده\\
+    • معلمان بازآموزی‌دیده\\
+    • فناوری در کلاس
+};
+
+\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=right,
+      text width=5cm] at (12,-3) {
+    \textbf{محتوای جدید:}\\
+    • تربیت شهروندی دموکراتیک\\
+    • حقوق بشر و برابری\\
+    • تفکر انتقادی\\
+    • محیط زیست
+};
+
+\end{tikzpicture}
+\caption{ساختار جدید نظام آموزشی}
+\label{fig:education-structure}
+\end{figure}
+
+\subsection{آموزش چندزبانه}
+
+\begin{olgoobox}
+\textbf{الگوی سوئیس: چهار زبان رسمی}
+
+سوئیس با ۴ زبان رسمی (آلمانی ۶۳٪، فرانسوی ۲۳٪، ایتالیایی ۸٪، رومانش ۰.۵٪) نشان داده که چندزبانگی تهدید نیست:
+\begin{itemize}[nosep]
+    \item آموزش ابتدایی به زبان مادری
+    \item زبان دوم ملی از سال سوم
+    \item انگلیسی از سال پنجم
+    \item هویت ملی سوئیسی قوی‌تر از هویت‌های زبانی
+\end{itemize}
+\end{olgoobox}
+
+\begin{table}[htbp]
+\centering
+\caption{برنامه آموزش چندزبانه در مناطق قومی ایران}
+\label{tab:multilingual-education}
+\begin{tabular}{>{\columncolor{teal!8}}r p{2.5cm} p{2.5cm} p{2.5cm} p{2.5cm} p{2.5cm}}
+\toprule
+\rowcolor{teal!25}
+\textbf{مقطع} & \textbf{زبان اول} & \textbf{زبان دوم} & \textbf{زبان سوم} & \textbf{سهم محتوا} & \textbf{یادداشت} \\
+\midrule
+پیش‌دبستانی & زبان مادری ۱۰۰٪ & — & — & کامل محلی & پایه زبانی \\
+\rowcolor{gray!10}
+دبستان ۱-۳ & زبان مادری ۸۰٪ & فارسی ۲۰٪ & — & عمدتاً محلی & معرفی فارسی \\
+دبستان ۴-۶ & زبان مادری ۵۰٪ & فارسی ۴۰٪ & انگلیسی ۱۰٪ & متوازن & دوزبانگی \\
+\rowcolor{gray!10}
+راهنمایی & زبان مادری ۴۰٪ & فارسی ۵۰٪ & انگلیسی ۱۰٪ & عمدتاً فارسی & آماده‌سازی \\
+دبیرستان & انتخابی & فارسی ۶۰٪ & انگلیسی ۲۰٪ & ملی + محلی & تخصص \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{تقویت جامعه مدنی}
+\label{sec:civil-society}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{naghlbox}
+«دموکراسی بدون جامعه مدنی قوی مانند ساختمان بدون پی است — زیبا اما ناپایدار.»
+\sourceline{رابرت پاتنام، دانشمند سیاسی}
+\end{naghlbox}
+
+\subsection{وضعیت جامعه مدنی در نقطه گذار}
+
+\begin{table}[htbp]
+\centering
+\caption{وضعیت جامعه مدنی ایران: قبل و هدف}
+\label{tab:civil-society-status}
+\begin{tabular}{>{\columncolor{green!8}}r p{4cm} c c}
+\toprule
+\rowcolor{green!25}
+\textbf{شاخص} & \textbf{توضیح} & \textbf{وضعیت فعلی} & \textbf{هدف سال ۵} \\
+\midrule
+NGOهای ثبت‌شده & تعداد سازمان‌های مردم‌نهاد & ۲۰,۰۰۰ (اکثراً غیرفعال) & ۱۰۰,۰۰۰ فعال \\
+\rowcolor{gray!10}
+آزادی تشکل & امتیاز Freedom House & ۲/۴۰ & ۳۰/۴۰ \\
+اتحادیه‌های کارگری مستقل & تعداد & ۰ & ۵۰۰+ \\
+\rowcolor{gray!10}
+احزاب سیاسی فعال & با حضور واقعی & ۳-۴ & ۵۰+ \\
+رسانه‌های مستقل & تعداد & ۰ (داخل) & ۵۰۰+ \\
+\rowcolor{gray!10}
+مشارکت داوطلبانه & درصد جمعیت & ۵٪ & ۲۵٪ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{چارچوب حمایت از جامعه مدنی}
+
+%═══════════════════════════════════════════════════════════════════════════════
+% ادامه فصل ۹: فاز ۲ — نهادسازی (سال ۳-۵)
+% فایل: chapters/ch09-phase2.tex (ادامه)
+%═══════════════════════════════════════════════════════════════════════════════
+
+% ادامه نمودار چارچوب حمایت از جامعه مدنی...
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    support/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3cm,
+        minimum height=1.5cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% مرکز - جامعه مدنی
+\node[ellipse, draw=purple!70, fill=purple!10, minimum width=3.5cm, 
+      minimum height=2.5cm, font=\small\bfseries, text=purple!70] (cs) at (0,0) {
+    \begin{tabular}{c}
+    جامعه\\
+    مدنی
+    \end{tabular}
+};
+
+% ارکان حمایتی
+\node[support=blue] (legal) at (-5,3) {
+    \begin{tabular}{c}
+    چارچوب قانونی\\
+    \tiny آزادی تشکل و اجتماع
+    \end{tabular}
+};
+
+\node[support=green] (finance) at (0,4) {
+    \begin{tabular}{c}
+    تأمین مالی\\
+    \tiny صندوق حمایت از NGO
+    \end{tabular}
+};
+
+\node[support=orange] (capacity) at (5,3) {
+    \begin{tabular}{c}
+    ظرفیت‌سازی\\
+    \tiny آموزش و مشاوره
+    \end{tabular}
+};
+
+\node[support=red] (media) at (-5,-3) {
+    \begin{tabular}{c}
+    دسترسی رسانه‌ای\\
+    \tiny رسانه عمومی و اینترنت
+    \end{tabular}
+};
+
+\node[support=teal] (consult) at (0,-4) {
+    \begin{tabular}{c}
+    مشارکت در تصمیم‌گیری\\
+    \tiny مشورت اجباری دولت
+    \end{tabular}
+};
+
+\node[support=yellow] (protect) at (5,-3) {
+    \begin{tabular}{c}
+    حمایت حقوقی\\
+    \tiny از فعالان مدنی
+    \end{tabular}
+};
+
+% اتصالات
+\draw[->, thick, blue!60] (legal) -- (cs);
+\draw[->, thick, green!60] (finance) -- (cs);
+\draw[->, thick, orange!60] (capacity) -- (cs);
+\draw[->, thick, red!60] (media) -- (cs);
+\draw[->, thick, teal!60] (consult) -- (cs);
+\draw[->, thick, yellow!60] (protect) -- (cs);
+
+% اجزای جامعه مدنی (دایره بیرونی)
+\node[font=\tiny, text=gray] at (-2.5,1.5) {NGOها};
+\node[font=\tiny, text=gray] at (2.5,1.5) {احزاب};
+\node[font=\tiny, text=gray] at (-2.5,-1.5) {اتحادیه‌ها};
+\node[font=\tiny, text=gray] at (2.5,-1.5) {رسانه‌ها};
+
+\end{tikzpicture}
+\caption{شش رکن حمایت از جامعه مدنی}
+\label{fig:civil-society-support}
+\end{figure}
+
+\subsection{قانون جامع تشکل‌ها و NGOها}
+
+\begin{table}[htbp]
+\centering
+\caption{مقایسه قوانین NGO: وضعیت فعلی و پیشنهادی}
+\label{tab:ngo-law-comparison}
+\begin{tabular}{>{\columncolor{green!8}}r p{4cm} p{4cm} p{4cm}}
+\toprule
+\rowcolor{green!25}
+\textbf{موضوع} & \textbf{قانون فعلی} & \textbf{قانون پیشنهادی} & \textbf{استاندارد بین‌المللی} \\
+\midrule
+ثبت‌نام & نیاز به مجوز وزارت کشور & اعلامی (notification) & UN Guidelines \\
+\rowcolor{gray!10}
+زمان ثبت & ۶ ماه تا ۲ سال & ۳۰ روز & EU: 15-30 روز \\
+حق اعتراض به رد & محدود & دادگاه اداری & کنوانسیون اروپایی \\
+\rowcolor{gray!10}
+تأمین مالی خارجی & ممنوع & مجاز با شفافیت & FATF compliant \\
+فعالیت سیاسی & ممنوع & مجاز (جز احزاب) & ICCPR ماده ۲۲ \\
+\rowcolor{gray!10}
+انحلال & به دستور دولت & فقط به حکم دادگاه & Venice Commission \\
+معافیت مالیاتی & محدود & گسترده برای خیریه‌ها & OECD standards \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{صندوق ملی حمایت از جامعه مدنی}
+
+\begin{olgoobox}
+\textbf{الگوی صندوق ملی دموکراسی آمریکا (NED):}
+
+NED سالانه ۳۰۰ میلیون دلار به NGOها در سراسر جهان کمک می‌کند. ویژگی‌های کلیدی:
+\begin{itemize}[nosep]
+    \item بودجه دولتی اما مدیریت مستقل
+    \item هیئت‌مدیره دوحزبی (جمهوری‌خواه + دموکرات)
+    \item شفافیت کامل در اعطای کمک‌ها
+    \item ارزیابی مستقل اثربخشی
+\end{itemize}
+
+\textbf{پیشنهاد برای ایران:} صندوق ملی توسعه جامعه مدنی با بودجه سالانه ۵۰۰ میلیارد تومان
+\end{olgoobox}
+
+\begin{table}[htbp]
+\centering
+\caption{ساختار صندوق ملی حمایت از جامعه مدنی}
+\label{tab:civil-society-fund}
+\begin{tabular}{>{\columncolor{blue!8}}r p{4cm} p{7cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{بند} & \textbf{موضوع} & \textbf{مشخصات} \\
+\midrule
+۱ & بودجه سالانه & ۵۰۰ میلیارد تومان (۰.۱٪ بودجه ملی) \\
+\rowcolor{gray!10}
+۲ & منبع & بودجه عمومی + کمک‌های بین‌المللی \\
+۳ & هیئت‌مدیره & ۱۱ نفر: ۵ نماینده مجلس، ۳ نماینده NGO، ۳ کارشناس مستقل \\
+\rowcolor{gray!10}
+۴ & معیار تخصیص & شفافیت، اثربخشی، پوشش جغرافیایی \\
+۵ & سقف کمک & حداکثر ۵ میلیارد تومان به هر NGO در سال \\
+\rowcolor{gray!10}
+۶ & حوزه‌های اولویت & حقوق بشر، محیط زیست، زنان، اقوام، جوانان \\
+۷ & نظارت & حسابرسی سالانه توسط دیوان محاسبات \\
+\rowcolor{gray!10}
+۸ & شفافیت & انتشار عمومی همه کمک‌ها \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{اصلاح بوروکراسی دولتی}
+\label{sec:bureaucracy-reform}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{enghelabbox}
+\textbf{وضعیت بوروکراسی ایران:}
+\begin{itemize}[nosep]
+    \item ۲.۵ میلیون کارمند دولت (بدون نظامی)
+    \item ۵۰٪ بودجه صرف حقوق کارکنان
+    \item ۳۰٪ پست‌ها موازی یا غیرضروری
+    \item انتصابات سیاسی-ایدئولوژیک به جای شایستگی
+    \item فساد سیستماتیک در استخدام و ارتقا
+    \item بهره‌وری پایین: ۳۰٪ OECD
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{اصول اصلاح اداری}
+
+\begin{table}[htbp]
+\centering
+\caption{اصول و اقدامات اصلاح بوروکراسی}
+\label{tab:bureaucracy-principles}
+\begin{tabular}{>{\columncolor{orange!8}}r p{3cm} p{4.5cm} p{4cm}}
+\toprule
+\rowcolor{orange!25}
+\textbf{اصل} & \textbf{مشکل فعلی} & \textbf{اقدام اصلاحی} & \textbf{شاخص موفقیت} \\
+\midrule
+شایسته‌سالاری & انتصاب سیاسی & آزمون‌های استخدامی شفاف & ۱۰۰٪ استخدام رقابتی \\
+\rowcolor{gray!10}
+کوچک‌سازی & تورم نیرو & بازنشستگی پیش‌از‌موعد داوطلبانه & کاهش ۲۰٪ نیرو \\
+تمرکززدایی & همه تصمیمات در تهران & واگذاری به استان‌ها & ۵۰٪ تصمیمات محلی \\
+\rowcolor{gray!10}
+دیجیتال‌سازی & کاغذبازی & دولت الکترونیک & ۸۰٪ خدمات آنلاین \\
+شفافیت & پنهان‌کاری & دسترسی آزاد به اطلاعات & قانون FOI اجرایی \\
+\rowcolor{gray!10}
+پاسخگویی & فقدان نظارت & ارزیابی عملکرد سالانه & همه مدیران ارزیابی‌شده \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{دولت الکترونیک}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8,
+    transform shape,
+    service/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=2.5cm,
+        minimum height=1cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% پلتفرم مرکزی
+\node[rectangle, rounded corners=8pt, draw=purple!70, fill=purple!10,
+      minimum width=5cm, minimum height=2cm, font=\small\bfseries,
+      text=purple!70, align=center] (portal) at (0,0) {
+    \begin{tabular}{c}
+    درگاه ملی خدمات دولت\\
+    \small iran.gov.ir
+    \end{tabular}
+};
+
+% دسته‌های خدمات
+\node[service=blue] (id) at (-6,3) {هویت و مدارک};
+\node[service=green] (tax) at (-3,3) {مالیات و گمرک};
+\node[service=orange] (health) at (0,3) {بهداشت و درمان};
+\node[service=red] (edu) at (3,3) {آموزش};
+\node[service=teal] (justice) at (6,3) {قضایی};
+
+\node[service=yellow] (business) at (-6,-3) {مجوز کسب‌وکار};
+\node[service=cyan] (property) at (-3,-3) {املاک و اسناد};
+\node[service=pink] (social) at (0,-3) {تأمین اجتماعی};
+\node[service=lime] (transport) at (3,-3) {حمل‌ونقل};
+\node[service=violet] (utility) at (6,-3) {قبوض و خدمات};
+
+% اتصالات
+\foreach \s in {id,tax,health,edu,justice,business,property,social,transport,utility} {
+    \draw[->, gray!50] (\s) -- (portal);
+}
+
+% زیرساخت
+\node[rectangle, draw=gray!60, fill=gray!10, minimum width=14cm,
+      minimum height=1cm, font=\scriptsize, align=center] at (0,-5) {
+    زیرساخت: شبکه ملی اطلاعات | پایگاه داده یکپارچه | احراز هویت دیجیتال | امنیت سایبری
+};
+
+% آمار هدف
+\node[rectangle, draw=green!60, fill=green!10, font=\tiny, align=right,
+      text width=3.5cm] at (-8,0) {
+    \textbf{اهداف سال ۵:}\\
+    • ۸۰٪ خدمات آنلاین\\
+    • ۶۰٪ شهروندان فعال\\
+    • کاهش ۵۰٪ مراجعه حضوری\\
+    • صرفه‌جویی ۱۰۰ هزار میلیارد
+};
+
+\end{tikzpicture}
+\caption{معماری دولت الکترونیک}
+\label{fig:e-government}
+\end{figure}
+
+\subsection{نظام جدید استخدام و ارتقا}
+
+\begin{table}[htbp]
+\centering
+\caption{نظام جدید مدیریت منابع انسانی دولت}
+\label{tab:hr-system}
+\begin{tabular}{>{\columncolor{blue!8}}r p{3cm} p{4cm} p{4.5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{مرحله} & \textbf{روش فعلی} & \textbf{روش جدید} & \textbf{سازوکار} \\
+\midrule
+استخدام & معرفی‌نامه + مصاحبه & آزمون سراسری + مصاحبه & سازمان سنجش مستقل \\
+\rowcolor{gray!10}
+انتصاب مدیران & سیاسی-ایدئولوژیک & شایستگی + تجربه & کمیته انتصابات مستقل \\
+ارزیابی عملکرد & صوری یا فاقد & سالانه با شاخص‌های کمّی & سیستم ۳۶۰ درجه \\
+\rowcolor{gray!10}
+ارتقا & ارشدیت + رابطه & عملکرد + آموزش & امتیازبندی شفاف \\
+حقوق و مزایا & نابرابر، رانتی & یکسان، بر اساس رتبه & جدول حقوق واحد \\
+\rowcolor{gray!10}
+آموزش ضمن خدمت & محدود | ایدئولوژیک & اجباری | حرفه‌ای & ۴۰ ساعت سالانه \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{رسانه‌های عمومی مستقل}
+\label{sec:public-media}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{naghlbox}
+«رسانه عمومی مستقل ستون چهارم دموکراسی است. بدون اطلاعات آزاد، انتخاب آزاد بی‌معناست.»
+\sourceline{اعلامیه UNESCO درباره رسانه‌ها}
+\end{naghlbox}
+
+\subsection{تبدیل صداوسیما به رسانه عمومی مستقل}
+
+\begin{table}[htbp]
+\centering
+\caption{مقایسه صداوسیمای فعلی با مدل پیشنهادی}
+\label{tab:media-comparison}
+\begin{tabular}{>{\columncolor{purple!8}}r p{4cm} p{4cm} p{3.5cm}}
+\toprule
+\rowcolor{purple!25}
+\textbf{ویژگی} & \textbf{صداوسیمای فعلی} & \textbf{مدل پیشنهادی} & \textbf{الگوی موفق} \\
+\midrule
+مالکیت & دولتی (زیر نظر رهبری) & عمومی (مستقل) & BBC بریتانیا \\
+\rowcolor{gray!10}
+انتصاب رئیس & رهبر & هیئت امنای مستقل & ARD آلمان \\
+هیئت‌امنا & — & ۱۳ نفر منتخب متنوع & NHK ژاپن \\
+\rowcolor{gray!10}
+بودجه & دولتی + تبلیغات & حق اشتراک + دولتی محدود & SVT سوئد \\
+محتوا & تبلیغات حکومتی & اطلاع‌رسانی بی‌طرف & PBS آمریکا \\
+\rowcolor{gray!10}
+دسترسی احزاب & صفر (جز حکومتی‌ها) & برابر در انتخابات & همه کشورهای OECD \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{ساختار سازمان رسانه عمومی ایران (رعا)}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8,
+    transform shape,
+    organ/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3cm,
+        minimum height=1.3cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% هیئت امنا
+\node[organ=purple, minimum width=8cm, minimum height=1.8cm] (board) at (0,5) {
+    \begin{tabular}{c}
+    هیئت امنا (۱۳ نفر)\\
+    \small ۴ نماینده مجلس | ۳ روزنامه‌نگار | ۲ دانشگاهی | ۲ نماینده اقوام | ۲ جامعه مدنی
+    \end{tabular}
+};
+
+% مدیرعامل
+\node[organ=blue, minimum width=4cm] (ceo) at (0,2.5) {
+    \begin{tabular}{c}
+    مدیرعامل\\
+    \small منتخب هیئت امنا | دوره ۵ ساله
+    \end{tabular}
+};
+
+% شبکه‌ها
+\node[organ=green] (tv1) at (-6,0) {تلویزیون ۱ (عمومی)};
+\node[organ=green] (tv2) at (-3,0) {تلویزیون ۲ (فرهنگ)};
+\node[organ=orange] (news) at (0,0) {شبکه خبر (۲۴/۷)};
+\node[organ=teal] (regional) at (3,0) {شبکه‌های استانی};
+\node[organ=cyan] (radio) at (6,0) {رادیو ملی};
+
+% شبکه‌های قومی
+\node[organ=yellow, minimum width=10cm] (ethnic) at (0,-2) {
+    \begin{tabular}{c}
+    شبکه‌های زبان‌های محلی\\
+    \small آذری | کردی | عربی | بلوچی | ترکمنی | گیلکی
+    \end{tabular}
+};
+
+% دیجیتال
+\node[organ=red] (digital) at (0,-4) {
+    \begin{tabular}{c}
+    پلتفرم دیجیتال\\
+    \small استریم | پادکست | شبکه‌های اجتماعی
+    \end{tabular}
+};
+
+% اتصالات
+\draw[->, gray!60] (board) -- (ceo);
+\draw[->, gray!60] (ceo) -- (tv1);
+\draw[->, gray!60] (ceo) -- (tv2);
+\draw[->, gray!60] (ceo) -- (news);
+\draw[->, gray!60] (ceo) -- (regional);
+\draw[->, gray!60] (ceo) -- (radio);
+\draw[->, gray!60] (ceo) -- (ethnic);
+\draw[->, gray!60] (ceo) -- (digital);
+
+% بودجه
+\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=right,
+      text width=4cm] at (8,2.5) {
+    \textbf{منابع مالی:}\\
+    • حق اشتراک: ماهی ۵۰,۰۰۰ تومان\\
+    • یارانه دولتی: ۳۰٪\\
+    • تبلیغات محدود: ۱۰٪\\
+    • تولید محتوا: ۱۰٪
+};
+
+\end{tikzpicture}
+\caption{ساختار سازمان رسانه عمومی ایران}
+\label{fig:public-media-structure}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{تداوم عدالت انتقالی}
+\label{sec:tj-phase2}
+%───────────────────────────────────────────────────────────────────────────────
+
+در فاز دوم، عدالت انتقالی از مرحله فوری به مرحله نهادی وارد می‌شود.
+
+\subsection{اقدامات عدالت انتقالی سال‌های ۳-۵}
+
+\begin{table}[htbp]
+\centering
+\caption{تقویم عدالت انتقالی فاز دوم}
+\label{tab:tj-phase2-calendar}
+\begin{tabular}{>{\columncolor{red!8}}r p{3cm} p{5.5cm} p{3cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{سال} & \textbf{محور} & \textbf{اقدامات} & \textbf{خروجی} \\
+\midrule
+۳ & محاکمات & آغاز محاکمه فرماندهان سرکوب & ۵۰ محاکمه \\
+\rowcolor{gray!10}
+۳ & حقیقت‌یابی & ادامه جلسات استماع عمومی & ۱۰,۰۰۰ شهادت \\
+۳-۴ & جبران خسارت & برنامه جامع غرامت به قربانیان & ۵۰۰,۰۰۰ خانواده \\
+\rowcolor{gray!10}
+۴ & اصلاح نهادی & تطهیر نهادهای امنیتی و قضایی & گزارش تطهیر \\
+۴-۵ & تاریخ‌نگاری & ثبت رسمی جنایات در تاریخ & کتب درسی جدید \\
+\rowcolor{gray!10}
+۵ & یادبود & ساخت موزه و بناهای یادبود & موزه ملی قربانیان \\
+۵ & گزارش نهایی & انتشار گزارش کمیسیون حقیقت & سند ملی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{دادگاه ویژه جنایات دوره استبداد}
+
+\begin{olgoobox}
+\textbf{الگوی دادگاه‌های ویژه:}
+
+\textbf{آرژانتین:} محاکمه ژنرال‌های دیکتاتوری (۱۹۸۵) — نماد عدالت در آمریکای لاتین
+
+\textbf{آلمان:} دادگاه‌های نورنبرگ (۱۹۴۵-۴۶) — پایه حقوق بین‌الملل کیفری
+
+\textbf{رواندا:} دادگاه‌های گاچاچا — عدالت ترمیمی در سطح محلی
+
+\textbf{پیشنهاد برای ایران:} ترکیبی از محاکمات رسمی (برای جنایات بزرگ) و کمیسیون حقیقت (برای موارد دیگر)
+\end{olgoobox}
+
+\begin{table}[htbp]
+\centering
+\caption{صلاحیت و ساختار دادگاه ویژه}
+\label{tab:special-tribunal}
+\begin{tabular}{>{\columncolor{purple!8}}r p{4cm} p{7cm}}
+\toprule
+\rowcolor{purple!25}
+\textbf{بند} & \textbf{موضوع} & \textbf{مشخصات} \\
+\midrule
+۱ & صلاحیت موضوعی & جنایت علیه بشریت، شکنجه، اعدام‌های فراقضایی، ناپدیدسازی \\
+\rowcolor{gray!10}
+۲ & صلاحیت زمانی & ۱۳۵۷ تا روز گذار \\
+۳ & ترکیب قضات & ۹ قاضی: ۶ ایرانی + ۳ بین‌المللی \\
+\rowcolor{gray!10}
+۴ & دادستان & دادستان مستقل منتخب مجلس \\
+۵ & حقوق متهمان & استانداردهای بین‌المللی (وکیل، علنی بودن، تجدیدنظر) \\
+\rowcolor{gray!10}
+۶ & مجازات‌ها & حبس (حداکثر ابد) — ممنوعیت اعدام \\
+۷ & مرور زمان & جنایات علیه بشریت: بدون مرور زمان \\
+\rowcolor{gray!10}
+۸ & حمایت از شهود & برنامه حفاظت از شاهدان \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{شاخص‌های موفقیت فاز دوم}
+\label{sec:phase2-kpis}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{table}[htbp]
+\centering
+\caption{شاخص‌های کلیدی موفقیت (KPI) فاز دوم}
+\label{tab:phase2-kpis}
+\begin{tabular}{>{\columncolor{blue!8}}r p{4.5cm} c c c}
+\toprule
+\rowcolor{blue!25}
+\textbf{کد} & \textbf{شاخص} & \textbf{پایان سال ۳} & \textbf{پایان سال ۴} & \textbf{پایان سال ۵} \\
+\midrule
+P01 & استقرار ساختار فدرالی & ۵۰٪ & ۸۰٪ & ۱۰۰٪ \\
+\rowcolor{gray!10}
+P02 & استقلال قضات (نظرسنجی) & ۴۰٪ & ۵۵٪ & ۷۰٪ \\
+P03 & پوشش آموزش چندزبانه & ۲۰٪ مناطق & ۶۰٪ & ۱۰۰٪ \\
+\rowcolor{gray!10}
+P04 & NGOهای فعال ثبت‌شده & ۴۰,۰۰۰ & ۷۰,۰۰۰ & ۱۰۰,۰۰۰ \\
+P05 & خدمات دولت الکترونیک & ۴۰٪ & ۶۰٪ & ۸۰٪ \\
+\rowcolor{gray!10}
+P06 & شاخص آزادی مطبوعات & رتبه ۱۲۰ & رتبه ۱۰۰ & رتبه ۸۰ \\
+P07 & اعتماد به نهادها (نظرسنجی) & ۴۵٪ & ۵۵٪ & ۶۵٪ \\
+\rowcolor{gray!10}
+P08 & تطهیر نیروهای امنیتی & ۶۰٪ & ۸۵٪ & ۱۰۰٪ \\
+P09 & محاکمات عدالت انتقالی & ۲۰ & ۵۰ & ۱۰۰ \\
+\rowcolor{gray!10}
+P10 & رضایت اقوام (نظرسنجی) & ۵۰٪ & ۶۰٪ & ۷۰٪ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{چالش‌ها و ریسک‌های فاز دوم}
+\label{sec:phase2-risks}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=12cm,
+    height=9cm,
+    xlabel={احتمال وقوع},
+    ylabel={شدت تأثیر},
+    xmin=0, xmax=100,
+    ymin=0, ymax=100,
+    xtick={25,50,75},
+    xticklabels={کم, متوسط, بالا},
+    ytick={25,50,75},
+    yticklabels={کم, متوسط, بالا},
+    grid=major,
+    grid style={dashed, gray!30},
+]
+
+% مناطق رنگی
+\fill[green!15, opacity=0.5] (0,0) rectangle (35,35);
+\fill[yellow!15, opacity=0.5] (0,35) rectangle (35,100);
+\fill[yellow!15, opacity=0.5] (35,0) rectangle (100,35);
+\fill[orange!15, opacity=0.5] (35,35) rectangle (65,65);
+\fill[red!15, opacity=0.5] (35,65) rectangle (100,100);
+\fill[red!15, opacity=0.5] (65,35) rectangle (100,65);
+
+% ریسک‌ها
+\node[circle, fill=orange!70, minimum size=0.5cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:60,70) {۱};
+\node[circle, fill=red!70, minimum size=0.5cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:45,75) {۲};
+\node[circle, fill=yellow!70, minimum size=0.5cm, font=\tiny\bfseries, text=black] 
+    at (axis cs:70,50) {۳};
+\node[circle, fill=orange!60, minimum size=0.5cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:55,60) {۴};
+\node[circle, fill=yellow!60, minimum size=0.5cm, font=\tiny\bfseries, text=black] 
+    at (axis cs:40,45) {۵};
+
+% راهنما
+\node[rectangle, draw=gray!40, fill=white, font=\tiny, align=right, 
+      text width=4cm] at (axis cs:82,25) {
+    \textbf{ریسک‌ها:}\\
+    ۱. مقاومت نخبگان قدیم\\
+    ۲. تنش‌های قومی\\
+    ۳. کندی اصلاحات اقتصادی\\
+    ۴. نارضایتی از سرعت تغییر\\
+    ۵. فشار نیروهای افراطی
+};
+
+\end{axis}
+\end{tikzpicture}
+\caption{ماتریس ریسک فاز دوم}
+\label{fig:risk-matrix-phase2}
+\end{figure}
+
+\begin{enghelabbox}
+\textbf{ریسک اصلی فاز دوم: «دام انتظارات»}
+
+مردم پس از انقلاب انتظار بهبود سریع دارند. اما نهادسازی زمان‌بر است. اگر بهبود ملموس دیده نشود، سرخوردگی می‌تواند به:
+\begin{itemize}[nosep]
+    \item رأی به پوپولیست‌ها
+    \item اعتراضات ضد دولت جدید
+    \item نوستالژی رژیم قبلی
+    \item افزایش مهاجرت
+\end{itemize}
+منجر شود.
+
+\textbf{راه‌حل:} ادامه استراتژی «آبادانی ملموس» همراه با نهادسازی بلندمدت
+\end{enghelabbox}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{جمع‌بندی فصل}
+\label{sec:phase2-conclusion}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{kholasebox}
+\textbf{خلاصه فصل ۹:}
+\begin{enumerate}
+    \item \textbf{فدرالیسم همبسته} با ۵ منطقه خودمختار و ۳۱ استان، پاسخ به تنوع قومی ایران است
+    \item \textbf{قوه قضائیه مستقل} با دادگاه قانون اساسی ۱۵ نفره، ستون حاکمیت قانون است
+    \item \textbf{نهادهای نظارتی مستقل} (۸ نهاد) تضمین‌کننده پاسخگویی و مبارزه با فساد هستند
+    \item \textbf{اصلاح نظام آموزشی} شامل سکولاریزاسیون، چندزبانگی، و تفکر انتقادی است
+    \item \textbf{جامعه مدنی قوی} با ۱۰۰,۰۰۰ NGO فعال، پایه دموکراسی مشارکتی است
+    \item \textbf{دولت الکترونیک} با ۸۰٪ خدمات آنلاین، کارایی و شفافیت را افزایش می‌دهد
+    \item \textbf{رسانه عمومی مستقل} جایگزین صداوسیمای حکومتی می‌شود
+    \item \textbf{عدالت انتقالی} در این فاز به محاکمات و جبران خسارت می‌رسد
+    \item ریسک اصلی «دام انتظارات» است که با آبادانی ملموس مدیریت می‌شود
+\end{enumerate}
+\end{kholasebox}
+
+% نمودار جمع‌بندی
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.7,
+    transform shape,
+    pillar/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=2cm,
+        minimum height=4cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% پایه
+\node[rectangle, draw=gray!70, fill=gray!20, minimum width=16cm, minimum height=1cm,
+      font=\small\bfseries] (base) at (0,0) {قانون اساسی جدید (از فاز ۱)};
+
+% ستون‌ها
+\node[pillar=red] at (-6,3) {
+    \begin{tabular}{c}
+    \\
+    فدرالیسم\\
+    \\
+    \tiny ۵ منطقه\\
+    \tiny ۳۱ استان
+    \end{tabular}
+};
+
+\node[pillar=orange] at (-3.5,3) {
+    \begin{tabular}{c}
+    \\
+    قضای\\
+    مستقل\\
+    \tiny دادگاه\\
+    \tiny قانون اساسی
+    \end{tabular}
+};
+
+\node[pillar=yellow] at (-1,3) {
+    \begin{tabular}{c}
+    \\
+    نهادهای\\
+    نظارتی\\
+    \tiny ۸ نهاد\\
+    \tiny مستقل
+    \end{tabular}
+};
+
+\node[pillar=green] at (1.5,3) {
+    \begin{tabular}{c}
+    \\
+    آموزش\\
+    نوین\\
+    \tiny سکولار\\
+    \tiny چندزبانه
+    \end{tabular}
+};
+
+\node[pillar=blue] at (4,3) {
+    \begin{tabular}{c}
+    \\
+    جامعه\\
+    مدنی\\
+    \tiny ۱۰۰,۰۰۰\\
+    \tiny NGO
+    \end{tabular}
+};
+
+\node[pillar=purple] at (6.5,3) {
+    \begin{tabular}{c}
+    \\
+    رسانه\\
+    آزاد\\
+    \tiny عمومی\\
+    \tiny مستقل
+    \end{tabular}
+};
+
+% سقف
+\node[rectangle, draw=teal!70, fill=teal!15, minimum width=16cm, minimum height=1.2cm,
+      font=\small\bfseries, text=teal!70] (roof) at (0,5.8) {
+    دموکراسی نهادینه‌شده — آماده برای تحکیم (فاز ۳)
+};
+
+\end{tikzpicture}
+\caption{شش ستون نهادسازی فاز دوم}
+\label{fig:phase2-pillars}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+% منابع فصل
+%───────────────────────────────────────────────────────────────────────────────
+
+\vspace{1cm}
+\begin{refsection}
+
+\textbf{\large منابع فصل نهم}
+
+\vspace{0.5cm}
+
+\begin{enumerate}[label={[\arabic*]}، nosep، leftmargin=*]
+    \item North, D. (1990). \textit{Institutions, Institutional Change and Economic Performance}. Cambridge University Press.
+    
+    \item Lijphart, A. (2012). \textit{Patterns of Democracy}. Yale University Press.
+    
+    \item Stepan, A. (1999). "Federalism and Democracy: Beyond the U.S. Model." \textit{Journal of Democracy}, 10(4), 19-34.
+    
+    \item Ginsburg, T. \& Huq, A. (2016). \textit{Assessing Constitutional Performance}. Cambridge University Press.
+    
+    \item International IDEA. (2021). \textit{The Global State of Democracy 2021}.
+    
+    \item Venice Commission. (2010). \textit{Report on the Independence of the Judicial System}. Council of Europe.
+    
+    \item UNDP. (2019). \textit{Strengthening Judicial Integrity through Enhanced Access to Justice}.
+    
+    \item Putnam, R. (1993). \textit{Making Democracy Work: Civic Traditions in Modern Italy}. Princeton University Press.
+    
+    \item Diamond, L. (1999). \textit{Developing Democracy: Toward Consolidation}. Johns Hopkins University Press.
+    
+    \item Fukuyama, F. (2014). \textit{Political Order and Political Decay}. Farrar, Straus and Giroux.
+    
+    \item World Bank. (2017). \textit{World Development Report: Governance and the Law}.
+    
+    \item UNESCO. (2021). \textit{World Trends in Freedom of Expression and Media Development}.
+    
+    \item Hayner, P. (2011). \textit{Unspeakable Truths: Transitional Justice}. Routledge.
+    
+    \item کاتوزیان، محمدعلی. (۱۳۹۵). \textit{تضاد دولت و ملت}. نشر نی.
+    
+    \item بشیریه، حسین. (۱۳۹۹). \textit{جامعه‌شناسی سیاسی}. نشر نگاه معاصر.
+    
+    \item طباطبایی، جواد. (۱۳۹۸). \textit{تاریخ اندیشه سیاسی در ایران}. انتشارات مینوی خرد.
+\end{enumerate}
+
+\end{refsection}

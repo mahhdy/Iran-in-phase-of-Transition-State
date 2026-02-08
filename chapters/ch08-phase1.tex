@@ -1,0 +1,1772 @@
+%═══════════════════════════════════════════════════════════════════════════════
+% فصل ۸: فاز ۱ — گذار (سال ۱-۲)
+% فایل: chapters/ch08-phase1.tex
+%═══════════════════════════════════════════════════════════════════════════════
+
+\chapter{فاز ۱: گذار اولیه (سال ۱-۲)}
+\label{chap:phase1}
+
+\begin{kholasebox}
+\textbf{خلاصه فصل:}
+فاز اول حیاتی‌ترین دوره گذار است. در این ۲۴ ماه، باید هم‌زمان چند هدف متعارض مدیریت شود: حفظ نظم عمومی، جلوگیری از خلأ قدرت، پاسخ به انتظارات فزاینده مردم، آغاز اصلاحات ساختاری، و مذاکره برای رفع تحریم‌ها. این فصل نقشه راه تفصیلی ۲۴ ماه اول شامل تشکیل شورای انتقالی، دولت موقت، انتخابات مجلس مؤسسان، و قانون اساسی جدید را ارائه می‌دهد. تجربه کشورهایی که در این فاز شکست خوردند (لیبی، مصر) و موفق شدند (تونس، لهستان) راهنمای ماست.
+\end{kholasebox}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{لحظه صفر: مدیریت فروپاشی}
+\label{sec:moment-zero}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{enghelabbox}
+\textbf{هشدار حیاتی:} خطرناک‌ترین لحظه هر گذار، ساعات و روزهای اولیه پس از سقوط رژیم است. در این خلأ قدرت، احتمال هرج‌ومرج، غارت، انتقام‌جویی، و ظهور نیروهای افراطی بسیار بالاست. آمادگی قبلی برای این لحظه حیاتی است.
+\end{enghelabbox}
+
+\subsection{سناریوهای محتمل فروپاشی}
+
+\begin{table}[htbp]
+\centering
+\caption{سناریوهای محتمل پایان نظام کنونی و پیامدهای هر یک}
+\label{tab:collapse-scenarios}
+\begin{tabular}{>{\columncolor{red!8}}r p{2.5cm} c p{4cm} p{3.5cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{ردیف} & \textbf{سناریو} & \textbf{احتمال} & \textbf{ویژگی‌ها} & \textbf{چالش اصلی} \\
+\midrule
+۱ & انقلاب مردمی & ۳۵٪ & سقوط سریع، خلأ قدرت & کنترل خشونت و انتقام \\
+\rowcolor{gray!10}
+۲ & کودتای اصلاح‌طلب & ۲۵٪ & حفظ نسبی نظم & مشروعیت‌سازی \\
+۳ & فروپاشی تدریجی & ۲۰٪ & بی‌ثباتی طولانی & مدیریت آشوب \\
+\rowcolor{gray!10}
+۴ & مذاکره و گذار مسالمت & ۱۵٪ & کم‌هزینه‌ترین & سازش‌های دشوار \\
+۵ & جنگ داخلی & ۵٪ & فاجعه‌بار & همه چیز \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{پروتکل ساعات اولیه}
+
+% تایم‌لاین ۷۲ ساعت اول
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8,
+    transform shape,
+    hour/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=2.2cm,
+        minimum height=1.2cm,
+        draw=#1!70!black,
+        fill=#1!20,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    },
+    action/.style={
+        rectangle,
+        rounded corners=2pt,
+        draw=gray!50,
+        fill=gray!5,
+        font=\tiny,
+        align=right,
+        text width=2.8cm
+    }
+]
+
+% خط زمان
+\draw[thick, gray!60, ->] (0,0) -- (18,0);
+\node[below, font=\small\bfseries] at (9,-0.5) {ساعات و روزهای اولیه};
+
+% نقاط زمانی
+\foreach \x/\label in {0/ساعت ۰, 3/ساعت ۶, 6/ساعت ۲۴, 9/ساعت ۴۸, 12/ساعت ۷۲, 15/روز ۷, 17/روز ۱۴} {
+    \draw[thick, gray!60] (\x,0.1) -- (\x,-0.1);
+    \node[below, font=\tiny] at (\x,-0.2) {\label};
+}
+
+% اقدامات
+\node[hour=red] at (1.5,2) {
+    \begin{tabular}{c}
+    اعلام\\
+    شورای انتقالی
+    \end{tabular}
+};
+\node[action] at (1.5,4) {
+    پیام تلویزیونی\\
+    درخواست آرامش\\
+    معرفی چهره‌ها
+};
+
+\node[hour=orange] at (4.5,2) {
+    \begin{tabular}{c}
+    کنترل\\
+    امنیتی
+    \end{tabular}
+};
+\node[action] at (4.5,4) {
+    هماهنگی با ارتش\\
+    حفاظت از زیرساخت\\
+    جلوگیری از غارت
+};
+
+\node[hour=yellow] at (7.5,2) {
+    \begin{tabular}{c}
+    پیام‌های\\
+    بین‌المللی
+    \end{tabular}
+};
+\node[action] at (7.5,4) {
+    تماس با UN\\
+    پیام به همسایگان\\
+    درخواست شناسایی
+};
+
+\node[hour=green] at (10.5,2) {
+    \begin{tabular}{c}
+    دولت موقت\\
+    فوری
+    \end{tabular}
+};
+\node[action] at (10.5,4) {
+    انتصاب وزرای کلیدی\\
+    تداوم خدمات\\
+    پرداخت حقوق
+};
+
+\node[hour=blue] at (13.5,2) {
+    \begin{tabular}{c}
+    نقشه راه\\
+    گذار
+    \end{tabular}
+};
+\node[action] at (13.5,4) {
+    اعلام جدول زمانی\\
+    تعهد به انتخابات\\
+    منشور حقوق فوری
+};
+
+\node[hour=purple] at (16.5,2) {
+    \begin{tabular}{c}
+    گشایش\\
+    سیاسی
+    \end{tabular}
+};
+\node[action] at (16.5,4) {
+    آزادی زندانیان\\
+    لغو سانسور\\
+    بازگشت تبعیدیان
+};
+
+% فلش‌ها
+\foreach \x in {1.5,4.5,7.5,10.5,13.5,16.5} {
+    \draw[->, gray!40] (\x,0.2) -- (\x,1.3);
+}
+
+\end{tikzpicture}
+\caption{پروتکل ۷۲ ساعت اول پس از تغییر نظام}
+\label{fig:72-hours}
+\end{figure}
+
+\begin{naghlbox}
+«در انقلاب‌ها، ساعات اول همه چیز را تعیین می‌کند. اگر نیروهای دموکراتیک آماده نباشند، نیروهای سازمان‌یافته‌تر — چه نظامی، چه افراطی — خلأ را پر می‌کنند.»
+\sourceline{ژوئل میگدال، جامعه‌شناس سیاسی}
+\end{naghlbox}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{شورای انتقالی: ساختار و ترکیب}
+\label{sec:transitional-council}
+%───────────────────────────────────────────────────────────────────────────────
+
+شورای انتقالی به‌عنوان عالی‌ترین مرجع تصمیم‌گیری در دوره گذار عمل می‌کند. این شورا باید نماینده طیف وسیعی از نیروها باشد.
+
+\subsection{ترکیب پیشنهادی شورای انتقالی}
+
+\begin{table}[htbp]
+\centering
+\caption{ترکیب پیشنهادی شورای انتقالی (۲۱ نفر)}
+\label{tab:council-composition}
+\begin{tabular}{>{\columncolor{blue!8}}r p{3.5cm} c p{5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{ردیف} & \textbf{گروه} & \textbf{تعداد} & \textbf{معیار انتخاب} \\
+\midrule
+۱ & رهبران اعتراضات داخل & ۴ & شناخته‌شده در جنبش‌های اخیر \\
+\rowcolor{gray!10}
+۲ & اپوزیسیون خارج از کشور & ۳ & نمایندگان جریان‌های اصلی \\
+۳ & نمایندگان اقوام & ۴ & آذری، کرد، عرب، بلوچ \\
+\rowcolor{gray!10}
+۴ & نمایندگان زنان & ۲ & فعالان حقوق زنان \\
+۵ & نمایندگان جوانان & ۲ & زیر ۳۵ سال \\
+\rowcolor{gray!10}
+۶ & شخصیت‌های ملی مستقل & ۳ & مورد اعتماد عمومی \\
+۷ & نماینده نهاد نظامی & ۱ & ژنرال اصلاح‌طلب \\
+\rowcolor{gray!10}
+۸ & نماینده روحانیت سکولار & ۱ & مخالف حکومت دینی \\
+۹ & نماینده اقلیت‌های دینی & ۱ & چرخشی بین ادیان \\
+\midrule
+\rowcolor{blue!15}
+& \textbf{جمع} & \textbf{۲۱} & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{ساختار تصمیم‌گیری}
+
+% نمودار ساختار شورا
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    organ/.style={
+        rectangle,
+        rounded corners=5pt,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        minimum width=3.5cm,
+        minimum height=1.2cm,
+        font=\small\bfseries,
+        align=center
+    },
+    committee/.style={
+        rectangle,
+        rounded corners=3pt,
+        draw=gray!60,
+        fill=gray!10,
+        minimum width=2.5cm,
+        minimum height=0.9cm,
+        font=\scriptsize,
+        align=center
+    }
+]
+
+% شورای انتقالی
+\node[organ=purple] (council) at (0,5) {
+    \begin{tabular}{c}
+    شورای انتقالی\\
+    (۲۱ نفر)
+    \end{tabular}
+};
+
+% هیئت رئیسه
+\node[organ=blue] (presidium) at (0,3) {
+    \begin{tabular}{c}
+    هیئت رئیسه\\
+    (۵ نفر چرخشی)
+    \end{tabular}
+};
+
+% سه شاخه
+\node[organ=green] (exec) at (-5,0.5) {
+    \begin{tabular}{c}
+    دولت موقت\\
+    (نخست‌وزیر + کابینه)
+    \end{tabular}
+};
+
+\node[organ=orange] (legis) at (0,0.5) {
+    \begin{tabular}{c}
+    کمیسیون قانون‌گذاری\\
+    (تصویب فرمان‌های فوری)
+    \end{tabular}
+};
+
+\node[organ=red] (judicial) at (5,0.5) {
+    \begin{tabular}{c}
+    کمیسیون حقوقی\\
+    (نظارت بر قانونیت)
+    \end{tabular}
+};
+
+% کمیته‌های تخصصی
+\node[committee] (c1) at (-6,-2) {کمیته امنیت};
+\node[committee] (c2) at (-4,-2) {کمیته اقتصاد};
+\node[committee] (c3) at (-2,-2) {کمیته انتخابات};
+\node[committee] (c4) at (0,-2) {کمیته حقوق بشر};
+\node[committee] (c5) at (2,-2) {کمیته اقوام};
+\node[committee] (c6) at (4,-2) {کمیته سیاست خارجی};
+\node[committee] (c7) at (6,-2) {کمیته آشتی ملی};
+
+% اتصالات
+\draw[->, thick, purple!60] (council) -- (presidium);
+\draw[->, thick, blue!60] (presidium) -- (exec);
+\draw[->, thick, blue!60] (presidium) -- (legis);
+\draw[->, thick, blue!60] (presidium) -- (judicial);
+
+\draw[->, gray!40] (exec) -- (c1);
+\draw[->, gray!40] (exec) -- (c2);
+\draw[->, gray!40] (legis) -- (c3);
+\draw[->, gray!40] (legis) -- (c4);
+\draw[->, gray!40] (judicial) -- (c5);
+\draw[->, gray!40] (judicial) -- (c6);
+\draw[->, gray!40] (presidium) -- (c7);
+
+\end{tikzpicture}
+\caption{ساختار شورای انتقالی و نهادهای زیرمجموعه}
+\label{fig:council-structure}
+\end{figure}
+
+\begin{olgoobox}
+\textbf{الگوی تونس (۲۰۱۱):} «هیئت عالی تحقق اهداف انقلاب» با ۱۵۵ عضو از احزاب، اتحادیه‌ها، و جامعه مدنی، موفق شد اجماع ملی را حفظ کند. کلید موفقیت: مشارکت همه نیروها، حتی اسلام‌گرایان معتدل. نتیجه: تنها دموکراسی موفق بهار عربی.
+\end{olgoobox}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{دولت موقت: ساختار و وظایف}
+\label{sec:provisional-government}
+%───────────────────────────────────────────────────────────────────────────────
+
+دولت موقت قوه مجریه دوره گذار است. این دولت باید تکنوکرات، کارآمد، و غیرجناحی باشد.
+
+\subsection{معیارهای انتخاب نخست‌وزیر موقت}
+
+\begin{itemize}
+    \item \textbf{مورد اعتماد عمومی:} شخصیتی که در دوره استبداد مقاومت کرده باشد
+    \item \textbf{غیرحزبی:} متعهد به عدم نامزدی در انتخابات آینده
+    \item \textbf{تجربه مدیریتی:} توانایی اداره بحران
+    \item \textbf{مقبولیت بین‌المللی:} شناخته‌شده و مورد احترام جهانی
+    \item \textbf{فراقومی:} پذیرفته‌شده توسط همه اقوام
+\end{itemize}
+
+\subsection{ساختار کابینه موقت}
+
+\begin{table}[htbp]
+\centering
+\caption{کابینه موقت پیشنهادی (۱۸ وزارتخانه)}
+\label{tab:provisional-cabinet}
+\begin{tabular}{>{\columncolor{green!8}}r p{3cm} p{4cm} p{4cm}}
+\toprule
+\rowcolor{green!25}
+\textbf{ردیف} & \textbf{وزارتخانه} & \textbf{اولویت فوری} & \textbf{پروفایل وزیر} \\
+\midrule
+۱ & کشور & امنیت و انتخابات & ژنرال بازنشسته دموکرات \\
+\rowcolor{gray!10}
+۲ & اقتصاد و دارایی & تثبیت ارز و تورم & اقتصاددان بین‌المللی \\
+۳ & امور خارجه & رفع تحریم & دیپلمات باتجربه \\
+\rowcolor{gray!10}
+۴ & دادگستری & اصلاح قضا، آزادی زندانیان & حقوقدان حقوق بشری \\
+۵ & نفت و انرژی & مذاکره صادرات & مدیر صنعت نفت \\
+\rowcolor{gray!10}
+۶ & کار و رفاه & یارانه و اشتغال & فعال کارگری \\
+۷ & بهداشت & واکسیناسیون، دارو & پزشک مدیر \\
+\rowcolor{gray!10}
+۸ & آموزش و پرورش & اصلاح محتوا & استاد دانشگاه \\
+۹ & علوم و فناوری & آزادی اینترنت & متخصص IT \\
+\rowcolor{gray!10}
+۱۰ & جهاد کشاورزی & بحران آب و غذا & مهندس کشاورزی \\
+۱۱ & راه و شهرسازی & مسکن اضطراری & مهندس عمران \\
+\rowcolor{gray!10}
+۱۲ & ارتباطات & رسانه آزاد & روزنامه‌نگار \\
+۱۳ & تعاون و اقوام & حقوق قومی & نماینده اقلیت \\
+\rowcolor{gray!10}
+۱۴ & زنان و خانواده & لغو قوانین تبعیضی & فعال حقوق زنان \\
+۱۵ & میراث فرهنگی & حفاظت از آثار & باستان‌شناس \\
+\rowcolor{gray!10}
+۱۶ & ورزش و جوانان & فضا برای جوانان & قهرمان ورزشی \\
+۱۷ & محیط زیست & بحران آب & زیست‌محیطی \\
+\rowcolor{gray!10}
+۱۸ & دفاع & کنترل مدنی بر ارتش & ژنرال اصلاح‌طلب \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{تقویم گذار: ۲۴ ماه اول}
+\label{sec:transition-calendar}
+%───────────────────────────────────────────────────────────────────────────────
+
+% تایم‌لاین ۲۴ ماه
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.65,
+    transform shape,
+    event/.style={
+        rectangle,
+        rounded corners=3pt,
+        minimum width=1.8cm,
+        minimum height=0.8cm,
+        draw=#1!70!black,
+        fill=#1!20,
+        text=#1!30!black,
+        font=\tiny\bfseries,
+        align=center
+    }
+]
+
+% سال اول
+\draw[thick, gray!60] (0,0) -- (24,0);
+\draw[thick, gray!60] (0,-4) -- (24,-4);
+
+\node[left, font=\small\bfseries] at (-0.5,0) {سال اول};
+\node[left, font=\small\bfseries] at (-0.5,-4) {سال دوم};
+
+% ماه‌ها - سال اول
+\foreach \x in {0,2,4,6,8,10,12,14,16,18,20,22,24} {
+    \draw[gray!40] (\x,0.1) -- (\x,-0.1);
+}
+\foreach \x/\m in {1/۱,3/۲,5/۳,7/۴,9/۵,11/۶,13/۷,15/۸,17/۹,19/۱۰,21/۱۱,23/۱۲} {
+    \node[above, font=\tiny] at (\x,0.2) {ماه \m};
+}
+
+% ماه‌ها - سال دوم
+\foreach \x in {0,2,4,6,8,10,12,14,16,18,20,22,24} {
+    \draw[gray!40] (\x,-3.9) -- (\x,-4.1);
+}
+\foreach \x/\m in {1/۱۳,3/۱۴,5/۱۵,7/۱۶,9/۱۷,11/۱۸,13/۱۹,15/۲۰,17/۲۱,19/۲۲,21/۲۳,23/۲۴} {
+    \node[above, font=\tiny] at (\x,-3.8) {ماه \m};
+}
+
+% رویدادهای سال اول
+\node[event=red] at (1,1.5) {شورای انتقالی};
+\node[event=red] at (3,1.5) {دولت موقت};
+\node[event=orange] at (6,1.5) {قانون انتخابات};
+\node[event=orange] at (9,1.5) {ثبت احزاب};
+\node[event=yellow] at (13,1.5) {مذاکرات وین ۲};
+\node[event=green] at (17,1.5) {انتخابات مؤسسان};
+\node[event=blue] at (21,1.5) {آغاز کار مجلس};
+
+% رویدادهای سال دوم
+\node[event=purple] at (3,-2.5) {پیش‌نویس قانون اساسی};
+\node[event=purple] at (9,-2.5) {بحث عمومی};
+\node[event=teal] at (15,-2.5) {همه‌پرسی قانون اساسی};
+\node[event=blue] at (21,-2.5) {انتخابات عمومی};
+
+% فلش‌ها
+\foreach \x/\y in {1/1.5, 3/1.5, 6/1.5, 9/1.5, 13/1.5, 17/1.5, 21/1.5} {
+    \draw[->, gray!40] (\x,0.3) -- (\x,\y-0.4);
+}
+\foreach \x/\y in {3/-2.5, 9/-2.5, 15/-2.5, 21/-2.5} {
+    \draw[->, gray!40] (\x,-3.7) -- (\x,\y+0.4);
+}
+
+% خط اتصال دو سال
+\draw[->, thick, purple!60] (24,0) -- (24,-2) -- (0,-2) -- (0,-4);
+
+\end{tikzpicture}
+\caption{تقویم کلان گذار: رویدادهای کلیدی ۲۴ ماه اول}
+\label{fig:24-month-calendar}
+\end{figure}
+
+\subsection{فاز ۱-الف: تثبیت اولیه (ماه ۱-۶)}
+
+\begin{table}[htbp]
+\centering
+\caption{اقدامات کلیدی ماه‌های ۱ تا ۶}
+\label{tab:months-1-6}
+\begin{tabular}{>{\columncolor{red!8}}r p{2cm} p{6cm} p{3cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{ماه} & \textbf{محور} & \textbf{اقدامات} & \textbf{شاخص موفقیت} \\
+\midrule
+۱ & امنیت & کنترل نظم، جلوگیری از انتقام، حفظ زیرساخت‌ها & صفر کشته غیرنظامی \\
+\rowcolor{gray!10}
+۲ & آزادی‌ها & آزادی زندانیان، لغو سانسور، اجازه تجمع & همه زندانیان سیاسی آزاد \\
+۳ & اقتصاد اضطراری & پرداخت حقوق، کنترل قیمت‌ها، یارانه نقدی & تورم زیر ۵٪ ماهانه \\
+\rowcolor{gray!10}
+۴ & دیپلماسی & پیام به جهان، آغاز مذاکرات، دعوت از UN & شناسایی ۵۰ کشور \\
+۵ & قانون‌گذاری اولیه & قانون احزاب، قانون مطبوعات، قانون تجمعات & تصویب ۳ قانون کلیدی \\
+\rowcolor{gray!10}
+۶ & آماده‌سازی انتخابات & سرشماری رأی‌دهندگان، آموزش ناظران & ثبت‌نام ۴۰ میلیون نفر \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{فاز ۱-ب: نهادسازی اولیه (ماه ۷-۱۲)}
+
+\begin{table}[htbp]
+\centering
+\caption{اقدامات کلیدی ماه‌های ۷ تا ۱۲}
+\label{tab:months-7-12}
+\begin{tabular}{>{\columncolor{orange!8}}r p{2cm} p{6cm} p{3cm}}
+\toprule
+\rowcolor{orange!25}
+\textbf{ماه} & \textbf{محور} & \textbf{اقدامات} & \textbf{شاخص موفقیت} \\
+\midrule
+۷ & احزاب & ثبت احزاب جدید، کمک مالی به احزاب دموکراتیک & ۲۰+ حزب ثبت‌شده \\
+\rowcolor{gray!10}
+۸ & رسانه & راه‌اندازی رسانه عمومی مستقل، مجوز رسانه‌های خصوصی & ۱۰۰+ رسانه جدید \\
+۹ & تحریم‌ها & امضای توافق موقت، آزادسازی دارایی‌ها & رفع ۵۰٪ تحریم‌ها \\
+\rowcolor{gray!10}
+۱۰ & کمپین انتخاباتی & مناظره‌ها، تبلیغات، آموزش شهروندی & مشارکت آگاهانه \\
+۱۱ & \textbf{انتخابات مؤسسان} & برگزاری انتخابات آزاد، نظارت بین‌المللی & مشارکت ۶۵٪+ \\
+\rowcolor{gray!10}
+۱۲ & آغاز مجلس & افتتاح مجلس مؤسسان، انتخاب هیئت رئیسه & تشکیل کمیسیون‌ها \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{فاز ۱-ج: قانون اساسی (ماه ۱۳-۲۴)}
+
+\begin{table}[htbp]
+\centering
+\caption{اقدامات کلیدی ماه‌های ۱۳ تا ۲۴}
+\label{tab:months-13-24}
+\begin{tabular}{>{\columncolor{green!8}}r p{2cm} p{6cm} p{3cm}}
+\toprule
+\rowcolor{green!25}
+\textbf{ماه} & \textbf{محور} & \textbf{اقدامات} & \textbf{شاخص موفقیت} \\
+\midrule
+۱۳-۱۵ & تدوین & کمیسیون‌های تخصصی، مشاوره بین‌المللی & پیش‌نویس اولیه \\
+\rowcolor{gray!10}
+۱۶-۱۸ & بحث عمومی & انتشار متن، جلسات شهری، نظرسنجی & ۱ میلیون نظر مردمی \\
+۱۹-۲۰ & اصلاح نهایی & بازنگری بر اساس نظرات، رأی‌گیری مجلس & تصویب ۲/۳ مجلس \\
+\rowcolor{gray!10}
+۲۱ & \textbf{همه‌پرسی} & رأی مردم به قانون اساسی جدید & تأیید ۶۰٪+ \\
+۲۲-۲۳ & آماده‌سازی انتخابات & ثبت‌نام نامزدها، کمپین‌ها & ثبت‌نام ۵۰ میلیون \\
+\rowcolor{gray!10}
+۲۴ & \textbf{انتخابات عمومی} & انتخابات ریاست‌جمهوری و مجلس & مشارکت ۷۰٪+ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{مدیریت نیروهای امنیتی}
+\label{sec:security-forces}
+%───────────────────────────────────────────────────────────────────────────────
+
+یکی از حساس‌ترین چالش‌های گذار، مدیریت نیروهای نظامی و انتظامی است.
+
+\begin{enghelabbox}
+\textbf{درس عراق:} انحلال کامل ارتش عراق توسط پل برمر (۲۰۰۳) فاجعه‌ای بود که صدها هزار نفر مسلح و بیکار را به دشمن تبدیل کرد و زمینه‌ساز داعش شد. درس: اصلاح بهتر از انحلال است.
+\end{enghelabbox}
+
+\subsection{استراتژی مواجهه با نهادهای امنیتی}
+
+\begin{table}[htbp]
+\centering
+\caption{استراتژی تفکیکی مواجهه با نهادهای امنیتی}
+\label{tab:security-strategy}
+\begin{tabular}{>{\columncolor{gray!8}}r p{2.5cm} p{3.5cm} p{3.5cm} p{2.5cm}}
+\toprule
+\rowcolor{gray!30}
+\textbf{نهاد} & \textbf{وضعیت کنونی} & \textbf{استراتژی پیشنهادی} & \textbf{سرنوشت پرسنل} & \textbf{زمان‌بندی} \\
+\midrule
+ارتش & ۳۵۰,۰۰۰ نفر & حفظ با اصلاحات & بازنشستگی فرماندهان & ۱-۵ سال \\
+\rowcolor{gray!10}
+سپاه پاسداران & ۱۲۵,۰۰۰ نفر & انحلال تدریجی & ادغام در ارتش/بازنشستگی & ۲-۵ سال \\
+بسیج & ۱ میلیون؟ & انحلال کامل & غیرنظامی‌سازی & فوری \\
+\rowcolor{gray!10}
+نیروی انتظامی & ۱۲۰,۰۰۰ نفر & اصلاح ساختاری & تطهیر ناقضان حقوق بشر & ۱-۳ سال \\
+اطلاعات سپاه & ۱۵,۰۰۰؟ نفر & انحلال & بازداشت متهمان اصلی & فوری \\
+\rowcolor{gray!10}
+گشت ارشاد & ۷,۰۰۰ نفر & انحلال کامل & بازآموزی یا اخراج & فوری \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{فرآیند تطهیر (Vetting)}
+
+% نمودار فرآیند تطهیر
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    step/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=2.5cm,
+        minimum height=1.5cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    },
+    arrow/.style={
+        ->,
+        >=stealth,
+        thick,
+        draw=gray!60
+    }
+]
+
+% مراحل
+\node[step=blue] (register) at (0,0) {
+    \begin{tabular}{c}
+    ثبت‌نام همه\\
+    پرسنل امنیتی
+    \end{tabular}
+};
+
+\node[step=orange] (review) at (4,0) {
+    \begin{tabular}{c}
+    بررسی پرونده\\
+    توسط کمیسیون
+    \end{tabular}
+};
+
+\node[step=green] (clear) at (8,2) {
+    \begin{tabular}{c}
+    پاک: ادامه\\
+    خدمت یا بازنشستگی
+    \end{tabular}
+};
+
+\node[step=yellow] (retrain) at (8,0) {
+    \begin{tabular}{c}
+    نیازمند بازآموزی:\\
+    دوره حقوق بشر
+    \end{tabular}
+};
+
+\node[step=red] (prosecute) at (8,-2) {
+    \begin{tabular}{c}
+    متهم: ارجاع\\
+    به دادگاه
+    \end{tabular}
+};
+
+% فلش‌ها
+\draw[arrow] (register) -- (review);
+\draw[arrow] (review) -- (clear) node[midway, above, font=\tiny] {۷۰٪};
+\draw[arrow] (review) -- (retrain) node[midway, above, font=\tiny] {۲۵٪};
+\draw[arrow] (review) -- (prosecute) node[midway, below, font=\tiny] {۵٪};
+
+% معیارها
+\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=right, 
+      text width=4cm] at (4,-3) {
+    \textbf{معیارهای تطهیر:}\\
+    • نقش در سرکوب خونین\\
+    • شکنجه مستند\\
+    • فرماندهی عملیات ضد مردمی\\
+    • فساد مالی کلان\\
+    • همکاری با محاکمات فرمایشی
+};
+
+\end{tikzpicture}
+\caption{فرآیند تطهیر نیروهای امنیتی}
+\label{fig:vetting-process}
+\end{figure}
+
+\begin{olgoobox}
+\textbf{الگوی آلمان شرقی:} پس از وحدت آلمان، کمیسیون گاوک (Gauck Commission) پرونده‌های شتازی (پلیس مخفی) را بررسی کرد. از ۹۱,۰۰۰ کارمند شتازی، تنها ۵۰۰ نفر محاکمه شدند. بقیه یا بازنشسته شدند یا در مشاغل غیرحساس به کار گرفته شدند. این رویکرد متعادل، ثبات را حفظ کرد.
+\end{olgoobox}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{مدیریت بحران اقتصادی فوری}
+\label{sec:economic-emergency}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{enghelabbox}
+\textbf{وضعیت اقتصاد ایران در نقطه صفر (تخمین):}
+\begin{itemize}[nosep]
+    \item نرخ تورم: ۴۵-۵۰٪ سالانه
+    \item نرخ بیکاری: ۱۵-۲۰٪ (جوانان ۳۰٪+)
+    \item نرخ ارز: ۵۰۰,۰۰۰+ ریال به دلار
+    \item ذخایر ارزی قابل دسترس: ۱۰-۱۵ میلیارد دلار
+    \item بدهی دولت: ۴۰-۵۰٪ GDP
+    \item دارایی‌های مسدودشده: ۱۰۰+ میلیارد دلار
+\end{itemize}
+\end{enghelabbox}
+
+\subsection{بسته اقدامات اضطراری اقتصادی}
+
+\begin{table}[htbp]
+\centering
+\caption{بسته اقدامات اقتصادی ماه‌های اول}
+\label{tab:economic-emergency}
+\begin{tabular}{>{\columncolor{yellow!8}}r p{3cm} p{4.5cm} p{3.5cm}}
+\toprule
+\rowcolor{yellow!25}
+\textbf{اولویت} & \textbf{اقدام} & \textbf{شرح} & \textbf{منبع تأمین مالی} \\
+\midrule
+۱ & پرداخت حقوق کارکنان & ادامه حقوق همه کارمندان دولت & بودجه جاری \\
+\rowcolor{gray!10}
+۲ & یارانه نقدی مضاعف & دوبرابر کردن یارانه نقدی & صندوق توسعه ملی \\
+۳ & کنترل قیمت کالاهای اساسی & سقف قیمت نان، برنج، روغن، دارو & یارانه مستقیم \\
+\rowcolor{gray!10}
+۴ & تثبیت موقت نرخ ارز & مداخله بانک مرکزی & ذخایر ارزی \\
+۵ & تضمین سپرده‌های بانکی & جلوگیری از هجوم بانکی & تضمین دولتی \\
+\rowcolor{gray!10}
+۶ & بسته کمکی بیکاران & ماهی ۵ میلیون تومان & بودجه اضطراری \\
+۷ & تعلیق مالیات کسب‌وکارهای کوچک & ۶ ماه معافیت & کسری بودجه \\
+\rowcolor{gray!10}
+۸ & آزادسازی دارایی‌های مسدود & مذاکره فوری با آمریکا/اروپا & دارایی‌های خارجی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{نمودار جریان منابع مالی دوره گذار}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    source/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=2.8cm,
+        minimum height=1cm,
+        draw=green!70!black,
+        fill=green!15,
+        text=green!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    },
+    use/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=2.8cm,
+        minimum height=1cm,
+        draw=red!70!black,
+        fill=red!15,
+        text=red!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    },
+    flow/.style={
+        ->,
+        >=stealth,
+        thick,
+        draw=blue!60
+    }
+]
+
+% منابع
+\node[source] (oil) at (0,3) {درآمد نفت (محدود)};
+\node[source] (assets) at (0,1.5) {دارایی‌های آزادشده};
+\node[source] (ndf) at (0,0) {صندوق توسعه ملی};
+\node[source] (tax) at (0,-1.5) {مالیات (کاهش‌یافته)};
+\node[source] (aid) at (0,-3) {کمک‌های بین‌المللی};
+
+% خزانه
+\node[rectangle, rounded corners=6pt, draw=purple!70!black, fill=purple!15,
+      minimum width=2.5cm, minimum height=2.5cm, font=\small\bfseries,
+      text=purple!30!black, align=center] (treasury) at (5,0) {
+    \begin{tabular}{c}
+    خزانه\\
+    دولت موقت
+    \end{tabular}
+};
+
+% مصارف
+\node[use] (salary) at (10,3) {حقوق کارکنان};
+\node[use] (subsidy) at (10,1.5) {یارانه نقدی};
+\node[use] (health) at (10,0) {بهداشت و دارو};
+\node[use] (security) at (10,-1.5) {امنیت و دفاع};
+\node[use] (infra) at (10,-3) {زیرساخت اضطراری};
+
+% جریان‌ها - ورودی
+\draw[flow] (oil) -- (treasury) node[midway, above, font=\tiny] {۳۰٪};
+\draw[flow] (assets) -- (treasury) node[midway, above, font=\tiny] {۲۵٪};
+\draw[flow] (ndf) -- (treasury) node[midway, above, font=\tiny] {۲۰٪};
+\draw[flow] (tax) -- (treasury) node[midway, below, font=\tiny] {۱۵٪};
+\draw[flow] (aid) -- (treasury) node[midway, below, font=\tiny] {۱۰٪};
+
+% جریان‌ها - خروجی
+\draw[flow] (treasury) -- (salary) node[midway, above, font=\tiny] {۳۵٪};
+\draw[flow] (treasury) -- (subsidy) node[midway, above, font=\tiny] {۲۵٪};
+\draw[flow] (treasury) -- (health) node[midway, above, font=\tiny] {۱۵٪};
+\draw[flow] (treasury) -- (security) node[midway, below, font=\tiny] {۱۵٪};
+\draw[flow] (treasury) -- (infra) node[midway, below, font=\tiny] {۱۰٪};
+
+% راهنما
+\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=center] 
+      at (5,-4.5) {تخمین بودجه سال اول: ۸۰۰-۱۰۰۰ هزار میلیارد تومان};
+
+\end{tikzpicture}
+\caption{جریان منابع و مصارف مالی دولت موقت}
+\label{fig:financial-flow}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{دیپلماسی گذار و رفع تحریم}
+\label{sec:diplomacy}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{naghlbox}
+«هیچ دموکراسی‌ای در انزوای بین‌المللی و فقر اقتصادی پایدار نمی‌ماند. رفع تحریم‌ها نه امتیاز به بیگانه، که ضرورت بقای دموکراسی است.»
+\sourceline{تحلیل‌گر}
+\end{naghlbox}
+
+\subsection{نقشه راه دیپلماتیک}
+
+\begin{table}[htbp]
+\centering
+\caption{اولویت‌های دیپلماتیک ۱۲ ماه اول}
+\label{tab:diplomacy-roadmap}
+\begin{tabular}{>{\columncolor{blue!8}}r p{2.5cm} p{5cm} p{3.5cm}}
+\toprule
+\rowcolor{blue!25}
+\textbf{ماه} & \textbf{محور} & \textbf{اقدام} & \textbf{هدف} \\
+\midrule
+۱ & سازمان ملل & نامه به دبیرکل، درخواست حمایت & مشروعیت‌سازی \\
+\rowcolor{gray!10}
+۱-۲ & همسایگان & پیام به ۱۵ همسایه، تعهد به صلح & اطمینان‌بخشی \\
+۲-۳ & اتحادیه اروپا & مذاکره رفع تحریم‌های EU & آزادسازی اولیه \\
+\rowcolor{gray!10}
+۳-۴ & آمریکا & کانال عمان، پیشنهاد توافق موقت & تعلیق تحریم‌ها \\
+۴-۶ & برجام ۲.۰ & مذاکره توافق جامع جدید & برنامه هسته‌ای \\
+\rowcolor{gray!10}
+۶-۸ & نهادهای مالی & IMF، بانک جهانی، FATF & وام و سرمایه‌گذاری \\
+۸-۱۲ & سرمایه‌گذاران & کنفرانس بین‌المللی ایران & جذب FDI \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{پیشنهاد «معامله بزرگ» (Grand Bargain)}
+
+\begin{olgoobox}
+\textbf{پیشنهاد ایران به جامعه جهانی:}
+
+\textbf{ایران تعهد می‌دهد:}
+\begin{itemize}[nosep]
+    \item توقف غنی‌سازی بالای ۳.۶۷٪
+    \item پذیرش پروتکل الحاقی + نظارت‌های گسترده
+    \item خروج نظامی از سوریه و یمن (تدریجی)
+    \item قطع حمایت از گروه‌های مسلح منطقه‌ای
+    \item به رسمیت شناختن اسرائیل در چارچوب راه‌حل دو دولت
+\end{itemize}
+
+\textbf{در ازای:}
+\begin{itemize}[nosep]
+    \item رفع کامل تحریم‌های آمریکا و اروپا
+    \item آزادسازی ۱۰۰+ میلیارد دلار دارایی
+    \item عضویت در WTO و FATF
+    \item بسته کمک بازسازی ۵۰ میلیارد دلاری
+    \item تضمین امنیتی (عدم تغییر رژیم)
+\end{itemize}
+\end{olgoobox}
+
+\subsection{نمودار مراحل رفع تحریم}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=14cm,
+    height=7cm,
+    xlabel={ماه پس از گذار},
+    ylabel={درصد تحریم‌های باقیمانده},
+    xmin=0, xmax=24,
+    ymin=0, ymax=110,
+    grid=major,
+    grid style={dashed, gray!30},
+    legend style={at={(0.98,0.98)}, anchor=north east, font=\small},
+    legend cell align=left
+]
+
+% سناریوی خوش‌بینانه
+\addplot[thick, color=green!70!black, mark=*] coordinates {
+    (0,100) (3,90) (6,70) (9,50) (12,30) (18,15) (24,5)
+};
+
+% سناریوی واقع‌بینانه
+\addplot[thick, color=orange, mark=square*] coordinates {
+    (0,100) (3,95) (6,85) (9,70) (12,55) (18,40) (24,25)
+};
+
+% سناریوی بدبینانه
+\addplot[thick, color=red, mark=triangle*] coordinates {
+    (0,100) (3,98) (6,95) (9,90) (12,85) (18,75) (24,60)
+};
+
+\legend{
+    خوش‌بینانه (توافق سریع),
+    واقع‌بینانه (مذاکره طولانی),
+    بدبینانه (مقاومت داخلی/خارجی)
+}
+
+% مراحل کلیدی
+\node[font=\tiny, anchor=south] at (axis cs:3,90) {تعلیق EU};
+\node[font=\tiny, anchor=south] at (axis cs:6,70) {توافق موقت};
+\node[font=\tiny, anchor=south] at (axis cs:12,30) {توافق جامع};
+
+\end{axis}
+\end{tikzpicture}
+\caption{سناریوهای رفع تحریم در ۲۴ ماه اول}
+\label{fig:sanctions-removal}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{انتخابات مجلس مؤسسان}
+\label{sec:constituent-assembly}
+%───────────────────────────────────────────────────────────────────────────────
+
+انتخابات مجلس مؤسسان مهم‌ترین رویداد سال اول است. این مجلس قانون اساسی جدید را تدوین می‌کند.
+
+\subsection{نظام انتخاباتی پیشنهادی}
+
+\begin{table}[htbp]
+\centering
+\caption{ویژگی‌های نظام انتخاباتی مجلس مؤسسان}
+\label{tab:electoral-system}
+\begin{tabular}{>{\columncolor{purple!8}}r p{4cm} p{6.5cm}}
+\toprule
+\rowcolor{purple!25}
+\textbf{ردیف} & \textbf{ویژگی} & \textbf{شرح} \\
+\midrule
+۱ & تعداد کرسی‌ها & ۳۰۰ نماینده \\
+\rowcolor{gray!10}
+۲ & نظام انتخاباتی & مختلط: ۲۰۰ حوزه‌ای + ۱۰۰ نسبی \\
+۳ & سهمیه جنسیتی & حداقل ۳۰٪ زنان (در لیست‌های نسبی) \\
+\rowcolor{gray!10}
+۴ & سهمیه قومی & تضمین حداقل برای مناطق قومی \\
+۵ & آستانه ورود & ۳٪ آرای کشوری (برای نسبی) \\
+\rowcolor{gray!10}
+۶ & نظارت & کمیسیون مستقل + ناظران بین‌المللی \\
+۷ & تأمین مالی & بودجه دولتی برابر + سقف هزینه \\
+\rowcolor{gray!10}
+۸ & دسترسی رسانه‌ای & وقت برابر رایگان در رسانه عمومی \\
+۹ & حق رأی & همه شهروندان ۱۸+ ساله (داخل و خارج) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{نقشه حوزه‌های انتخابیه}
+
+%═══════════════════════════════════════════════════════════════════════════════
+% ادامه فصل ۸: فاز ۱ — گذار (سال ۱-۲)
+% فایل: chapters/ch08-phase1.tex (ادامه)
+%═══════════════════════════════════════════════════════════════════════════════
+
+% ادامه نقشه حوزه‌های انتخابیه...
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.75,
+    transform shape,
+    region/.style={
+        ellipse,
+        draw=#1!70!black,
+        fill=#1!20,
+        minimum width=2.8cm,
+        minimum height=1.6cm,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% مناطق انتخاباتی
+\node[region=blue] (tehran) at (0,0) {
+    \begin{tabular}{c}
+    تهران\\
+    ۴۵ کرسی
+    \end{tabular}
+};
+
+\node[region=teal] (azarbaijan) at (-4.5,2.5) {
+    \begin{tabular}{c}
+    آذربایجان\\
+    ۳۵ کرسی
+    \end{tabular}
+};
+
+\node[region=green] (kurdistan) at (-5.5,0) {
+    \begin{tabular}{c}
+    کردستان\\
+    ۱۵ کرسی
+    \end{tabular}
+};
+
+\node[region=orange] (khuzestan) at (-3.5,-2.5) {
+    \begin{tabular}{c}
+    خوزستان\\
+    ۲۰ کرسی
+    \end{tabular}
+};
+
+\node[region=red] (isfahan) at (0,-2.5) {
+    \begin{tabular}{c}
+    اصفهان\\
+    ۲۵ کرسی
+    \end{tabular}
+};
+
+\node[region=purple] (khorasan) at (4.5,1.5) {
+    \begin{tabular}{c}
+    خراسان\\
+    ۳۵ کرسی
+    \end{tabular}
+};
+
+\node[region=brown] (fars) at (2,-2.5) {
+    \begin{tabular}{c}
+    فارس\\
+    ۲۰ کرسی
+    \end{tabular}
+};
+
+\node[region=cyan] (mazandaran) at (2,2.5) {
+    \begin{tabular}{c}
+    شمال\\
+    ۲۵ کرسی
+    \end{tabular}
+};
+
+\node[region=yellow] (sistan) at (5.5,-1.5) {
+    \begin{tabular}{c}
+    سیستان\\
+    ۱۰ کرسی
+    \end{tabular}
+};
+
+\node[region=pink] (other) at (0,3) {
+    \begin{tabular}{c}
+    سایر استان‌ها\\
+    ۷۰ کرسی
+    \end{tabular}
+};
+
+% اتصالات نمادین
+\draw[gray!30, dashed] (tehran) -- (azarbaijan);
+\draw[gray!30, dashed] (tehran) -- (kurdistan);
+\draw[gray!30, dashed] (tehran) -- (khuzestan);
+\draw[gray!30, dashed] (tehran) -- (isfahan);
+\draw[gray!30, dashed] (tehran) -- (khorasan);
+\draw[gray!30, dashed] (tehran) -- (fars);
+\draw[gray!30, dashed] (tehran) -- (mazandaran);
+\draw[gray!30, dashed] (tehran) -- (sistan);
+
+% جمع کل
+\node[rectangle, rounded corners=5pt, draw=black!70, fill=black!10,
+      font=\small\bfseries, align=center] at (0,-4.5) {
+    مجموع کرسی‌های حوزه‌ای: ۲۰۰ | کرسی‌های نسبی ملی: ۱۰۰ | جمع: ۳۰۰
+};
+
+\end{tikzpicture}
+\caption{توزیع تقریبی کرسی‌های مجلس مؤسسان بر اساس جمعیت مناطق}
+\label{fig:constituency-map}
+\end{figure}
+
+\subsection{تضمینات انتخابات آزاد}
+
+\begin{table}[htbp]
+\centering
+\caption{چک‌لیست تضمینات انتخابات آزاد و منصفانه}
+\label{tab:election-guarantees}
+\begin{tabular}{>{\columncolor{green!8}}r p{4cm} p{4cm} c}
+\toprule
+\rowcolor{green!25}
+\textbf{ردیف} & \textbf{تضمین} & \textbf{سازوکار اجرایی} & \textbf{استاندارد بین‌المللی} \\
+\midrule
+۱ & ثبت‌نام فراگیر رأی‌دهندگان & سامانه الکترونیک + حضوری & ICCPR ماده ۲۵ \\
+\rowcolor{gray!10}
+۲ & آزادی نامزدی & بدون نظارت استصوابی & کنوانسیون اروپایی \\
+۳ & دسترسی برابر به رسانه & سهمیه رایگان تلویزیون & قوانین OSCE \\
+\rowcolor{gray!10}
+۴ & نظارت بین‌المللی & دعوت از UN، EU، اتحادیه آفریقا & اعلامیه ۲۰۰۵ UN \\
+۵ & شفافیت شمارش & شمارش علنی، انتشار فوری نتایج & ACE Electoral \\
+\rowcolor{gray!10}
+۶ & مکانیزم شکایت & دادگاه ویژه انتخاباتی & استانداردهای Venice \\
+۷ & امنیت بدون ارعاب & پلیس انتخاباتی غیرمسلح & IDEA International \\
+\rowcolor{gray!10}
+۸ & رأی مخفی & کابین‌های استاندارد & اعلامیه جهانی حقوق بشر \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{olgoobox}
+\textbf{الگوی نظارت انتخاباتی تونس ۲۰۱۱:}
+تونس با دعوت از ۵۰۰۰ ناظر بین‌المللی از ۶۰ کشور، معتبرترین انتخابات جهان عرب را برگزار کرد. کمیسیون مستقل انتخابات (ISIE) با ریاست یک قاضی بازنشسته، اعتماد همه احزاب را جلب کرد. نتیجه: پذیرش نتایج توسط همه طرف‌ها.
+\end{olgoobox}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{فرآیند تدوین قانون اساسی}
+\label{sec:constitution-drafting}
+%───────────────────────────────────────────────────────────────────────────────
+
+\subsection{مراحل تدوین قانون اساسی}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.8,
+    transform shape,
+    stage/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3cm,
+        minimum height=1.8cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    },
+    arrow/.style={
+        ->,
+        >=stealth,
+        very thick,
+        draw=gray!60
+    }
+]
+
+% مراحل
+\node[stage=red] (prep) at (0,0) {
+    \begin{tabular}{c}
+    مرحله ۱\\
+    \small آماده‌سازی\\
+    \tiny (ماه ۱۳-۱۴)
+    \end{tabular}
+};
+
+\node[stage=orange] (draft) at (4,0) {
+    \begin{tabular}{c}
+    مرحله ۲\\
+    \small پیش‌نویس\\
+    \tiny (ماه ۱۵-۱۶)
+    \end{tabular}
+};
+
+\node[stage=yellow] (consult) at (8,0) {
+    \begin{tabular}{c}
+    مرحله ۳\\
+    \small مشاوره عمومی\\
+    \tiny (ماه ۱۷-۱۸)
+    \end{tabular}
+};
+
+\node[stage=green] (revise) at (12,0) {
+    \begin{tabular}{c}
+    مرحله ۴\\
+    \small بازنگری\\
+    \tiny (ماه ۱۹-۲۰)
+    \end{tabular}
+};
+
+\node[stage=blue] (vote) at (16,0) {
+    \begin{tabular}{c}
+    مرحله ۵\\
+    \small همه‌پرسی\\
+    \tiny (ماه ۲۱)
+    \end{tabular}
+};
+
+% فلش‌ها
+\draw[arrow] (prep) -- (draft);
+\draw[arrow] (draft) -- (consult);
+\draw[arrow] (consult) -- (revise);
+\draw[arrow] (revise) -- (vote);
+
+% توضیحات زیر
+\node[below, font=\tiny, text width=2.5cm, align=center] at (0,-1.5) {
+    تشکیل کمیسیون‌ها\\
+    مشاوره بین‌المللی\\
+    جمع‌آوری نظرات
+};
+
+\node[below, font=\tiny, text width=2.5cm, align=center] at (4,-1.5) {
+    نوشتن متن اولیه\\
+    ۱۵ کمیسیون تخصصی\\
+    کارشناسان حقوقی
+};
+
+\node[below, font=\tiny, text width=2.5cm, align=center] at (8,-1.5) {
+    جلسات شهری\\
+    نظرسنجی آنلاین\\
+    بحث رسانه‌ای
+};
+
+\node[below, font=\tiny, text width=2.5cm, align=center] at (12,-1.5) {
+    اصلاح متن\\
+    رأی‌گیری مجلس\\
+    (اکثریت ۲/۳)
+};
+
+\node[below, font=\tiny, text width=2.5cm, align=center] at (16,-1.5) {
+    رأی مردم\\
+    آستانه ۵۰٪+۱\\
+    اعلام رسمی
+};
+
+\end{tikzpicture}
+\caption{پنج مرحله فرآیند تدوین قانون اساسی}
+\label{fig:constitution-process}
+\end{figure}
+
+\subsection{ساختار کمیسیون‌های تخصصی مجلس مؤسسان}
+
+\begin{table}[htbp]
+\centering
+\caption{کمیسیون‌های تخصصی مجلس مؤسسان}
+\label{tab:constituent-commissions}
+\begin{tabular}{>{\columncolor{purple!8}}r p{3.5cm} c p{5cm}}
+\toprule
+\rowcolor{purple!25}
+\textbf{ردیف} & \textbf{کمیسیون} & \textbf{اعضا} & \textbf{حوزه کاری} \\
+\midrule
+۱ & اصول کلی و هویت ملی & ۲۰ & مقدمه، اصول بنیادین، نمادهای ملی \\
+\rowcolor{gray!10}
+۲ & حقوق و آزادی‌های بنیادین & ۲۵ & منشور حقوق، آزادی‌های فردی و جمعی \\
+۳ & ساختار حکومت & ۲۵ & تفکیک قوا، روابط قوا \\
+\rowcolor{gray!10}
+۴ & قوه مجریه & ۲۰ & رئیس‌جمهور، دولت، وزارتخانه‌ها \\
+۵ & قوه مقننه & ۲۰ & مجلس، مجلس اقوام، قانون‌گذاری \\
+\rowcolor{gray!10}
+۶ & قوه قضائیه & ۲۰ & دادگستری، دادگاه قانون اساسی \\
+۷ & تمرکززدایی و حکومت محلی & ۲۵ & فدرالیسم، استان‌ها، شهرداری‌ها \\
+\rowcolor{gray!10}
+۸ & حقوق اقوام و اقلیت‌ها & ۲۵ & زبان‌ها، فرهنگ‌ها، خودمختاری \\
+۹ & امور اقتصادی & ۲۰ & مالکیت، بودجه، بانک مرکزی \\
+\rowcolor{gray!10}
+۱۰ & امنیت و دفاع ملی & ۱۵ & ارتش، پلیس، اطلاعات \\
+۱۱ & سیاست خارجی & ۱۵ & روابط بین‌الملل، معاهدات \\
+\rowcolor{gray!10}
+۱۲ & محیط زیست و منابع طبیعی & ۲۰ & آب، انرژی، محیط زیست \\
+۱۳ & حقوق زنان و خانواده & ۲۰ & برابری جنسیتی، کودکان \\
+\rowcolor{gray!10}
+۱۴ & نهادهای نظارتی & ۱۵ & دیوان محاسبات، کمیسیون‌های مستقل \\
+۱۵ & بازنگری و اجرا & ۱۵ & نحوه اصلاح، مقررات انتقالی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{مشارکت عمومی در تدوین قانون اساسی}
+
+\begin{olgoobox}
+\textbf{الگوی ایسلند (۲۰۱۰-۲۰۱۲):}
+ایسلند اولین کشوری بود که قانون اساسی را با مشارکت گسترده مردم از طریق اینترنت نوشت. شورای ۲۵ نفره شهروندان عادی (نه سیاست‌مداران) متن را نوشتند و هر هفته پیش‌نویس را آنلاین منتشر کردند. مردم ۳۶۰۰ پیشنهاد دادند که ۳۰۰ مورد در متن نهایی لحاظ شد.
+\end{olgoobox}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    channel/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=3cm,
+        minimum height=1.3cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% عنوان
+\node[font=\bfseries] at (6,4) {کانال‌های مشارکت عمومی در تدوین قانون اساسی};
+
+% کانال‌ها
+\node[channel=blue] (online) at (0,2) {
+    \begin{tabular}{c}
+    پلتفرم آنلاین\\
+    \tiny نظردهی، رأی‌گیری
+    \end{tabular}
+};
+
+\node[channel=green] (townhall) at (3,2) {
+    \begin{tabular}{c}
+    جلسات شهری\\
+    \tiny ۵۰۰ جلسه سراسری
+    \end{tabular}
+};
+
+\node[channel=orange] (sms) at (6,2) {
+    \begin{tabular}{c}
+    پیامک و تلفن\\
+    \tiny برای مناطق کم‌دسترس
+    \end{tabular}
+};
+
+\node[channel=purple] (media) at (9,2) {
+    \begin{tabular}{c}
+    رسانه ملی\\
+    \tiny برنامه هفتگی
+    \end{tabular}
+};
+
+\node[channel=red] (ngo) at (12,2) {
+    \begin{tabular}{c}
+    نهادهای مدنی\\
+    \tiny پیشنهادات تخصصی
+    \end{tabular}
+};
+
+% مرکز جمع‌آوری
+\node[rectangle, rounded corners=6pt, draw=black!70, fill=black!10,
+      minimum width=4cm, minimum height=1.5cm, font=\small\bfseries,
+      align=center] (collect) at (6,0) {
+    \begin{tabular}{c}
+    دبیرخانه مشارکت عمومی\\
+    \tiny پردازش و دسته‌بندی نظرات
+    \end{tabular}
+};
+
+% فلش‌ها
+\draw[->, thick, gray!60] (online) -- (collect);
+\draw[->, thick, gray!60] (townhall) -- (collect);
+\draw[->, thick, gray!60] (sms) -- (collect);
+\draw[->, thick, gray!60] (media) -- (collect);
+\draw[->, thick, gray!60] (ngo) -- (collect);
+
+% خروجی
+\node[rectangle, rounded corners=4pt, draw=teal!70, fill=teal!15,
+      minimum width=3cm, minimum height=1cm, font=\scriptsize\bfseries,
+      text=teal!30!black, align=center] (output) at (6,-2) {
+    گزارش به کمیسیون‌ها
+};
+
+\draw[->, thick, teal!60] (collect) -- (output);
+
+% آمار
+\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=right,
+      text width=4cm] at (12,0) {
+    \textbf{اهداف کمّی:}\\
+    • ۵ میلیون بازدید آنلاین\\
+    • ۵۰۰,۰۰۰ نظر ثبت‌شده\\
+    • ۱۰۰,۰۰۰ شرکت‌کننده حضوری\\
+    • ۳۱ استان پوشش کامل
+};
+
+\end{tikzpicture}
+\caption{سازوکار مشارکت عمومی در تدوین قانون اساسی}
+\label{fig:public-participation}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{عدالت انتقالی در فاز اول}
+\label{sec:transitional-justice-phase1}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{enghelabbox}
+\textbf{تعادل دشوار:} عدالت انتقالی در فاز اول باید میان دو خطر حرکت کند:
+\begin{itemize}[nosep]
+    \item \textbf{شتاب‌زدگی:} محاکمات سریع و بدون تضمینات می‌تواند به انتقام‌جویی بدل شود
+    \item \textbf{تعلل:} عدم اقدام می‌تواند اعتماد قربانیان را سلب کند
+\end{itemize}
+راه میانه: اقدامات نمادین فوری + آماده‌سازی برای فرآیند جامع
+\end{enghelabbox}
+
+\subsection{اقدامات فوری عدالت انتقالی}
+
+\begin{table}[htbp]
+\centering
+\caption{اقدامات عدالت انتقالی در ۱۲ ماه اول}
+\label{tab:tj-phase1}
+\begin{tabular}{>{\columncolor{orange!8}}r p{3cm} p{4.5cm} p{3.5cm}}
+\toprule
+\rowcolor{orange!25}
+\textbf{ماه} & \textbf{اقدام} & \textbf{شرح} & \textbf{نهاد مسئول} \\
+\midrule
+۱-۲ & آزادی زندانیان & همه زندانیان سیاسی و عقیدتی & وزارت دادگستری \\
+\rowcolor{gray!10}
+۲-۳ & بازداشت متهمان اصلی & فرماندهان سرکوب، شکنجه‌گران & دادستانی موقت \\
+۳-۴ & تشکیل کمیسیون حقیقت‌یاب & ۱۵ عضو مستقل & شورای انتقالی \\
+\rowcolor{gray!10}
+۴-۶ & ثبت شهدا و قربانیان & بانک اطلاعاتی جامع & کمیسیون حقیقت \\
+۶-۸ & غرامت اولیه به خانواده شهدا & ماهی ۱۰ میلیون تومان & صندوق قربانیان \\
+\rowcolor{gray!10}
+۸-۱۰ & نامگذاری‌های نمادین & خیابان‌ها، میادین به نام شهدا & شهرداری‌ها \\
+۱۰-۱۲ & آغاز جلسات استماع & شهادت قربانیان (تلویزیونی) & کمیسیون حقیقت \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{ساختار کمیسیون حقیقت‌یاب}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    unit/.style={
+        rectangle,
+        rounded corners=4pt,
+        minimum width=2.8cm,
+        minimum height=1.2cm,
+        draw=#1!70!black,
+        fill=#1!15,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% کمیسیون مرکزی
+\node[unit=purple, minimum width=5cm, minimum height=1.8cm] (main) at (0,4) {
+    \begin{tabular}{c}
+    کمیسیون حقیقت‌یاب\\
+    \small ۱۵ عضو (۷ زن، ۸ مرد)\\
+    \tiny ریاست: قاضی بین‌المللی
+    \end{tabular}
+};
+
+% واحدهای تخصصی
+\node[unit=red] (political) at (-5,1.5) {
+    \begin{tabular}{c}
+    واحد جنایات\\
+    سیاسی
+    \end{tabular}
+};
+
+\node[unit=orange] (economic) at (-2.5,1.5) {
+    \begin{tabular}{c}
+    واحد فساد\\
+    اقتصادی
+    \end{tabular}
+};
+
+\node[unit=yellow] (women) at (0,1.5) {
+    \begin{tabular}{c}
+    واحد خشونت\\
+    علیه زنان
+    \end{tabular}
+};
+
+\node[unit=green] (ethnic) at (2.5,1.5) {
+    \begin{tabular}{c}
+    واحد تبعیض\\
+    قومی
+    \end{tabular}
+};
+
+\node[unit=blue] (docs) at (5,1.5) {
+    \begin{tabular}{c}
+    واحد اسناد\\
+    و آرشیو
+    \end{tabular}
+};
+
+% دفاتر استانی
+\node[unit=gray, minimum width=10cm] (regional) at (0,-0.5) {
+    \begin{tabular}{c}
+    دفاتر استانی (۳۱ استان)\\
+    \tiny جمع‌آوری شهادت‌ها و مدارک محلی
+    \end{tabular}
+};
+
+% خروجی‌ها
+\node[unit=teal] (report) at (-3,-2.5) {
+    \begin{tabular}{c}
+    گزارش نهایی\\
+    \tiny (پایان سال ۳)
+    \end{tabular}
+};
+
+\node[unit=cyan] (recs) at (0,-2.5) {
+    \begin{tabular}{c}
+    توصیه‌ها\\
+    \tiny (اصلاحات نهادی)
+    \end{tabular}
+};
+
+\node[unit=lime] (pros) at (3,-2.5) {
+    \begin{tabular}{c}
+    ارجاع به دادستانی\\
+    \tiny (متهمان اصلی)
+    \end{tabular}
+};
+
+% اتصالات
+\draw[->, gray!60] (main) -- (political);
+\draw[->, gray!60] (main) -- (economic);
+\draw[->, gray!60] (main) -- (women);
+\draw[->, gray!60] (main) -- (ethnic);
+\draw[->, gray!60] (main) -- (docs);
+
+\draw[->, gray!60] (political) -- (regional);
+\draw[->, gray!60] (economic) -- (regional);
+\draw[->, gray!60] (women) -- (regional);
+\draw[->, gray!60] (ethnic) -- (regional);
+\draw[->, gray!60] (docs) -- (regional);
+
+\draw[->, gray!60] (regional) -- (report);
+\draw[->, gray!60] (regional) -- (recs);
+\draw[->, gray!60] (regional) -- (pros);
+
+\end{tikzpicture}
+\caption{ساختار کمیسیون حقیقت‌یاب و آشتی ملی}
+\label{fig:truth-commission}
+\end{figure}
+
+\begin{naghlbox}
+«حقیقت پایه آشتی است. بدون دانستن آنچه رخ داده، بخشش معنا ندارد.»
+\sourceline{دزموند توتو، رئیس کمیسیون حقیقت آفریقای جنوبی}
+\end{naghlbox}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{چالش‌ها و ریسک‌های فاز اول}
+\label{sec:phase1-risks}
+%───────────────────────────────────────────────────────────────────────────────
+
+\subsection{ماتریس ریسک فاز اول}
+
+\begin{table}[htbp]
+\centering
+\caption{ریسک‌های اصلی فاز اول و راهبردهای مقابله}
+\label{tab:phase1-risks}
+\begin{tabular}{>{\columncolor{red!8}}r p{2.5cm} c c p{4.5cm}}
+\toprule
+\rowcolor{red!25}
+\textbf{کد} & \textbf{ریسک} & \textbf{احتمال} & \textbf{شدت} & \textbf{راهبرد مقابله} \\
+\midrule
+R1 & کودتای نظامی & متوسط & بحرانی & مشارکت ارتش در گذار، تضمین منافع \\
+\rowcolor{gray!10}
+R2 & جنگ داخلی قومی & کم & بحرانی & توافق سریع فدرالیسم، نمایندگی اقوام \\
+R3 & فروپاشی اقتصادی & بالا & شدید & کمک بین‌المللی، رفع سریع تحریم \\
+\rowcolor{gray!10}
+R4 & انتقام‌جویی خونین & متوسط & شدید & عدالت انتقالی منظم، پلیس قوی \\
+R5 & ربوده‌شدن انقلاب & متوسط & شدید & شورای فراگیر، شفافیت \\
+\rowcolor{gray!10}
+R6 & مداخله خارجی & کم & متوسط & دیپلماسی فعال، بی‌طرفی \\
+R7 & اعتراضات حداکثرگرا & بالا & متوسط & آبادانی ملموس، گفتگوی مداوم \\
+\rowcolor{gray!10}
+R8 & کمبود نیروی کارآمد & بالا & متوسط & بازگشت متخصصان، مشاوران بین‌المللی \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{نمودار ریسک}
+
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=11cm,
+    height=9cm,
+    xlabel={احتمال وقوع},
+    ylabel={شدت تأثیر},
+    xmin=0, xmax=100,
+    ymin=0, ymax=100,
+    xtick={20,50,80},
+    xticklabels={کم, متوسط, بالا},
+    ytick={20,50,80},
+    yticklabels={کم, متوسط, بحرانی},
+    grid=major,
+    grid style={dashed, gray!30},
+]
+
+% مناطق رنگی
+\fill[green!20, opacity=0.5] (0,0) rectangle (40,40);
+\fill[yellow!20, opacity=0.5] (0,40) rectangle (40,100);
+\fill[yellow!20, opacity=0.5] (40,0) rectangle (100,40);
+\fill[orange!20, opacity=0.5] (40,40) rectangle (70,70);
+\fill[red!20, opacity=0.5] (40,70) rectangle (100,100);
+\fill[red!20, opacity=0.5] (70,40) rectangle (100,100);
+
+% ریسک‌ها
+\node[circle, fill=red!70, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:50,90) {R1};
+\node[circle, fill=purple!70, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:25,85) {R2};
+\node[circle, fill=orange!70, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:75,75) {R3};
+\node[circle, fill=red!60, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:50,70) {R4};
+\node[circle, fill=orange!60, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:55,65) {R5};
+\node[circle, fill=yellow!70, minimum size=0.4cm, font=\tiny\bfseries, text=black] 
+    at (axis cs:30,50) {R6};
+\node[circle, fill=yellow!60, minimum size=0.4cm, font=\tiny\bfseries, text=black] 
+    at (axis cs:70,55) {R7};
+\node[circle, fill=orange!50, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+    at (axis cs:75,50) {R8};
+
+% راهنما
+\node[font=\tiny, align=left] at (axis cs:85,15) {
+    R1: کودتا\\
+    R2: جنگ داخلی\\
+    R3: فروپاشی اقتصاد\\
+    R4: انتقام‌جویی
+};
+\node[font=\tiny, align=left] at (axis cs:85,35) {
+    R5: ربودن انقلاب\\
+    R6: مداخله خارجی\\
+    R7: اعتراضات\\
+    R8: کمبود نیرو
+};
+
+\end{axis}
+\end{tikzpicture}
+\caption{ماتریس ریسک فاز اول گذار}
+\label{fig:risk-matrix-phase1}
+\end{figure}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{شاخص‌های موفقیت فاز اول}
+\label{sec:phase1-kpis}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{table}[htbp]
+\centering
+\caption{شاخص‌های کلیدی موفقیت (KPI) فاز اول}
+\label{tab:phase1-kpis}
+\begin{tabular}{>{\columncolor{blue!8}}r p{4cm} c c c}
+\toprule
+\rowcolor{blue!25}
+\textbf{کد} & \textbf{شاخص} & \textbf{هدف ماه ۶} & \textbf{هدف ماه ۱۲} & \textbf{هدف ماه ۲۴} \\
+\midrule
+K01 & تلفات غیرنظامی ناشی از ناآرامی & < ۱۰۰ & < ۵۰ & < ۱۰ \\
+\rowcolor{gray!10}
+K02 & زندانیان سیاسی باقیمانده & ۰ & ۰ & ۰ \\
+K03 & نرخ تورم ماهانه & < ۵٪ & < ۳٪ & < ۲٪ \\
+\rowcolor{gray!10}
+K04 & کشورهای شناسایی‌کننده & ۵۰+ & ۱۵۰+ & ۱۹۰+ \\
+K05 & درصد رفع تحریم & ۲۰٪ & ۵۰٪ & ۸۰٪ \\
+\rowcolor{gray!10}
+K06 & احزاب ثبت‌شده & ۱۰+ & ۳۰+ & ۵۰+ \\
+K07 & مشارکت در انتخابات مؤسسان & — & ۶۵٪+ & — \\
+\rowcolor{gray!10}
+K08 & تأیید قانون اساسی در همه‌پرسی & — & — & ۶۰٪+ \\
+K09 & رضایت عمومی از روند گذار & ۶۰٪ & ۶۵٪ & ۷۰٪ \\
+\rowcolor{gray!10}
+K10 & بازگشت مهاجران & ۱۰۰,۰۰۰ & ۳۰۰,۰۰۰ & ۵۰۰,۰۰۰ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%───────────────────────────────────────────────────────────────────────────────
+\section{جمع‌بندی: ۲۴ ماه سرنوشت‌ساز}
+\label{sec:phase1-conclusion}
+%───────────────────────────────────────────────────────────────────────────────
+
+\begin{kholasebox}
+\textbf{خلاصه فصل ۸:}
+\begin{enumerate}
+    \item \textbf{لحظه صفر} نیازمند آمادگی قبلی است — شورای انتقالی باید از پیش شکل گرفته باشد
+    \item \textbf{شورای انتقالی ۲۱ نفره} باید فراگیر و نماینده همه اقشار باشد
+    \item \textbf{دولت موقت تکنوکرات} باید بحران‌ها را مدیریت کند، نه سیاست‌بازی
+    \item \textbf{۶ ماه اول} تمرکز بر امنیت، آزادی‌ها، و تثبیت اقتصادی
+    \item \textbf{انتخابات مجلس مؤسسان} در ماه ۱۱ — نقطه عطف دموکراتیک
+    \item \textbf{قانون اساسی جدید} با مشارکت گسترده مردمی تدوین می‌شود
+    \item \textbf{همه‌پرسی ماه ۲۱} و \textbf{انتخابات عمومی ماه ۲۴} پایان دوره گذار
+    \item \textbf{مدیریت نیروهای امنیتی} با رویکرد اصلاح (نه انحلال کامل)
+    \item \textbf{رفع تحریم‌ها} حیاتی‌ترین اولویت دیپلماتیک است
+    \item \textbf{عدالت انتقالی} باید متعادل باشد — نه شتاب‌زده، نه تعلل‌آمیز
+\end{enumerate}
+\end{kholasebox}
+
+% نمودار جمع‌بندی
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.75,
+    transform shape,
+    milestone/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=2.5cm,
+        minimum height=1.2cm,
+        draw=#1!70!black,
+        fill=#1!20,
+        text=#1!30!black,
+        font=\scriptsize\bfseries,
+        align=center
+    }
+]
+
+% خط زمان
+\draw[very thick, gray!60, ->] (0,0) -- (18,0);
+
+% نقاط زمانی
+\foreach \x/\label in {0/روز ۱, 4/ماه ۶, 8/ماه ۱۲, 12/ماه ۱۸, 16/ماه ۲۴} {
+    \draw[thick, gray!60] (\x,0.2) -- (\x,-0.2);
+    \node[below, font=\small] at (\x,-0.4) {\label};
+}
+
+% رویدادهای کلیدی
+\node[milestone=red] at (0,2) {
+    \begin{tabular}{c}
+    شورای\\
+    انتقالی
+    \end{tabular}
+};
+
+\node[milestone=orange] at (4,2) {
+    \begin{tabular}{c}
+    تثبیت\\
+    امنیت و اقتصاد
+    \end{tabular}
+};
+
+\node[milestone=yellow] at (8,2) {
+    \begin{tabular}{c}
+    انتخابات\\
+    مؤسسان
+    \end{tabular}
+};
+
+\node[milestone=green] at (12,2) {
+    \begin{tabular}{c}
+    پیش‌نویس\\
+    قانون اساسی
+    \end{tabular}
+};
+
+\node[milestone=blue] at (16,2) {
+    \begin{tabular}{c}
+    همه‌پرسی +\\
+    انتخابات
+    \end{tabular}
+};
+
+% فلش‌ها
+\foreach \x in {0,4,8,12,16} {
+    \draw[->, gray!50] (\x,0.3) -- (\x,1.3);
+}
+
+% نتیجه نهایی
+\node[rectangle, rounded corners=8pt, draw=purple!70, fill=purple!10,
+      minimum width=6cm, minimum height=1.5cm, font=\small\bfseries,
+      text=purple!70, align=center] at (9,-2.5) {
+    \begin{tabular}{c}
+    پایان فاز ۱: دولت منتخب دموکراتیک\\
+    قانون اساسی جدید | نهادهای اولیه
+    \end{tabular}
+};
+
+\draw[->, very thick, purple!60] (16,-0.5) -- (16,-1.5) -- (12,-1.5) -- (12,-1.8);
+
+\end{tikzpicture}
+\caption{نقاط عطف فاز اول گذار}
+\label{fig:phase1-milestones}
+\end{figure}
+
+\begin{naghlbox}
+«دو سال اول گذار، بیش از دو دهه آینده را شکل می‌دهد. هر اشتباه در این دوره، سال‌ها برای اصلاح زمان می‌برد.»
+\sourceline{گیلرمو اودانل، نظریه‌پرداز گذار دموکراتیک}
+\end{naghlbox}
+
+%───────────────────────────────────────────────────────────────────────────────
+% منابع فصل
+%───────────────────────────────────────────────────────────────────────────────
+
+\vspace{1cm}
+\begin{refsection}
+
+\textbf{\large منابع فصل هشتم}
+
+\vspace{0.5cm}
+
+\begin{enumerate}[label={[\arabic*]}, nosep, leftmargin=*]
+    \item O'Donnell, G., Schmitter, P. \& Whitehead, L. (1986). \textit{Transitions from Authoritarian Rule}. Johns Hopkins University Press.
+    
+    \item Linz, J. \& Stepan, A. (1996). \textit{Problems of Democratic Transition and Consolidation}. Johns Hopkins University Press.
+    
+    \item Carothers, T. (2002). "The End of the Transition Paradigm." \textit{Journal of Democracy}, 13(1), 5-21.
+    
+    \item International IDEA. (2017). \textit{Constitution-Building: A Global Review}. Stockholm.
+    
+    \item Elster, J. (1995). "Forces and Mechanisms in the Constitution-Making Process." \textit{Duke Law Journal}, 45(2), 364-396.
+    
+    \item Hayner, P. (2011). \textit{Unspeakable Truths: Transitional Justice and the Challenge of Truth Commissions}. Routledge.
+    
+    \item De Greiff, P. (2012). "Theorizing Transitional Justice." \textit{Nomos}, 51, 31-77.
+    
+    \item Diamond, L. (1999). \textit{Developing Democracy: Toward Consolidation}. Johns Hopkins University Press.
+    
+    \item Przeworski, A. (1991). \textit{Democracy and the Market}. Cambridge University Press.
+    
+    \item IMF. (2023). \textit{Staff Report: Islamic Republic of Iran}.
+    
+    \item Venice Commission. (2022). \textit{Report on Constitutional Amendment}. Council of Europe.
+    
+    \item ACE Electoral Knowledge Network. (2023). \textit{Electoral System Design Database}.
+    
+    \item Bremer, P. (2006). \textit{My Year in Iraq}. Simon \& Schuster.
+    
+    \item بشیریه، حسین. (۱۳۹۹). \textit{گذار به دموکراسی}. نشر نگاه معاصر.
+    
+    \item آبراهامیان، یرواند. (۱۳۹۸). \textit{تاریخ ایران مدرن}. ترجمه محمد ابراهیم فتاحی. نشر نی.
+    
+    \item Human Rights Watch. (2023). \textit{World Report 2023: Iran}.
+\end{enumerate}
+
+\end{refsection}
+    

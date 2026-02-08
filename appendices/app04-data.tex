@@ -1,0 +1,1467 @@
+% ═══════════════════════════════════════════════════════════════════════════════
+% پیوست ۴: داده‌ها و جداول آماری
+% فایل: app04-data.tex
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\chapter{داده‌ها و جداول آماری}
+\label{app:data}
+
+\begin{kholasebox}
+این پیوست مجموعه‌ای جامع از داده‌های آماری، جداول مقایسه‌ای، و نمودارهای تحلیلی را ارائه می‌دهد که پایه علمی و تجربی طرح گذار دموکراتیک را تشکیل می‌دهند. داده‌ها از منابع معتبر بین‌المللی (بانک جهانی، صندوق بین‌المللی پول، سازمان ملل، و مراکز پژوهشی) گردآوری شده‌اند. این اطلاعات برای برنامه‌ریزی، تصمیم‌گیری و پایش پیشرفت ضروری است.
+\end{kholasebox}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{بخش اول: داده‌های جمعیتی و قومی}
+\label{sec:data-demographic}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{جدول ۱: توزیع جمعیت بر اساس قومیت}
+
+\begin{center}
+\begin{tikzpicture}
+    % نمودار دایره‌ای
+    \pie[
+        text=legend,
+        radius=3,
+        color={DemocracyBlue!70, SuccessGreen!70, WisdomGold!70, orange!70, WarningRed!70, purple!70, teal!70, gray!50}
+    ]{
+        55/فارس,
+        20/آذری,
+        10/کرد,
+        6/لر,
+        3/عرب,
+        2/بلوچ,
+        1/ترکمن,
+        3/سایر
+    }
+    
+    \node[font=\large\bfseries] at (0,-4.5) {توزیع قومی جمعیت ایران (تخمین ۱۴۰۳)};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{DemocracyBlue!10}}r|r|r|r|r|r|}
+\hline
+\rowcolor{DemocracyBlue!30}
+\textbf{قوم} & \textbf{جمعیت (میلیون)} & \textbf{درصد} & \textbf{زبان اصلی} & \textbf{دین غالب} & \textbf{استان‌های اصلی} \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{DemocracyBlue!30}
+\textbf{قوم} & \textbf{جمعیت (میلیون)} & \textbf{درصد} & \textbf{زبان اصلی} & \textbf{دین غالب} & \textbf{استان‌های اصلی} \\
+\hline
+\endhead
+
+فارس & ۴۷.۳ & ۵۵٪ & فارسی & شیعه & تهران، اصفهان، فارس، خراسان \\
+\hline
+
+آذری & ۱۷.۲ & ۲۰٪ & ترکی آذربایجانی & شیعه & آذربایجان شرقی و غربی، اردبیل، زنجان \\
+\hline
+
+کرد & ۸.۶ & ۱۰٪ & کردی & سنی/شیعه & کردستان، کرمانشاه، ایلام، آ.غربی \\
+\hline
+
+لر & ۵.۲ & ۶٪ & لری/بختیاری & شیعه & لرستان، چهارمحال، کهگیلویه \\
+\hline
+
+عرب & ۲.۶ & ۳٪ & عربی & شیعه & خوزستان \\
+\hline
+
+بلوچ & ۱.۷ & ۲٪ & بلوچی & سنی & سیستان و بلوچستان \\
+\hline
+
+ترکمن & ۰.۸۶ & ۱٪ & ترکمنی & سنی & گلستان \\
+\hline
+
+گیلک & ۲.۶ & ۳٪ & گیلکی & شیعه & گیلان \\
+\hline
+
+مازندرانی & ۲.۶ & ۳٪ & مازندرانی & شیعه & مازندران \\
+\hline
+
+سایر & ۱.۷ & ۲٪ & متنوع & متنوع & پراکنده \\
+\hline
+
+\rowcolor{gray!20}
+\textbf{مجموع} & \textbf{۸۶.۰} & \textbf{۱۰۰٪} & — & — & — \\
+\hline
+
+\multicolumn{6}{l}{\scriptsize منبع: تخمین بر اساس داده‌های مرکز آمار ایران و مطالعات جمعیت‌شناختی | ارقام تقریبی است} \\
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۲: توزیع جمعیت بر اساس استان}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|r|r|r|r|r|r|}
+\hline
+\rowcolor{SuccessGreen!30}
+\textbf{ردیف} & \textbf{استان} & \textbf{جمعیت (میلیون)} & \textbf{مساحت (کیلومتر²)} & \textbf{تراکم} & \textbf{قوم غالب} \\
+\hline
+\endfirsthead
+
+۱ & تهران & ۱۴.۲ & ۱۳,۶۹۲ & ۱,۰۳۷ & فارس \\
+\hline
+۲ & خراسان رضوی & ۶.۸ & ۱۱۸,۸۵۴ & ۵۷ & فارس \\
+\hline
+۳ & اصفهان & ۵.۴ & ۱۰۷,۰۲۹ & ۵۰ & فارس \\
+\hline
+۴ & فارس & ۵.۰ & ۱۲۲,۶۰۸ & ۴۱ & فارس \\
+\hline
+۵ & آذربایجان شرقی & ۴.۰ & ۴۵,۶۵۱ & ۸۸ & آذری \\
+\hline
+۶ & خوزستان & ۴.۸ & ۶۴,۰۵۵ & ۷۵ & عرب/فارس/لر \\
+\hline
+۷ & آذربایجان غربی & ۳.۳ & ۳۷,۴۱۱ & ۸۸ & آذری/کرد \\
+\hline
+۸ & کرمان & ۳.۳ & ۱۸۰,۷۲۶ & ۱۸ & فارس \\
+\hline
+۹ & مازندران & ۳.۴ & ۲۳,۸۳۳ & ۱۴۳ & مازندرانی \\
+\hline
+۱۰ & گیلان & ۲.۶ & ۱۴,۰۴۲ & ۱۸۵ & گیلک \\
+\hline
+۱۱ & کردستان & ۱.۷ & ۲۹,۱۳۷ & ۵۸ & کرد \\
+\hline
+۱۲ & کرمانشاه & ۲.۰ & ۲۵,۰۰۹ & ۸۰ & کرد \\
+\hline
+۱۳ & سیستان و بلوچستان & ۲.۹ & ۱۸۰,۷۲۶ & ۱۶ & بلوچ \\
+\hline
+۱۴ & لرستان & ۱.۹ & ۲۸,۵۵۹ & ۶۷ & لر \\
+\hline
+۱۵ & گلستان & ۱.۹ & ۲۰,۱۹۵ & ۹۴ & فارس/ترکمن \\
+\hline
+
+\rowcolor{gray!20}
+\multicolumn{2}{|r|}{\textbf{مجموع ایران}} & \textbf{۸۶.۰} & \textbf{۱,۶۴۸,۱۹۵} & \textbf{۵۲} & — \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۳: شاخص‌های توسعه انسانی به تفکیک منطقه}
+
+\begin{center}
+\begin{tikzpicture}
+    % نمودار میله‌ای افقی
+    \begin{axis}[
+        xbar,
+        width=14cm,
+        height=10cm,
+        xlabel={شاخص توسعه انسانی (HDI)},
+        symbolic y coords={بلوچستان, کردستان, خوزستان, آذربایجان, لرستان, گیلان, فارس, اصفهان, تهران},
+        ytick=data,
+        xmin=0.5, xmax=0.9,
+        bar width=12pt,
+        nodes near coords,
+        nodes near coords align={horizontal},
+        every node near coord/.append style={font=\tiny},
+    ]
+    \addplot[fill=DemocracyBlue!70] coordinates {
+        (0.82,تهران)
+        (0.78,اصفهان)
+        (0.76,فارس)
+        (0.74,گیلان)
+        (0.70,لرستان)
+        (0.68,آذربایجان)
+        (0.65,خوزستان)
+        (0.62,کردستان)
+        (0.55,بلوچستان)
+    };
+    \end{axis}
+    
+    \node[font=\small\bfseries] at (7,-1) {شاخص توسعه انسانی مناطق ایران (تخمین ۱۴۰۲)};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{purple!10}}p{3cm}|r|r|r|r|r|}
+\hline
+\rowcolor{purple!30}
+\textbf{منطقه/استان} & \textbf{HDI} & \textbf{امید زندگی} & \textbf{سواد (٪)} & \textbf{درآمد سرانه (\$)} & \textbf{شکاف با میانگین} \\
+\hline
+\endfirsthead
+
+تهران & ۰.۸۲ & ۷۷.۵ & ۹۸٪ & ۱۸,۵۰۰ & +۱۵٪ \\
+\hline
+اصفهان & ۰.۷۸ & ۷۶.۲ & ۹۶٪ & ۱۴,۲۰۰ & +۹٪ \\
+\hline
+فارس & ۰.۷۶ & ۷۵.۸ & ۹۵٪ & ۱۲,۸۰۰ & +۶٪ \\
+\hline
+\rowcolor{yellow!20}
+\textbf{میانگین ملی} & \textbf{۰.۷۱} & \textbf{۷۴.۵} & \textbf{۹۲٪} & \textbf{۱۱,۰۰۰} & \textbf{—} \\
+\hline
+آذربایجان شرقی & ۰.۶۸ & ۷۴.۰ & ۹۰٪ & ۹,۸۰۰ & -۵٪ \\
+\hline
+کردستان & ۰.۶۲ & ۷۲.۵ & ۸۵٪ & ۷,۵۰۰ & -۱۳٪ \\
+\hline
+خوزستان & ۰.۶۵ & ۷۳.۰ & ۸۷٪ & ۸,۲۰۰ & -۹٪ \\
+\hline
+سیستان و بلوچستان & ۰.۵۵ & ۶۹.۵ & ۷۵٪ & ۴,۵۰۰ & -۲۳٪ \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{بخش دوم: داده‌های اقتصادی}
+\label{sec:data-economic}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{جدول ۴: شاخص‌های کلان اقتصادی ایران}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{SuccessGreen!10}}p{4cm}|r|r|r|r|r|}
+\hline
+\rowcolor{SuccessGreen!30}
+\textbf{شاخص} & \textbf{۱۳۹۸} & \textbf{۱۳۹۹} & \textbf{۱۴۰۰} & \textbf{۱۴۰۱} & \textbf{۱۴۰۲ (تخمین)} \\
+\hline
+\endfirsthead
+
+تولید ناخالص داخلی (میلیارد \$) & ۴۴۵ & ۲۳۱ & ۳۵۹ & ۳۸۸ & ۴۰۱ \\
+\hline
+
+رشد اقتصادی (٪) & -۶.۸ & ۳.۳ & ۴.۷ & ۲.۹ & ۲.۵ \\
+\hline
+
+تورم سالانه (٪) & ۴۱.۲ & ۳۶.۴ & ۴۰.۲ & ۴۵.۸ & ۴۲.۵ \\
+\hline
+
+نرخ بیکاری (٪) & ۱۰.۷ & ۹.۴ & ۹.۲ & ۸.۹ & ۹.۱ \\
+\hline
+
+صادرات نفت (میلیون بشکه/روز) & ۰.۴ & ۰.۵ & ۰.۷ & ۱.۰ & ۱.۴ \\
+\hline
+
+درآمد نفتی (میلیارد \$) & ۸ & ۱۲ & ۲۵ & ۴۲ & ۵۵ \\
+\hline
+
+ذخایر ارزی (میلیارد \$) & ۸۶ & ۱۱۵ & ۱۲۲ & ۱۴۲ & ۱۵۵ \\
+\hline
+
+بدهی خارجی (میلیارد \$) & ۹.۳ & ۸.۷ & ۸.۲ & ۷.۸ & ۷.۵ \\
+\hline
+
+نرخ ارز (تومان/دلار) & ۱۱,۵۰۰ & ۲۵,۰۰۰ & ۲۷,۵۰۰ & ۴۲,۰۰۰ & ۵۵,۰۰۰ \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۵: ترکیب اقتصاد ایران}
+
+\begin{center}
+\begin{tikzpicture}
+    % نمودار ستونی
+    \begin{axis}[
+        ybar,
+        width=14cm,
+        height=8cm,
+        ylabel={درصد از GDP},
+        symbolic x coords={نفت و گاز, صنعت, خدمات, کشاورزی, معدن, ساختمان},
+        xtick=data,
+        ymin=0, ymax=50,
+        bar width=20pt,
+        nodes near coords,
+        every node near coord/.append style={font=\small},
+        legend style={at={(0.5,-0.2)}, anchor=north},
+    ]
+    \addplot[fill=DemocracyBlue!70] coordinates {
+        (نفت و گاز,18)
+        (صنعت,22)
+        (خدمات,45)
+        (کشاورزی,9)
+        (معدن,2)
+        (ساختمان,4)
+    };
+    \end{axis}
+    
+    \node[font=\small\bfseries] at (7,-1.5) {ترکیب تولید ناخالص داخلی ایران (۱۴۰۲)};
+\end{tikzpicture}
+\end{center}
+
+\subsection{جدول ۶: تحریم‌های بین‌المللی علیه ایران}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{WarningRed!10}}p{2.5cm}|r|p{4cm}|p{5cm}|}
+\hline
+\rowcolor{WarningRed!30}
+\textbf{منبع تحریم} & \textbf{تعداد} & \textbf{حوزه‌های اصلی} & \textbf{تأثیر اقتصادی} \\
+\hline
+\endfirsthead
+
+آمریکا & ۳,۲۰۰+ & نفت، بانکی، تسلیحاتی، هسته‌ای، حقوق بشر & قطع از سوئیفت، محدودیت صادرات نفت، بلوکه دارایی‌ها \\
+\hline
+
+اتحادیه اروپا & ۴۵۰+ & نفت، بانکی، تسلیحاتی، حقوق بشر & محدودیت تجارت، ممنوعیت سرمایه‌گذاری \\
+\hline
+
+سازمان ملل & ۱۲۰+ & هسته‌ای، تسلیحاتی & ممنوعیت انتقال فناوری، تسلیحات \\
+\hline
+
+بریتانیا & ۲۸۰+ & مشابه EU + اقدامات مستقل & محدودیت‌های مالی \\
+\hline
+
+کانادا & ۱۵۰+ & حقوق بشر، هسته‌ای & محدودیت‌های تجاری و مالی \\
+\hline
+
+استرالیا & ۱۰۰+ & هسته‌ای، حقوق بشر & محدودیت‌های تجاری \\
+\hline
+
+\rowcolor{gray!20}
+\textbf{مجموع (تخمین)} & \textbf{۳,۸۰۰+} & — & \textbf{خسارت سالانه: ۱۵۰-۲۰۰ میلیارد \$} \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۷: سناریوهای اقتصادی پس از رفع تحریم}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{SuccessGreen!10}}p{3cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}|}
+\hline
+\rowcolor{SuccessGreen!30}
+\textbf{شاخص} & \textbf{سناریوی حداقلی} & \textbf{سناریوی میانه} & \textbf{سناریوی حداکثری} \\
+\hline
+\endfirsthead
+
+\textbf{فرض پایه} & رفع جزئی تحریم‌ها & رفع اکثر تحریم‌ها & رفع کامل + اصلاحات \\
+\hline
+
+صادرات نفت (م.ب/روز) & ۲.۰ & ۳.۰ & ۴.۰ \\
+\hline
+
+درآمد نفتی (میلیارد \$/سال) & ۸۰ & ۱۲۰ & ۱۶۰ \\
+\hline
+
+رشد GDP (سال ۱-۵) & ۳-۴٪ & ۵-۷٪ & ۸-۱۰٪ \\
+\hline
+
+سرمایه‌گذاری خارجی (میلیارد \$/سال) & ۵-۱۰ & ۱۵-۲۵ & ۳۰-۵۰ \\
+\hline
+
+کاهش تورم (سال ۵) & ۲۵-۳۰٪ & ۱۵-۲۰٪ & ۸-۱۲٪ \\
+\hline
+
+کاهش بیکاری (سال ۵) & ۷-۸٪ & ۵-۶٪ & ۳-۴٪ \\
+\hline
+
+GDP سرانه (سال ۱۰) & ۱۵,۰۰۰ \$ & ۲۰,۰۰۰ \$ & ۲۵,۰۰۰ \$ \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{بخش سوم: داده‌های بحران آب}
+\label{sec:data-water}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{جدول ۸: بیلان آبی ایران}
+
+\begin{center}
+\begin{tikzpicture}
+    % نمودار تعادل آبی
+    \node[
+        draw=DemocracyBlue,
+        line width=2pt,
+        fill=DemocracyBlue!20,
+        rounded corners=10pt,
+        minimum width=5cm,
+        minimum height=2cm,
+        font=\bfseries
+    ] (supply) at (-4,0) {\shortstack{عرضه آب\\۹۷ میلیارد م³}};
+    
+    \node[
+        draw=WarningRed,
+        line width=2pt,
+        fill=WarningRed!20,
+        rounded corners=10pt,
+        minimum width=5cm,
+        minimum height=2cm,
+        font=\bfseries
+    ] (demand) at (4,0) {\shortstack{تقاضای آب\\۱۱۵ میلیارد م³}};
+    
+    \node[
+        draw=WarningRed,
+        line width=3pt,
+        fill=WarningRed!40,
+        rounded corners=10pt,
+        minimum width=5cm,
+        minimum height=1.5cm,
+        font=\bfseries
+    ] (deficit) at (0,-3) {\shortstack{کسری سالانه\\۱۸ میلیارد م³}};
+    
+    \draw[->, thick, DemocracyBlue] (supply) -- (deficit);
+    \draw[->, thick, WarningRed] (demand) -- (deficit);
+    
+    % جزئیات
+    \node[font=\scriptsize, align=center] at (-4,-1.5) {بارش: ۴۱۵ میلیمتر\\تبخیر: ۷۰٪\\رواناب: ۹۷ م³};
+    
+    \node[font=\scriptsize, align=center] at (4,-1.5) {کشاورزی: ۹۲٪\\صنعت: ۳٪\\شرب: ۵٪};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{DemocracyBlue!10}}p{4cm}|r|r|r|}
+\hline
+\rowcolor{DemocracyBlue!30}
+\textbf{شاخص} & \textbf{مقدار} & \textbf{واحد} & \textbf{وضعیت} \\
+\hline
+\endfirsthead
+
+بارش سالانه متوسط & ۲۵۰ & میلیمتر & ۱/۳ میانگین جهانی \\
+\hline
+
+منابع آب تجدیدپذیر & ۱۳۰ & میلیارد م³/سال & محدود \\
+\hline
+
+منابع آب قابل استحصال & ۹۷ & میلیارد م³/سال & — \\
+\hline
+
+مصرف کل آب & ۱۱۵ & میلیارد م³/سال & بیش از ظرفیت \\
+\hline
+
+\rowcolor{WarningRed!20}
+کسری سالانه & ۱۸ & میلیارد م³/سال & بحرانی \\
+\hline
+
+برداشت از آب‌های زیرزمینی & ۶۵ & میلیارد م³/سال & ۱.۵ برابر ظرفیت \\
+\hline
+
+افت سالانه سطح آب زیرزمینی & ۵۰-۱۰۰ & سانتیمتر & بحرانی \\
+\hline
+
+تعداد دشت‌های ممنوعه & ۴۰۵ & از ۶۰۹ دشت & ۶۶٪ \\
+\hline
+
+سرانه آب تجدیدپذیر & ۱,۵۰۰ & م³/نفر/سال & کم‌آبی \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۹: وضعیت حوضه‌های آبریز}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{DemocracyBlue!10}}r|p{3cm}|r|r|r|p{2.5cm}|}
+\hline
+\rowcolor{DemocracyBlue!30}
+\textbf{ردیف} & \textbf{حوضه آبریز} & \textbf{مساحت (کیلومتر²)} & \textbf{جمعیت (میلیون)} & \textbf{کسری (م³/سال)} & \textbf{وضعیت} \\
+\hline
+\endfirsthead
+
+۱ & دریاچه ارومیه & ۵۱,۸۷۶ & ۶.۴ & ۳.۵ میلیارد & \cellcolor{WarningRed!30}بحرانی \\
+\hline
+
+۲ & زاینده‌رود & ۴۱,۵۰۰ & ۵.۲ & ۲.۱ میلیارد & \cellcolor{WarningRed!30}بحرانی \\
+\hline
+
+۳ & کارون & ۶۵,۲۳۰ & ۴.۸ & ۱.۸ میلیارد & \cellcolor{orange!30}نگران‌کننده \\
+\hline
+
+۴ & هامون & ۱۰۶,۰۰۰ & ۲.۹ & ۲.۵ میلیارد & \cellcolor{WarningRed!30}بحرانی \\
+\hline
+
+۵ & قره‌سو & ۵۰,۲۰۰ & ۳.۱ & ۱.۲ میلیارد & \cellcolor{orange!30}نگران‌کننده \\
+\hline
+
+۶ & مرکزی & ۴۲۵,۰۰۰ & ۲۵.۰ & ۴.۵ میلیارد & \cellcolor{WarningRed!30}بحرانی \\
+\hline
+
+۷ & خلیج فارس & ۲۳۵,۰۰۰ & ۱۲.۵ & ۲.۰ میلیارد & \cellcolor{WisdomGold!30}متوسط \\
+\hline
+
+۸ & دریای خزر & ۱۸۰,۰۰۰ & ۱۵.۲ & ۰.۵ میلیارد & \cellcolor{SuccessGreen!30}نسبتاً خوب \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۱۰: برنامه شیرین‌سازی آب دریا}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{SuccessGreen!10}}p{3cm}|r|r|r|r|}
+\hline
+\rowcolor{SuccessGreen!30}
+\textbf{پروژه/منطقه} & \textbf{ظرفیت (م³/روز)} & \textbf{هزینه (میلیارد \$)} & \textbf{زمان اجرا} & \textbf{جمعیت بهره‌مند} \\
+\hline
+\endfirsthead
+
+بندرعباس-کرمان & ۴۰۰,۰۰۰ & ۲.۵ & ۱۴۰۵-۱۴۰۸ & ۳ میلیون \\
+\hline
+
+بوشهر-فارس & ۵۰۰,۰۰۰ & ۳.۲ & ۱۴۰۵-۱۴۰۹ & ۴ میلیون \\
+\hline
+
+چابهار-سیستان & ۳۰۰,۰۰۰ & ۲.۰ & ۱۴۰۶-۱۴۱۰ & ۲.۵ میلیون \\
+\hline
+
+خوزستان ساحلی & ۶۰۰,۰۰۰ & ۳.۸ & ۱۴۰۵-۱۴۱۰ & ۵ میلیون \\
+\hline
+
+خلیج فارس-یزد & ۳۵۰,۰۰۰ & ۲.۸ & ۱۴۰۷-۱۴۱۱ & ۳ میلیون \\
+\hline
+
+\rowcolor{yellow!20}
+\textbf{مجموع فاز اول} & \textbf{۲,۱۵۰,۰۰۰} & \textbf{۱۴.۳} & \textbf{۱۴۰۵-۱۴۱۲} & \textbf{۱۷.۵ میلیون} \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{بخش چهارم: شاخص‌های حکمرانی و دموکراسی}
+\label{sec:data-governance}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{جدول ۱۱: رتبه ایران در شاخص‌های بین‌المللی}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{WisdomGold!10}}p{4cm}|r|r|p{3cm}|p{3cm}|}
+\hline
+\rowcolor{WisdomGold!30}
+\textbf{شاخص} & \textbf{رتبه ایران} & \textbf{از کل کشورها} & \textbf{وضعیت} & \textbf{هدف ۱۰ ساله} \\
+\hline
+\endfirsthead
+
+شاخص دموکراسی (EIU) & ۱۵۴ & ۱۶۷ & \cellcolor{WarningRed!30}استبدادی & رتبه ۸۰-۱۰۰ \\
+\hline
+
+آزادی مطبوعات (RSF) & ۱۷۶ & ۱۸۰ & \cellcolor{WarningRed!30}بسیار بد & رتبه ۱۰۰-۱۲۰ \\
+\hline
+
+شاخص فساد (TI) & ۱۴۹ & ۱۸۰ & \cellcolor{WarningRed!30}فاسد & رتبه ۸۰-۱۰۰ \\
+\hline
+
+حاکمیت قانون (WJP) & ۱۱۸ & ۱۴۲ & \cellcolor{WarningRed!30}ضعیف & رتبه ۶۰-۸۰ \\
+\hline
+
+آزادی اقتصادی (HF) & ۱۶۹ & ۱۷۶ & \cellcolor{WarningRed!30}سرکوب‌شده & رتبه ۱۰۰-۱۲۰ \\
+\hline
+
+توسعه انسانی (UNDP) & ۷۶ & ۱۹۱ & \cellcolor{WisdomGold!30}بالای متوسط & رتبه ۵۰-۶۰ \\
+\hline
+
+شاخص صلح جهانی & ۱۴۳ & ۱۶۳ & \cellcolor{WarningRed!30}پرتنش & رتبه ۸۰-۱۰۰ \\
+\hline
+
+سهولت کسب‌وکار (WB) & ۱۲۷ & ۱۹۰ & \cellcolor{orange!30}متوسط & رتبه ۵۰-۷۰ \\
+\hline
+
+شاخص نوآوری (WIPO) & ۶۲ & ۱۳۲ & \cellcolor{SuccessGreen!30}نسبتاً خوب & رتبه ۴۰-۵۰ \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۱۲: مقایسه با کشورهای منطقه}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{gray!10}}p{2cm}|r|r|r|r|r|r|}
+\hline
+\rowcolor{gray!30}
+\textbf{کشور} & \textbf{جمعیت (م)} & \textbf{GDP (\$ م)} & \textbf{سرانه (\$)} & \textbf{دموکراسی} & \textbf{فساد} & \textbf{HDI} \\
+\hline
+\endfirsthead
+
+\rowcolor{yellow!15}
+ایران & ۸۶ & ۴۰۱ & ۴,۶۵۰ & ۱.۹۵ & ۲۵ & ۰.۷۷۴ \\
+\hline
+
+ترکیه & ۸۵ & ۹۰۵ & ۱۰,۶۵۰ & ۴.۳۵ & ۳۶ & ۰.۸۳۸ \\
+\hline
+
+عربستان & ۳۶ & ۱,۱۰۸ & ۳۰,۷۵۰ & ۲.۰۸ & ۵۳ & ۰.۸۷۵ \\
+\hline
+
+امارات & ۱۰ & ۵۰۷ & ۵۰,۶۵۰ & ۲.۷۶ & ۶۷ & ۰.۹۱۱ \\
+\hline
+
+پاکستان & ۲۳۱ & ۳۴۹ & ۱,۵۱۰ & ۴.۱۳ & ۲۷ & ۰.۵۴۴ \\
+\hline
+
+عراق & ۴۴ & ۲۶۷ & ۶,۰۷۰ & ۳.۶۲ & ۲۳ & ۰.۶۸۶ \\
+\hline
+
+مصر & ۱۱۰ & ۴۷۵ & ۴,۳۲۰ & ۲.۹۳ & ۳۰ & ۰.۷۳۱ \\
+\hline
+
+\multicolumn{7}{l}{\scriptsize منابع: بانک جهانی، EIU، Transparency International، UNDP | داده‌های ۲۰۲۳} \\
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۱۳: اهداف KPI برای دوره گذار}
+
+\begin{center}
+\begin{tikzpicture}
+    % عنوان
+    \node[
+        fill=DemocracyBlue,
+        text=white,
+        rounded corners=5pt,
+        font=\bfseries,
+        minimum width=14cm
+    ] at (0,6) {شاخص‌های کلیدی عملکرد (KPI) — اهداف ۲۵ ساله};
+    
+    % جدول بصری
+    \foreach \y/\name/\current/\y5/\y10/\y25 in {
+        4.5/{شاخص دموکراسی}/۱.۹۵/۴.۵/۶.۵/۸.۰,
+        3.5/{شاخص فساد}/۲۵/۳۵/۵۰/۷۰,
+        2.5/{آزادی مطبوعات}/۱۷۶/۱۲۰/۸۰/۵۰,
+        1.5/{HDI}/۰.۷۷/۰.۸۰/۰.۸۵/۰.۹۰,
+        0.5/{GDP سرانه (\$)}/۴,۶۵۰/۸,۰۰۰/۱۵,۰۰۰/۳۰,۰۰۰
+    } {
+        % نام شاخص
+        \node[font=\small, align=left] at (-5.5,\y) {\name};
+        
+        % مقادیر
+        \node[font=\scriptsize, fill=WarningRed!30, rounded corners=2pt, minimum width=1.5cm] at (-2.5,\y) {\current};
+        \node[font=\scriptsize, fill=orange!30, rounded corners=2pt, minimum width=1.5cm] at (-0.5,\y) {\y5};
+        \node[font=\scriptsize, fill=WisdomGold!30, rounded corners=2pt, minimum width=1.5cm] at (1.5,\y) {\y10};
+        \node[font=\scriptsize, fill=SuccessGreen!30, rounded corners=2pt, minimum width=1.5cm] at (3.5,\y) {\y25};
+    }
+    
+    % عناوین ستون‌ها
+    \node[font=\small\bfseries] at (-2.5,5.5) {فعلی};
+    \node[font=\small\bfseries] at (-0.5,5.5) {سال ۵};
+    \node[font=\small\bfseries] at (1.5,5.5) {سال ۱۰};
+    \node[font=\small\bfseries] at (3.5,5.5) {سال ۲۵};
+\end{tikzpicture}
+\end{center}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{بخش پنجم: تجارب جهانی گذار دموکراتیک}
+\label{sec:data-transitions}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{جدول ۱۴: مقایسه گذارهای موفق}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{SuccessGreen!10}}p{2cm}|r|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
+\hline
+\rowcolor{SuccessGreen!30}
+\textbf{کشور} & \textbf{سال گذار} & \textbf{نوع رژیم قبلی} & \textbf{محرک گذار} & \textbf{مدت تثبیت} & \textbf{موفقیت کلی} \\
+\hline
+\endfirsthead
+
+اسپانیا & ۱۹۷۵-۷۸ & دیکتاتوری نظامی & فوت فرانکو & ۱۰ سال & \cellcolor{SuccessGreen!30}موفق \\
+\hline
+
+پرتغال & ۱۹۷۴ & دیکتاتوری & کودتای نظامی & ۱۲ سال & \cellcolor{SuccessGreen!30}موفق \\
+\hline
+
+شیلی & ۱۹۸۸-۹۰ & دیکتاتوری نظامی & همه‌پرسی & ۱۵ سال & \cellcolor{SuccessGreen!30}موفق \\
+\hline
+
+لهستان & ۱۹۸۹ & کمونیستی & میز گرد & ۸ سال & \cellcolor{SuccessGreen!30}موفق \\
+\hline
+
+آفریقای جنوبی & ۱۹۹۰-۹۴ & آپارتاید & مذاکره & ۱۰ سال & \cellcolor{SuccessGreen!30}موفق \\
+\hline
+
+اندونزی & ۱۹۹۸ & اقتدارگرا & بحران اقتصادی & ۱۵ سال & \cellcolor{WisdomGold!30}نسبتاً موفق \\
+\hline
+
+تونس & ۲۰۱۱ & دیکتاتوری & انقلاب & در حال تثبیت & \cellcolor{WisdomGold!30}چالش‌دار \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۱۵: مقایسه گذارهای ناموفق}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{WarningRed!10}}p{2cm}|r|p{2.5cm}|p{2.5cm}|p{4cm}|}
+\hline
+\rowcolor{WarningRed!30}
+\textbf{کشور} & \textbf{سال} & \textbf{نوع گذار} & \textbf{نتیجه} & \textbf{علل شکست} \\
+\hline
+\endfirsthead
+
+مصر & ۲۰۱۱-۱۳ & انقلاب & کودتا & عدم اجماع، اسلام‌گرایان، ارتش \\
+\hline
+
+لیبی & ۲۰۱۱ & سقوط رژیم & جنگ داخلی & فقدان نهاد، مداخله خارجی، قبیله‌گرایی \\
+\hline
+
+یمن & ۲۰۱۱ & قیام & جنگ داخلی & تنش‌های مذهبی، مداخله خارجی \\
+\hline
+
+سوریه & ۲۰۱۱ & قیام & جنگ داخلی & سرکوب، مداخله خارجی، تکثر مخالفان \\
+\hline
+
+عراق & ۲۰۰۳ & اشغال & بی‌ثباتی & مداخله نظامی، انحلال ارتش، فرقه‌گرایی \\
+\hline
+
+افغانستان & ۲۰۰۱ & اشغال & شکست & مداخله نظامی، فساد، طالبان \\
+\hline
+
+ونزوئلا & ۲۰۱۹ & بن‌بست & شکست & حمایت نظامی از رژیم، تحریم‌ها \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۱۶: درس‌های کلیدی از تجارب جهانی}
+
+\begin{center}
+\begin{tikzpicture}
+    % دو ستون: موفقیت و شکست
+    \node[
+        draw=SuccessGreen,
+        line width=2pt,
+        fill=SuccessGreen!10,
+        rounded corners=10pt,
+        minimum width=6.5cm,
+        minimum height=8cm,
+        align=right
+    ] (success) at (-3.5,0) {};
+    
+    \node[
+        draw=WarningRed,
+        line width=2pt,
+        fill=WarningRed!10,
+        rounded corners=10pt,
+        minimum width=6.5cm,
+        minimum height=8cm,
+        align=right
+    ] (failure) at (3.5,0) {};
+    
+    % عناوین
+    \node[fill=SuccessGreen, text=white, rounded corners=3pt, font=\bfseries] at (-3.5,3.5) {عوامل موفقیت};
+    \node[fill=WarningRed, text=white, rounded corners=3pt, font=\bfseries] at (3.5,3.5) {عوامل شکست};
+    
+    % محتوای موفقیت
+    \node[font=\small, align=right, text width=5.5cm] at (-3.5,1) {
+        ✓ اجماع ملی گسترده\\[3pt]
+        ✓ رهبری متحد و معتبر\\[3pt]
+        ✓ حمایت یا بی‌طرفی ارتش\\[3pt]
+        ✓ میثاق بین نیروها\\[3pt]
+        ✓ عدالت انتقالی متوازن\\[3pt]
+        ✓ حمایت بین‌المللی\\[3pt]
+        ✓ اصلاحات اقتصادی سریع\\[3pt]
+        ✓ نهادسازی مؤثر
+    };
+    
+    % محتوای شکست
+    \node[font=\small, align=right, text width=5.5cm] at (3.5,1) {
+        ✗ تفرقه و رقابت نخبگان\\[3pt]
+        ✗ مداخله نظامی خارجی\\[3pt]
+        ✗ انتقام‌جویی و خشونت\\[3pt]
+        ✗ فروپاشی اقتصادی\\[3pt]
+        ✗ شکاف‌های قومی/مذهبی\\[3pt]
+        ✗ فقدان نهادهای مدنی\\[3pt]
+        ✗ بازگشت نظامیان\\[3pt]
+        ✗ افراط‌گرایی
+    };
+\end{tikzpicture}
+\end{center}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{بخش ششم: جداول زمان‌بندی پروژه}
+\label{sec:data-timeline}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{جدول ۱۷: تقویم کلان ۲۵ ساله}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+    % محور زمانی
+    \draw[->, thick, gray] (0,0) -- (15,0);
+    
+    % علامت‌گذاری سال‌ها
+    \foreach \x/\year in {0/۰, 2.5/۵, 5/۱۰, 7.5/۱۵, 10/۲۰, 12.5/۲۵} {
+        \draw[thick] (\x,0.15) -- (\x,-0.15);
+        \node[below, font=\small] at (\x,-0.3) {سال \year};
+    }
+    
+    % فازها
+    \draw[fill=WarningRed!40, draw=WarningRed] (0,0.5) rectangle (1.5,1.5);
+    \node[font=\tiny, align=center] at (0.75,1) {فاز ۱\\گذار};
+    
+    \draw[fill=orange!40, draw=orange] (1.5,0.5) rectangle (4,1.5);
+    \node[font=\tiny, align=center] at (2.75,1) {فاز ۲\\نهادسازی};
+    
+    \draw[fill=WisdomGold!40, draw=WisdomGold] (4,0.5) rectangle (7.5,1.5);
+    \node[font=\tiny, align=center] at (5.75,1) {فاز ۳\\تحکیم};
+    
+    \draw[fill=SuccessGreen!40, draw=SuccessGreen] (7.5,0.5) rectangle (10,1.5);
+    \node[font=\tiny, align=center] at (8.75,1) {فاز ۴\\بلوغ};
+    
+    \draw[fill=DemocracyBlue!40, draw=DemocracyBlue] (10,0.5) rectangle (12.5,1.5);
+    \node[font=\tiny, align=center] at (11.25,1) {فاز ۵\\تعالی};
+    
+    % رویدادهای کلیدی
+    \node[circle, fill=WarningRed, minimum size=8pt] at (0.5,-0.8) {};
+    \node[font=\tiny, below] at (0.5,-1) {انتخابات اول};
+    
+    \node[circle, fill=orange, minimum size=8pt] at (2.5,-0.8) {};
+    \node[font=\tiny, below] at (2.5,-1) {قانون اساسی};
+    
+    \node[circle, fill=WisdomGold, minimum size=8pt] at (5,-0.8) {};
+    \node[font=\tiny, below] at (5,-1) {رفع تحریم};
+    
+    \node[circle, fill=SuccessGreen, minimum size=8pt] at (7.5,-0.8) {};
+    \node[font=\tiny, below] at (7.5,-1) {دموکراسی پایدار};
+    
+    \node[circle, fill=DemocracyBlue, minimum size=8pt] at (10,-0.8) {};
+    \node[font=\tiny, below] at (10,-1) {توسعه‌یافتگی};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{gray!10}}p{1.5cm}|p{2cm}|p{3cm}|p{4cm}|p{3cm}|}
+\hline
+\rowcolor{gray!30}
+\textbf{فاز} & \textbf{دوره} & \textbf{عنوان} & \textbf{اهداف اصلی} & \textbf{شاخص موفقیت} \\
+\hline
+\endfirsthead
+
+\cellcolor{WarningRed!20} فاز ۱ & سال ۱-۲ & گذار اولیه & 
+• انتخابات آزاد
+• قانون اساسی
+• ثبات اولیه &
+انتخابات موفق، عدم خشونت \\
+\hline
+
+\cellcolor{orange!20} فاز ۲ & سال ۳-۵ & نهادسازی & 
+• استقرار فدرالیسم
+• اصلاح قضایی
+• آغاز رفع تحریم &
+نهادهای مستقل فعال \\
+\hline
+
+\cellcolor{WisdomGold!20} فاز ۳ & سال ۶-۱۰ & تحکیم & 
+• رشد اقتصادی پایدار
+• دموکراسی نهادینه
+• انتقال قدرت مسالمت‌آمیز &
+دو انتقال قدرت موفق \\
+\hline
+
+\cellcolor{SuccessGreen!20} فاز ۴ & سال ۱۱-۱۵ & بلوغ & 
+• رسیدن به درآمد متوسط بالا
+• عضویت در نهادهای بین‌المللی
+• الگوی منطقه‌ای &
+GDP سرانه ۲۰,۰۰۰\$ \\
+\hline
+
+\cellcolor{DemocracyBlue!20} فاز ۵ & سال ۱۶-۲۵ & تعالی & 
+• دموکراسی کامل
+• اقتصاد دانش‌بنیان
+• قدرت منطقه‌ای سازنده &
+جزو ۵۰ کشور برتر \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۱۸: بودجه تخمینی طرح گذار}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{WisdomGold!10}}p{4cm}|r|r|r|r|r|}
+\hline
+\rowcolor{WisdomGold!30}
+\textbf{بخش} & \textbf{سال ۱-۲} & \textbf{سال ۳-۵} & \textbf{سال ۶-۱۰} & \textbf{مجموع ۱۰ سال} & \textbf{منبع تأمین} \\
+\hline
+% ═══════════════════════════════════════════════════════════════════════════════
+% ادامه پیوست ۴: داده‌ها و جداول آماری
+% ادامه جداول بودجه و خلاصه
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\endfirsthead
+
+انتخابات و دموکراتیزاسیون & ۲.۵ & ۱.۵ & ۲.۰ & ۶.۰ & بودجه + کمک بین‌المللی \\
+\hline
+
+عدالت انتقالی & ۱.۰ & ۱.۵ & ۰.۵ & ۳.۰ & بودجه + مصادره \\
+\hline
+
+نهادسازی و اصلاحات & ۳.۰ & ۵.۰ & ۴.۰ & ۱۲.۰ & بودجه \\
+\hline
+
+زیرساخت‌های آب & ۵.۰ & ۱۵.۰ & ۳۰.۰ & ۵۰.۰ & بودجه + وام + سرمایه‌گذاری \\
+\hline
+
+زیرساخت‌های انرژی & ۳.۰ & ۱۰.۰ & ۲۵.۰ & ۳۸.۰ & بودجه + سرمایه‌گذاری \\
+\hline
+
+توسعه مناطق محروم & ۵.۰ & ۱۵.۰ & ۳۰.۰ & ۵۰.۰ & صندوق توازن \\
+\hline
+
+آموزش و بهداشت & ۸.۰ & ۲۰.۰ & ۴۰.۰ & ۶۸.۰ & بودجه جاری \\
+\hline
+
+حمایت اجتماعی & ۱۰.۰ & ۱۵.۰ & ۲۰.۰ & ۴۵.۰ & بودجه جاری \\
+\hline
+
+امنیت و دفاع & ۱۲.۰ & ۲۵.۰ & ۴۰.۰ & ۷۷.۰ & بودجه \\
+\hline
+
+\rowcolor{yellow!20}
+\textbf{مجموع (میلیارد \$)} & \textbf{۴۹.۵} & \textbf{۱۰۸.۰} & \textbf{۱۹۱.۵} & \textbf{۳۴۹.۰} & — \\
+\hline
+
+\multicolumn{6}{l}{\scriptsize * ارقام تخمینی بر اساس تجارب مشابه و شرایط ایران | نیازمند بازنگری دقیق‌تر} \\
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۱۹: منابع تأمین مالی}
+
+\begin{center}
+\begin{tikzpicture}
+    % نمودار دایره‌ای منابع
+    \pie[
+        text=legend,
+        radius=3,
+        color={DemocracyBlue!70, SuccessGreen!70, WisdomGold!70, orange!70, purple!70}
+    ]{
+        45/درآمد نفتی,
+        25/مالیات و درآمد داخلی,
+        15/سرمایه‌گذاری خارجی,
+        10/وام بین‌المللی,
+        5/کمک‌های بین‌المللی
+    }
+    
+    \node[font=\bfseries] at (0,-4.5) {ترکیب تأمین مالی طرح گذار (۱۰ ساله)};
+\end{tikzpicture}
+\end{center}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{SuccessGreen!10}}p{3.5cm}|r|p{4cm}|p{4cm}|}
+\hline
+\rowcolor{SuccessGreen!30}
+\textbf{منبع} & \textbf{سهم (٪)} & \textbf{پیش‌شرط} & \textbf{ریسک} \\
+\hline
+\endfirsthead
+
+درآمد نفت و گاز & ۴۵٪ & رفع تحریم، افزایش تولید & نوسانات قیمت، تحریم مجدد \\
+\hline
+
+مالیات و درآمد داخلی & ۲۵٪ & اصلاح نظام مالیاتی & فرار مالیاتی، ضعف اقتصاد \\
+\hline
+
+سرمایه‌گذاری خارجی (FDI) & ۱۵٪ & ثبات سیاسی، رفع تحریم & بی‌اعتمادی، رقابت منطقه‌ای \\
+\hline
+
+وام بین‌المللی (IMF/WB) & ۱۰٪ & اصلاحات ساختاری & شرایط سخت، بدهی \\
+\hline
+
+کمک‌های بین‌المللی & ۵٪ & روابط دیپلماتیک & محدود، مشروط \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{بخش هفتم: داده‌های مقایسه‌ای فدرالیسم}
+\label{sec:data-federalism}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{جدول ۲۰: مقایسه سیستم‌های فدرال جهان}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{purple!10}}p{2cm}|r|r|p{2.5cm}|p{2.5cm}|p{3cm}|}
+\hline
+\rowcolor{purple!30}
+\textbf{کشور} & \textbf{واحدها} & \textbf{جمعیت (م)} & \textbf{نوع فدرالیسم} & \textbf{مجلس دوم} & \textbf{ویژگی خاص} \\
+\hline
+\endfirsthead
+
+آلمان & ۱۶ لَند & ۸۳ & همکارانه & بوندسرات (نمایندگی ایالات) & فدرالیسم مالی قوی \\
+\hline
+
+آمریکا & ۵۰ ایالت & ۳۳۱ & دوگانه & سنا (۲ نماینده هر ایالت) & حقوق ایالتی گسترده \\
+\hline
+
+هند & ۲۸ ایالت + ۸ منطقه & ۱,۴۰۰ & نامتقارن & راجیا سابها & تنوع زبانی بالا \\
+\hline
+
+سوئیس & ۲۶ کانتون & ۸.۷ & مشارکتی & شورای کانتون‌ها & دموکراسی مستقیم \\
+\hline
+
+کانادا & ۱۰ استان + ۳ منطقه & ۳۸ & نامتقارن & سنا (انتصابی) & دوزبانگی رسمی \\
+\hline
+
+استرالیا & ۶ ایالت + ۲ منطقه & ۲۶ & همکارانه & سنا (۱۲ از هر ایالت) & فدرالیسم مالی \\
+\hline
+
+بلژیک & ۳ منطقه + ۳ جامعه & ۱۱.۵ & زبانی & سنا & مبتنی بر زبان \\
+\hline
+
+اسپانیا & ۱۷ منطقه خودمختار & ۴۷ & نامتقارن & سنا & خودمختاری متفاوت \\
+\hline
+
+\rowcolor{yellow!15}
+ایران (پیشنهادی) & ۵ منطقه + ۱۵ استان & ۸۶ & نامتقارن-همبسته & مجلس اقوام & فدرالیسم قومی \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۲۱: توزیع صلاحیت‌ها در نظام فدرال پیشنهادی}
+
+\begin{center}
+\begin{tikzpicture}
+    % سه ستون
+    \node[
+        draw=DemocracyBlue,
+        line width=2pt,
+        fill=DemocracyBlue!15,
+        rounded corners=10pt,
+        minimum width=4.5cm,
+        minimum height=9cm,
+        align=center
+    ] (fed) at (-5,0) {};
+    
+    \node[
+        draw=SuccessGreen,
+        line width=2pt,
+        fill=SuccessGreen!15,
+        rounded corners=10pt,
+        minimum width=4.5cm,
+        minimum height=9cm,
+        align=center
+    ] (shared) at (0,0) {};
+    
+    \node[
+        draw=WisdomGold,
+        line width=2pt,
+        fill=WisdomGold!15,
+        rounded corners=10pt,
+        minimum width=4.5cm,
+        minimum height=9cm,
+        align=center
+    ] (local) at (5,0) {};
+    
+    % عناوین
+    \node[fill=DemocracyBlue, text=white, rounded corners=3pt, font=\small\bfseries] at (-5,4) {صلاحیت فدرال};
+    \node[fill=SuccessGreen, text=white, rounded corners=3pt, font=\small\bfseries] at (0,4) {صلاحیت مشترک};
+    \node[fill=WisdomGold, text=white, rounded corners=3pt, font=\small\bfseries] at (5,4) {صلاحیت منطقه‌ای};
+    
+    % محتوا
+    \node[font=\scriptsize, align=right, text width=4cm] at (-5,1) {
+        • دفاع ملی\\
+        • سیاست خارجی\\
+        • پول و بانک مرکزی\\
+        • گمرک و تجارت خارجی\\
+        • مهاجرت و تابعیت\\
+        • ارتباطات ملی\\
+        • انرژی هسته‌ای\\
+        • حقوق اساسی
+    };
+    
+    \node[font=\scriptsize, align=right, text width=4cm] at (0,1) {
+        • آموزش عالی\\
+        • بهداشت عمومی\\
+        • محیط زیست\\
+        • مدیریت آب\\
+        • حمل‌ونقل بین‌استانی\\
+        • انرژی\\
+        • مالیات\\
+        • امنیت داخلی
+    };
+    
+    \node[font=\scriptsize, align=right, text width=4cm] at (5,1) {
+        • آموزش پایه\\
+        • فرهنگ و زبان\\
+        • پلیس محلی\\
+        • شهرسازی\\
+        • خدمات اجتماعی\\
+        • گردشگری\\
+        • کشاورزی محلی\\
+        • امور شهرداری‌ها
+    };
+\end{tikzpicture}
+\end{center}
+
+\subsection{جدول ۲۲: فرمول توزیع منابع صندوق توازن}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{WisdomGold!10}}p{3cm}|r|p{5cm}|p{4cm}|}
+\hline
+\rowcolor{WisdomGold!30}
+\textbf{معیار} & \textbf{وزن (٪)} & \textbf{شاخص سنجش} & \textbf{منطق} \\
+\hline
+\endfirsthead
+
+جمعیت & ۵۰٪ & جمعیت رسمی سرشماری & عدالت توزیعی پایه \\
+\hline
+
+مساحت & ۲۰٪ & کیلومتر مربع & هزینه‌های زیرساختی \\
+\hline
+
+شاخص محرومیت & ۱۵٪ & ترکیب HDI، فقر، بیکاری & جبران عقب‌ماندگی \\
+\hline
+
+عملکرد & ۱۰٪ & شاخص‌های حکمرانی و کارایی & تشویق به بهبود \\
+\hline
+
+سهم تولیدکننده & ۵٪ & تولید منابع طبیعی & حقوق مناطق تولیدکننده \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsubsection{نمونه محاسبه برای مناطق خودمختار}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{gray!10}}p{2.5cm}|r|r|r|r|r|r|}
+\hline
+\rowcolor{gray!30}
+\textbf{منطقه} & \textbf{جمعیت (٪)} & \textbf{مساحت (٪)} & \textbf{محرومیت} & \textbf{عملکرد} & \textbf{تولیدکننده} & \textbf{سهم نهایی (٪)} \\
+\hline
+\endfirsthead
+
+آذربایجان & ۸.۵ & ۶.۵ & ۰.۷۵ & ۰.۸۰ & ۰.۵۰ & ۷.۸۵ \\
+\hline
+
+کردستان & ۴.۵ & ۵.۲ & ۱.۲۰ & ۰.۷۰ & ۰.۳۰ & ۵.۴۵ \\
+\hline
+
+خوزستان & ۵.۶ & ۳.۹ & ۱.۰۰ & ۰.۶۵ & ۳.۰۰ & ۶.۲۵ \\
+\hline
+
+بلوچستان & ۳.۴ & ۱۱.۰ & ۱.۸۰ & ۰.۵۰ & ۰.۲۰ & ۵.۹۰ \\
+\hline
+
+ترکمن‌صحرا & ۱.۰ & ۱.۲ & ۰.۹۰ & ۰.۶۰ & ۱.۵۰ & ۱.۴۵ \\
+\hline
+
+\rowcolor{yellow!20}
+\textbf{جمع مناطق خودمختار} & \textbf{۲۳.۰} & \textbf{۲۷.۸} & — & — & — & \textbf{۲۶.۹۰} \\
+\hline
+
+\multicolumn{7}{l}{\scriptsize فرمول: سهم = (۰.۵ × جمعیت) + (۰.۲ × مساحت) + (۰.۱۵ × محرومیت) + (۰.۱ × عملکرد) + (۰.۰۵ × تولیدکننده)} \\
+
+\end{longtable}
+\end{small}
+\end{center}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{بخش هشتم: شاخص‌های پایش و ارزیابی}
+\label{sec:data-monitoring}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\subsection{جدول ۲۳: داشبورد ملی پایش گذار}
+
+\begin{center}
+\begin{tikzpicture}
+    % کادر اصلی داشبورد
+    \node[
+        draw=DemocracyBlue,
+        line width=2pt,
+        fill=white,
+        rounded corners=15pt,
+        minimum width=15cm,
+        minimum height=10cm
+    ] at (0,0) {};
+    
+    % عنوان
+    \node[fill=DemocracyBlue, text=white, rounded corners=5pt, font=\large\bfseries, minimum width=10cm] at (0,4.5) {داشبورد ملی پایش گذار دموکراتیک};
+    
+    % چهار بخش
+    % بخش ۱: سیاسی
+    \node[
+        draw=WarningRed,
+        fill=WarningRed!10,
+        rounded corners=5pt,
+        minimum width=6.5cm,
+        minimum height=3.5cm
+    ] at (-3.5,1.5) {};
+    \node[fill=WarningRed, text=white, rounded corners=3pt, font=\small\bfseries] at (-3.5,3) {شاخص‌های سیاسی};
+    \node[font=\tiny, align=right] at (-3.5,1.2) {
+        دموکراسی: ۴.۵/۱۰ \quad {\color{orange}▲}\\
+        آزادی مطبوعات: ۱۲۰/۱۸۰ \quad {\color{SuccessGreen}▲}\\
+        مشارکت انتخاباتی: ۶۵٪ \quad {\color{SuccessGreen}▲}\\
+        اعتماد به دولت: ۴۵٪ \quad {\color{orange}▲}
+    };
+    
+    % بخش ۲: اقتصادی
+    \node[
+        draw=SuccessGreen,
+        fill=SuccessGreen!10,
+        rounded corners=5pt,
+        minimum width=6.5cm,
+        minimum height=3.5cm
+    ] at (3.5,1.5) {};
+    \node[fill=SuccessGreen, text=white, rounded corners=3pt, font=\small\bfseries] at (3.5,3) {شاخص‌های اقتصادی};
+    \node[font=\tiny, align=right] at (3.5,1.2) {
+        رشد GDP: ۵.۲٪ \quad {\color{SuccessGreen}▲}\\
+        تورم: ۲۵٪ \quad {\color{orange}▼}\\
+        بیکاری: ۸.۵٪ \quad {\color{SuccessGreen}▼}\\
+        سرمایه‌گذاری خارجی: ۱۲B\$ \quad {\color{SuccessGreen}▲}
+    };
+    
+    % بخش ۳: اجتماعی
+    \node[
+        draw=WisdomGold,
+        fill=WisdomGold!10,
+        rounded corners=5pt,
+        minimum width=6.5cm,
+        minimum height=3.5cm
+    ] at (-3.5,-2.5) {};
+    \node[fill=WisdomGold, text=white, rounded corners=3pt, font=\small\bfseries] at (-3.5,-1) {شاخص‌های اجتماعی};
+    \node[font=\tiny, align=right] at (-3.5,-2.8) {
+        HDI: ۰.۷۹ \quad {\color{SuccessGreen}▲}\\
+        نرخ فقر: ۱۸٪ \quad {\color{orange}▼}\\
+        نابرابری (ژینی): ۰.۳۸ \quad {\color{SuccessGreen}▼}\\
+        دسترسی به بهداشت: ۸۵٪ \quad {\color{SuccessGreen}▲}
+    };
+    
+    % بخش ۴: محیطی
+    \node[
+        draw=purple,
+        fill=purple!10,
+        rounded corners=5pt,
+        minimum width=6.5cm,
+        minimum height=3.5cm
+    ] at (3.5,-2.5) {};
+    \node[fill=purple, text=white, rounded corners=3pt, font=\small\bfseries] at (3.5,-1) {شاخص‌های محیطی};
+    \node[font=\tiny, align=right] at (3.5,-2.8) {
+        بیلان آبی: -۱۵B م³ \quad {\color{orange}▲}\\
+        آلودگی هوا: ۱۲۰ AQI \quad {\color{WarningRed}—}\\
+        انرژی تجدیدپذیر: ۸٪ \quad {\color{SuccessGreen}▲}\\
+        جنگل: ۷.۵٪ \quad {\color{orange}▲}
+    };
+\end{tikzpicture}
+\end{center}
+
+\subsection{جدول ۲۴: ماتریس شاخص‌های KPI}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{DemocracyBlue!10}}p{3cm}|p{2.5cm}|r|r|r|r|p{1.5cm}|}
+\hline
+\rowcolor{DemocracyBlue!30}
+\textbf{شاخص} & \textbf{منبع داده} & \textbf{خط پایه} & \textbf{هدف سال ۵} & \textbf{هدف سال ۱۰} & \textbf{فعلی} & \textbf{وضعیت} \\
+\hline
+\endfirsthead
+
+\multicolumn{7}{c}{\textbf{— حوزه سیاسی —}} \\
+\hline
+
+شاخص دموکراسی EIU & EIU & ۱.۹۵ & ۴.۵ & ۶.۵ & — & پایه \\
+\hline
+
+آزادی مطبوعات RSF & RSF & ۱۷۶ & ۱۲۰ & ۸۰ & — & پایه \\
+\hline
+
+مشارکت انتخاباتی & کمیسیون & — & ۶۵٪ & ۷۵٪ & — & — \\
+\hline
+
+زنان در پارلمان & IPU & ۵٪ & ۲۵٪ & ۳۵٪ & — & پایه \\
+\hline
+
+\multicolumn{7}{c}{\textbf{— حوزه اقتصادی —}} \\
+\hline
+
+GDP سرانه (\$) & WB & ۴,۶۵۰ & ۸,۰۰۰ & ۱۵,۰۰۰ & — & پایه \\
+\hline
+
+نرخ تورم (٪) & بانک مرکزی & ۴۵ & ۲۰ & ۱۰ & — & پایه \\
+\hline
+
+نرخ بیکاری (٪) & مرکز آمار & ۹.۱ & ۷ & ۵ & — & پایه \\
+\hline
+
+شاخص فساد TI & TI & ۲۵ & ۴۰ & ۵۵ & — & پایه \\
+\hline
+
+\multicolumn{7}{c}{\textbf{— حوزه اجتماعی —}} \\
+\hline
+
+شاخص توسعه انسانی & UNDP & ۰.۷۷ & ۰.۸۲ & ۰.۸۷ & — & پایه \\
+\hline
+
+نرخ فقر (٪) & WB & ۲۵ & ۱۵ & ۸ & — & پایه \\
+\hline
+
+ضریب جینی & WB & ۰.۴۲ & ۰.۳۸ & ۰.۳۲ & — & پایه \\
+\hline
+
+امید به زندگی (سال) & WHO & ۷۴.۵ & ۷۶ & ۷۸ & — & پایه \\
+\hline
+
+\multicolumn{7}{c}{\textbf{— حوزه محیط زیست —}} \\
+\hline
+
+کسری آب (میلیارد م³) & وزارت نیرو & ۱۸ & ۱۲ & ۵ & — & پایه \\
+\hline
+
+انرژی تجدیدپذیر (٪) & IEA & ۲ & ۱۰ & ۲۵ & — & پایه \\
+\hline
+
+انتشار CO2 سرانه (تن) & WB & ۸.۵ & ۷.۵ & ۶ & — & پایه \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+\subsection{جدول ۲۵: سیستم هشدار زودهنگام}
+
+\begin{center}
+\begin{small}
+\begin{longtable}{|>{\columncolor{WarningRed!10}}p{3cm}|p{3.5cm}|p{2cm}|p{2cm}|p{3cm}|}
+\hline
+\rowcolor{WarningRed!30}
+\textbf{ریسک} & \textbf{شاخص هشدار} & \textbf{آستانه زرد} & \textbf{آستانه قرمز} & \textbf{اقدام واکنشی} \\
+\hline
+\endfirsthead
+
+بی‌ثباتی سیاسی & اعتراضات خشونت‌آمیز & ۵ مورد/ماه & ۱۵ مورد/ماه & گفتگوی ملی، امتیازات \\
+\hline
+
+تنش قومی & درگیری‌های قومی & ۳ مورد/ماه & ۱۰ مورد/ماه & شورای آشتی، میانجیگری \\
+\hline
+
+فروپاشی اقتصادی & کاهش GDP & -۳٪ & -۷٪ & بسته نجات، کمک بین‌المللی \\
+\hline
+
+تورم افسارگسیخته & نرخ تورم ماهانه & ۵٪ & ۱۰٪ & سیاست پولی انقباضی \\
+\hline
+
+بحران ارزی & کاهش ارزش ریال & ۳۰٪/سال & ۶۰٪/سال & مداخله ارزی، کنترل \\
+\hline
+
+کودتای نظامی & فعالیت‌های مشکوک & شایعات پایدار & حرکت نیروها & فعال‌سازی پروتکل ضدکودتا \\
+\hline
+
+مداخله خارجی & تحریکات مرزی & ۳ مورد/ماه & ۱۰ مورد/ماه & دیپلماسی فعال، هشدار UN \\
+\hline
+
+بحران انسانی & جابجایی داخلی & ۵۰,۰۰۰ نفر & ۲۰۰,۰۰۰ نفر & کمک اضطراری، UNHCR \\
+\hline
+
+\end{longtable}
+\end{small}
+\end{center}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+\section{خلاصه و منابع داده‌ها}
+\label{sec:data-summary}
+% ═══════════════════════════════════════════════════════════════════════════════
+
+\begin{kholasebox}
+\textbf{خلاصه پیوست داده‌ها و جداول آماری}
+
+\begin{center}
+\begin{tabular}{r r}
+\textbf{بخش} & \textbf{تعداد جداول} \\
+\hline
+داده‌های جمعیتی و قومی & ۳ جدول \\
+داده‌های اقتصادی & ۴ جدول \\
+داده‌های بحران آب & ۳ جدول \\
+شاخص‌های حکمرانی & ۳ جدول \\
+تجارب جهانی & ۳ جدول \\
+جداول زمان‌بندی و بودجه & ۳ جدول \\
+داده‌های فدرالیسم & ۳ جدول \\
+شاخص‌های پایش & ۳ جدول \\
+\hline
+\textbf{مجموع} & \textbf{۲۵ جدول} \\
+\end{tabular}
+\end{center}
+\end{kholasebox}
+
+\subsection{منابع اصلی داده‌ها}
+
+\begin{longtable}{|>{\columncolor{gray!10}}p{4cm}|p{5cm}|p{5cm}|}
+\hline
+\rowcolor{gray!30}
+\textbf{سازمان} & \textbf{نوع داده} & \textbf{آدرس} \\
+\hline
+\endfirsthead
+
+بانک جهانی (World Bank) & اقتصادی، توسعه، فقر & data.worldbank.org \\
+\hline
+
+صندوق بین‌المللی پول (IMF) & اقتصاد کلان، مالی & imf.org/data \\
+\hline
+
+سازمان ملل (UN) & جمعیت، HDI، محیط زیست & data.un.org \\
+\hline
+
+UNDP & توسعه انسانی & hdr.undp.org \\
+\hline
+
+Transparency International & فساد & transparency.org \\
+\hline
+
+Freedom House & آزادی سیاسی و مدنی & freedomhouse.org \\
+\hline
+
+Economist Intelligence Unit & شاخص دموکراسی & eiu.com \\
+\hline
+
+گزارشگران بدون مرز (RSF) & آزادی مطبوعات & rsf.org \\
+\hline
+
+مرکز آمار ایران & داده‌های داخلی & amar.org.ir \\
+\hline
+
+FAO & کشاورزی، آب، غذا & fao.org/faostat \\
+\hline
+
+IEA & انرژی & iea.org \\
+\hline
+
+WHO & بهداشت & who.int/data \\
+\hline
+
+\end{longtable}
+
+\begin{enghelabbox}
+\textbf{⚠️ تذکر مهم درباره داده‌ها}
+
+\begin{itemize}[nosep]
+    \item برخی داده‌های مربوط به ایران به دلیل محدودیت دسترسی، \textbf{تخمینی} هستند.
+    \item داده‌های قومی بر اساس برآوردهای غیررسمی است زیرا سرشماری رسمی قومی وجود ندارد.
+    \item شاخص‌های آینده بر اساس \textbf{سناریوهای خوش‌بینانه} با فرض اجرای کامل طرح است.
+    \item داده‌ها باید پس از گذار با \textbf{سرشماری و آمارگیری جدید} به‌روزرسانی شوند.
+    \item برای برنامه‌ریزی دقیق، همکاری با نهادهای بین‌المللی آماری ضروری است.
+\end{itemize}
+\end{enghelabbox}
+
+% ═══════════════════════════════════════════════════════════════════════════════
+% پایان پیوست ۴
+% ═══════════════════════════════════════════════════════════════════════════════
