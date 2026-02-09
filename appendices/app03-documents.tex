@@ -34,15 +34,15 @@
 \end{tikzpicture}
 \end{center}
 
-\begin{longtable}{|>{\columncolor{DemocracyBlue!10}}p{2.5cm}|p{11.5cm}|}
+\begin{longtable}{|>{\columncolor{bleurepublique!10}}p{2.5cm}|p{11.5cm}|}
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{ماده} & \textbf{متن} \\
+\rowcolor{bleurepublique!30}
+\textbf{\rl{ماده}} & \textbf{\rl{متن}} \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{ماده} & \textbf{متن} \\
+\rowcolor{bleurepublique!30}
+\textbf{\rl{ماده}} & \textbf{\rl{متن}} \\
 \hline
 \endhead
 
@@ -112,10 +112,10 @@
 
 \subsection{سند ۲: قانون دولت موقت}
 
-\begin{longtable}{|>{\columncolor{SuccessGreen!10}}p{2.5cm}|p{11.5cm}|}
+\begin{longtable}{|>{\columncolor{goldlight!10}}p{2.5cm}|p{11.5cm}|}
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{ماده} & \textbf{متن} \\
+\rowcolor{goldlight!30}
+\textbf{\rl{ماده}} & \textbf{\rl{متن}} \\
 \hline
 \endfirsthead
 
@@ -171,10 +171,10 @@
 
 \subsection{سند ۳: قانون انتخابات دوره گذار}
 
-\begin{longtable}{|>{\columncolor{WisdomGold!10}}p{2.5cm}|p{11.5cm}|}
+\begin{longtable}{|>{\columncolor{bleulight!10}}p{2.5cm}|p{11.5cm}|}
 \hline
-\rowcolor{WisdomGold!30}
-\textbf{ماده} & \textbf{متن} \\
+\rowcolor{bleulight!30}
+\textbf{\rl{ماده}} & \textbf{\rl{متن}} \\
 \hline
 \endfirsthead
 
@@ -270,10 +270,10 @@
 این قانون چارچوب برخورد با گذشته و حرکت به سوی آینده را تعیین می‌کند. تعادل بین عدالت و آشتی، کلید موفقیت گذار است.
 \end{enghelabbox}
 
-\begin{longtable}{|>{\columncolor{WarningRed!10}}p{2.5cm}|p{11.5cm}|}
+\begin{longtable}{|>{\columncolor{golddark!10}}p{2.5cm}|p{11.5cm}|}
 \hline
-\rowcolor{WarningRed!30}
-\textbf{ماده} & \textbf{متن} \\
+\rowcolor{golddark!30}
+\textbf{\rl{ماده}} & \textbf{\rl{متن}} \\
 \hline
 \endfirsthead
 
@@ -396,12 +396,12 @@
 \begin{tikzpicture}
     % عنوان
     \node[
-        fill=WarningRed,
+        fill=golddark,
         text=white,
         rounded corners=5pt,
         font=\large\bfseries,
         minimum width=12cm
-    ] at (0,5) {پروتکل عملیاتی لحظه صفر (۷۲ ساعت اول)};
+    ] at (0,5) {\rl{پروتکل عملیاتی لحظه صفر (۷۲ ساعت اول)}};
     
     % تایم‌لاین
     \draw[->, thick, gray] (-6,3.5) -- (6,3.5);
@@ -409,54 +409,54 @@
     % نقاط زمانی
     \foreach \x/\t in {-5/۰, -2.5/۶, 0/۱۲, 2.5/۲۴, 5/۷۲} {
         \draw[thick] (\x,3.6) -- (\x,3.4);
-        \node[below, font=\tiny] at (\x,3.3) {ساعت \t};
+        \node[below, font=\tiny] at (\x,3.3) {\rl{ساعت \t}};
     }
     
     % اقدامات
     \node[
-        draw=WarningRed,
-        fill=WarningRed!20,
+        draw=golddark,
+        fill=golddark!20,
         rounded corners=5pt,
         font=\tiny,
         align=center,
         minimum width=2cm
-    ] at (-5,2) {\shortstack{اعلامیه\\سقوط رژیم}};
+    ] at (-5,2) {\shortstack{\rl{اعلامیه}\\\rl{سقوط رژیم}}};
     
     \node[
-        draw=DemocracyBlue,
-        fill=DemocracyBlue!20,
+        draw=bleurepublique,
+        fill=bleurepublique!20,
         rounded corners=5pt,
         font=\tiny,
         align=center,
         minimum width=2cm
-    ] at (-2.5,2) {\shortstack{تشکیل شورای\\انتقالی}};
+    ] at (-2.5,2) {\shortstack{\rl{تشکیل شورای}\\\rl{انتقالی}}};
     
     \node[
-        draw=SuccessGreen,
-        fill=SuccessGreen!20,
+        draw=goldlight,
+        fill=goldlight!20,
         rounded corners=5pt,
         font=\tiny,
         align=center,
         minimum width=2cm
-    ] at (0,2) {\shortstack{کنترل نقاط\\استراتژیک}};
+    ] at (0,2) {\shortstack{\rl{کنترل نقاط}\\\rl{استراتژیک}}};
     
     \node[
-        draw=WisdomGold,
-        fill=WisdomGold!20,
+        draw=bleulight,
+        fill=bleulight!20,
         rounded corners=5pt,
         font=\tiny,
         align=center,
         minimum width=2cm
-    ] at (2.5,2) {\shortstack{اعلامیه\\آرامش}};
+    ] at (2.5,2) {\shortstack{\rl{اعلامیه}\\\rl{آرامش}}};
     
     \node[
-        draw=purple,
-        fill=purple!20,
+        draw=bleurepublique!80,
+        fill=bleurepublique!20,
         rounded corners=5pt,
         font=\tiny,
         align=center,
         minimum width=2cm
-    ] at (5,2) {\shortstack{معرفی\\دولت موقت}};
+    ] at (5,2) {\shortstack{\rl{معرفی}\\\rl{دولت موقت}}};
 \end{tikzpicture}
 \end{center}
 
@@ -532,10 +532,10 @@
 
 \subsection{سند ۶: پروتکل امنیت دوره گذار}
 
-\begin{longtable}{|>{\columncolor{purple!10}}p{3cm}|p{5cm}|p{5.5cm}|}
+\begin{longtable}{|>{\columncolor{bleurepublique!10}}p{3cm}|p{5cm}|p{5.5cm}|}
 \hline
-\rowcolor{purple!30}
-\textbf{تهدید} & \textbf{اقدام پیشگیرانه} & \textbf{پاسخ اضطراری} \\
+\rowcolor{bleurepublique!30}
+\textbf{\rl{تهدید}} & \textbf{\rl{اقدام پیشگیرانه}} & \textbf{\rl{پاسخ اضطراری}} \\
 \hline
 \endfirsthead
 
@@ -682,10 +682,10 @@
 \sourceline{میثاق ملی گذار دموکراتیک}
 \end{naghlbox}
 
-\begin{longtable}{|>{\columncolor{DemocracyBlue!10}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleurepublique!10}}r|p{12cm}|}
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{اصل} & \textbf{متن} \\
+\rowcolor{bleurepublique!30}
+\textbf{\rl{اصل}} & \textbf{\rl{متن}} \\
 \hline
 \endfirsthead
 
@@ -733,10 +733,10 @@
 
 \subsection{سند ۹: توافقنامه همکاری بین‌قومی}
 
-\begin{longtable}{|>{\columncolor{purple!10}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{goldlight!10}}r|p{12cm}|}
 \hline
-\rowcolor{purple!30}
-\textbf{ماده} & \textbf{متن} \\
+\rowcolor{goldlight!30}
+\textbf{\rl{ماده}} & \textbf{\rl{متن}} \\
 \hline
 \endfirsthead
 
@@ -784,10 +784,10 @@
 
 \subsection{سند ۱۰: تفاهم‌نامه نیروهای مسلح}
 
-\begin{longtable}{|>{\columncolor{SuccessGreen!10}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{golddark!10}}r|p{12cm}|}
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{ماده} & \textbf{متن} \\
+\rowcolor{golddark!30}
+\textbf{\rl{ماده}} & \textbf{\rl{متن}} \\
 \hline
 \endfirsthead
 

@@ -112,32 +112,37 @@
 \caption{خلاصه پنج فاز نقشه راه}
 \label{tab:phases-summary}
 \small
-\begin{tabular}{C{1.2cm} C{2cm} R{4.5cm} R{5cm}}
+\begin{tabularx}{\textwidth}{C{1.2cm} C{2cm} Y Y}
 \toprule
 \headmark فاز & \headmark مدت & \headmark اهداف کلیدی & \headmark دستاوردهای مورد انتظار \\
 \midrule
-\rowcolor{phase1!20}
-\textcolor{phase1}{\textbf{۱}} & ۲ سال & 
+\rowcolor{goldlight}
+\textbf{۱} & ۲ سال & 
 گذار مسالمت‌آمیز؛ ثبات اولیه؛ قانون اساسی & 
 دولت منتخب؛ آتش‌بس سیاسی؛ بهبود معیشت \\
 
-\rowcolor{phase2!20}
-\textcolor{phase2}{\textbf{۲}} & ۳ سال & 
+\rowcolor{bleulight}
+\textbf{۲} & ۳ سال & 
 نهادسازی دموکراتیک؛ اصلاحات ساختاری & 
 نظام فدرال؛ قوه قضائیه مستقل؛ رشد ۵\% \\
 
-\rowcolor{phase3!20}
-\textcolor{phase3}{\textbf{۳}} & ۵ سال & 
+\rowcolor{goldlight}
+\textbf{۳} & ۵ سال & 
 تحکیم دموکراسی؛ توسعه فراگیر & 
 دموکراسی رویه‌ای؛ کاهش فقر ۵۰\%؛ آشتی ملی \\
 
-\rowcolor{phase4!20}
-\textcolor{phase4}{\textbf{۴}} & ۱۰ سال & 
+\rowcolor{bleulight}
+\textbf{۴} & ۱۰ سال & 
 توسعه پایدار؛ رقابت‌پذیری & 
 درآمد متوسط بالا؛ HDI بالا؛ رهبری منطقه‌ای \\
 
-\rowcolor{phase5!20}
-\textcolor{phase5}{\textbf{۵}} & ۵ سال & 
+\rowcolor{goldlight}
+\textbf{۵} & ۵ سال & 
+دوران برتری؛ ثبات پایدار & 
+قدرت اول اقتصادی-فنی منطقه؛ تظاهر برتری \\
+\bottomrule
+\end{tabularx}
+\end{table}
 تعالی و برتری جهانی & 
 الگوی جهانی؛ اقتصاد دانش‌بنیان؛ برند ملی \\
 \bottomrule
@@ -156,27 +161,27 @@
 \centering
 \caption{ده اقدام فوری ۱۰۰ روز اول}
 \label{tab:100days}
-\begin{tabular}{C{0.8cm} R{4cm} R{4cm} R{4cm}}
+\begin{tabularx}{\textwidth}{C{0.8cm} Y Y Y}
 \toprule
 \headmark \# & \headmark اقدام & \headmark هدف & \headmark شاخص موفقیت \\
 \midrule
-\rowcolor{bleulight}
+\rowcolor{goldlight}
 ۱ & تشکیل دولت موقت فراگیر & مشروعیت‌سازی & نمایندگی همه اقوام اصلی \\
 ۲ & اعلام آتش‌بس سیاسی & کاهش تنش & توقف سرکوب و خشونت \\
-\rowcolor{bleulight}
+\rowcolor{goldlight}
 ۳ & آزادی زندانیان سیاسی & اعتمادسازی & آزادی کامل در ۳۰ روز \\
 ۴ & بسته حمایت معیشتی فوری & کاهش فشار اقتصادی & پوشش ۵ میلیون خانوار \\
-\rowcolor{bleulight}
+\rowcolor{goldlight}
 ۵ & برنامه آب اضطراری & رفع بحران فوری & آب‌رسانی به مناطق بحرانی \\
 ۶ & کنترل قاچاق سوخت & بهبود عرضه & کاهش ۵۰\% قاچاق \\
-\rowcolor{bleulight}
+\rowcolor{goldlight}
 ۷ & محاکمه نمادین فاسدان بزرگ & عدالت و اعتماد & ۱۰ پرونده کلیدی \\
 ۸ & آزادی رسانه‌ها & فضای باز سیاسی & رفع سانسور \\
-\rowcolor{bleulight}
+\rowcolor{goldlight}
 ۹ & اعلام انتخابات مجلس مؤسسان & مسیر قانونی & تاریخ مشخص در ۹۰ روز \\
 ۱۰ & آغاز مذاکره برای تعلیق تحریم‌ها & گشایش اقتصادی & تماس‌های اولیه \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -191,6 +196,7 @@
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
+    scale=0.8, every node/.style={scale=0.8},
     node distance=2cm,
     cyclebox/.style={
         rectangle, 
@@ -201,30 +207,30 @@
         font=\small,
         line width=1pt
     },
-    badarrow/.style={->, >=Stealth, thick, color=rougerevolution},
+    badarrow/.style={->, >=Stealth, thick, color=red!70},
     goodarrow/.style={->, >=Stealth, thick, color=vertnapoleon}
 ]
 
 % چرخه باطل (چپ)
-\node[cyclebox, draw=rougerevolution, fill=rougelight] (b1) at (0,0) {
+\node[cyclebox, draw=red!70, fill=red!10] (b1) at (0,0) {
     \begin{tabular}{c}
     فساد و\\
     بی‌اعتمادی
     \end{tabular}
 };
-\node[cyclebox, draw=rougerevolution, fill=rougelight] (b2) at (3,2) {
+\node[cyclebox, draw=red!70, fill=red!10] (b2) at (2.5,2) {
     \begin{tabular}{c}
     سرکوب و\\
     انسداد
     \end{tabular}
 };
-\node[cyclebox, draw=rougerevolution, fill=rougelight] (b3) at (6,0) {
+\node[cyclebox, draw=red!70, fill=red!10] (b3) at (5,0) {
     \begin{tabular}{c}
     رکود و\\
     فقر
     \end{tabular}
 };
-\node[cyclebox, draw=rougerevolution, fill=rougelight] (b4) at (3,-2) {
+\node[cyclebox, draw=red!70, fill=red!10] (b4) at (2.5,-2) {
     \begin{tabular}{c}
     نارضایتی و\\
     بی‌ثباتی
@@ -236,18 +242,20 @@
 \draw[badarrow] (b3) -- (b4);
 \draw[badarrow] (b4) -- (b1);
 
-\node[font=\large\bfseries, color=rougerevolution] at (3,0) {چرخه باطل};
+\node[font=\large\bfseries, color=red!70] at (2.5,0) {چرخه باطل};
 
 % چرخه فاضل (راست)
-\node[cyclebox, draw=vertnapoleon, fill=vertlight] (g1) at (10,0) {
+\node[cyclebox, draw=vertnapoleon, fill=bleulight] (g1) at (9,0) {
     \begin{tabular}{c}
     شفافیت و\\
     اعتماد
     \end{tabular}
 };
-\node[cyclebox, draw=vertnapoleon, fill=vertlight] (g2) at (13,2) {
+\node[cyclebox, draw=vertnapoleon, fill=bleulight] (g2) at (11.5,2) {
     \begin{tabular}{c}
     مشارکت و\\
+    \end{tabular}
+};
     آزادی
     \end{tabular}
 };
@@ -293,31 +301,8 @@
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[
+    scale=0.85, every node/.style={scale=0.85},
     node distance=1.5cm,
-    timebox/.style={
-        rectangle,
-        rounded corners=3pt,
-        minimum width=3.5cm,
-        minimum height=1.8cm,
-        text centered,
-        font=\small,
-        draw=bleurepublique,
-        fill=bleulight,
-        line width=1pt
-    },
-    arrow/.style={->, >=Stealth, thick, color=bleurepublique}
-]
-
-\node[timebox] (t1) at (0,0) {
-    \begin{tabular}{c}
-    \textbf{ماه ۱-۶}\\[3pt]
-    آب، برق، نان، امنیت\\[2pt]
-    {\scriptsize\color{vertnapoleon} احساس تغییر}
-    \end{tabular}
-};
-
-\node[timebox] (t2) at (4.5,0) {
-    \begin{tabular}{c}
     \textbf{ماه ۶-۱۲}\\[3pt]
     شغل، درمان، مسکن\\[2pt]
     {\scriptsize\color{vertnapoleon} امید به آینده}
@@ -407,23 +392,21 @@
 \caption{اهداف کمّی در هر فاز}
 \label{tab:kpi-exec}
 \small
-\begin{tabular}{L{3.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} Z Z Z Z Z Z}
 \toprule
 \headmark شاخص & \headmark پایه & \headmark فاز۱ & \headmark فاز۲ & \headmark فاز۳ & \headmark فاز۴ & \headmark فاز۵ \\
 \midrule
-\rowcolor{bleulight}
-Freedom House (از ۷) & ۲ & ۳ & ۴.۵ & ۵.۵ & ۶ & ۶.۵ \\
-GDP سرانه (هزار \$) & ۳ & ۳.۵ & ۵ & ۸ & ۱۲ & ۱۵+ \\
-\rowcolor{bleulight}
-HDI & ۰.۷۰ & ۰.۷۲ & ۰.۷۵ & ۰.۷۸ & ۰.۸۲ & ۰.۸۵ \\
-نرخ بیکاری (\%) & ۱۵ & ۱۳ & ۱۰ & ۷ & ۵ & ۴ \\
-\rowcolor{bleulight}
+رشد اقتصادی (\%) & ۲- & ۵ & ۷ & ۸ & ۶ & ۵ \\
+\rowcolor{goldlight}
+تورم (\%) & ۴۵ & ۱۵ & ۸ & ۴ & ۳ & ۲ \\
+بیکاری (\%) & ۱۲ & ۱۰ & ۸ & ۵ & ۴ & ۳ \\
+\rowcolor{goldlight}
 ضریب جینی & ۰.۴۵ & ۰.۴۳ & ۰.۳۸ & ۰.۳۴ & ۰.۳۲ & ۰.۳۰ \\
 شاخص فساد (CPI) & ۲۵ & ۳۰ & ۴۰ & ۵۰ & ۵۵ & ۶۰ \\
-\rowcolor{bleulight}
+\rowcolor{goldlight}
 انرژی تجدیدپذیر (\%) & ۵ & ۸ & ۱۵ & ۲۵ & ۳۵ & ۴۰ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -435,29 +418,28 @@ HDI & ۰.۷۰ & ۰.۷۲ & ۰.۷۵ & ۰.۷۸ & ۰.۸۲ & ۰.۸۵ \\
 \begin{tikzpicture}
 \begin{axis}[
     ybar,
-    width=14cm,
+    width=0.95\textwidth,
     height=7cm,
-    ylabel={میلیارد دلار},
-    xlabel={فاز},
-    symbolic x coords={فاز ۱, فاز ۲, فاز ۳, فاز ۴, فاز ۵},
+    ylabel={\rl{میلیارد دلار}},
+    xlabel={\rl{فاز}},
+    symbolic x coords={\rl{فاز ۱}, \rl{فاز ۲}, \rl{فاز ۳}, \rl{فاز ۴}, \rl{فاز ۵}},
     xtick=data,
     ymin=0,
     ymax=220,
-    bar width=25pt,
+    bar width=20pt,
     nodes near coords,
     every node near coord/.append style={font=\small\bfseries},
     legend style={at={(0.98,0.98)}, anchor=north east},
     grid=major,
-    grid style={line width=0.2pt, draw=gray!30}
+    grid style={line width=0.2pt, draw=gray!30},
+    axis line style={bleurepublique!50, thick}
 ]
-\addplot[fill=phase1, draw=phase1!70!black] coordinates {(فاز ۱,15) (فاز ۲,0) (فاز ۳,0) (فاز ۴,0) (فاز ۵,0)};
-\addplot[fill=phase2, draw=phase2!70!black] coordinates {(فاز ۱,0) (فاز ۲,30) (فاز ۳,0) (فاز ۴,0) (فاز ۵,0)};
-\addplot[fill=phase3, draw=phase3!70!black] coordinates {(فاز ۱,0) (فاز ۲,0) (فاز ۳,70) (فاز ۴,0) (فاز ۵,0)};
-\addplot[fill=phase4, draw=phase4!70!black] coordinates {(فاز ۱,0) (فاز ۲,0) (فاز ۳,0) (فاز ۴,200) (فاز ۵,0)};
-\addplot[fill=phase5, draw=phase5!70!black] coordinates {(فاز ۱,0) (فاز ۲,0) (فاز ۳,0) (فاز ۴,0) (فاز ۵,150)};
+\addplot[fill=goldphoenix, draw=goldphoenix!70!black] coordinates {(\rl{فاز ۱},15) (\rl{فاز ۲},0) (\rl{فاز ۳},0) (\rl{فاز ۴},0) (\rl{فاز ۵},0)};
+\addplot[fill=bleurepublique, draw=bleurepublique!70!white] coordinates {(\rl{فاز ۱},35) (\rl{فاز ۲},0) (\rl{فاز ۳},0) (\rl{فاز ۴},0) (\rl{فاز ۵},0)};
+\legend{\rl{بودجه جاری}, \rl{بودجه توسعه}}
 \end{axis}
 \end{tikzpicture}
-\caption{توزیع بودجه تخمینی در پنج فاز (میلیارد دلار)}
+\caption{برآورد بودجه بازسازی در فازهای مختلف}
 \label{fig:budget-exec}
 \end{figure}
 

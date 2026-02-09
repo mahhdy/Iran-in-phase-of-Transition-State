@@ -24,22 +24,21 @@
 
 \begin{table}[htbp]
 \centering
-\caption{سناریوهای محتمل پایان نظام کنونی و پیامدهای هر یک}
+\caption{سناریوهای محتمل پایان رژیم}
 \label{tab:collapse-scenarios}
-\begin{tabular}{>{\columncolor{red!8}}r p{2.5cm} c p{4cm} p{3.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{2cm} Y Y}
 \toprule
-\rowcolor{red!25}
-\textbf{ردیف} & \textbf{سناریو} & \textbf{احتمال} & \textbf{ویژگی‌ها} & \textbf{چالش اصلی} \\
+\headmark سناریو & \headmark احتمال & \headmark ویژگی‌ها & \headmark چالش اصلی \\
 \midrule
-۱ & انقلاب مردمی & ۳۵٪ & سقوط سریع، خلأ قدرت & کنترل خشونت و انتقام \\
-\rowcolor{gray!10}
-۲ & کودتای اصلاح‌طلب & ۲۵٪ & حفظ نسبی نظم & مشروعیت‌سازی \\
-۳ & فروپاشی تدریجی & ۲۰٪ & بی‌ثباتی طولانی & مدیریت آشوب \\
-\rowcolor{gray!10}
-۴ & مذاکره و گذار مسالمت & ۱۵٪ & کم‌هزینه‌ترین & سازش‌های دشوار \\
-۵ & جنگ داخلی & ۵٪ & فاجعه‌بار & همه چیز \\
+انقلاب مردمی & ۳۵٪ & سقوط سریع & کنترل انتقام‌جویی \\
+\rowcolor{goldlight}
+کودتای درونی & ۲۵٪ & حفظ نظم & مشروعیت مدنی \\
+فروپاشی تدریجی & ۲۰٪ & بی‌ثباتی & مدیریت شورش‌ها \\
+\rowcolor{goldlight}
+گذارتوافقی & ۱۵٪ & کم‌هزینه & سازش دشوار \\
+جنگ داخلی & ۵٪ & فاجعه‌بار & بقای ملی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{پروتکل ساعات اولیه}
@@ -48,121 +47,61 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.8,
+    scale=0.85,
     transform shape,
     hour/.style={
         rectangle,
-        rounded corners=3pt,
-        minimum width=2.2cm,
-        minimum height=1.2cm,
-        draw=#1!70!black,
-        fill=#1!20,
-        text=#1!30!black,
-        font=\scriptsize\bfseries,
-        align=center
+        rounded corners=5pt,
+        minimum width=2.4cm,
+        minimum height=1.5cm,
+        text centered,
+        font=\tiny\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
     },
     action/.style={
         rectangle,
-        rounded corners=2pt,
-        draw=gray!50,
-        fill=gray!5,
+        rounded corners=3pt,
+        draw=goldphoenix,
+        fill=goldlight,
         font=\tiny,
         align=right,
-        text width=2.8cm
+        text width=2.2cm
     }
 ]
 
 % خط زمان
-\draw[thick, gray!60, ->] (0,0) -- (18,0);
-\node[below, font=\small\bfseries] at (9,-0.5) {ساعات و روزهای اولیه};
+\draw[ultra thick, color=goldphoenix, ->] (0,0) -- (16,0);
+\node[below, font=\small\bfseries] at (8,-0.5) {\rl{ساعات و روزهای اولیه}};
 
 % نقاط زمانی
-\foreach \x/\label in {0/ساعت ۰, 3/ساعت ۶, 6/ساعت ۲۴, 9/ساعت ۴۸, 12/ساعت ۷۲, 15/روز ۷, 17/روز ۱۴} {
-    \draw[thick, gray!60] (\x,0.1) -- (\x,-0.1);
-    \node[below, font=\tiny] at (\x,-0.2) {\label};
+\foreach \x/\label in {0/0, 2.5/6, 5/24, 7.5/48, 10/72, 13/7d, 15.5/14d} {
+    \draw[thick, goldphoenix] (\x,0.1) -- (\x,-0.1);
+    \node[below, font=\tiny] at (\x,-0.1) {\rl{\label}};
 }
 
 % اقدامات
-\node[hour=red] at (1.5,2) {
-    \begin{tabular}{c}
-    اعلام\\
-    شورای انتقالی
-    \end{tabular}
-};
-\node[action] at (1.5,4) {
-    پیام تلویزیونی\\
-    درخواست آرامش\\
-    معرفی چهره‌ها
-};
+\node[hour] at (1.25,2) {\rl{اعلام}\\ \rl{شورای انتقالی}};
+\node[action] at (1.25,4) {\rl{پیام تلویزیونی}\\ \rl{درخواست آرامش}};
 
-\node[hour=orange] at (4.5,2) {
-    \begin{tabular}{c}
-    کنترل\\
-    امنیتی
-    \end{tabular}
-};
-\node[action] at (4.5,4) {
-    هماهنگی با ارتش\\
-    حفاظت از زیرساخت\\
-    جلوگیری از غارت
-};
+\node[hour] at (3.75,2) {\rl{کنترل}\\ \rl{امنیتی}};
+\node[action] at (3.75,4) {\rl{هماهنگی ارتش}\\ \rl{حفاظت زیرساخت}};
 
-\node[hour=yellow] at (7.5,2) {
-    \begin{tabular}{c}
-    پیام‌های\\
-    بین‌المللی
-    \end{tabular}
-};
-\node[action] at (7.5,4) {
-    تماس با UN\\
-    پیام به همسایگان\\
-    درخواست شناسایی
-};
+\node[hour] at (6.25,2) {\rl{ارتباط}\\ \rl{جهانی}};
+\node[action] at (6.25,4) {\rl{تماس با UN}\\ \rl{پیام همسایگان}};
 
-\node[hour=green] at (10.5,2) {
-    \begin{tabular}{c}
-    دولت موقت\\
-    فوری
-    \end{tabular}
-};
-\node[action] at (10.5,4) {
-    انتصاب وزرای کلیدی\\
-    تداوم خدمات\\
-    پرداخت حقوق
-};
+\node[hour] at (8.75,2) {\rl{دولت}\\ \rl{موقت فوری}};
+\node[action] at (8.75,4) {\rl{انتصاب وزرا}\\ \rl{تداوم خدمات}};
 
-\node[hour=blue] at (13.5,2) {
-    \begin{tabular}{c}
-    نقشه راه\\
-    گذار
-    \end{tabular}
-};
-\node[action] at (13.5,4) {
-    اعلام جدول زمانی\\
-    تعهد به انتخابات\\
-    منشور حقوق فوری
-};
+\node[hour] at (11.25,2) {\rl{نقشه راه}\\ \rl{گذار}};
+\node[action] at (11.25,4) {\rl{جدول زمانی}\\ \rl{تعهد انتخابات}};
 
-\node[hour=purple] at (16.5,2) {
-    \begin{tabular}{c}
-    گشایش\\
-    سیاسی
-    \end{tabular}
-};
-\node[action] at (16.5,4) {
-    آزادی زندانیان\\
-    لغو سانسور\\
-    بازگشت تبعیدیان
-};
-
-% فلش‌ها
-\foreach \x in {1.5,4.5,7.5,10.5,13.5,16.5} {
-    \draw[->, gray!40] (\x,0.2) -- (\x,1.3);
-}
+\node[hour] at (14.25,2) {\rl{گشایش}\\ \rl{سیاسی}};
+\node[action] at (14.25,4) {\rl{آزادی زندانیان}\\ \rl{لغو سانسور}};
 
 \end{tikzpicture}
 \caption{پروتکل ۷۲ ساعت اول پس از تغییر نظام}
-\label{fig:72-hours}
 \end{figure}
 
 \begin{naghlbox}
@@ -183,29 +122,22 @@
 \centering
 \caption{ترکیب پیشنهادی شورای انتقالی (۲۱ نفر)}
 \label{tab:council-composition}
-\begin{tabular}{>{\columncolor{blue!8}}r p{3.5cm} c p{5cm}}
+\begin{tabularx}{\textwidth}{R{1cm} R{4.5cm} C{1cm} Y}
 \toprule
-\rowcolor{blue!25}
-\textbf{ردیف} & \textbf{گروه} & \textbf{تعداد} & \textbf{معیار انتخاب} \\
+\headmark \# & \headmark گروه & \headmark تعداد & \headmark معیار انتخاب \\
 \midrule
-۱ & رهبران اعتراضات داخل & ۴ & شناخته‌شده در جنبش‌های اخیر \\
-\rowcolor{gray!10}
-۲ & اپوزیسیون خارج از کشور & ۳ & نمایندگان جریان‌های اصلی \\
-۳ & نمایندگان اقوام & ۴ & آذری، کرد، عرب، بلوچ \\
-\rowcolor{gray!10}
-۴ & نمایندگان زنان & ۲ & فعالان حقوق زنان \\
-۵ & نمایندگان جوانان & ۲ & زیر ۳۵ سال \\
-\rowcolor{gray!10}
-۶ & شخصیت‌های ملی مستقل & ۳ & مورد اعتماد عمومی \\
-۷ & نماینده نهاد نظامی & ۱ & ژنرال اصلاح‌طلب \\
-\rowcolor{gray!10}
-۸ & نماینده روحانیت سکولار & ۱ & مخالف حکومت دینی \\
-۹ & نماینده اقلیت‌های دینی & ۱ & چرخشی بین ادیان \\
-\midrule
-\rowcolor{blue!15}
-& \textbf{جمع} & \textbf{۲۱} & \\
+۱ & رهبران اعتراضات داخل & ۴ & مشروعیت میدانی \\
+\rowcolor{goldlight}
+۲ & اپوزیسیون خارج & ۳ & احزاب اصلی \\
+۳ & نمایندگان اقوام & ۴ & تنوع زبانی و مذهبی \\
+\rowcolor{goldlight}
+۴ & زنان و جوانان & ۴ & فعالان مدنی \\
+۵ & متخصصان مستقل & ۴ & اعتبار ملی \\
+\rowcolor{goldlight}
+۶ & نظامی اصلاح‌طلب & ۱ & تضمین ثبات \\
+۷ & روحانیت سکولار & ۱ & پل مذهبی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{ساختار تصمیم‌گیری}
@@ -218,91 +150,59 @@
     transform shape,
     organ/.style={
         rectangle,
-        rounded corners=5pt,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
-        minimum width=3.5cm,
-        minimum height=1.2cm,
+        rounded corners=6pt,
+        minimum width=4cm,
+        minimum height=1.3cm,
+        text centered,
         font=\small\bfseries,
-        align=center
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt
     },
     committee/.style={
         rectangle,
-        rounded corners=3pt,
-        draw=gray!60,
-        fill=gray!10,
-        minimum width=2.5cm,
+        rounded corners=4pt,
+        draw=goldphoenix,
+        fill=goldlight,
+        minimum width=2.2cm,
         minimum height=0.9cm,
-        font=\scriptsize,
+        font=\tiny\bfseries,
         align=center
     }
 ]
 
 % شورای انتقالی
-\node[organ=purple] (council) at (0,5) {
-    \begin{tabular}{c}
-    شورای انتقالی\\
-    (۲۱ نفر)
-    \end{tabular}
-};
-
-% هیئت رئیسه
-\node[organ=blue] (presidium) at (0,3) {
-    \begin{tabular}{c}
-    هیئت رئیسه\\
-    (۵ نفر چرخشی)
-    \end{tabular}
-};
+\node[organ, draw=goldphoenix, fill=goldphoenix, text=white] (council) at (0,5) {\rl{شورای انتقالی}\rl{(۲۱ نفر)}};
+\node[organ] (presidium) at (0,3) {\rl{هیئت رئیسه}\rl{(۵ نفر چرخشی)}};
 
 % سه شاخه
-\node[organ=green] (exec) at (-5,0.5) {
-    \begin{tabular}{c}
-    دولت موقت\\
-    (نخست‌وزیر + کابینه)
-    \end{tabular}
-};
+\node[organ] (exec) at (-5,0.5) {\rl{دولت موقت}\\\rl{(اجرایی)}};
+\node[organ] (legis) at (0,0.5) {\rl{کمیسیون تقنین}\\\rl{(فرمان‌های فوری)}};
+\node[organ] (judicial) at (5,0.5) {\rl{کمیسیون حقوقی}\\\rl{(نظارت)}};
 
-\node[organ=orange] (legis) at (0,0.5) {
-    \begin{tabular}{c}
-    کمیسیون قانون‌گذاری\\
-    (تصویب فرمان‌های فوری)
-    \end{tabular}
-};
-
-\node[organ=red] (judicial) at (5,0.5) {
-    \begin{tabular}{c}
-    کمیسیون حقوقی\\
-    (نظارت بر قانونیت)
-    \end{tabular}
-};
-
-% کمیته‌های تخصصی
-\node[committee] (c1) at (-6,-2) {کمیته امنیت};
-\node[committee] (c2) at (-4,-2) {کمیته اقتصاد};
-\node[committee] (c3) at (-2,-2) {کمیته انتخابات};
-\node[committee] (c4) at (0,-2) {کمیته حقوق بشر};
-\node[committee] (c5) at (2,-2) {کمیته اقوام};
-\node[committee] (c6) at (4,-2) {کمیته سیاست خارجی};
-\node[committee] (c7) at (6,-2) {کمیته آشتی ملی};
+% کمیته‌ها
+\node[committee] (c1) at (-6,-2) {\rl{کمیته امنیت}};
+\node[committee] (c2) at (-3.5,-2) {\rl{کمیته اقتصاد}};
+\node[committee] (c3) at (-1,-2) {\rl{کمیته انتخابات}};
+\node[committee] (c4) at (1.5,-2) {\rl{کمیته آشتی}};
+\node[committee] (c5) at (4,-2) {\rl{کمیته اقوام}};
+\node[committee] (c6) at (6.5,-2) {\rl{کمیته بین‌الملل}};
 
 % اتصالات
-\draw[->, thick, purple!60] (council) -- (presidium);
-\draw[->, thick, blue!60] (presidium) -- (exec);
-\draw[->, thick, blue!60] (presidium) -- (legis);
-\draw[->, thick, blue!60] (presidium) -- (judicial);
+\draw[->, ultra thick, color=goldphoenix] (council) -- (presidium);
+\draw[->, thick, color=bleurepublique] (presidium) -- (exec);
+\draw[->, thick, color=bleurepublique] (presidium) -- (legis);
+\draw[->, thick, color=bleurepublique] (presidium) -- (judicial);
 
-\draw[->, gray!40] (exec) -- (c1);
-\draw[->, gray!40] (exec) -- (c2);
-\draw[->, gray!40] (legis) -- (c3);
-\draw[->, gray!40] (legis) -- (c4);
-\draw[->, gray!40] (judicial) -- (c5);
-\draw[->, gray!40] (judicial) -- (c6);
-\draw[->, gray!40] (presidium) -- (c7);
+\draw[->, color=gray!40] (exec) -- (c1);
+\draw[->, color=gray!40] (exec) -- (c2);
+\draw[->, color=gray!40] (legis) -- (c3);
+\draw[->, color=gray!40] (presidium) -- (c4);
+\draw[->, color=gray!40] (judicial) -- (c5);
+\draw[->, color=gray!40] (judicial) -- (c6);
 
 \end{tikzpicture}
 \caption{ساختار شورای انتقالی و نهادهای زیرمجموعه}
-\label{fig:council-structure}
 \end{figure}
 
 \begin{olgoobox}
@@ -332,40 +232,21 @@
 \centering
 \caption{کابینه موقت پیشنهادی (۱۸ وزارتخانه)}
 \label{tab:provisional-cabinet}
-\begin{tabular}{>{\columncolor{green!8}}r p{3cm} p{4cm} p{4cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{2cm}}
 \toprule
-\rowcolor{green!25}
-\textbf{ردیف} & \textbf{وزارتخانه} & \textbf{اولویت فوری} & \textbf{پروفایل وزیر} \\
+\headmark وزارتخانه & \headmark اولویت فوری & \headmark فاز \\
 \midrule
-۱ & کشور & امنیت و انتخابات & ژنرال بازنشسته دموکرات \\
-\rowcolor{gray!10}
-۲ & اقتصاد و دارایی & تثبیت ارز و تورم & اقتصاددان بین‌المللی \\
-۳ & امور خارجه & رفع تحریم & دیپلمات باتجربه \\
-\rowcolor{gray!10}
-۴ & دادگستری & اصلاح قضا، آزادی زندانیان & حقوقدان حقوق بشری \\
-۵ & نفت و انرژی & مذاکره صادرات & مدیر صنعت نفت \\
-\rowcolor{gray!10}
-۶ & کار و رفاه & یارانه و اشتغال & فعال کارگری \\
-۷ & بهداشت & واکسیناسیون، دارو & پزشک مدیر \\
-\rowcolor{gray!10}
-۸ & آموزش و پرورش & اصلاح محتوا & استاد دانشگاه \\
-۹ & علوم و فناوری & آزادی اینترنت & متخصص IT \\
-\rowcolor{gray!10}
-۱۰ & جهاد کشاورزی & بحران آب و غذا & مهندس کشاورزی \\
-۱۱ & راه و شهرسازی & مسکن اضطراری & مهندس عمران \\
-\rowcolor{gray!10}
-۱۲ & ارتباطات & رسانه آزاد & روزنامه‌نگار \\
-۱۳ & تعاون و اقوام & حقوق قومی & نماینده اقلیت \\
-\rowcolor{gray!10}
-۱۴ & زنان و خانواده & لغو قوانین تبعیضی & فعال حقوق زنان \\
-۱۵ & میراث فرهنگی & حفاظت از آثار & باستان‌شناس \\
-\rowcolor{gray!10}
-۱۶ & ورزش و جوانان & فضا برای جوانان & قهرمان ورزشی \\
-۱۷ & محیط زیست & بحران آب & زیست‌محیطی \\
-\rowcolor{gray!10}
-۱۸ & دفاع & کنترل مدنی بر ارتش & ژنرال اصلاح‌طلب \\
+کشور & امنیت و انتخابات آزاد & ۱ \\
+\rowcolor{goldlight}
+اقتصاد & مهار تورم و ثبات ارزی & ۱ \\
+امور خارجه & رفع تحریم و مشروعیت & ۱ \\
+\rowcolor{goldlight}
+دادگستری & آزادی زندانیان و اصلاح نظام & ۱ \\
+نفت و نیرو & تداوم تولید و مدیریت بحران آب & ۱-۲ \\
+\rowcolor{goldlight}
+بهداشت و آموزش & دسترسی عادلانه به خدمات & ۲ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %───────────────────────────────────────────────────────────────────────────────
@@ -377,73 +258,41 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.65,
+    scale=0.75,
     transform shape,
     event/.style={
         rectangle,
-        rounded corners=3pt,
-        minimum width=1.8cm,
-        minimum height=0.8cm,
-        draw=#1!70!black,
-        fill=#1!20,
-        text=#1!30!black,
+        rounded corners=4pt,
+        minimum width=2.2cm,
+        minimum height=1cm,
+        text centered,
         font=\tiny\bfseries,
-        align=center
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1pt
     }
 ]
 
-% سال اول
-\draw[thick, gray!60] (0,0) -- (24,0);
-\draw[thick, gray!60] (0,-4) -- (24,-4);
+% محور زمان
+\draw[ultra thick, goldphoenix, ->] (0,0) -- (24,0);
+\node[below, font=\small\bfseries] at (12,-0.5) {\rl{نقشه راه ۲۴ ماهه}};
 
-\node[left, font=\small\bfseries] at (-0.5,0) {سال اول};
-\node[left, font=\small\bfseries] at (-0.5,-4) {سال دوم};
+% رویدادها
+\node[event] at (1,2) {\rl{شورای انتقالی}};
+\node[event] at (3,3.5) {\rl{دولت موقت}};
+\node[event] at (6,2) {\rl{قانون انتخابات}};
+\node[event] at (9,3.5) {\rl{ثبت احزاب}};
+\node[event] at (12,2) {\rl{رفع تحریم‌ها}};
+\node[event] at (18,3.5) {\rl{مجلس مؤسسان}};
+\node[event] at (23,2) {\rl{قانون اساسی}};
 
-% ماه‌ها - سال اول
-\foreach \x in {0,2,4,6,8,10,12,14,16,18,20,22,24} {
-    \draw[gray!40] (\x,0.1) -- (\x,-0.1);
+% اتصالات
+\foreach \x/\y in {1/1.5, 3/3, 6/1.5, 9/3, 12/1.5, 18/3, 23/1.5} {
+    \draw[thick, goldphoenix] (\x,0) -- (\x,\y);
 }
-\foreach \x/\m in {1/۱,3/۲,5/۳,7/۴,9/۵,11/۶,13/۷,15/۸,17/۹,19/۱۰,21/۱۱,23/۱۲} {
-    \node[above, font=\tiny] at (\x,0.2) {ماه \m};
-}
-
-% ماه‌ها - سال دوم
-\foreach \x in {0,2,4,6,8,10,12,14,16,18,20,22,24} {
-    \draw[gray!40] (\x,-3.9) -- (\x,-4.1);
-}
-\foreach \x/\m in {1/۱۳,3/۱۴,5/۱۵,7/۱۶,9/۱۷,11/۱۸,13/۱۹,15/۲۰,17/۲۱,19/۲۲,21/۲۳,23/۲۴} {
-    \node[above, font=\tiny] at (\x,-3.8) {ماه \m};
-}
-
-% رویدادهای سال اول
-\node[event=red] at (1,1.5) {شورای انتقالی};
-\node[event=red] at (3,1.5) {دولت موقت};
-\node[event=orange] at (6,1.5) {قانون انتخابات};
-\node[event=orange] at (9,1.5) {ثبت احزاب};
-\node[event=yellow] at (13,1.5) {مذاکرات وین ۲};
-\node[event=green] at (17,1.5) {انتخابات مؤسسان};
-\node[event=blue] at (21,1.5) {آغاز کار مجلس};
-
-% رویدادهای سال دوم
-\node[event=purple] at (3,-2.5) {پیش‌نویس قانون اساسی};
-\node[event=purple] at (9,-2.5) {بحث عمومی};
-\node[event=teal] at (15,-2.5) {همه‌پرسی قانون اساسی};
-\node[event=blue] at (21,-2.5) {انتخابات عمومی};
-
-% فلش‌ها
-\foreach \x/\y in {1/1.5, 3/1.5, 6/1.5, 9/1.5, 13/1.5, 17/1.5, 21/1.5} {
-    \draw[->, gray!40] (\x,0.3) -- (\x,\y-0.4);
-}
-\foreach \x/\y in {3/-2.5, 9/-2.5, 15/-2.5, 21/-2.5} {
-    \draw[->, gray!40] (\x,-3.7) -- (\x,\y+0.4);
-}
-
-% خط اتصال دو سال
-\draw[->, thick, purple!60] (24,0) -- (24,-2) -- (0,-2) -- (0,-4);
 
 \end{tikzpicture}
 \caption{تقویم کلان گذار: رویدادهای کلیدی ۲۴ ماه اول}
-\label{fig:24-month-calendar}
 \end{figure}
 
 \subsection{فاز ۱-الف: تثبیت اولیه (ماه ۱-۶)}
@@ -452,22 +301,21 @@
 \centering
 \caption{اقدامات کلیدی ماه‌های ۱ تا ۶}
 \label{tab:months-1-6}
-\begin{tabular}{>{\columncolor{red!8}}r p{2cm} p{6cm} p{3cm}}
+\begin{tabularx}{\textwidth}{R{1cm} R{2.5cm} Y C{2.5cm}}
 \toprule
-\rowcolor{red!25}
-\textbf{ماه} & \textbf{محور} & \textbf{اقدامات} & \textbf{شاخص موفقیت} \\
+\headmark ماه & \headmark محور & \headmark اقدامات & \headmark شاخص \\
 \midrule
-۱ & امنیت & کنترل نظم، جلوگیری از انتقام، حفظ زیرساخت‌ها & صفر کشته غیرنظامی \\
-\rowcolor{gray!10}
-۲ & آزادی‌ها & آزادی زندانیان، لغو سانسور، اجازه تجمع & همه زندانیان سیاسی آزاد \\
-۳ & اقتصاد اضطراری & پرداخت حقوق، کنترل قیمت‌ها، یارانه نقدی & تورم زیر ۵٪ ماهانه \\
-\rowcolor{gray!10}
-۴ & دیپلماسی & پیام به جهان، آغاز مذاکرات، دعوت از UN & شناسایی ۵۰ کشور \\
-۵ & قانون‌گذاری اولیه & قانون احزاب، قانون مطبوعات، قانون تجمعات & تصویب ۳ قانون کلیدی \\
-\rowcolor{gray!10}
-۶ & آماده‌سازی انتخابات & سرشماری رأی‌دهندگان، آموزش ناظران & ثبت‌نام ۴۰ میلیون نفر \\
+۱ & امنیت & کنترل نظم، حفاظت زیرساخت & صفر کشته مدنی \\
+\rowcolor{goldlight}
+۲ & حقوق بشر & آزادی زندانیان، لغو سانسور & تخلیه زندان‌ها \\
+۳ & معیشت & پرداخت حقوق، کنترل بازار & ثبات قیمت‌ها \\
+\rowcolor{goldlight}
+۴ & دیپلماسی & رفع تحریم، شناسایی جهانی & شناسایی ۵۰ کشور \\
+۵ & تقنین & قانون احزاب و مطبوعات & تصویب ۳ میثاق \\
+\rowcolor{goldlight}
+۶ & آمار & سرشماری رأی‌دهندگان & ثبت‌نام ملی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{فاز ۱-ب: نهادسازی اولیه (ماه ۷-۱۲)}
@@ -535,22 +383,19 @@
 \centering
 \caption{استراتژی تفکیکی مواجهه با نهادهای امنیتی}
 \label{tab:security-strategy}
-\begin{tabular}{>{\columncolor{gray!8}}r p{2.5cm} p{3.5cm} p{3.5cm} p{2.5cm}}
+\begin{tabularx}{\textwidth}{R{2.5cm} Y Y C{2.5cm}}
 \toprule
-\rowcolor{gray!30}
-\textbf{نهاد} & \textbf{وضعیت کنونی} & \textbf{استراتژی پیشنهادی} & \textbf{سرنوشت پرسنل} & \textbf{زمان‌بندی} \\
+\headmark نهاد & \headmark استراتژی & \headmark سرنوشت پرسنل & \headmark زمان‌بندی \\
 \midrule
-ارتش & ۳۵۰,۰۰۰ نفر & حفظ با اصلاحات & بازنشستگی فرماندهان & ۱-۵ سال \\
-\rowcolor{gray!10}
-سپاه پاسداران & ۱۲۵,۰۰۰ نفر & انحلال تدریجی & ادغام در ارتش/بازنشستگی & ۲-۵ سال \\
-بسیج & ۱ میلیون؟ & انحلال کامل & غیرنظامی‌سازی & فوری \\
-\rowcolor{gray!10}
-نیروی انتظامی & ۱۲۰,۰۰۰ نفر & اصلاح ساختاری & تطهیر ناقضان حقوق بشر & ۱-۳ سال \\
-اطلاعات سپاه & ۱۵,۰۰۰؟ نفر & انحلال & بازداشت متهمان اصلی & فوری \\
-\rowcolor{gray!10}
-گشت ارشاد & ۷,۰۰۰ نفر & انحلال کامل & بازآموزی یا اخراج & فوری \\
+ارتش & حفظ با اصلاحات & بازنشستگی فرماندهان & ۱-۵ سال \\
+\rowcolor{goldlight}
+سپاه & ادغام تدریجی & بازنشستگی یا انتقال & ۲-۵ سال \\
+بسیج & انلال کامل & غیرنظامی‌سازی & فوری \\
+\rowcolor{goldlight}
+فراجا & اصلاح ساختاری & تطهیر ناقضان حقوق & ۱-۳ سال \\
+گشت ارشاد & انحلال کامل & اخراج یا بازآموزی & فوری \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{فرآیند تطهیر (Vetting)}
@@ -563,79 +408,34 @@
     transform shape,
     step/.style={
         rectangle,
-        rounded corners=4pt,
-        minimum width=2.5cm,
+        rounded corners=5pt,
+        minimum width=2.8cm,
         minimum height=1.5cm,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
-        font=\scriptsize\bfseries,
-        align=center
+        text centered,
+        font=\tiny\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
     },
-    arrow/.style={
-        ->,
-        >=stealth,
-        thick,
-        draw=gray!60
-    }
+    arrow/.style={->, >=Stealth, thick, color=goldphoenix}
 ]
 
 % مراحل
-\node[step=blue] (register) at (0,0) {
-    \begin{tabular}{c}
-    ثبت‌نام همه\\
-    پرسنل امنیتی
-    \end{tabular}
-};
+\node[step] (register) at (0,0) {\rl{ثبت‌نام پرسنل}};
+\node[step, draw=goldphoenix, fill=goldlight] (review) at (4,0) {\rl{بررسی پرونده}};
 
-\node[step=orange] (review) at (4,0) {
-    \begin{tabular}{c}
-    بررسی پرونده\\
-    توسط کمیسیون
-    \end{tabular}
-};
-
-\node[step=green] (clear) at (8,2) {
-    \begin{tabular}{c}
-    پاک: ادامه\\
-    خدمت یا بازنشستگی
-    \end{tabular}
-};
-
-\node[step=yellow] (retrain) at (8,0) {
-    \begin{tabular}{c}
-    نیازمند بازآموزی:\\
-    دوره حقوق بشر
-    \end{tabular}
-};
-
-\node[step=red] (prosecute) at (8,-2) {
-    \begin{tabular}{c}
-    متهم: ارجاع\\
-    به دادگاه
-    \end{tabular}
-};
+\node[step] (clear) at (8,2) {\rl{پاک: ادامه خدمت}};
+\node[step, draw=goldphoenix, fill=goldphoenix, text=white] (retrain) at (8,0) {\rl{نیاز به بازآموزی}};
+\node[step, draw=rougerevolution, fill=rougelight] (prosecute) at (8,-2) {\rl{متهم: محاکمه}};
 
 % فلش‌ها
 \draw[arrow] (register) -- (review);
-\draw[arrow] (review) -- (clear) node[midway, above, font=\tiny] {۷۰٪};
-\draw[arrow] (review) -- (retrain) node[midway, above, font=\tiny] {۲۵٪};
-\draw[arrow] (review) -- (prosecute) node[midway, below, font=\tiny] {۵٪};
-
-% معیارها
-\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=right, 
-      text width=4cm] at (4,-3) {
-    \textbf{معیارهای تطهیر:}\\
-    • نقش در سرکوب خونین\\
-    • شکنجه مستند\\
-    • فرماندهی عملیات ضد مردمی\\
-    • فساد مالی کلان\\
-    • همکاری با محاکمات فرمایشی
-};
+\draw[arrow] (review) -- (clear);
+\draw[arrow] (review) -- (retrain);
+\draw[arrow] (review) -- (prosecute);
 
 \end{tikzpicture}
 \caption{فرآیند تطهیر نیروهای امنیتی}
-\label{fig:vetting-process}
 \end{figure}
 
 \begin{olgoobox}
@@ -665,25 +465,18 @@
 \centering
 \caption{بسته اقدامات اقتصادی ماه‌های اول}
 \label{tab:economic-emergency}
-\begin{tabular}{>{\columncolor{yellow!8}}r p{3cm} p{4.5cm} p{3.5cm}}
+\begin{tabularx}{\textwidth}{R{1cm} R{3cm} Y Y}
 \toprule
-\rowcolor{yellow!25}
-\textbf{اولویت} & \textbf{اقدام} & \textbf{شرح} & \textbf{منبع تأمین مالی} \\
+\headmark \# & \headmark اقدام & \headmark شرح & \headmark منبع مالی \\
 \midrule
-۱ & پرداخت حقوق کارکنان & ادامه حقوق همه کارمندان دولت & بودجه جاری \\
-\rowcolor{gray!10}
-۲ & یارانه نقدی مضاعف & دوبرابر کردن یارانه نقدی & صندوق توسعه ملی \\
-۳ & کنترل قیمت کالاهای اساسی & سقف قیمت نان، برنج، روغن، دارو & یارانه مستقیم \\
-\rowcolor{gray!10}
-۴ & تثبیت موقت نرخ ارز & مداخله بانک مرکزی & ذخایر ارزی \\
-۵ & تضمین سپرده‌های بانکی & جلوگیری از هجوم بانکی & تضمین دولتی \\
-\rowcolor{gray!10}
-۶ & بسته کمکی بیکاران & ماهی ۵ میلیون تومان & بودجه اضطراری \\
-۷ & تعلیق مالیات کسب‌وکارهای کوچک & ۶ ماه معافیت & کسری بودجه \\
-\rowcolor{gray!10}
-۸ & آزادسازی دارایی‌های مسدود & مذاکره فوری با آمریکا/اروپا & دارایی‌های خارجی \\
+۱ & معیشت فوری & پرداخت منظم حقوق و مزایا & بودجه جاری \\
+\rowcolor{goldlight}
+۲ & مهار بازار & تثبیت نرخ ارز و تورم اساسی & ذخایر ارزی \\
+۳ & حمایت اجتماعی & دوبرابر کردن یارانه‌های نقدی & صندوق ملی \\
+\rowcolor{goldlight}
+۴ & رفع انسداد & آزادسازی دارایی‌های خارجی & دیپلماسی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{نمودار جریان منابع مالی دوره گذار}
@@ -698,76 +491,49 @@
         rounded corners=4pt,
         minimum width=2.8cm,
         minimum height=1cm,
-        draw=green!70!black,
-        fill=green!15,
-        text=green!30!black,
-        font=\scriptsize\bfseries,
-        align=center
+        text centered,
+        font=\tiny\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1pt
     },
     use/.style={
         rectangle,
         rounded corners=4pt,
         minimum width=2.8cm,
         minimum height=1cm,
-        draw=red!70!black,
-        fill=red!15,
-        text=red!30!black,
-        font=\scriptsize\bfseries,
-        align=center
+        text centered,
+        font=\tiny\bfseries,
+        draw=goldphoenix,
+        fill=goldlight,
+        line width=1pt
     },
-    flow/.style={
-        ->,
-        >=stealth,
-        thick,
-        draw=blue!60
-    }
+    flow/.style={->, >=Stealth, thick, color=bleurepublique}
 ]
 
-% منابع
-\node[source] (oil) at (0,3) {درآمد نفت (محدود)};
-\node[source] (assets) at (0,1.5) {دارایی‌های آزادشده};
-\node[source] (ndf) at (0,0) {صندوق توسعه ملی};
-\node[source] (tax) at (0,-1.5) {مالیات (کاهش‌یافته)};
-\node[source] (aid) at (0,-3) {کمک‌های بین‌المللی};
+% مرکز
+\node[circle, minimum size=2cm, draw=goldphoenix, fill=goldphoenix, text=white, font=\tiny\bfseries] (treasury) at (5,0) {\rl{خزانه دولت}};
 
-% خزانه
-\node[rectangle, rounded corners=6pt, draw=purple!70!black, fill=purple!15,
-      minimum width=2.5cm, minimum height=2.5cm, font=\small\bfseries,
-      text=purple!30!black, align=center] (treasury) at (5,0) {
-    \begin{tabular}{c}
-    خزانه\\
-    دولت موقت
-    \end{tabular}
-};
+% منابع
+\node[source] (oil) at (0,2) {\rl{درآمد نفت}};
+\node[source] (assets) at (0,0) {\rl{دارایی آزادشده}};
+\node[source] (aid) at (0,-2) {\rl{کمک بین‌الملل}};
 
 % مصارف
-\node[use] (salary) at (10,3) {حقوق کارکنان};
-\node[use] (subsidy) at (10,1.5) {یارانه نقدی};
-\node[use] (health) at (10,0) {بهداشت و دارو};
-\node[use] (security) at (10,-1.5) {امنیت و دفاع};
-\node[use] (infra) at (10,-3) {زیرساخت اضطراری};
+\node[use] (salary) at (10,2) {\rl{حقوق کارکنان}};
+\node[use] (subsidy) at (10,0) {\rl{یارانه نقدی}};
+\node[use] (health) at (10,-2) {\rl{بهداشت و دارو}};
 
-% جریان‌ها - ورودی
-\draw[flow] (oil) -- (treasury) node[midway, above, font=\tiny] {۳۰٪};
-\draw[flow] (assets) -- (treasury) node[midway, above, font=\tiny] {۲۵٪};
-\draw[flow] (ndf) -- (treasury) node[midway, above, font=\tiny] {۲۰٪};
-\draw[flow] (tax) -- (treasury) node[midway, below, font=\tiny] {۱۵٪};
-\draw[flow] (aid) -- (treasury) node[midway, below, font=\tiny] {۱۰٪};
-
-% جریان‌ها - خروجی
-\draw[flow] (treasury) -- (salary) node[midway, above, font=\tiny] {۳۵٪};
-\draw[flow] (treasury) -- (subsidy) node[midway, above, font=\tiny] {۲۵٪};
-\draw[flow] (treasury) -- (health) node[midway, above, font=\tiny] {۱۵٪};
-\draw[flow] (treasury) -- (security) node[midway, below, font=\tiny] {۱۵٪};
-\draw[flow] (treasury) -- (infra) node[midway, below, font=\tiny] {۱۰٪};
-
-% راهنما
-\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=center] 
-      at (5,-4.5) {تخمین بودجه سال اول: ۸۰۰-۱۰۰۰ هزار میلیارد تومان};
+% جریان‌ها
+\draw[flow] (oil) -- (treasury);
+\draw[flow] (assets) -- (treasury);
+\draw[flow] (aid) -- (treasury);
+\draw[flow] (treasury) -- (salary);
+\draw[flow] (treasury) -- (subsidy);
+\draw[flow] (treasury) -- (health);
 
 \end{tikzpicture}
 \caption{جریان منابع و مصارف مالی دولت موقت}
-\label{fig:financial-flow}
 \end{figure}
 
 %───────────────────────────────────────────────────────────────────────────────
@@ -786,23 +552,19 @@
 \centering
 \caption{اولویت‌های دیپلماتیک ۱۲ ماه اول}
 \label{tab:diplomacy-roadmap}
-\begin{tabular}{>{\columncolor{blue!8}}r p{2.5cm} p{5cm} p{3.5cm}}
+\begin{tabularx}{\textwidth}{R{1cm} R{2.5cm} Y C{2.5cm}}
 \toprule
-\rowcolor{blue!25}
-\textbf{ماه} & \textbf{محور} & \textbf{اقدام} & \textbf{هدف} \\
+\headmark ماه & \headmark محور & \headmark اقدام & \headmark هدف \\
 \midrule
-۱ & سازمان ملل & نامه به دبیرکل، درخواست حمایت & مشروعیت‌سازی \\
-\rowcolor{gray!10}
-۱-۲ & همسایگان & پیام به ۱۵ همسایه، تعهد به صلح & اطمینان‌بخشی \\
-۲-۳ & اتحادیه اروپا & مذاکره رفع تحریم‌های EU & آزادسازی اولیه \\
-\rowcolor{gray!10}
-۳-۴ & آمریکا & کانال عمان، پیشنهاد توافق موقت & تعلیق تحریم‌ها \\
-۴-۶ & برجام ۲.۰ & مذاکره توافق جامع جدید & برنامه هسته‌ای \\
-\rowcolor{gray!10}
-۶-۸ & نهادهای مالی & IMF، بانک جهانی، FATF & وام و سرمایه‌گذاری \\
-۸-۱۲ & سرمایه‌گذاران & کنفرانس بین‌المللی ایران & جذب FDI \\
+۱ & ملل متحد & نامه به دبیرکل و شورای امنیت & مشروعیت‌سازی \\
+\rowcolor{goldlight}
+۲ & همسایگان & مأموریت‌های اطمینان‌بخشی & ثبات منطقه‌ای \\
+۴ & اروپا/آمریکا & مذاکرات رفع تحریم‌های فوری & گشایش اقتصادی \\
+\rowcolor{goldlight}
+۸ & نهادهای مالی & بازگشت به FATF و IMF & جذب سرمایه \\
+۱۲ & جهانی & کنفرانس بازسازی ایران & جلب FDI \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{پیشنهاد «معامله بزرگ» (Grand Bargain)}
@@ -892,26 +654,19 @@
 \centering
 \caption{ویژگی‌های نظام انتخاباتی مجلس مؤسسان}
 \label{tab:electoral-system}
-\begin{tabular}{>{\columncolor{purple!8}}r p{4cm} p{6.5cm}}
+\begin{tabularx}{\textwidth}{R{1cm} R{4cm} Y}
 \toprule
-\rowcolor{purple!25}
-\textbf{ردیف} & \textbf{ویژگی} & \textbf{شرح} \\
+\headmark \# & \headmark ویژگی & \headmark شرح \\
 \midrule
 ۱ & تعداد کرسی‌ها & ۳۰۰ نماینده \\
-\rowcolor{gray!10}
-۲ & نظام انتخاباتی & مختلط: ۲۰۰ حوزه‌ای + ۱۰۰ نسبی \\
-۳ & سهمیه جنسیتی & حداقل ۳۰٪ زنان (در لیست‌های نسبی) \\
-\rowcolor{gray!10}
-۴ & سهمیه قومی & تضمین حداقل برای مناطق قومی \\
-۵ & آستانه ورود & ۳٪ آرای کشوری (برای نسبی) \\
-\rowcolor{gray!10}
-۶ & نظارت & کمیسیون مستقل + ناظران بین‌المللی \\
-۷ & تأمین مالی & بودجه دولتی برابر + سقف هزینه \\
-\rowcolor{gray!10}
-۸ & دسترسی رسانه‌ای & وقت برابر رایگان در رسانه عمومی \\
-۹ & حق رأی & همه شهروندان ۱۸+ ساله (داخل و خارج) \\
+\rowcolor{goldlight}
+۲ & نظام انتخابی & مختلط: حوزه‌ای + نسبی کشوری \\
+۳ & سهمیه جنسیتی & حداقل ۳۰٪ لیست‌ها از زنان \\
+\rowcolor{goldlight}
+۴ & آستانه ورود & ۳٪ برای احزاب در سطح ملی \\
+۵ & نظارت & کمیسیون مستقل + ناظران بین‌الملل \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{نقشه حوزه‌های انتخابیه}
@@ -926,109 +681,33 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.75,
+    scale=0.85,
     transform shape,
     region/.style={
         ellipse,
-        draw=#1!70!black,
-        fill=#1!20,
-        minimum width=2.8cm,
-        minimum height=1.6cm,
-        font=\scriptsize\bfseries,
-        align=center
+        draw=bleurepublique,
+        fill=bleulight,
+        minimum width=2.4cm,
+        minimum height=1.4cm,
+        text centered,
+        font=\tiny\bfseries,
+        line width=1pt
     }
 ]
 
-% مناطق انتخاباتی
-\node[region=blue] (tehran) at (0,0) {
-    \begin{tabular}{c}
-    تهران\\
-    ۴۵ کرسی
-    \end{tabular}
-};
-
-\node[region=teal] (azarbaijan) at (-4.5,2.5) {
-    \begin{tabular}{c}
-    آذربایجان\\
-    ۳۵ کرسی
-    \end{tabular}
-};
-
-\node[region=green] (kurdistan) at (-5.5,0) {
-    \begin{tabular}{c}
-    کردستان\\
-    ۱۵ کرسی
-    \end{tabular}
-};
-
-\node[region=orange] (khuzestan) at (-3.5,-2.5) {
-    \begin{tabular}{c}
-    خوزستان\\
-    ۲۰ کرسی
-    \end{tabular}
-};
-
-\node[region=red] (isfahan) at (0,-2.5) {
-    \begin{tabular}{c}
-    اصفهان\\
-    ۲۵ کرسی
-    \end{tabular}
-};
-
-\node[region=purple] (khorasan) at (4.5,1.5) {
-    \begin{tabular}{c}
-    خراسان\\
-    ۳۵ کرسی
-    \end{tabular}
-};
-
-\node[region=brown] (fars) at (2,-2.5) {
-    \begin{tabular}{c}
-    فارس\\
-    ۲۰ کرسی
-    \end{tabular}
-};
-
-\node[region=cyan] (mazandaran) at (2,2.5) {
-    \begin{tabular}{c}
-    شمال\\
-    ۲۵ کرسی
-    \end{tabular}
-};
-
-\node[region=yellow] (sistan) at (5.5,-1.5) {
-    \begin{tabular}{c}
-    سیستان\\
-    ۱۰ کرسی
-    \end{tabular}
-};
-
-\node[region=pink] (other) at (0,3) {
-    \begin{tabular}{c}
-    سایر استان‌ها\\
-    ۷۰ کرسی
-    \end{tabular}
-};
-
-% اتصالات نمادین
-\draw[gray!30, dashed] (tehran) -- (azarbaijan);
-\draw[gray!30, dashed] (tehran) -- (kurdistan);
-\draw[gray!30, dashed] (tehran) -- (khuzestan);
-\draw[gray!30, dashed] (tehran) -- (isfahan);
-\draw[gray!30, dashed] (tehran) -- (khorasan);
-\draw[gray!30, dashed] (tehran) -- (fars);
-\draw[gray!30, dashed] (tehran) -- (mazandaran);
-\draw[gray!30, dashed] (tehran) -- (sistan);
-
-% جمع کل
-\node[rectangle, rounded corners=5pt, draw=black!70, fill=black!10,
-      font=\small\bfseries, align=center] at (0,-4.5) {
-    مجموع کرسی‌های حوزه‌ای: ۲۰۰ | کرسی‌های نسبی ملی: ۱۰۰ | جمع: ۳۰۰
-};
+% مناطق
+\node[region, draw=goldphoenix, fill=goldphoenix, text=white] (tehran) at (0,0) {\rl{تهران}\\\rl{۴۵ کرسی}};
+\node[region] (azarbaijan) at (-4,2) {\rl{آذربایجان}\\\rl{۳۵ کرسی}};
+\node[region] (khorasan) at (4,2) {\rl{خراسان}\\\rl{۳۵ کرسی}};
+\node[region] (khuzestan) at (-3,-2) {\rl{خوزستان}\\\rl{۲۰ کرسی}};
+\node[region] (isfahan) at (0,-2.5) {\rl{اصفهان}\\\rl{۲۵ کرسی}};
+\node[region] (kordistan) at (-5,0) {\rl{کردستان}\\\rl{۱۵ کرسی}};
+\node[region] (fars) at (3,-2) {\rl{فارس}\\\rl{۲۰ کرسی}};
 
 \end{tikzpicture}
-\caption{توزیع تقریبی کرسی‌های مجلس مؤسسان بر اساس جمعیت مناطق}
-\label{fig:constituency-map}
+\caption{توزیع تقریبی کرسی‌های حوزه‌ای مجلس مؤسسان}
+\end{figure}
+
 \end{figure}
 
 \subsection{تضمینات انتخابات آزاد}

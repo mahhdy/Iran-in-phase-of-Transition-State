@@ -28,22 +28,19 @@
 \centering
 \caption{مقایسه اجمالی پنج گذار ناموفق}
 \label{tab:five-failures}
-\begin{tabular}{L{2cm} C{2cm} L{3cm} L{3.5cm} C{2cm}}
+\begin{tabularx}{\textwidth}{R{2cm} C{2cm} Y Y C{2cm}}
 \toprule
-\headmark کشور & \headmark سال & \headmark نوع شکست & \headmark علت اصلی & \headmark وضعیت فعلی \\
+\headmark کشور & \headmark سال & \headmark نوع شکست & \headmark علت اصلی & \headmark وضعیت \\
 \midrule
-\rowcolor{rougelight}
-عراق & ۲۰۰۳ & دولت شکننده & مداخله خارجی + فرقه‌گرایی & بی‌ثبات \\
-\rowcolor{rougelight}
-لیبی & ۲۰۱۱ & فروپاشی & فقدان نهاد + قبیله‌گرایی & جنگ داخلی \\
-\rowcolor{orroyallight}
-مصر & ۲۰۱۱-۱۳ & بازگشت & شکست ائتلاف + اقتصاد & اقتدارگرایی \\
-\rowcolor{rougelight}
-یمن & ۲۰۱۱ & فروپاشی & گفتگو بدون پشتوانه & جنگ داخلی \\
-\rowcolor{orroyallight}
-ونزوئلا & ۱۹۹۹ & تحلیل تدریجی & پوپولیسم + نفرین نفت & بحران \\
+عراق & ۲۰۰۳ & دولت شکننده & فرقه‌گرایی + مداخله خارجی & بی‌ثبات \\
+\rowcolor{goldlight}
+لیبی & ۲۰۱۱ & فروپاشی کامل & فقدان نهادها + قبیله‌گرایی & جنگ داخلی \\
+مصر & ۲۰۱۱-۱۳ & بازگشت نظامیان & شکست ائتلاف & اقتدارگرا \\
+\rowcolor{goldlight}
+یمن & ۲۰۱۱ & فروپاشی & مداخله منطقه‌ای & بحران شدید \\
+ونزوئلا & ۱۹۹۹ & زوال تدریجی & پوپولیسم + نفرین نفت & بحران انسانی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -71,10 +68,10 @@
     errorbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3.5cm,
+        minimum width=3.2cm,
         minimum height=1.3cm,
         text centered,
-        font=\small,
+        font=\tiny\bfseries,
         draw=rougerevolution,
         fill=rougelight,
         line width=1pt
@@ -82,11 +79,11 @@
     resultbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3.5cm,
+        minimum width=3.2cm,
         minimum height=1.3cm,
         text centered,
-        font=\small,
-        draw=black,
+        font=\tiny\bfseries,
+        draw=gris,
         fill=grislight,
         line width=1pt
     },
@@ -94,31 +91,24 @@
 ]
 
 % اشتباهات
-\node[errorbox] (e1) at (0,3) {انحلال ارتش};
-\node[errorbox] (e2) at (4.5,3) {پاکسازی بعثی‌ها};
-\node[errorbox] (e3) at (9,3) {تقسیم قدرت فرقه‌ای};
+\node[errorbox] (e1) at (0,3) {\rl{انحلال ارتش}};
+\node[errorbox] (e2) at (4.5,3) {\rl{پاکسازی بعث}};
+\node[errorbox] (e3) at (9,3) {\rl{محاصصه فرقه‌ای}};
 
 % نتایج میانی
-\node[resultbox] (r1) at (0,0) {نظامیان مسلح بیکار};
-\node[resultbox] (r2) at (4.5,0) {فلج اداری};
-\node[resultbox] (r3) at (9,0) {تعمیق شکاف‌ها};
+\node[resultbox] (r1) at (0,0) {\rl{نظامیان بیکار}};
+\node[resultbox] (r2) at (4.5,0) {\rl{فلج اداری}};
+\node[resultbox] (r3) at (9,0) {\rl{نهادینه شدن شکاف}};
 
 % نتیجه نهایی
-\node[errorbox, minimum width=10cm, minimum height=1.5cm] (final) at (4.5,-3) {
-    \textbf{داعش + جنگ داخلی + دولت شکننده}
-};
+\node[errorbox, draw=rougerevolution, fill=rougerevolution, text=white, minimum width=10cm, minimum height=1.5cm] (final) at (4.5,-2.5) {\textbf{\rl{بحران امنیتی + فروپاشی اجتماعی + دولت شکننده}}};
 
 % فلش‌ها
-\draw[arrow] (e1) -- (r1);
-\draw[arrow] (e2) -- (r2);
-\draw[arrow] (e3) -- (r3);
-\draw[arrow] (r1) -- (final);
-\draw[arrow] (r2) -- (final);
-\draw[arrow] (r3) -- (final);
+\draw[arrow] (e1) -- (r1); \draw[arrow] (e2) -- (r2); \draw[arrow] (e3) -- (r3);
+\draw[arrow] (r1) -- (final); \draw[arrow] (r2) -- (final); \draw[arrow] (r3) -- (final);
 
 \end{tikzpicture}
 \caption{زنجیره علّی شکست عراق}
-\label{fig:iraq-chain}
 \end{figure}
 
 \subsection{مشکل محاصصه فرقه‌ای}
@@ -127,17 +117,16 @@
 \centering
 \caption{سیستم محاصصه در عراق}
 \label{tab:iraq-muhasasa}
-\begin{tabular}{L{3cm} L{2.5cm} L{7cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{2cm} Y}
 \toprule
 \headmark پست & \headmark سهم & \headmark مشکل \\
 \midrule
-\rowcolor{bleulight}
-رئیس‌جمهور & کُرد & نقش تشریفاتی — کُردها از حکومت مرکزی فاصله می‌گیرند \\
-نخست‌وزیر & شیعه & قدرت واقعی اینجاست — تنش دائمی با سُنی‌ها \\
-\rowcolor{bleulight}
-رئیس پارلمان & سُنی & سُنی‌ها احساس طرد و حاشیه‌نشینی می‌کنند \\
+رئیس‌جمهور & کُرد & نقش تشریفاتی و انزواگرایی \\
+\rowcolor{goldlight}
+نخست‌وزیر & شیعه & تنش دائمی با سُنی‌ها \\
+رئیس پارلمان & سُنی & احساس طرد و حاشیه‌نشینی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{naghlbox}
@@ -152,20 +141,16 @@
 \centering
 \caption{چه نباید کرد: درس‌های عراق}
 \label{tab:iraq-lessons}
-\begin{tabular}{L{4cm} L{4.5cm} L{4cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} Y Y}
 \toprule
-\headmark اشتباه عراق & \headmark چرا اشتباه بود & \headmark جایگزین صحیح \\
+\headmark اشتباه عراق & \headmark پیامد & \headmark جایگزین صحیح \\
 \midrule
-\rowcolor{rougelight}
-انحلال ارتش & نظامیان مسلح بیکار = شورشی & اصلاح تدریجی، بازآموزی \\
-\rowcolor{rougelight}
-پاکسازی گسترده & فلج اداری & پاکسازی محدود سران \\
-\rowcolor{rougelight}
-محاصصه فرقه‌ای & نهادینه کردن شکاف‌ها & سهمیه موقت + احزاب فراقومی \\
-\rowcolor{rougelight}
-مداخله بدون برنامه & فقدان استراتژی خروج & برنامه‌ریزی بلندمدت \\
+انحلال ارتش & ظهور گروه‌های مسلح & اصلاح تدریجی نهادها \\
+\rowcolor{goldlight}
+پاکسازی گسترده & فلج بوروکراسی & پاکسازی محدود به سران \\
+محاصصه فرقه‌ای & نهادینه شدن تفرقه & احزاب فراقومی و ملی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -196,40 +181,32 @@
     fragbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3cm,
+        minimum width=3.2cm,
         minimum height=1.2cm,
         text centered,
-        font=\small,
+        font=\tiny\bfseries,
         line width=1pt
     }
 ]
 
 % قبل
-\node[fragbox, draw=gris, fill=grislight] (before) at (0,0) {
-    \begin{tabular}{c}
-    لیبی واحد\\
-    (تحت قذافی)
-    \end{tabular}
-};
+\node[fragbox, draw=gris, fill=grislight] (before) at (0,0) {\rl{لیبی واحد}\\{\tiny (دوره قذافی)}};
 
 % بعد - تکه‌ها
-\node[fragbox, draw=rougerevolution, fill=rougelight] (f1) at (6,2) {دولت طرابلس};
-\node[fragbox, draw=rougerevolution, fill=rougelight] (f2) at (6,0) {دولت بنغازی};
-\node[fragbox, draw=rougerevolution, fill=rougelight] (f3) at (6,-2) {میلیشیاهای محلی};
-\node[fragbox, draw=orroyal, fill=orroyallight] (f4) at (10,1) {ژنرال حفتر};
-\node[fragbox, draw=orroyal, fill=orroyallight] (f5) at (10,-1) {قبایل جنوب};
+\node[fragbox, draw=rougerevolution, fill=rougelight] (f1) at (6,2) {\rl{دولت طرابلس}};
+\node[fragbox, draw=rougerevolution, fill=rougelight] (f2) at (6,0) {\rl{دولت بنغازی}};
+\node[fragbox, draw=rougerevolution, fill=rougelight] (f3) at (6,-2) {\rl{میلیشیاهای محلی}};
+\node[fragbox, draw=goldphoenix, fill=goldlight] (f4) at (10,1) {\rl{نیروهای حفتر}};
+\node[fragbox, draw=goldphoenix, fill=goldlight] (f5) at (10,-1) {\rl{قبایل جنوب}};
 
 % فلش‌ها
-\draw[->, >=Stealth, very thick, color=rougerevolution] (before) -- node[above, font=\small] {سقوط ۲۰۱۱} (3,0);
-\draw[->, >=Stealth, thick, color=gris] (3,0) -- (f1);
-\draw[->, >=Stealth, thick, color=gris] (3,0) -- (f2);
-\draw[->, >=Stealth, thick, color=gris] (3,0) -- (f3);
-\draw[->, >=Stealth, thick, color=gris] (f1) -- (f4);
-\draw[->, >=Stealth, thick, color=gris] (f2) -- (f5);
+\draw[->, >=Stealth, ultra thick, color=rougerevolution] (before) -- node[above, font=\tiny\bfseries] {\rl{سقوط ۲۰۱۱}} (3.5,0);
+\draw[->, >=Stealth, thick, color=gris] (3.5,0) -- (f1);
+\draw[->, >=Stealth, thick, color=gris] (3.5,0) -- (f2);
+\draw[->, >=Stealth, thick, color=gris] (3.5,0) -- (f3);
 
 \end{tikzpicture}
 \caption{تکه‌تکه شدن لیبی پس از سقوط قذافی}
-\label{fig:libya-fragmentation}
 \end{figure}
 
 \subsection{درس‌های لیبی}
@@ -238,20 +215,18 @@
 \centering
 \caption{درس‌های لیبی}
 \label{tab:libya-lessons}
-\begin{tabular}{L{4cm} L{8.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} Y}
 \toprule
 \headmark درس & \headmark توضیح \\
 \midrule
-\rowcolor{rougelight}
-نهادها مهم‌اند & بدون نهاد، حتی سقوط دیکتاتور به هرج‌ومرج منجر می‌شود \\
-\rowcolor{rougelight}
-مداخله ناقص خطرناک است & ناتو قذافی را سرنگون کرد اما برنامه‌ای برای بعد نداشت \\
-\rowcolor{rougelight}
-سلاح را کنترل کنید & میلیشیاهای مسلح = جنگ داخلی \\
-\rowcolor{rougelight}
-قبیله‌گرایی مهار شود & هویت‌های پیشامدرن در خلأ نهادی غالب می‌شوند \\
+اهمیت نهادها & بدون نهاد، دموکراسی به هرج‌ومرج می‌گراید \\
+\rowcolor{goldlight}
+خطرات خلأ قدرت & میلیشیاها بلافاصله جایگزین دولت می‌شوند \\
+کنترل تسلیحات & ضرورت خلع سلاح عمومی پس از گذار \\
+\rowcolor{goldlight}
+هویت‌های محلی & مهار قبیله‌گرایی از طریق ملت‌سازی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -268,10 +243,10 @@
     eventbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.5cm,
+        minimum width=2.4cm,
         minimum height=1.2cm,
         text centered,
-        font=\scriptsize,
+        font=\tiny\bfseries,
         line width=1pt
     }
 ]
@@ -280,49 +255,19 @@
 \draw[line width=2pt, color=gris] (0,0) -- (14,0);
 
 % رویدادها
-\node[eventbox, draw=vertnapoleon, fill=vertlight, above] at (0,0.5) {
-    \begin{tabular}{c}
-    ژانویه ۲۰۱۱\\
-    انقلاب
-    \end{tabular}
-};
-
-\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (3.5,0.5) {
-    \begin{tabular}{c}
-    فوریه ۲۰۱۱\\
-    سقوط مبارک
-    \end{tabular}
-};
-
-\node[eventbox, draw=orroyal, fill=orroyallight, above] at (7,0.5) {
-    \begin{tabular}{c}
-    ژوئن ۲۰۱۲\\
-    مرسی رئیس‌جمهور
-    \end{tabular}
-};
-
-\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (10.5,0.5) {
-    \begin{tabular}{c}
-    ژوئیه ۲۰۱۳\\
-    کودتای سیسی
-    \end{tabular}
-};
-
-\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (14,0.5) {
-    \begin{tabular}{c}
-    ۲۰۱۴-امروز\\
-    اقتدارگرایی جدید
-    \end{tabular}
-};
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (0,0.5) {\rl{ژانویه ۲۰۱۱}\\\rl{انقلاب}};
+\node[eventbox, draw=bleurepublique, fill=bleulique, above] at (3.5,0.5) {\rl{فوریه ۲۰۱۱}\\\rl{سقوط مبارک}};
+\node[eventbox, draw=goldphoenix, fill=goldlight, above] at (7,0.5) {\rl{ژوئن ۲۰۱۲}\\\rl{ریاست مرسی}};
+\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (10.5,0.5) {\rl{ژوئیه ۲۰۱۳}\\\rl{کودتای سیسی}};
+\node[eventbox, draw=rougerevolution, fill=rougerevolution, text=white, above] at (14,0.5) {\rl{۲۰۱۴-امروز}\\\rl{اقتدارگرایی}};
 
 % نقاط
 \foreach \x in {0,3.5,7,10.5,14} {
-    \fill[black] (\x,0) circle (4pt);
+    \fill[bleurepublique] (\x,0) circle (3pt);
 }
 
 \end{tikzpicture}
 \caption{خط زمانی شکست گذار مصر}
-\label{fig:egypt-timeline}
 \end{figure}
 
 \begin{enghelabbox}[title={\hfill \textbf{سه دلیل اصلی شکست مصر}}]
@@ -373,20 +318,18 @@
 \centering
 \caption{دلایل شکست گفتگوی ملی یمن}
 \label{tab:yemen-failure}
-\begin{tabular}{C{1cm} L{4cm} L{7cm}}
+\begin{tabularx}{\textwidth}{C{1cm} R{3.5cm} Y}
 \toprule
 \headmark \# & \headmark دلیل & \headmark توضیح \\
 \midrule
-\rowcolor{rougelight}
-۱ & حوثی‌ها بیرون ماندند & گروه مسلح قدرتمند در فرآیند نبود \\
-\rowcolor{rougelight}
-۲ & پشتوانه نظامی نبود & هیچ نیرویی توافق را تضمین نمی‌کرد \\
-\rowcolor{rougelight}
-۳ & اقتصاد فروپاشید & مردم گرسنه بودند \\
-\rowcolor{rougelight}
-۴ & مداخله خارجی & عربستان و ایران وارد شدند \\
+۱ & طرد گروه‌های مسلح & حوثی‌ها در فرآیند سیاسی نبودند \\
+\rowcolor{goldlight}
+۲ & فقدان ضمانت & توافق‌ها هیچ پشتوانه اجرایی نداشتند \\
+۳ & بحران معیشتی & فروپاشی اقتصادی انگیزه جنگ را تقویت کرد \\
+\rowcolor{goldlight}
+۴ & مداخله منطقه‌ای & تبدیل یمن به میدان جنگ‌های نیابتی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{enghelabbox}[title={\hfill \textbf{درس یمن}}]
@@ -418,55 +361,23 @@
         minimum width=3.5cm,
         minimum height=1.5cm,
         text centered,
-        font=\small,
+        font=\tiny\bfseries,
         line width=1pt
     },
     arrow/.style={->, >=Stealth, thick}
 ]
 
 % مراحل
-\node[stagebox, draw=bleurepublique, fill=bleulight] (s1) at (0,0) {
-    \begin{tabular}{c}
-    ۱۹۵۸-۱۹۹۸\\
-    دموکراسی نفتی
-    \end{tabular}
-};
-
-\node[stagebox, draw=orroyal, fill=orroyallight] (s2) at (5,0) {
-    \begin{tabular}{c}
-    ۱۹۹۹-۲۰۱۳\\
-    چاوز: پوپولیسم
-    \end{tabular}
-};
-
-\node[stagebox, draw=rougerevolution, fill=rougelight] (s3) at (10,0) {
-    \begin{tabular}{c}
-    ۲۰۱۳-امروز\\
-    مادورو: فروپاشی
-    \end{tabular}
-};
+\node[stagebox, draw=bleurepublique, fill=bleulight] (s1) at (0,0) {\rl{۱۹۵۸-۱۹۹۸}\\{\tiny دموکراسی نفتی}};
+\node[stagebox, draw=goldphoenix, fill=goldlight] (s2) at (5,0) {\rl{۱۹۹۹-۲۰۱۳}\\{\tiny از چاوز تا پوپولیسم}};
+\node[stagebox, draw=rougerevolution, fill=rougelight] (s3) at (10,0) {\rl{۲۰۱۳-امروز}\\{\tiny فروپاشی مادورو}};
 
 % فلش‌ها
-\draw[arrow, color=orroyal] (s1) -- node[above, font=\scriptsize] {فساد + نابرابری} (s2);
-\draw[arrow, color=rougerevolution] (s2) -- node[above, font=\scriptsize] {سقوط قیمت نفت} (s3);
-
-% شاخص‌ها زیر
-\node[font=\scriptsize, text width=3cm, align=center, below=0.5cm of s1] {
-    GDP بالا\\
-    نابرابری بالا
-};
-\node[font=\scriptsize, text width=3cm, align=center, below=0.5cm of s2] {
-    کاهش فقر\\
-    تخریب نهادها
-};
-\node[font=\scriptsize, text width=3cm, align=center, below=0.5cm of s3] {
-    تورم ۱,۰۰۰,۰۰۰٪\\
-    مهاجرت ۷ میلیون
-};
+\draw[arrow, color=goldphoenix] (s1) -- node[above, font=\tiny\bfseries] {\rl{فساد}} (s2);
+\draw[arrow, color=rougerevolution] (s2) -- node[above, font=\tiny\bfseries] {\rl{سقوط نفت}} (s3);
 
 \end{tikzpicture}
 \caption{مسیر فروپاشی ونزوئلا}
-\label{fig:venezuela-path}
 \end{figure}
 
 \begin{enghelabbox}[title={\hfill \textbf{دام ونزوئلایی}}]
@@ -496,81 +407,41 @@
         minimum width=3.5cm,
         minimum height=1.5cm,
         text centered,
-        font=\small,
+        font=\tiny\bfseries,
         draw=rougerevolution,
         fill=rougelight,
         line width=1.5pt
     },
     center/.style={
         circle,
-        minimum size=3cm,
+        minimum size=2.8cm,
         text centered,
         font=\small\bfseries,
-        draw=black,
-        fill=grislight,
+        draw=gris,
+        fill=gris,
+        text=white,
         line width=2pt
     }
 ]
 
 % مرکز
-\node[center] (c) at (0,0) {
-    \begin{tabular}{c}
-    گذار\\
-    ناموفق
-    \end{tabular}
-};
+\node[center] (c) at (0,0) {\rl{گذار ناموفق}};
 
 % عوامل
-\node[factor] (f1) at (90:4.5cm) {
-    \begin{tabular}{c}
-    فقدان توافق\\
-    {\scriptsize نخبگان متفرق}
-    \end{tabular}
-};
-
-\node[factor] (f2) at (30:4.5cm) {
-    \begin{tabular}{c}
-    شکست اقتصادی\\
-    {\scriptsize معیشت بدتر}
-    \end{tabular}
-};
-
-\node[factor] (f3) at (330:4.5cm) {
-    \begin{tabular}{c}
-    مداخله خارجی مخرب\\
-    {\scriptsize بدون برنامه}
-    \end{tabular}
-};
-
-\node[factor] (f4) at (270:4.5cm) {
-    \begin{tabular}{c}
-    فروپاشی نهادها\\
-    {\scriptsize بدون جایگزین}
-    \end{tabular}
-};
-
-\node[factor] (f5) at (210:4.5cm) {
-    \begin{tabular}{c}
-    تقسیمات عمیق\\
-    {\scriptsize قومی/فرقه‌ای}
-    \end{tabular}
-};
-
-\node[factor] (f6) at (150:4.5cm) {
-    \begin{tabular}{c}
-    گروه‌های مسلح\\
-    {\scriptsize خارج از کنترل}
-    \end{tabular}
-};
+\node[factor] (f1) at (90:4.2) {\rl{فقدان توافق}};
+\node[factor] (f2) at (30:4.2) {\rl{شکست اقتصادی}};
+\node[factor] (f3) at (330:4.2) {\rl{مداخله مخرب}};
+\node[factor] (f4) at (270:4.2) {\rl{فروپاشی نهادی}};
+\node[factor] (f5) at (210:4.2) {\rl{تقسیمات فرقه‌ای}};
+\node[factor] (f6) at (150:4.2) {\rl{میلیشیاهای مسلح}};
 
 % اتصالات
 \foreach \f in {f1,f2,f3,f4,f5,f6} {
-    \draw[->, >=Stealth, thick, color=rougerevolution] (\f) -- (c);
+    \draw[->, >=Stealth, ultra thick, color=rougerevolution] (\f) -- (c);
 }
 
 \end{tikzpicture}
 \caption{شش عامل مشترک گذارهای ناموفق}
-\label{fig:failure-factors}
 \end{figure}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -582,32 +453,24 @@
 \centering
 \caption{چک‌لیست جامع اشتباهات قابل اجتناب}
 \label{tab:donts-checklist}
-\begin{tabular}{C{1cm} L{5cm} L{3.5cm} L{3.5cm}}
+\begin{tabularx}{\textwidth}{C{1cm} R{3.5cm} R{2.5cm} Y}
 \toprule
 \headmark \# & \headmark اشتباه & \headmark نمونه & \headmark جایگزین \\
 \midrule
-\rowcolor{rougelight}
-۱ & انحلال نهادهای موجود & عراق & اصلاح تدریجی \\
-\rowcolor{rougelight}
-۲ & پاکسازی گسترده & عراق & پاکسازی محدود سران \\
-\rowcolor{rougelight}
-۳ & نهادینه کردن شکاف‌ها & عراق، لبنان & سهمیه موقت + فراگیری \\
-\rowcolor{rougelight}
-۴ & فراموش کردن اقتصاد & مصر، یمن & بهبود معیشت فوری \\
-\rowcolor{rougelight}
-۵ & طرد گروه‌های مسلح & یمن & آوردن همه پای میز \\
-\rowcolor{rougelight}
-۶ & مداخله بدون برنامه & لیبی & برنامه بلندمدت \\
-\rowcolor{rougelight}
-۷ & پوپولیسم نفتی & ونزوئلا & نهادسازی + تنوع اقتصادی \\
-\rowcolor{rougelight}
-۸ & تخریب نهادهای نظارتی & ونزوئلا & تقویت نظارت \\
-\rowcolor{rougelight}
-۹ & انتظار نتیجه فوری & همه & صبر استراتژیک \\
-\rowcolor{rougelight}
-۱۰ & تقلید کورکورانه & همه & بومی‌سازی خلاقانه \\
+۱ & انحلال نهادهای قبلی & عراق & اصلاح تدریجی ساختارها \\
+\rowcolor{goldlight}
+۲ & پاکسازی حداکثری & عراق & پاکسازی محدود به سران \\
+۳ & نهادینه کردن تفرقه & عراق & احزاب فراقومی و ملی \\
+\rowcolor{goldlight}
+۴ & بی‌توجهی به اقتصاد & مصر & بهبود معیشت فوری \\
+۵ & طرد مسلحین & یمن & دیپلماسی خلع سلاح \\
+\rowcolor{goldlight}
+۶ & مداخله بدون طرح & لیبی & برنامه‌ریزی بومی \\
+۷ & پوپولیسم نفتی & ونزوئلا & تنوع‌بخشی به اقتصاد \\
+\rowcolor{goldlight}
+۸ & تخریب نظارت & ونزوئلا & استقلال بانک مرکزی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════

@@ -22,43 +22,44 @@
 
 \subsection{چرا این موضوع اولویت است؟}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=1.8cm,
+    scale=0.85,
+    transform shape,
     box/.style={
         rectangle,
         rounded corners=8pt,
-        draw=#1!70,
-        fill=#1!15,
-        thick,
-        minimum width=3.8cm,
-        minimum height=1.5cm,
-        align=center,
-        font=\small
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=3.2cm,
+        minimum height=1.4cm,
+        text centered,
+        font=\tiny\bfseries
     }
 ]
 % بحران آب در مرکز
-\node[ellipse, draw=red!70, fill=red!20, thick, minimum width=3cm, minimum height=2cm] (water) 
-    {\textbf{بحران آب}};
+\node[circle, draw=goldphoenix, fill=goldphoenix, text=white, thick, minimum size=2.5cm, font=\small\bfseries] (water) 
+    {\rl{بحران آب}};
 
 % پیامدها
-\node[box=orange, above=1.5cm of water] (food) {\textbf{امنیت غذایی}\\ کاهش تولید کشاورزی};
-\node[box=purple, above right=1cm of water] (health) {\textbf{سلامت عمومی}\\ آب آلوده، بیماری};
-\node[box=teal, right=2cm of water] (eco) {\textbf{اقتصاد}\\ زیان صنایع، بیکاری};
-\node[box=blue, below right=1cm of water] (social) {\textbf{اجتماعی}\\ مهاجرت، تنش};
-\node[box=darkgreen, below=1.5cm of water] (env) {\textbf{محیط زیست}\\ نابودی اکوسیستم};
-\node[box=darkyellow, below left=1cm of water] (security) {\textbf{امنیت ملی}\\ تنش مرزی، ناآرامی};
-\node[box=pink, left=2cm of water] (energy) {\textbf{انرژی}\\ برق‌آبی، خنک‌سازی};
-\node[box=cyan, above left=1cm of water] (urban) {\textbf{شهرها}\\ جیره‌بندی، فرونشست};
+\node[box, above=1.5cm of water] (food) {\rl{امنیت غذایی}\\\rl{\tiny کاهش تولید}};
+\node[box, above right=0.8cm and 1.2cm of water] (health) {\rl{سلامت عمومی}\\\rl{\tiny بیماری‌های آبی}};
+\node[box, right=2cm of water] (eco) {\rl{اقتصاد}\\\rl{\tiny زیان صنایع}};
+\node[box, below right=0.8cm and 1.2cm of water] (social) {\rl{اجتماعی}\\\rl{\tiny مهاجرت و تنش}};
+\node[box, below=1.5cm of water] (env) {\rl{محیط زیست}\\\rl{\tiny نابودی زیست‌بوم}};
+\node[box, below left=0.8cm and 1.2cm of water] (security) {\rl{امنیت ملی}\\\rl{\tiny تنش‌های مرزی}};
+\node[box, left=2cm of water] (energy) {\rl{انرژی}\\\rl{\tiny نیروگاه‌های آبی}};
+\node[box, above left=0.8cm and 1.2cm of water] (urban) {\rl{شهرها}\\\rl{\tiny فرونشست}};
 
 % اتصالات
 \foreach \n in {food, health, eco, social, env, security, energy, urban} {
-    \draw[thick, red!50, ->] (water) -- (\n);
+    \draw[ultra thick, bleurepublique!50, ->] (water) -- (\n);
 }
 \end{tikzpicture}
-\captionof{figure}{پیامدهای چندبُعدی بحران آب}
-\label{fig:water-crisis-impacts}
-\end{center}
+\caption{پیامدهای چندبُعدی بحران آب در ایران}
+\end{figure}
 
 %═══════════════════════════════════════════════════════════════════════════════
 \section{تشخیص: ابعاد بحران زیست‌محیطی}
@@ -71,46 +72,45 @@
 \centering
 \caption{شاخص‌های کلیدی بحران آب در ایران}
 \label{tab:water-indicators}
-\begin{tabular}{>{\columncolor{blue!8}}r l c c p{3.5cm}}
+\begin{tabularx}{\textwidth}{C{1.5cm} Y C{2cm} C{2cm}}
 \toprule
-\rowcolor{blue!25}
-\textbf{ردیف} & \textbf{شاخص} & \textbf{مقدار} & \textbf{وضعیت} & \textbf{توضیح} \\
+\headmark ردیف & \headmark شاخص بحران & \headmark مقدار & \headmark وضعیت \\
 \midrule
-۱ & منابع آب تجدیدپذیر سالانه & ۱۳۰ میلیارد م۳ & — & کاهش‌یافته از ۱۵۰ \\
-\rowcolor{gray!10}
-۲ & مصرف سالانه آب & ۹۵-۱۰۰ میلیارد م۳ & بحرانی & برداشت بیش از تجدید \\
-۳ & کسری سالانه & ۱۵-۲۰ میلیارد م۳ & بحرانی & از ذخایر زیرزمینی \\
-\rowcolor{gray!10}
-۴ & سرانه آب تجدیدپذیر & ۱,۵۰۰ م۳/نفر/سال & کم‌آب & خط فقر: ۱,۷۰۰ \\
-۵ & افت سالانه سفره‌ها & ۱-۳ متر & بحرانی & غیرقابل بازگشت \\
-\rowcolor{gray!10}
-۶ & دشت‌های ممنوعه/بحرانی & ۳۵۰ از ۶۰۹ & ۵۷٪ & برداشت ممنوع \\
-۷ & راندمان آبیاری & ۳۵-۴۰٪ & پایین & جهانی: ۷۰-۸۰٪ \\
-\rowcolor{gray!10}
-۸ & سهم کشاورزی از مصرف آب & ۹۲٪ & بیش از حد & جهانی: ۷۰٪ \\
+۱ & منابع آب تجدیدپذیر سالانه & ۱۳۰ $B m^{3}$ & کاهشی \\
+\rowcolor{goldlight}
+۲ & مصرف سالانه آب & ۹۵-۱۰۰ $B m^{3}$ & بحرانی \\
+۳ & کسری سالانه مخازن & ۱۵-۲۰ $B m^{3}$ & بحرانی \\
+\rowcolor{goldlight}
+۴ & سرانه آب تجدیدپذیر & ۱,۵۰۰ $m^{3}$ & پایین \\
+۵ & افت سالانه سفره‌ها & ۱-۳ متر & خطرناک \\
+\rowcolor{goldlight}
+۶ & دشت‌های ممنوعه & ۳۵۰ از ۶۰۹ & ۵۷٪ \\
+۷ & راندمان آبیاری کشاورزی & ۳۵-۴۰٪ & ضعیف \\
+\rowcolor{goldlight}
+۸ & سهم کشاورزی از مصرف & ۹۲٪ & نامتعادل \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{توزیع مصرف آب}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}
 \pie[
     text=legend,
-    radius=3,
-    color={green!60, blue!60, orange!60, gray!60},
+    radius=2.5,
+    color={bleurepublique, goldphoenix, bleunight, goldlight},
     explode={0.1, 0, 0, 0}
 ]{
-    92/کشاورزی (۹۲٪),
-    5/شرب و بهداشت (۵٪),
-    2/صنعت (۲٪),
-    1/سایر (۱٪)
+    92/\rl{کشاورزی (۹۲٪)},
+    5/\rl{شرب و بهداشت (۵٪)},
+    2/\rl{صنعت (۲٪)},
+    1/\rl{سایر (۱٪)}
 }
 \end{tikzpicture}
-\captionof{figure}{توزیع مصرف آب در ایران}
-\label{fig:water-consumption}
-\end{center}
+\caption{توزیع مصرف آب در ایران}
+\end{figure}
 
 \subsection{خشک‌شدن منابع آبی}
 
@@ -118,23 +118,21 @@
 \centering
 \caption{وضعیت دریاچه‌ها و تالاب‌های اصلی ایران}
 \label{tab:lakes-status}
-\begin{tabular}{>{\columncolor{red!8}}l c c c p{3.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{2cm} C{2cm} Y}
 \toprule
-\rowcolor{red!25}
-\textbf{منبع آبی} & \textbf{وسعت اولیه (کم۲)} & \textbf{وسعت فعلی} & \textbf{کاهش} & \textbf{وضعیت} \\
+\headmark منبع آبی & \headmark وسعت اولیه & \headmark کاهش & \headmark وضعیت فعلی \\
 \midrule
-دریاچه ارومیه & ۵,۰۰۰ & ۱,۰۰۰ & ۸۰٪ & بحرانی — در آستانه نابودی \\
-\rowcolor{gray!10}
-هامون & ۴,۰۰۰ & ۰-۵۰۰ & ۹۰٪+ & خشک شده \\
-گاوخونی & ۴۷۰ & ۰ & ۱۰۰٪ & خشک شده \\
-\rowcolor{gray!10}
-بختگان & ۶۵۰ & ۵۰ & ۹۲٪ & تقریباً خشک \\
-پریشان & ۴۲ & ۱۰ & ۷۶٪ & بحرانی \\
-\rowcolor{gray!10}
-تالاب انزلی & ۴۵۰ & ۱۸۰ & ۶۰٪ & در خطر \\
-هورالعظیم & ۳,۰۰۰ & ۵۰۰ & ۸۳٪ & بحرانی \\
+دریاچه ارومیه & ۵,۰۰۰ & ۸۰٪ & در آستانه نابودی \\
+\rowcolor{goldlight}
+هامون & ۴,۰۰۰ & ۹۰٪+ & خشک شده \\
+گاوخونی & ۴۷۰ & ۱۰۰٪ & خشک شده \\
+\rowcolor{goldlight}
+بختگان & ۶۵۰ & ۹۲٪ & تقریباً خشک \\
+انزلی & ۴۵۰ & ۶۰٪ & در خطر جدی \\
+\rowcolor{goldlight}
+هورالعظیم & ۳,۰۰۰ & ۸۳٪ & بحرانی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{enghelabbox}
@@ -157,48 +155,40 @@
 \centering
 \caption{فرونشست زمین در دشت‌های بحرانی}
 \label{tab:land-subsidence}
-\begin{tabular}{>{\columncolor{orange!8}}l c c p{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{3cm} Y}
 \toprule
-\rowcolor{orange!25}
-\textbf{دشت/منطقه} & \textbf{نرخ فرونشست (سانتی/سال)} & \textbf{مجموع فرونشست} & \textbf{پیامدها} \\
+\headmark دشت / منطقه & \headmark نرخ سالانه (cm) & \headmark پیامدهای استراتژیک \\
 \midrule
-دشت رفسنجان & ۲۵-۳۰ & ۵+ متر & شکاف زمین، تخریب زیرساخت \\
-\rowcolor{gray!10}
-دشت کاشمر & ۲۰-۲۵ & ۳+ متر & آسیب به ساختمان‌ها \\
-جنوب تهران & ۲۵-۳۶ & ۴+ متر & تهدید متروی تهران \\
-\rowcolor{gray!10}
-دشت مشهد & ۱۵-۲۰ & ۲+ متر & خطر زیرساخت شهری \\
-اصفهان & ۱۰-۱۵ & ۱.۵+ متر & آسیب به آثار تاریخی \\
-\rowcolor{gray!10}
-کرمان & ۲۰-۳۰ & ۳+ متر & تخریب کشاورزی \\
+دشت رفسنجان & ۲۵-۳۰ & شکاف زمین و تخریب زیرساخت \\
+\rowcolor{goldlight}
+جنوب تهران & ۲۵-۳۶ & تهدید جدی برای خطوط مترو \\
+دشت مشهد & ۱۵-۲۰ & خطر برای زیرساخت‌های شهری \\
+\rowcolor{goldlight}
+اصفهان & ۱۰-۱۵ & آسیب به میراث تاریخی و تمدنی \\
+کرمان & ۲۰-۳۰ & تخریب کامل اراضی کشاورزی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{آلودگی هوا}
 
 \begin{table}[htbp]
 \centering
-\caption{وضعیت آلودگی هوای کلان‌شهرهای ایران}
+\caption{وضعیت آلودگی هوا در کلان‌شهرها}
 \label{tab:air-pollution}
-\begin{tabular}{>{\columncolor{purple!8}}l c c c c}
+\begin{tabularx}{\textwidth}{R{2.5cm} C{2.5cm} C{3.5cm} Y}
 \toprule
-\rowcolor{purple!25}
-\textbf{شهر} & \textbf{PM2.5 میانگین} & \textbf{استاندارد WHO} & \textbf{روزهای ناسالم/سال} & \textbf{مرگ زودرس/سال} \\
+\headmark کلان‌شهر & \headmark میانگین PM2.5 & \headmark روزهای ناسالم/سال & \headmark تلفات مستقیم \\
 \midrule
-تهران & ۳۵ & ۵ & ۲۵۰+ & ۲۵,۰۰۰+ \\
-\rowcolor{gray!10}
-اهواز & ۸۰+ & ۵ & ۳۰۰+ & تخمین بالا \\
-تبریز & ۲۸ & ۵ & ۱۸۰ & ۵,۰۰۰+ \\
-\rowcolor{gray!10}
-اصفهان & ۳۲ & ۵ & ۲۲۰ & ۸,۰۰۰+ \\
-مشهد & ۲۵ & ۵ & ۱۵۰ & ۶,۰۰۰+ \\
-\rowcolor{gray!10}
-شیراز & ۲۲ & ۵ & ۱۲۰ & ۳,۰۰۰+ \\
-\midrule
-\multicolumn{4}{r}{\textbf{مجموع مرگ‌های ناشی از آلودگی هوا در ایران}} & \textbf{۶۰,۰۰۰+/سال} \\
+اهواز & ۸۰+ & ۳۰۰+ & بحرانی \\
+\rowcolor{goldlight}
+تهران & ۳۵ & ۲۵۰+ & ۲۵,۰۰۰+ \\
+اصفهان & ۳۲ & ۲۲۰ & ۸,۰۰۰+ \\
+\rowcolor{goldlight}
+تبریز & ۲۸ & ۱۸۰ & ۵,۰۰۰+ \\
+مشهد & ۲۵ & ۱۵۰ & ۶,۰۰۰+ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{سایر بحران‌های زیست‌محیطی}
@@ -207,23 +197,19 @@
 \centering
 \caption{سایر چالش‌های زیست‌محیطی ایران}
 \label{tab:other-env-challenges}
-\begin{tabular}{>{\columncolor{teal!8}}l c p{6cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{2cm} Y}
 \toprule
-\rowcolor{teal!25}
-\textbf{چالش} & \textbf{شدت} & \textbf{توضیح} \\
+\headmark چالش کلیدی & \headmark شدت & \headmark شرح مختصر بحران \\
 \midrule
-ریزگردها & بحرانی & خوزستان، سیستان — منشأ داخلی و خارجی \\
-\rowcolor{gray!10}
-تخریب جنگل & بالا & کاهش ۳۰٪ جنگل‌های هیرکانی در ۵۰ سال \\
-فرسایش خاک & بالا & ۲ میلیارد تن/سال فرسایش \\
-\rowcolor{gray!10}
-بیابان‌زایی & بالا & ۱۰٪ کشور در معرض بیابان‌زایی شدید \\
-آلودگی آب & متوسط-بالا & نیترات، فلزات سنگین در سفره‌ها \\
-\rowcolor{gray!10}
-زباله و پسماند & بالا & بازیافت زیر ۱۰٪، دفن غیربهداشتی \\
-انقراض گونه‌ها & بالا & یوزپلنگ، میش‌مرغ، و دهها گونه در خطر \\
+ریزگردهای منطقه & بحرانی & منشأ داخلی و خارجی در خوزستان و سیستان \\
+\rowcolor{goldlight}
+تخریب جنگل‌ها & بالا & کاهش ۳۰٪ جنگل‌های هیرکانی در نیم قرن \\
+فرسایش خاک & بالا & فرسایش ۲ میلیارد تن خاک حاصلخیز در سال \\
+\rowcolor{goldlight}
+بیابان‌زایی & بالا & پیشروی کویر در ۱۰٪ کل مساحت کشور \\
+پسماند شهری & بالا & بازیافت زیر ۱۰٪ و دفن غیربهداشتی در شمال \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -231,47 +217,48 @@
 \label{sec:root-causes}
 %═══════════════════════════════════════════════════════════════════════════════
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
     cause/.style={
         rectangle,
         rounded corners=5pt,
-        draw=red!70,
-        fill=red!10,
-        thick,
-        minimum width=4.5cm,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=4cm,
         minimum height=1.3cm,
         align=center,
-        font=\small
+        font=\tiny\bfseries
     }
 ]
-% عنوان
-\node[font=\large\bfseries] at (0,5.5) {ریشه‌های بحران آب و محیط زیست};
+% عنوان با طلا
+\node[font=\small\bfseries, color=goldphoenix] at (0,5.5) {\rl{ریشه‌های ساختاری بحران آب و محیط زیست}};
 
 % علل ساختاری
-\node[cause] at (-4.5,4) (c1) {\textbf{۱. حکمرانی ضعیف}\\ تمرکز، عدم هماهنگی};
-\node[cause] at (0,4) (c2) {\textbf{۲. سیاست‌های نادرست}\\ خودکفایی غلط، یارانه آب};
-\node[cause] at (4.5,4) (c3) {\textbf{۳. اقتصاد رانتی}\\ بی‌توجهی به پایداری};
+\node[cause] at (-4.5,4) (c1) {\rl{حکمرانی ضعیف}\\\rl{\tiny عدم هماهنگی بین‌بخشی}};
+\node[cause] at (0,4) (c2) {\rl{سیاست‌های غلط}\\\rl{\tiny خودکفایی کاذب محصولات}};
+\node[cause] at (4.5,4) (c3) {\rl{اقتصاد رانتی}\\\rl{\tiny بی‌توجهی به پایداری}};
 
 % علل مستقیم
-\node[cause] at (-4.5,2) (c4) {\textbf{۴. سدسازی بی‌رویه}\\ ۶۰۰+ سد، تخریب رودخانه‌ها};
-\node[cause] at (0,2) (c5) {\textbf{۵. کشاورزی پرآب}\\ الگوی کشت نامناسب};
-\node[cause] at (4.5,2) (c6) {\textbf{۶. برداشت بی‌رویه}\\ چاه‌های غیرمجاز};
+\node[cause] at (-4.5,2) (c4) {\rl{سدسازی بی‌رویه}\\\rl{\tiny نابودی رودخانه‌ها}};
+\node[cause] at (0,2) (c5) {\rl{کشاورزی سنتی}\\\rl{\tiny راندمان بسیار پایین}};
+\node[cause] at (4.5,2) (c6) {\rl{برداشت غیرمجاز}\\\rl{\tiny تخلیه سفره‌های زیرزمینی}};
 
-% علل تشدیدکننده
-\node[cause, fill=orange!10, draw=orange!70] at (-2.25,0) (c7) {\textbf{۷. تغییر اقلیم}\\ کاهش بارش، افزایش تبخیر};
-\node[cause, fill=orange!10, draw=orange!70] at (2.25,0) (c8) {\textbf{۸. رشد جمعیت}\\ ۳ برابر در ۵۰ سال};
-
-% بحران
-\node[ellipse, draw=red!70, fill=red!30, thick, minimum width=4cm, minimum height=1.5cm] at (0,-2) (crisis)
-    {\textbf{بحران آب و محیط زیست}};
+% بحران در مرکز طلا
+\node[rectangle, rounded corners=10pt, draw=goldphoenix, fill=goldphoenix, text=white, 
+      thick, minimum width=6cm, minimum height=1.5cm, font=\small\bfseries] at (0,-0.5) (crisis)
+    {\rl{بحران چندلایه محیط زیست}};
 
 % اتصالات
-\foreach \c in {c1,c2,c3,c4,c5,c6,c7,c8} {
-    \draw[thick, red!40, ->] (\c) -- (crisis);
+\foreach \c in {c1,c2,c3,c4,c5,c6} {
+    \draw[ultra thick, bleurepublique!40, ->] (\c) -- (crisis);
 }
 \end{tikzpicture}
-\end{center}
+\caption{نمودار علل ساختاری و مستقیم بحران‌های زیست‌محیطی}
+\end{figure}
 
 \begin{naghlbox}
 «بحران آب ایران بیش از آنکه بحران طبیعی باشد، بحران مدیریت است. با همین میزان بارندگی، کشورهایی مثل اسرائیل و استرالیا وضعیت بهتری دارند. مشکل در سیاست‌ها و نهادهاست.»
@@ -390,21 +377,20 @@
 
 \begin{table}[htbp]
 \centering
-\caption{اصلاح قیمت‌گذاری آب}
+\caption{اصلاح قیمت‌گذاری آب در فازهای گذار}
 \label{tab:water-pricing}
-\begin{tabular}{>{\columncolor{blue!8}}l c c c}
+\begin{tabularx}{\textwidth}{R{3cm} C{2.5cm} C{2.5cm} Y}
 \toprule
-\rowcolor{blue!25}
-\textbf{بخش} & \textbf{قیمت فعلی} & \textbf{قیمت واقعی} & \textbf{هدف سال ۵} \\
+\headmark بخش مصرف & \headmark قیمت فعلی & \headmark هدف س۱۰ & \headmark مکانیزم حمایتی \\
 \midrule
-کشاورزی (م۳) & ۵۰۰ ریال & ۱۵,۰۰۰ ریال & ۸,۰۰۰ ریال (تدریجی) \\
-\rowcolor{gray!10}
-صنعت (م۳) & ۵,۰۰۰ ریال & ۲۰,۰۰۰ ریال & ۱۵,۰۰۰ ریال \\
-خانگی-پایه (م۳) & ۳,۰۰۰ ریال & ۱۰,۰۰۰ ریال & ۵,۰۰۰ ریال \\
-\rowcolor{gray!10}
-خانگی-پرمصرف (م۳) & ۱۰,۰۰۰ ریال & ۳۰,۰۰۰ ریال & ۲۵,۰۰۰ ریال \\
+کشاورزی استراتژیک & ۵۰۰ ریال & ۵,۰۰۰ ریال & یارانه هوشمند نوسازی سیستم \\
+\rowcolor{goldlight}
+صنعت و معدن & ۵,۰۰۰ ریال & ۲۵,۰۰۰ ریال & قیمت واقعی بازار \\
+خانگی (الگوی مصرف) & ۳,۰۰۰ ریال & ۸,۰۰۰ ریال & سهمیه پایه ارزان قیمت \\
+\rowcolor{goldlight}
+خانگی (پرمصرف) & ۱۰,۰۰۰ ریال & ۵۰,۰۰۰ ریال & نرخ تنبیهی و بازدارنده \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \textbf{اصول قیمت‌گذاری}:
@@ -421,22 +407,18 @@
 \centering
 \caption{برنامه کاهش مصرف آب شهری و صنعتی}
 \label{tab:urban-water-saving}
-\begin{tabular}{>{\columncolor{cyan!8}}l p{5cm} c}
+\begin{tabularx}{\textwidth}{R{3.5cm} Y C{2.5cm}}
 \toprule
-\rowcolor{cyan!25}
-\textbf{راهکار} & \textbf{اقدام} & \textbf{صرفه‌جویی} \\
+\headmark راهکار عملیاتی & \headmark شرح اقدام اجرایی & \headmark هدف (MCM) \\
 \midrule
-کاهش تلفات شبکه & نوسازی لوله‌ها، کنتور هوشمند & ۱.۵ میلیارد م۳ \\
-\rowcolor{gray!10}
-لوازم کم‌مصرف & شیرآلات، توالت، ماشین لباسشویی & ۰.۵ میلیارد م۳ \\
-بازیافت در صنایع & چرخه بسته آب در کارخانجات & ۰.۵ میلیارد م۳ \\
-\rowcolor{gray!10}
-فضای سبز کم‌آب & گیاهان بومی، آبیاری هوشمند & ۰.۳ میلیارد م۳ \\
-آموزش و فرهنگ‌سازی & کمپین ملی صرفه‌جویی & ۰.۲ میلیارد م۳ \\
-\midrule
-\multicolumn{2}{r}{\textbf{مجموع صرفه‌جویی شهری و صنعتی}} & \textbf{۳ میلیارد م۳} \\
+نوسازی لوله‌ها & کاهش تلفات شبکه توزیع در شهرها & ۱,۵۰۰ \\
+\rowcolor{goldlight}
+لوازم کم‌مصرف & توزیع شیرآلات و تجهیزات هوشمند & ۵۰۰ \\
+بازیافت صنعتی & چرخه بسته‌آب در کارخانجات بزرگ & ۵۰۰ \\
+\rowcolor{goldlight}
+فضای سبز بومی & جایگزینی چمن با گیاهان مقاوم & ۳۰۰ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -817,24 +799,24 @@
 
 \subsection{منابع انتشار}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}
 \pie[
     text=legend,
-    radius=3,
-    color={red!60, orange!60, blue!60, green!60, purple!60, gray!60}
+    radius=2.5,
+    color={bleurepublique, goldphoenix, bleunight, goldlight, bleulight, gray!40}
 ]{
-    35/نیروگاه‌ها (۳۵٪),
-    25/صنایع (۲۵٪),
-    20/حمل‌ونقل (۲۰٪),
-    10/ساختمان (۱۰٪),
-    5/کشاورزی (۵٪),
-    5/سایر (۵٪)
+    35/\rl{نیروگاه‌ها (۳۵٪)},
+    25/\rl{صنایع (۲۵٪)},
+    20/\rl{حمل‌ونقل (۲۰٪)},
+    10/\rl{ساختمان (۱۰٪)},
+    5/\rl{کشاورزی (۵٪)},
+    5/\rl{سایر (۵٪)}
 }
 \end{tikzpicture}
-\captionof{figure}{سهم بخش‌های مختلف از انتشار گازهای گلخانه‌ای}
-\label{fig:emission-sources}
-\end{center}
+\caption{سهم بخش‌های مختلف از انتشار گازهای گلخانه‌ای}
+\end{figure}
 
 \subsection{اهداف کاهش انتشار}
 
@@ -842,60 +824,63 @@
 \centering
 \caption{اهداف کاهش انتشار گازهای گلخانه‌ای}
 \label{tab:emission-targets}
-\begin{tabular}{>{\columncolor{green!8}}l c c c c}
+\begin{tabularx}{\textwidth}{Y C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm}}
 \toprule
-\rowcolor{green!25}
-\textbf{شاخص} & \textbf{۱۴۰۳} & \textbf{سال ۵} & \textbf{سال ۱۵} & \textbf{سال ۲۵} \\
+\headmark شاخص تحول & \headmark ۱۴۰۳ & \headmark سال ۵ & \headmark سال ۱۵ & \headmark سال ۲۵ \\
 \midrule
 انتشار کل (میلیون تن) & ۷۵۰ & ۷۰۰ & ۵۵۰ & ۳۵۰ \\
-\rowcolor{gray!10}
+\rowcolor{goldlight}
 انتشار سرانه (تن) & ۸.۵ & ۷.۵ & ۵.۵ & ۳.۵ \\
-سهم تجدیدپذیر در برق & ۸٪ & ۲۰٪ & ۵۰٪ & ۸۰٪ \\
-\rowcolor{gray!10}
-خودروهای برقی (سهم فروش) & ۱٪ & ۱۵٪ & ۶۰٪ & ۹۵٪ \\
-کارایی انرژی (بهبود) & مبدأ & +۱۵٪ & +۴۰٪ & +۶۰٪ \\
+سهم تجدیدپذیر & ۸٪ & ۲۰٪ & ۵۰٪ & ۸۰٪ \\
+\rowcolor{goldlight}
+خودرو برقی (سهم) & ۱٪ & ۱۵٪ & ۶۰٪ & ۹۵٪ \\
+کارایی انرژی & مبدأ & +۱۵٪ & +۴۰٪ & +۶۰٪ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}
 \begin{axis}[
     width=13cm,
-    height=7cm,
-    xlabel={سال},
-    ylabel={انتشار CO2 (میلیون تن/سال)},
+    height=8cm,
+    xlabel={\rl{سال}},
+    ylabel={\rl{انتشار CO2 (میلیون تن)}},
     xmin=0, xmax=26,
-    ymin=200, ymax=800,
+    ymin=200, ymax=1150,
     xtick={0,5,10,15,20,25},
-    xticklabels={۱۴۰۳, سال ۵, سال ۱۰, سال ۱۵, سال ۲۰, سال ۲۵},
-    legend pos=north east,
+    xticklabels={\rl{۱۴۰۳}, \rl{سال ۵}, \rl{سال ۱۰}, \rl{سال ۱۵}, \rl{سال ۲۰}, \rl{سال ۲۵}},
+    legend style={at={(0.5,-0.2)}, anchor=north, legend columns=2, font=\tiny},
     grid=major,
-    grid style={dashed, gray!30}
+    axis line style={bleurepublique},
+    tick style={bleurepublique},
+    label style={font=\tiny\bfseries, color=bleurepublique}
 ]
+
 % مسیر بدون اقدام
-\addplot[color=red, mark=triangle*, dashed, thick] coordinates {
+\addplot[color=rougerevolution, mark=triangle*, dashed, thick] coordinates {
     (0, 750) (5, 820) (10, 900) (15, 980) (20, 1050) (25, 1100)
 };
-% مسیر با اقدام
-\addplot[color=green!70!black, mark=*, thick, line width=1.5pt] coordinates {
+% مسیر با برنامه پیشنهادی
+\addplot[color=bleurepublique, mark=*, ultra thick] coordinates {
     (0, 750) (5, 700) (10, 620) (15, 550) (20, 450) (25, 350)
 };
-% خط هدف پاریس
-\addplot[color=blue, dashed, thick] coordinates {
+% هدف پاریس
+\addplot[color=goldphoenix, dashed, thick] coordinates {
     (0, 750) (25, 375)
 };
 
-\legend{بدون اقدام, با برنامه پیشنهادی, هدف توافق پاریس}
+\legend{\rl{بدون اقدام}, \rl{برنامه پیشنهادی}, \rl{هدف توافق پاریس}}
 
-% ناحیه سبز
-\fill[green!20, opacity=0.3] (axis cs:20,200) rectangle (axis cs:25,400);
-\node[font=\scriptsize, green!70!black] at (axis cs:22.5,300) {هدف};
+% ناحیه هدف
+\fill[goldlight, opacity=0.3] (axis cs:20,200) rectangle (axis cs:25,500);
+\node[font=\tiny\bfseries, color=goldphoenix] at (axis cs:22.5,300) {\rl{محدوده هدف}};
+
 \end{axis}
 \end{tikzpicture}
-\captionof{figure}{مسیر کاهش انتشار گازهای گلخانه‌ای}
-\label{fig:emission-pathway}
-\end{center}
+\caption{مسیر پیش‌بینی شده کاهش انتشار گازهای گلخانه‌ای}
+\end{figure}
 
 \subsection{برنامه انتقال انرژی}
 
@@ -903,22 +888,19 @@
 \centering
 \caption{برنامه جامع انتقال انرژی}
 \label{tab:energy-transition-plan}
-\begin{tabular}{>{\columncolor{blue!8}}l p{4cm} c p{3.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{2.5cm} C{2.5cm}}
 \toprule
-\rowcolor{blue!25}
-\textbf{بخش} & \textbf{اقدام} & \textbf{سرمایه‌گذاری} & \textbf{نتیجه} \\
+\headmark بخش تحول & \headmark اقدامات کلیدی استراتژیک & \headmark سرمایه & \headmark نتیجه ۲۵ \\
 \midrule
-برق & ۶۰ گیگاوات خورشیدی و بادی & ۸۰ میلیارد \$ & ۵۰٪ برق تجدیدپذیر \\
-\rowcolor{gray!10}
-حمل‌ونقل & برقی‌سازی، حمل‌ونقل عمومی & ۴۰ میلیارد \$ & ۵۰٪ کاهش انتشار \\
-صنعت & کارایی انرژی، هیدروژن سبز & ۳۰ میلیارد \$ & ۳۰٪ کاهش انتشار \\
-\rowcolor{gray!10}
-ساختمان & عایق‌بندی، گرمایش/سرمایش نوین & ۲۰ میلیارد \$ & ۵۰٪ کاهش مصرف \\
-متان & کاهش سوختن و نشت گاز & ۱۰ میلیارد \$ & ۵۰٪ کاهش متان \\
-\midrule
-\textbf{مجموع} & & \textbf{۱۸۰ میلیارد \$} & ۵۰٪ کاهش کل انتشار \\
+نیروگاه‌ها & احداث ۶۰ گیگاوات خورشیدی و بادی & ۸۰ \$B & ۸۰٪ تجدیدپذیر \\
+\rowcolor{goldlight}
+حمل‌ونقل & برقی‌سازی و توسعه مترو/قطارهای سریع & ۴۰ \$B & ۵۰٪ کاهش آلاینده \\
+صنایع بزرگ & هیدروژن سبز و کارایی انرژی & ۳۰ \$B & ۴۰٪ صرفه‌جویی \\
+\rowcolor{goldlight}
+ساختمان‌ها & عایق‌بندی و سیستم‌های نوین & ۲۰ \$B & ۳۰٪ کاهش تقاضا \\
+نشت متان & توقف کامل فلرینگ و نشت‌های گازی & ۱۰ \$B & ۵۰٪ کاهش متان \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -932,42 +914,37 @@
 \centering
 \caption{برنامه جامع کاهش آلودگی هوای شهرها}
 \label{tab:clean-air-program}
-\begin{tabular}{>{\columncolor{cyan!8}}r p{4.5cm} p{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{2.5cm}}
 \toprule
-\rowcolor{cyan!25}
-\textbf{منبع آلودگی} & \textbf{اقدامات} & \textbf{هدف کمّی} \\
+\headmark منبع آلاینده & \headmark اقدامات کلیدی تحولی & \headmark هدف کاهش \\
 \midrule
-خودروها & از رده خارج کردن ۵ میلیون خودروی فرسوده، استانداردهای یورو ۶ & ۵۰٪ کاهش آلاینده‌ها \\
-\rowcolor{gray!10}
-موتورسیکلت & برقی‌سازی ۳ میلیون موتور & ۸۰٪ کاهش \\
-صنایع & فیلتر اجباری، انتقال خارج شهر & ۷۰٪ کاهش \\
-\rowcolor{gray!10}
-نیروگاه‌ها & گازسوز کردن، فیلتر، انتقال & ۶۰٪ کاهش \\
-ساختمان‌ها & بخاری‌های استاندارد، گاز به جای مازوت & ۵۰٪ کاهش \\
-\rowcolor{gray!10}
-گرد و غبار & فضای سبز، آب‌پاشی، کمربند سبز & ۴۰٪ کاهش \\
+خودروها & خروج ۵ میلیون فرسوده و استاندارد یورو ۶ & ۵۰٪ \\
+\rowcolor{goldlight}
+موتورسیکلت & برقی‌سازی کامل ناوگان در کلان‌شهرها & ۸۰٪ \\
+صنایع و نیروگاه & فیلتراسیون اجباری و سوخت پاک & ۶۰٪ \\
+\rowcolor{goldlight}
+ساختمان‌ها & نوسازی سیستم‌های گرمایشی و عایق & ۳۰٪ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{table}[htbp]
 \centering
-\caption{اهداف کیفیت هوای کلان‌شهرها}
+\caption{اهداف کیفیت هوای کلان‌شهرها (PM2.5)}
 \label{tab:air-quality-targets}
-\begin{tabular}{>{\columncolor{purple!8}}l c c c c}
+\begin{tabularx}{\textwidth}{R{2.5cm} C{2cm} C{2cm} C{2cm} C{2cm}}
 \toprule
-\rowcolor{purple!25}
-\textbf{شهر} & \textbf{PM2.5 فعلی} & \textbf{هدف س۵} & \textbf{هدف س۱۰} & \textbf{WHO} \\
+\headmark کلان‌شهر & \headmark ۱۴۰۳ & \headmark سال ۵ & \headmark سال ۱۰ & \headmark WHO \\
 \midrule
-تهران & ۳۵ & ۲۰ & ۱۰ & ۵ \\
-\rowcolor{gray!10}
 اهواز & ۸۰ & ۴۰ & ۲۰ & ۵ \\
-تبریز & ۲۸ & ۱۵ & ۸ & ۵ \\
-\rowcolor{gray!10}
+\rowcolor{goldlight}
+تهران & ۳۵ & ۲۰ & ۱۰ & ۵ \\
 اصفهان & ۳۲ & ۱۸ & ۱۰ & ۵ \\
+\rowcolor{goldlight}
+تبریز & ۲۸ & ۱۵ & ۸ & ۵ \\
 مشهد & ۲۵ & ۱۵ & ۸ & ۵ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{olgoobox}
@@ -992,46 +969,41 @@
 
 \begin{table}[htbp]
 \centering
-\caption{تنوع زیستی ایران}
+\caption{تنوع زیستی و گونه‌های در خطر ایران}
 \label{tab:biodiversity}
-\begin{tabular}{>{\columncolor{green!8}}l c c p{4.5cm}}
+\begin{tabularx}{\textwidth}{R{2.5cm} C{2cm} C{2cm} Y}
 \toprule
-\rowcolor{green!25}
-\textbf{گروه} & \textbf{تعداد گونه} & \textbf{بومی ایران} & \textbf{گونه‌های در خطر} \\
+\headmark گروه گونه‌ها & \headmark تعداد گونه & \headmark بومی ایران & \headmark نمونه گونه در خطر \\
 \midrule
-پستانداران & ۱۹۵ & ۱۲ & یوزپلنگ آسیایی (کمتر از ۵۰) \\
-\rowcolor{gray!10}
-پرندگان & ۵۲۷ & ۵ & میش‌مرغ، هوبره \\
+پستانداران & ۱۹۵ & ۱۲ & یوزپلنگ آسیایی \\
+\rowcolor{goldlight}
+پرندگان & ۵۲۷ & ۵ & میش‌مرغ و هوبره \\
 خزندگان & ۲۴۰ & ۵۵ & لاک‌پشت‌های دریایی \\
-\rowcolor{gray!10}
-ماهیان & ۲۲۰ & ۶۰ & ماهیان خاویاری خزر \\
-گیاهان & ۸,۰۰۰+ & ۱,۷۰۰ & گونه‌های دارویی \\
+\rowcolor{goldlight}
+ماهیان & ۲۲۰ & ۶۰ & ماهیان خاویاری \\
+گیاهان & ۸,۰۰۰+ & ۱,۷۰۰ & گونه‌های نادر دارویی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{برنامه حفاظت از حیات‌وحش}
 
 \begin{table}[htbp]
 \centering
-\caption{برنامه حفاظت از تنوع زیستی}
+\caption{برنامه جامع حفاظت از تنوع زیستی}
 \label{tab:wildlife-protection}
-\begin{tabular}{>{\columncolor{teal!8}}r p{5cm} c}
+\begin{tabularx}{\textwidth}{R{3.5cm} Y C{3cm}}
 \toprule
-\rowcolor{teal!25}
-\textbf{اقدام} & \textbf{توضیح} & \textbf{هدف} \\
+\headmark محور حفاظتی & \headmark شرح پروژه کلیدی & \headmark هدف ۲۵ ساله \\
 \midrule
-گسترش مناطق حفاظت‌شده & از ۱۰٪ به ۱۸٪ مساحت کشور & ۱۵ میلیون هکتار جدید \\
-\rowcolor{gray!10}
-کریدورهای حیات‌وحش & اتصال زیستگاه‌ها & ۲۰ کریدور اصلی \\
-مبارزه با شکار غیرمجاز & محیط‌بانی قوی، جریمه سنگین & ۸۰٪ کاهش شکار \\
-\rowcolor{gray!10}
-برنامه نجات یوزپلنگ & تکثیر در اسارت، حفاظت زیستگاه & افزایش به ۲۰۰ قلاده \\
-حفاظت دریایی & مناطق حفاظت‌شده دریایی & ۱۰٪ آب‌های ایران \\
-\rowcolor{gray!10}
-احیای گونه‌ها & برنامه بازگرداندن گونه‌های منقرض محلی & شیر ایرانی، گورخر \\
+مناطق حفاظت‌شده & ارتقای مساحت از ۱۰٪ به ۱۸٪ & ۱۵ M هکتار جدید \\
+\rowcolor{goldlight}
+کریدور حیات‌وحش & اتصال جزایر زیستگاهی به هم & ۲۰ کریدور امن \\
+مبارزه با شکار & محیط‌بانی هوشمند و پهپادی & ۸۰٪ کاهش تخلف \\
+\rowcolor{goldlight}
+احیای گونه‌ها & نجات یوزپلنگ و شیر ایرانی & پایداری جمعیت \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -1077,26 +1049,21 @@
 
 \begin{table}[htbp]
 \centering
-\caption{بازارهای جدید اقتصاد سبز ایران}
+\caption{بازارهای نوین در اقتصاد سبز ایران}
 \label{tab:green-markets}
-\begin{tabular}{>{\columncolor{blue!8}}l c c p{4cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{2.5cm} C{2.5cm} Y}
 \toprule
-\rowcolor{blue!25}
-\textbf{بازار} & \textbf{اندازه فعلی} & \textbf{هدف س۱۰} & \textbf{مزیت ایران} \\
+\headmark حوزه بازار & \headmark فعلی (\$B) & \headmark هدف س۱۰ & \headmark مزیت رقابتی \\
 \midrule
-صادرات برق پاک & ۰.۵ میلیارد \$ & ۱۰ میلیارد \$ & آفتاب فراوان، موقعیت \\
-\rowcolor{gray!10}
-تجهیزات انرژی نو & ۰.۲ میلیارد \$ & ۵ میلیارد \$ & صنعت موجود \\
-هیدروژن سبز & ۰ & ۵ میلیارد \$ & انرژی ارزان \\
-\rowcolor{gray!10}
-گردشگری اکو & ۱ میلیارد \$ & ۱۰ میلیارد \$ & تنوع طبیعی \\
-فناوری آب & ۰.۵ میلیارد \$ & ۳ میلیارد \$ & تجربه بحران \\
-\rowcolor{gray!10}
-محصولات ارگانیک & ۰.۳ میلیارد \$ & ۳ میلیارد \$ & کشاورزی سنتی \\
-\midrule
-\textbf{مجموع بازار سبز} & \textbf{۲.۵ میلیارد \$} & \textbf{۳۶ میلیارد \$} & \\
+صادرات برق پاک & ۰.۵ & ۱۰ & تابش بالا و موقعیت منطقه‌ای \\
+\rowcolor{goldlight}
+هیدروژن سبز & ۰ & ۵ & دسترسی به انرژی و آب دریا \\
+گردشگری اکو & ۱.۰ & ۱۰ & تنوع اقلیمی چهارفصل \\
+\rowcolor{goldlight}
+محصولات ارگانیک & ۰.۳ & ۳ & سلامت‌محوری و زمین مستعد \\
+فناوری‌های آب & ۰.۵ & ۳ & تجربه انباشته در مدیریت بحران \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -1125,44 +1092,40 @@
 \centering
 \caption{ساختار نوین حکمرانی زیست‌محیطی}
 \label{tab:env-governance-structure}
-\begin{tabular}{>{\columncolor{green!8}}l p{4.5cm} p{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} Y C{3cm}}
 \toprule
-\rowcolor{green!25}
-\textbf{نهاد} & \textbf{وظیفه} & \textbf{ویژگی کلیدی} \\
+\headmark نهاد پیشنهادی & \headmark وظایف استراتژیک & \headmark ویژگی کلیدی \\
 \midrule
-وزارت محیط زیست & سیاستگذاری، اجرا، نظارت & وزیر در کابینه، بودجه ۱٪+ \\
-\rowcolor{gray!10}
-آژانس حفاظت محیط زیست & تنظیم‌گری، صدور مجوز، جریمه & مستقل، فنی، غیرسیاسی \\
-دادگاه محیط زیست & رسیدگی به جرایم زیست‌محیطی & قضات متخصص، مجازات سنگین \\
-\rowcolor{gray!10}
-صندوق ملی محیط زیست & تأمین مالی پروژه‌ها & ۵ میلیارد دلار سرمایه اولیه \\
-نیروی محیط‌بانی & حفاظت میدانی & ۲۰,۰۰۰ محیط‌بان (از ۵,۰۰۰ فعلی) \\
+وزارت محیط زیست & سیاستگذاری کلان و مدیریت اجرا & وزیر در کابینه دولت \\
+\rowcolor{goldlight}
+آژانس حفاظت & تنظیم‌گری و صدور مجوزها & مستقل و فنی \\
+دادگاه محیط زیست & رسیدگی به جرایم و تخلفات & قضات متخصص \\
+\rowcolor{goldlight}
+صندوق ملی سبز & تأمین مالی پروژه‌های پایدار & بودجه اختصاصی \\
+نیروی محیط‌بانی & حفاظت فیزیکی از عرصه‌ها & تجهیزات پیشرفته \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{حقوق زیست‌محیطی در قانون اساسی}
 
 \begin{table}[htbp]
 \centering
-\caption{حقوق زیست‌محیطی پیشنهادی برای قانون اساسی}
+\caption{حقوق زیست‌محیطی در میثاق ملی نوین}
 \label{tab:env-rights}
-\begin{tabular}{>{\columncolor{teal!8}}r p{9cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y}
 \toprule
-\rowcolor{teal!25}
-\textbf{حق} & \textbf{متن پیشنهادی} \\
+\headmark حق بنیادین & \headmark متن پیشنهادی برای قانون اساسی \\
 \midrule
-حق محیط زیست سالم & «هر شهروند حق زندگی در محیط زیست سالم را دارد.» \\
-\rowcolor{gray!10}
-حق آب پاک & «دسترسی به آب آشامیدنی سالم و کافی حق بنیادین است.» \\
-حق هوای پاک & «دولت موظف به تأمین هوای پاک در شهرهاست.» \\
-\rowcolor{gray!10}
-حق اطلاع‌رسانی & «شهروندان حق دسترسی به داده‌های زیست‌محیطی را دارند.» \\
-حق نسل‌های آینده & «دولت موظف به حفظ منابع طبیعی برای نسل‌های آینده است.» \\
-\rowcolor{gray!10}
-حق شکایت & «هر شهروند حق شکایت از تخریب محیط زیست را دارد.» \\
+محیط زیست سالم & هر شهروند حق زندگی در محیطی سالم و پایدار را دارد. \\
+\rowcolor{goldlight}
+آب و حیات & دسترسی به آب کافی و سالم حق غیرقابل سلب است. \\
+اطلاع‌رسانی & شفافیت کامل داده‌های زیست‌محیطی الزامی است. \\
+\rowcolor{goldlight}
+نسل‌های آینده & دولت ضامن حفظ امانت منابع برای آیندگان است. \\
+عدالت قضایی & هرگونه تخریب محیط زیست قابل پیگرد در دادگاه است. \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -1176,42 +1139,38 @@
 \centering
 \caption{تعهدات بین‌المللی زیست‌محیطی ایران}
 \label{tab:env-international}
-\begin{tabular}{>{\columncolor{blue!8}}l p{4cm} p{5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Y}
 \toprule
-\rowcolor{blue!25}
-\textbf{توافق} & \textbf{وضعیت فعلی} & \textbf{اقدام پیشنهادی} \\
+\headmark توافق‌نامه & \headmark موضوع کلیدی & \headmark هدف استراتژیک \\
 \midrule
-توافق پاریس (اقلیم) & امضا، بدون اجرای جدی & تصویب مجلس، تعهد ۵۰٪ کاهش \\
-\rowcolor{gray!10}
-کنوانسیون تنوع زیستی & عضو & اجرای کامل، گزارش‌دهی \\
-کنوانسیون رامسر (تالاب‌ها) & عضو مؤسس & احیای ۲۵ تالاب \\
-\rowcolor{gray!10}
-کنوانسیون بیابان‌زدایی & عضو & برنامه ملی مبارزه \\
-پروتکل مونترال (اوزون) & عضو & تکمیل حذف CFCs \\
+توافق پاریس & تغییرات اقلیمی & کاهش ۵۰٪ کربن تا سال ۲۵ \\
+\rowcolor{goldlight}
+کنوانسیون رامسر & حفاظت از تالاب‌ها & احیای کامل تالاب‌های بحرانی \\
+تنوع زیستی & صیانت از گونه‌ها & اتمام پدیده انقراض بومی \\
+\rowcolor{goldlight}
+بیابان‌زدایی & مهار کویرزایی & احیای ۱۰٪ اراضی تخریب‌شده \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{همکاری منطقه‌ای آب}
 
 \begin{table}[htbp]
 \centering
-\caption{توافقات آبی منطقه‌ای}
+\caption{دیپلماسی آبی و توافقات منطقه‌ای}
 \label{tab:water-agreements}
-\begin{tabular}{>{\columncolor{cyan!8}}l l p{6cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{3cm} Y}
 \toprule
-\rowcolor{cyan!25}
-\textbf{رودخانه/حوضه} & \textbf{کشورهای شریک} & \textbf{موضوع مذاکره} \\
+\headmark حوضه مرزی & \headmark همسایگان شریک & \headmark محور اصلی مذاکرات \\
 \midrule
-هیرمند & افغانستان & حقابه ایران، معاهده ۱۹۷۳ \\
-\rowcolor{gray!10}
-ارس & ترکیه، ارمنستان، آذربایجان & مدیریت مشترک، کیفیت آب \\
-اروندرود & عراق & حقابه، کشتیرانی \\
-\rowcolor{gray!10}
-دجله و فرات (غیرمستقیم) & ترکیه، عراق، سوریه & تأثیر بر هورالعظیم \\
-خزر & روسیه، قزاقستان، ترکمنستان، آذربایجان & رژیم حقوقی، حفاظت \\
+هیرمند و هریرود & افغانستان & تأمین حقابه قانونی پایدار \\
+\rowcolor{goldlight}
+رودخانه ارس & ترکیه و آذربایجان & مدیریت یکپارچه و کیفیت آب \\
+اروندرود & عراق & پاکسازی و حقابه تالاب‌ها \\
+\rowcolor{goldlight}
+دریای خزر & کشورهای ساحلی & حفظ اکوسیستم و رژیم حقوقی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -1221,31 +1180,21 @@
 
 \begin{table}[htbp]
 \centering
-\caption{تقویم اجرای برنامه‌های زیست‌محیطی}
+\caption{نقاط عطف اجرای برنامه‌های زیست‌محیطی}
 \label{tab:env-timeline}
-\begin{tabular}{>{\columncolor{orange!8}}c p{4.5cm} p{5cm}}
+\begin{tabularx}{\textwidth}{C{1.5cm} R{4.5cm} Y}
 \toprule
-\rowcolor{orange!25}
-\textbf{زمان} & \textbf{اقدام کلیدی} & \textbf{شاخص موفقیت} \\
+\headmark سال & \headmark رویداد کلیدی & \headmark شاخص موفقیت استراتژیک \\
 \midrule
-ماه ۱-۶ & اعلام وضعیت اضطراری آب و محیط زیست & تصویب قانون اضطراری \\
-\rowcolor{gray!10}
-سال ۱ & تشکیل وزارت محیط زیست & ساختار جدید فعال \\
-سال ۱-۲ & شروع پروژه‌های شیرین‌سازی & کلنگ ۵ پروژه بزرگ \\
-\rowcolor{gray!10}
-سال ۲ & قیمت‌گذاری واقعی آب کشاورزی (فاز ۱) & ۲۰٪ افزایش قیمت \\
-سال ۳ & راه‌اندازی سامانه ملی پایش آب & داده لحظه‌ای همه حوضه‌ها \\
-\rowcolor{gray!10}
-سال ۵ & ارزیابی میان‌دوره‌ای & کاهش ۲۰٪ مصرف آب \\
-سال ۵ & ۲۰٪ برق از تجدیدپذیر & ظرفیت ۲۰ گیگاوات \\
-\rowcolor{gray!10}
-سال ۱۰ & تعادل نسبی آب & کسری به ۵ میلیارد م۳ \\
-سال ۱۰ & ۵۰٪ برق از تجدیدپذیر & ظرفیت ۶۰ گیگاوات \\
-\rowcolor{gray!10}
-سال ۱۵ & تعادل کامل آب & کسری صفر \\
-سال ۱۵ & احیای ارومیه به ۵۰٪ ظرفیت & ۱۵ میلیارد م۳ حجم \\
+۱ & تشکیل وزارت محیط زیست & استقرار کامل ساختار نوین \\
+\rowcolor{goldlight}
+۲ & فاز اول اصلاح قیمت آب & کاهش محسوس اتلاف منابع \\
+۵ & تولید ۲۰ گیگاوات برق سبز & کاهش وابستگی به فسیلی \\
+\rowcolor{goldlight}
+۱۰ & احیای تالاب‌های اصلی & بازگشت حیات به زیست‌بوم‌ها \\
+۱۵ & تعادل کامل ترازنامه آب & کسری صفر در منابع زیرزمینی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -1255,31 +1204,23 @@
 
 \begin{table}[htbp]
 \centering
-\caption{شاخص‌های کلیدی پایش زیست‌محیطی}
+\caption{شاخص‌های کلیدی پایش زیست‌محیطی (KPIs)}
 \label{tab:env-kpis}
-\small
-\begin{tabular}{>{\columncolor{green!8}}r l c c c c}
+\begin{tabularx}{\textwidth}{Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
 \toprule
-\rowcolor{green!25}
-& \textbf{شاخص} & \textbf{۱۴۰۳} & \textbf{س۵} & \textbf{س۱۰} & \textbf{س۱۵} \\
+\headmark شاخص پایش & \headmark ۱۴۰۳ & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
 \midrule
-۱ & کسری آب (میلیارد م۳) & ۱۸ & ۱۲ & ۵ & ۰ \\
-\rowcolor{gray!10}
-۲ & راندمان آبیاری (٪) & ۳۸ & ۵۵ & ۷۰ & ۸۵ \\
-۳ & حجم دریاچه ارومیه (میلیارد م۳) & ۳ & ۶ & ۱۰ & ۱۵ \\
-\rowcolor{gray!10}
-۴ & PM2.5 تهران (میکروگرم) & ۳۵ & ۲۰ & ۱۲ & ۸ \\
-۵ & سهم تجدیدپذیر در برق (٪) & ۸ & ۲۰ & ۵۰ & ۷۰ \\
-\rowcolor{gray!10}
-۶ & انتشار CO2 (میلیون تن) & ۷۵۰ & ۷۰۰ & ۵۵۰ & ۴۰۰ \\
-۷ & پوشش جنگلی (٪) & ۷ & ۸ & ۱۰ & ۱۲ \\
-\rowcolor{gray!10}
-۸ & مناطق حفاظت‌شده (٪ مساحت) & ۱۰ & ۱۲ & ۱۵ & ۱۸ \\
-۹ & بازیافت پسماند (٪) & ۸ & ۲۵ & ۴۵ & ۶۰ \\
-\rowcolor{gray!10}
-۱۰ & شاخص EPI (از ۱۰۰) & ۴۰ & ۵۰ & ۶۵ & ۷۵ \\
+کسری آب (میلیارد م۳) & ۱۸ & ۱۲ & ۵ & ۰ \\
+\rowcolor{goldlight}
+راندمان آبیاری (٪) & ۳۸ & ۵۵ & ۷۰ & ۸۵ \\
+حجم دریاچه ارومیه ($B m^{3}$) & ۳ & ۶ & ۱۰ & ۱۵ \\
+\rowcolor{goldlight}
+سهم برق تجدیدپذیر (٪) & ۸ & ۲۰ & ۵۰ & ۷۰ \\
+انتشار کربن (میلیون تن) & ۷۵۰ & ۷۰۰ & ۵۵۰ & ۴۰۰ \\
+\rowcolor{goldlight}
+مناطق حفاظت‌شده (٪) & ۱۰ & ۱۲ & ۱۵ & ۱۸ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════

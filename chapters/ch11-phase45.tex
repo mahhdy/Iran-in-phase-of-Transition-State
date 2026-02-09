@@ -62,52 +62,43 @@
 
 \subsection{چشم‌انداز فاز چهارم}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=2.5cm,
+    scale=0.85,
+    transform shape,
     box/.style={
         rectangle,
-        rounded corners=8pt,
-        draw=blue!70,
-        fill=blue!10,
-        thick,
+        rounded corners=5pt,
         minimum width=3.5cm,
         minimum height=1.5cm,
-        align=center,
-        font=\small
+        text centered,
+        font=\small\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
     },
-    arrow/.style={
-        ->,
-        thick,
-        >=stealth,
-        draw=blue!60
-    }
+    arrow/.style={->, >=Stealth, thick, color=goldphoenix}
 ]
-% عنوان اصلی
-\node[rectangle, rounded corners=10pt, draw=green!70!black, fill=green!15, 
-      thick, minimum width=12cm, minimum height=1.2cm] (title) 
-    {\large\textbf{چشم‌انداز فاز چهارم: ایران بالغ دموکراتیک}};
+
+% عنوان
+\node[rectangle, rounded corners=8pt, draw=goldphoenix, fill=goldphoenix, text=white,
+      minimum width=12cm, minimum height=1cm, font=\large\bfseries] (title) at (0,6) {\rl{چشم‌انداز فاز چهارم: ایران بالغ دموکراتیک}};
 
 % ردیف اول
-\node[box, below=1.5cm of title, xshift=-4cm] (n1) 
-    {\textbf{نهادها}\\ \scriptsize پختگی و کارآمدی};
-\node[box, below=1.5cm of title] (n2) 
-    {\textbf{فرهنگ}\\ \scriptsize درونی‌سازی ارزش‌ها};
-\node[box, below=1.5cm of title, xshift=4cm] (n3) 
-    {\textbf{اقتصاد}\\ \scriptsize دانش‌بنیان و متنوع};
+\node[box] (n1) at (-4,3.5) {\rl{نهادها}\\\rl{\tiny پختگی و کارآمدی}};
+\node[box] (n2) at (0,3.5) {\rl{فرهنگ}\\\rl{\tiny درونی‌سازی ارزش‌ها}};
+\node[box] (n3) at (4,3.5) {\rl{اقتصاد}\\\rl{\tiny دانش‌بنیان و متنوع}};
 
 % ردیف دوم
-\node[box, below=1.5cm of n1, xshift=2cm, fill=yellow!15, draw=yellow!70!black] (n4) 
-    {\textbf{منطقه}\\ \scriptsize قدرت متوسط مؤثر};
-\node[box, below=1.5cm of n3, xshift=-2cm, fill=yellow!15, draw=yellow!70!black] (n5) 
-    {\textbf{جهان}\\ \scriptsize عضو محترم جامعه بین‌الملل};
+\node[box] (n4) at (-2,1) {\rl{منطقه}\\\rl{\tiny قدرت متوسط مؤثر}};
+\node[box] (n5) at (2,1) {\rl{جهان}\\\rl{\tiny عضو محترم جامعه بین‌الملل}};
 
-% هدف نهایی
-\node[rectangle, rounded corners=10pt, draw=red!70, fill=red!10, 
-      thick, minimum width=8cm, minimum height=1cm, below=1.5cm of n4, xshift=2cm] (goal) 
-    {\textbf{هدف}: دموکراسی تثبیت‌شده و برگشت‌ناپذیر};
+% هدف
+\node[rectangle, rounded corners=5pt, draw=goldphoenix, fill=goldlight, text=goldphoenix,
+      minimum width=8cm, minimum height=1cm, font=\bfseries] (goal) at (0,-1.5) {\rl{هدف: دموکراسی تثبیت‌شده و برگشت‌ناپذیر}};
 
-% فلش‌ها
+% اتصالات
 \draw[arrow] (title) -- (n1);
 \draw[arrow] (title) -- (n2);
 \draw[arrow] (title) -- (n3);
@@ -117,8 +108,10 @@
 \draw[arrow] (n3) -- (n5);
 \draw[arrow] (n4) -- (goal);
 \draw[arrow] (n5) -- (goal);
+
 \end{tikzpicture}
-\end{center}
+\caption{چشم‌انداز بلوغ دموکراتیک فاز چهارم}
+\end{figure}
 
 \subsection{ستون اول: نهادینه‌سازی کامل رویه‌ها}
 
@@ -223,48 +216,40 @@
 
 \subsubsection{تحول ساختاری اقتصاد}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=12cm,
-    height=7cm,
+    width=13cm,
+    height=8cm,
     ybar stacked,
-    bar width=20pt,
-    ylabel={درصد تولید ناخالص داخلی},
-    xlabel={سال},
-    ymin=0,
-    ymax=100,
-    xtick={1,2,3,4,5},
-    xticklabels={۱۴۰۳ (مبدأ), سال ۵, سال ۱۰, سال ۱۵, سال ۲۵},
-    legend style={
-        at={(0.5,-0.2)},
-        anchor=north,
-        legend columns=3,
-        font=\small
-    },
-    legend cell align={right},
-    nodes near coords,
-    every node near coord/.append style={font=\tiny},
-    grid=major,
-    grid style={dashed, gray!30}
+    bar width=1.1cm,
+    ylabel={\rl{درصد از GDP}},
+    xlabel={\rl{سال}},
+    ymin=0, ymax=100,
+    xtick=data,
+    xticklabels={\rl{۱۴۰۳}, \rl{سال ۵}, \rl{سال ۱۰}, \rl{سال ۱۵}, \rl{سال ۲۵}},
+    legend style={at={(0.5,-0.2)}, anchor=north, legend columns=2, font=\tiny},
+    axis line style={bleurepublique},
+    tick style={bleurepublique},
+    label style={font=\tiny\bfseries, color=bleurepublique}
 ]
-% نفت و گاز
-\addplot[fill=gray!70, draw=gray!90] coordinates {(1,35) (2,28) (3,20) (4,15) (5,10)};
-% صنعت سنتی
-\addplot[fill=blue!50, draw=blue!70] coordinates {(1,25) (2,24) (3,22) (4,20) (5,18)};
-% خدمات
-\addplot[fill=green!50, draw=green!70] coordinates {(1,30) (2,32) (3,35) (4,37) (5,38)};
-% دانش‌بنیان
-\addplot[fill=orange!60, draw=orange!80] coordinates {(1,5) (2,10) (3,15) (4,20) (5,28)};
-% گردشگری
-\addplot[fill=purple!50, draw=purple!70] coordinates {(1,5) (2,6) (3,8) (4,8) (5,6)};
 
-\legend{نفت و گاز, صنعت سنتی, خدمات, دانش‌بنیان و فناوری, گردشگری}
+% نفت
+\addplot[fill=bleurepublique!80] coordinates {(1,35) (2,28) (3,20) (4,15) (5,10)};
+% خدمات و صنعت
+\addplot[fill=goldphoenix!80] coordinates {(1,55) (2,56) (3,57) (4,57) (5,56)};
+% دانش‌بنیان
+\addplot[fill=bleulight] coordinates {(1,5) (2,10) (3,15) (4,20) (5,28)};
+% گردشگری
+\addplot[fill=goldlight] coordinates {(1,5) (2,6) (3,8) (4,8) (5,6)};
+
+\legend{\rl{نفت و گاز}, \rl{صنعت و خدمات}, \rl{دانش‌بنیان و فناوری}, \rl{گردشگری}}
+
 \end{axis}
 \end{tikzpicture}
-\captionof{figure}{تحول ساختار اقتصادی ایران در افق ۲۵ ساله}
-\label{fig:economic-transformation}
-\end{center}
+\caption{تحول ساختار اقتصادی ایران در افق ۲۵ ساله}
+\end{figure}
 
 \subsubsection{زیست‌بوم نوآوری}
 
@@ -293,42 +278,42 @@
 
 \textbf{حوزه‌های اولویت‌دار فناوری}:
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=1.8cm,
+    scale=0.85,
+    transform shape,
     priority/.style={
         rectangle,
         rounded corners=5pt,
-        draw=#1!70,
-        fill=#1!15,
-        thick,
-        minimum width=3cm,
-        minimum height=1cm,
-        align=center,
-        font=\small
-    }
+        minimum width=3.5cm,
+        minimum height=1.3cm,
+        text centered,
+        font=\small\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
+    },
+    label/.style={font=\tiny\bfseries, color=goldphoenix}
 ]
-% ردیف اول - اولویت یک
-\node[priority=red] (ai) {\textbf{هوش مصنوعی}\\ \scriptsize پردازش زبان فارسی};
-\node[priority=red, left=0.5cm of ai] (bio) {\textbf{زیست‌فناوری}\\ \scriptsize دارو و تجهیزات};
-\node[priority=red, right=0.5cm of ai] (energy) {\textbf{انرژی پاک}\\ \scriptsize خورشیدی و هیدروژن};
 
-% ردیف دوم - اولویت دو
-\node[priority=blue, below=1cm of ai] (water) {\textbf{فناوری آب}\\ \scriptsize شیرین‌سازی و بازیافت};
-\node[priority=blue, left=0.5cm of water] (space) {\textbf{فضایی}\\ \scriptsize ماهواره و سنجش};
-\node[priority=blue, right=0.5cm of water] (nano) {\textbf{نانوفناوری}\\ \scriptsize مواد پیشرفته};
+% ردیف اول
+\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (ai) at (0,0) {\rl{هوش مصنوعی}\\\rl{\tiny پردازش زبان فارسی}};
+\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (bio) at (-4,0) {\rl{زیست‌فناوری}\\\rl{\tiny دارو و تجهیزات}};
+\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (energy) at (4,0) {\rl{انرژی پاک}\\\rl{\tiny خورشیدی و هیدروژن}};
 
-% ردیف سوم - اولویت سه
-\node[priority=green, below=1cm of water] (fintech) {\textbf{فین‌تک}\\ \scriptsize بانکداری دیجیتال};
-\node[priority=green, left=0.5cm of fintech] (agri) {\textbf{کشاورزی هوشمند}\\ \scriptsize کم‌آب‌بر};
-\node[priority=green, right=0.5cm of fintech] (health) {\textbf{سلامت دیجیتال}\\ \scriptsize پزشکی از راه دور};
+% ردیف دوم
+\node[priority] (water) at (0,-2) {\rl{فناوری آب}\\\rl{\tiny بازیافت و تصفیه}};
+\node[priority] (space) at (-4,-2) {\rl{فناوری فضایی}\\\rl{\tiny ماهواره و سنجش}};
+\node[priority] (nano) at (4,-2) {\rl{نانوفناوری}\\\rl{\tiny مواد پیشرفته}};
 
 % برچسب‌ها
-\node[left=1.5cm of bio, font=\footnotesize\bfseries, text=red!70] {اولویت اول};
-\node[left=1.5cm of space, font=\footnotesize\bfseries, text=blue!70] {اولویت دوم};
-\node[left=1.5cm of agri, font=\footnotesize\bfseries, text=green!70!black] {اولویت سوم};
+\node[label] at (-6,0) {\rl{اولویت اول}};
+\node[label] at (-6,-2) {\rl{اولویت دوم}};
+
 \end{tikzpicture}
-\end{center}
+\caption{حوزه‌های اولویت‌دار فناوری در فاز چهارم}
+\end{figure}
 
 \subsubsection{سرمایه انسانی}
 
@@ -375,35 +360,41 @@
 \sourceline{جوزف نای، «قدرت نرم»، ۲۰۰۴}
 \end{naghlbox}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=2cm,
+    scale=0.85,
+    transform shape,
     circle_node/.style={
         circle,
-        draw=#1!70,
-        fill=#1!20,
-        thick,
-        minimum size=2.5cm,
-        align=center,
-        font=\small
-    }
+        draw=bleurepublique,
+        fill=bleulight,
+        minimum size=2.8cm,
+        text centered,
+        font=\small\bfseries,
+        line width=1.5pt
+    },
+    flow/.style={-, thick, bleurepublique!50, dashed}
 ]
+
 % مرکز
-\node[circle_node=blue, minimum size=3cm] (iran) {\textbf{ایران}\\ قدرت متوسط\\ مسئول};
+\node[circle_node, draw=goldphoenix, fill=goldphoenix, text=white, minimum size=3.2cm] (iran) at (0,0) {\rl{ایران}\\\rl{\tiny قدرت متوسط مسئول}};
 
 % اطراف
-\node[circle_node=green, above=1.5cm of iran] (eco) {\textbf{اقتصادی}\\ هاب تجاری};
-\node[circle_node=orange, below=1.5cm of iran] (sec) {\textbf{امنیتی}\\ ثبات‌بخش};
-\node[circle_node=purple, left=1.5cm of iran] (cul) {\textbf{فرهنگی}\\ تمدن‌ساز};
-\node[circle_node=red, right=1.5cm of iran] (dip) {\textbf{دیپلماتیک}\\ میانجی};
+\node[circle_node] (eco) at (0,3.5) {\rl{اقتصادی}\\\rl{\tiny هاب تجاری}};
+\node[circle_node] (sec) at (0,-3.5) {\rl{امنیتی}\\\rl{\tiny ثبات‌بخش}};
+\node[circle_node] (cul) at (-4,0) {\rl{فرهنگی}\\\rl{\tiny تمدن‌ساز}};
+\node[circle_node] (dip) at (4,0) {\rl{دیپلماتیک}\\\rl{\tiny میانجی}};
 
-% خطوط اتصال
-\draw[thick, blue!50, dashed] (iran) -- (eco);
-\draw[thick, blue!50, dashed] (iran) -- (sec);
-\draw[thick, blue!50, dashed] (iran) -- (cul);
-\draw[thick, blue!50, dashed] (iran) -- (dip);
+% اتصالات
+\draw[flow] (iran) -- (eco);
+\draw[flow] (iran) -- (sec);
+\draw[flow] (iran) -- (cul);
+\draw[flow] (iran) -- (dip);
+
 \end{tikzpicture}
-\end{center}
+\caption{نقش‌های راهبردی ایران در جایگاه قدرت متوسط مسئول}
+\end{figure}
 
 \subsubsection{نقش‌های منطقه‌ای ایران}
 
@@ -835,45 +826,48 @@
 
 \subsubsection{بحران آب: راه‌حل نهایی}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}
 \begin{axis}[
     width=13cm,
-    height=7cm,
-    xlabel={سال},
-    ylabel={میلیارد مترمکعب},
+    height=8cm,
+    xlabel={\rl{سال}},
+    ylabel={\rl{میلیارد مترمکعب}},
     xmin=0, xmax=26,
-    ymin=0, ymax=100,
+    ymin=0, ymax=150,
     xtick={0,5,10,15,20,25},
-    xticklabels={۱۴۰۳, سال ۵, سال ۱۰, سال ۱۵, سال ۲۰, سال ۲۵},
-    legend pos=north east,
-    legend style={font=\small},
+    xticklabels={\rl{۱۴۰۳}, \rl{سال ۵}, \rl{سال ۱۰}, \rl{سال ۱۵}, \rl{سال ۲۰}, \rl{سال ۲۵}},
+    legend style={at={(0.5,-0.2)}, anchor=north, legend columns=2, font=\tiny},
     grid=major,
-    grid style={dashed, gray!30}
+    axis line style={bleurepublique},
+    tick style={bleurepublique},
+    label style={font=\tiny\bfseries, color=bleurepublique}
 ]
+
 % عرضه آب
-\addplot[color=blue, mark=*, thick, mark size=3pt, line width=1.5pt] coordinates {
+\addplot[color=bleurepublique, mark=*, ultra thick] coordinates {
     (0, 90) (5, 88) (10, 92) (15, 100) (20, 105) (25, 110)
 };
-% تقاضای آب (سناریوی اصلاح‌شده)
-\addplot[color=green!70!black, mark=square*, thick, mark size=3pt, line width=1.5pt] coordinates {
+% تقاضا (با مدیریت)
+\addplot[color=goldphoenix, mark=square*, ultra thick] coordinates {
     (0, 105) (5, 98) (10, 90) (15, 85) (20, 82) (25, 80)
 };
-% تقاضای آب (بدون اصلاح)
-\addplot[color=red, mark=triangle*, dashed, thick, mark size=3pt] coordinates {
+% تقاضا (بدون مدیریت)
+\addplot[color=bleurepublique!30, mark=triangle*, dashed, thick] coordinates {
     (0, 105) (5, 112) (10, 120) (15, 128) (20, 135) (25, 142)
 };
 
-\legend{عرضه پایدار آب, تقاضا (با مدیریت), تقاضا (بدون مدیریت)}
+\legend{\rl{عرضه پایدار}, \rl{تقاضا (با مدیریت)}, \rl{تقاضا (بدون مدیریت)}}
 
 % ناحیه تعادل
-\fill[green!20, opacity=0.3] (axis cs:15,80) rectangle (axis cs:25,110);
-\node[font=\small] at (axis cs:20,95) {ناحیه تعادل};
+\fill[goldlight, opacity=0.3] (axis cs:12,80) rectangle (axis cs:26,120);
+\node[font=\tiny\bfseries, color=goldphoenix] at (axis cs:20,100) {\rl{ناحیه پایداری آبی}};
+
 \end{axis}
 \end{tikzpicture}
-\captionof{figure}{مسیر دستیابی به تعادل آبی تا سال ۲۵}
-\label{fig:water-balance}
-\end{center}
+\caption{مسیر دستیابی به تعادل آبی تا سال ۲۵}
+\end{figure}
 
 \begin{table}[htbp]
 \centering
@@ -968,44 +962,44 @@
 
 \subsubsection{ایران در نظم جهانی}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=2cm,
+    scale=0.85,
+    transform shape,
     org/.style={
-        ellipse,
-        draw=#1!70,
-        fill=#1!15,
-        thick,
-        minimum width=3.5cm,
+        rectangle,
+        rounded corners=5pt,
+        minimum width=3.2cm,
         minimum height=1.5cm,
-        align=center,
-        font=\small
-    }
+        text centered,
+        font=\tiny\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
+    },
+    flow/.style={-, thick, bleurepublique!50, dashed}
 ]
-% مرکز - ایران
-\node[rectangle, rounded corners=10pt, draw=blue!70, fill=blue!20, 
-      thick, minimum width=3cm, minimum height=1.5cm] (iran) 
-    {\textbf{ایران ۱۴۲۹}\\ قدرت متوسط جهانی};
+
+% مرکز
+\node[rectangle, rounded corners=8pt, draw=goldphoenix, fill=goldphoenix, text=white,
+      minimum width=4cm, minimum height=1.8cm, font=\small\bfseries] (iran) at (0,0) {\rl{ایران ۱۴۲۹}\\\rl{\tiny قدرت متوسط جهانی}};
 
 % سازمان‌ها
-\node[org=green, above left=2cm of iran] (un) {سازمان ملل\\ \scriptsize عضو فعال شورای امنیت؟};
-\node[org=orange, above right=2cm of iran] (wto) {WTO\\ \scriptsize عضو کامل};
-\node[org=purple, below left=2cm of iran] (oecd) {OECD\\ \scriptsize در مسیر عضویت};
-\node[org=teal, below right=2cm of iran] (sco) {شانگهای\\ \scriptsize عضو اصلی};
-\node[org=red, left=3cm of iran] (gulf) {پیمان خلیج فارس\\ \scriptsize بنیان‌گذار};
-\node[org=darkyellow, right=3cm of iran] (ecco) {ECO\\ \scriptsize رهبری منطقه‌ای};
+\node[org] (un) at (-4,2.5) {\rl{سازمان ملل}\\\rl{\tiny عضو فعال حاکمیتی}};
+\node[org] (wto) at (4,2.5) {\rl{WTO}\\\rl{\tiny عضویت کامل و فعال}};
+\node[org] (oecd) at (-4,-2.5) {\rl{OECD}\\\rl{\tiny همسویی با استانداردها}};
+\node[org] (gulf) at (4,-2.5) {\rl{پیمان پارس}\\\rl{\tiny بنیان‌گذار نظم منطقه}};
 
 % اتصالات
-\draw[thick, blue!50] (iran) -- (un);
-\draw[thick, blue!50] (iran) -- (wto);
-\draw[thick, blue!50] (iran) -- (oecd);
-\draw[thick, blue!50] (iran) -- (sco);
-\draw[thick, blue!50] (iran) -- (gulf);
-\draw[thick, blue!50] (iran) -- (ecco);
+\draw[flow] (iran) -- (un);
+\draw[flow] (iran) -- (wto);
+\draw[flow] (iran) -- (oecd);
+\draw[flow] (iran) -- (gulf);
+
 \end{tikzpicture}
-\captionof{figure}{جایگاه ایران در سازمان‌های بین‌المللی تا سال ۲۵}
-\label{fig:iran-international}
-\end{center}
+\caption{جایگاه ایران در سازمان‌های بین‌المللی تا سال ۲۵}
+\end{figure}
 
 \subsubsection{روابط با قدرت‌های بزرگ}
 
@@ -1092,88 +1086,44 @@
 
 \subsection{داشبورد ملی پیشرفت}
 
-\begin{center}
-\begin{tikzpicture}
-% کادر اصلی
-\node[rectangle, rounded corners=10pt, draw=gray!70, fill=gray!5,
-      thick, minimum width=14cm, minimum height=11cm] (dashboard) {};
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    box/.style={
+        rectangle,
+        rounded corners=5pt,
+        minimum width=4cm,
+        minimum height=2.2cm,
+        text centered,
+        font=\small\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
+    },
+    label/.style={font=\tiny\bfseries, color=goldphoenix}
+]
 
-% عنوان
-\node[above=0.2cm of dashboard.north, font=\large\bfseries] 
-    {داشبورد ملی پایش پیشرفت — شاخص‌های کلیدی};
+% کادر داشبورد
+\node[rectangle, rounded corners=10pt, draw=bleurepublique!50, fill=gray!5,
+      minimum width=14cm, minimum height=9cm] (dash) at (0,0) {};
 
 % ردیف اول
-\node[rectangle, rounded corners=5pt, draw=blue!70, fill=blue!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (-4, 3.5) (box1) {
-          \textbf{دموکراسی}\\
-          \small هدف: ۸+/۱۰\\
-          \scriptsize شاخص EIU
-      };
-\node[rectangle, rounded corners=5pt, draw=green!70, fill=green!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (0, 3.5) (box2) {
-          \textbf{توسعه انسانی}\\
-          \small هدف: ۰.۸۷+\\
-          \scriptsize شاخص HDI
-      };
-\node[rectangle, rounded corners=5pt, draw=orange!70, fill=orange!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (4, 3.5) (box3) {
-          \textbf{اقتصاد}\\
-          \small هدف: رتبه ۱۵\\
-          \scriptsize GDP جهانی
-      };
+\node[box] (b1) at (-4.5,2.5) {\rl{دموکراسی (EIU)}\\\rl{\tiny هدف: ۸.۵/۱۰}\\\rl{\tiny وضعیت: کامل}};
+\node[box] (b2) at (0,2.5) {\rl{توسعه انسانی (HDI)}\\\rl{\tiny هدف: ۰.۸۷}\\\rl{\tiny رتبه: استاندارد OECD}};
+\node[box] (b3) at (4.5,2.5) {\rl{ضریب جینی}\\\rl{\tiny هدف: ۰.۳۵}\\\rl{\tiny بازتوزیع عادلانه ثروت}};
 
 % ردیف دوم
-\node[rectangle, rounded corners=5pt, draw=purple!70, fill=purple!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (-4, 0.5) (box4) {
-          \textbf{فساد}\\
-          \small هدف: ۷۰+/۱۰۰\\
-          \scriptsize شاخص CPI
-      };
-\node[rectangle, rounded corners=5pt, draw=teal!70, fill=teal!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (0, 0.5) (box5) {
-          \textbf{محیط‌زیست}\\
-          \small هدف: ۶۰+/۱۰۰\\
-          \scriptsize شاخص EPI
-      };
-\node[rectangle, rounded corners=5pt, draw=red!70, fill=red!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (4, 0.5) (box6) {
-          \textbf{نوآوری}\\
-          \small هدف: رتبه ۲۵\\
-          \scriptsize شاخص GII
-      };
+\node[box] (b4) at (-4.5,-0.5) {\rl{فساد (CPI)}\\\rl{\tiny هدف: ۷۰/۱۰۰}\\\rl{\tiny شفافیت سیستمی}};
+\node[box] (b5) at (0,-0.5) {\rl{محیط‌زیست (EPI)}\\\rl{\tiny هدف: ۶۰/۱۰۰}\\\rl{\tiny پایداری اکولوژیک}};
+\node[box] (b6) at (4.5,-0.5) {\rl{نوآوری (GII)}\\\rl{\tiny رتبه هدف: ۲۵}\\\rl{\tiny اقتصاد دانش‌بنیان}};
 
-% ردیف سوم
-\node[rectangle, rounded corners=5pt, draw=yellow!70!black, fill=yellow!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (-4, -2.5) (box7) {
-          \textbf{برابری}\\
-          \small هدف: ۰.۳۵\\
-          \scriptsize ضریب جینی
-      };
-\node[rectangle, rounded corners=5pt, draw=cyan!70, fill=cyan!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (0, -2.5) (box8) {
-          \textbf{صلح}\\
-          \small هدف: رتبه ۴۰\\
-          \scriptsize شاخص GPI
-      };
-\node[rectangle, rounded corners=5pt, draw=pink!70!black, fill=pink!15,
-      minimum width=4cm, minimum height=2cm, align=center]
-      at (4, -2.5) (box9) {
-          \textbf{شادی}\\
-          \small هدف: ۷+/۱۰\\
-          \scriptsize شاخص WHR
-      };
+\node[below=0.2cm of dash, font=\bfseries, color=bleurepublique] {\rl{داشبورد ملی پایش پیشرفت ایران ۱۴۲۹}};
+
 \end{tikzpicture}
-\captionof{figure}{داشبورد ۹ شاخص کلیدی پیشرفت ملی}
-\label{fig:national-dashboard}
-\end{center}
+\caption{داشبورد شاخص‌های کلیدی پیشرفت ملی در فاز تعالی}
+\end{figure}
 
 \subsection{مسیر حرکت شاخص‌ها}
 
@@ -1321,16 +1271,17 @@
 
 نسل کنونی ایرانیان در نقطه عطفی تاریخی ایستاده است. می‌توانیم مسیر تاریخ را تغییر دهیم — اگر بخواهیم، اگر با هم باشیم، و اگر به آینده ایمان داشته باشیم.
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}
-\node[rectangle, rounded corners=15pt, draw=blue!70, fill=blue!5,
-      thick, minimum width=12cm, minimum height=4cm, align=center] {
-    {\Large\textbf{ایران ۱۴۲۹: یک رؤیای دست‌یافتنی}}\\[0.5cm]
-    {\large آباد | آزاد | سربلند}\\[0.3cm]
-    {\normalsize «وطن ما، مسئولیت ما، آینده ما»}
+\node[rectangle, rounded corners=15pt, draw=goldphoenix, fill=bleulight,
+      thick, minimum width=12cm, minimum height=3.5cm, align=center] {
+    {\Large\textbf{ایران ۱۴۲۹: یک رؤیای دست‌یافتنی}}\\[0.4cm]
+    {\large آباد | آزاد | سربلند}\\[0.2cm]
+    {\normalsize\rl{وطن ما، مسئولیت ما، آینده ما}}
 };
 \end{tikzpicture}
-\end{center}
+\end{figure}
 
 %═══════════════════════════════════════════════════════════════════════════════
 % منابع فصل

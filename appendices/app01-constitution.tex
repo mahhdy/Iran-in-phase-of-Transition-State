@@ -16,25 +16,20 @@
 
 \begin{center}
 \begin{tikzpicture}
-    % کادر اصلی دیباچه
     \node[
-        draw=DemocracyBlue,
+        draw=bleurepublique,
         line width=3pt,
-        fill=DemocracyBlue!5,
+        fill=bleulight,
         rounded corners=15pt,
         inner sep=20pt,
-        text width=14cm,
-        align=justify
+        text width=12cm,
+        align=center
     ] (preamble) {
-        \begin{center}
-            {\Huge\textbf{قانون اساسی}}\\[5pt]
-            {\LARGE\textbf{جمهوری فدرال ایران}}\\[10pt]
-            {\large مصوب مجلس مؤسسان | سال ۱۴۰۵ هجری شمسی}
-        \end{center}
+        {\Huge\rl{\textbf{قانون اساسی}}}\\[0.4cm]
+        {\LARGE\rl{\textbf{جمهوری فدرال ایران}}}\\[0.6cm]
+        {\large \rl{مصوب مجلس مؤسسان | سال ۱۴۰۵ هجری شمسی}}
     };
-    
-    % نمادهای تزئینی
-    \node[above=5pt of preamble, DemocracyBlue] {\Large ★ ★ ★};
+    \node[above=0.2cm of preamble, bleurepublique] {\Large \rl{★ ★ ★}};
 \end{tikzpicture}
 \end{center}
 
@@ -75,142 +70,74 @@
 \subsection{بخش یکم: ماهیت و شکل حکومت}
 
 \begin{center}
-\begin{tikzpicture}
-    % عنوان
-    \node[
-        fill=DemocracyBlue,
-        text=white,
-        font=\large\bfseries,
-        rounded corners=5pt,
-        inner sep=10pt
-    ] at (0,4) {اصول بنیادین نظام (اصول ۱-۱۰)};
-    
-    % ستون اصول
-    \foreach \i/\title/\content in {
-        1/{اصل ۱: ماهیت حکومت}/{جمهوری فدرال دموکراتیک},
-        2/{اصل ۲: منشأ حاکمیت}/{حاکمیت ملی متعلق به مردم},
-        3/{اصل ۳: وحدت ملی}/{تمامیت ارضی و همبستگی ملی},
-        4/{اصل ۴: تفکیک قوا}/{استقلال قوای سه‌گانه},
-        5/{اصل ۵: حاکمیت قانون}/{برتری قانون اساسی}
-    } {
-        \node[
-            draw=DemocracyBlue!60,
-            fill=DemocracyBlue!10,
-            rounded corners=5pt,
-            minimum width=6.5cm,
-            minimum height=1cm,
-            align=center,
-            font=\small\bfseries
-        ] (left\i) at (-4, 3-\i*1.2) {\title};
-        
-        \node[
-            draw=gray!40,
-            fill=gray!5,
-            rounded corners=5pt,
-            minimum width=6.5cm,
-            minimum height=1cm,
-            align=center,
-            font=\small
-        ] (right\i) at (4, 3-\i*1.2) {\content};
-        
-        \draw[->, thick, DemocracyBlue!60] (left\i) -- (right\i);
-    }
+\begin{tikzpicture}[
+    scale=0.9,
+    transform shape,
+    box/.style={
+        rectangle,
+        rounded corners=8pt,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=5.5cm,
+        minimum height=1.2cm,
+        text centered,
+        font=\small\bfseries
+    },
+    content/.style={
+        rectangle,
+        rounded corners=8pt,
+        draw=goldphoenix!50,
+        fill=goldlight,
+        line width=1pt,
+        minimum width=5.5cm,
+        minimum height=1.2cm,
+        text centered,
+        font=\small
+    },
+    arrow/.style={->, ultra thick, bleurepublique!40, >=stealth}
+]
+\node[box] (l1) at (-3.5, 4.5) {\rl{اصل ۱: ماهیت حکومت}};
+\node[content] (r1) at (3.5, 4.5) {\rl{جمهوری فدرال دموکراتیک}};
+
+\node[box] (l2) at (-3.5, 3.0) {\rl{اصل ۲: منشأ حاکمیت}};
+\node[content] (r2) at (3.5, 3.0) {\rl{حاکمیت ملی متعلق به مردم}};
+
+\node[box] (l3) at (-3.5, 1.5) {\rl{اصل ۳: وحدت ملی}};
+\node[content] (r3) at (3.5, 1.5) {\rl{تمامیت ارضی و فدرالیسم}};
+
+\node[box] (l4) at (-3.5, 0) {\rl{اصل ۴: تفکیک قوا}};
+\node[content] (r4) at (3.5, 0) {\rl{استقلال قوای سه‌گانه}};
+
+\node[box] (l5) at (-3.5, -1.5) {\rl{اصل ۵: حاکمیت قانون}};
+\node[content] (r5) at (3.5, -1.5) {\rl{برتری قانون اساسی}};
+
+\foreach \i in {1,...,5} {
+    \draw[arrow] (l\i) -- (r\i);
+}
 \end{tikzpicture}
 \end{center}
 
-\begin{longtable}{|>{\columncolor{DemocracyBlue!15}}r|p{12cm}|}
-\hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
-\hline
-\endfirsthead
-\hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
-\hline
-\endhead
-
-\textbf{اصل ۱} & 
-\textbf{ماهیت حکومت}
-
-ایران کشوری است با نظام جمهوری فدرال دموکراتیک که بر پایه حاکمیت ملی، حقوق بشر، و حکومت قانون بنیان نهاده شده است. \\
-\hline
-
-\textbf{اصل ۲} &
-\textbf{منشأ حاکمیت}
-
-حاکمیت ملی به‌طور انحصاری متعلق به مردم ایران است. هیچ فرد، گروه، نهاد یا مقامی نمی‌تواند این حاکمیت را از آن خود سازد یا به‌نام خدا، تاریخ، نژاد، یا هر مفهوم دیگری اعمال کند مگر از طریق سازوکارهای دموکراتیک پیش‌بینی‌شده در این قانون اساسی. \\
-\hline
-
-\textbf{اصل ۳} &
-\textbf{وحدت و تمامیت ارضی}
-
-ایران سرزمینی واحد، تجزیه‌ناپذیر و دارای تمامیت ارضی است. تنوع قومی، زبانی، فرهنگی و مذهبی ملت ایران به رسمیت شناخته شده و محترم است و همبستگی ملی از طریق فدرالیسم دموکراتیک تضمین می‌شود. \\
-\hline
-
-\textbf{اصل ۴} &
-\textbf{تفکیک قوا}
-
-قدرت حاکمیت ملی به سه قوه مستقل و متوازن تفکیک می‌شود:
-
-الف) قوه مقننه: مجلس ملی و مجلس اقوام
-
-ب) قوه مجریه: رئیس‌جمهور و هیئت وزیران
-
-ج) قوه قضائیه: دادگستری مستقل
-
-این سه قوه تحت نظارت نهادهای مستقل و در چارچوب قانون اساسی عمل می‌کنند. \\
-\hline
-
-\textbf{اصل ۵} &
-\textbf{برتری قانون اساسی}
-
-قانون اساسی برترین قانون کشور است. هیچ قانون، مقرره، تصمیم یا اقدامی نمی‌تواند مغایر با آن باشد. دیوان عالی قانون اساسی مرجع نهایی تفسیر و پاسداری از قانون اساسی است. \\
-\hline
-
-\textbf{اصل ۶} &
-\textbf{جدایی دین از دولت}
-
-دولت نسبت به همه ادیان، مذاهب و باورها بی‌طرف است. هیچ دینی، دین رسمی دولت نیست. آزادی دین و وجدان تضمین می‌شود. دولت نمی‌تواند هیچ دینی را تحمیل یا تبلیغ کند و نمی‌تواند بر اساس دین تبعیض روا دارد. \\
-\hline
-
-\textbf{اصل ۷} &
-\textbf{زبان‌های ملی}
-
-الف) زبان فارسی زبان رسمی و مشترک سراسری جمهوری فدرال ایران است.
-
-ب) زبان‌های آذری، کردی، عربی، بلوچی، ترکمنی، لری، گیلکی و مازندرانی زبان‌های ملی ایران هستند که در مناطق مربوطه رسمیت دارند.
-
-ج) آموزش به زبان مادری در کنار زبان فارسی حق هر شهروند است. \\
-\hline
-
-\textbf{اصل ۸} &
-\textbf{پرچم و نمادهای ملی}
-
-پرچم ملی، سرود ملی، و نشان ملی جمهوری فدرال ایران به موجب قانون تعیین می‌شود. این نمادها باید بازتاب‌دهنده تنوع و وحدت ملت ایران باشند. \\
-\hline
-
-\textbf{اصل ۹} &
-\textbf{پایتخت}
-
-تهران پایتخت جمهوری فدرال ایران است. انتقال پایتخت مستلزم تصویب دوسوم هر دو مجلس است. \\
-\hline
-
-\textbf{اصل ۱۰} &
-\textbf{سیاست خارجی}
-
-سیاست خارجی جمهوری فدرال ایران بر اصول زیر استوار است:
-
-الف) احترام به حقوق بین‌الملل و منشور ملل متحد
-
-ب) همزیستی مسالمت‌آمیز و عدم مداخله در امور داخلی کشورها
-
-ج) پیگیری منافع ملی از طریق دیپلماسی
-
-د) همکاری منطقه‌ای و بین‌المللی برای صلح و توسعه پایدار \\
-\hline
-
-\end{longtable}
+\begin{table}[htbp]
+\centering
+\caption{اصول منتخب فصل اول: اصول کلی و هویت ملی}
+\label{tab:const-ch1}
+\begin{tabularx}{\textwidth}{R{2.5cm} Y}
+\toprule
+\headmark شماره اصل & \headmark متن و محتوای اصل \\
+\midrule
+\textbf{اصل ۱} & \textbf{ماهیت حکومت:} ایران کشوری است با نظام جمهوری فدرال دموکراتیک که بر پایه حاکمیت ملی، حقوق بشر، و حکومت قانون بنیان نهاده شده است. \\
+\rowcolor{goldlight}
+\textbf{اصل ۲} & \textbf{منشأ حاکمیت:} حاکمیت ملی به‌طور انحصاری متعلق به مردم ایران است. هیچ قدرتی برتر از خواست دموکراتیک مردم نیست. \\
+\textbf{اصل ۳} & \textbf{وحدت ملی:} تمامیت ارضی و همبستگی ملی از طریق ساختار فدرال و احترام به تنوع تضمین می‌شود. \\
+\rowcolor{goldlight}
+\textbf{اصل ۶} & \textbf{جدایی دین از دولت:} دولت نسبت به همه باورها بی‌طرف است. هیچ دینی، دین رسمی نیست. \\
+\textbf{اصل ۷} & \textbf{زبان‌ها:} فارسی زبان رسمی و مشترک؛ سایر زبان‌ها ملی و در مناطق خود رسمی هستند. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۱} & \textbf{اصول غیرقابل تغییر:} دموکراسی، فدرالیسم و لایی‌سیته ستون‌های ابدی نظام هستند. \\
+\bottomrule
+\end{tabularx}
+\end{table}
 
 \subsection{بخش دوم: اصول غیرقابل تغییر}
 
@@ -236,453 +163,359 @@
 % ═══════════════════════════════════════════════════════════════════════════════
 
 \begin{center}
-\begin{tikzpicture}
-    % عنوان مرکزی
-    \node[
-        draw=SuccessGreen,
+\begin{tikzpicture}[
+    scale=0.9,
+    transform shape,
+    centernode/.style={
+        circle,
+        draw=bleurepublique,
+        fill=bleulight,
         line width=2pt,
-        fill=SuccessGreen!20,
-        rounded corners=10pt,
-        minimum width=4cm,
-        minimum height=1.5cm,
+        minimum size=3.5cm,
+        text centered,
         font=\large\bfseries
-    ] (center) at (0,0) {حقوق بنیادین شهروندان};
-    
-    % دسته‌بندی حقوق
-    \foreach \angle/\title/\color in {
-        90/{حقوق مدنی}/DemocracyBlue,
-        30/{حقوق سیاسی}/WisdomGold,
-        -30/{حقوق اقتصادی}/SuccessGreen,
-        -90/{حقوق اجتماعی}/WarningRed,
-        -150/{حقوق فرهنگی}/purple,
-        150/{حقوق قضایی}/orange
-    } {
-        \node[
-            draw=\color,
-            fill=\color!15,
-            rounded corners=5pt,
-            minimum width=3cm,
-            minimum height=1cm,
-            font=\small\bfseries
-        ] (\angle) at (\angle:4cm) {\title};
-        
-        \draw[->, thick, \color] (center) -- (\angle);
-    }
+    },
+    leafnode/.style={
+        rectangle,
+        rounded corners=8pt,
+        draw=goldphoenix,
+        fill=goldlight,
+        line width=1.2pt,
+        minimum width=3cm,
+        minimum height=1cm,
+        text centered,
+        font=\small\bfseries
+    },
+    connector/.style={->, ultra thick, bleurepublique!30, >=stealth}
+]
+\node[centernode] (center) at (0,0) {\rl{حقوق بنیادین}\\\rl{شهروندان}};
+
+\foreach \ang/\label/\name in {90/حقوق مدنی/civil, 30/حقوق سیاسی/pol, -30/حقوق اقتصادی/econ, -90/حقوق اجتماعی/social, -150/حقوق فرهنگی/cult, 150/حقوق قضایی/jud} {
+    \node[leafnode] (\name) at (\ang:4.8) {\rl{\label}};
+    \draw[connector] (center) -- (\name);
+}
 \end{tikzpicture}
 \end{center}
 
 \subsection{بخش یکم: حقوق مدنی و آزادی‌های فردی (اصول ۱۲-۳۵)}
 
-\begin{longtable}{|>{\columncolor{DemocracyBlue!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (حقوق مدنی و آزادی‌های فردی) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
 \textbf{اصل ۱۲} &
-\textbf{کرامت انسانی}
-
-کرامت ذاتی انسان مصون از تعرض است. احترام به این کرامت و حمایت از آن وظیفه همه نهادهای حکومتی است. \\
+\textbf{کرامت انسانی:} کرامت ذاتی انسان مصون از تعرض است. احترام به این کرامت و حمایت از آن وظیفه همه نهادهای حکومتی است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۱۳} &
-\textbf{برابری در برابر قانون}
-
-همه شهروندان در برابر قانون برابرند. هرگونه تبعیض بر اساس جنسیت، قومیت، نژاد، زبان، دین، مذهب، باور سیاسی، منشأ اجتماعی، وضعیت اقتصادی، معلولیت، سن، یا هر وضعیت دیگر ممنوع است. \\
+\textbf{برابری در برابر قانون:} همه شهروندان در برابر قانون برابرند. هرگونه تبعیض بر اساس جنسیت، قومیت، نژاد، زبان، دین، مذهب، باور سیاسی، منشأ اجتماعی، وضعیت اقتصادی، معلولیت، سن، یا هر وضعیت دیگر ممنوع است. \\
 \hline
 
 \textbf{اصل ۱۴} &
-\textbf{حق حیات}
-
-حق حیات هر انسان از تولد تا مرگ طبیعی محترم و تضمین‌شده است. مجازات اعدام ملغی است. \\
+\textbf{حق حیات:} حق حیات هر انسان از تولد تا مرگ طبیعی محترم و تضمین‌شده است. مجازات اعدام ملغی است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۱۵} &
-\textbf{ممنوعیت شکنجه}
-
-شکنجه، رفتار غیرانسانی، تحقیرآمیز یا بی‌رحمانه در هر شرایطی مطلقاً ممنوع است. هرگونه اعتراف یا مدرکی که از طریق شکنجه به دست آمده باشد فاقد اعتبار قانونی است. \\
+\textbf{ممنوعیت شکنجه:} شکنجه، رفتار غیرانسانی، تحقیرآمیز یا بی‌رحمانه در هر شرایطی مطلقاً ممنوع است. هرگونه اعتراف یا مدرکی که از طریق شکنجه به دست آمده باشد فاقد اعتبار قانونی است. \\
 \hline
 
 \textbf{اصل ۱۶} &
-\textbf{آزادی فردی و امنیت شخصی}
-
+\textbf{آزادی فردی و امنیت شخصی:}
 الف) هیچ‌کس را نمی‌توان بازداشت کرد مگر به موجب حکم مقام قضایی صالح و طبق قانون.
-
 ب) هر بازداشت‌شده باید ظرف ۲۴ ساعت به دادگاه معرفی شود.
-
 ج) هر کس حق دارد فوراً از دلایل بازداشت خود مطلع شود و به وکیل دسترسی داشته باشد.
-
 د) بازداشت موقت استثنایی است و مدت آن نمی‌تواند از حدود قانونی تجاوز کند. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۱۷} &
-\textbf{حریم خصوصی}
-
-حریم خصوصی افراد، مسکن، مکاتبات، ارتباطات و داده‌های شخصی مصون از تعرض است. تفتیش و نظارت تنها با حکم قضایی و در چارچوب قانون مجاز است. \\
+\textbf{حریم خصوصی:} حریم خصوصی افراد، مسکن، مکاتبات، ارتباطات و داده‌های شخصی مصون از تعرض است. تفتیش و نظارت تنها با حکم قضایی و در چارچوب قانون مجاز است. \\
 \hline
 
 \textbf{اصل ۱۸} &
-\textbf{آزادی رفت‌وآمد}
-
-هر شهروند حق دارد آزادانه در سراسر کشور رفت‌وآمد کند، محل سکونت خود را انتخاب نماید، از کشور خارج و به آن بازگردد. سلب یا محدودیت این حق تنها به موجب قانون و با حکم قضایی ممکن است. \\
+\textbf{آزادی رفت‌وآمد:} هر شهروند حق دارد آزادانه در سراسر کشور رفت‌وآمد کند، محل سکونت خود را انتخاب نماید، از کشور خارج و به آن بازگردد. سلب یا محدودیت این حق تنها به موجب قانون و با حکم قضایی ممکن است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۱۹} &
-\textbf{آزادی عقیده و بیان}
-
+\textbf{آزادی عقیده و بیان:} 
 الف) هر کس حق دارد آزادانه عقاید خود را داشته و ابراز کند.
-
 ب) آزادی بیان، نوشتار، هنر و رسانه تضمین می‌شود.
-
 ج) سانسور ممنوع است. محدودیت آزادی بیان تنها برای حمایت از حقوق دیگران، امنیت ملی یا نظم عمومی و به موجب قانون مجاز است.
-
 د) تحریک به خشونت، نفرت‌پراکنی و انکار جنایات علیه بشریت ممنوع است. \\
 \hline
 
 \textbf{اصل ۲۰} &
-\textbf{آزادی دین و وجدان}
-
+\textbf{آزادی دین و وجدان:}
 الف) هر کس حق دارد دین، مذهب یا باور خود را آزادانه انتخاب کند یا بدون دین باشد.
-
 ب) هر کس حق دارد دین خود را به‌صورت فردی یا جمعی، در خلوت یا علن، عبادت و آموزش دهد.
-
 ج) هیچ‌کس را نمی‌توان به پذیرش یا ترک دینی مجبور کرد.
-
 د) تغییر دین حق هر فرد است و مجازات ندارد. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۲۱} &
-\textbf{آزادی تجمع و تشکل}
-
+\textbf{آزادی تجمع و تشکل:}
 الف) شهروندان حق برگزاری تجمعات و راهپیمایی‌های مسالمت‌آمیز بدون سلاح را دارند.
-
 ب) تجمعات عمومی نیازمند اطلاع‌رسانی قبلی هستند، نه مجوز.
-
 ج) تشکیل احزاب، انجمن‌ها، سندیکاها و سازمان‌های مدنی آزاد است. \\
 \hline
 
 \textbf{اصل ۲۲} &
-\textbf{حق مالکیت}
-
+\textbf{حق مالکیت:}
 الف) مالکیت خصوصی به رسمیت شناخته شده و حمایت می‌شود.
-
 ب) سلب مالکیت تنها برای مصالح عمومی، با پرداخت غرامت عادلانه و به موجب قانون مجاز است.
-
 ج) مالکیت متضمن مسئولیت اجتماعی است. \\
 \hline
-
 \end{longtable}
 
 \subsection{بخش دوم: حقوق سیاسی (اصول ۳۶-۴۵)}
 
-\begin{longtable}{|>{\columncolor{WisdomGold!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{WisdomGold!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (حقوق سیاسی) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{WisdomGold!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
 \textbf{اصل ۳۶} &
-\textbf{حق رأی}
-
+\textbf{حق رأی:} 
 الف) هر شهروند ایرانی که به سن ۱۸ سال رسیده باشد حق رأی دارد.
-
 ب) رأی‌گیری آزاد، برابر، مستقیم و مخفی است.
-
 ج) شرکت در انتخابات حق شهروندی است، نه تکلیف. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۳۷} &
-\textbf{حق انتخاب شدن}
-
+\textbf{حق انتخاب شدن:}
 الف) هر شهروندی که واجد شرایط قانونی باشد حق نامزد شدن برای مناصب انتخابی را دارد.
-
 ب) هیچ نهادی حق رد صلاحیت بر اساس معیارهای غیرقانونی یا سیاسی را ندارد.
-
 ج) احراز صلاحیت تنها بر اساس معیارهای عینی قانونی (سن، تابعیت، سابقه کیفری) و با حق اعتراض قضایی انجام می‌شود. \\
 \hline
 
 \textbf{اصل ۳۸} &
-\textbf{آزادی احزاب}
-
+\textbf{آزادی احزاب:}
 الف) تشکیل و فعالیت احزاب سیاسی آزاد است.
-
 ب) احزاب باید در ساختار و عملکرد خود دموکراتیک باشند.
-
 ج) انحلال حزب تنها به حکم دیوان عالی قانون اساسی و به دلیل نقض اصول دموکراتیک ممکن است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۳۹} &
-\textbf{حق همه‌پرسی}
-
+\textbf{حق همه‌پرسی:}
 الف) شهروندان می‌توانند از طریق همه‌پرسی در تصمیمات ملی مشارکت کنند.
-
 ب) ابتکار عمل مردمی: یک میلیون امضا می‌تواند برگزاری همه‌پرسی را الزامی کند.
-
 ج) همه‌پرسی نمی‌تواند ناقض حقوق بنیادین یا اصول غیرقابل تغییر باشد. \\
 \hline
 
 \textbf{اصل ۴۰} &
-\textbf{حق دادخواهی}
-
-هر شهروند حق دارد از نهادهای دولتی دادخواهی کند و پاسخ مکتوب دریافت نماید. \\
+\textbf{حق دادخواهی:} هر شهروند حق دارد از نهادهای دولتی دادخواهی کند و پاسخ مکتوب دریافت نماید. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۴۱} &
-\textbf{دسترسی به اطلاعات}
-
+\textbf{دسترسی به اطلاعات:}
 الف) هر شهروند حق دسترسی به اطلاعات و اسناد دولتی را دارد.
-
 ب) طبقه‌بندی اسناد باید محدود، موجه و زمان‌دار باشد.
-
 ج) افشاگری فساد (سوت‌زنی) تحت حمایت قانون است. \\
 \hline
 
 \textbf{اصل ۴۲} &
-\textbf{حق اعتراض و نافرمانی مدنی}
-
+\textbf{حق اعتراض و نافرمانی مدنی:}
 الف) اعتراض مسالمت‌آمیز حق شهروندی است.
-
 ب) نافرمانی مدنی در برابر قوانین ناقض حقوق بنیادین مشروع است.
-
 ج) حق مقاومت در برابر کودتا یا تلاش برای براندازی نظام دموکراتیک به رسمیت شناخته می‌شود. \\
 \hline
-
 \end{longtable}
 
 \subsection{بخش سوم: حقوق اقتصادی و اجتماعی (اصول ۴۶-۶۵)}
 
-\begin{longtable}{|>{\columncolor{SuccessGreen!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (حقوق اقتصادی، اجتماعی و محیط زیست) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
 \textbf{اصل ۴۶} &
-\textbf{حق کار}
-
+\textbf{حق کار:} 
 الف) هر شهروند حق کار، انتخاب آزادانه شغل، و شرایط کار عادلانه را دارد.
-
 ب) کار اجباری ممنوع است.
-
 ج) دولت موظف به تلاش برای ایجاد اشتغال کامل است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۴۷} &
-\textbf{حقوق کارگران}
-
+\textbf{حقوق کارگران:}
 الف) حق تشکیل و عضویت در سندیکا و اتحادیه‌های کارگری تضمین می‌شود.
-
 ب) حق اعتصاب به رسمیت شناخته می‌شود.
-
 ج) دستمزد باید عادلانه و تضمین‌کننده زندگی با کرامت باشد.
-
 د) حداقل دستمزد به موجب قانون تعیین و سالانه بازنگری می‌شود. \\
 \hline
 
 \textbf{اصل ۴۸} &
-\textbf{حق تأمین اجتماعی}
-
+\textbf{حق تأمین اجتماعی:}
 الف) هر شهروند حق بهره‌مندی از تأمین اجتماعی را دارد.
-
 ب) بیمه بیکاری، بازنشستگی، ازکارافتادگی و بیمه درمانی همگانی تضمین می‌شود.
-
 ج) حمایت ویژه از اقشار آسیب‌پذیر وظیفه دولت است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۴۹} &
-\textbf{حق بهداشت و درمان}
-
+\textbf{حق بهداشت و درمان:}
 الف) هر شهروند حق دسترسی به خدمات بهداشتی و درمانی را دارد.
-
 ب) خدمات بهداشت اولیه رایگان است.
-
 ج) بیمه درمانی پایه همگانی و اجباری است. \\
 \hline
 
 \textbf{اصل ۵۰} &
-\textbf{حق مسکن}
-
-دولت موظف است زمینه دسترسی همه شهروندان به مسکن مناسب را فراهم سازد. بی‌خانمانی باید ریشه‌کن شود. \\
+\textbf{حق مسکن:} دولت موظف است زمینه دسترسی همه شهروندان به مسکن مناسب را فراهم سازد. بی‌خانمانی باید ریشه‌کن شود. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۵۱} &
-\textbf{حق آموزش}
-
+\textbf{حق آموزش:}
 الف) آموزش رایگان و اجباری تا پایان دوره متوسطه است.
-
 ب) آموزش عالی باید در دسترس همگان بر اساس شایستگی باشد.
-
 ج) دولت موظف به حمایت از آموزش مادام‌العمر است. \\
 \hline
 
 \textbf{اصل ۵۲} &
-\textbf{حق آب}
-
+\textbf{حق آب:}
 الف) دسترسی به آب سالم و کافی حق بنیادین هر شهروند است.
-
 ب) دولت موظف به تأمین آب شرب سالم برای همه است.
-
 ج) منابع آب ثروت ملی و متعلق به نسل‌های حال و آینده است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۵۳} &
-\textbf{حقوق محیط زیست}
-
+\textbf{حقوق محیط زیست:}
 الف) هر شهروند حق زندگی در محیط زیست سالم را دارد.
-
 ب) حمایت از محیط زیست وظیفه دولت و حق و تکلیف همه شهروندان است.
-
 ج) آلوده‌سازی محیط زیست جرم است. \\
-\hline
-
 \end{longtable}
 
 \subsection{بخش چهارم: حقوق فرهنگی و اقوام (اصول ۶۶-۷۵)}
 
-\begin{longtable}{|>{\columncolor{purple!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{purple!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (حقوق فرهنگی و اقوام) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{purple!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
 \textbf{اصل ۶۶} &
-\textbf{تنوع فرهنگی}
-
-تنوع فرهنگی، قومی، زبانی و مذهبی ایران ثروت ملی است. دولت موظف به حمایت و حفاظت از این تنوع است. \\
+\textbf{تنوع فرهنگی:} تنوع فرهنگی، قومی، زبانی و مذهبی ایران ثروت ملی است. دولت موظف به حمایت و حفاظت از این تنوع است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۶۷} &
-\textbf{حقوق زبانی}
-
+\textbf{حقوق زبانی:} 
 الف) هر شهروند حق استفاده از زبان مادری خود در عرصه‌های عمومی و خصوصی را دارد.
-
 ب) آموزش به زبان مادری در کنار زبان فارسی حق هر کودک است.
-
 ج) خدمات عمومی در مناطق دوزبانه به هر دو زبان ارائه می‌شود. \\
 \hline
 
 \textbf{اصل ۶۸} &
-\textbf{حقوق قومی}
-
+\textbf{حقوق قومی:}
 الف) هیچ قومی بر قوم دیگر برتری ندارد.
-
 ب) هر قوم حق حفظ و توسعه هویت، فرهنگ، زبان و سنن خود را دارد.
-
 ج) مشارکت عادلانه اقوام در قدرت سیاسی و اقتصادی تضمین می‌شود. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۶۹} &
-\textbf{میراث فرهنگی}
-
-حفاظت از میراث فرهنگی، تاریخی و باستانی ایران وظیفه دولت است. غارت، تخریب یا قاچاق آثار تاریخی جرم سنگین است. \\
+\textbf{میراث فرهنگی:} حفاظت از میراث فرهنگی، تاریخی و باستانی ایران وظیفه دولت است. غارت، تخریب یا قاچاق آثار تاریخی جرم سنگین است. \\
 \hline
 
 \textbf{اصل ۷۰} &
-\textbf{آزادی علم و هنر}
-
-تحقیق علمی و خلاقیت هنری آزاد است. دولت موظف به حمایت از علم، فناوری و هنر است. \\
+\textbf{آزادی علم و هنر:} تحقیق علمی و خلاقیت هنری آزاد است. دولت موظف به حمایت از علم، فناوری و هنر است. \\
 \hline
-
 \end{longtable}
 
 \subsection{بخش پنجم: حقوق قضایی (اصول ۷۶-۸۵)}
 
-\begin{longtable}{|>{\columncolor{orange!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{orange!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (حقوق قضایی و دادرسی منصفانه) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{orange!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
 \textbf{اصل ۷۶} &
-\textbf{اصل برائت}
-
-هر کس بی‌گناه است تا زمانی که جرم او در دادگاه صالح به اثبات برسد. بار اثبات بر عهده دادستان است. \\
+\textbf{اصل برائت:} هر کس بی‌گناه است تا زمانی که جرم او در دادگاه صالح به اثبات برسد. بار اثبات بر عهده دادستان است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۷۷} &
-\textbf{حق محاکمه عادلانه}
-
+\textbf{حق محاکمه عادلانه:}
 الف) هر کس حق دارد در مدت معقول توسط دادگاه مستقل و بی‌طرف محاکمه شود.
-
 ب) محاکمات علنی است مگر در موارد استثنایی قانونی.
-
 ج) هر کس حق دارد از اتهامات علیه خود مطلع شود و فرصت کافی برای دفاع داشته باشد. \\
 \hline
 
 \textbf{اصل ۷۸} &
-\textbf{حق وکیل}
-
+\textbf{حق وکیل:}
 الف) هر کس در تمام مراحل رسیدگی حق داشتن وکیل را دارد.
-
 ب) اگر متهم توانایی مالی نداشته باشد، دولت وکیل تسخیری تعیین می‌کند.
-
 ج) ارتباط بین وکیل و موکل محرمانه است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۷۹} &
-\textbf{اصل قانونی بودن جرم و مجازات}
-
+\textbf{اصل قانونی بودن جرم و مجازات:}
 الف) هیچ عملی جرم نیست مگر به موجب قانون.
-
 ب) هیچ مجازاتی اعمال نمی‌شود مگر به موجب قانون.
-
 ج) قوانین کیفری عطف به ماسبق نمی‌شوند مگر به نفع متهم. \\
 \hline
 
 \textbf{اصل ۸۰} &
-\textbf{ممنوعیت محاکمه مجدد}
-
-هیچ‌کس را نمی‌توان برای جرمی که قبلاً محاکمه و تبرئه یا محکوم شده دوباره محاکمه کرد. \\
+\textbf{ممنوعیت محاکمه مجدد:} هیچ‌کس را نمی‌توان برای جرمی که قبلاً محاکمه و تبرئه یا محکوم شده دوباره محاکمه کرد. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۸۱} &
-\textbf{حق تجدیدنظر}
-
-هر محکوم حق درخواست تجدیدنظر در حکم را دارد. \\
+\textbf{حق تجدیدنظر:} هر محکوم حق درخواست تجدیدنظر در حکم را دارد. \\
 \hline
 
 \textbf{اصل ۸۲} &
-\textbf{حق جبران خسارت}
-
-هر کس که به‌ناحق بازداشت یا محکوم شده باشد حق جبران خسارت مادی و معنوی را دارد. \\
+\textbf{حق جبران خسارت:} هر کس که به‌ناحق بازداشت یا محکوم شده باشد حق جبران خسارت مادی و معنوی را دارد. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۸۳} &
-\textbf{اصلاح مجرمان}
-
-هدف نظام کیفری اصلاح و بازپروری است، نه انتقام. شرایط زندان‌ها باید انسانی و اصلاحی باشد. \\
+\textbf{اصلاح مجرمان:} هدف نظام کیفری اصلاح و بازپروری است، نه انتقام. شرایط زندان‌ها باید انسانی و اصلاحی باشد. \\
 \hline
-
 \end{longtable}
 
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -690,780 +523,460 @@
 \label{sec:const-ch3}
 % ═══════════════════════════════════════════════════════════════════════════════
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
     branch/.style={
-        draw=#1,
-        line width=2pt,
-        fill=#1!15,
+        rectangle,
         rounded corners=10pt,
-        minimum width=4cm,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=2pt,
+        minimum width=4.5cm,
         minimum height=2.5cm,
-        align=center,
+        text centered,
         font=\bfseries
     },
     sub/.style={
-        draw=#1!70,
-        fill=#1!10,
+        rectangle,
         rounded corners=5pt,
-        minimum width=2.8cm,
+        draw=goldphoenix!50,
+        fill=goldlight,
+        line width=1pt,
+        minimum width=3cm,
         minimum height=0.8cm,
-        align=center,
-        font=\small
-    }
+        text centered,
+        font=\tiny\bfseries
+    },
+    arrow/.style={->, ultra thick, bleurepublique!20, >=stealth}
 ]
-    % عنوان
-    \node[
-        fill=gray!20,
-        draw=gray,
-        line width=2pt,
-        rounded corners=10pt,
-        minimum width=6cm,
-        minimum height=1.5cm,
-        font=\Large\bfseries
-    ] (title) at (0,5) {ساختار حکومت فدرال};
-    
-    % سه قوه
-    \node[branch=DemocracyBlue] (leg) at (-5,2) {\shortstack{قوه مقننه\\(اصول ۸۶-۱۱۰)}};
-    \node[branch=SuccessGreen] (exe) at (0,2) {\shortstack{قوه مجریه\\(اصول ۱۱۱-۱۳۵)}};
-    \node[branch=WisdomGold] (jud) at (5,2) {\shortstack{قوه قضائیه\\(اصول ۱۳۶-۱۵۵)}};
-    
-    % اتصالات
-    \draw[->, thick, gray] (title) -- (leg);
-    \draw[->, thick, gray] (title) -- (exe);
-    \draw[->, thick, gray] (title) -- (jud);
-    
-    % زیرمجموعه‌های قوه مقننه
-    \node[sub=DemocracyBlue] (mn) at (-6.5,-0.5) {مجلس ملی};
-    \node[sub=DemocracyBlue] (ma) at (-3.5,-0.5) {مجلس اقوام};
-    \draw[->, DemocracyBlue!70] (leg) -- (mn);
-    \draw[->, DemocracyBlue!70] (leg) -- (ma);
-    
-    % زیرمجموعه‌های قوه مجریه
-    \node[sub=SuccessGreen] (pr) at (-1,-0.5) {رئیس‌جمهور};
-    \node[sub=SuccessGreen] (cab) at (2,-0.5) {هیئت وزیران};
-    \draw[->, SuccessGreen!70] (exe) -- (pr);
-    \draw[->, SuccessGreen!70] (exe) -- (cab);
-    
-    % زیرمجموعه‌های قوه قضائیه
-    \node[sub=WisdomGold] (sc) at (4,-0.5) {دیوان‌عالی کشور};
-    \node[sub=WisdomGold] (cc) at (7,-0.5) {دیوان قانون اساسی};
-    \draw[->, WisdomGold!70] (jud) -- (sc);
-    \draw[->, WisdomGold!70] (jud) -- (cc);
-    
-    % نهادهای نظارتی
-    \node[
-        draw=WarningRed,
-        line width=1.5pt,
-        fill=WarningRed!10,
-        rounded corners=8pt,
-        minimum width=10cm,
-        minimum height=1.2cm,
-        font=\bfseries
-    ] (oversight) at (0,-2.5) {نهادهای مستقل نظارتی (اصول ۱۵۶-۱۷۵)};
-    
-    \draw[->, thick, WarningRed!70, dashed] (oversight) -- (leg);
-    \draw[->, thick, WarningRed!70, dashed] (oversight) -- (exe);
-    \draw[->, thick, WarningRed!70, dashed] (oversight) -- (jud);
+\node[branch] (leg) at (-5.5, 3) {\rl{قوه مقننه}\\\rl{\tiny اصول ۸۶-۱۱۰}};
+\node[branch] (exe) at (0, 3) {\rl{قوه مجریه}\\\rl{\tiny اصول ۱۱۱-۱۳۵}};
+\node[branch] (jud) at (5.5, 3) {\rl{قوه قضائیه}\\\rl{\tiny اصول ۱۳۶-۱۵۵}};
+
+\node[sub] (mn) at (-6.8, 0.5) {\rl{مجلس ملی}};
+\node[sub] (ma) at (-3.8, 0.5) {\rl{مجلس اقوام}};
+\node[sub] (pr) at (-0.8, 0.5) {\rl{رئیس‌جمهور}};
+\node[sub] (cab) at (2.2, 0.5) {\rl{کابینه}};
+\node[sub] (sc) at (4.2, 0.5) {\rl{دیوان عالی}};
+\node[sub] (cc) at (7.2, 0.5) {\rl{دیوان قانون اساسی}};
+
+\foreach \p/\c1/\c2 in {leg/mn/ma, exe/pr/cab, jud/sc/cc} {
+    \draw[arrow] (\p) -- (\c1);
+    \draw[arrow] (\p) -- (\c2);
+}
+
+\node[
+    draw=goldphoenix,
+    fill=goldlight,
+    line width=2pt,
+    rounded corners=12pt,
+    minimum width=12cm,
+    minimum height=1.5cm,
+    font=\large\bfseries
+] at (0, 6.5) {\rl{ساختار کلان حاکمیت در جمهوری فدرال ایران}};
+
 \end{tikzpicture}
-\end{center}
+\caption{نمودار کلان تفکیک قوا و نهادهای بنیادین در میثاق ملی نوین}
+\label{fig:gov-structure}
+\end{figure}
 
 \subsection{بخش یکم: قوه مقننه (اصول ۸۶-۱۱۰)}
 
 \subsubsection{الف) ساختار دومجلسی}
 
-\begin{longtable}{|>{\columncolor{DemocracyBlue!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (ساختار قوه مقننه) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
 \textbf{اصل ۸۶} &
-\textbf{پارلمان فدرال}
-
-قوه مقننه متشکل از دو مجلس است:
-
-الف) \textbf{مجلس ملی} (مجلس اول): نمایندگی مستقیم مردم
-
-ب) \textbf{مجلس اقوام} (مجلس دوم): نمایندگی مناطق و اقوام
-
+\textbf{پارلمان فدرال:} قوه مقننه متشکل از دو مجلس است:
+الف) \textbf{مجلس ملی} (مجلس اول): نمایندگی مستقیم مردم؛
+ب) \textbf{مجلس اقوام} (مجلس دوم): نمایندگی مناطق و اقوام.
 هر دو مجلس در تصویب قوانین مشارکت دارند. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۸۷} &
-\textbf{مجلس ملی}
-
+\textbf{مجلس ملی:}
 الف) مجلس ملی متشکل از ۳۵۰ نماینده است که با رأی مستقیم و مخفی مردم انتخاب می‌شوند.
-
 ب) انتخابات به روش نسبی-فهرستی با آستانه ۳٪ برگزار می‌شود.
-
 ج) دوره نمایندگی چهار سال است.
-
 د) حداقل ۳۰٪ کاندیداها باید زن باشند. \\
 \hline
 
 \textbf{اصل ۸۸} &
-\textbf{مجلس اقوام}
-
+\textbf{مجلس اقوام:}
 الف) مجلس اقوام متشکل از ۱۲۰ نماینده است:
-\begin{itemize}[nosep]
-    \item ۶۰ نماینده: ۴ نماینده از هر استان (انتخابی)
-    \item ۳۰ نماینده: نمایندگان مناطق خودمختار
-    \item ۲۰ نماینده: نمایندگان اقلیت‌های زبانی-فرهنگی
-    \item ۱۰ نماینده: نمایندگان ایرانیان خارج از کشور
-\end{itemize}
-
+- ۶۰ نماینده: ۴ نماینده از هر استان (انتخابی)
+- ۳۰ نماینده: نمایندگان مناطق خودمختار
+- ۲۰ نماینده: نمایندگان اقلیت‌های زبانی-فرهنگی
+- ۱۰ نماینده: نمایندگان ایرانیان خارج از کشور
 ب) دوره نمایندگی شش سال است و هر دو سال یک‌سوم اعضا تجدید می‌شوند.
-
 ج) رئیس مجلس اقوام معاون اول رئیس‌جمهور در تشریفات است. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۸۹} &
-\textbf{شرایط نمایندگی}
-
-الف) تابعیت ایرانی
-
-ب) سن حداقل ۲۵ سال برای مجلس ملی و ۳۵ سال برای مجلس اقوام
-
-ج) برخورداری از حقوق مدنی
-
-د) نداشتن محکومیت کیفری مؤثر
-
-هـ) حداقل مدرک کارشناسی \\
+\textbf{شرایط نمایندگی:}
+الف) تابعیت ایرانی؛
+ب) سن حداقل ۲۵ سال برای مجلس ملی و ۳۵ سال برای مجلس اقوام؛
+ج) برخورداری از حقوق مدنی؛
+د) نداشتن محکومیت کیفری مؤثر؛
+هـ) حداقل مدرک کارشناسی. \\
 \hline
 
 \textbf{اصل ۹۰} &
-\textbf{مصونیت پارلمانی}
-
+\textbf{مصونیت پارلمانی:}
 الف) نمایندگان به خاطر اظهارات و آرایشان در مجلس قابل تعقیب نیستند.
-
 ب) بازداشت نماینده در حال انجام وظیفه مستلزم اجازه مجلس است، مگر در جرم مشهود.
-
 ج) مصونیت شامل جرایم عادی خارج از وظایف نمایندگی نمی‌شود. \\
 \hline
 
+\rowcolor{goldlight}
 \textbf{اصل ۹۱} &
-\textbf{تعارض منافع}
-
+\textbf{تعارض منافع:}
 الف) نمایندگان نمی‌توانند همزمان شغل دولتی داشته باشند.
-
 ب) نمایندگان موظف به اعلام دارایی‌ها و منافع مالی خود هستند.
-
 ج) رأی‌دادن در موضوعاتی که نماینده ذی‌نفع است ممنوع است. \\
 \hline
-
 \end{longtable}
 
 \subsubsection{ب) فرآیند قانون‌گذاری}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
+    scale=0.9,
+    transform shape,
     step/.style={
-        draw=DemocracyBlue,
-        fill=DemocracyBlue!15,
-        rounded corners=5pt,
-        minimum width=2.5cm,
+        rectangle,
+        rounded corners=8pt,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=2.8cm,
         minimum height=1.2cm,
-        align=center,
-        font=\small
-    }
-]
-    % مراحل قانون‌گذاری
-    \node[step] (s1) at (0,0) {\shortstack{پیشنهاد\\لایحه/طرح}};
-    \node[step] (s2) at (3,0) {\shortstack{کمیسیون\\تخصصی}};
-    \node[step] (s3) at (6,0) {\shortstack{بررسی در\\مجلس ملی}};
-    \node[step] (s4) at (9,0) {\shortstack{رأی‌گیری\\مجلس ملی}};
-    
-    \node[step] (s5) at (9,-2) {\shortstack{ارسال به\\مجلس اقوام}};
-    \node[step] (s6) at (6,-2) {\shortstack{بررسی در\\مجلس اقوام}};
-    \node[step] (s7) at (3,-2) {\shortstack{رأی‌گیری\\مجلس اقوام}};
-    \node[step] (s8) at (0,-2) {\shortstack{امضای\\رئیس‌جمهور}};
-    
-    \node[
-        draw=SuccessGreen,
-        fill=SuccessGreen!20,
-        rounded corners=5pt,
-        minimum width=2.5cm,
-        minimum height=1.2cm,
+        text centered,
         font=\small\bfseries
-    ] (s9) at (0,-4) {\shortstack{انتشار و\\اجرا}};
-    
-    % فلش‌ها
-    \draw[->, thick, DemocracyBlue] (s1) -- (s2);
-    \draw[->, thick, DemocracyBlue] (s2) -- (s3);
-    \draw[->, thick, DemocracyBlue] (s3) -- (s4);
-    \draw[->, thick, DemocracyBlue] (s4) -- (s5);
-    \draw[->, thick, DemocracyBlue] (s5) -- (s6);
-    \draw[->, thick, DemocracyBlue] (s6) -- (s7);
-    \draw[->, thick, DemocracyBlue] (s7) -- (s8);
-    \draw[->, thick, SuccessGreen] (s8) -- (s9);
-    
-    % کمیته مشترک در صورت اختلاف
-    \node[
-        draw=WisdomGold,
-        fill=WisdomGold!15,
-        rounded corners=5pt,
-        minimum width=2.5cm,
-        minimum height=1cm,
-        font=\scriptsize
-    ] (joint) at (4.5,-3.5) {\shortstack{کمیته مشترک\\(در صورت اختلاف)}};
-    
-    \draw[->, dashed, WisdomGold] (s7) -- (joint);
-    \draw[->, dashed, WisdomGold] (joint) -- (s4);
-\end{tikzpicture}
-\end{center}
+    },
+    arrow/.style={->, ultra thick, bleurepublique!30, >=stealth}
+]
+\node[step] (s1) at (0,0) {\rl{پیشنهاد لایحه/طرح}};
+\node[step] (s2) at (3.5,0) {\rl{کمیسیون تخصصی}};
+\node[step] (s3) at (7,0) {\rl{بررسی مجلس ملی}};
+\node[step] (s4) at (10.5,0) {\rl{تصویب مجلس ملی}};
 
-\begin{longtable}{|>{\columncolor{DemocracyBlue!15}}r|p{12cm}|}
+\node[step] (s5) at (10.5,-2.5) {\rl{بررسی مجلس اقوام}};
+\node[step] (s8) at (7,-2.5) {\rl{تأیید رئیس‌جمهور}};
+\node[step, draw=goldphoenix, fill=goldlight] (s9) at (3.5,-2.5) {\rl{انتشار و اجرا}};
+
+\draw[arrow] (s1) -- (s2);
+\draw[arrow] (s2) -- (s3);
+\draw[arrow] (s3) -- (s4);
+\draw[arrow] (s4) -- (s5);
+\draw[arrow] (s5) -- (s8);
+\draw[arrow] (s8) -- (s9);
+
+\node[
+    draw=goldphoenix,
+    fill=goldlight,
+    rounded corners=5pt,
+    minimum width=4cm,
+    font=\tiny\bfseries
+] at (0,-2.5) {\rl{کمیته حل اختلاف در صورت تعارض}};
+\end{tikzpicture}
+\caption{فرآیند دموکراتیک قانون‌گذاری و تعادل قوا در ساختار دومجلسی}
+\label{fig:legislative-flow}
+\end{figure}
+
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (فرآیند قانون‌گذاری و نظارت) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۹۲} &
-\textbf{ابتکار قانون‌گذاری}
-
-حق پیشنهاد قانون متعلق است به:
-
-الف) هیئت وزیران (لایحه)
-
-ب) حداقل ۱۵ نماینده مجلس ملی (طرح)
-
-ج) حداقل ۱۰ نماینده مجلس اقوام (طرح)
-
-د) ۵۰۰,۰۰۰ شهروند (ابتکار عمل مردمی) \\
+\textbf{اصل ۹۲} & \textbf{ابتکار قانون‌گذاری:} حق پیشنهاد قانون متعلق به هیئت وزیران (لایحه)، ۱۵ نماینده مجلس ملی (طرح)، ۱۰ نماینده مجلس اقوام (طرح)، و ۵۰۰,۰۰۰ شهروند (ابتکار مردمی) است. \\
 \hline
 
-\textbf{اصل ۹۳} &
-\textbf{تصویب قوانین عادی}
-
-الف) قوانین عادی با اکثریت ساده هر دو مجلس تصویب می‌شوند.
-
-ب) در صورت اختلاف، کمیته مشترک تشکیل می‌شود.
-
-ج) اگر کمیته مشترک به توافق نرسد، مجلس ملی با اکثریت مطلق تصمیم نهایی را می‌گیرد. \\
+\rowcolor{goldlight}
+\textbf{اصل ۹۳} & \textbf{تصویب قوانین عادی:} الف) قوانین عادی با اکثریت ساده هر دو مجلس تصویب می‌شوند. ب) در صورت اختلاف، کمیته مشترک تشکیل می‌شود. ج) اگر توافق حاصل نشد، مجلس ملی با اکثریت مطلق تصمیم نهایی را می‌گیرد. \\
 \hline
 
-\textbf{اصل ۹۴} &
-\textbf{قوانین اساسی و بنیادین}
-
-قوانینی که به حقوق اقوام، ساختار فدرال، یا حقوق بنیادین مربوط می‌شوند، نیازمند تصویب دوسوم هر دو مجلس هستند. \\
+\textbf{اصل ۹۴} & \textbf{قوانین اساسی و بنیادین:} قوانینی که به حقوق اقوام، ساختار فدرال، یا حقوق بنیادین مربوط می‌شوند، نیازمند تصویب دوسوم هر دو مجلس هستند. \\
 \hline
 
-\textbf{اصل ۹۵} &
-\textbf{حق وتوی مجلس اقوام}
-
-مجلس اقوام در موضوعات زیر حق وتوی مطلق دارد:
-
-الف) قوانین مربوط به ساختار فدرال و تقسیمات کشوری
-
-ب) قوانین مربوط به حقوق اقوام و زبان‌ها
-
-ج) قوانین مربوط به توزیع منابع ملی بین مناطق
-
-د) انتصاب قضات دیوان عالی و دیوان قانون اساسی \\
+\rowcolor{goldlight}
+\textbf{اصل ۹۵} & \textbf{حق وتوی مجلس اقوام:} مجلس اقوام در موضوعات فدرال، تقسیمات کشوری، حقوق اقوام، توزیع منابع ملی و انتصابات عالی قضایی حق وتوی مطلق دارد. \\
 \hline
 
-\textbf{اصل ۹۶} &
-\textbf{حق وتوی رئیس‌جمهور}
-
-الف) رئیس‌جمهور می‌تواند ظرف ۱۵ روز قانون مصوب را با ذکر دلایل به مجلس بازگرداند.
-
-ب) مجلس می‌تواند با رأی دوسوم وتو را رد کند.
-
-ج) رئیس‌جمهور موظف است قانون مصوب نهایی را ظرف ۱۰ روز امضا و ابلاغ کند. \\
+\textbf{اصل ۹۶} & \textbf{وتوی رئیس‌جمهور:} الف) رئیس‌جمهور حق بازگرداندن قانون ظرف ۱۵ روز را دارد. ب) مجلس با دوسوم آرا می‌تواند وتو را رد کند. ج) امضا و ابلاغ نهایی ظرف ۱۰ روز الزامی است. \\
 \hline
 
-\textbf{اصل ۹۷} &
-\textbf{بودجه سالانه}
-
-الف) دولت موظف است لایحه بودجه را تا پایان آبان‌ماه به مجلس تقدیم کند.
-
-ب) مجلس ملی بودجه را بررسی و تصویب می‌کند.
-
-ج) مجلس اقوام بر توزیع عادلانه بودجه بین مناطق نظارت دارد.
-
-د) تصویب نهایی بودجه تا پایان اسفند الزامی است. \\
+\rowcolor{goldlight}
+\textbf{اصل ۹۷} & \textbf{بودجه سالانه:} دولت موظف به تقدیم لایحه بودجه تا پایان آبان است. مجلس ملی تصویب‌کننده و مجلس اقوام ناظر بر توزیع عادلانه بین مناطق است. \\
 \hline
 
-\textbf{اصل ۹۸} &
-\textbf{نظارت پارلمانی}
-
-الف) هیئت وزیران در برابر مجلس ملی مسئول است.
-
-ب) نمایندگان حق سؤال و استیضاح وزرا را دارند.
-
-ج) مجلس می‌تواند کمیسیون تحقیق تشکیل دهد.
-
-د) رأی عدم اعتماد به هیئت وزیران با اکثریت مطلق ممکن است. \\
+\textbf{اصل ۹۸} & \textbf{نظارت پارلمانی:} الف) وزرا در برابر مجلس ملی مسئول‌اند. ب) حق سؤال و استیضاح برای نمایندگان محفوظ است. ج) رأی عدم اعتماد با اکثریت مطلق نمایندگان ممکن است. \\
 \hline
-
 \end{longtable}
 
 \subsection{بخش دوم: قوه مجریه (اصول ۱۱۱-۱۳۵)}
 
 \subsubsection{الف) رئیس‌جمهور}
 
-\begin{center}
-\begin{tikzpicture}
-    % کادر اصلی
-    \node[
-        draw=SuccessGreen,
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.9,
+    transform shape,
+    box/.style={
+        rectangle,
+        rounded corners=12pt,
+        draw=bleurepublique,
+        fill=bleulight,
         line width=2pt,
-        fill=SuccessGreen!10,
-        rounded corners=15pt,
-        minimum width=14cm,
-        minimum height=6cm
-    ] (main) at (0,0) {};
-    
-    % عنوان
-    \node[
-        fill=SuccessGreen,
+        minimum width=12cm,
+        minimum height=5cm
+    },
+    label/.style={
+        rectangle,
+        fill=bleurepublique,
         text=white,
         rounded corners=5pt,
-        font=\large\bfseries] at (0,2.5) {رئیس‌جمهور جمهوری فدرال ایران};
-    
-    % ویژگی‌های کلیدی
-    \node[align=right, text width=6cm, font=\small] at (-3.5,0.5) {
-        \textbf{انتخاب:} رأی مستقیم مردم\\[3pt]
-        \textbf{دوره:} ۴ سال (حداکثر ۲ دوره)\\[3pt]
-        \textbf{شرایط سنی:} حداقل ۴۰ سال\\[3pt]
-        \textbf{تابعیت:} ایرانی‌الاصل
-    };
-    
-    \node[align=right, text width=6cm, font=\small] at (3.5,0.5) {
-        \textbf{نقش:} رئیس دولت و رئیس کشور\\[3pt]
-        \textbf{مسئولیت:} در برابر ملت و مجلس\\[3pt]
-        \textbf{اختیارات:} اجرایی و تشریفاتی\\[3pt]
-        \textbf{انتصابات:} وزرا با تأیید مجلس
-    };
-    
-    % نمودار وظایف
-    \node[
-        draw=SuccessGreen!70,
-        fill=white,
-        rounded corners=5pt,
-        minimum width=12cm,
-        minimum height=1.5cm,
-        font=\small
-    ] at (0,-1.8) {
-        \textbf{وظایف اصلی:} اجرای قوانین | سیاست خارجی | فرماندهی کل قوا | انتصاب وزرا | پیشنهاد بودجه
-    };
-\end{tikzpicture}
-\end{center}
+        font=\large\bfseries,
+        minimum width=6cm
+    }
+]
+\node[box] (main) at (0,0) {};
+\node[label] at (0,2.5) {\rl{رئیس‌جمهور جمهوری فدرال ایران}};
 
-\begin{longtable}{|>{\columncolor{SuccessGreen!15}}r|p{12cm}|}
+\node[align=right, text width=5.5cm, font=\small] at (-3,0.5) {
+    \textbf{\rl{انتخاب:}} \rl{رأی مستقیم مردم}\\[3pt]
+    \textbf{\rl{دوره:}} \rl{۴ سال (حداکثر ۲ دوره)}\\[3pt]
+    \textbf{\rl{شرایط سن:}} \rl{حداقل ۴۰ سال}
+};
+
+\node[align=right, text width=5.5cm, font=\small] at (3,0.5) {
+    \textbf{\rl{نقش:}} \rl{رئیس دولت و کشور}\\[3pt]
+    \textbf{\rl{مسئولیت:}} \rl{در برابر ملت و پارلمان}\\[3pt]
+    \textbf{\rl{اختیار:}} \rl{فرماندهی کل قوا}
+};
+
+\node[
+    draw=goldphoenix,
+    fill=goldlight,
+    rounded corners=8pt,
+    minimum width=10cm,
+    minimum height=1.2cm,
+    text centered,
+    font=\small\bfseries,
+    text=bleurepublique
+] at (0,-1.5) {\rl{وظایف: اجرای قانون اساسی | سیاست خارجی | انتصاب وزرا | امضای قوانین}};
+
+\end{tikzpicture}
+\caption{جایگاه، صلاحیت‌ها و فرآیند پاسخگویی نهاد ریاست جمهوری}
+\label{fig:president-role}
+\end{figure}
+
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (نهاد ریاست جمهوری) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۱۱} &
-\textbf{جایگاه رئیس‌جمهور}
-
-رئیس‌جمهور بالاترین مقام رسمی کشور پس از ملت است. رئیس‌جمهور رئیس قوه مجریه، رئیس دولت و نماینده رسمی جمهوری فدرال ایران در روابط بین‌المللی است. \\
+\textbf{اصل ۱۱۱} & \textbf{جایگاه رئیس‌جمهور:} رئیس‌جمهور بالاترین مقام رسمی کشور پس از ملت، رئیس قوه مجریه، رئیس دولت و نماینده عالی جمهوری در روابط بین‌المللی است. \\
 \hline
 
-\textbf{اصل ۱۱۲} &
-\textbf{انتخاب رئیس‌جمهور}
-
-الف) رئیس‌جمهور با رأی مستقیم، آزاد و مخفی مردم انتخاب می‌شود.
-
-ب) کاندیدای برنده باید بیش از ۵۰٪ آرا را کسب کند.
-
-ج) در صورت عدم کسب اکثریت مطلق، دور دوم بین دو نامزد اول برگزار می‌شود.
-
-د) انتخابات در فاصله ۳۰ تا ۶۰ روز قبل از پایان دوره رئیس‌جمهور فعلی برگزار می‌شود. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۱۲} & \textbf{انتخاب:} الف) انتخاب با رأی مستقیم و مخفی. ب) کسب اکثریت مطلق (۵۰٪ + ۱) آرا الزامی است. ج) در غیر این صورت، دور دوم بین دو نفر اول برگزار می‌شود. \\
 \hline
 
-\textbf{اصل ۱۱۳} &
-\textbf{شرایط کاندیداتوری}
-
-کاندیدای ریاست جمهوری باید:
-
-الف) تابعیت ایرانی داشته و ایرانی‌الاصل باشد
-
-ب) حداقل ۴۰ سال سن داشته باشد
-
-ج) دارای حداقل مدرک کارشناسی ارشد باشد
-
-د) فاقد محکومیت کیفری مؤثر باشد
-
-هـ) حداقل ۱۰۰,۰۰۰ امضای حمایتی یا معرفی ۵۰ نماینده مجلس را داشته باشد \\
+\textbf{اصل ۱۱۳} & \textbf{شرایط:} تابعیت ایرانی، حداقل ۴۰ سال سن، مدرک کارشناسی ارشد، و فقدان محکومیت کیفری. حمایت ۱۰۰ هزار شهروند یا ۵۰ نماینده برای کاندیداتوری لازم است. \\
 \hline
 
-\textbf{اصل ۱۱۴} &
-\textbf{دوره ریاست جمهوری}
-
-الف) دوره ریاست جمهوری چهار سال است.
-
-ب) هیچ‌کس نمی‌تواند بیش از دو دوره متوالی یا سه دوره در مجموع رئیس‌جمهور شود.
-
-ج) دوره ریاست جمهوری از روز تحلیف آغاز می‌شود. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۱۶} & \textbf{وظایف:} تعیین سیاست‌های دولت، تشکیل هیئت وزیران، فرماندهی کل قوا، امضای معاهدات و ابلاغ قوانین. \\
 \hline
 
-\textbf{اصل ۱۱۵} &
-\textbf{سوگند رئیس‌جمهور}
-
-رئیس‌جمهور منتخب در جلسه مشترک دو مجلس سوگند زیر را یاد می‌کند:
-
-\textit{«من [نام]، در برابر ملت ایران سوگند یاد می‌کنم که از قانون اساسی پاسداری کنم، حقوق و آزادی‌های شهروندان را محترم بشمارم، استقلال و تمامیت ارضی کشور را حفظ کنم، و با تمام توان در خدمت مردم ایران باشم.»} \\
+\textbf{اصل ۱۱۸} & \textbf{استیضاح:} یک‌سوم نمایندگان مجلس ملی می‌توانند طرح استیضاح را مطرح کنند. رأی عدم اعتماد نیازمند دوسوم آرای مجلس ملی و تأیید مجلس اقوام است. \\
 \hline
-
-\textbf{اصل ۱۱۶} &
-\textbf{وظایف و اختیارات رئیس‌جمهور}
-
-رئیس‌جمهور:
-
-الف) سیاست‌های کلی دولت را تعیین و بر اجرای آنها نظارت می‌کند
-
-ب) هیئت وزیران را تشکیل داده و ریاست آن را بر عهده دارد
-
-ج) وزرا را منصوب می‌کند (با تأیید مجلس ملی)
-
-د) فرماندهی کل نیروهای مسلح را بر عهده دارد
-
-هـ) معاهدات بین‌المللی را امضا می‌کند (با تصویب مجلس)
-
-و) سفرا را منصوب و استوارنامه سفرای خارجی را می‌پذیرد
-
-ز) عفو خصوصی اعطا می‌کند (به پیشنهاد وزیر دادگستری)
-
-ح) قوانین مصوب را امضا و ابلاغ می‌کند \\
-\hline
-
-\textbf{اصل ۱۱۷} &
-\textbf{مسئولیت رئیس‌جمهور}
-
-الف) رئیس‌جمهور در برابر ملت، قانون اساسی و مجلس ملی مسئول است.
-
-ب) رئیس‌جمهور سالانه گزارش عملکرد به مجلس ارائه می‌دهد.
-
-ج) رئیس‌جمهور در دوران تصدی از مصونیت کیفری برخوردار است، مگر در موارد خیانت، فساد کلان، یا نقض فاحش قانون اساسی. \\
-\hline
-
-\textbf{اصل ۱۱۸} &
-\textbf{استیضاح رئیس‌جمهور}
-
-الف) یک‌سوم نمایندگان مجلس ملی می‌توانند طرح استیضاح رئیس‌جمهور را مطرح کنند.
-
-ب) استیضاح باید متضمن دلایل مشخص باشد.
-
-ج) رئیس‌جمهور حق دفاع در مجلس را دارد.
-
-د) رأی عدم اعتماد با دوسوم آرای مجلس ملی و تأیید اکثریت مجلس اقوام تصویب می‌شود.
-
-هـ) پس از رأی عدم اعتماد، رئیس‌جمهور برکنار و انتخابات جدید برگزار می‌شود. \\
-\hline
-
-\textbf{اصل ۱۱۹} &
-\textbf{خلأ ریاست جمهوری}
-
-در صورت فوت، استعفا، برکناری یا عجز دائم رئیس‌جمهور:
-
-الف) معاون اول به‌طور موقت وظایف را بر عهده می‌گیرد
-
-ب) شورای موقت متشکل از رؤسای دو مجلس و رئیس دیوان عالی، خلأ را تأیید می‌کند
-
-ج) انتخابات جدید ظرف ۶۰ روز برگزار می‌شود
-
-د) رئیس‌جمهور موقت حق انحلال مجلس یا تغییرات اساسی در کابینه را ندارد \\
-\hline
-
 \end{longtable}
 
 \subsubsection{ب) هیئت وزیران}
 
-\begin{longtable}{|>{\columncolor{SuccessGreen!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (هیئت وزیران) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۲۰} &
-\textbf{ترکیب هیئت وزیران}
-
-الف) هیئت وزیران متشکل است از رئیس‌جمهور، معاونان رئیس‌جمهور و وزرا.
-
-ب) تعداد وزارتخانه‌ها نباید از ۲۰ وزارتخانه تجاوز کند.
-
-ج) ترکیب کابینه باید بازتاب‌دهنده تنوع جغرافیایی، قومی و جنسیتی کشور باشد.
-
-د) حداقل ۳۰٪ اعضای کابینه باید زن باشند. \\
+\textbf{اصل ۱۲۰} & \textbf{ترکیب:} الف) رئیس‌جمهور، معاونان و وزرا. ب) حداکثر ۲۰ وزارتخانه. ج) رعایت تنوع جغرافیایی، قومی و جنسیتی (حداقل ۳۰٪ زن) الزامی است. \\
 \hline
 
-\textbf{اصل ۱۲۱} &
-\textbf{انتصاب وزرا}
-
-الف) رئیس‌جمهور وزرای پیشنهادی را ظرف ۳۰ روز پس از تحلیف به مجلس ملی معرفی می‌کند.
-
-ب) هر وزیر باید رأی اعتماد اکثریت نمایندگان را کسب کند.
-
-ج) در صورت رد وزیر پیشنهادی، رئیس‌جمهور فرد دیگری را معرفی می‌کند.
-
-د) اگر سه بار متوالی کابینه رأی اعتماد نگیرد، انتخابات زودهنگام برگزار می‌شود. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۲۱} & \textbf{رأی اعتماد:} وزرای پیشنهادی باید رأی اعتماد اکثریت نمایندگان مجلس ملی را کسب کنند. در صورت سه بار رد کلیات کابینه، انتخابات زودهنگام برگزار می‌شود. \\
 \hline
 
-\textbf{اصل ۱۲۲} &
-\textbf{وظایف هیئت وزیران}
-
-هیئت وزیران:
-
-الف) سیاست‌های دولت را تدوین و اجرا می‌کند
-
-ب) لوایح قانونی را تهیه و به مجلس تقدیم می‌کند
-
-ج) بودجه سالانه را تنظیم می‌کند
-
-د) آیین‌نامه‌های اجرایی را تصویب می‌کند
-
-هـ) بر عملکرد دستگاه‌های اجرایی نظارت می‌کند
-
-و) امنیت ملی و نظم عمومی را تأمین می‌کند \\
+\textbf{اصل ۱۲۲} & \textbf{وظایف:} تدوین سیاست‌های دولت، تهیه لوایح و بودجه سالانه، تصویب آیین‌نامه‌ها و تأمین امنیت ملی. \\
 \hline
 
-\textbf{اصل ۱۲۳} &
-\textbf{مسئولیت وزرا}
-
-الف) هر وزیر در قبال وظایف وزارتخانه خود مسئول است.
-
-ب) هیئت وزیران به‌طور جمعی در برابر مجلس ملی مسئول است.
-
-ج) نمایندگان می‌توانند از وزرا سؤال کنند و پاسخ باید ظرف ۱۵ روز داده شود.
-
-د) استیضاح وزیر با امضای ۱۵ نماینده مطرح می‌شود و رأی عدم اعتماد با اکثریت ساده کافی است. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۲۴} & \textbf{تعارض منافع:} ممنوعیت شغل دوم برای وزرا، اعلام کامل دارایی‌ها در ابتدا و انتها، و محدودیت ۲ ساله برای ورود به بخش خصوصی مرتبط پس از خدمت. \\
 \hline
-
-\textbf{اصل ۱۲۴} &
-\textbf{تعارض منافع وزرا}
-
-الف) وزرا و معاونان نمی‌توانند شغل دیگری داشته باشند.
-
-ب) وزرا موظف به اعلام کامل دارایی‌های خود در ابتدا و انتهای دوره هستند.
-
-ج) وزرا نمی‌توانند در قراردادهای دولتی ذی‌نفع باشند.
-
-د) محدودیت‌های پس از خدمت (۲ سال) برای ورود به بخش خصوصی مرتبط اعمال می‌شود. \\
-\hline
-
 \end{longtable}
 
 \subsubsection{ج) نیروهای مسلح}
 
-\begin{longtable}{|>{\columncolor{SuccessGreen!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (نیروهای مسلح) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{SuccessGreen!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۲۵} &
-\textbf{وظیفه نیروهای مسلح}
-
-نیروهای مسلح جمهوری فدرال ایران موظف به:
-
-الف) دفاع از استقلال و تمامیت ارضی کشور
-
-ب) حمایت از نظام قانون اساسی و نظم دموکراتیک
-
-ج) کمک در بلایای طبیعی و شرایط اضطراری
-
-نیروهای مسلح ابزار سیاست خارجی تهاجمی نیستند. \\
+\textbf{اصل ۱۲۵} & \textbf{وظیفه نیروهای مسلح:} دفاع از استقلال و تمامیت ارضی، حمایت از نظام قانون اساسی و نظم دموکراتیک، و کمک در بلایای طبیعی. نیروهای مسلح ابزار سیاست تهاجمی نیستند. \\
 \hline
 
-\textbf{اصل ۱۲۶} &
-\textbf{فرماندهی نیروهای مسلح}
-
-الف) رئیس‌جمهور فرمانده کل نیروهای مسلح است.
-
-ب) شورای عالی دفاع ملی به ریاست رئیس‌جمهور تشکیل می‌شود.
-
-ج) اعلام جنگ و صلح مستلزم تصویب دوسوم مجلس ملی است.
-
-د) اعزام نیرو به خارج از کشور نیازمند تصویب مجلس است. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۲۶} & \textbf{فرماندهی:} رئیس‌جمهور فرمانده کل است. اعلام جنگ و صلح و اعزام نیرو به خارج مستلزم تصویب دوسوم مجلس ملی است. \\
 \hline
 
-\textbf{اصل ۱۲۷} &
-\textbf{غیرسیاسی بودن ارتش}
-
-الف) نیروهای مسلح از سیاست‌ورزی و فعالیت حزبی منع هستند.
-
-ب) نظامیان در دوران خدمت حق رأی دارند اما حق کاندیداتوری ندارند.
-
-ج) دخالت نظامیان در امور سیاسی جرم سنگین است.
-
-د) نظارت پارلمانی بر نیروهای مسلح الزامی است. \\
+\textbf{اصل ۱۲۷} & \textbf{غیرسیاسی بودن:} ممنوعیت فعالیت حزبی و دخالت در امور سیاسی. نظامیان در دوران خدمت حق کاندیداتوری ندارند. نظارت پارلمانی بر ارتش الزامی است. \\
 \hline
 
-\textbf{اصل ۱۲۸} &
-\textbf{بودجه دفاعی}
-
-الف) بودجه دفاعی باید به تصویب مجلس برسد.
-
-ب) کمیسیون دفاع مجلس بر هزینه‌های نظامی نظارت دارد.
-
-ج) گزارش سالانه عملکرد مالی نیروهای مسلح به مجلس ارائه می‌شود. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۲۸} & \textbf{بودجه دفاعی:} بودجه نظامی باید به تصویب مجلس برسد و کمیسیون دفاع بر هزینه‌ها نظارت دقیق دارد. \\
 \hline
 
-\textbf{اصل ۱۲۹} &
-\textbf{ممنوعیت کودتا}
-
-الف) هرگونه تلاش نظامی برای تغییر نظام قانون اساسی کودتا محسوب می‌شود.
-
-ب) اطاعت از دستورات غیرقانونی و ضد قانون اساسی ممنوع است.
-
-ج) شهروندان و نهادها حق مقاومت در برابر کودتا را دارند. \\
+\textbf{اصل ۱۲۹} & \textbf{ممنوعیت کودتا:} هرگونه اقدام نظامی برای تغییر نظام قانون اساسی کودتا و جرم سنگین است. حق مقاومت شهروندی در برابر کودتا به رسمیت شناخته می‌شود. \\
 \hline
-
 \end{longtable}
 
 \subsection{بخش سوم: قوه قضائیه (اصول ۱۳۶-۱۵۵)}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
+    scale=0.9,
+    transform shape,
     court/.style={
-        draw=WisdomGold,
-        line width=1.5pt,
-        fill=WisdomGold!15,
+        rectangle,
         rounded corners=8pt,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
         minimum width=4cm,
         minimum height=1.5cm,
-        align=center,
+        text centered,
         font=\small\bfseries
-    }
+    },
+    arrow/.style={->, ultra thick, bleurepublique!30, >=stealth}
 ]
-    % عنوان
-    \node[
-        fill=WisdomGold,
-        text=white,
-        rounded corners=5pt,
-        font=\large\bfseries,
-        minimum width=8cm
-    ] at (0,4) {ساختار قوه قضائیه};
-    
-    % دیوان عالی قانون اساسی
-    \node[court, fill=WisdomGold!30] (cc) at (0,2.5) {\shortstack{دیوان عالی قانون اساسی\\(۱۵ قاضی)}};
-    
-    % دیوان عالی کشور
-    \node[court] (sc) at (-4,0.5) {\shortstack{دیوان عالی کشور\\(رئیس + ۲۴ قاضی)}};
-    
-    % دادگاه عالی اداری
-    \node[court] (ac) at (4,0.5) {\shortstack{دیوان عدالت اداری\\(۱۲ قاضی)}};
-    
-    % دادگاه‌های استیناف
-    \node[court, fill=WisdomGold!10] (app) at (-4,-1.5) {\shortstack{دادگاه‌های استیناف\\(استانی)}};
-    
-    % دادگاه‌های بدوی
-    \node[court, fill=WisdomGold!10] (first) at (4,-1.5) {\shortstack{دادگاه‌های بدوی\\(شهرستانی)}};
-    
-    % دادگاه‌های تخصصی
-    \node[court, fill=gray!10, draw=gray] (spec) at (0,-1.5) {\shortstack{دادگاه‌های تخصصی\\(خانواده، کار، تجارت)}};
-    
-    % شورای عالی قضایی
-    \node[
-        draw=WarningRed,
-        fill=WarningRed!10,
-        rounded corners=5pt,
-        minimum width=4cm,
-        minimum height=1cm,
-        font=\small\bfseries
-    ] (council) at (0,-3.5) {شورای عالی قضایی};
-    
-    % اتصالات
-    \draw[->, thick, WisdomGold] (cc) -- (sc);
-    \draw[->, thick, WisdomGold] (cc) -- (ac);
-    \draw[->, thick, WisdomGold!70] (sc) -- (app);
-    \draw[->, thick, WisdomGold!70] (app) -- (first);
-    \draw[->, thick, gray] (spec) -- (sc);
-    \draw[->, thick, WarningRed, dashed] (council) -- (sc);
-    \draw[->, thick, WarningRed, dashed] (council) -- (ac);
-\end{tikzpicture}
-\end{center}
+\node[court, draw=goldphoenix, fill=goldlight] (cc) at (0,2.5) {\rl{دیوان عالی قانون اساسی}\\\rl{\tiny ۱۵ قاضی}};
+\node[court] (sc) at (-4,0.5) {\rl{دیوان عالی کشور}\\\rl{\tiny رئیس + ۲۴ قاضی}};
+\node[court] (ac) at (4,0.5) {\rl{دیوان عدالت اداری}\\\rl{\tiny ۱۲ قاضی}};
+\node[court, minimum height=1cm] (app) at (-4,-1.5) {\rl{دادگاه‌های استیناف}};
+\node[court, minimum height=1cm] (first) at (4,-1.5) {\rl{دادگاه‌های بدوی}};
+\node[court, draw=gray, fill=gray!10] (spec) at (0,-1.5) {\rl{دادگاه‌های تخصصی}};
 
-\begin{longtable}{|>{\columncolor{WisdomGold!15}}r|p{12cm}|}
+\foreach \s/\t in {cc/sc, cc/ac, sc/app, app/first, spec/sc} {
+    \draw[arrow] (\s) -- (\t);
+}
+
+\node[
+    draw=goldphoenix,
+    fill=goldlight,
+    rounded corners=5pt,
+    minimum width=6cm,
+    minimum height=1cm,
+    font=\bfseries
+] at (0,-3.5) {\rl{شورای عالی قضایی (نهاد راهبری)}};
+\end{tikzpicture}
+\caption{ساختار سلسله‌مراتبی قوه قضائیه در نظام فدرال دموکراتیک}
+\label{fig:jud-structure}
+\end{figure}
+
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{WisdomGold!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (قوه قضائیه و دیوان قانون اساسی) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{WisdomGold!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۳۶} &
-\textbf{استقلال قضایی}
-
-الف) قوه قضائیه مستقل است و هیچ نهادی حق دخالت در امور قضایی را ندارد.
-
-ب) قضات در صدور رأی مستقل‌اند و تنها تابع قانون هستند.
-
-ج) بودجه قضایی باید کافی و مستقل از قوه مجریه تأمین شود. \\
+\textbf{اصل ۱۳۶} & \textbf{استقلال قضایی:} قوه قضائیه مستقل است. قضات در صدور رأی تنها تابع قانون هستند. بودجه قضایی مستقل از قوه مجریه و توسط پارلمان تأمین می‌شود. \\
 \hline
 
-\textbf{اصل ۱۳۷} &
-\textbf{شورای عالی قضایی}
-
-الف) شورای عالی قضایی بالاترین نهاد اداری قوه قضائیه است.
-
-ب) ترکیب شورا: رئیس دیوان عالی کشور، دادستان کل، ۵ قاضی منتخب قضات، ۳ حقوقدان منتخب مجلس
-
-ج) وظایف: انتصاب و ترفیع قضات، نظارت بر عملکرد دادگاه‌ها، تدوین مقررات قضایی \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۳۷} & \textbf{شورای عالی قضایی:} بالاترین نهاد راهبری قضایی متشکل از رئیس دیوان عالی، دادستان کل، قضات منتخب و حقوقدانان. وظیفه انتصاب، ترفیع و نظارت بر قضات را دارد. \\
 \hline
 
-\textbf{اصل ۱۳۸} &
-\textbf{انتصاب قضات}
-
-الف) قضات توسط شورای عالی قضایی بر اساس شایستگی و استقلال منصوب می‌شوند.
-
-ب) قضات دیوان عالی کشور با پیشنهاد شورا و تأیید مجلس اقوام منصوب می‌شوند.
-
-ج) قضات دیوان قانون اساسی با رأی دوسوم مجلس ملی و تأیید مجلس اقوام منصوب می‌شوند. \\
+\textbf{اصل ۱۳۸} & \textbf{انتصاب قضات:} قضات توسط شورا منصوب می‌شوند. قضات دیوان عالی و دیوان قانون اساسی نیازمند تأیید مجلس اقوام و مجلس ملی هستند. \\
 \hline
 
-\textbf{اصل ۱۳۹} &
-\textbf{تصدی قضاوت}
-
-الف) قضات دارای تصدی مادام‌العمر تا سن بازنشستگی (۷۰ سال) هستند.
-
-ب) عزل قاضی تنها به حکم دادگاه انتظامی قضات و در موارد قانونی ممکن است.
-
-ج) انتقال قاضی بدون رضایت وی ممنوع است مگر در موارد قانونی. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۳۹} & \textbf{تصدی قضاوت:} قضات دارای تصدی مادام‌العمر تا ۷۰ سالگی هستند. عزل یا انتقال آنها تنها در موارد استثنایی قانونی و حکم دادگاه انتظامی ممکن است. \\
 \hline
 
-\textbf{اصل ۱۴۰} &
-\textbf{دیوان عالی کشور}
+\textbf{اصل ۱۴۰} & \textbf{دیوان عالی کشور:} عالی‌ترین مرجع قضایی مدنی و کیفری، ناظر بر حسن اجرای قوانین و ایجاد وحدت رویه قضایی. \\
+\hline
 
-الف) دیوان عالی کشور بالاترین مرجع قضایی در امور مدنی و کیفری است.
+\rowcolor{goldlight}
+\textbf{اصل ۱۴۱} & \textbf{دیوان عالی قانون اساسی:} پاسدار میثاق ملی و حقوق بنیادین، متشکل از ۱۵ قاضی. صلاحیت تفسیر قانون اساسی و ابطال قوانین مغایر را دارد. \\
+\hline
+
+\textbf{اصل ۱۴۲} & \textbf{دسترسی به دیوان:} هر شهروند در صورت نقض حقوق بنیادین حق شکایت به دیوان قانون اساسی را دارد. مراجع سیاسی و دادگاه‌ها نیز حق ارجاع دارند. \\
+\hline
+
+\rowcolor{goldlight}
+\textbf{اصل ۱۴۳} & \textbf{دیوان عدالت اداری:} مرجع رسیدگی به شکایات شهروندان از تصمیمات و آیین‌نامه‌های دولتی و ابطال اقدامات غیرقانونی. \\
+\hline
+
+\textbf{اصل ۱۴۴} & \textbf{دادستانی کل:} مسئول تعقیب جرایم و حفاظت از حقوق عامه. دادستان توسط شورا پیشنهاد و با تأیید مجلس منصوب می‌شود. \\
+\hline
+
+\rowcolor{goldlight}
+\textbf{اصل ۱۴۵} & \textbf{دادرسی منصفانه:} علنی بودن محاکمات، حق داشتن وکیل، مستدل بودن احکام و حق تجدیدنظرخواهی همگانی. \\
+\hline
+\end{longtable}
 
 ب) وظایف: نظارت بر حسن اجرای قوانین، ایجاد رویه قضایی واحد، رسیدگی به فرجام‌خواهی
 
@@ -1555,159 +1068,72 @@
 \end{itemize}
 \end{olgoobox}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
+    scale=0.9,
+    transform shape,
     level/.style={
-        draw=DemocracyBlue,
-        line width=1.5pt,
-        fill=DemocracyBlue!15,
+        rectangle,
         rounded corners=8pt,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
         minimum width=12cm,
-        minimum height=1.5cm,
-        align=center,
+        minimum height=1.2cm,
+        text centered,
         font=\bfseries
-    }
+    },
+    arrow/.style={<->, ultra thick, bleurepublique!30, >=stealth}
 ]
-    % سطوح حکومت
-    \node[level, fill=DemocracyBlue!30] (fed) at (0,3) {سطح فدرال: حاکمیت ملی، دفاع، سیاست خارجی، اقتصاد کلان};
-    
-    \node[level, fill=SuccessGreen!20, draw=SuccessGreen] (reg) at (0,1) {سطح منطقه‌ای: ۵ منطقه خودمختار + ۱۵ استان};
-    
-    \node[level, fill=WisdomGold!20, draw=WisdomGold] (prov) at (0,-1) {سطح استانی: آموزش، بهداشت، عمران محلی};
-    
-    \node[level, fill=purple!15, draw=purple] (loc) at (0,-3) {سطح محلی: شهرداری‌ها و شوراهای روستایی};
-    
-    % فلش‌های دوطرفه
-    \draw[<->, thick, gray] (fed) -- (reg);
-    \draw[<->, thick, gray] (reg) -- (prov);
-    \draw[<->, thick, gray] (prov) -- (loc);
-    
-    % برچسب‌ها
-    \node[right=1cm of fed, font=\small, align=right, text width=3cm] {صلاحیت انحصاری فدرال};
-    \node[right=1cm of reg, font=\small, align=right, text width=3cm] {صلاحیت مشترک};
-    \node[right=1cm of prov, font=\small, align=right, text width=3cm] {صلاحیت محلی};
-    \node[right=1cm of loc, font=\small, align=right, text width=3cm] {خدمات شهری};
-\end{tikzpicture}
-\end{center}
+\node[level, fill=bleurepublique, text=white] (fed) at (0,3) {\rl{سطح فدرال: حاکمیت ملی، دفاع، سیاست خارجی، پولی}};
+\node[level, draw=goldphoenix, fill=goldlight] (reg) at (0,1) {\rl{سطح منطقه‌ای: ۵ منطقه خودمختار + ۱۵ استان}};
+\node[level] (prov) at (0,-1) {\rl{سطح استانی: آموزش، بهداشت، قانون‌گذاری محلی}};
+\node[level, fill=white] (loc) at (0,-3) {\rl{سطح محلی: شهرداری‌ها و دموکراسی مستقیم شورایی}};
 
-\begin{longtable}{|>{\columncolor{DemocracyBlue!15}}r|p{12cm}|}
+\draw[arrow] (fed) -- (reg);
+\draw[arrow] (reg) -- (prov);
+\draw[arrow] (prov) -- (loc);
+\end{tikzpicture}
+\caption{هرم ساختار فدرال جمهوری فدرال ایران از مرکز تا جوامع محلی}
+\label{fig:federal-pyramid}
+\end{figure}
+
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (ساختار فدرال و تقسیمات کشوری) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۴۶} &
-\textbf{تقسیمات کشوری}
-
-جمهوری فدرال ایران متشکل است از:
-
-الف) پنج منطقه خودمختار: آذربایجان، کردستان، بلوچستان، خوزستان (عربستان)، ترکمن‌صحرا
-
-ب) پانزده استان: تهران، اصفهان، فارس، خراسان شمالی، خراسان رضوی، خراسان جنوبی، گیلان، مازندران، لرستان، کرمان، یزد، سمنان، قم، مرکزی، ساحلی جنوب
-
-ج) شهرستان‌ها و بخش‌ها
-
-د) تغییر مرزهای منطقه‌ای مستلزم تصویب دوسوم مجلس اقوام و همه‌پرسی منطقه‌ای است. \\
+\textbf{اصل ۱۴۶} & \textbf{تقسیمات کشوری:} ایران متشکل از ۵ منطقه خودمختار (آذربایجان، کردستان، بلوچستان، خوزستان و ترکمن‌صحرا) و ۱۵ استان فدرال است. تغییر در مرزها نیازمند همه‌پرسی محلی و تصویب دوسوم پارلمان است. \\
 \hline
 
-\textbf{اصل ۱۴۷} &
-\textbf{مناطق خودمختار}
-
-الف) مناطق خودمختار دارای پارلمان و دولت منطقه‌ای منتخب هستند.
-
-ب) زبان قومی در منطقه خودمختار زبان رسمی دوم است.
-
-ج) مناطق خودمختار در چارچوب قانون اساسی، اساسنامه خود را تصویب می‌کنند.
-
-د) فرماندار منطقه توسط پارلمان منطقه‌ای انتخاب و توسط رئیس‌جمهور تأیید می‌شود. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۴۷} & \textbf{خودمختاری منطقه‌ای:} الف) هر منطقه دارای پارلمان و دولت منطقه‌ای منتخب است. ب) زبان‌های بومی در کنار زبان فارسی در مناطق مربوطه رسمیت دارند. ج) مناطق در امور فرهنگی، آموزشی و عمران محلی خودمختارند. \\
 \hline
 
-\textbf{اصل ۱۴۸} &
-\textbf{صلاحیت انحصاری فدرال}
-
-صلاحیت‌های انحصاری دولت فدرال:
-
-الف) دفاع ملی و نیروهای مسلح
-
-ب) سیاست خارجی و معاهدات بین‌المللی
-
-ج) سیاست پولی، بانک مرکزی و ارز
-
-د) گمرک و تجارت خارجی
-
-هـ) مهاجرت و تابعیت
-
-و) ارتباطات و حمل‌ونقل بین‌استانی
-
-ز) انرژی هسته‌ای و منابع استراتژیک \\
+\textbf{اصل ۱۴۸} & \textbf{صلاحیت‌های انحصاری فدرال:} حاکمیت ملی، دفاع، سیاست خارجی، سیاست پولی، گمرک، و منابع استراتژیک (نفت و گاز) در صلاحیت انحصاری دولت فدرال است. \\
 \hline
 
-\textbf{اصل ۱۴۹} &
-\textbf{صلاحیت مشترک}
-
-صلاحیت‌های مشترک فدرال و منطقه‌ای:
-
-الف) آموزش عالی و تحقیقات
-
-ب) بهداشت عمومی
-
-ج) حفاظت از محیط زیست
-
-د) مدیریت منابع آب
-
-هـ) توسعه اقتصادی و صنعتی
-
-در موارد تعارض، قانون فدرال ارجحیت دارد مگر در حوزه‌های خاص منطقه‌ای. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۴۹} & \textbf{صلاحیت‌های مشترک:} محیط زیست، بهداشت، آموزش عالی و جنگل‌ها در صلاحیت مشترک مرکز و مناطق است. در صورت تعارض، قوانین فدرال اولویت دارند. \\
 \hline
 
-\textbf{اصل ۱۵۰} &
-\textbf{صلاحیت منطقه‌ای و محلی}
-
-صلاحیت‌های انحصاری مناطق و استان‌ها:
-
-الف) آموزش ابتدایی و متوسطه (در چارچوب استانداردهای ملی)
-
-ب) فرهنگ و میراث محلی
-
-ج) پلیس محلی و امنیت داخلی
-
-د) عمران و شهرسازی
-
-هـ) خدمات اجتماعی و رفاهی محلی
-
-و) گردشگری منطقه‌ای \\
+\textbf{اصل ۱۵۰} & \textbf{همبستگی فدرال:} مناطق موظف به رعایت وحدت ملی و تمامیت ارضی هستند. هیچ منطقه‌ای حق جدایی یک‌جانبه را ندارد. \\
 \hline
 
-\textbf{اصل ۱۵۱} &
-\textbf{توزیع منابع}
-
-الف) درآمدهای نفت و گاز متعلق به کل ملت ایران است.
-
-ب) صندوق توازن منطقه‌ای برای توزیع عادلانه منابع تشکیل می‌شود.
-
-ج) فرمول توزیع: ۵۰٪ جمعیت، ۲۵٪ مساحت، ۱۵٪ محرومیت، ۱۰٪ عملکرد
-
-د) مناطق تولیدکننده منابع طبیعی سهم اضافی (۵٪) دریافت می‌کنند.
-
-هـ) شورای توازن مالی بر اجرای عادلانه نظارت دارد. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۵۱} & \textbf{توازن مالی (عدالت توزیعی):} دولت فدرال موظف به توزیع عادلانه درآمدهای ملی بین مناطق بر اساس جمعیت و شاخص‌های محرومیت است تا شکاف‌های توسعه‌ای برطرف شود. \\
 \hline
 
-\textbf{اصل ۱۵۲} &
-\textbf{همکاری بین‌منطقه‌ای}
-
-الف) مناطق می‌توانند برای پروژه‌های مشترک همکاری کنند.
-
-ب) شورای فرمانداران به ریاست رئیس‌جمهور برای هماهنگی تشکیل می‌شود.
-
-ج) اختلافات بین‌منطقه‌ای توسط دیوان قانون اساسی حل‌وفصل می‌شود. \\
+\textbf{اصل ۱۵۲} & \textbf{شورای فرمانداران:} برای هماهنگی بین مرکز و مناطق، شورای فرمانداران به ریاست رئیس‌جمهور تشکیل می‌شود. اختلافات بین‌منطقه‌ای توسط دیوان قانون اساسی حل می‌شود. \\
 \hline
-
 \end{longtable}
 
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -1715,163 +1141,83 @@
 \label{sec:const-ch5}
 % ═══════════════════════════════════════════════════════════════════════════════
 
-\begin{center}
-\begin{tikzpicture}
-    % عنوان مرکزی
-    \node[
-        draw=WarningRed,
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.9,
+    transform shape,
+    center/.style={
+        rectangle,
+        rounded corners=12pt,
+        draw=bleurepublique,
+        fill=bleulight,
         line width=2pt,
-        fill=WarningRed!15,
-        rounded corners=10pt,
         minimum width=5cm,
         minimum height=1.5cm,
         font=\large\bfseries
-    ] (center) at (0,0) {نهادهای نظارتی مستقل};
-    
-    % نهادها در اطراف
-    \foreach \angle/\name/\desc in {
-        60/{کمیسیون انتخابات}/{برگزاری و نظارت},
-        120/{بانک مرکزی}/{سیاست پولی مستقل},
-        180/{سازمان حسابرسی}/{نظارت مالی},
-        240/{کمیسیون حقوق بشر}/{حمایت از حقوق},
-        300/{سازمان ضد فساد}/{مبارزه با فساد},
-        0/{کمیسیون رسانه}/{آزادی رسانه}
-    } {
-        \node[
-            draw=WarningRed!70,
-            fill=white,
-            rounded corners=5pt,
-            minimum width=3cm,
-            minimum height=1.2cm,
-            align=center,
-            font=\scriptsize
-        ] (\angle) at (\angle:4cm) {\textbf{\name}\\\desc};
-        
-        \draw[->, thick, WarningRed!50] (center) -- (\angle);
-    }
-\end{tikzpicture}
-\end{center}
+    },
+    node/.style={
+        rectangle,
+        rounded corners=8pt,
+        draw=goldphoenix!70,
+        fill=goldlight,
+        minimum width=3.2cm,
+        minimum height=1.2cm,
+        align=center,
+        font=\tiny\bfseries
+    },
+    arrow/.style={->, thick, bleurepublique!40, >=stealth}
+]
+\node[center] (c) at (0,0) {\rl{نهادهای نظارتی مستقل}};
 
-\begin{longtable}{|>{\columncolor{WarningRed!15}}r|p{12cm}|}
+\foreach \ang/\label/\desc in {60/کمیسیون انتخابات/نظارت بر آرا, 120/بانک مرکزی/سیاست پولی, 180/سازمان حسابرسی/شفافیت مالی, 240/کمیسیون حقوق بشر/حمایت از کرامت, 300/سازمان ضد فساد/مبارزه با رانت, 0/شورای عالی رسانه/آزادی بیان} {
+    \node[node] (n\ang) at (\ang:4.5) {\rl{\label}\\\rl{\tiny \desc}};
+    \draw[arrow] (c) -- (n\ang);
+}
+\end{tikzpicture}
+\caption{منظومه نهادهای مستقل نظارتی (رکن چهارم دموکراسی)}
+\label{fig:oversight}
+\end{figure}
+
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{WarningRed!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (نهادهای مستقل نظارتی) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{WarningRed!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۵۳} &
-\textbf{اصل نهادهای مستقل}
-
-نهادهای نظارتی مستقل رکن چهارم نظام حکومتی هستند. این نهادها:
-
-الف) از قوای سه‌گانه مستقل‌اند
-
-ب) رؤسای آنها با رأی دوسوم مجلس منصوب می‌شوند
-
-ج) بودجه مستقل دارند
-
-د) تنها در برابر مجلس پاسخگو هستند
-
-هـ) از مداخله سیاسی مصون‌اند \\
+\textbf{اصل ۱۵۳} & \textbf{جایگاه نهادهای مستقل:} این نهادها رکن چهارم نظام‌اند. از قوای سه‌گانه مستقل بوده، بودجه مجزا دارند و رؤسای آنها با رأی دوسوم مجلس منصوب می‌شوند. \\
 \hline
 
-\textbf{اصل ۱۵۴} &
-\textbf{کمیسیون مستقل انتخابات}
-
-الف) کمیسیون انتخابات مسئول برگزاری، نظارت و اعلام نتایج همه انتخابات است.
-
-ب) ترکیب: ۱۱ عضو (۵ قاضی، ۳ حقوقدان، ۳ متخصص انتخابات)
-
-ج) دوره عضویت: ۷ سال غیرقابل تمدید
-
-د) اعضا نباید وابستگی حزبی داشته باشند
-
-هـ) تصمیمات کمیسیون در دیوان قانون اساسی قابل اعتراض است \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۵۴} & \textbf{کمیسیون مستقل انتخابات:} مسئول برگزاری و نظارت بر کلیه انتخابات و همه‌پرسی‌ها. اعضا باید فاقد وابستگی حزبی بوده و توسط دیوان عالی تأیید شوند. \\
 \hline
 
-\textbf{اصل ۱۵۵} &
-\textbf{بانک مرکزی مستقل}
-
-الف) بانک مرکزی جمهوری فدرال ایران نهاد مستقل سیاست پولی است.
-
-ب) هدف اصلی: ثبات قیمت‌ها و ارزش پول ملی
-
-ج) رئیس بانک مرکزی با پیشنهاد رئیس‌جمهور و تأیید دوسوم مجلس منصوب می‌شود
-
-د) دوره ریاست: ۶ سال (حداکثر ۲ دوره)
-
-هـ) دولت حق استقراض مستقیم از بانک مرکزی را ندارد \\
+\textbf{اصل ۱۵۵} & \textbf{بانک مرکزی:} هدف اصلی ثبات قیمت‌ها و حفظ ارزش پول است. دولت حق استقراض مستقیم یا دخالت در سیاست‌های پولی را ندارد. \\
 \hline
 
-\textbf{اصل ۱۵۶} &
-\textbf{سازمان حسابرسی کل کشور}
-
-الف) سازمان حسابرسی نهاد عالی نظارت مالی است.
-
-ب) وظایف: حسابرسی همه نهادهای دولتی، شرکت‌های دولتی، و نهادهای عمومی
-
-ج) گزارش سالانه به مجلس ارائه می‌شود
-
-د) دسترسی نامحدود به همه اسناد مالی دارد \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۵۶} & \textbf{سازمان حسابرسی:} نظارت بر سلامت مالی و بودجه‌ای کلیه دستگاه‌های حکومتی و شرکت‌های عمومی و ارائه گزارش شفاف به ملت. \\
 \hline
 
-\textbf{اصل ۱۵۷} &
-\textbf{کمیسیون ملی حقوق بشر}
-
-الف) کمیسیون حقوق بشر نهاد حمایت و ارتقای حقوق بنیادین است.
-
-ب) وظایف: دریافت شکایات، تحقیق، توصیه، آموزش حقوق بشر
-
-ج) ترکیب: ۱۵ عضو از حقوقدانان، فعالان مدنی، و نمایندگان اقلیت‌ها
-
-د) گزارش سالانه به مجلس و عموم \\
+\textbf{اصل ۱۵۷} & \textbf{کمیسیون حقوق بشر:} صیانت از حقوق بنیادین، دریافت شکایات شهروندان، و نظارت بر حسن اجرای کنوانسیون‌های بین‌المللی حقوق بشر در ایران. \\
 \hline
 
-\textbf{اصل ۱۵۸} &
-\textbf{سازمان ملی مبارزه با فساد}
-
-الف) سازمان ضد فساد نهاد مستقل پیشگیری و مبارزه با فساد است.
-
-ب) صلاحیت: تحقیق درباره فساد در همه سطوح، از جمله مقامات عالی
-
-ج) حفاظت از افشاگران (سوت‌زنان)
-
-د) همکاری با دادستانی برای تعقیب متخلفین
-
-هـ) انتشار شاخص سالانه فساد \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۵۸} & \textbf{سازمان ضد فساد:} پیشگیری و مبارزه با فساد در سطوح عالی حاکمیتی، حمایت از سوت‌زنان و شفاف‌سازی دارایی مقامات. \\
 \hline
 
-\textbf{اصل ۱۵۹} &
-\textbf{شورای عالی رسانه}
-
-الف) شورای رسانه نهاد تنظیم‌گر مستقل بخش رسانه است.
-
-ب) وظایف: صدور مجوز، نظارت بر استانداردها، حفاظت از تکثرگرایی
-
-ج) ممنوعیت سانسور دولتی
-
-د) صدا و سیما باید بی‌طرف و متکثر باشد
-
-هـ) شورا نمی‌تواند محتوا را سانسور کند، تنها نظارت پس از انتشار \\
+\textbf{اصل ۱۵۹} & \textbf{شورای عالی رسانه:} تضمین آزادی بیان، تکثرگرایی رسانه‌ای و ممنوعیت سانسور. نظارت بر رسانه‌های عمومی برای اطمینان از بی‌طرفی. \\
 \hline
 
-\textbf{اصل ۱۶۰} &
-\textbf{نهاد بازرسی کل کشور}
-
-الف) بازرسی کل نهاد رسیدگی به شکایات از دستگاه‌های اجرایی است.
-
-ب) هر شهروند می‌تواند بدون هزینه شکایت کند
-
-ج) بازرس کل حق بازرسی از همه نهادها را دارد
-
-د) توصیه‌های بازرسی لازم‌الاجرا است \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۶۰} & \textbf{نهاد بازرسی کل:} رسیدگی به شکایات شهروندان از سوءمدیریت اداری و تضمین پاسخگویی مقامات در برابر قانون. \\
 \hline
-
 \end{longtable}
 
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -1879,80 +1225,38 @@
 \label{sec:const-ch6}
 % ═══════════════════════════════════════════════════════════════════════════════
 
-\begin{longtable}{|>{\columncolor{purple!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{purple!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (حکومت محلی و شوراها) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{purple!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۶۱} &
-\textbf{اصل تمرکززدایی}
-
-اداره امور محلی بر اساس اصل تمرکززدایی و واگذاری اختیارات به پایین‌ترین سطح ممکن (اصل تقرب) انجام می‌شود. \\
+\textbf{اصل ۱۶۱} & \textbf{تمرکززدایی:} اداره امور محلی بر اساس اصل تقرب (واگذاری اختیارات به پایین‌ترین سطح ممکن) و مشارکت مستقیم شهروندان انجام می‌شود. \\
 \hline
 
-\textbf{اصل ۱۶۲} &
-\textbf{شوراهای محلی}
-
-الف) در هر شهر و روستا شورای منتخب تشکیل می‌شود.
-
-ب) اعضای شورا با رأی مستقیم مردم انتخاب می‌شوند.
-
-ج) دوره شوراها چهار سال است.
-
-د) شوراها مسئول نظارت بر اداره محلی و تصویب بودجه محلی هستند. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۶۲} & \textbf{شوراهای محلی:} در هر شهر و روستا شورای منتخب با رأی مستقیم مردم برای ۴ سال تشکیل می‌شود. شورا ناظر بر مدیریت محلی و تصویب‌کننده بودجه شهرداری است. \\
 \hline
 
-\textbf{اصل ۱۶۳} &
-\textbf{شهرداری‌ها}
-
-الف) شهردار توسط شورای شهر انتخاب می‌شود.
-
-ب) شهرداری‌ها استقلال مالی و اداری دارند.
-
-ج) منابع شهرداری: مالیات محلی، عوارض، کمک‌های دولتی
-
-د) شهرداری‌ها در برابر شورا و شهروندان پاسخگو هستند. \\
+\textbf{اصل ۱۶۳} & \textbf{شهرداری‌ها:} شهردار توسط شورا انتخاب می‌شود. شهرداری‌ها استقلال مالی داشته و در قبال شورا و شهروندان پاسخگو هستند. \\
 \hline
 
-\textbf{اصل ۱۶۴} &
-\textbf{استانداران}
-
-الف) استاندار نماینده دولت مرکزی در استان است.
-
-ب) استاندار توسط وزیر کشور پیشنهاد و با تأیید شورای استان منصوب می‌شود.
-
-ج) وظایف: هماهنگی بین دولت مرکزی و محلی، نظارت بر اجرای قوانین ملی \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۶۴} & \textbf{استانداران:} استاندار هماهنگ‌کننده دولت فدرال و محلی است که با پیشنهاد وزیر کشور و تأیید شورای منتخب منطقه منصوب می‌شود. \\
 \hline
 
-\textbf{اصل ۱۶۵} &
-\textbf{شوراهای استانی}
-
-الف) شورای استان متشکل از نمایندگان شوراهای شهر و روستا است.
-
-ب) وظایف: برنامه‌ریزی توسعه استانی، هماهنگی بین شهرستان‌ها
-
-ج) شورای استان بودجه استانی را تصویب می‌کند. \\
+\textbf{اصل ۱۶۵} & \textbf{شوراهای منطقه‌ای:} مسئول برنامه‌ریزی توسعه کلان منطقه، هماهنگی بین استانی و مدیریت منابع مشترک منطقه‌ای هستند. \\
 \hline
 
-\textbf{اصل ۱۶۶} &
-\textbf{مشارکت مردمی}
-
-الف) شهروندان حق مشارکت مستقیم در تصمیمات محلی را دارند.
-
-ب) همه‌پرسی محلی برای موضوعات مهم اجباری است.
-
-ج) جلسات شوراها علنی است و شهروندان حق حضور دارند.
-
-د) بودجه مشارکتی در شهرهای بزرگ الزامی است. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۶۶} & \textbf{مشارکت و همه‌پرسی محلی:} حق شهروندان برای مشارکت در بودجه‌نویسی و الزام برگزاری رفراندوم محلی برای طرح‌های حساس زیست‌محیطی یا عمرانی محلی. \\
 \hline
-
 \end{longtable}
 
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -2006,94 +1310,41 @@
 \end{tikzpicture}
 \end{center}
 
-\begin{longtable}{|>{\columncolor{DemocracyBlue!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (بازنگری در قانون اساسی) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{DemocracyBlue!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۶۷} &
-\textbf{اصل بازنگری}
-
-قانون اساسی سندی زنده است که می‌تواند با تغییر شرایط و نیازهای جامعه بازنگری شود، مشروط به رعایت اصول غیرقابل تغییر و تشریفات پیش‌بینی‌شده. \\
+\textbf{اصل ۱۶۷} & \textbf{اصل بازنگری:} این میثاق ملی سندی زنده است که بر اساس خرد جمعی و نیازهای زمان قابل بازنگری است، مشروط به حفظ هویت دموکراتیک و حقوق بنیادین. \\
 \hline
 
-\textbf{اصل ۱۶۸} &
-\textbf{پیشنهاد بازنگری}
-
-حق پیشنهاد بازنگری متعلق است به:
-
-الف) رئیس‌جمهور با موافقت هیئت وزیران
-
-ب) دوسوم نمایندگان مجلس ملی
-
-ج) دوسوم نمایندگان مجلس اقوام
-
-د) دو میلیون شهروند واجد شرایط رأی \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۶۸} & \textbf{پیشنهاد بازنگری:} حق پیشنهاد بر عهده رئیس‌جمهور، دوسوم هر یک از مجالس، یا با ابتکار مردمی ۲ میلیون شهروند است. \\
 \hline
 
-\textbf{اصل ۱۶۹} &
-\textbf{کمیته بازنگری}
-
-الف) پس از پذیرش پیشنهاد، کمیته ویژه بازنگری تشکیل می‌شود.
-
-ب) ترکیب: ۲۰ نماینده مجلس ملی، ۱۰ نماینده مجلس اقوام، ۵ قاضی دیوان قانون اساسی، ۱۵ حقوقدان و صاحب‌نظر
-
-ج) کمیته ظرف ۶ ماه متن پیشنهادی را تهیه می‌کند. \\
+\textbf{اصل ۱۶۹} & \textbf{کمیته بازنگری:} پس از تأیید ضرورت، کمیته‌ای متشکل از نمایندگان مردم، قضات عالی و حقوقدانان ظرف ۶ ماه پیش‌نویس طرح بازنگری را تهیه می‌کنند. \\
 \hline
 
-\textbf{اصل ۱۷۰} &
-\textbf{تصویب در مجلس}
-
-الف) متن پیشنهادی باید به تصویب سه‌چهارم نمایندگان هر دو مجلس برسد.
-
-ب) رأی‌گیری علنی و اسمی است.
-
-ج) فاصله دو قرائت حداقل ۶۰ روز است.
-
-د) دیوان قانون اساسی انطباق با اصول غیرقابل تغییر را تأیید می‌کند. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۷۰} & \textbf{تصویب پارلمانی:} طرح بازنگری نیازمند تصویب سه‌چهارم آرای هر دو مجلس (مجلس ملی و مجلس اقوام) در فاصله‌ای حداقل ۶۰ روزه است. \\
 \hline
 
-\textbf{اصل ۱۷۱} &
-\textbf{همه‌پرسی}
-
-الف) هر بازنگری در قانون اساسی مستلزم تأیید در همه‌پرسی است.
-
-ب) همه‌پرسی ظرف ۹۰ روز پس از تصویب مجلس برگزار می‌شود.
-
-ج) تصویب نیازمند اکثریت مطلق آرای مأخوذه با مشارکت حداقل ۵۰٪ واجدین شرایط است.
-
-د) اگر بازنگری به حقوق منطقه خاصی مربوط شود، اکثریت آن منطقه نیز لازم است. \\
+\textbf{اصل ۱۷۱} & \textbf{تأیید ملی (همه‌پرسی):} هرگونه تغییر در قانون اساسی پس از تصویب پارلمان، باید به همه‌پرسی عمومی گذاشته شده و با اکثریت مطلق آرا تأیید شود. \\
 \hline
 
-\textbf{اصل ۱۷۲} &
-\textbf{محدودیت‌های بازنگری}
-
-الف) اصول غیرقابل تغییر (اصل ۱۱) به هیچ وجه قابل بازنگری نیستند.
-
-ب) در دوران حکومت نظامی یا وضعیت اضطراری بازنگری ممنوع است.
-
-ج) در سال آخر دوره ریاست جمهوری بازنگری ممنوع است.
-
-د) هر اصل تنها یک‌بار در هر ۱۰ سال قابل بازنگری است (مگر برای اصلاح فنی). \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۷۲} & \textbf{اصول غیرقابل تغییر:} اصول مربوط به کرامت انسانی، نظام دموکراتیک، تفکیک قوا، فدرالیسم، و لغو مجازات اعدام به هیچ‌وجه قابل بازنگری نیستند. \\
 \hline
 
-\textbf{اصل ۱۷۳} &
-\textbf{اعلام و اجرا}
-
-الف) رئیس‌جمهور موظف است بازنگری مصوب را ظرف ۱۵ روز اعلام کند.
-
-ب) تغییرات از تاریخ اعلام لازم‌الاجرا است مگر تاریخ دیگری تعیین شده باشد.
-
-ج) متن جدید در روزنامه رسمی و رسانه‌های عمومی منتشر می‌شود. \\
+\textbf{اصل ۱۷۳} & \textbf{اعلام و نفاذ:} بازنگری مصوب ظرف ۱۵ روز توسط رئیس‌جمهور ابلاغ و در سراسر کشور لازم‌الاجرا می‌گردد. \\
 \hline
-
 \end{longtable}
 
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -2113,167 +1364,66 @@
 \end{itemize}
 \end{enghelabbox}
 
-\begin{longtable}{|>{\columncolor{gray!15}}r|p{12cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{12cm}|}
 \hline
-\rowcolor{gray!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل (مقررات انتقالی و نهایی) \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{gray!30}
-\textbf{شماره اصل} & \textbf{متن اصل} \\
+\rowcolor{bleurepublique!20}
+\headmark شماره اصل & \headmark متن کامل اصل \\
 \hline
 \endhead
 
-\textbf{اصل ۱۷۴} &
-\textbf{لازم‌الاجرا شدن}
-
-این قانون اساسی از تاریخ تصویب در همه‌پرسی لازم‌الاجرا می‌شود. دولت موقت موظف است ظرف ۳۰ روز تدابیر لازم برای اجرا را اتخاذ کند. \\
+\textbf{اصل ۱۷۴} & \textbf{لازم‌الاجرا شدن:} این قانون اساسی از تاریخ تأیید در همه‌پرسی ملی لازم‌الاجراست. دولت موقت موظف به زمینه‌سازی فوری برای اجرای آن است. \\
 \hline
 
-\textbf{اصل ۱۷۵} &
-\textbf{دوره انتقالی}
-
-الف) دوره انتقالی از تاریخ تصویب قانون اساسی تا برگزاری اولین انتخابات عمومی است.
-
-ب) این دوره نباید از ۱۸ ماه تجاوز کند.
-
-ج) دولت موقت تا تشکیل دولت منتخب به کار ادامه می‌دهد. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۷۵} & \textbf{دوره انتقال:} بازه زمانی حداکثر ۱۸ ماهه از تصویب قانون اساسی تا استقرار کامل نهادهای برگزیده، که طی آن امنیت گذار و تداوم خدمات عمومی تضمین می‌شود. \\
 \hline
 
-\textbf{اصل ۱۷۶} &
-\textbf{اولین انتخابات}
-
-الف) اولین انتخابات ریاست جمهوری و مجلس ظرف ۱۲ ماه پس از تصویب قانون اساسی برگزار می‌شود.
-
-ب) کمیسیون موقت انتخابات توسط دولت موقت با مشورت نیروهای سیاسی تشکیل می‌شود.
-
-ج) انتخابات تحت نظارت بین‌المللی برگزار می‌شود. \\
+\textbf{اصل ۱۷۶} & \textbf{اولین انتخابات:} برگزاری اولین انتخابات سراسری تحت نظارت کمیسیون موقت و نهادهای بین‌المللی ظرف ۱۲ ماه از تصویب. \\
 \hline
 
-\textbf{اصل ۱۷۷} &
-\textbf{تشکیل نهادها}
-
-جدول زمانی تشکیل نهادهای قانون اساسی:
-
-\begin{tabular}{r r}
-\textbf{نهاد} & \textbf{مهلت تشکیل} \\
-\hline
-کمیسیون انتخابات & ۳ ماه \\
-مجلس ملی و مجلس اقوام & ۱۲ ماه \\
-دیوان عالی قانون اساسی & ۱۵ ماه \\
-شورای عالی قضایی & ۱۵ ماه \\
-پارلمان‌های منطقه‌ای & ۱۸ ماه \\
-شوراهای محلی & ۲۴ ماه \\
-\end{tabular} \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۷۷} & \textbf{جدول استقرار:} تعیین ضرب‌الاجل‌های ۳ تا ۲۴ ماهه برای تشکیل کمیسیون انتخابات، پارلمان‌ها، دیوان عالی قانون اساسی و شوراهای محلی. \\
 \hline
 
-\textbf{اصل ۱۷۸} &
-\textbf{قوانین موجود}
-
-الف) قوانین موجود تا زمانی که صریحاً نسخ نشده یا با این قانون اساسی مغایر نباشند، معتبر می‌مانند.
-
-ب) مجلس جدید موظف است ظرف ۵ سال کلیه قوانین را با قانون اساسی تطبیق دهد.
-
-ج) دیوان قانون اساسی می‌تواند قوانین مغایر را باطل اعلام کند. \\
+\textbf{اصل ۱۷۸} & \textbf{تطبیق قوانین:} قوانین پیشین تا زمان نسخ یا اصلاح معتبرند، مشروط به عدم مغایرت بنیادین. پارلمان اول ۵ سال فرصت برای تطبیق کامل قوانین دارد. \\
 \hline
 
-\textbf{اصل ۱۷۹} &
-\textbf{کارکنان دولت}
-
-الف) کارکنان دولت که مرتکب نقض حقوق بشر نشده‌اند، در سمت خود باقی می‌مانند.
-
-ب) کمیسیون بررسی صلاحیت برای مقامات ارشد تشکیل می‌شود.
-
-ج) حقوق بازنشستگی کارکنان سابق محفوظ است.
-
-د) افرادی که به دلیل باورهای سیاسی اخراج شده‌اند، حق بازگشت دارند. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۷۹} & \textbf{اداره امور:} حفظ بدنه کارشناسی دولت و امنیت شغلی کارکنانی که در نقض حقوق بشر مشارکت نداشته‌اند. \\
 \hline
 
-\textbf{اصل ۱۸۰} &
-\textbf{عدالت انتقالی}
-
-الف) کمیسیون حقیقت و آشتی برای بررسی نقض حقوق بشر در گذشته تشکیل می‌شود.
-
-ب) عاملان جنایات علیه بشریت تحت پیگرد قرار می‌گیرند.
-
-ج) قربانیان حق جبران خسارت دارند.
-
-د) عفو عمومی شامل جنایات علیه بشریت، شکنجه و کشتار نمی‌شود. \\
+\textbf{اصل ۱۸۰} & \textbf{عدالت انتقالی:} تشکیل کمیسیون حقیقت و آشتی برای رسیدگی به مظالم گذشته، جبران خسارت قربانیان و پاسخگو کردن ناقضان حقوق مردم. \\
 \hline
 
-\textbf{اصل ۱۸۱} &
-\textbf{نیروهای مسلح در دوره انتقال}
-
-الف) نیروهای مسلح تحت فرماندهی دولت موقت قرار می‌گیرند.
-
-ب) شورای انتقالی دفاع برای بازسازی نیروهای مسلح تشکیل می‌شود.
-
-ج) نیروهای موازی و شبه‌نظامی منحل می‌شوند.
-
-د) ادغام عناصر مناسب در نیروی مسلح واحد انجام می‌شود. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۸۱} & \textbf{اصلاح نیروهای مسلح:} ادغام نیروها در ساختار واحد تحت فرماندهی دولت فدرال و خروج کامل نظامیان از سیاست و اقتصاد. \\
 \hline
 
-\textbf{اصل ۱۸۲} &
-\textbf{اموال عمومی}
-
-الف) کلیه اموال نهادهای حکومت سابق به دولت جدید منتقل می‌شود.
-
-ب) اموال غارت‌شده باید به صاحبان اصلی یا خزانه عمومی بازگردد.
-
-ج) کمیسیون ویژه برای شناسایی و استرداد اموال تشکیل می‌شود. \\
+\textbf{اصل ۱۸۲} & \textbf{استرداد اموال:} شناسایی و بازگرداندن کلیه اموال عمومی و خصوصی که به ناحق در نظام پیشین تصاحب شده است. \\
 \hline
 
-\textbf{اصل ۱۸۳} &
-\textbf{تعهدات بین‌المللی}
-
-الف) جمهوری فدرال ایران جانشین تعهدات بین‌المللی قانونی دولت‌های پیشین است.
-
-ب) معاهدات مغایر با قانون اساسی بازنگری یا لغو می‌شوند.
-
-ج) دولت جدید به کنوانسیون‌های بین‌المللی حقوق بشر می‌پیوندد. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۸۳} & \textbf{جانشینی بین‌المللی:} تعهد به قراردادهای بین‌المللی مطابق با منافع ملی و الحاق فوری به کنوانسیون‌های جهانی حقوق بشر. \\
 \hline
 
-\textbf{اصل ۱۸۴} &
-\textbf{استقرار ساختار فدرال}
-
-الف) تا تشکیل دولت‌های منطقه‌ای، استانداران موقت اداره امور را بر عهده دارند.
-
-ب) انتخابات منطقه‌ای ظرف ۱۸ ماه برگزار می‌شود.
-
-ج) انتقال اختیارات به مناطق به‌تدریج و طی ۵ سال انجام می‌شود. \\
+\textbf{اصل ۱۸۴} & \textbf{ساختار فدرال:} استقرار تدریجی مدیریت‌های منطقه‌ای و انتقال اختیارات از مرکز به مناطق ظرف ۵ سال. \\
 \hline
 
-\textbf{اصل ۱۸۵} &
-\textbf{زبان‌ها در دوره انتقال}
-
-الف) برنامه آموزش زبان‌های ملی ظرف ۲ سال آغاز می‌شود.
-
-ب) اسناد رسمی به‌تدریج چندزبانه می‌شوند.
-
-ج) آکادمی زبان‌های ایران برای استانداردسازی تشکیل می‌شود. \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۸۵} & \textbf{چندزبانی رسمی:} آغاز برنامه ملی آموزش و استانداردسازی زبان‌های اقوام برای کاربرد رسمی در سطوح فدرال و منطقه‌ای. \\
 \hline
 
-\textbf{اصل ۱۸۶} &
-\textbf{انقضای مقررات انتقالی}
-
-مقررات انتقالی (اصول ۱۷۴-۱۸۵) پس از ۵ سال از تاریخ لازم‌الاجرا شدن قانون اساسی یا با تحقق کامل موضوع آنها (هرکدام زودتر باشد) منقضی می‌شوند. \\
+\textbf{اصل ۱۸۶} & \textbf{انقضا:} این فصل پس از تحقق اهداف گذار یا پایان مهلت ۵ ساله خودبه‌خود از متن قانون اساسی خارج می‌شود. \\
 \hline
 
-\textbf{اصل ۱۸۷} &
-\textbf{اصل نهایی}
-
-این قانون اساسی میثاق ملی مردم ایران برای زندگی مشترک در آزادی، برابری، عدالت و کرامت است. همه نهادها، مقامات و شهروندان موظف به احترام و پایبندی به آن هستند.
-
-\begin{center}
-\textbf{به نام ملت ایران}
-
-مصوب مجلس مؤسسان
-
-تأییدشده در همه‌پرسی ملی
-\end{center} \\
+\rowcolor{goldlight}
+\textbf{اصل ۱۸۷} & \textbf{میثاق وفاداری:} این قانون اساسی عهد ملت ایران برای آزادی و عدالت است. هیچ مقامی فراتر از آن نیست و صیانت از آن تکلیف همگانی است. \\
 \hline
-
 \end{longtable}
 
 % ═══════════════════════════════════════════════════════════════════════════════
@@ -2406,33 +1556,31 @@
 
 \begin{center}
 \begin{small}
-\begin{longtable}{|>{\columncolor{WisdomGold!10}}p{2.5cm}|p{3cm}|p{3cm}|p{3cm}|p{3cm}|}
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{3.5cm}|p{3.5cm}|p{2cm}|p{3cm}|}
 \hline
-\rowcolor{WisdomGold!30}
-\textbf{کشور} & \textbf{پیشنهاددهنده} & \textbf{تصویب پارلمان} & \textbf{همه‌پرسی} & \textbf{اصول غیرقابل تغییر} \\
+\rowcolor{bleurepublique!20}
+\headmark کشور & \headmark پیشنهاددهنده & \headmark تصویب پارلمان & \headmark همه‌پرسی & \headmark اصول غیرقابل تغییر \\
 \hline
 \endfirsthead
 \hline
-\rowcolor{WisdomGold!30}
-\textbf{کشور} & \textbf{پیشنهاددهنده} & \textbf{تصویب پارلمان} & \textbf{همه‌پرسی} & \textbf{اصول غیرقابل تغییر} \\
+\rowcolor{bleurepublique!20}
+\headmark کشور & \headmark پیشنهاددهنده & \headmark تصویب پارلمان & \headmark همه‌پرسی & \headmark اصول غیرقابل تغییر \\
 \hline
 \endhead
 
-ایران (پیشنهادی) & دوسوم هر مجلس یا ۲ میلیون امضا & سه‌چهارم هر دو مجلس & اجباری & کرامت انسانی، دموکراسی، فدرالیسم، حقوق بنیادین \\
+\textbf{ایران (پیشنهادی)} & دوسوم هر مجلس یا ۲ میلیون امضا & سه‌چهارم هر دو مجلس & اجباری & کرامت انسانی، دموکراسی، فدرالیسم \\
 \hline
 
-آلمان & دوسوم هر مجلس & دوسوم هر دو مجلس & خیر & کرامت انسانی، ساختار فدرال \\
+\rowcolor{goldlight}
+\textbf{آلمان} & دوسوم هر مجلس & دوسوم هر دو مجلس & خیر & کرامت انسانی، ساختار فدرال \\
 \hline
 
-فرانسه & رئیس‌جمهور یا پارلمان & سه‌پنجم کنگره & اختیاری & شکل جمهوری \\
+\textbf{فرانسه} & رئیس‌جمهور یا پارلمان & سه‌پنجم کنگره & اختیاری & شکل جمهوری \\
 \hline
 
-آمریکا & دوسوم هر مجلس یا درخواست ایالات & سه‌چهارم ایالات & خیر & نمایندگی برابر سنا \\
+\rowcolor{goldlight}
+\textbf{سوئیس} & پارلمان یا ۱۰۰,۰۰۰ امضا & اکثریت ساده & اجباری & خیر \\
 \hline
-
-سوئیس & پارلمان یا ۱۰۰,۰۰۰ امضا & اکثریت ساده & اجباری (اکثریت مردم + کانتون‌ها) & خیر \\
-\hline
-
 \end{longtable}
 \end{small}
 \end{center}
@@ -2442,88 +1590,56 @@
 \label{sec:const-diagram}
 % ═══════════════════════════════════════════════════════════════════════════════
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    scale=0.85,
+    scale=0.8,
     transform shape,
     box/.style={
-        draw=#1,
-        line width=1.5pt,
-        fill=#1!15,
+        rectangle,
         rounded corners=8pt,
-        minimum width=2.8cm,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=3cm,
         minimum height=1.2cm,
-        align=center,
+        text centered,
         font=\small\bfseries
     },
-    arrow/.style={->, thick, #1},
-    label/.style={font=\tiny, #1}
-]
-
-    % === سطح ملت ===
-    \node[
-        draw=DemocracyBlue,
-        line width=3pt,
-        fill=DemocracyBlue!20,
+    nationnode/.style={
+        rectangle,
         rounded corners=15pt,
+        draw=goldphoenix,
+        fill=goldlight,
+        line width=3pt,
         minimum width=14cm,
-        minimum height=1.5cm,
+        minimum height=1.6cm,
         font=\Large\bfseries
-    ] (nation) at (0,8) {ملت ایران — منشأ حاکمیت};
+    },
+    arrow/.style={->, ultra thick, bleurepublique!30, >=stealth}
+]
+\node[nationnode] (nation) at (0,8) {\rl{ملت ایران — منشأ حاکمیت}};
 
-    % === قوه مقننه ===
-    \node[box=DemocracyBlue] (nat) at (-5,5.5) {\shortstack{مجلس ملی\\۳۵۰ نماینده}};
-    \node[box=DemocracyBlue] (sen) at (-1.5,5.5) {\shortstack{مجلس اقوام\\۱۲۰ نماینده}};
-    
-    % === قوه مجریه ===
-    \node[box=SuccessGreen] (pres) at (2,5.5) {\shortstack{رئیس‌جمهور}};
-    \node[box=lightSuccessGreen] (cab) at (2,3.5) {\shortstack{هیئت وزیران}};
-    
-    % === قوه قضائیه ===
-    \node[box=WisdomGold] (cc) at (5.5,5.5) {\shortstack{دیوان\\قانون اساسی}};
-    \node[box=lightWisdomGold] (sc) at (5.5,3.5) {\shortstack{دیوان عالی\\کشور}};
-    
-    % === نهادهای مستقل ===
-    \node[box=WarningRed] (ind1) at (-5,1.5) {\shortstack{کمیسیون\\انتخابات}};
-    \node[box=WarningRed] (ind2) at (-1.5,1.5) {\shortstack{بانک\\مرکزی}};
-    \node[box=WarningRed] (ind3) at (2,1.5) {\shortstack{سازمان\\ضد فساد}};
-    \node[box=WarningRed] (ind4) at (5.5,1.5) {\shortstack{کمیسیون\\حقوق بشر}};
-    
-    % === سطح منطقه‌ای ===
-    \node[box=purple] (reg) at (0,-1) {\shortstack{دولت‌های منطقه‌ای\\(۵ منطقه خودمختار + ۱۵ استان)}};
-    
-    % === سطح محلی ===
-    \node[box=gray] (loc) at (0,-3) {\shortstack{شوراها و شهرداری‌ها}};
+\node[box] (nat) at (-5,5.5) {\rl{مجلس ملی}};
+\node[box] (sen) at (-1.5,5.5) {\rl{مجلس اقوام}};
+\node[box, draw=goldphoenix, fill=goldlight] (pres) at (2,5.5) {\rl{رئیس‌جمهور}};
+\node[box] (cc) at (5.5,5.5) {\rl{دیوان قانون اساسی}};
 
-    % === فلش‌های انتخاب ===
-    \draw[arrow=DemocracyBlue] (nation) -- (nat) node[midway, left, label=black] {انتخاب};
-    \draw[arrow=DemocracyBlue] (nation) -- (sen) node[midway, left, label=black] {};
-    \draw[arrow=SuccessGreen] (nation) -- (pres) node[midway, right, label=black] {انتخاب};
-    
-    % === فلش‌های تأیید/انتصاب ===
-    \draw[arrow=gray, dashed] (nat) -- (cab) node[midway, above, label=black] {رأی اعتماد};
-    \draw[arrow=gray, dashed] (pres) -- (cab);
-    \draw[arrow=WisdomGold, dashed] (nat) to[bend right=20] (cc);
-    \draw[arrow=WisdomGold, dashed] (sen) to[bend left=10] (cc);
-    
-    % === فلش نظارت ===
-    \draw[arrow=WarningRed, dotted] (ind1) -- (nat);
-    \draw[arrow=WarningRed, dotted] (ind3) -- (cab);
-    \draw[arrow=WisdomGold, dotted] (cc) -- (nat);
-    \draw[arrow=WisdomGold, dotted] (cc) -- (pres);
-    
-    % === سطوح فدرال ===
-    \draw[arrow=purple] (nation) to[bend right=60] (reg);
-    \draw[arrow=gray] (reg) -- (loc);
-    
-    % === برچسب قوا ===
-    \node[fill=DemocracyBlue!30, rounded corners=3pt, font=\scriptsize] at (-3.2,7) {قوه مقننه};
-    \node[fill=SuccessGreen!30, rounded corners=3pt, font=\scriptsize] at (2,7) {قوه مجریه};
-    \node[fill=WisdomGold!30, rounded corners=3pt, font=\scriptsize] at (5.5,7) {قوه قضائیه};
-    \node[fill=WarningRed!30, rounded corners=3pt, font=\scriptsize] at (0,2.8) {نهادهای مستقل نظارتی};
+\node[box, minimum height=1cm] (reg) at (0,3) {\rl{دولت‌های منطقه‌ای و استانی}};
+\node[box, minimum height=1cm] (ind) at (0,1) {\rl{نهادهای مستقل نظارتی (رکن چهارم)}};
+
+\draw[arrow] (nation) -- (nat);
+\draw[arrow] (nation) -- (sen);
+\draw[arrow] (nation) -- (pres);
+\draw[arrow] (nation) to[bend left] (cc);
+\draw[arrow] (nation) to[bend right] (reg);
+\draw[arrow] (cc) -- (nat);
+\draw[arrow] (cc) -- (pres);
 
 \end{tikzpicture}
-\end{center}
+\caption{ساختار کلان حکومت جمهوری فدرال ایران (تفکیک قوا و تعادل فدرال)}
+\label{fig:gov-overall}
+\end{figure}
 
 % ═══════════════════════════════════════════════════════════════════════════════
 \section{خلاصه و جمع‌بندی}
@@ -2534,18 +1650,39 @@
 \textbf{خلاصه قانون اساسی پیشنهادی جمهوری فدرال ایران}
 
 \begin{center}
-\begin{tabular}{r r}
-\textbf{شاخص} & \textbf{جزئیات} \\
+\begin{longtable}{|>{\columncolor{bleulight}}r|p{8cm}|}
 \hline
-تعداد کل اصول & ۱۸۷ اصل \\
-تعداد فصول & ۸ فصل \\
-اصول غیرقابل تغییر & ۷ اصل بنیادین \\
-حقوق بنیادین & ۷۴ اصل (اصول ۱۲-۸۵) \\
-ساختار حکومت & ۵۵ اصل \\
-ساختار فدرال & ۷ اصل + ۱۵ اصل محلی \\
-نهادهای مستقل & ۸ نهاد \\
-مقررات انتقالی & ۱۴ اصل (خوداِنقضا) \\
-\end{tabular}
+\rowcolor{bleurepublique!20}
+\headmark شاخص ساختاری & \headmark جزئیات و آمار کلی \\
+\hline
+\endfirsthead
+\hline
+\rowcolor{bleurepublique!20}
+\headmark شاخص ساختاری & \headmark جزئیات و آمار کلی \\
+\hline
+\endhead
+
+\textbf{تعداد کل اصول} & ۱۸۷ اصل در ۸ فصل \\
+\hline
+
+\rowcolor{goldlight}
+\textbf{اصول غیرقابل تغییر} & ۷ اصل (پاسدار هویت نظام) \\
+\hline
+
+\textbf{حقوق بنیادین} & ۷۴ اصل (جامع‌ترین منشور حقوق منطقه) \\
+\hline
+
+\rowcolor{goldlight}
+\textbf{واحدهای فدرال} & ۵ منطقه خودمختار و ۱۵ استان فدرال \\
+\hline
+
+\textbf{نهادهای مستقل} & ۸ سازمان نظارتی رکن چهارم \\
+\hline
+
+\rowcolor{goldlight}
+\textbf{دوره انتقالی} & حداکثر ۱۸ ماه برای استقرار نهادها \\
+\hline
+\end{longtable}
 \end{center}
 
 \textbf{ویژگی‌های متمایز این قانون اساسی:}

@@ -22,18 +22,18 @@
 \centering
 \caption{مقایسه اجمالی چهار گذار موفق}
 \label{tab:four-transitions}
-\begin{tabular}{L{2.5cm} C{2cm} L{3cm} L{3cm} C{2cm}}
+\begin{tabularx}{\textwidth}{R{2.5cm} C{2cm} Y Y C{2cm}}
 \toprule
-\headmark کشور & \headmark سال گذار & \headmark نوع رژیم قبلی & \headmark چالش اصلی & \headmark مدت گذار \\
+\headmark کشور & \headmark سال گذار & \headmark رژیم قبلی & \headmark چالش اصلی & \headmark مدت \\
 \midrule
-\rowcolor{bleulight}
-اسپانیا & ۱۹۷۵-۸۲ & فاشیسم (فرانکو) & منطقه‌گرایی، ارتش & ۷ سال \\
-آفریقای جنوبی & ۱۹۹۰-۹۹ & آپارتاید نژادی & نابرابری، خشونت & ۹ سال \\
-\rowcolor{bleulight}
-اندونزی & ۱۹۹۸-۰۴ & اقتدارگرای نظامی & تنوع قومی-دینی & ۶ سال \\
-کره جنوبی & ۱۹۸۷-۹۷ & دیکتاتوری نظامی & توسعه بدون آزادی & ۱۰ سال \\
+اسپانیا & ۱۹۷۵-۸۲ & فاشیسم & منطقه‌گرایی & ۷ سال \\
+\rowcolor{goldlight}
+آفریقای جنوبی & ۱۹۹۰-۹۹ & آپارتاید & نابرابری & ۹ سال \\
+اندونزی & ۱۹۹۸-۰۴ & نظامی & تنوع جمیعتی & ۶ سال \\
+\rowcolor{goldlight}
+کره جنوبی & ۱۹۸۷-۹۷ & نظامی & توسعه سیاسی & ۱۰ سال \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 این کشورها به دلایل زیر انتخاب شده‌اند:
@@ -66,69 +66,33 @@
     eventbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.5cm,
+        minimum width=2.4cm,
         minimum height=1.2cm,
         text centered,
-        font=\scriptsize,
+        font=\tiny\bfseries,
         line width=1pt
     },
     arrow/.style={->, >=Stealth, thick, color=bleurepublique}
 ]
 
 % خط زمان
-\draw[line width=2pt, color=gris] (0,0) -- (15,0);
+\draw[line width=2pt, color=gris] (0,0) -- (14.5,0);
 
 % رویدادها
-\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (0,0.5) {
-    \begin{tabular}{c}
-    ۱۹۳۹\\
-    پیروزی فرانکو
-    \end{tabular}
-};
-
-\node[eventbox, draw=gris, fill=grislight, above] at (3,0.5) {
-    \begin{tabular}{c}
-    ۱۹۵۹\\
-    اصلاحات اقتصادی
-    \end{tabular}
-};
-
-\node[eventbox, draw=orroyal, fill=orroyallight, above] at (6,0.5) {
-    \begin{tabular}{c}
-    ۱۹۷۵\\
-    مرگ فرانکو
-    \end{tabular}
-};
-
-\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (9,0.5) {
-    \begin{tabular}{c}
-    ۱۹۷۷\\
-    توافق مونکلوا
-    \end{tabular}
-};
-
-\node[eventbox, draw=vertnapoleon, fill=vertlight, above] at (12,0.5) {
-    \begin{tabular}{c}
-    ۱۹۷۸\\
-    قانون اساسی
-    \end{tabular}
-};
-
-\node[eventbox, draw=vertnapoleon, fill=vertlight, above] at (15,0.5) {
-    \begin{tabular}{c}
-    ۱۹۸۲\\
-    انتقال به سوسیالیست‌ها
-    \end{tabular}
-};
+\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (0,0.5) {\rl{۱۹۳۹}\\\rl{پیروزی فرانکو}};
+\node[eventbox, draw=gris, fill=grislight, above] at (2.9,0.5) {\rl{۱۹۵۹}\\\rl{اصلاحات اقتصادی}};
+\node[eventbox, draw=goldphoenix, fill=goldlight, above] at (5.8,0.5) {\rl{۱۹۷۵}\\\rl{مرگ فرانکو}};
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (8.7,0.5) {\rl{۱۹۷۷}\\\rl{توافق مونکلوا}};
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (11.6,0.5) {\rl{۱۹۷۸}\\\rl{قانون اساسی}};
+\node[eventbox, draw=bleurepublique, fill=bleurepublique, text=white, above] at (14.5,0.5) {\rl{۱۹۸۲}\\\rl{انتقال قدرت}};
 
 % نقاط
-\foreach \x in {0,3,6,9,12,15} {
-    \fill[black] (\x,0) circle (4pt);
+\foreach \x in {0,2.9,5.8,8.7,11.6,14.5} {
+    \fill[bleurepublique] (\x,0) circle (3pt);
 }
 
 \end{tikzpicture}
 \caption{خط زمانی گذار اسپانیا}
-\label{fig:spain-timeline}
 \end{figure}
 
 \subsection{عوامل کلیدی موفقیت}
@@ -149,23 +113,21 @@
 \centering
 \caption{عوامل موفقیت گذار اسپانیا}
 \label{tab:spain-factors}
-\begin{tabular}{C{1cm} L{3.5cm} L{7.5cm}}
+\begin{tabularx}{\textwidth}{C{1cm} R{3.5cm} Y}
 \toprule
 \headmark \# & \headmark عامل & \headmark توضیح \\
 \midrule
-\rowcolor{bleulight}
-۱ & نقش پادشاه & خوان کارلوس از درون نظام، گذار را هدایت کرد و مشروعیت بخشید \\
-۲ & رهبری سوآرز & آدولفو سوآرز، نخست‌وزیر اصلاح‌طلب، پل بین نظام و اپوزیسیون شد \\
-\rowcolor{bleulight}
-۳ & اپوزیسیون معتدل & کمونیست‌ها (سانتیاگو کاریو) رادیکالیسم را کنار گذاشتند \\
-۴ & توافق مونکلوا & میثاق اقتصادی-سیاسی همه نیروها \\
-\rowcolor{bleulight}
-۵ & خودمختاری مناطق & قانون اساسی ۱۹۷۸ خودمختاری گسترده به کاتالونیا و باسک داد \\
-۶ & رشد اقتصادی & اقتصاد در حال رشد، فشار کمتر بر مردم \\
-\rowcolor{bleulight}
-۷ & اروپا & چشم‌انداز عضویت در EC/EU انگیزه قوی برای اصلاحات \\
+۱ & نقش پادشاه & خوان کارلوس از درون نظام، گذار را هدایت کرد \\
+\rowcolor{goldlight}
+۲ & رهبری سوآرز & پل بین نظام اقتدارگرا و اپوزیسیون شد \\
+۳ & اپوزیسیون معتدل & کنار گذاشتن رادیکالیسم توسط جریانات سیاسی \\
+\rowcolor{goldlight}
+۴ & توافق مونکلوا & میثاق اقتصادی-سیاسی فراگیر \\
+۵ & خودمختاری مناطق & به رسمیت شناختن تنوع در قانون اساسی ۱۹۷۸ \\
+\rowcolor{goldlight}
+۶ & افق اروپایی & چشم‌انداز پیوستن به اتحادیه اروپا \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{کودتای نافرجام ۱۹۸۱}
@@ -206,20 +168,16 @@
 \centering
 \caption{درس‌های قابل انتقال از اسپانیا}
 \label{tab:spain-lessons}
-\begin{tabular}{L{4cm} L{4cm} L{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} R{4cm} Y}
 \toprule
 \headmark درس & \headmark کاربرد برای ما & \headmark ملاحظه \\
 \midrule
-\rowcolor{vertlight}
-توافق نخبگان & مذاکره همه جریان‌ها & نیاز به رهبری معتدل از همه طرف \\
-\rowcolor{vertlight}
-خودمختاری مناطق & فدرالیسم برای اقوام & نه تجزیه، نه تمرکز افراطی \\
-\rowcolor{bleulight}
-نقش نهاد میانجی & شاید نهاد دینی یا ملی؟ & نیاز به نهاد با مشروعیت فراجناحی \\
-\rowcolor{orroyallight}
-فراموشی گذشته & \textcolor{rougerevolution}{توصیه نمی‌شود} & تروماهای ما عمیق‌ترند \\
+توافق نخبگان & مذاکره فراگیر & نیاز به رهبری معتدل \\
+\rowcolor{goldlight}
+خودمختاری & تمرکززدایی قومی & حفظ یکپارچگی ارضی \\
+نهاد میانجی & مرجعیت ملی & مقبولیت فراجناحی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -244,10 +202,10 @@
     eventbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.2cm,
+        minimum width=2.4cm,
         minimum height=1.2cm,
         text centered,
-        font=\scriptsize,
+        font=\tiny\bfseries,
         line width=1pt
     }
 ]
@@ -256,49 +214,19 @@
 \draw[line width=2pt, color=gris] (0,0) -- (14,0);
 
 % رویدادها
-\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (0,0.5) {
-    \begin{tabular}{c}
-    ۱۹۴۸\\
-    آغاز آپارتاید
-    \end{tabular}
-};
-
-\node[eventbox, draw=orroyal, fill=orroyallight, above] at (3.5,0.5) {
-    \begin{tabular}{c}
-    ۱۹۶۴\\
-    زندانی شدن ماندلا
-    \end{tabular}
-};
-
-\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (7,0.5) {
-    \begin{tabular}{c}
-    ۱۹۹۰\\
-    آزادی ماندلا
-    \end{tabular}
-};
-
-\node[eventbox, draw=vertnapoleon, fill=vertlight, above] at (10.5,0.5) {
-    \begin{tabular}{c}
-    ۱۹۹۴\\
-    انتخابات آزاد
-    \end{tabular}
-};
-
-\node[eventbox, draw=vertnapoleon, fill=vertlight, above] at (14,0.5) {
-    \begin{tabular}{c}
-    ۱۹۹۶\\
-    قانون اساسی
-    \end{tabular}
-};
+\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (0,0.5) {\rl{۱۹۴۸}\\\rl{آغاز آپارتاید}};
+\node[eventbox, draw=goldphoenix, fill=goldlight, above] at (3.5,0.5) {\rl{۱۹۶۴}\\\rl{حبس ماندلا}};
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (7,0.5) {\rl{۱۹۹۰}\\\rl{آزادی ماندلا}};
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (10.5,0.5) {\rl{۱۹۹۴}\\\rl{انتخابات آزاد}};
+\node[eventbox, draw=bleurepublique, fill=bleurepublique, text=white, above] at (14,0.5) {\rl{۱۹۹۶}\\\rl{قانون اساسی}};
 
 % نقاط
 \foreach \x in {0,3.5,7,10.5,14} {
-    \fill[black] (\x,0) circle (4pt);
+    \fill[bleurepublique] (\x,0) circle (3pt);
 }
 
 \end{tikzpicture}
 \caption{خط زمانی گذار آفریقای جنوبی}
-\label{fig:sa-timeline}
 \end{figure}
 
 \subsection{عوامل کلیدی موفقیت}
@@ -328,21 +256,18 @@
 \centering
 \caption{ساختار و دستاوردهای TRC}
 \label{tab:trc}
-\begin{tabular}{L{3cm} L{9cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y}
 \toprule
 \headmark جنبه & \headmark توضیح \\
 \midrule
-\rowcolor{bleulight}
-ریاست & اسقف دزموند توتو (برنده نوبل صلح) \\
-مدت & ۱۹۹۶-۱۹۹۸ (گزارش نهایی ۲۰۰۳) \\
-\rowcolor{bleulight}
-مکانیزم & عاملان با اعتراف کامل و علنی می‌توانستند عفو بگیرند \\
-شهادت‌ها & ۲۱,۰۰۰ قربانی شهادت دادند \\
-\rowcolor{bleulight}
-درخواست عفو & ۷,۱۱۲ درخواست (۱,۵۰۰ عفو شدند) \\
-گزارش نهایی & ۳,۵۰۰ صفحه مستندسازی جنایات \\
+ریاست & دزموند توتو (صلح نوبل) \\
+\rowcolor{goldlight}
+مکانیزم & عفو در قبال اعتراف کامل \\
+شهادت‌ها & ۲۱,۰۰۰ قربانی \\
+\rowcolor{goldlight}
+نتیجه & ۳,۵۰۰ صفحه مستندسازی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{قانون اساسی ۱۹۹۶}
@@ -353,20 +278,18 @@
 \centering
 \caption{ویژگی‌های قانون اساسی آفریقای جنوبی}
 \label{tab:sa-constitution}
-\begin{tabular}{L{3.5cm} L{8.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} Y}
 \toprule
 \headmark ویژگی & \headmark توضیح \\
 \midrule
-\rowcolor{bleulight}
-منشور حقوق & فصل ۲ شامل حقوق گسترده مدنی، سیاسی، اقتصادی، اجتماعی \\
-دادگاه قانون اساسی & قدرتمند و مستقل، نقش کلیدی در حمایت از حقوق \\
-\rowcolor{bleulight}
-۱۱ زبان رسمی & به رسمیت شناختن تنوع زبانی \\
-فدرالیسم & ۹ استان با اختیارات محدود \\
-\rowcolor{bleulight}
-حقوق اقلیت‌ها & حمایت از گروه‌های زبانی، فرهنگی، دینی \\
+منشور حقوق & وسیع‌ترین حقوق مدنی و اقتصادی در جهان \\
+\rowcolor{goldlight}
+دادگاه قانون اساسی & نگهبان مستقل حقوق شهروندی \\
+تنوع زبانی & به رسمیت شناختن ۱۱ زبان رسمی \\
+\rowcolor{goldlight}
+حقوق اقلیت‌ها & چتر حمایتی برای همه گروه‌ها \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{چالش‌های باقیمانده}
@@ -389,20 +312,16 @@
 \centering
 \caption{درس‌های قابل انتقال از آفریقای جنوبی}
 \label{tab:sa-lessons}
-\begin{tabular}{L{4cm} L{4cm} L{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} R{4cm} Y}
 \toprule
 \headmark درس & \headmark کاربرد برای ما & \headmark ملاحظه \\
 \midrule
-\rowcolor{vertlight}
-کمیسیون حقیقت‌یابی & ضروری برای آشتی ملی & نیاز به رهبری اخلاقی \\
-\rowcolor{vertlight}
-قانون اساسی فراگیر & مشارکت همه گروه‌ها & فرآیند زمان‌بر اما ارزشمند \\
-\rowcolor{vertlight}
-رهبری آشتی‌طلب & رهبرانی که انتقام نخواهند & نادر اما حیاتی \\
-\rowcolor{orroyallight}
-بدون عدالت اقتصادی & \textcolor{rougerevolution}{باید اجتناب کرد} & بهبود معیشت ضروری است \\
+حقیقت و آشتی & ترمیم شکاف‌های ملی & نیاز به رهبری اخلاقی \\
+\rowcolor{goldlight}
+قانون اساسی فراگیر & مشارکت مخالفان & فرآیند اجماع‌ساز \\
+رهبری آشتی‌طلب & شکستن چرخه انتقام & الگوی ماندلا \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -427,10 +346,10 @@
     eventbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.5cm,
+        minimum width=2.4cm,
         minimum height=1.2cm,
         text centered,
-        font=\scriptsize,
+        font=\tiny\bfseries,
         line width=1pt
     }
 ]
@@ -439,49 +358,19 @@
 \draw[line width=2pt, color=gris] (0,0) -- (14,0);
 
 % رویدادها
-\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (0,0.5) {
-    \begin{tabular}{c}
-    ۱۹۶۶\\
-    آغاز سوهارتو
-    \end{tabular}
-};
-
-\node[eventbox, draw=orroyal, fill=orroyallight, above] at (3.5,0.5) {
-    \begin{tabular}{c}
-    ۱۹۹۷\\
-    بحران مالی
-    \end{tabular}
-};
-
-\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (7,0.5) {
-    \begin{tabular}{c}
-    ۱۹۹۸\\
-    سقوط سوهارتو
-    \end{tabular}
-};
-
-\node[eventbox, draw=vertnapoleon, fill=vertlight, above] at (10.5,0.5) {
-    \begin{tabular}{c}
-    ۱۹۹۹\\
-    انتخابات آزاد
-    \end{tabular}
-};
-
-\node[eventbox, draw=vertnapoleon, fill=vertlight, above] at (14,0.5) {
-    \begin{tabular}{c}
-    ۲۰۰۴\\
-    انتخابات مستقیم
-    \end{tabular}
-};
+\node[eventbox, draw=rougerevolution, fill=rougelight, above] at (0,0.5) {\rl{۱۹۶۶}\\\rl{آغاز سوهارتو}};
+\node[eventbox, draw=goldphoenix, fill=goldlight, above] at (3.5,0.5) {\rl{۱۹۹۷}\\\rl{بحران مالی}};
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (7,0.5) {\rl{۱۹۹۸}\\\rl{سقوط سوهارتو}};
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (10.5,0.5) {\rl{۱۹۹۹}\\\rl{انتخابات آزاد}};
+\node[eventbox, draw=bleurepublique, fill=bleurepublique, text=white, above] at (14,0.5) {\rl{۲۰۰۴}\\\rl{انتخاب مستقيم}};
 
 % نقاط
 \foreach \x in {0,3.5,7,10.5,14} {
-    \fill[black] (\x,0) circle (4pt);
+    \fill[bleurepublique] (\x,0) circle (3pt);
 }
 
 \end{tikzpicture}
 \caption{خط زمانی گذار اندونزی}
-\label{fig:indonesia-timeline}
 \end{figure}
 
 \subsection{عوامل کلیدی موفقیت}
@@ -500,21 +389,18 @@
 \centering
 \caption{عوامل موفقیت گذار اندونزی}
 \label{tab:indonesia-factors}
-\begin{tabular}{C{1cm} L{3.5cm} L{7.5cm}}
+\begin{tabularx}{\textwidth}{C{1cm} R{3.5cm} Y}
 \toprule
 \headmark \# & \headmark عامل & \headmark توضیح \\
 \midrule
-\rowcolor{bleulight}
-۱ & جنبش دانشجویی & فشار از پایین برای تغییر \\
-۲ & اصلاح‌طلبان درون نظام & حبیبی انتخابات آزاد برگزار کرد \\
-\rowcolor{bleulight}
-۳ & تمرکززدایی گسترده & انتقال قدرت به ۵۰۰+ منطقه \\
-۴ & پانچاسیلا & ایدئولوژی وحدت‌بخش فراگیر \\
-\rowcolor{bleulight}
-۵ & خروج ارتش از سیاست & اصلاحات نظامی تدریجی \\
-۶ & نقش اسلام معتدل & NU و Muhammadiyah از دموکراسی حمایت کردند \\
+۱ & جنبش دانشجویی & فشار از پایین برای تغییر رادیکال \\
+\rowcolor{goldlight}
+۲ & اصلاح‌طلبان درون نظام & برگزاری انتخابات بدون فروپاشی پیاپی \\
+۳ & تمرکززدایی گسترده & توزیع قدرت بین ۵۰۰ منطقه \\
+\rowcolor{goldlight}
+۴ & پانچاسیلا & ایدئولوژی وحدت‌بخش فراجناحی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{مدل پانچاسیلا}
@@ -541,46 +427,24 @@
     levelbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=4cm,
+        minimum width=4.2cm,
         minimum height=1.5cm,
         text centered,
-        font=\small,
+        font=\small\bfseries,
         line width=1pt
     },
     arrow/.style={->, >=Stealth, thick}
 ]
 
 % قبل
-\node[levelbox, draw=rougerevolution, fill=rougelight] (before) at (-4,0) {
-    \begin{tabular}{c}
-    \textbf{قبل از ۱۹۹۹}\\[3pt]
-    {\scriptsize تمرکز شدید}\\
-    {\scriptsize همه تصمیمات در جاکارتا}
-    \end{tabular}
-};
-
-% بعد
-\node[levelbox, draw=vertnapoleon, fill=vertlight] (after) at (4,0) {
-    \begin{tabular}{c}
-    \textbf{بعد از ۱۹۹۹}\\[3pt]
-    {\scriptsize تمرکززدایی گسترده}\\
-    {\scriptsize ۵۰۰+ منطقه خودمختار}
-    \end{tabular}
-};
+\node[levelbox, draw=rougerevolution, fill=rougelight] (before) at (-4,0) {\rl{قبل از ۱۹۹۹}\\{\tiny تمرکز شدید}};
+\node[levelbox, draw=bleurepublique, fill=bleulight] (after) at (4,0) {\rl{بعد از ۱۹۹۹}\\{\tiny تمرکززدایی}};
 
 % فلش
-\draw[arrow, very thick, color=bleurepublique] (before) -- node[above, font=\small] {قانون ۱۹۹۹} (after);
-
-% جزئیات زیر
-\node[font=\scriptsize, text width=4cm, align=center, below=0.5cm of after] {
-    انتخاب مستقیم فرماندار\\
-    بودجه محلی\\
-    مدیریت آموزش و بهداشت
-};
+\draw[arrow, ultra thick, color=goldphoenix] (before) -- node[above, font=\tiny\bfseries] {\rl{اصلاحات ساختاری}} (after);
 
 \end{tikzpicture}
 \caption{تمرکززدایی در اندونزی}
-\label{fig:indonesia-decentralization}
 \end{figure}
 
 \subsection{درس‌های اندونزی برای ما}
@@ -589,20 +453,16 @@
 \centering
 \caption{درس‌های قابل انتقال از اندونزی}
 \label{tab:indonesia-lessons}
-\begin{tabular}{L{4cm} L{4cm} L{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} R{4cm} Y}
 \toprule
 \headmark درس & \headmark کاربرد برای ما & \headmark ملاحظه \\
 \midrule
-\rowcolor{vertlight}
-پانچاسیلا & ایدئولوژی وحدت‌بخش فراگیر & نیاز به میراث مشترک \\
-\rowcolor{vertlight}
-تمرکززدایی & فدرالیسم/خودمختاری & متناسب با ظرفیت محلی \\
-\rowcolor{vertlight}
-نقش اسلام معتدل & همکاری نهادهای دینی & دین می‌تواند حامی دموکراسی باشد \\
-\rowcolor{vertlight}
-گذار از درون نظام & استفاده از اصلاح‌طلبان & نیاز به شکاف در نخبگان \\
+پانچاسیلا & میثاق ملی نوین & چتر هویت ملی \\
+\rowcolor{goldlight}
+تمرکززدایی & واگذاری قدرت منطقه‌ای & توازن مرکز-پیرامون \\
+نقش مذهب معتدل & همکاری نهادهای مدنی & دین حامی حقوق بشر \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -640,18 +500,18 @@
 \centering
 \caption{محاکمه روسای جمهور سابق کره جنوبی}
 \label{tab:korea-trials}
-\begin{tabular}{L{3cm} C{2cm} L{4cm} L{3.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{2cm} Y R{3cm}}
 \toprule
-\headmark شخص & \headmark سال محاکمه & \headmark اتهام & \headmark حکم \\
+\headmark شخص & \headmark سال & \headmark اتهام & \headmark حکم \\
 \midrule
-\rowcolor{bleulight}
-چون دو-هوان & ۱۹۹۶ & کشتار گوانگجو، کودتا & اعدام (تخفیف به حبس) \\
-روه تای-وو & ۱۹۹۶ & کودتا، رشوه & حبس ۲۲ سال (عفو) \\
-\rowcolor{bleulight}
-پارک گئون-هه & ۲۰۱۷ & فساد & حبس ۲۵ سال \\
-لی میونگ-باک & ۲۰۱۸ & فساد & حبس ۱۷ سال \\
+چون دو-هوان & ۱۹۹۶ & سرکوب گوانگجو & حبس ابد \\
+\rowcolor{goldlight}
+روه تای-وو & ۱۹۹۶ & فساد و کودتا & حبس طولانی \\
+پارک گئون-هه & ۲۰۱۷ & فساد مالی & حبس ۲۵ سال \\
+\rowcolor{goldlight}
+لی میونگ-باک & ۲۰۱۸ & ارتشا & حبس ۱۷ سال \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{naghlbox}
@@ -666,20 +526,16 @@
 \centering
 \caption{درس‌های قابل انتقال از کره جنوبی}
 \label{tab:korea-lessons}
-\begin{tabular}{L{4cm} L{4cm} L{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} R{4cm} Y}
 \toprule
 \headmark درس & \headmark کاربرد برای ما & \headmark ملاحظه \\
 \midrule
-\rowcolor{vertlight}
-نقش طبقه متوسط & توسعه طبقه متوسط مستقل & زمان‌بر اما مهم \\
-\rowcolor{vertlight}
-محاکمه مسئولان & عدالت واقعی ممکن است & نیاز به قوه قضائیه مستقل \\
-\rowcolor{vertlight}
-اهرم بین‌المللی & رویدادهای جهانی فشار می‌آورند & استفاده از فرصت‌ها \\
-\rowcolor{bleulight}
-توسعه سپس دموکراسی & مسیر طولانی‌تر & ما توسعه را نداریم \\
+نقش طبقه متوسط & مطالبه‌گری آگاهانه & اساس پایداری دموکراسی \\
+\rowcolor{goldlight}
+حاکمیت قانون & محاکمه سران & پایبندی به عدالت قضایی \\
+اهرم خارجی & فشارهای بین‌المللی & استفاده از فرصت جهانی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -694,105 +550,65 @@
     factor/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.5cm,
+        minimum width=3.8cm,
         minimum height=1.5cm,
         text centered,
-        font=\small,
-        draw=vertnapoleon,
-        fill=vertlight,
+        font=\tiny\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
         line width=1.5pt
     },
     center/.style={
         circle,
-        minimum size=3cm,
+        minimum size=2.8cm,
         text centered,
         font=\small\bfseries,
-        draw=bleurepublique,
-        fill=bleulight,
+        draw=goldphoenix,
+        fill=goldphoenix,
+        text=white,
         line width=2pt
     }
 ]
 
 % مرکز
-\node[center] (c) at (0,0) {
-    \begin{tabular}{c}
-    گذار\\
-    موفق
-    \end{tabular}
-};
+\node[center] (c) at (0,0) {\rl{گذار موفق}};
 
 % عوامل
-\node[factor] (f1) at (90:4.5cm) {
-    \begin{tabular}{c}
-    توافق نخبگان\\
-    {\scriptsize میثاق ملی}
-    \end{tabular}
-};
-
-\node[factor] (f2) at (30:4.5cm) {
-    \begin{tabular}{c}
-    رهبری هوشمند\\
-    {\scriptsize معتدل و آشتی‌طلب}
-    \end{tabular}
-};
-
-\node[factor] (f3) at (330:4.5cm) {
-    \begin{tabular}{c}
-    بهبود اقتصادی\\
-    {\scriptsize یا حداقل ثبات}
-    \end{tabular}
-};
-
-\node[factor] (f4) at (270:4.5cm) {
-    \begin{tabular}{c}
-    عدالت انتقالی\\
-    {\scriptsize متوازن}
-    \end{tabular}
-};
-
-\node[factor] (f5) at (210:4.5cm) {
-    \begin{tabular}{c}
-    حمایت بین‌المللی\\
-    {\scriptsize یا فشار سازنده}
-    \end{tabular}
-};
-
-\node[factor] (f6) at (150:4.5cm) {
-    \begin{tabular}{c}
-    نهادهای میانجی\\
-    {\scriptsize کلیسا، ارتش، نهاد ملی}
-    \end{tabular}
-};
+\node[factor] (f1) at (90:4.2) {\rl{توافق نخبگان}};
+\node[factor] (f2) at (30:4.2) {\rl{رهبری هوشمند}};
+\node[factor] (f3) at (330:4.2) {\rl{ثبات اقتصادی}};
+\node[factor] (f4) at (270:4.2) {\rl{عدالت انتقالی}};
+\node[factor] (f5) at (210:4.2) {\rl{حمایت جهانی}};
+\node[factor] (f6) at (150:4.2) {\rl{نهاد میانجی}};
 
 % اتصالات
 \foreach \f in {f1,f2,f3,f4,f5,f6} {
-    \draw[->, >=Stealth, thick, color=vertnapoleon] (\f) -- (c);
+    \draw[->, >=Stealth, ultra thick, color=goldphoenix] (\f) -- (c);
 }
 
 \end{tikzpicture}
 \caption{شش عامل مشترک گذارهای موفق}
-\label{fig:success-factors}
 \end{figure}
 
 \begin{table}[H]
 \centering
 \caption{حضور عوامل موفقیت در چهار کشور}
 \label{tab:factors-comparison}
-\begin{tabular}{L{3.5cm} C{2cm} C{2cm} C{2cm} C{2cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} Y Y Y Y}
 \toprule
 \headmark عامل & \headmark اسپانیا & \headmark آ. جنوبی & \headmark اندونزی & \headmark کره \\
 \midrule
-\rowcolor{bleulight}
 توافق نخبگان & \yes & \yes & \somewhat & \somewhat \\
+\rowcolor{goldlight}
 رهبری هوشمند & \yes & \yes & \somewhat & \somewhat \\
-\rowcolor{bleulight}
-بهبود اقتصادی & \yes & \no & \somewhat & \yes \\
+ثبات اقتصادی & \yes & \no & \somewhat & \yes \\
+\rowcolor{goldlight}
 عدالت انتقالی & \no & \yes & \somewhat & \yes \\
-\rowcolor{bleulight}
-حمایت بین‌المللی & \yes & \yes & \yes & \yes \\
+حمایت جهانی & \yes & \yes & \yes & \yes \\
+\rowcolor{goldlight}
 نهاد میانجی & \yes & \yes & \yes & \somewhat \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════

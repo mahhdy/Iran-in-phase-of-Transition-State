@@ -34,6 +34,16 @@
 \usepackage{etoolbox}
 
 %──────────────────────────────────────────────────────────────────────────────
+% تنظیمات فواصل (کاهش فاصله بین بخش‌ها و صفحات سفید)
+%──────────────────────────────────────────────────────────────────────────────
+\titlespacing*{\chapter}{0pt}{30pt}{20pt}
+\titlespacing*{\section}{0pt}{15pt}{10pt}
+\titlespacing*{\subsection}{0pt}{10pt}{5pt}
+
+% برای کاهش صفحات سفید بین فصل‌ها
+\patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{\clearpage}{}{}
+
+%──────────────────────────────────────────────────────────────────────────────
 % تنظیمات صفحه
 %──────────────────────────────────────────────────────────────────────────────
 \geometry{
@@ -66,24 +76,16 @@
 \usepgfplotslibrary{polar}     % برای نمودارهای راداری (polaraxis)
 
 %──────────────────────────────────────────────────────────────────────────────
-% تعریف رنگ‌ها — پالت اصلی
+% پالت رنگی (الهام گرفته از تم ققنوس: آبی سرمه‌ای و طلایی)
 %──────────────────────────────────────────────────────────────────────────────
-% رنگ‌های اصلی
-\definecolor{bleurepublique}{RGB}{0, 85, 164}
-\definecolor{rougerevolution}{RGB}{190, 30, 45}
-\definecolor{orroyal}{RGB}{218, 165, 32}
-\definecolor{orroyaldark}{RGB}{184, 134, 11}
-\definecolor{vertnapoleon}{RGB}{0, 102, 51}
-\definecolor{violetempire}{RGB}{102, 51, 153}
+\definecolor{bleurepublique}{HTML}{002147} % سرمه‌ای عمیق
+\definecolor{goldphoenix}{HTML}{C5A059}    % طلایی مات
+\definecolor{bleulight}{HTML}{F0F4F8}      % آبی بسیار روشن برای زمینه‌ها
+\definecolor{goldlight}{HTML}{F9F4E8}      % کرم-طلایی روشن برای کادرها
+\definecolor{rougerevolution}{HTML}{A020F0} % بنفش با شکوه (اختیاری)
+\definecolor{vertnapoleon}{HTML}{006400}   % سبز تیره
+\definecolor{grislight}{HTML}{F5F5F5} 
 \definecolor{gris}{RGB}{128, 128, 128}
-
-% رنگ‌های روشن (پس‌زمینه کادرها)
-\definecolor{bleulight}{RGB}{230, 240, 250}
-\definecolor{rougelight}{RGB}{255, 230, 230}
-\definecolor{orroyallight}{RGB}{255, 248, 220}
-\definecolor{vertlight}{RGB}{230, 250, 230}
-\definecolor{violetlight}{RGB}{245, 235, 255}
-\definecolor{grislight}{RGB}{245, 245, 245}
 
 % رنگ‌های میانه (نمودارها)
 \definecolor{bleumid}{RGB}{100, 149, 237}
@@ -127,28 +129,26 @@
 \newtcolorbox{kholasebox}[1][]{
     colback=bleulight,
     colframe=bleurepublique,
-    fonttitle=\bfseries\large,
-    title={\hfill خلاصه فصل},
-    breakable,
-    enhanced,
-    boxrule=1.5pt,
-    arc=4pt,
-    left=12pt, right=12pt, top=12pt, bottom=12pt,
-    #1
+    fonttitle=\bfseries,
+    title=#1,
+    boxrule=1pt,
+    arc=5pt,
+    left=15pt, right=15pt, top=10pt, bottom=10pt,
+    halign=flush right,
+    before skip=12pt, after skip=12pt
 }
 
 % کادر نقل قول (طلایی)
 \newtcolorbox{naghlbox}[1][]{
-    colback=orroyallight,
-    colframe=orroyaldark,
+    colback=white,
+    colframe=goldphoenix,
     fonttitle=\bfseries,
-    breakable,
-    enhanced,
-    boxrule=1pt,
-    arc=3pt,
-    left=10pt, right=10pt, top=10pt, bottom=10pt,
-    borderline west={4pt}{0pt}{orroyal},
-    #1
+    left=20pt, right=20pt,
+    boxrule=0pt,
+    leftrule=4pt,
+    arc=0pt,
+    halign=flush right,
+    before skip=15pt, after skip=15pt
 }
 
 % کادر الگو و درس (سبز)
@@ -238,12 +238,20 @@
 %──────────────────────────────────────────────────────────────────────────────
 % دستورات سفارشی برای جداول
 %──────────────────────────────────────────────────────────────────────────────
-\newcommand{\tablemark}{\cellcolor{bleulight}}
+% دستورات سفارشی برای جداول
+%──────────────────────────────────────────────────────────────────────────────
+\newcommand{\tablemark}{\cellcolor{goldlight}}
 \newcommand{\headmark}{\cellcolor{bleurepublique}\color{white}\bfseries}
 \newcommand{\rowmark}{\rowcolor{bleulight}}
+
+% تنظیمات پیش‌فرض جداول برای راست‌چین بودن و عرض مناسب
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+% دستور کمکی برای پهن‌تر کردن جداول tabularx (راست‌چین)
+\newcolumntype{Y}{>{\raggedleft\arraybackslash}X} 
+\newcolumntype{Z}{>{\centering\arraybackslash}X} 
 
 %──────────────────────────────────────────────────────────────────────────────
 % نمادهای سفارشی
@@ -334,11 +342,30 @@
 }
 
 %──────────────────────────────────────────────────────────────────────────────
-% عنوان‌بندی فارسی
+% تنظیمات فهرست‌ها (رفع مشکل خالی بودن فهرست در TeXstudio)
 %──────────────────────────────────────────────────────────────────────────────
-\renewcommand{\contentsname}{فهرست مطالب}
-\renewcommand{\listfigurename}{فهرست شکل‌ها}
-\renewcommand{\listtablename}{فهرست جدول‌ها}
+\let\oldlistoftables\listoftables
+\renewcommand{\listoftables}{%
+  \cleardoublepage
+  \phantomsection
+  \addcontentsline{toc}{chapter}{\listtablename}
+  \oldlistoftables
+}
+
+\let\oldlistoffigures\listoffigures
+\renewcommand{\listoffigures}{%
+  \cleardoublepage
+  \phantomsection
+  \addcontentsline{toc}{chapter}{\listfigurename}
+  \oldlistoffigures
+}
+
+% تنظیمات عناوین فارسی (باید بعد از xepersian باشد اما اینجا برای احتیاط)
+\AtBeginDocument{
+  \renewcommand{\contentsname}{فهرست مطالب}
+  \renewcommand{\listfigurename}{فهرست شکل‌ها}
+  \renewcommand{\listtablename}{فهرست جدول‌ها}
+}
 \renewcommand{\bibname}{کتابشناسی}
 \renewcommand{\indexname}{نمایه}
 \renewcommand{\figurename}{شکل}

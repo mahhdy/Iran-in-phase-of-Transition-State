@@ -57,28 +57,30 @@
 \label{sec:logic-model}
 %═══════════════════════════════════════════════════════════════════════════════
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=1.5cm,
+    scale=0.85,
+    transform shape,
     box/.style={
         rectangle,
-        rounded corners=5pt,
-        draw=#1!70,
-        fill=#1!15,
-        thick,
-        minimum width=2.5cm,
-        minimum height=1.5cm,
-        align=center,
-        font=\small
+        rounded corners=8pt,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=2.4cm,
+        minimum height=1.6cm,
+        text centered,
+        font=\tiny\bfseries
     },
-    arrow/.style={->, thick, >=stealth}
+    arrow/.style={->, ultra thick, bleurepublique!60, >=stealth}
 ]
 % زنجیره نتایج
-\node[box=blue] (input) {\textbf{ورودی‌ها}\\ \scriptsize بودجه، نیروی انسانی،\\ \scriptsize قوانین};
-\node[box=green, right=1.5cm of input] (activity) {\textbf{فعالیت‌ها}\\ \scriptsize اصلاحات، پروژه‌ها،\\ \scriptsize برنامه‌ها};
-\node[box=orange, right=1.5cm of activity] (output) {\textbf{خروجی‌ها}\\ \scriptsize قوانین تصویب‌شده،\\ \scriptsize نهادهای ایجادشده};
-\node[box=purple, right=1.5cm of output] (outcome) {\textbf{پیامدها}\\ \scriptsize رفتار تغییریافته،\\ \scriptsize دسترسی بهبودیافته};
-\node[box=red, right=1.5cm of outcome] (impact) {\textbf{تأثیرات}\\ \scriptsize دموکراسی پایدار،\\ \scriptsize رفاه فراگیر};
+\node[box] (input) {\rl{ورودی‌ها}\\[0.1cm]\rl{\tiny بودجه و منابع}};
+\node[box, right=1.2cm of input] (activity) {\rl{فعالیت‌ها}\\[0.1cm]\rl{\tiny اصلاحات اجرایی}};
+\node[box, right=1.2cm of activity] (output) {\rl{خروجی‌ها}\\[0.1cm]\rl{\tiny نهادهای نوین}};
+\node[box, right=1.2cm of output] (outcome) {\rl{پیامدها}\\[0.1cm]\rl{\tiny بهبود رفتارها}};
+\node[box, right=1.2cm of outcome, draw=goldphoenix, fill=goldlight] (impact) {\rl{تأثیرات کلان}\\[0.1cm]\rl{\tiny دموکراسی پایدار}};
 
 % فلش‌ها
 \draw[arrow] (input) -- (activity);
@@ -87,22 +89,21 @@
 \draw[arrow] (outcome) -- (impact);
 
 % برچسب‌های پایش
-\node[below=0.8cm of input, font=\tiny, align=center] {پایش منابع};
-\node[below=0.8cm of activity, font=\tiny, align=center] {پایش اجرا};
-\node[below=0.8cm of output, font=\tiny, align=center] {پایش خروجی};
-\node[below=0.8cm of outcome, font=\tiny, align=center] {ارزیابی پیامد};
-\node[below=0.8cm of impact, font=\tiny, align=center] {ارزیابی تأثیر};
-
-% عنوان
-\node[above=1.5cm of output, font=\large\bfseries] {زنجیره نتایج و سطوح پایش};
+\node[below=0.5cm of input, font=\tiny, color=bleurepublique] {\rl{پایش منابع}};
+\node[below=0.5cm of activity, font=\tiny, color=bleurepublique] {\rl{پایش اجرا}};
+\node[below=0.5cm of output, font=\tiny, color=bleurepublique] {\rl{پایش خروجی}};
+\node[below=0.5cm of outcome, font=\tiny, color=goldphoenix] {\rl{ارزیابی پیامد}};
+\node[below=0.5cm of impact, font=\tiny, color=goldphoenix] {\rl{ارزیابی تأثیر}};
 
 % کادر پایش vs ارزیابی
-\draw[dashed, blue!50, thick] (-1,-1.5) rectangle (6.5,-2.5);
-\node[blue!70, font=\scriptsize] at (2.75,-2) {پایش مستمر};
-\draw[dashed, red!50, thick] (6.7,-1.5) rectangle (12.5,-2.5);
-\node[red!70, font=\scriptsize] at (9.6,-2) {ارزیابی دوره‌ای};
+\draw[dashed, bleurepublique!50, thick] (-1.5,-1.2) rectangle (6.2,-2.2);
+\node[bleurepublique, font=\tiny\bfseries] at (2.3,-1.7) {\rl{پایش عملیاتی مستمر}};
+
+\draw[dashed, goldphoenix!50, thick] (6.4,-1.2) rectangle (12.2,-2.2);
+\node[goldphoenix, font=\tiny\bfseries] at (9.3,-1.7) {\rl{ارزیابی استراتژیک دوره‌ای}};
 \end{tikzpicture}
-\end{center}
+\caption{زنجیره نتایج و سطوح مختلف پایش و ارزیابی}
+\end{figure}
 
 %═══════════════════════════════════════════════════════════════════════════════
 \section{شاخص‌های کلیدی عملکرد (KPIs)}
@@ -113,35 +114,32 @@
 
 \begin{table}[htbp]
 \centering
-\caption{معیارهای SMART برای شاخص‌های خوب}
+\caption{معیارهای SMART برای انتخاب شاخص‌های پایش}
 \label{tab:smart-criteria}
-\begin{tabular}{>{\columncolor{green!8}}c l p{7cm}}
+\begin{tabularx}{\textwidth}{C{1.5cm} R{3cm} Y}
 \toprule
-\rowcolor{green!25}
-\textbf{حرف} & \textbf{معیار} & \textbf{توضیح} \\
+\headmark حرف & \headmark معیار تحلیلی & \headmark شرح مختصر و اهمیت \\
 \midrule
-S & Specific (مشخص) & دقیقاً چه چیزی اندازه‌گیری می‌شود \\
-\rowcolor{gray!10}
-M & Measurable (قابل اندازه‌گیری) & عدد و داده قابل جمع‌آوری \\
-A & Achievable (دست‌یافتنی) & هدف واقع‌بینانه \\
-\rowcolor{gray!10}
-R & Relevant (مرتبط) & به هدف اصلی کمک می‌کند \\
-T & Time-bound (زمان‌دار) & مهلت مشخص دارد \\
+S & Specific & شاخص باید دقیق و بدون ابهام باشد \\
+\rowcolor{goldlight}
+M & Measurable & قابلیت سنجش عددی و کمی داشته باشد \\
+A & Achievable & هدف‌گذاری باید واقع‌بینانه باشد \\
+\rowcolor{goldlight}
+R & Relevant & مستقیماً با اهداف گذار مرتبط باشد \\
+T & Time-bound & زمان‌بندی مشخص برای تحقق داشته باشد \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{شاخص‌های حوزه سیاسی}
 
 \begin{table}[htbp]
 \centering
-\caption{شاخص‌های کلیدی حوزه سیاسی و دموکراتیک}
+\caption{شاخص‌های کلیدی عملکرد در حوزه سیاسی (KPIs)}
 \label{tab:political-kpis}
-\small
-\begin{tabular}{>{\columncolor{blue!8}}r p{3.5cm} c c c c c}
+\begin{tabularx}{\textwidth}{Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
 \toprule
-\rowcolor{blue!25}
-& \textbf{شاخص} & \textbf{مبدأ} & \textbf{س۲} & \textbf{س۵} & \textbf{س۱۰} & \textbf{س۱۵} \\
+\headmark شاخص پایش دموکراتیک & \headmark مبدأ & \headmark س۲ & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
 \midrule
 ۱ & شاخص دموکراسی (EIU, از ۱۰) & ۲.۲ & ۴.۵ & ۶.۰ & ۷.۵ & ۸.۰ \\
 \rowcolor{gray!10}
@@ -159,128 +157,99 @@ T & Time-bound (زمان‌دار) & مهلت مشخص دارد \\
 \rowcolor{gray!10}
 ۱۰ & آزادی اینترنت (از ۱۰۰) & ۱۶ & ۴۰ & ۶۰ & ۷۵ & ۸۵ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{شاخص‌های حوزه اقتصادی}
 
 \begin{table}[htbp]
 \centering
-\caption{شاخص‌های کلیدی حوزه اقتصادی}
+\caption{شاخص‌های کلیدی عملکرد در حوزه اقتصادی (KPIs)}
 \label{tab:economic-kpis-monitoring}
-\small
-\begin{tabular}{>{\columncolor{green!8}}r p{3.5cm} c c c c c}
+\begin{tabularx}{\textwidth}{Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
 \toprule
-\rowcolor{green!25}
-& \textbf{شاخص} & \textbf{مبدأ} & \textbf{س۲} & \textbf{س۵} & \textbf{س۱۰} & \textbf{س۱۵} \\
+\headmark شاخص پایش اقتصادی & \headmark مبدأ & \headmark س۲ & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
 \midrule
-۱ & رشد GDP (٪) & ۲ & ۵ & ۷ & ۶ & ۵ \\
-\rowcolor{gray!10}
-۲ & تورم (٪) & ۵۰ & ۱۵ & ۷ & ۴ & ۲ \\
-۳ & بیکاری (٪) & ۱۲ & ۱۰ & ۸ & ۶ & ۵ \\
-\rowcolor{gray!10}
-۴ & GDP سرانه (هزار \$ PPP) & ۱۵ & ۱۷ & ۲۲ & ۳۲ & ۴۵ \\
-۵ & ضریب جینی & ۰.۴۲ & ۰.۴۰ & ۰.۳۸ & ۰.۳۶ & ۰.۳۵ \\
-\rowcolor{gray!10}
-۶ & نرخ فقر (٪) & ۳۰ & ۲۵ & ۱۸ & ۱۰ & ۵ \\
-۷ & FDI سالانه (میلیارد \$) & ۱ & ۵ & ۲۵ & ۵۰ & ۶۰ \\
-\rowcolor{gray!10}
-۸ & سهم نفت از بودجه (٪) & ۳۵ & ۳۰ & ۲۲ & ۱۵ & ۱۰ \\
-۹ & رتبه کسب‌وکار (از ۱۹۰) & ۱۲۷ & ۹۰ & ۵۰ & ۳۵ & ۲۵ \\
-\rowcolor{gray!10}
-۱۰ & نسبت مالیات/GDP (٪) & ۷ & ۹ & ۱۲ & ۱۶ & ۱۸ \\
+رشد GDP واقعی (٪) & ۲ & ۵ & ۷ & ۶ & ۵ \\
+\rowcolor{goldlight}
+نرخ تورم (٪) & ۵۰ & ۱۵ & ۷ & ۴ & ۲ \\
+نرخ بیکاری (٪) & ۱۲ & ۱۰ & ۸ & ۶ & ۵ \\
+\rowcolor{goldlight}
+GDP سرانه (\$ PPP) & ۱۵K & ۱۷K & ۲۲K & ۳۲K & ۴۵K \\
+ضریب جینی & ۰.۴۲ & ۰.۴۰ & ۰.۳۸ & ۰.۳۶ & ۰.۳۵ \\
+\rowcolor{goldlight}
+رتبه کسب‌وکار (رتبه) & ۱۲۷ & ۹۰ & ۵۰ & ۳۵ & ۲۵ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{شاخص‌های حوزه اجتماعی}
 
 \begin{table}[htbp]
 \centering
-\caption{شاخص‌های کلیدی حوزه اجتماعی و انسانی}
+\caption{شاخص‌های کلیدی عملکرد در حوزه اجتماعی (KPIs)}
 \label{tab:social-kpis}
-\small
-\begin{tabular}{>{\columncolor{purple!8}}r p{3.5cm} c c c c c}
+\begin{tabularx}{\textwidth}{Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
 \toprule
-\rowcolor{purple!25}
-& \textbf{شاخص} & \textbf{مبدأ} & \textbf{س۲} & \textbf{س۵} & \textbf{س۱۰} & \textbf{س۱۵} \\
+\headmark شاخص پایش اجتماعی & \headmark مبدأ & \headmark س۲ & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
 \midrule
-۱ & شاخص توسعه انسانی (HDI) & ۰.۷۷ & ۰.۷۸ & ۰.۸۱ & ۰.۸۴ & ۰.۸۷ \\
-\rowcolor{gray!10}
-۲ & امید به زندگی (سال) & ۷۷ & ۷۷.۵ & ۷۹ & ۸۱ & ۸۳ \\
-۳ & میانگین سال تحصیل & ۱۰ & ۱۰.۵ & ۱۱.۵ & ۱۲.۵ & ۱۴ \\
-\rowcolor{gray!10}
-۴ & شکاف جنسیتی (GGI, از ۱) & ۰.۵۷ & ۰.۶۲ & ۰.۷۰ & ۰.۷۵ & ۰.۸۰ \\
-۵ & رضایت از زندگی (از ۱۰) & ۴.۵ & ۵.۵ & ۶.۵ & ۷.۰ & ۷.۵ \\
-\rowcolor{gray!10}
-۶ & اعتماد بین‌فردی (٪) & ۲۰ & ۲۵ & ۳۵ & ۴۵ & ۵۵ \\
-۷ & پوشش بیمه سلامت (٪) & ۸۵ & ۹۰ & ۹۵ & ۹۸ & ۱۰۰ \\
-\rowcolor{gray!10}
-۸ & دسترسی به اینترنت (٪) & ۸۰ & ۸۵ & ۹۲ & ۹۷ & ۹۹ \\
-۹ & مسکن مناسب (٪ خانوار) & ۷۰ & ۷۵ & ۸۲ & ۸۸ & ۹۵ \\
-\rowcolor{gray!10}
-۱۰ & رضایت اقوام از حقوق (٪) & ۳۰ & ۴۵ & ۶۰ & ۷۵ & ۸۵ \\
+توسعه انسانی (HDI) & ۰.۷۷ & ۰.۷۸ & ۰.۸۱ & ۰.۸۴ & ۰.۸۷ \\
+\rowcolor{goldlight}
+امید به زندگی (سال) & ۷۷ & ۷۷.۵ & ۷۹ & ۸۱ & ۸۳ \\
+شکاف جنسیتی (GGI) & ۰.۵۷ & ۰.۶۲ & ۰.۷۰ & ۰.۷۵ & ۰.۸۰ \\
+\rowcolor{goldlight}
+رضایت از زندگی (از ۱۰) & ۴.۵ & ۵.۵ & ۶.۵ & ۷.۰ & ۷.۵ \\
+اعتماد اجتماعی (٪) & ۲۰ & ۲۵ & ۳۵ & ۴۵ & ۵۵ \\
+\rowcolor{goldlight}
+دسترسی به اینترنت (٪) & ۸۰ & ۸۵ & ۹۲ & ۹۷ & ۹۹ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{شاخص‌های حوزه محیط زیست}
 
 \begin{table}[htbp]
 \centering
-\caption{شاخص‌های کلیدی حوزه محیط زیست}
+\caption{شاخص‌های کلیدی عملکرد در حوزه محیط زیست (KPIs)}
 \label{tab:environmental-kpis}
-\small
-\begin{tabular}{>{\columncolor{teal!8}}r p{3.5cm} c c c c c}
+\begin{tabularx}{\textwidth}{Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
 \toprule
-\rowcolor{teal!25}
-& \textbf{شاخص} & \textbf{مبدأ} & \textbf{س۲} & \textbf{س۵} & \textbf{س۱۰} & \textbf{س۱۵} \\
+\headmark شاخص پایش محیط زیست & \headmark مبدأ & \headmark س۲ & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
 \midrule
-۱ & کسری آب (میلیارد م۳) & ۱۸ & ۱۵ & ۱۰ & ۵ & ۰ \\
-\rowcolor{gray!10}
-۲ & PM2.5 تهران (میکروگرم) & ۳۵ & ۲۸ & ۲۰ & ۱۲ & ۸ \\
-۳ & سهم انرژی تجدیدپذیر (٪) & ۸ & ۱۲ & ۲۵ & ۵۰ & ۷۰ \\
-\rowcolor{gray!10}
-۴ & انتشار CO2 (میلیون تن) & ۷۵۰ & ۷۲۰ & ۶۵۰ & ۵۰۰ & ۴۰۰ \\
-۵ & حجم ارومیه (میلیارد م۳) & ۳ & ۴ & ۷ & ۱۲ & ۱۵ \\
-\rowcolor{gray!10}
-۶ & پوشش جنگلی (٪) & ۷ & ۷.۵ & ۸.۵ & ۱۰ & ۱۲ \\
-۷ & بازیافت پسماند (٪) & ۸ & ۱۵ & ۳۰ & ۴۵ & ۶۰ \\
-\rowcolor{gray!10}
-۸ & مناطق حفاظت‌شده (٪) & ۱۰ & ۱۱ & ۱۳ & ۱۶ & ۱۸ \\
-۹ & راندمان آبیاری (٪) & ۳۸ & ۴۵ & ۵۵ & ۷۰ & ۸۵ \\
-\rowcolor{gray!10}
-۱۰ & شاخص EPI (از ۱۰۰) & ۴۰ & ۴۵ & ۵۵ & ۶۵ & ۷۵ \\
+کسری آب ($B m^{3}$) & ۱۸ & ۱۵ & ۱۰ & ۵ & ۰ \\
+\rowcolor{goldlight}
+PM2.5 تهران & ۳۵ & ۲۸ & ۲۰ & ۱۲ & ۸ \\
+سهم تجدیدپذیر (٪) & ۸ & ۱۲ & ۲۵ & ۵۰ & ۷۰ \\
+\rowcolor{goldlight}
+انتشار CO2 ($M t$) & ۷۵۰ & ۷۲۰ & ۶۵۰ & ۵۰۰ & ۴۰۰ \\
+حجم دریاچه ارومیه & ۳ & ۴ & ۷ & ۱۲ & ۱۵ \\
+\rowcolor{goldlight}
+شاخص EPI (از ۱۰۰) & ۴۰ & ۴۵ & ۵۵ & ۶۵ & ۷۵ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{شاخص‌های حوزه امنیت و بین‌الملل}
 
 \begin{table}[htbp]
 \centering
-\caption{شاخص‌های کلیدی امنیت و روابط بین‌الملل}
+\caption{شاخص‌های کلیدی عملکرد در حوزه امنیت و بین‌الملل (KPIs)}
 \label{tab:security-kpis}
-\small
-\begin{tabular}{>{\columncolor{red!8}}r p{3.5cm} c c c c c}
+\begin{tabularx}{\textwidth}{Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
 \toprule
-\rowcolor{red!25}
-& \textbf{شاخص} & \textbf{مبدأ} & \textbf{س۲} & \textbf{س۵} & \textbf{س۱۰} & \textbf{س۱۵} \\
+\headmark شاخص پایش استراتژیک & \headmark مبدأ & \headmark س۲ & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
 \midrule
-۱ & شاخص صلح جهانی (GPI) & ۱۴۰ & ۱۱۰ & ۸۰ & ۵۵ & ۴۰ \\
-\rowcolor{gray!10}
-۲ & تعداد تحریم‌های فعال & ۳۸۰۰ & ۲۰۰۰ & ۵۰۰ & ۱۰۰ & ۰ \\
-۳ & روابط دیپلماتیک عادی & ۸۰ & ۱۲۰ & ۱۶۰ & ۱۸۰ & ۱۹۰ \\
-\rowcolor{gray!10}
-۴ & عضویت در سازمان‌های بین‌المللی & ۵۰ & ۶۰ & ۸۰ & ۱۰۰ & ۱۲۰ \\
-۵ & گردشگر ورودی (میلیون) & ۵ & ۸ & ۱۵ & ۲۵ & ۳۵ \\
-\rowcolor{gray!10}
-۶ & رتبه پاسپورت ایرانی & ۱۸۰+ & ۱۵۰ & ۱۰۰ & ۶۰ & ۴۰ \\
-۷ & صادرات غیرنفتی (میلیارد \$) & ۳۵ & ۵۰ & ۸۰ & ۱۴۰ & ۲۲۰ \\
-\rowcolor{gray!10}
-۸ & نرخ جرم (قتل/۱۰۰ هزار) & ۳ & ۲.۵ & ۲ & ۱.۵ & ۱.۲ \\
+صلح جهانی (GPI) & ۱۴۰ & ۱۱۰ & ۸۰ & ۵۵ & ۴۰ \\
+\rowcolor{goldlight}
+تعداد تحریم‌های فعال & ۳۸۰۰ & ۲۰۰۰ & ۵۰۰ & ۱۰۰ & ۰ \\
+روابط دیپلماتیک عادی & ۸۰ & ۱۲۰ & ۱۶۰ & ۱۸۰ & ۱۹۰ \\
+\rowcolor{goldlight}
+گردشگر ورودی ($M$) & ۵ & ۸ & ۱۵ & ۲۵ & ۳۵ \\
+رتبه پاسپورت ایرانی & ۱۸۰+ & ۱۵۰ & ۱۰۰ & ۶۰ & ۴۰ \\
+\rowcolor{goldlight}
+صادرات غیرنفتی (\$B) & ۳۵ & ۵۰ & ۸۰ & ۱۴۰ & ۲۲۰ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -288,86 +257,91 @@ T & Time-bound (زمان‌دار) & مهلت مشخص دارد \\
 \label{sec:national-dashboard}
 %═══════════════════════════════════════════════════════════════════════════════
 
-\begin{center}
-\begin{tikzpicture}[scale=0.95]
-% کادر اصلی داشبورد
-\draw[thick, rounded corners=15pt, fill=gray!5] (-7,-6) rectangle (7,5.5);
-\node[font=\large\bfseries] at (0,5) {داشبورد ملی پیشرفت گذار دموکراتیک};
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[
+    scale=0.85,
+    transform shape,
+    card/.style={
+        rectangle,
+        rounded corners=8pt,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=3.5cm,
+        minimum height=2.5cm,
+        text centered
+    }
+]
+% داشبورد ملی
+\node[card] (p) at (0,3) {
+    \rl{\textbf{سیاسی}}\\[0.2cm]
+    \rl{\tiny شاخص دموکراسی:}\\[0.1cm]
+    \rl{\large \textbf{۴.۸}} \\[0.1cm]
+    \rl{\tiny وضعیت: در حال بهبود}
+};
 
-% ۹ کادر شاخص
-% ردیف اول
-\node[rectangle, rounded corners=5pt, draw=blue!70, fill=blue!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (-4.5,3) 
-    {\textbf{دموکراسی}\\ \Large ۶.۵/۱۰\\ \scriptsize هدف: ۸.۰};
-\node[rectangle, rounded corners=5pt, draw=green!70, fill=green!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (0,3) 
-    {\textbf{توسعه انسانی}\\ \Large ۰.۸۲\\ \scriptsize هدف: ۰.۸۷};
-\node[rectangle, rounded corners=5pt, draw=orange!70, fill=orange!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (4.5,3) 
-    {\textbf{رشد اقتصادی}\\ \Large ۶٪\\ \scriptsize هدف: ۵٪+};
+\node[card] (e) at (4.5,3) {
+    \rl{\textbf{اقتصادی}}\\[0.2cm]
+    \rl{\tiny رشد GDP:}\\[0.1cm]
+    \rl{\large \textbf{+۵.۲٪}} \\[0.1cm]
+    \rl{\tiny وضعیت: پایدار}
+};
 
-% ردیف دوم
-\node[rectangle, rounded corners=5pt, draw=red!70, fill=red!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (-4.5,0.5) 
-    {\textbf{تورم}\\ \Large ۱۲٪\\ \scriptsize هدف: ۵٪};
-\node[rectangle, rounded corners=5pt, draw=purple!70, fill=purple!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (0,0.5) 
-    {\textbf{بیکاری}\\ \Large ۸٪\\ \scriptsize هدف: ۵٪};
-\node[rectangle, rounded corners=5pt, draw=teal!70, fill=teal!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (4.5,0.5) 
-    {\textbf{فساد (CPI)}\\ \Large ۵۰/۱۰۰\\ \scriptsize هدف: ۷۰};
+\node[card] (s) at (9,3) {
+    \rl{\textbf{اجتماعی}}\\[0.2cm]
+    \rl{\tiny اعتماد عمومی:}\\[0.1cm]
+    \rl{\large \textbf{۳۵٪}} \\[0.1cm]
+    \rl{\tiny وضعیت: نیاز به توجه}
+};
 
-% ردیف سوم
-\node[rectangle, rounded corners=5pt, draw=cyan!70, fill=cyan!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (-4.5,-2) 
-    {\textbf{محیط زیست}\\ \Large ۵۵/۱۰۰\\ \scriptsize هدف: ۷۵};
-\node[rectangle, rounded corners=5pt, draw=yellow!70!black, fill=yellow!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (0,-2) 
-    {\textbf{برابری جنسیتی}\\ \Large ۰.۷۰\\ \scriptsize هدف: ۰.۸۰};
-\node[rectangle, rounded corners=5pt, draw=pink!70!black, fill=pink!15,
-      minimum width=3.8cm, minimum height=1.8cm, align=center] at (4.5,-2) 
-    {\textbf{رضایت مردم}\\ \Large ۶.۵/۱۰\\ \scriptsize هدف: ۷.۵};
+\node[card] (ev) at (0,0) {
+    \rl{\textbf{محیط زیست}}\\[0.2cm]
+    \rl{\tiny تراز آب:}\\[0.1cm]
+    \rl{\large \textbf{-۱۲.۵ $B m^3$}} \\[0.1cm]
+    \rl{\tiny وضعیت: بحرانی}
+};
 
-% نوار وضعیت کلی
-\draw[thick, fill=green!30] (-6,-4) rectangle (6,-3.5);
-\node[font=\small\bfseries] at (0,-3.75) {وضعیت کلی: در مسیر | پیشرفت: ۶۵٪ از اهداف سال ۱۰};
+\node[card] (sec) at (4.5,0) {
+    \rl{\textbf{امنیت}}\\[0.2cm]
+    \rl{\tiny شاخص صلح:}\\[0.1cm]
+    \rl{\large \textbf{۸۵}} \\[0.1cm]
+    \rl{\tiny وضعیت: مطلوب}
+};
 
-% نوار زمان
-\draw[thick] (-6,-5) -- (6,-5);
-\foreach \x/\label in {-6/۱۴۰۳, -3/س۵, 0/س۱۰, 3/س۱۵, 6/س۲۵} {
-    \fill (\x,-5) circle (3pt);
-    \node[below, font=\tiny] at (\x,-5) {\label};
-}
-\fill[red] (-1.5,-5) circle (5pt);
-\node[above, font=\tiny\bfseries, red] at (-1.5,-4.8) {اکنون};
+\node[card, draw=goldphoenix, fill=goldlight] (total) at (9,0) {
+    \rl{\textbf{پیشرفت کل}}\\[0.2cm]
+    \rl{\tiny تحقق اهداف:}\\[0.1cm]
+    \rl{\huge \textbf{۴۲٪}} \\[0.1cm]
+    \rl{\tiny فاز گذار (سال ۳)}
+};
+
+% اتصالات
+\draw[ultra thick, bleurepublique!20] (p) -- (e) -- (s) -- (total) -- (sec) -- (ev) -- (p);
+
 \end{tikzpicture}
-\captionof{figure}{نمونه داشبورد ملی پیشرفت (فرضی — سال ۷)}
+\caption{نمای کلی داشبورد ملی پایش گذار (شبیه‌سازی سال ۳)}
 \label{fig:dashboard-sample}
-\end{center}
+\end{figure}
 
 \subsection{ویژگی‌های داشبورد}
 
 \begin{table}[htbp]
 \centering
-\caption{ویژگی‌های داشبورد ملی پیشرفت}
+\caption{ویژگی‌های سامانه هوشمند داشبورد ملی}
 \label{tab:dashboard-features}
-\begin{tabular}{>{\columncolor{blue!8}}r p{4cm} p{5.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Y}
 \toprule
-\rowcolor{blue!25}
-\textbf{ویژگی} & \textbf{توضیح} & \textbf{اهمیت} \\
+\headmark ویژگی کلیدی & \headmark شرح عملکردی & \headmark مخاطب اصلی \\
 \midrule
-دسترسی عمومی & آنلاین، رایگان، به فارسی و انگلیسی & شفافیت و پاسخگویی \\
-\rowcolor{gray!10}
-به‌روزرسانی & ماهانه برای اکثر شاخص‌ها & اطلاعات تازه \\
-سطوح مختلف & ملی، استانی، شهری & جزئیات برای هر منطقه \\
-\rowcolor{gray!10}
-مقایسه بین‌المللی & جایگاه ایران در جهان & بنچ‌مارکینگ \\
-روند تاریخی & نمودار تغییرات در زمان & دیدن پیشرفت \\
-\rowcolor{gray!10}
-دانلود داده & داده‌های خام قابل دانلود & تحقیق و تحلیل مستقل \\
-API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
+شفافیت کامل & انتشار عمومی داده‌های غیرمحرمانه & شهروندان و رسانه \\
+\rowcolor{goldlight}
+داده‌های لحظه‌ای & لایو بودن شاخص‌های اقتصادی و انرژی & مدیران استراتژیک \\
+هشدار زودهنگام & شناسایی خودکار انحراف از اهداف & تیم اصلاح مسیر \\
+\rowcolor{goldlight}
+پایین‌به‌بالا & امکان ثبت گزارش‌های مردمی در داشبورد & جامعه مدنی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -379,24 +353,21 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{تقویم ارزیابی‌های دوره‌ای}
+\caption{زمان‌بندی دوره‌های ارزیابی استراتژیک}
 \label{tab:evaluation-calendar}
-\begin{tabular}{>{\columncolor{orange!8}}l c p{4cm} p{3.5cm}}
+\begin{tabularx}{\textwidth}{C{2.5cm} R{3cm} Y}
 \toprule
-\rowcolor{orange!25}
-\textbf{نوع ارزیابی} & \textbf{زمان} & \textbf{محتوا} & \textbf{مسئول} \\
+\headmark نوع ارزیابی & \headmark بازه زمانی & \headmark هدف و وسعت بررسی \\
 \midrule
-گزارش ماهانه & هر ماه & شاخص‌های کلیدی، انحرافات & دفتر رئیس‌جمهور \\
-\rowcolor{gray!10}
-گزارش فصلی & هر ۳ ماه & تحلیل عمیق‌تر، اصلاحات & دولت به مجلس \\
-گزارش سالانه & هر سال & ارزیابی جامع، نظرسنجی & نهاد مستقل ارزیابی \\
-\rowcolor{gray!10}
-ارزیابی میان‌دوره‌ای & هر ۵ سال & ارزیابی استراتژیک & پانل مستقل داخلی-خارجی \\
-ارزیابی فاز & پایان هر فاز & آیا به اهداف رسیدیم؟ & کمیته ملی ارزیابی \\
-\rowcolor{gray!10}
-ممیزی بین‌المللی & هر ۲ سال & توسط نهادهای بین‌المللی & UN, EU, IMF, WB \\
+پایش مستمر & روزانه/هفتگی & اصلاحات عملیاتی و فنی \\
+\rowcolor{goldlight}
+گزارش فصلی & هر ۳ ماه & بررسی بودجه و پیشرفت پروژه‌ها \\
+ارزیابی سالانه & هر ۱۲ ماه & بازنگری برنامه‌های میان‌مدت \\
+\rowcolor{goldlight}
+ارزیابی فازی & هر ۵ سال & سنجش تغییرات پارادایمی و ساختاری \\
+ارزیابی نهایی & پایان ۲۵ سال & تحلیل تأثیر تاریخی گذار \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{معیارهای ارزیابی موفقیت}
@@ -428,112 +399,78 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{ماتریس ریسک‌های اصلی گذار دموکراتیک}
+\caption{ماتریس مدیریت ریسک‌های استراتژیک گذار}
 \label{tab:risk-matrix}
-\small
-\begin{tabular}{>{\columncolor{red!8}}l c c p{4.5cm}}
+\begin{tabularx}{\textwidth}{R{2.5cm} C{1.5cm} C{1.5cm} Y}
 \toprule
-\rowcolor{red!25}
-\textbf{ریسک} & \textbf{احتمال} & \textbf{تأثیر} & \textbf{استراتژی کاهش} \\
+\headmark عنوان ریسک & \headmark احتمال & \headmark شدت & \headmark استراتژی پدافندی \\
 \midrule
-بازگشت اقتدارگرایی & متوسط & بحرانی & نهادسازی قوی، جامعه مدنی \\
-\rowcolor{gray!10}
-جنگ داخلی/خشونت & پایین & فاجعه‌بار & عدالت انتقالی، دیالوگ ملی \\
-شکست اقتصادی & متوسط & بالا & سیاست‌های احتیاطی، FDI \\
-\rowcolor{gray!10}
-تجزیه‌طلبی & پایین-متوسط & بحرانی & فدرالیسم، حقوق اقوام \\
-مداخله خارجی & متوسط & بالا & دیپلماسی فعال، موازنه \\
-\rowcolor{gray!10}
-فساد سیستماتیک & بالا & بالا & شفافیت، نهاد ضدفساد مستقل \\
-بحران آب/محیط زیست & بالا & بالا & اقدام فوری، سرمایه‌گذاری \\
-\rowcolor{gray!10}
-پوپولیسم & متوسط-بالا & متوسط & آموزش، رسانه مسئول \\
-خستگی اصلاحات & متوسط & متوسط & دستاوردهای ملموس، ارتباط \\
-\rowcolor{gray!10}
-تنش با همسایگان & متوسط & متوسط-بالا & دیپلماسی منطقه‌ای \\
+بازگشت استبداد & کم & حیاتی & نهادسازی دموکراتیک و تسلیح ملت \\
+\rowcolor{goldlight}
+بحران ارزی & متوسط & بالا & ذخیره احتیاطی و انضباط مالی \\
+تنش قومی & کم & بالا & فدرالیسم اداری و ترویج وفاق \\
+\rowcolor{goldlight}
+خرابکاری سایبری & بالا & متوسط & تقویت زیرساخت و پدافند نوین \\
+جنگ منطقه‌ای & بسیار کم & حیاتی & دیپلماسی فعال و موازنه قدرت \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
-\subsection{نقشه حرارتی ریسک}
-
-\begin{center}
-\begin{tikzpicture}
+\begin{figure}[htbp]
+\centering
+\begin{tikzpicture}[scale=0.8]
 % محورها
-\draw[thick, ->] (0,0) -- (10,0) node[right] {احتمال};
-\draw[thick, ->] (0,0) -- (0,8) node[above] {تأثیر};
+\draw[thick, ->] (0,0) -- (6,0) node[right] {\rl{\tiny احتمال}};
+\draw[thick, ->] (0,0) -- (0,6) node[above] {\rl{\tiny شدت}};
 
-% برچسب‌های محورها
-\node[below] at (2,0) {پایین};
-\node[below] at (5,0) {متوسط};
-\node[below] at (8,0) {بالا};
-\node[left] at (0,2) {پایین};
-\node[left] at (0,4) {متوسط};
-\node[left] at (0,6) {بالا};
-\node[left] at (0,7.5) {بحرانی};
-
-% مناطق رنگی
-\fill[green!30] (0,0) rectangle (3.3,4);
-\fill[yellow!30] (3.3,0) rectangle (6.6,4);
-\fill[yellow!30] (0,4) rectangle (3.3,6);
-\fill[orange!30] (6.6,0) rectangle (10,4);
-\fill[orange!30] (3.3,4) rectangle (6.6,6);
-\fill[orange!30] (0,6) rectangle (3.3,8);
-\fill[red!30] (6.6,4) rectangle (10,8);
-\fill[red!30] (3.3,6) rectangle (6.6,8);
-
-% خطوط شبکه
-\draw[gray, dashed] (3.3,0) -- (3.3,8);
-\draw[gray, dashed] (6.6,0) -- (6.6,8);
-\draw[gray, dashed] (0,4) -- (10,4);
-\draw[gray, dashed] (0,6) -- (10,6);
+% گرید حرارتی
+\fill[red!80] (4,4) rectangle (6,6); % بحرانی
+\fill[orange!60] (4,2) rectangle (6,4);
+\fill[orange!60] (2,4) rectangle (4,6);
+\fill[yellow!40] (0,4) rectangle (2,6);
+\fill[yellow!40] (4,0) rectangle (6,2);
+\fill[yellow!40] (2,2) rectangle (4,4);
+\fill[green!30] (0,0) rectangle (2,2);
 
 % ریسک‌ها
-\node[circle, fill=black, minimum size=8pt, label=right:{\scriptsize جنگ داخلی}] at (2,7.5) {};
-\node[circle, fill=black, minimum size=8pt, label=right:{\scriptsize تجزیه‌طلبی}] at (3.5,7) {};
-\node[circle, fill=black, minimum size=8pt, label=left:{\scriptsize بازگشت اقتدارگرایی}] at (5,6.5) {};
-\node[circle, fill=black, minimum size=8pt, label=right:{\scriptsize شکست اقتصادی}] at (5,5.5) {};
-\node[circle, fill=black, minimum size=8pt, label=above:{\scriptsize بحران آب}] at (7.5,5.5) {};
-\node[circle, fill=black, minimum size=8pt, label=right:{\scriptsize فساد}] at (7,4.5) {};
-\node[circle, fill=black, minimum size=8pt, label=below:{\scriptsize مداخله خارجی}] at (5,4.5) {};
-\node[circle, fill=black, minimum size=8pt, label=right:{\scriptsize پوپولیسم}] at (6,3) {};
+\node[circle, fill=black, inner sep=1.5pt, label={[font=\tiny]above:\rl{بازگشت استبداد}}] at (5,5.5) {};
+\node[circle, fill=black, inner sep=1.5pt, label={[font=\tiny]right:\rl{بحران ارزی}}] at (4.5,3.5) {};
+\node[circle, fill=black, inner sep=1.5pt, label={[font=\tiny]left:\rl{تنش قومی}}] at (1.5,5) {};
+\node[circle, fill=black, inner sep=1.5pt, label={[font=\tiny]below:\rl{سایبری}}] at (5.2,2.5) {};
 
 % راهنما
-\node[fill=green!30, minimum width=0.5cm, minimum height=0.3cm] at (8.5,7.5) {};
-\node[right, font=\tiny] at (8.8,7.5) {کم‌خطر};
-\node[fill=yellow!30, minimum width=0.5cm, minimum height=0.3cm] at (8.5,7) {};
-\node[right, font=\tiny] at (8.8,7) {هشدار};
-\node[fill=orange!30, minimum width=0.5cm, minimum height=0.3cm] at (8.5,6.5) {};
-\node[right, font=\tiny] at (8.8,6.5) {جدی};
-\node[fill=red!30, minimum width=0.5cm, minimum height=0.3cm] at (8.5,6) {};
-\node[right, font=\tiny] at (8.8,6) {بحرانی};
+\node[draw, fill=white, font=\tiny] at (8,3) {
+    \begin{tabular}{l}
+    \rl{\textbf{راهنما:}}\\
+    \rl{\textcolor{red}{■} قرمز: اقدام فوری}\\
+    \rl{\textcolor{orange}{■} نارنجی: پایش مداوم}\\
+    \rl{\textcolor{yellow}{■} زرد: آمادگی}\\
+    \rl{\textcolor{green}{■} سبز: پذیرش}
+    \end{tabular}
+};
 \end{tikzpicture}
-\captionof{figure}{نقشه حرارتی ریسک‌های گذار دموکراتیک}
+\caption{نقشه حرارتی ریسک‌های کلان (Risk Heatmap)}
 \label{fig:risk-heatmap}
-\end{center}
+\end{figure}
 
 \subsection{سیستم هشدار زودهنگام}
 
 \begin{table}[htbp]
 \centering
-\caption{شاخص‌های هشدار زودهنگام}
+\caption{سیستم هشدار زودهنگام (Early Warning System)}
 \label{tab:early-warning}
-\begin{tabular}{>{\columncolor{orange!8}}l p{4.5cm} p{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{2.5cm}}
 \toprule
-\rowcolor{orange!25}
-\textbf{حوزه} & \textbf{شاخص‌های هشدار} & \textbf{آستانه بحران} \\
+\headmark شاخص پیشرو & \headmark آستانه تحریک (Trigger) & \headmark اقدام اصلاحی \\
 \midrule
-سیاسی & کاهش مشارکت، افزایش اعتراضات & مشارکت زیر ۴۰٪، اعتراض ۱۰۰K+ \\
-\rowcolor{gray!10}
-اقتصادی & تورم، بیکاری، فرار سرمایه & تورم بالای ۳۰٪، بیکاری بالای ۱۵٪ \\
-قومی & تنش‌های قومی، خشونت محلی & بیش از ۱۰ حادثه/ماه \\
-\rowcolor{gray!10}
-اجتماعی & رضایت، اعتماد به نهادها & رضایت زیر ۳۰٪ \\
-امنیتی & جرم، تروریسم، تنش مرزی & افزایش ۵۰٪+ \\
-\rowcolor{gray!10}
-رسانه‌ای & سانسور، تهدید خبرنگاران & بازگشت محدودیت‌ها \\
+نرخ تورم ماهانه & عبور از ۵٪ در ماه & انقباض پولی فوری \\
+\rowcolor{goldlight}
+اعتماد عمومی & افت به زیر ۳۰٪ در نظرسنجی & بسته شفافیت و گفتگو \\
+خروج سرمایه & جهش ۳۰٪ در تقاضای ارز & کنترل‌های موقت سرمایه \\
+\rowcolor{goldlight}
+تجمعات اعتراضی & تدوام بیش از ۷ روز & مذاکره و میانجی‌گری \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{enghelabbox}
@@ -566,49 +503,49 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 \label{sec:institutional-framework}
 %═══════════════════════════════════════════════════════════════════════════════
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=1.5cm,
-    institution/.style={
+    scale=0.85,
+    transform shape,
+    box/.style={
         rectangle,
-        rounded corners=5pt,
-        draw=#1!70,
-        fill=#1!15,
-        thick,
-        minimum width=4cm,
-        minimum height=1.3cm,
-        align=center,
-        font=\small
+        rounded corners=8pt,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=3.5cm,
+        minimum height=1.4cm,
+        text centered,
+        font=\tiny\bfseries
     }
 ]
-% نهادها
-\node[institution=blue] (stats) at (0,4) {\textbf{مرکز ملی آمار}\\ جمع‌آوری داده، پایگاه‌ها};
-\node[institution=green] (eval) at (0,2) {\textbf{سازمان ملی ارزیابی}\\ ارزیابی مستقل، گزارش‌دهی};
-\node[institution=orange] (audit) at (0,0) {\textbf{دیوان محاسبات}\\ ممیزی مالی و عملکردی};
-\node[institution=purple] (ombuds) at (0,-2) {\textbf{آمبودزمان ملی}\\ شکایات مردمی، نظارت};
+% نهادهای رسمی
+\node[box] (stats) at (0,4) {\rl{مرکز ملی آمار}\\\rl{\tiny جمع‌آوری و صحت‌سنجی}};
+\node[box] (eval) at (0,2) {\rl{سازمان پایش و ارزیابی}\\\rl{\tiny تحلیل استراتژیک}};
+\node[box] (audit) at (0,0) {\rl{دیوان محاسبات}\\\rl{\tiny ممیزی و تطبیق}};
 
-% نهادهای ناظر بیرونی
-\node[institution=teal, right=2.5cm of stats] (civil) {\textbf{جامعه مدنی}\\ رصدخانه‌های مردمی};
-\node[institution=red, right=2.5cm of eval] (media) {\textbf{رسانه‌های مستقل}\\ روزنامه‌نگاری تحقیقی};
-\node[institution=cyan, right=2.5cm of audit] (intl) {\textbf{نهادهای بین‌المللی}\\ UN, WB, IMF, EU};
-\node[institution=darkyellow, right=2.5cm of ombuds] (acad) {\textbf{دانشگاه‌ها}\\ تحقیق و تحلیل};
-
-% کادر دولتی و مستقل
-\draw[dashed, blue!50, thick, rounded corners] (-2.5,-3) rectangle (2.5,5);
-\node[blue!70, font=\scriptsize] at (0,5.3) {نهادهای رسمی};
-
-\draw[dashed, green!50, thick, rounded corners] (4,-3) rectangle (9,5);
-\node[green!70, font=\scriptsize] at (6.5,5.3) {نظارت مستقل};
+% نظارت مدنی
+\node[box, draw=goldphoenix, fill=goldlight] (civil) at (5,4) {\rl{رصدخانه‌های مردمی}\\\rl{\tiny پایش از پایین به بالا}};
+\node[box, draw=goldphoenix, fill=goldlight] (media) at (5,2) {\rl{رسانه‌های آزاد}\\\rl{\tiny رکن چهارم نظارت}};
+\node[box, draw=goldphoenix, fill=goldlight] (intl) at (5,0) {\rl{ناظران بین‌المللی}\\\rl{\tiny مطابقت با استانداردها}};
 
 % اتصالات
-\draw[thick, <->] (stats) -- (civil);
-\draw[thick, <->] (eval) -- (media);
-\draw[thick, <->] (audit) -- (intl);
-\draw[thick, <->] (ombuds) -- (acad);
+\foreach \a/\b in {stats/civil, eval/media, audit/intl} {
+    \draw[ultra thick, bleurepublique!30, <->] (\a) -- (\b);
+}
+
+% کادربندی
+\draw[dashed, bleurepublique!40, thick] (-2,-1) rectangle (2,5);
+\node[bleurepublique, font=\tiny\bfseries] at (0,5.3) {\rl{حکمرانی هوشمند}};
+
+\draw[dashed, goldphoenix!40, thick] (3,-1) rectangle (7,5);
+\node[goldphoenix, font=\tiny\bfseries] at (5,5.3) {\rl{جامعه باز}};
+
 \end{tikzpicture}
-\captionof{figure}{ساختار نهادی پایش و ارزیابی}
+\caption{ساختار نهادی و تعاملی نظام پایش و ارزیابی}
 \label{fig:monitoring-institutions}
-\end{center}
+\end{figure}
 
 \begin{table}[htbp]
 \centering
@@ -644,25 +581,20 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{ابزارهای پایش مشارکتی}
+\caption{ابزارهای پایش مشارکتی و مردمی}
 \label{tab:participatory-tools}
-\begin{tabular}{>{\columncolor{green!8}}r p{3.5cm} p{5.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{3cm}}
 \toprule
-\rowcolor{green!25}
-\textbf{ابزار} & \textbf{توضیح} & \textbf{کاربرد} \\
+\headmark ابزار پایش & \headmark شرح مکانیزم عمل & \headmark سطح اثرگذاری \\
 \midrule
-نظرسنجی ملی & پیمایش سالانه ۵۰,۰۰۰ نفری & سنجش رضایت، اولویت‌ها \\
-\rowcolor{gray!10}
-اپلیکیشن شهروندی & گزارش مشکلات، امتیازدهی & فیدبک لحظه‌ای \\
-کارت امتیاز اجتماعی & ارزیابی خدمات محلی توسط مردم & پاسخگویی محلی \\
-\rowcolor{gray!10}
-بودجه مشارکتی & تصمیم‌گیری مردم درباره بخشی از بودجه & مشارکت مستقیم \\
-جلسات عمومی & حضور مقامات برای پاسخگویی & تعامل مستقیم \\
-\rowcolor{gray!10}
-رصدخانه‌های مدنی & NGOهای ناظر بر حوزه‌های خاص & نظارت تخصصی \\
-پلتفرم شفافیت & دسترسی به اسناد و قراردادهای دولتی & مبارزه با فساد \\
+نظرسنجی ملی & پیمایش علمی سالانه رضایت عمومی & ملی (کلان) \\
+\rowcolor{goldlight}
+سامانه e-People & ثبت و پیگیری لحظه‌ای شکایات & عملیاتی \\
+کارت امتیازدهی & ارزیابی کیفیت خدمات محلی & محله/شهر \\
+\rowcolor{goldlight}
+رصدخانه‌های مدنی & نظارت تخصصی سازمان‌های مردم‌نهاد & بخشی (تخصصی) \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{olgoobox}
@@ -683,27 +615,21 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{محتوای نظرسنجی ملی سالانه}
+\caption{محورهای کلیدی نظرسنجی ملی سالانه}
 \label{tab:annual-survey}
-\begin{tabular}{>{\columncolor{purple!8}}r p{4cm} p{5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Y}
 \toprule
-\rowcolor{purple!25}
-\textbf{بخش} & \textbf{موضوعات} & \textbf{سؤالات نمونه} \\
+\headmark حوزه ارزیابی & \headmark شاخص‌های مورد پرسش & \headmark هدف استراتژیک \\
 \midrule
-رضایت کلی & زندگی، آینده، کشور & آیا کشور در مسیر درست است؟ \\
-\rowcolor{gray!10}
-اعتماد به نهادها & دولت، مجلس، قضا، ارتش & چقدر به مجلس اعتماد دارید؟ \\
-کیفیت خدمات & بهداشت، آموزش، حمل‌ونقل & کیفیت مدارس دولتی چطور است؟ \\
-\rowcolor{gray!10}
-آزادی‌ها & بیان، تجمع، رسانه & آیا می‌توانید آزادانه نظر دهید؟ \\
-امنیت & جانی، مالی، اجتماعی & چقدر احساس امنیت می‌کنید؟ \\
-\rowcolor{gray!10}
-اقتصاد & وضعیت مالی، اشتغال & وضعیت مالی‌تان بهتر شده؟ \\
-اقوام و هویت & حقوق قومی، تعلق & آیا به حقوق قومی‌تان احترام گذاشته می‌شود؟ \\
-\rowcolor{gray!10}
-محیط زیست & آب، هوا، آینده & وضعیت محیط زیست بهتر شده؟ \\
+اعتماد نهادی & میزان اعتماد به قوا و نهادها & سرمایه اجتماعی \\
+\rowcolor{goldlight}
+کیفیت زندگی & دسترسی به سلامت، آموزش و مسکن & رفاه اجتماعی \\
+آزادی‌های مدنی & امنیت بیان، تجمع و مطبوعات & توسعه سیاسی \\
+\rowcolor{goldlight}
+امید به آینده & چشم‌انداز اقتصادی و پایداری & ثبات سیاسی \\
+حقوق اقوام & برابری فرصت‌ها و تکثر فرهنگی & انسجام ملی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -715,56 +641,43 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{شاخص‌های بین‌المللی مرجع برای پایش}
+\caption{شاخص‌های بین‌المللی مرجع برای بنچ‌مارکینگ}
 \label{tab:international-indices}
-\small
-\begin{tabular}{>{\columncolor{cyan!8}}l l c c c}
+\begin{tabularx}{\textwidth}{Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
 \toprule
-\rowcolor{cyan!25}
-\textbf{شاخص} & \textbf{سازمان} & \textbf{رتبه فعلی ایران} & \textbf{هدف س۱۰} & \textbf{هدف س۱۵} \\
+\headmark شاخص مرجع & \headmark سازمان & \headmark فعلی & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
 \midrule
-شاخص دموکراسی & EIU & ۱۵۴ از ۱۶۷ & ۸۰ & ۵۰ \\
-\rowcolor{gray!10}
-آزادی جهان & Freedom House & Not Free & Partly Free & Free \\
-شاخص فساد (CPI) & Transparency Intl & ۱۴۹ از ۱۸۰ & ۷۰ & ۴۵ \\
-\rowcolor{gray!10}
-حاکمیت قانون & WJP & ۱۱۸ از ۱۴۲ & ۶۰ & ۴۰ \\
-آزادی مطبوعات & RSF & ۱۷۶ از ۱۸۰ & ۸۰ & ۴۰ \\
-\rowcolor{gray!10}
-توسعه انسانی (HDI) & UNDP & ۷۶ از ۱۹۱ & ۵۵ & ۴۰ \\
-شکاف جنسیتی & WEF & ۱۴۳ از ۱۴۶ & ۸۰ & ۵۰ \\
-\rowcolor{gray!10}
-کسب‌وکار & World Bank & ۱۲۷ از ۱۹۰& ۳۵ & ۲۵ \\
-شاخص صلح جهانی (GPI) & IEP & ۱۴۰ از ۱۶۳ & ۶۰ & ۴۰ \\
-\rowcolor{gray!10}
-عملکرد محیط زیستی (EPI) & Yale & ۱۲۰ از ۱۸۰ & ۶۰ & ۴۰ \\
-نوآوری جهانی (GII) & WIPO & ۶۵ از ۱۳۲ & ۴۰ & ۲۵ \\
+دموکراسی & EIU & ۱۵۴ & ۱۰۰ & ۸۰ & ۵۰ \\
+\rowcolor{goldlight}
+ادراک فساد & TI & ۱۴۹ & ۱۱۰ & ۷۰ & ۴۵ \\
+حاکمیت قانون & WJP & ۱۱۸ & ۹۰ & ۶۰ & ۴۰ \\
+\rowcolor{goldlight}
+آزادی مطبوعات & RSF & ۱۷۶ & ۱۲۰ & ۸۰ & ۴۰ \\
+توسعه انسانی & UNDP & ۷۶ & ۶۵ & ۵۵ & ۴۰ \\
+\rowcolor{goldlight}
+عملکرد محیطی & Yale & ۱۲۰ & ۹۰ & ۶۰ & ۴۰ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{کشورهای مرجع برای مقایسه}
 
 \begin{table}[htbp]
 \centering
-\caption{کشورهای مرجع برای بنچ‌مارکینگ}
+\caption{کشورهای مرجع جهت یادگیری و مقایسه}
 \label{tab:benchmark-countries}
-\begin{tabular}{>{\columncolor{teal!8}}l p{3.5cm} p{5.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Y}
 \toprule
-\rowcolor{teal!25}
-\textbf{دسته} & \textbf{کشورها} & \textbf{دلیل انتخاب} \\
+\headmark دسته رقیب & \headmark کشورهای مرجع & \headmark علت انتخاب (Logical) \\
 \midrule
-گذار موفق & کره جنوبی، تایوان، اسپانیا، شیلی & الگوی گذار از اقتدارگرایی \\
-\rowcolor{gray!10}
-مشابه منطقه‌ای & ترکیه، مصر، عربستان & مقایسه منطقه‌ای \\
-مشابه اقتصادی & مالزی، مکزیک، آرژانتین & سطح درآمد مشابه \\
-\rowcolor{gray!10}
-چندقومی موفق & سوئیس، کانادا، هند & مدیریت تنوع \\
-پیشرو محیط زیست & کاستاریکا، دانمارک & الگوی سبز \\
-\rowcolor{gray!10}
-هدف بلندمدت & پرتغال، چک، استونی & جایی که می‌خواهیم برسیم \\
+گذار موفق & کره جنوبی، اسپانیا، شیلی & الگوی خروج از اقتدارگرایی \\
+\rowcolor{goldlight}
+تنوع فرهنگی & سوئیس، هندوستان، کانادا & مدیریت تکثر و وفاق ملی \\
+پتانسیل سبز & نروژ، کاستاریکا، دانمارک & پیشروی در پایداری \\
+\rowcolor{goldlight}
+در سطح توسعه & مکزیک، مالزی، ترکیه & رقابت در بازارهای جهانی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -776,24 +689,20 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{نظام گزارش‌دهی پیشرفت گذار}
+\caption{نظام جامع گزارش‌دهی و شفافیت}
 \label{tab:reporting-system}
-\begin{tabular}{>{\columncolor{orange!8}}l c p{4cm} p{3cm}}
+\begin{tabularx}{\textwidth}{R{3cm} C{2.5cm} Y}
 \toprule
-\rowcolor{orange!25}
-\textbf{نوع گزارش} & \textbf{دوره} & \textbf{محتوا} & \textbf{مخاطب} \\
+\headmark سطح گزارش & \headmark بازه زمانی & \headmark مخاطبان استراتژیک \\
 \midrule
-داشبورد آنلاین & لحظه‌ای & شاخص‌های کلیدی & عموم مردم \\
-\rowcolor{gray!10}
-خبرنامه ماهانه & ماهانه & خلاصه پیشرفت‌ها & عموم، رسانه‌ها \\
-گزارش فصلی & فصلی & تحلیل عملکرد & مجلس، نخبگان \\
-\rowcolor{gray!10}
-گزارش سالانه & سالانه & ارزیابی جامع & همه ذی‌نفعان \\
-گزارش تفصیلی بخشی & سالانه & هر حوزه جداگانه & متخصصان \\
-\rowcolor{gray!10}
-گزارش به مردم & سالانه & زبان ساده، تصویری & عموم مردم \\
+داشبورد هوشمند & لحظه‌ای (Real-time) & عموم شهروندان و رسانه‌ها \\
+\rowcolor{goldlight}
+تحلیل فصلی & هر ۳ ماه & مجلس، احزاب و نخبگان \\
+سالنامه گذار & سالانه & شورای عالی ملی و دیپلماسی \\
+\rowcolor{goldlight}
+گزارش بخشی & سالانه & متخصصان و مجامع علمی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{اصول گزارش‌دهی شفاف}
@@ -824,65 +733,66 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \subsection{فرآیند اصلاح مسیر}
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=1.8cm,
-    step/.style={
+    scale=0.85,
+    transform shape,
+    box/.style={
         rectangle,
         rounded corners=8pt,
-        draw=blue!70,
-        fill=blue!15,
-        thick,
-        minimum width=3cm,
-        minimum height=1.2cm,
-        align=center,
-        font=\small
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum width=2.4cm,
+        minimum height=1.4cm,
+        text centered,
+        font=\tiny\bfseries
     },
-    arrow/.style={->, thick, >=stealth, blue!60}
+    arrow/.style={->, ultra thick, bleurepublique!60, >=stealth}
 ]
-% مراحل
-\node[step] (detect) {\textbf{۱. شناسایی}\\ انحراف از هدف};
-\node[step, right=1.5cm of detect] (analyze) {\textbf{۲. تحلیل}\\ علت‌یابی};
-\node[step, right=1.5cm of analyze] (design) {\textbf{۳. طراحی}\\ راه‌حل};
-\node[step, below=1.5cm of design] (decide) {\textbf{۴. تصمیم}\\ تصویب اصلاح};
-\node[step, left=1.5cm of decide] (implement) {\textbf{۵. اجرا}\\ پیاده‌سازی};
-\node[step, left=1.5cm of implement] (monitor) {\textbf{۶. پایش}\\ ارزیابی اثر};
+% مراحل چرخه اصلاح
+\node[box] (detect) {\rl{شناسایی}\\\rl{\tiny انحراف از هدف}};
+\node[box, right=0.8cm of detect] (analyze) {\rl{علت‌یابی}\\\rl{\tiny تحلیل ریشه‌ای}};
+\node[box, right=0.8cm of analyze] (design) {\rl{طراحی}\\\rl{\tiny تدوین راه‌حل}};
+\node[box, below=1.2cm of design, draw=goldphoenix, fill=goldlight] (decide) {\rl{تصمیم‌گیری}\\\rl{\tiny تصویب در کابینه}};
+\node[box, left=0.8cm of decide] (implement) {\rl{اجرا}\\\rl{\tiny پیاده‌سازی اصلاح}};
+\node[box, left=0.8cm of implement] (monitor) {\rl{پایش مجدد}\\\rl{\tiny ارزیابی اثربخشی}};
 
-% فلش‌ها
+% اتصالات
 \draw[arrow] (detect) -- (analyze);
 \draw[arrow] (analyze) -- (design);
 \draw[arrow] (design) -- (decide);
 \draw[arrow] (decide) -- (implement);
 \draw[arrow] (implement) -- (monitor);
-\draw[arrow, dashed] (monitor) -- (detect);
+\draw[arrow, dashed, bleurepublique!40] (monitor) -- (detect);
 
-% چرخه
-\node[font=\scriptsize, gray] at (1.5,-2.5) {چرخه مستمر بهبود};
+% مرکز چرخه
+\node[font=\tiny\bfseries, color=bleurepublique!80] at (4.5,-0.6) {\rl{چرخه مستمر یادگیری و بهبود}};
+
 \end{tikzpicture}
-\captionof{figure}{فرآیند اصلاح مسیر}
+\caption{مکانیزم اصلاح مسیر و یادگیری سازمانی در فرآیند گذار}
 \label{fig:course-correction}
-\end{center}
+\end{figure}
 
 \subsection{سطوح اصلاح}
 
 \begin{table}[htbp]
 \centering
-\caption{سطوح مختلف اصلاح مسیر}
+\caption{سطوح مختلف اصلاح مسیر در برنامه گذار}
 \label{tab:correction-levels}
-\begin{tabular}{>{\columncolor{purple!8}}l p{3.5cm} p{3.5cm} p{2.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{3cm}}
 \toprule
-\rowcolor{purple!25}
-\textbf{سطح} & \textbf{نوع تغییر} & \textbf{مرجع تصمیم} & \textbf{زمان} \\
+\headmark سطح اصلاح & \headmark نوع مداخله استراتژیک & \headmark مرجع تصمیم‌گیر \\
 \midrule
-عملیاتی & تنظیم فعالیت‌ها & مدیران اجرایی & فوری \\
-\rowcolor{gray!10}
-تاکتیکی & اصلاح برنامه‌ها & وزرا و معاونان & ۱-۳ ماه \\
-استراتژیک & تغییر اولویت‌ها & کابینه & ۳-۶ ماه \\
-\rowcolor{gray!10}
-ساختاری & تغییر نهادها/قوانین & مجلس & ۶-۱۲ ماه \\
-بنیادین & بازنگری اهداف کلان & مجلس + همه‌پرسی & ۱-۲ سال \\
+عملیاتی & تنظیم فعالیت‌ها و بودجه‌های خرد & مدیران اجرایی \\
+\rowcolor{goldlight}
+تاکتیکی & اصلاح برنامه‌ها و آیین‌نامه‌ها & وزرا و استانداران \\
+استراتژیک & تغییر اولویت‌های فازبندی & کابینه دولت \\
+\rowcolor{goldlight}
+ساختاری & انحلال یا ایجاد نهادهای نوین & مجلس و میثاق ملی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -894,24 +804,20 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{روش‌های ارزیابی تأثیر سیاست‌ها}
+\caption{روش‌های نوین ارزیابی تأثیر سیاست‌ها}
 \label{tab:impact-methods}
-\begin{tabular}{>{\columncolor{green!8}}l p{5cm} p{4cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{3cm}}
 \toprule
-\rowcolor{green!25}
-\textbf{روش} & \textbf{توضیح} & \textbf{کاربرد} \\
+\headmark متدولوژی & \headmark شرح مختصر و مکانیزم & \headmark حوزه کاربرد \\
 \midrule
-آزمایش تصادفی (RCT) & مقایسه گروه آزمایش و کنترل & برنامه‌های اجتماعی \\
-\rowcolor{gray!10}
-تفاوت در تفاوت & مقایسه قبل/بعد در دو گروه & سیاست‌های جدید \\
-رگرسیون ناپیوستگی & استفاده از آستانه‌های سیاستی & برنامه‌های هدفمند \\
-\rowcolor{gray!10}
-تطبیق (Matching) & مقایسه موارد مشابه & وقتی RCT ممکن نیست \\
-مطالعه موردی کیفی & تحلیل عمیق چند مورد & فهم مکانیزم‌ها \\
-\rowcolor{gray!10}
-نظرسنجی قبل/بعد & سنجش تغییر در نگرش‌ها & ارزیابی فرهنگی \\
+آزمایش تصادفی & مقایسه گروه‌های آزمون و گواه & طرح‌های حمایتی \\
+\rowcolor{goldlight}
+تفاوت در تفاوت & تحلیل روند قبل و بعد از مداخله & اصلاحات اقتصادی \\
+مطالعه موردی & تحلیل کیفی عمیق و علت‌یابی & نهادسازی سیاسی \\
+\rowcolor{goldlight}
+نظرسنجی پانل & رهگیری تغییر نگرش‌ها در طول زمان & توسعه فرهنگی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{سؤالات کلیدی ارزیابی تأثیر}
@@ -931,24 +837,20 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{مکانیزم‌های یادگیری سازمانی}
+\caption{مکانیزم‌های یادگیری و تعالی سازمانی}
 \label{tab:learning-mechanisms}
-\begin{tabular}{>{\columncolor{cyan!8}}r p{4.5cm} p{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{3cm}}
 \toprule
-\rowcolor{cyan!25}
-\textbf{مکانیزم} & \textbf{توضیح} & \textbf{خروجی} \\
+\headmark محور یادگیری & \headmark شرح اقدام تحولی & \headmark خروجی کلیدی \\
 \midrule
-جلسات درس‌آموخته & بازنگری پس از هر پروژه بزرگ & گزارش درس‌آموخته‌ها \\
-\rowcolor{gray!10}
-پایگاه دانش & ذخیره تجربیات و بهترین شیوه‌ها & ویکی داخلی، راهنماها \\
-آموزش مستمر & دوره‌های توانمندسازی کارکنان & کارکنان ماهرتر \\
-\rowcolor{gray!10}
-تبادل بین‌المللی & یادگیری از کشورهای دیگر & بهترین شیوه‌های جهانی \\
-تحقیق و توسعه سیاستی & آزمایش پایلوت قبل از گسترش & سیاست‌های اثبات‌شده \\
-\rowcolor{gray!10}
-بازخورد مردمی & گوش‌دادن به شکایات و پیشنهادات & بهبود خدمات \\
+درس‌آموخته‌ها & تحلیل سیستماتیک پس از پروژه‌ها & بانک دانش ملی \\
+\rowcolor{goldlight}
+پایان‌ه باز & استفاده از فیدبک‌های مردمی & بهبود فرآیندها \\
+تبادل جهانی & یادگیری از الگوهای موفق گذار & انطباق با استاندارد \\
+\rowcolor{goldlight}
+آزمایشگاه سیاست & تست پایلوت قبل از اجرای کلان & کاهش ریسک خطا \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -956,65 +858,62 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 \label{sec:accountability}
 %═══════════════════════════════════════════════════════════════════════════════
 
-\begin{center}
+\begin{figure}[htbp]
+\centering
 \begin{tikzpicture}[
-    node distance=2cm,
+    scale=0.85,
+    transform shape,
     actor/.style={
-        ellipse,
-        draw=#1!70,
-        fill=#1!20,
-        thick,
-        minimum width=2.5cm,
-        minimum height=1.5cm,
-        align=center,
-        font=\small
+        circle,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt,
+        minimum size=2cm,
+        text centered,
+        font=\tiny\bfseries
     }
 ]
 % مرکز - دولت
-\node[actor=blue, minimum width=3cm] (gov) {\textbf{دولت}\\قوه مجریه};
+\node[actor, minimum size=2.8cm, draw=goldphoenix, fill=goldlight] (gov) {\rl{دولت نوین}\\\rl{\tiny پاسخگوی اصلی}};
 
 % حلقه‌های پاسخگویی
-\node[actor=green, above=1.5cm of gov] (parl) {\textbf{مجلس}\\نظارت قانونی};
-\node[actor=purple, above right=1cm of gov] (court) {\textbf{قضا}\\نظارت قضایی};
-\node[actor=orange, right=2cm of gov] (audit) {\textbf{دیوان محاسبات}\\ممیزی};
-\node[actor=red, below right=1cm of gov] (media) {\textbf{رسانه}\\افکار عمومی};
-\node[actor=teal, below=1.5cm of gov] (civil) {\textbf{جامعه مدنی}\\نظارت مردمی};
-\node[actor=darkyellow, below left=1cm of gov] (intl) {\textbf{بین‌المللی}\\استانداردها};
-\node[actor=pink, left=2cm of gov] (party) {\textbf{احزاب}\\رقابت سیاسی};
-\node[actor=cyan, above left=1cm of gov] (ombuds) {\textbf{آمبودزمان}\\شکایات};
+\node[actor, above=2cm of gov] (parl) {\rl{مجلس}\\\rl{\tiny نظارت سیاسی}};
+\node[actor, right=2.5cm of gov] (audit) {\rl{دیوان محاسبات}\\\rl{\tiny نظارت مالی}};
+\node[actor, below=2cm of gov] (civil) {\rl{جامعه مدنی}\\\rl{\tiny نظارت مردمی}};
+\node[actor, left=2.5cm of gov] (media) {\rl{رسانه‌ها}\\\rl{\tiny نظارت افکار عمومی}};
 
-% فلش‌ها
-\foreach \n in {parl, court, audit, media, civil, intl, party, ombuds} {
-    \draw[thick, <->, gray!60] (gov) -- (\n);
+% اتصالات
+\foreach \n in {parl, audit, civil, media} {
+    \draw[ultra thick, bleurepublique!40, <->] (gov) -- (\n);
 }
 
-% عنوان
-\node[above=3cm of gov, font=\large\bfseries] {اکوسیستم پاسخگویی};
+% دایره‌های تکمیلی
+\foreach \ang/\label/\name in {45/قضا/court, 135/آمبودزمان/omb, 225/احزاب/party, 315/بین‌الملل/intl} {
+    \node[actor, minimum size=1.8cm] (\name) at (\ang:4.5) {\rl{\label}};
+    \draw[thick, bleurepublique!20, <->] (gov) -- (\name);
+}
+
 \end{tikzpicture}
-\captionof{figure}{چارچوب چندلایه پاسخگویی}
+\caption{اکوسیستم چندلایه پاسخگویی و نظارت متقابل}
 \label{fig:accountability-framework}
-\end{center}
+\end{figure}
 
 \begin{table}[htbp]
 \centering
-\caption{ابزارهای پاسخگویی}
+\caption{ابزارهای کلیدی پاسخگویی در ساختار نوین}
 \label{tab:accountability-tools}
-\begin{tabular}{>{\columncolor{blue!8}}l p{4cm} p{5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{3cm}}
 \toprule
-\rowcolor{blue!25}
-\textbf{نوع پاسخگویی} & \textbf{ابزار} & \textbf{ضمانت اجرا} \\
+\headmark نوع پاسخگویی & \headmark ابزار و مکانیزم تحقق & \headmark ضمانت اجرای نهایی \\
 \midrule
-قانونی & استیضاح، رأی عدم اعتماد & برکناری \\
-\rowcolor{gray!10}
-قضایی & محاکمه، جریمه & مجازات قانونی \\
-مالی & ممیزی، شفافیت بودجه & جریمه، استرداد \\
-\rowcolor{gray!10}
-انتخاباتی & رأی مردم & عدم انتخاب مجدد \\
-اجتماعی & افکار عمومی، رسانه & فشار سیاسی \\
-\rowcolor{gray!10}
-حرفه‌ای & استانداردهای اخلاقی & تعلیق، اخراج \\
+سیاسی & استیضاح و سؤال در مجلس & برکناری و انحلال \\
+\rowcolor{goldlight}
+قضایی & دادگاه‌های رسیدگی به تخلفات & مجازات‌های کیفری \\
+مالی & دیوان محاسبات و شفافیت بودجه & استرداد اموال \\
+\rowcolor{goldlight}
+اجتماعی & فشار افکار عمومی و رسانه‌ها & استعفا و انزوای سیاسی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -1024,31 +923,21 @@ API & برای توسعه‌دهندگان & اکوسیستم داده باز \\
 
 \begin{table}[htbp]
 \centering
-\caption{تقویم فعالیت‌های پایش و ارزیابی}
+\caption{تقویم عملیاتی نظام پایش و ارزیابی (M\&E)}
 \label{tab:me-timeline}
-\begin{tabular}{>{\columncolor{orange!8}}l p{5cm} p{4cm}}
+\begin{tabularx}{\textwidth}{C{1.5cm} R{4.5cm} Y}
 \toprule
-\rowcolor{orange!25}
-\textbf{زمان} & \textbf{فعالیت} & \textbf{مسئول} \\
+\headmark زمان & \headmark نقطه عطف (Milestone) & \headmark خروجی مورد انتظار \\
 \midrule
-ماه ۱ & راه‌اندازی داشبورد ملی (نسخه اولیه) & مرکز آمار \\
-\rowcolor{gray!10}
-ماه ۶ & اولین گزارش شش‌ماهه & دولت \\
-سال ۱ & نظرسنجی ملی پایه (Baseline) & سازمان ارزیابی \\
-\rowcolor{gray!10}
-سال ۱ & تأسیس سازمان ملی ارزیابی & مجلس \\
-سال ۲ & ارزیابی فاز گذار (فاز ۱) & پانل مستقل \\
-\rowcolor{gray!10}
-سال ۳ & اولین گزارش جامع به مردم & دولت + NGOها \\
-سال ۵ & ارزیابی میان‌دوره‌ای بزرگ & پانل داخلی-خارجی \\
-\rowcolor{gray!10}
-سال ۵ & ارزیابی فاز نهادسازی (فاز ۲) & پانل مستقل \\
-سال ۱۰ & ارزیابی دهه اول گذار & کمیته ملی + بین‌المللی \\
-\rowcolor{gray!10}
-سال ۱۵ & ارزیابی تکمیلی گذار & کمیته ملی \\
-سال ۲۵ & ارزیابی نهایی و جشن موفقیت & ملی و بین‌المللی \\
+ماه ۱ & استقرار داشبورد هوشمند ملی & شفافیت داده‌های پایه \\
+\rowcolor{goldlight}
+سال ۱ & تشکیل سازمان ملی ارزیابی & استقلال نظارتی \\
+سال ۳ & ارزیابی جامع فاز اول گذار & اصلاح مسیر استراتژیک \\
+\rowcolor{goldlight}
+سال ۵ & ممیزی بین‌المللی عملکرد & ارتقای رتبه جهانی ایران \\
+سال ۱۰ & ارزیابی تغییرات ساختاری & تثبیت دموکراسی پایدار \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════

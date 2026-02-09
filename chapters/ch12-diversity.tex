@@ -24,32 +24,33 @@
 
 \begin{center}
 \begin{tikzpicture}[
-    node distance=2cm,
+    scale=0.9, every node/.style={scale=0.9},
+    node distance=1.8cm,
     box/.style={
         rectangle,
         rounded corners=8pt,
         draw=#1!70,
-        fill=#1!15,
+        fill=#1!5,
         thick,
-        minimum width=4.5cm,
-        minimum height=2cm,
+        minimum width=4cm,
+        minimum height=1.8cm,
         align=center,
         font=\small
     }
 ]
 % دو رویکرد افراطی
 \node[box=red] (assim) {\textbf{همگون‌سازی اجباری}\\ \scriptsize سرکوب تنوع\\ \scriptsize «یک ملت، یک زبان»};
-\node[box=red, right=3cm of assim] (separ) {\textbf{تجزیه‌طلبی}\\ \scriptsize انکار وحدت\\ \scriptsize «هر قوم، یک کشور»};
+\node[box=red, right=2.5cm of assim] (separ) {\textbf{تجزیه‌طلبی}\\ \scriptsize انکار وحدت\\ \scriptsize «هر قوم، یک کشور»};
 
 % راه سوم
-\node[box=green, below=2.5cm of assim, xshift=4cm] (third) {\textbf{فدرالیسم همبسته}\\ \scriptsize وحدت در کثرت\\ \scriptsize «یک ایران، چند صدا»};
+\node[box=bleurepublique, below=2.2cm of assim, xshift=3.2cm] (third) {\textbf{فدرالیسم همبسته}\\ \scriptsize وحدت در کثرت\\ \scriptsize «یک ایران، چند صدا»};
 
 % فلش‌ها
-\draw[->, thick, red!60] (assim) -- node[left, font=\scriptsize] {شکست} ++(0,-1.5) -| (third);
-\draw[->, thick, red!60] (separ) -- node[right, font=\scriptsize] {فاجعه} ++(0,-1.5) -| (third);
+\draw[->, thick, red!60] (assim) -- node[left, font=\scriptsize] {شکست} ++(0,-1.2) -| (third);
+\draw[->, thick, red!60] (separ) -- node[right, font=\scriptsize] {فاجعه} ++(0,-1.2) -| (third);
 
 % برچسب
-\node[above=0.5cm of assim, xshift=4cm, font=\large\bfseries] {دو افراط و یک راه میانه};
+\node[above=0.4cm of assim, xshift=3.2cm, font=\large\bfseries, color=bleurepublique] {دو افراط و یک راه میانه};
 \end{tikzpicture}
 \end{center}
 
@@ -59,20 +60,19 @@
 \centering
 \caption{اهمیت مدیریت صحیح تنوع قومی}
 \label{tab:diversity-importance}
-\begin{tabular}{>{\columncolor{blue!8}}r p{5cm} p{5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Y}
 \toprule
-\rowcolor{blue!25}
-\textbf{بُعد} & \textbf{در صورت موفقیت} & \textbf{در صورت شکست} \\
+\headmark بُعد & \headmark در صورت موفقیت & \headmark در صورت شکست \\
 \midrule
 ثبات سیاسی & مشروعیت فراگیر نظام جدید & بی‌ثباتی مزمن، شورش‌های قومی \\
-\rowcolor{gray!10}
+\rowcolor{goldlight}
 تمامیت ارضی & حفظ مرزها با رضایت همه & ریسک تجزیه و جنگ داخلی \\
 توسعه اقتصادی & بهره‌گیری از همه استعدادها & هدررفت سرمایه انسانی مناطق \\
-\rowcolor{gray!10}
+\rowcolor{goldlight}
 امنیت ملی & مرزهای امن با حمایت محلی & آسیب‌پذیری در مناطق قومی \\
 وجهه بین‌المللی & الگوی همزیستی & بهانه مداخله خارجی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -86,27 +86,26 @@
 \centering
 \caption{ترکیب قومی-زبانی ایران (تخمین ۱۴۰۳)}
 \label{tab:ethnic-composition-detail}
-\begin{tabular}{>{\columncolor{teal!8}}r l r r p{4cm}}
+\begin{tabularx}{\textwidth}{C{1cm} R{3cm} C{3cm} C{2cm} Y}
 \toprule
-\rowcolor{teal!25}
-\textbf{ردیف} & \textbf{قوم/زبان} & \textbf{جمعیت (میلیون)} & \textbf{درصد} & \textbf{مناطق اصلی سکونت} \\
+\headmark رد & \headmark قوم/زبان & \headmark جمعیت (م) & \headmark \% & \headmark مناطق اصلی سکونت \\
 \midrule
 ۱ & فارس & ۴۸ & ۵۵٪ & مرکز، شرق، جنوب \\
-\rowcolor{gray!10}
-۲ & آذری (ترک) & ۱۷.۵ & ۲۰٪ & آذربایجان شرقی و غربی، اردبیل، زنجان \\
-۳ & کرد & ۸.۷ & ۱۰٪ & کردستان، کرمانشاه، ایلام، آذربایجان غربی \\
-\rowcolor{gray!10}
-۴ & لر (لر و بختیاری) & ۵.۲ & ۶٪ & لرستان، چهارمحال، خوزستان شمالی \\
-۵ & عرب & ۲.۶ & ۳٪ & خوزستان، بوشهر، هرمزگان \\
-\rowcolor{gray!10}
+\rowcolor{goldlight}
+۲ & آذری (ترک) & ۱۷.۵ & ۲۰٪ & آذربایجان، اردبیل، زنجان \\
+۳ & کرد & ۸.۷ & ۱۰٪ & کردستان، کرمانشاه، ایلام \\
+\rowcolor{goldlight}
+۴ & لر (بختیاری) & ۵.۲ & ۶٪ & لرستان، چهارمحال، خوزستان \\
+۵ & عرب & ۲.۶ & ۳٪ & خوزستان، هرمزگان \\
+\rowcolor{goldlight}
 ۶ & بلوچ & ۱.۷ & ۲٪ & سیستان و بلوچستان \\
-۷ & ترکمن & ۰.۹ & ۱٪ & گلستان، خراسان شمالی \\
-\rowcolor{gray!10}
-۸ & سایر & ۲.۴ & ۳٪ & گیلک، مازنی، تالش، قشقایی و... \\
+۷ & ترکمن & ۰.۹ & ۱٪ & گلستان \\
+\rowcolor{goldlight}
+۸ & دیگران (قشقایی و...) & ۲.۵ & ۳٪ & سراسر ایران \\
 \midrule
-& \textbf{مجموع} & \textbf{۸۷} & \textbf{۱۰۰٪} & \\
+\headmark مجموع & \textbf{۸۷} & \textbf{۱۰۰٪} & \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{توزیع جغرافیایی}
@@ -385,8 +384,25 @@ HDI استانی & ۰.۸۲ & ۰.۷۵ & ۰.۷۱ & ۰.۷۲ & ۰.۶۵ \\
 \item کردستان عراق: خودمختاری دوفاکتو، تمایل به استقلال
 \end{itemize}
 
-\textbf{درس}: سرکوب مسئله را حل نمی‌کند، فقط به تعویق می‌اندازد و تشدید می‌کند.
+\textbf{لبنان، سوریه و افغانستان}:
+\begin{itemize}[nosep]
+\item \textbf{لبنان}: تقسیم قدرت بر اساس سهمیه قومی-مذهبی (Confessionalism) که منجر به قفل‌شدگی سیاسی و ناکارآمدی دولت شد.
+\item \textbf{سوریه}: انحصار قدرت در دست یک اقلیت و سرکوب دیگران که به جنگ داخلی ویرانگر و دخالت خارجی انجامید.
+\item \textbf{افغانستان}: شکنندگی ساختارهای دموکراتیک در برابر وفادارهای سنتی و قومی، و عدم توازن بین مرکز و پیرامون.
+\end{itemize}
+
+\textbf{درس}: سرکوب یا تقسیم صلب قدرت (Quota-based) راهکار پایداری نیست؛ نیاز به «فدرالیسم همبسته» و «هویت ملی فراگیر» است.
 \end{enghelabbox}
+
+\subsection{همزیستی در سطح خرد: فراتر از ساختار سیاسی}
+
+تجربه لبنان و افغانستان نشان داد که توزیع قدرت در بالا، اگر با «همگرایی اجتماعی» در پایین همراه نباشد، منجر به انجماد گسل‌ها می‌شود. پیشنهادهای تکمیلی برای همزیستی پایدار:
+
+\begin{itemize}
+    \item \textbf{بازارهای مشترک منطقه‌ای}: تشویق تجارت بین‌استان‌های با بافت قومی متفاوت برای ایجاد وابستگی متقابل اقتصادی.
+    \item \textbf{مدارس میان‌قومی}: ایجاد برنامه‌های تبادل دانش‌آموز و اردوهای ملی برای شکستن پیش‌فرض‌های کلیشه‌ای قومی.
+    \item \textbf{فرهنگ ملی فراگیر}: بازتعریف تاریخ و هنر ایران به گونه‌ای که تمامی اقوام خود را در آن سهیم ببینند (نه به عنوان اقلیت در کنار اکثریت، بلکه به عنوان اجزای سازنده کل واحد).
+\end{itemize}
 
 %═══════════════════════════════════════════════════════════════════════════════
 \section{مدل پیشنهادی: فدرالیسم همبسته}
@@ -673,12 +689,12 @@ HDI استانی & ۰.۸۲ & ۰.۷۵ & ۰.۷۱ & ۰.۷۲ & ۰.۶۵ \\
     height=7cm,
     ybar stacked,
     bar width=25pt,
-    ylabel={درصد درآمد نفت و گاز},
-    xlabel={مدل توزیع},
+    ylabel={\rl{درصد درآمد نفت و گاز}},
+    xlabel={\rl{مدل توزیع}},
     ymin=0,
     ymax=100,
     xtick={1,2,3},
-    xticklabels={وضع موجود, مدل پیشنهادی, مدل بلندمدت},
+    xticklabels={\rl{وضع موجود}, \rl{مدل پیشنهادی}, \rl{مدل بلندمدت}},
     legend style={
         at={(0.5,-0.2)},
         anchor=north,
@@ -1125,7 +1141,17 @@ HDI استانی & ۰.۸۲ & ۰.۷۵ & ۰.۷۱ & ۰.۷۲ & ۰.۶۵ \\
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
-\section{جمع‌بندی: وحدت در کثرت}
+\section{همگرایی اجتماعی: پیوندهای نامرئی}
+\label{sec:social-convergence}
+%═══════════════════════════════════════════════════════════════════════════════
+
+قانون اساسی و ساختار فدرال تنها چارچوب را می‌سازند؛ روح همزیستی در پیوندهای اجتماعی نهفته است. برای جلوگیری از «لبنانیزه شدن»، ایران باید مکانیزم‌های «پل‌زن» (Bridging) را تقویت کند:
+
+\begin{enumerate}
+    \item \textbf{شفافیت در عدالت انتقالی}: رسیدگی منصفانه به دردهای تاریخی اقوام و عذرخواهی رسمی ملی برای تبعیض‌های گذشته.
+    \item \textbf{رسانه‌های کثرت‌گرا}: ترویج موسیقی، ادبیات و هنر اقوام در رسانه‌های سراسری به عنوان ثروت ملی.
+    \item \textbf{احزاب فراقومی}: تشویق تشکیل احزاب سیاسی که برنامه‌های سراسری دارند و اعضای آن‌ها از تمامی مناطق و اقوام هستند.
+\end{enumerate}
 \label{sec:diversity-conclusion}
 %═══════════════════════════════════════════════════════════════════════════════
 

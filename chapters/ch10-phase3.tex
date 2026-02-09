@@ -66,80 +66,43 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.7,
+    scale=0.85,
     transform shape,
     election/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=2.8cm,
+        minimum width=3.2cm,
         minimum height=1.5cm,
-        draw=#1!70!black,
-        fill=#1!20,
-        text=#1!30!black,
-        font=\scriptsize\bfseries,
-        align=center
-    }
+        text centered,
+        font=\tiny\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
+    },
+    arrow/.style={->, >=Stealth, thick, color=goldphoenix}
 ]
 
 % خط زمان
-\draw[very thick, gray!60, ->] (0,0) -- (18,0);
-\node[below, font=\small] at (9,-0.5) {سال‌های ۶ تا ۱۰};
-
-% نقاط زمانی
-\foreach \x/\y in {0/سال ۶, 4.5/سال ۷, 9/سال ۸, 13.5/سال ۹, 17/سال ۱۰} {
-    \draw[thick] (\x,0.15) -- (\x,-0.15);
-    \node[below, font=\tiny] at (\x,-0.2) {\y};
+\draw[ultra thick, color=bleurepublique] (0,0) -- (12,0);
+\foreach \x/\y in {0/سال ۶, 3/سال ۷, 6/سال ۸, 9/سال ۹, 12/سال ۱۰} {
+    \draw[line width=1.5pt, color=goldphoenix] (\x,0.15) -- (\x,-0.15);
+    \node[below, font=\tiny\bfseries] at (\x,-0.2) {\y};
 }
 
-% انتخابات
-\node[election=blue] at (2,2.5) {
-    \begin{tabular}{c}
-    انتخابات محلی\\
-    \tiny شوراها و شهرداری‌ها\\
-    \tiny (سال ۶)
-    \end{tabular}
-};
-
-\node[election=green] at (7,2.5) {
-    \begin{tabular}{c}
-    انتخابات مجلس\\
-    \tiny دومین دوره\\
-    \tiny (سال ۷)
-    \end{tabular}
-};
-
-\node[election=purple] at (12,2.5) {
-    \begin{tabular}{c}
-    انتخابات ریاست‌جمهوری\\
-    \tiny دومین دوره\\
-    \tiny (سال ۹)
-    \end{tabular}
-};
-
-\node[election=orange] at (16,2.5) {
-    \begin{tabular}{c}
-    انتخابات منطقه‌ای\\
-    \tiny پارلمان‌های محلی\\
-    \tiny (سال ۱۰)
-    \end{tabular}
-};
+% انتخابات‌ها
+\node[election] (e1) at (0,2.5) {\rl{انتخابات محلی}\\\rl{شوراها و شهرداری‌ها}};
+\node[election] (e2) at (4,4) {\rl{انتخابات مجلس}\\\rl{دومین دوره}};
+\node[election, draw=goldphoenix, fill=goldphoenix, text=white] (e3) at (8,2.5) {\rl{انتخابات ریاست‌جمهوری}\\\rl{آزمون جانشینی}};
+\node[election] (e4) at (12,4) {\rl{انتخابات منطقه‌ای}\\\rl{پارلمان‌های خودمختار}};
 
 % فلش‌ها
-\draw[->, gray!50] (2,0.3) -- (2,1.7);
-\draw[->, gray!50] (7,0.3) -- (7,1.7);
-\draw[->, gray!50] (12,0.3) -- (12,1.7);
-\draw[->, gray!50] (16,0.3) -- (16,1.7);
-
-% رویداد کلیدی
-\node[rectangle, draw=red!60, fill=red!10, font=\tiny\bfseries,
-      text=red!60, rounded corners=3pt] at (12,-1.5) {
-    آزمون انتقال مسالمت‌آمیز قدرت
-};
-\draw[->, red!40] (12,-1.1) -- (12,-0.3);
+\draw[arrow] (0,0.3) -- (e1);
+\draw[arrow] (3,0.3) -- (e2);
+\draw[arrow] (9,0.3) -- (e3);
+\draw[arrow] (12,0.3) -- (e4);
 
 \end{tikzpicture}
 \caption{تقویم انتخاباتی فاز سوم: چهار انتخابات در پنج سال}
-\label{fig:phase3-elections}
 \end{figure}
 
 \subsection{سناریوهای انتقال قدرت}
@@ -193,23 +156,19 @@
 \centering
 \caption{اهداف کلان اقتصادی سال‌های ۶ تا ۱۰}
 \label{tab:economic-goals-phase3}
-\begin{tabular}{>{\columncolor{green!8}}r p{4cm} c c c}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{2.5cm} C{2.5cm}}
 \toprule
-\rowcolor{green!25}
-\textbf{شاخص} & \textbf{توضیح} & \textbf{وضعیت سال ۵} & \textbf{هدف سال ۱۰} & \textbf{رشد سالانه} \\
+\headmark شاخص & \headmark توضیح و استراتژی & \headmark هدف سال ۱۰ & \headmark روند \\
 \midrule
-رشد GDP & تولید ناخالص داخلی & ۴٪ & ۶٪ & افزایشی \\
-\rowcolor{gray!10}
-تورم & شاخص قیمت مصرف‌کننده & ۱۵٪ & ۵٪ & کاهشی \\
-بیکاری & نرخ بیکاری & ۱۰٪ & ۶٪ & کاهشی \\
-\rowcolor{gray!10}
-سرمایه‌گذاری خارجی & FDI سالانه & ۵ میلیارد \$ & ۲۵ میلیارد \$ & ۴۰٪ \\
-صادرات غیرنفتی & سهم از صادرات & ۴۰٪ & ۶۰٪ & افزایشی \\
-\rowcolor{gray!10}
-درآمد سرانه & PPP & ۱۸,۰۰۰ \$ & ۲۵,۰۰۰ \$ & ۷٪ \\
-ضریب جینی & نابرابری & ۰.۳۸ & ۰.۳۲ & کاهشی \\
+رشد GDP & تداوم رشد تولید ناخالص داخلی & ۶٪ & افزایشی \\
+\rowcolor{goldlight}
+تورم & استواری پولی و کنترل نقدینگی & زیر ۵٪ & کاهشی \\
+بیکاری & اشتغال‌زایی در بخش فناوری و خدمات & ۶٪ & کاهشی \\
+\rowcolor{goldlight}
+سرمایه‌گذاری خارجی & جذب FDI در حوزه‌های زیرساختی & ۲۵ میلیارد \$ & صعودی \\
+ضریب جینی & توزیع عادلانه فرصت‌ها و ثروت & زیر ۰.۳۲ & بهبود \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{استراتژی تنوع‌بخشی اقتصاد}
@@ -221,36 +180,30 @@
     ybar stacked,
     width=14cm,
     height=8cm,
-    ylabel={سهم از GDP (درصد)},
-    xlabel={سال},
+    ylabel={\rl{سهم از GDP (درصد)}},
+    xlabel={\rl{سال}},
     ymin=0, ymax=100,
     xtick=data,
-    xticklabels={۱۴۰۳ (قبل), سال ۵, سال ۱۰, سال ۱۵ (هدف)},
-    legend style={at={(0.5,-0.15)}, anchor=north, legend columns=4},
+    xticklabels={\rl{۱۴۰۳}, \rl{سال ۵}, \rl{سال ۱۰}, \rl{هدف نهایی}},
+    legend style={at={(0.5,-0.2)}, anchor=north, legend columns=3, font=\tiny},
     bar width=1.2cm,
-    nodes near coords align={center},
-    every node near coord/.append style={font=\tiny},
+    axis line style={bleurepublique},
+    tick style={bleurepublique},
+    label style={font=\tiny\bfseries, color=bleurepublique}
 ]
 
-% نفت و گاز
-\addplot[fill=black!60, draw=black!80] coordinates {(1,35) (2,28) (3,20) (4,15)};
-% صنعت
-\addplot[fill=blue!60, draw=blue!80] coordinates {(1,20) (2,23) (3,28) (4,30)};
-% خدمات
-\addplot[fill=green!60, draw=green!80] coordinates {(1,30) (2,32) (3,35) (4,38)};
-% کشاورزی
-\addplot[fill=yellow!60, draw=yellow!80] coordinates {(1,10) (2,10) (3,9) (4,8)};
-% فناوری
-\addplot[fill=purple!60, draw=purple!80] coordinates {(1,3) (2,5) (3,8) (4,12)};
-% گردشگری
-\addplot[fill=orange!60, draw=orange!80] coordinates {(1,2) (2,4) (3,7) (4,10)};
+% نفت
+\addplot[fill=bleurepublique!80] coordinates {(1,35) (2,25) (3,15) (4,10)};
+% صنعت و خدمات
+\addplot[fill=goldphoenix!80] coordinates {(1,50) (2,55) (3,60) (4,65)};
+% فناوری و گردشگری
+\addplot[fill=bleulight] coordinates {(1,15) (2,20) (3,25) (4,25)};
 
-\legend{نفت و گاز, صنعت, خدمات, کشاورزی, فناوری, گردشگری}
+\legend{\rl{نفت و گاز}, \rl{صنعت و خدمات}, \rl{نوآوری و گردشگری}}
 
 \end{axis}
 \end{tikzpicture}
 \caption{مسیر تنوع‌بخشی اقتصاد: کاهش وابستگی به نفت}
-\label{fig:economic-diversification}
 \end{figure}
 
 \subsection{توسعه صنعتی هدفمند}
@@ -315,91 +268,39 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.8,
+    scale=0.85,
     transform shape,
     action/.style={
         rectangle,
-        rounded corners=4pt,
-        minimum width=3cm,
-        minimum height=1.3cm,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
-        font=\scriptsize\bfseries,
-        align=center
-    }
+        rounded corners=5pt,
+        minimum width=3.5cm,
+        minimum height=1.5cm,
+        text centered,
+        font=\small\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
+    },
+    arrow/.style={->, >=Stealth, thick, color=goldphoenix}
 ]
 
-% محورهای اصلی
-\node[action=blue, minimum width=12cm, minimum height=1.5cm] (header) at (0,5) {
-    \begin{tabular}{c}
-    برنامه ملی احیای آب ایران\\
-    \small هدف: کاهش ۴۰٪ مصرف در ۱۰ سال
-    \end{tabular}
-};
+% مرکز
+\node[circle, minimum size=3cm, draw=goldphoenix, fill=goldphoenix, text=white] (center) at (0,0) {\rl{برنامه ملی آب}};
 
-% چهار محور
-\node[action=green] (agri) at (-5,2) {
-    \begin{tabular}{c}
-    کشاورزی\\
-    \tiny ۹۲٪ مصرف
-    \end{tabular}
-};
-
-\node[action=orange] (urban) at (-1.5,2) {
-    \begin{tabular}{c}
-    شهری\\
-    \tiny ۶٪ مصرف
-    \end{tabular}
-};
-
-\node[action=purple] (industry) at (2,2) {
-    \begin{tabular}{c}
-    صنعت\\
-    \tiny ۲٪ مصرف
-    \end{tabular}
-};
-
-\node[action=teal] (supply) at (5.5,2) {
-    \begin{tabular}{c}
-    افزایش عرضه\\
-    \tiny منابع جدید
-    \end{tabular}
-};
-
-% اقدامات کشاورزی
-\node[action=green, minimum width=2.5cm] at (-6,-0.5) {\tiny آبیاری نوین};
-\node[action=green, minimum width=2.5cm] at (-6,-1.8) {\tiny تغییر الگوی کشت};
-\node[action=green, minimum width=2.5cm] at (-4,-0.5) {\tiny قیمت‌گذاری آب};
-\node[action=green, minimum width=2.5cm] at (-4,-1.8) {\tiny کاهش سطح زیرکشت};
-
-% اقدامات شهری
-\node[action=orange, minimum width=2.5cm] at (-1.5,-0.5) {\tiny بازیافت فاضلاب};
-\node[action=orange, minimum width=2.5cm] at (-1.5,-1.8) {\tiny کاهش هدررفت};
-
-% اقدامات صنعت
-\node[action=purple, minimum width=2.5cm] at (2,-0.5) {\tiny بازچرخانی آب};
-\node[action=purple, minimum width=2.5cm] at (2,-1.8) {\tiny فناوری کم‌آب};
-
-% افزایش عرضه
-\node[action=teal, minimum width=2.5cm] at (5.5,-0.5) {\tiny شیرین‌سازی};
-\node[action=teal, minimum width=2.5cm] at (5.5,-1.8) {\tiny انتقال آب};
+% محورها
+\node[action] (agri) at (-4,2.5) {\rl{کشاورزی هوشمند}\\\rl{\tiny کاهش ۴۰٪ مصرف}};
+\node[action] (urban) at (4,2.5) {\rl{مدیریت شهری}\\\rl{\tiny بازیافت ۱۰۰٪ فاضلاب}};
+\node[action] (ind) at (-4,-2.5) {\rl{بخش صنعت}\\\rl{\tiny بازچرخانی داخلی}};
+\node[action] (env) at (4,-2.5) {\rl{احیای تالاب‌ها}\\\rl{\tiny اولویت دریاچه ارومیه}};
 
 % اتصالات
-\draw[->, gray!60] (header) -- (agri);
-\draw[->, gray!60] (header) -- (urban);
-\draw[->, gray!60] (header) -- (industry);
-\draw[->, gray!60] (header) -- (supply);
-
-% هدف
-\node[rectangle, draw=red!60, fill=red!10, font=\tiny, align=center,
-      rounded corners=3pt] at (0,-3.5) {
-    هدف: از ۱۱۵ میلیارد m³ به ۷۵ میلیارد m³ در سال ۱۰
-};
+\draw[arrow] (center) -- (agri);
+\draw[arrow] (center) -- (urban);
+\draw[arrow] (center) -- (ind);
+\draw[arrow] (center) -- (env);
 
 \end{tikzpicture}
 \caption{چهار محور برنامه ملی احیای آب}
-\label{fig:water-program}
 \end{figure}
 
 \subsection{اهداف کمّی بخش آب}
@@ -469,53 +370,29 @@
 \begin{axis}[
     width=13cm,
     height=7cm,
-    xlabel={سال},
-    ylabel={سهم از تولید برق (درصد)},
+    xlabel={\rl{سال}},
+    ylabel={\rl{سهم از تولید برق (درصد)}},
     xmin=2024, xmax=2040,
     ymin=0, ymax=100,
     grid=major,
-    grid style={dashed, gray!30},
-    legend style={at={(0.02,0.98)}, anchor=north west},
-    legend cell align=left,
-    area style,
+    legend style={at={(0.5,-0.2)}, anchor=north, legend columns=3, font=\tiny},
+    axis line style={bleurepublique},
+    tick style={bleurepublique},
+    label style={font=\tiny\bfseries, color=bleurepublique}
 ]
 
-% سوخت فسیلی
-\addplot[thick, fill=gray!40, draw=gray!60] coordinates {
-    (2024,93) (2027,85) (2030,70) (2035,50) (2040,30)
-} \closedcycle;
+% سوخت فسیلی (کاهشی)
+\addplot[bleurepublique, thick, mark=*] coordinates {(2024,93) (2030,70) (2040,30)};
+% تجدیدپذیر (افزایشی)
+\addplot[goldphoenix, ultra thick, mark=square*] coordinates {(2024,2) (2030,20) (2040,60)};
+% سایر (هسته‌ای و آبی)
+\addplot[bleulight, thick, mark=triangle*] coordinates {(2024,5) (2030,10) (2040,10)};
 
-% گاز طبیعی (پاک‌تر)
-\addplot[thick, fill=blue!30, draw=blue!60] coordinates {
-    (2024,93) (2027,88) (2030,80) (2035,65) (2040,50)
-};
-
-% خورشیدی
-\addplot[thick, fill=yellow!50, draw=yellow!70] coordinates {
-    (2024,1) (2027,5) (2030,12) (2035,25) (2040,35)
-};
-
-% بادی
-\addplot[thick, fill=green!40, draw=green!60] coordinates {
-    (2024,0.5) (2027,3) (2030,8) (2035,15) (2040,20)
-};
-
-% هسته‌ای
-\addplot[thick, fill=purple!30, draw=purple!60] coordinates {
-    (2024,2) (2027,4) (2030,7) (2035,10) (2040,12)
-};
-
-% آبی
-\addplot[thick, fill=cyan!40, draw=cyan!60] coordinates {
-    (2024,3.5) (2027,4) (2030,5) (2035,5) (2040,5)
-};
-
-\legend{نفت/ذغال, گاز طبیعی, خورشیدی, بادی, هسته‌ای, برق‌آبی}
+\legend{\rl{سوخت فسیلی}, \rl{خورشیدی و بادی}, \rl{هسته‌ای و آبی}}
 
 \end{axis}
 \end{tikzpicture}
 \caption{مسیر انتقال به انرژی پاک: سهم منابع تولید برق}
-\label{fig:energy-transition}
 \end{figure}
 
 %───────────────────────────────────────────────────────────────────────────────

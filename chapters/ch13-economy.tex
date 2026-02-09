@@ -26,25 +26,26 @@
 
 \begin{center}
 \begin{tikzpicture}[
-    node distance=2cm,
+    scale=0.85, every node/.style={scale=0.85},
+    node distance=1.8cm,
     box/.style={
         rectangle,
         rounded corners=8pt,
         draw=#1!70,
-        fill=#1!15,
+        fill=#1!5,
         thick,
-        minimum width=4cm,
-        minimum height=1.8cm,
+        minimum width=3.8cm,
+        minimum height=1.6cm,
         align=center,
         font=\small
     },
     arrow/.style={->, thick, >=stealth}
 ]
 % چرخه مثبت
-\node[box=green] (econ) {\textbf{اقتصاد سالم}\\ رشد، اشتغال، ثبات};
-\node[box=blue, right=2.5cm of econ] (legit) {\textbf{مشروعیت}\\ اعتماد به نظام جدید};
-\node[box=purple, below=2cm of legit] (stab) {\textbf{ثبات سیاسی}\\ امکان اصلاحات بیشتر};
-\node[box=orange, below=2cm of econ] (invest) {\textbf{سرمایه‌گذاری}\\ داخلی و خارجی};
+\node[box=vertnapoleon] (econ) {\textbf{اقتصاد سالم}\\ رشد، اشتغال، ثبات};
+\node[box=bleurepublique, right=2cm of econ] (legit) {\textbf{مشروعیت}\\ اعتماد به نظام جدید};
+\node[box=bleurepublique, below=1.8cm of legit] (stab) {\textbf{ثبات سیاسی}\\ امکان اصلاحات بیشتر};
+\node[box=goldphoenix, below=1.8cm of econ] (invest) {\textbf{سرمایه‌گذاری}\\ داخلی و خارجی};
 
 \draw[arrow, green!60!black] (econ) -- (legit);
 \draw[arrow, blue!60!black] (legit) -- (stab);
@@ -78,64 +79,58 @@
 \centering
 \caption{شاخص‌های کلیدی اقتصاد ایران (۱۴۰۳/۲۰۲۴)}
 \label{tab:economic-indicators}
-\begin{tabular}{>{\columncolor{red!8}}r l c c p{3cm}}
+\begin{tabularx}{\textwidth}{C{1cm} R{4cm} Z Z Y}
 \toprule
-\rowcolor{red!25}
-\textbf{ردیف} & \textbf{شاخص} & \textbf{مقدار} & \textbf{رتبه جهانی} & \textbf{وضعیت} \\
+\headmark رد & \headmark شاخص & \headmark مقدار & \headmark رتبه جهانی & \headmark وضعیت \\
 \midrule
 ۱ & GDP (PPP) & ۱.۳ تریلیون \$ & ۲۱ & متوسط \\
-\rowcolor{gray!10}
+\rowcolor{goldlight}
 ۲ & GDP سرانه (PPP) & ۱۵,۰۰۰ \$ & ۷۰ & پایین‌تر از پتانسیل \\
 ۳ & رشد اقتصادی & ۲-۳٪ & — & ناکافی \\
-\rowcolor{gray!10}
+\rowcolor{goldlight}
 ۴ & نرخ تورم & ۴۵-۵۰٪ & ۵ بدترین & بحرانی \\
-۵ & نرخ بیکاری (رسمی) & ۱۲٪ & — & بالا \\
-\rowcolor{gray!10}
+۵ & نرخ بیکاری & ۱۲٪ & — & بالا \\
+\rowcolor{goldlight}
 ۶ & بیکاری جوانان & ۲۸٪ & — & بحرانی \\
-۷ & نرخ فقر & ۳۰٪+ & — & بالا \\
-\rowcolor{gray!10}
-۸ & ضریب جینی & ۰.۴۲ & — & نابرابری بالا \\
-۹ & بدهی دولت (٪ GDP) & ۴۵٪ & — & قابل مدیریت \\
-\rowcolor{gray!10}
-۱۰ & ذخایر ارزی & ۲۰-۳۰ میلیارد \$ & — & ناکافی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{مشکلات ساختاری}
 
 \begin{center}
 \begin{tikzpicture}[
+    scale=0.85, every node/.style={scale=0.85},
     problem/.style={
         rectangle,
         rounded corners=5pt,
-        draw=red!70,
-        fill=red!10,
+        draw=bleurepublique!70,
+        fill=bleulight,
         thick,
-        minimum width=5cm,
-        minimum height=1.2cm,
+        minimum width=4.5cm,
+        minimum height=1cm,
         align=center,
         font=\small
     }
 ]
 % عنوان
-\node[font=\large\bfseries] at (0,5) {هشت مشکل ساختاری اقتصاد ایران};
+\node[font=\large\bfseries, color=bleurepublique] at (0,4.5) {هشت مشکل ساختاری اقتصاد ایران};
 
 % مشکلات
-\node[problem] at (-4,3.5) (p1) {\textbf{۱. وابستگی به نفت}\\ ۳۵٪ بودجه، ۶۰٪ صادرات};
-\node[problem] at (4,3.5) (p2) {\textbf{۲. تحریم‌های گسترده}\\ ۳۸۰۰+ تحریم فعال};
-\node[problem] at (-4,2) (p3) {\textbf{۳. تورم مزمن}\\ ۴۵-۵۰٪ سالانه};
-\node[problem] at (4,2) (p4) {\textbf{۴. فساد سیستماتیک}\\ رتبه ۱۴۹ از ۱۸۰};
-\node[problem] at (-4,0.5) (p5) {\textbf{۵. ناکارآمدی بنگاه‌های دولتی}\\ ۴۰٪ اقتصاد دولتی};
-\node[problem] at (4,0.5) (p6) {\textbf{۶. نظام بانکی ورشکسته}\\ NPL بالای ۲۰٪};
-\node[problem] at (-4,-1) (p7) {\textbf{۷. فرار سرمایه}\\ ۵-۱۰ میلیارد \$/سال};
-\node[problem] at (4,-1) (p8) {\textbf{۸. فرار مغزها}\\ ۱۵۰,۰۰۰ نخبه/سال};
+\node[problem] at (-3.8,3) (p1) {\textbf{۱. وابستگی به نفت}\\ ۳۵٪ بودجه، ۶۰٪ صادرات};
+\node[problem] at (3.8,3) (p2) {\textbf{۲. تحریم‌های گسترده}\\ ۳۸۰۰+ تحریم فعال};
+\node[problem] at (-3.8,1.5) (p3) {\textbf{۳. تورم مزمن}\\ ۴۵-۵۰٪ سالانه};
+\node[problem] at (3.8,1.5) (p4) {\textbf{۴. فساد سیستماتیک}\\ رتبه ۱۴۹ از ۱۸۰};
+\node[problem] at (-3.8,0) (p5) {\textbf{۵. ناکارآمدی دولتی}\\ ۴۰٪ اقتصاد دولتی};
+\node[problem] at (3.8,0) (p6) {\textbf{۶. نظام بانکی ورشکسته}\\ NPL بالای ۲۰٪};
+\node[problem] at (-3.8,-1.5) (p7) {\textbf{۷. فرار سرمایه}\\ ۵-۱۰ میلیارد \$/سال};
+\node[problem] at (3.8,-1.5) (p8) {\textbf{۸. فرار مغزها}\\ ۱۵۰,۰۰۰ نخبه/سال};
 
 % اتصال به مرکز
-\node[ellipse, draw=red!70, fill=red!20, thick, minimum width=3cm] at (0,1.2) (center) 
+\node[ellipse, draw=goldphoenix, fill=goldlight, thick, minimum width=2.8cm] at (0,0.7) (center) 
     {\textbf{بحران اقتصادی}};
 \foreach \p in {p1,p2,p3,p4,p5,p6,p7,p8} {
-    \draw[thick, red!40, dashed] (\p) -- (center);
+    \draw[thick, goldphoenix!40, dashed] (\p) -- (center);
 }
 \end{tikzpicture}
 \end{center}
@@ -146,21 +141,20 @@
 \centering
 \caption{تحریم‌های بین‌المللی علیه ایران}
 \label{tab:sanctions}
-\begin{tabular}{>{\columncolor{orange!8}}l c p{6cm}}
+\begin{tabularx}{\textwidth}{R{4cm} C{3cm} Y}
 \toprule
-\rowcolor{orange!25}
-\textbf{نوع تحریم} & \textbf{تعداد تقریبی} & \textbf{تأثیر اصلی} \\
+\headmark نوع تحریم & \headmark تعداد تقریبی & \headmark تأثیر اصلی \\
 \midrule
 تحریم‌های آمریکا & ۲,۵۰۰+ & قطع از سیستم دلاری، تحریم ثانویه \\
-\rowcolor{gray!10}
+\rowcolor{goldlight}
 تحریم‌های اتحادیه اروپا & ۸۰۰+ & محدودیت تجارت، بانکی \\
-تحریم‌های سازمان ملل & ۵۰+ & تسلیحاتی، هسته‌ای (بخشی لغو شده) \\
-\rowcolor{gray!10}
+تحریم‌های سازمان ملل & ۵۰+ & تسلیحاتی، هسته‌ای \\
+\rowcolor{goldlight}
 تحریم‌های سایر کشورها & ۴۰۰+ & کانادا، استرالیا، ژاپن و... \\
 \midrule
-\textbf{مجموع} & \textbf{۳,۸۰۰+} & قطع از سیستم مالی جهانی \\
+\headmark مجموع & \textbf{۳,۸۰۰+} & قطع از سیستم مالی جهانی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{enghelabbox}
@@ -185,14 +179,15 @@
 
 \begin{center}
 \begin{tikzpicture}[
+    scale=0.85, every node/.style={scale=0.85},
     phase/.style={
         rectangle,
         rounded corners=10pt,
         draw=#1!70,
-        fill=#1!15,
+        fill=#1!5,
         thick,
-        minimum width=4cm,
-        minimum height=3cm,
+        minimum width=3.8cm,
+        minimum height=2.8cm,
         align=center
     }
 ]
@@ -200,25 +195,25 @@
 \node[phase=red] (p1) at (0,0) {
     \textbf{فاز ۱}\\ 
     \textbf{تثبیت}\\ 
-    (سال ۱-۲)\\[0.3cm]
+    (سال ۱-۲)\\[0.2cm]
     \scriptsize رفع تحریم\\
     \scriptsize کنترل تورم\\
     \scriptsize ثبات ارزی
 };
 
-\node[phase=orange] (p2) at (5.5,0) {
+\node[phase=goldphoenix] (p2) at (5,0) {
     \textbf{فاز ۲}\\
     \textbf{بازسازی}\\
-    (سال ۳-۷)\\[0.3cm]
+    (سال ۳-۷)\\[0.2cm]
     \scriptsize اصلاحات ساختاری\\
     \scriptsize جذب سرمایه\\
     \scriptsize نوسازی صنایع
 };
 
-\node[phase=green] (p3) at (11,0) {
+\node[phase=bleurepublique] (p3) at (10,0) {
     \textbf{فاز ۳}\\
     \textbf{تحول}\\
-    (سال ۸-۱۵)\\[0.3cm]
+    (سال ۸-۱۵)\\[0.2cm]
     \scriptsize اقتصاد دانش‌بنیان\\
     \scriptsize تنوع صادرات\\
     \scriptsize رفاه فراگیر
@@ -248,20 +243,19 @@
 \centering
 \caption{نقشه راه رفع تحریم‌ها}
 \label{tab:sanctions-roadmap}
-\begin{tabular}{>{\columncolor{blue!8}}c p{3.5cm} p{3.5cm} p{3.5cm}}
+\begin{tabularx}{\textwidth}{C{1.2cm} Y Y Z}
 \toprule
-\rowcolor{blue!25}
-\textbf{مرحله} & \textbf{اقدام ایران} & \textbf{اقدام طرف مقابل} & \textbf{زمان‌بندی} \\
+\headmark مرحله & \headmark اقدام ایران & \headmark اقدام طرف مقابل & \headmark زمان‌بندی \\
 \midrule
-۱ & اعلام پایبندی به NPT، توقف غنی‌سازی بالای ۵٪ & تعلیق تحریم‌های نفتی & ماه ۱-۳ \\
-\rowcolor{gray!10}
-۲ & پذیرش بازرسی‌های IAEA، شفافیت کامل & رفع تحریم‌های بانکی (SWIFT) & ماه ۳-۶ \\
+۱ & اعلام پایبندی به NPT، توقف غنی‌سازی & تعلیق تحریم‌های نفتی & ماه ۱-۳ \\
+\rowcolor{goldlight}
+۲ & پذیرش بازرسی‌های IAEA، شفافیت کامل & رفع تحریم‌های بانکی & ماه ۳-۶ \\
 ۳ & امضای پروتکل الحاقی & رفع تحریم‌های تجاری & ماه ۶-۱۲ \\
-\rowcolor{gray!10}
-۴ & تعهد به عدم توسعه سلاح & رفع تحریم‌های ثانویه آمریکا & ماه ۱۲-۱۸ \\
-۵ & بازگشت به برجام+ یا توافق جدید & آزادسازی دارایی‌های بلوکه‌شده & ماه ۱۸-۲۴ \\
+\rowcolor{goldlight}
+۴ & تعهد به عدم توسعه سلاح & رفع تحریم‌های ثانوویه & ماه ۱۲-۱۸ \\
+۵ & توافق جدید پایدار & آزادسازی دارایی‌ها & ماه ۱۸-۲۴ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{naghlbox}
@@ -275,45 +269,42 @@
 \centering
 \caption{برنامه کنترل تورم در دو سال اول}
 \label{tab:inflation-control}
-\begin{tabular}{>{\columncolor{green!8}}r p{4cm} p{5.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Y}
 \toprule
-\rowcolor{green!25}
-\textbf{ابزار} & \textbf{اقدام} & \textbf{اثر مورد انتظار} \\
+\headmark ابزار & \headmark اقدام کلیدی & \headmark اثر مورد انتظار \\
 \midrule
-سیاست پولی & استقلال بانک مرکزی، هدف‌گذاری تورم & توقف چاپ پول برای کسری بودجه \\
-\rowcolor{gray!10}
-سیاست مالی & کاهش کسری بودجه به زیر ۳٪ GDP & کاهش فشار تقاضا \\
-سیاست ارزی & یکسان‌سازی نرخ ارز، شناورسازی مدیریت‌شده & حذف رانت ارزی، ثبات \\
-\rowcolor{gray!10}
-یارانه‌ها & هدفمندسازی واقعی (نقدی به دهک‌های پایین) & کاهش هزینه دولت، کارایی \\
-واردات & تسهیل واردات کالاهای اساسی & افزایش عرضه، کاهش قیمت \\
-\rowcolor{gray!10}
-ذخایر ارزی & افزایش به ۱۰۰ میلیارد دلار (هدف ۵ ساله) & اعتماد و ثبات ارزی \\
+سیاست پولی & استقلال بانک مرکزی، هدف‌گذاری تورم & توقف چاپ پول، ثبات قیمت‌ها \\
+\rowcolor{goldlight}
+سیاست مالی & کاهش کسری بودجه به زیر ۳٪ GDP & کاهش تقاضای کاذب \\
+سیاست ارزی & یکسان‌سازی نرخ ارز، شناورسازی & حذف رانت ارزی، بازگشت اعتماد \\
+\rowcolor{goldlight}
+یارانه‌ها & هدفمندسازی واقعی (پرداخت مستقیم) & حمایت از اقشار ضعیف \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{center}
 \begin{tikzpicture}
 \begin{axis}[
-    width=12cm,
+    width=0.95\textwidth,
     height=6cm,
-    xlabel={ماه},
-    ylabel={نرخ تورم (درصد سالانه)},
+    xlabel={\rl{ماه}},
+    ylabel={\rl{تورم (درصد سالانه)}},
     xmin=0, xmax=25,
-    ymin=0, ymax=55,
+    ymin=0, ymax=60,
     xtick={0,6,12,18,24},
-    xticklabels={شروع, ماه ۶, ماه ۱۲, ماه ۱۸, ماه ۲۴},
+    xticklabels={\rl{شروع}, \rl{ماه ۶}, \rl{ماه ۱۲}, \rl{ماه ۱۸}, \rl{ماه ۲۴}},
     legend pos=north east,
     grid=major,
-    grid style={dashed, gray!30}
+    grid style={dashed, gray!30},
+    axis line style={bleurepublique!50, thick}
 ]
 % مسیر تورم هدف
-\addplot[color=green!70!black, mark=*, thick, line width=1.5pt] coordinates {
+\addplot[color=goldphoenix, mark=*, thick, line width=1.5pt] coordinates {
     (0, 50) (3, 45) (6, 38) (9, 30) (12, 25) (15, 20) (18, 17) (21, 15) (24, 12)
 };
 % مسیر بدون اصلاحات
-\addplot[color=red, mark=triangle*, dashed, thick] coordinates {
+\addplot[color=black!40, mark=triangle*, dashed, thick] coordinates {
     (0, 50) (6, 52) (12, 55) (18, 53) (24, 50)
 };
 
@@ -490,12 +481,12 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
     height=6cm,
     ybar,
     bar width=15pt,
-    ylabel={میلیارد دلار},
-    xlabel={سال},
+    ylabel={\rl{میلیارد دلار}},
+    xlabel={\rl{سال}},
     ymin=0,
     ymax=70,
     xtick=data,
-    xticklabels={۱۴۰۳, سال ۳, سال ۵, سال ۷, سال ۱۰},
+    xticklabels={\rl{۱۴۰۳}, \rl{سال ۳}, \rl{سال ۵}, \rl{سال ۷}, \rl{سال ۱۰}},
     nodes near coords,
     every node near coord/.append style={font=\small},
     legend pos=north west,
@@ -532,22 +523,21 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
 \centering
 \caption{برنامه نوسازی صنایع کلیدی}
 \label{tab:industry-modernization}
-\begin{tabular}{>{\columncolor{orange!8}}l p{3cm} c p{4cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Z Y}
 \toprule
-\rowcolor{orange!25}
-\textbf{صنعت} & \textbf{چالش فعلی} & \textbf{سرمایه‌گذاری} & \textbf{هدف} \\
+\headmark صنعت & \headmark چالش فعلی & \headmark سرمایه (\$م) & \headmark هدف نهایی \\
 \midrule
-خودرو & کیفیت پایین، فناوری قدیمی & ۲۰ میلیارد \$ & مشارکت با برندهای جهانی \\
-\rowcolor{gray!10}
-پتروشیمی & ظرفیت خام‌فروشی & ۳۰ میلیارد \$ & زنجیره ارزش کامل \\
-فولاد & انرژی‌بر، آلاینده & ۱۵ میلیارد \$ & فناوری سبز، صادرات \\
-\rowcolor{gray!10}
-نساجی & رقابت‌پذیری پایین & ۵ میلیارد \$ & برندسازی، کیفیت \\
-غذایی & وابستگی به واردات & ۱۰ میلیارد \$ & خودکفایی، صادرات \\
-\rowcolor{gray!10}
-دارو و تجهیزات پزشکی & واردات بالا & ۸ میلیارد \$ & تولید داخلی ۸۰٪ \\
+خودرو & کیفیت پایین، فناوری قدیمی & ۲۰ & مشارکت با برندهای جهانی \\
+\rowcolor{goldlight}
+پتروشیمی & خام‌فروشی، فناوری قدیمی & ۳۰ & زنجیره ارزش کامل \\
+فولاد & انرژی‌بر، آلاینده & ۱۵ & فناوری سبز، صادرات \\
+\rowcolor{goldlight}
+نساجی & رقابت‌پذیری پایین & ۵ & نوسازی، برندسازی \\
+غذایی & وابستگی به واردات & ۱۰ & خودکفایی، صادرات \\
+\rowcolor{goldlight}
+دارو و تجهیزات پزشکی & واردات بالا & ۸ & تولید داخلی ۸۰٪ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -560,43 +550,36 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
 \begin{center}
 \begin{tikzpicture}
 \begin{axis}[
-    width=13cm,
+    width=0.95\textwidth,
     height=7cm,
     ybar stacked,
-    bar width=20pt,
-    ylabel={درصد صادرات},
+    bar width=18pt,
+    ylabel={\rl{درصد صادرات}},
     xlabel={},
-    ymin=0,
-    ymax=100,
+    ymin=0, ymax=100,
     xtick={1,2,3,4},
-    xticklabels={۱۴۰۳ (مبدأ), سال ۵, سال ۱۰, سال ۱۵},
+    xticklabels={\rl{۱۴۰۳}, \rl{سال ۵}, \rl{سال ۱۰}, \rl{سال ۱۵}},
     legend style={
         at={(0.5,-0.15)},
         anchor=north,
         legend columns=3,
-        font=\small
+        font=\tiny
     },
     nodes near coords,
     every node near coord/.append style={font=\tiny},
     grid=major,
-    grid style={dashed, gray!30}
+    grid style={dashed, gray!30},
+    axis line style={bleurepublique!50, thick}
 ]
-% نفت خام
-\addplot[fill=gray!70, draw=gray!90] coordinates {(1,60) (2,45) (3,30) (4,20)};
-% پتروشیمی
-\addplot[fill=blue!50, draw=blue!70] coordinates {(1,20) (2,22) (3,22) (4,20)};
-% صنایع
-\addplot[fill=green!50, draw=green!70] coordinates {(1,10) (2,15) (3,22) (4,25)};
-% خدمات و گردشگری
-\addplot[fill=orange!50, draw=orange!70] coordinates {(1,5) (2,10) (3,15) (4,20)};
-% فناوری و دانش‌بنیان
-\addplot[fill=purple!50, draw=purple!70] coordinates {(1,5) (2,8) (3,11) (4,15)};
-
-\legend{نفت خام, پتروشیمی, صنایع, خدمات و گردشگری, فناوری و دانش‌بنیان}
+\addplot[fill=black!40, draw=black!60] coordinates {(1,60) (2,45) (3,30) (4,20)};
+\addplot[fill=bleulight, draw=bleurepublique!70] coordinates {(1,20) (2,22) (3,22) (4,20)};
+\addplot[fill=goldlight, draw=goldphoenix!70] coordinates {(1,10) (2,15) (3,22) (4,25)};
+\addplot[fill=vertlight, draw=vertnapoleon!70] coordinates {(1,5) (2,10) (3,15) (4,20)};
+\addplot[fill=bleurepublique!20, draw=bleurepublique] coordinates {(1,5) (2,8) (3,11) (4,15)};
+\legend{\rl{نفت خام}, \rl{پتروشیمی}, \rl{صنایع}, \rl{گردشگری}, \rl{فناوری}}
 \end{axis}
 \end{tikzpicture}
 \captionof{figure}{تنوع‌بخشی به سبد صادراتی ایران}
-\label{fig:export-diversification}
 \end{center}
 
 \subsection{موتورهای رشد جدید}
@@ -605,20 +588,18 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
 \centering
 \caption{پنج موتور رشد اقتصادی آینده ایران}
 \label{tab:growth-engines}
-\begin{tabular}{>{\columncolor{teal!8}}r p{2.5cm} p{2.5cm} p{2.5cm} p{2.5cm}}
+\begin{tabularx}{\textwidth}{R{2.8cm} Y Y Z Z}
 \toprule
-\rowcolor{teal!25}
-\textbf{موتور} & \textbf{پتانسیل} & \textbf{هدف سال ۱۵} & \textbf{سرمایه‌گذاری} & \textbf{اشتغال} \\
+\headmark موتور & \headmark پتانسیل & \headmark هدف سال ۱۵ & \headmark سرمایه (\$م) & \headmark اشتغال \\
 \midrule
-گردشگری & ۵۰ سایت یونسکو، تنوع & ۳۰ میلیون گردشگر & ۵۰ میلیارد \$ & ۳ میلیون \\
-\rowcolor{gray!10}
-ترانزیت & موقعیت ژئوپلتیک & ۵۰ میلیارد \$ درآمد & ۴۰ میلیارد \$ & ۱ میلیون \\
-فناوری اطلاعات & نیروی کار تحصیل‌کرده & ۲۰ میلیارد \$ صادرات & ۱۵ میلیارد \$ & ۱ میلیون \\
-\rowcolor{gray!10}
-انرژی‌های تجدیدپذیر & آفتاب، باد فراوان & ۱۰ میلیارد \$ صادرات برق & ۸۰ میلیارد \$ & ۵۰۰ هزار \\
-کشاورزی مدرن & آب و هوا متنوع & خودکفایی + صادرات & ۳۰ میلیارد \$ & ۲ میلیون \\
+گردشگری & ۵۰ سایت یونسکو & ۳۰ میلیون نفر & ۵۰ & ۳ م \\
+\rowcolor{goldlight}
+ترانزیت & هاب منطقه‌ای & ۵۰ میلیارد \$ درآمد & ۴۰ & ۱ م \\
+فناوری اطلاعات & نیروی متخصص & ۲۰ میلیارد \$ صادرات & ۱۵ & ۱ م \\
+\rowcolor{goldlight}
+انرژی سبز & آفتاب و باد & ۱۰ میلیارد \$ صادرات & ۸۰ & ۰.۵ م \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsubsection{گردشگری: گنج پنهان}
@@ -647,32 +628,29 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
 \subsubsection{ترانزیت: پل بین قاره‌ها}
 
 \begin{center}
-\begin{tikzpicture}[scale=0.8]
+\begin{tikzpicture}[scale=0.75, every node/.style={scale=0.75}]
 % نقشه ساده
-\draw[thick, fill=blue!10] (0,0) ellipse (6cm and 3cm);
-\node[font=\large\bfseries] at (0,2.5) {ایران: هاب ترانزیت منطقه‌ای};
+\draw[thick, draw=bleurepublique!50, fill=bleulight] (0,0) ellipse (6.5cm and 3cm);
+\node[font=\large\bfseries, color=bleurepublique] at (0,2.5) {ایران: هاب ترانزیت منطقه‌ای};
 
 % مسیرها
-\node[circle, fill=green!50, minimum size=0.8cm] (n1) at (-5,0) {\scriptsize اروپا};
-\node[circle, fill=orange!50, minimum size=0.8cm] (n2) at (5,0) {\scriptsize چین};
-\node[circle, fill=blue!50, minimum size=0.8cm] (n3) at (0,2) {\scriptsize روسیه};
-\node[circle, fill=red!50, minimum size=0.8cm] (n4) at (0,-2) {\scriptsize هند};
-\node[circle, fill=purple!50, minimum size=0.8cm] (n5) at (-3,-1.5) {\scriptsize خلیج فارس};
-\node[circle, fill=teal!50, minimum size=0.8cm] (n6) at (3,1.5) {\scriptsize آسیای مرکزی};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n1) at (-5,0) {\scriptsize اروپا};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n2) at (5,0) {\scriptsize چین};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n3) at (0,2) {\scriptsize روسیه};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n4) at (0,-2) {\scriptsize هند};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n5) at (-3,-1.5) {\scriptsize خلیج فارس};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n6) at (3,1.5) {\scriptsize میانه};
 
 % ایران در مرکز
-\node[rectangle, rounded corners, fill=yellow!50, minimum width=1.5cm] (iran) at (0,0) {\textbf{ایران}};
+\node[rectangle, rounded corners, draw=bleurepublique, fill=goldphoenix, text=white, minimum width=2cm, minimum height=1cm] (iran) at (0,0) {\textbf{ایران}};
 
 % مسیرها
-\draw[thick, ->] (n1) -- (iran);
-\draw[thick, ->] (n2) -- (iran);
-\draw[thick, ->] (n3) -- (iran);
-\draw[thick, ->] (n4) -- (iran);
-\draw[thick, ->] (n5) -- (iran);
-\draw[thick, ->] (n6) -- (iran);
+\foreach \n in {n1,n2,n3,n4,n5,n6} {
+    \draw[ultra thick, bleurepublique!60, ->, >=stealth] (\n) -- (iran);
+}
 
 % کریدورها
-\node[font=\scriptsize, below=3.5cm of iran, align=center] {
+\node[font=\scriptsize, below=3.5cm of iran, align=center, bleurepublique] {
     کریدور شمال-جنوب (INSTC) | کریدور شرق-غرب | راه ابریشم جدید
 };
 \end{tikzpicture}
@@ -684,25 +662,23 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
 \centering
 \caption{برنامه اشتغال‌زایی ۱۰ میلیون شغل در ۱۰ سال}
 \label{tab:job-creation}
-\begin{tabular}{>{\columncolor{purple!8}}l c c p{4cm}}
+\begin{tabularx}{\textwidth}{R{2.8cm} C{1.2cm} C{1.2cm} Y}
 \toprule
-\rowcolor{purple!25}
-\textbf{بخش} & \textbf{اشتغال فعلی (م)} & \textbf{هدف سال ۱۰ (م)} & \textbf{راهبرد} \\
+\headmark بخش & \headmark فعلی & \headmark هدف & \headmark راهبرد کلیدی \\
 \midrule
-گردشگری و هتلداری & ۰.۵ & ۳ & زیرساخت، ویزا، بازاریابی \\
-\rowcolor{gray!10}
-ساختمان و مسکن & ۳ & ۵ & پروژه مسکن ملی \\
-صنایع تولیدی & ۴ & ۶ & نوسازی، صادرات‌محور \\
-\rowcolor{gray!10}
-فناوری اطلاعات & ۰.۳ & ۱.۳ & استارتاپ‌ها، صادرات خدمات \\
-کشاورزی مدرن & ۴ & ۴.۵ & مکانیزاسیون، ارزش‌افزوده \\
-\rowcolor{gray!10}
-خدمات & ۸ & ۱۲ & مالی، بهداشت، آموزش \\
-انرژی‌های نو & ۰.۱ & ۰.۵ & تولید و نصب \\
+گردشگری و هتل & ۰.۵ & ۳ & زیرساخت، ویزا، بازاریابی \\
+\rowcolor{goldlight}
+ساختمان و مسکن & ۳ & ۵ & پروژه نوسازی بافت فرسوده \\
+صنایع تولیدی & ۴ & ۶ & نوسازی، توسعه صادرات \\
+\rowcolor{goldlight}
+فناوری اطلاعات & ۰.۳ & ۱.۳ & اقتصاد دیجیتال، استارتاپ‌ها \\
+کشاورزی مدرن & ۴ & ۴.۵ & مکانیزاسیون، صرفه‌جویی آب \\
+\rowcolor{goldlight}
+خدمات و تجارت & ۸ & ۱۲ & لجستیک، مالی، آموزش \\
 \midrule
-\textbf{مجموع} & \textbf{۲۴} & \textbf{۳۴} & \textbf{۱۰ میلیون شغل جدید} \\
+\headmark مجموع & \textbf{۲۴} & \textbf{۳۴} & \textbf{۱۰ میلیون شغل جدید} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %═══════════════════════════════════════════════════════════════════════════════
@@ -719,61 +695,48 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
 \centering
 \caption{برنامه جامع مبارزه با فساد اقتصادی}
 \label{tab:anti-corruption-plan}
-\begin{tabular}{>{\columncolor{red!8}}r p{4cm} p{5.5cm}}
+\begin{tabularx}{\textwidth}{R{2.5cm} Y Y}
 \toprule
-\rowcolor{red!25}
-\textbf{محور} & \textbf{اقدام} & \textbf{نتیجه مورد انتظار} \\
+\headmark محور & \headmark اقدام کلیدی & \headmark نتیجه مورد انتظار \\
 \midrule
-شفافیت & ثبت الکترونیک همه معاملات دولتی & حذف رانت اطلاعاتی \\
-\rowcolor{gray!10}
-نظارت & کمیسیون مستقل ضدفساد با اختیارات کامل & بازداشت و محاکمه مفسدان \\
-قوانین & قانون «از کجا آورده‌ای» با ضمانت اجرا & مصادره اموال نامشروع \\
-\rowcolor{gray!10}
-تعارض منافع & ممنوعیت فعالیت اقتصادی مقامات و خانواده & جلوگیری از سوءاستفاده \\
-مناقصات & الکترونیکی، علنی، با داوری مستقل & کاهش فساد در قراردادها \\
-\rowcolor{gray!10}
-حفاظت از گزارشگران & قانون whistleblower، پاداش & تشویق افشاگری \\
-مجازات & سلب مصونیت همه مقامات، مجازات سنگین & بازدارندگی \\
+شفافیت & ثبت الکترونیک معاملات دولتی & حذف رانت اطلاعاتی \\
+\rowcolor{goldlight}
+نظارت & کمیسیون مستقل ضدفساد & بازداشت و محاکمه مفسدان \\
+قوانین & قانون «از کجا آورده‌ای» & مصادره اموال نامشروع \\
+\rowcolor{goldlight}
+تعارض منافع & ممنوعیت فعالیت اقتصادی مقامات & جلوگیری از سوءاستفاده \\
+مناقصات & سامانه علنی و الکترونیکی & سلامت قراردادهای بزرگ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{center}
 \begin{tikzpicture}
 \begin{axis}[
-    width=12cm,
+    width=0.95\textwidth,
     height=6cm,
-    xlabel={سال},
-    ylabel={رتبه شاخص CPI (از ۱۸۰ کشور)},
+    xlabel={\rl{سال}},
+    ylabel={\rl{رتبه شاخص CPI}},
     xmin=0, xmax=16,
-    ymin=0, ymax=160,
+    ymin=20, ymax=160,
     xtick={0,5,10,15},
-    xticklabels={۱۴۰۳, سال ۵, سال ۱۰, سال ۱۵},
+    xticklabels={\rl{۱۴۰۳}, \rl{سال ۵}, \rl{سال ۱۰}, \rl{سال ۱۵}},
     legend pos=north east,
     grid=major,
     grid style={dashed, gray!30},
-    y dir=reverse
+    y dir=reverse,
+    axis line style={bleurepublique!50, thick}
 ]
-% مسیر ایران
-\addplot[color=green!70!black, mark=*, thick, line width=1.5pt] coordinates {
+\addplot[color=goldphoenix, mark=*, thick, line width=1.5pt] coordinates {
     (0, 149) (5, 100) (10, 70) (15, 45)
 };
-% خط ترکیه
-\addplot[color=blue, dashed, thick] coordinates {
+\addplot[color=black!40, dashed, thick] coordinates {
     (0, 101) (5, 101) (10, 101) (15, 101)
 };
-% خط امارات
-\addplot[color=orange, dashed, thick] coordinates {
-    (0, 24) (5, 24) (10, 24) (15, 24)
-};
-
-\legend{ایران (هدف), ترکیه (فعلی), امارات (فعلی)}
-
-\node[font=\scriptsize, green!70!black] at (axis cs:12,60) {هدف: رتبه ۴۵};
+\legend{\rl{ایران (هدف)}, \rl{ترکیه (فعلی)}}
 \end{axis}
 \end{tikzpicture}
 \captionof{figure}{مسیر بهبود رتبه ایران در شاخص فساد}
-\label{fig:corruption-improvement}
 \end{center}
 
 %═══════════════════════════════════════════════════════════════════════════════

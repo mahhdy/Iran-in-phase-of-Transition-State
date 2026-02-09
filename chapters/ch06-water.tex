@@ -48,38 +48,37 @@
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=13cm,
+    width=0.95\textwidth,
     height=7cm,
-    xlabel={سال},
-    ylabel={میلیون مترمکعب در سال},
+    xlabel={\rl{سال}},
+    ylabel={\rl{میلیون مترمکعب در سال}},
     xmin=1960, xmax=2025,
     ymin=0, ymax=2500,
-    legend style={at={(0.02,0.98)}, anchor=north west},
+    legend style={at={(0.02,0.98)}, anchor=north west, font=\tiny},
     grid=both,
     grid style={line width=0.2pt, draw=gray!30}
 ]
 
 % منابع سنتی
-\addplot[color=bleurepublique, very thick, mark=*] coordinates {
+\addplot[color=bleurepublique, ultrathick, mark=*] coordinates {
     (1960,1400) (1970,1500) (1980,1600) (1990,1650) (2000,1600) (2010,1500) (2020,1400)
 };
 
 % شیرین‌سازی
-\addplot[color=vertnapoleon, very thick, mark=square*] coordinates {
+\addplot[color=goldphoenix, ultrathick, mark=square*] coordinates {
     (1960,0) (1970,0) (1980,0) (1990,0) (2000,50) (2010,300) (2020,700)
 };
 
 % بازچرخانی
-\addplot[color=orroyal, very thick, mark=triangle*] coordinates {
+\addplot[color=goldlight, ultrathick, mark=triangle*] coordinates {
     (1960,0) (1970,50) (1980,100) (1990,200) (2000,300) (2010,450) (2020,600)
 };
 
-\legend{منابع طبیعی, شیرین‌سازی, بازچرخانی فاضلاب}
+\legend{\rl{منابع طبیعی}, \rl{شیرین‌سازی}, \rl{بازچرخانی فاضلاب}}
 
 \end{axis}
 \end{tikzpicture}
 \caption{تحول ترکیب منابع آب اسرائیل}
-\label{fig:israel-water-sources}
 \end{figure}
 
 \subsection{چهار ستون موفقیت اسرائیل}
@@ -97,22 +96,19 @@
 \centering
 \caption{مقایسه شاخص‌های آب: اسرائیل و کشور ما}
 \label{tab:israel-comparison}
-\begin{tabular}{L{5cm} C{3cm} C{3cm}}
+\begin{tabularx}{\textwidth}{R{5cm} Y Y}
 \toprule
 \headmark شاخص & \headmark اسرائیل & \headmark کشور ما \\
 \midrule
-\rowcolor{vertlight}
 بارش سالانه (میلیمتر) & ۵۰۰ & ۲۵۰ \\
-\rowcolor{rougelight}
+\rowcolor{goldlight}
 بازچرخانی فاضلاب & ۸۷٪ & کمتر از ۱۰٪ \\
-\rowcolor{vertlight}
-آبیاری قطره‌ای/بارانی & ۷۵٪ اراضی & کمتر از ۱۵٪ \\
-\rowcolor{rougelight}
-اتلاف در شبکه توزیع & ۱۰٪ & ۳۰٪+ \\
-\rowcolor{vertlight}
-شیرین‌سازی & ۷۰٪ آب شرب & نزدیک صفر \\
+آبیاری نوین & ۷۵٪ اراضی & کمتر از ۱۵٪ \\
+\rowcolor{goldlight}
+اتلاف در شبکه & ۱۰٪ & ۳۰٪+ \\
+شیرین‌سازی & ۷۰٪ آب شرب & ناچیز \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{درس‌های اسرائیل}
@@ -121,20 +117,18 @@
 \centering
 \caption{درس‌های قابل انتقال از اسرائیل}
 \label{tab:israel-lessons}
-\begin{tabular}{L{3.5cm} L{4.5cm} L{4.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} R{4.5cm} Y}
 \toprule
-\headmark درس & \headmark کاربرد & \headmark چالش اجرا \\
+\headmark درس & \headmark کاربرد & \headmark ملاحظه \\
 \midrule
-\rowcolor{vertlight}
-آبیاری قطره‌ای & تغییر الگوی آبیاری & سرمایه اولیه بالا \\
-\rowcolor{vertlight}
+آبیاری قطره‌ای & تغییر الگوی کشاورزی & سرمایه اولیه بالا \\
+\rowcolor{goldlight}
 شیرین‌سازی & مناطق ساحلی جنوب & هزینه انرژی \\
-\rowcolor{vertlight}
-بازچرخانی فاضلاب & همه شهرهای بزرگ & زیرساخت + پذیرش فرهنگی \\
-\rowcolor{bleulight}
-قیمت‌گذاری واقعی & کاهش مصرف ناکارآمد & مقاومت سیاسی \\
+بازچرخانی فاضلاب & شهرهای بزرگ & پذیرش فرهنگی \\
+\rowcolor{goldlight}
+قیمت‌گذاری واقعی & کاهش مصرف & مقاومت سیاسی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -161,60 +155,22 @@
     tapbox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.5cm,
+        minimum width=3.2cm,
         minimum height=2cm,
         text centered,
-        font=\small,
+        font=\tiny\bfseries,
         line width=1.5pt
     }
 ]
 
 % چهار شیر
-\node[tapbox, draw=bleurepublique, fill=bleulight] (t1) at (0,0) {
-    \begin{tabular}{c}
-    \textbf{شیر ۱}\\[3pt]
-    آب وارداتی\\
-    {\scriptsize از مالزی}\\[3pt]
-    {\footnotesize ۴۰٪}
-    \end{tabular}
-};
-
-\node[tapbox, draw=vertnapoleon, fill=vertlight] (t2) at (5,0) {
-    \begin{tabular}{c}
-    \textbf{شیر ۲}\\[3pt]
-    جمع‌آوری باران\\
-    {\scriptsize ۱۷ مخزن}\\[3pt]
-    {\footnotesize ۲۰٪}
-    \end{tabular}
-};
-
-\node[tapbox, draw=violetempire, fill=violetlight] (t3) at (10,0) {
-    \begin{tabular}{c}
-    \textbf{شیر ۳}\\[3pt]
-    NEWater\\
-    {\scriptsize بازچرخانی}\\[3pt]
-    {\footnotesize ۳۰٪}
-    \end{tabular}
-};
-
-\node[tapbox, draw=orroyal, fill=orroyallight] (t4) at (15,0) {
-    \begin{tabular}{c}
-    \textbf{شیر ۴}\\[3pt]
-    شیرین‌سازی\\
-    {\scriptsize دریا}\\[3pt]
-    {\footnotesize ۱۰٪}
-    \end{tabular}
-};
-
-% هدف آینده
-\node[font=\small, text width=12cm, align=center] at (7.5,-2.5) {
-    \textbf{هدف ۲۰۶۰:} کاهش وابستگی به مالزی به صفر\\
-    NEWater: ۵۵٪ | شیرین‌سازی: ۲۵٪ | جمع‌آوری باران: ۲۰٪
-};
+\node[tapbox, draw=bleurepublique, fill=bleulight] (t1) at (0,0) {\rl{شیر ۱}\\\rl{واردات آب}\\{\tiny ۴۰٪}};
+\node[tapbox, draw=goldphoenix, fill=goldlight] (t2) at (4,0) {\rl{شیر ۲}\\\rl{جمع‌آوری باران}\\{\tiny ۲۰٪}};
+\node[tapbox, draw=bleurepublique, fill=bleurepublique, text=white] (t3) at (8,0) {\rl{شیر ۳}\\\rl{NEWater}\\{\tiny ۳۰٪}};
+\node[tapbox, draw=goldphoenix, fill=goldphoenix, text=white] (t4) at (12,0) {\rl{شیر ۴}\\\rl{شیرین‌سازی}\\{\tiny ۱۰٪}};
 
 \end{tikzpicture}
 \caption{استراتژی چهار شیر ملی سنگاپور}
-\label{fig:singapore-taps}
 \end{figure}
 
 \begin{olgoobox}[title={\hfill \textbf{NEWater: انقلاب بازچرخانی}}]
@@ -235,20 +191,18 @@ NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است
 \centering
 \caption{درس‌های قابل انتقال از سنگاپور}
 \label{tab:singapore-lessons}
-\begin{tabular}{L{4cm} L{8.5cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} Y}
 \toprule
 \headmark درس & \headmark توضیح \\
 \midrule
-\rowcolor{vertlight}
-تنوع منابع & وابستگی به یک منبع = آسیب‌پذیری \\
-\rowcolor{vertlight}
-بازچرخانی پیشرفته & با فناوری، فاضلاب به آب آشامیدنی تبدیل می‌شود \\
-\rowcolor{vertlight}
-آموزش عمومی & پذیرش فرهنگی به اندازه فناوری مهم است \\
-\rowcolor{vertlight}
-افق بلندمدت & برنامه‌ریزی ۵۰ ساله — نه فقط برای انتخابات بعدی \\
+تنوع منابع & کاهش آسیب‌پذیری با سبد منابع متنوع \\
+\rowcolor{goldlight}
+بازچرخانی هوشمند & تبدیل فاضلاب به آب شرب با فناوری بالا \\
+آموزش عمومی & ضرورت اقناع فرهنگی برای طرح‌های نوین \\
+\rowcolor{goldlight}
+افق بلندمدت & برنامه‌ریزی استراتژیک ۵۰ ساله \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -289,36 +243,21 @@ NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است
         minimum width=4cm,
         minimum height=1.5cm,
         text centered,
-        font=\small,
+        font=\small\bfseries,
         line width=1pt
     },
     arrow/.style={->, >=Stealth, thick}
 ]
 
 % قبل
-\node[box, draw=rougerevolution, fill=rougelight] (b1) at (0,0) {
-    \begin{tabular}{c}
-    \textbf{قبل}\\
-    آب = حق نامحدود\\
-    هدررفت گسترده
-    \end{tabular}
-};
-
-% بعد
-\node[box, draw=vertnapoleon, fill=vertlight] (b2) at (8,0) {
-    \begin{tabular}{c}
-    \textbf{بعد}\\
-    آب = دارایی قابل معامله\\
-    مصرف کارآمد
-    \end{tabular}
-};
+\node[box, draw=rougerevolution, fill=rougelight] (b1) at (0,0) {\rl{قبل از اصلاحات}\\{\tiny حق نامحدود}};
+\node[box, draw=bleurepublique, fill=bleulight] (b2) at (8,0) {\rl{بعد از اصلاحات}\\{\tiny دارایی قابل معامله}};
 
 % فلش
-\draw[arrow, very thick, color=bleurepublique] (b1) -- node[above, font=\small] {اصلاحات ۲۰۰۴-۲۰۰۷} (b2);
+\draw[arrow, ultra thick, color=goldphoenix] (b1) -- node[above, font=\tiny\bfseries] {\rl{اصلاحات بازار آب}} (b2);
 
 \end{tikzpicture}
 \caption{تحول مدل حکمرانی آب در استرالیا}
-\label{fig:australia-reform}
 \end{figure}
 
 \subsection{درس‌های استرالیا}
@@ -327,20 +266,18 @@ NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است
 \centering
 \caption{درس‌های قابل انتقال از استرالیا}
 \label{tab:australia-lessons}
-\begin{tabular}{L{4cm} L{4.5cm} L{4cm}}
+\begin{tabularx}{\textwidth}{R{3.5cm} R{4.5cm} Y}
 \toprule
 \headmark درس & \headmark کاربرد & \headmark چالش \\
 \midrule
-\rowcolor{vertlight}
-بازار آب & تخصیص کارآمد & نیاز به حقوق مالکیت روشن \\
-\rowcolor{vertlight}
-سقف برداشت & جلوگیری از تخلیه بیش از حد & مقاومت کشاورزان \\
-\rowcolor{bleulight}
-جبران کشاورزان & خرید حقوق آب توسط دولت & هزینه بالا \\
-\rowcolor{bleulight}
-نظارت دقیق & کنتورهای هوشمند & زیرساخت \\
+بازار آب & تخصیص بهینه منابع & حقوق مالکیت پیچیده \\
+\rowcolor{goldlight}
+سقف برداشت & حفظ پایداری حوضه & مقاومت اجتماعی \\
+جبران مالی & خرید حقوق آب & بار مالی بر دولت \\
+\rowcolor{goldlight}
+نظارت هوشمند & کنتورگذاری دقیق & هزینه زیرساختی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -355,75 +292,44 @@ NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است
     principle/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=4cm,
-        minimum height=1.8cm,
+        minimum width=3.8cm,
+        minimum height=1.5cm,
         text centered,
-        font=\small,
+        font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
         line width=1.5pt
+    },
+    center/.style={
+        circle,
+        minimum size=2.8cm,
+        text centered,
+        font=\small\bfseries,
+        draw=goldphoenix,
+        fill=goldphoenix,
+        text=white,
+        line width=2pt
     }
 ]
 
-% اصول
-\node[principle] (p1) at (0,3) {
-    \begin{tabular}{c}
-    \textbf{۱. مدیریت تقاضا}\\
-    {\scriptsize مهم‌تر از افزایش عرضه}
-    \end{tabular}
-};
-
-\node[principle] (p2) at (6,3) {
-    \begin{tabular}{c}
-    \textbf{۲. قیمت‌گذاری واقعی}\\
-    {\scriptsize آب رایگان = هدررفت}
-    \end{tabular}
-};
-
-\node[principle] (p3) at (12,3) {
-    \begin{tabular}{c}
-    \textbf{۳. تنوع منابع}\\
-    {\scriptsize وابستگی به یک منبع = ریسک}
-    \end{tabular}
-};
-
-\node[principle] (p4) at (0,0) {
-    \begin{tabular}{c}
-    \textbf{۴. فناوری}\\
-    {\scriptsize شیرین‌سازی + بازچرخانی}
-    \end{tabular}
-};
-
-\node[principle] (p5) at (6,0) {
-    \begin{tabular}{c}
-    \textbf{۵. حکمرانی یکپارچه}\\
-    {\scriptsize یک نهاد مسئول}
-    \end{tabular}
-};
-
-\node[principle] (p6) at (12,0) {
-    \begin{tabular}{c}
-    \textbf{۶. مشارکت محلی}\\
-    {\scriptsize ذینفعان در تصمیم‌گیری}
-    \end{tabular}
-};
-
 % مرکز
-\node[circle, minimum size=2.5cm, draw=vertnapoleon, fill=vertlight, line width=2pt] at (6,-3) {
-    \begin{tabular}{c}
-    \textbf{آب}\\
-    \textbf{پایدار}
-    \end{tabular}
-};
+\node[center] (c) at (6,-3) {\rl{آب پایدار}};
+
+% اصول
+\node[principle] (p1) at (0,3) {\rl{مدیریت تقاضا}};
+\node[principle] (p2) at (6,3) {\rl{قیمت‌گذاری واقعی}};
+\node[principle] (p3) at (12,3) {\rl{تنوع منابع}};
+\node[principle] (p4) at (0,0) {\rl{شیرین‌سازی}};
+\node[principle] (p5) at (6,0) {\rl{حکمرانی یکپارچه}};
+\node[principle] (p6) at (12,0) {\rl{مشارکت محلی}};
 
 % اتصالات
 \foreach \p in {p1,p2,p3,p4,p5,p6} {
-    \draw[->, >=Stealth, thick, color=vertnapoleon] (\p) -- (6,-1.5);
+    \draw[->, >=Stealth, ultra thick, color=goldphoenix] (\p) -- (c);
 }
 
 \end{tikzpicture}
 \caption{شش اصل جهانی مدیریت پایدار آب}
-\label{fig:water-principles}
 \end{figure}
 
 %══════════════════════════════════════════════════════════════════════════════

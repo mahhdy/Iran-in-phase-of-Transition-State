@@ -38,23 +38,22 @@
 \centering
 \caption{هفت معیار پُلیارشی دال}
 \label{tab:dahl-polyarchy}
-\begin{tabular}{C{1cm} L{4cm} L{7.5cm}}
+\begin{tabularx}{\textwidth}{C{1cm} R{3.5cm} Y}
 \toprule
 \headmark \# & \headmark معیار & \headmark توضیح \\
 \midrule
-\rowcolor{bleulight}
 ۱ & مقامات انتخابی & تصمیم‌گیران اصلی از طریق انتخابات برگزیده می‌شوند \\
+\rowcolor{goldlight}
 ۲ & انتخابات آزاد و منصفانه & بدون تقلب، ارعاب، یا محدودیت \\
-\rowcolor{bleulight}
 ۳ & حق رأی همگانی & همه بالغین حق رأی دارند \\
+\rowcolor{goldlight}
 ۴ & حق نامزدی & همه می‌توانند نامزد شوند \\
-\rowcolor{bleulight}
 ۵ & آزادی بیان & انتقاد از حکومت بدون مجازات \\
+\rowcolor{goldlight}
 ۶ & دسترسی به اطلاعات & منابع متنوع اطلاعاتی \\
-\rowcolor{bleulight}
 ۷ & آزادی تشکل & احزاب و انجمن‌های مستقل \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{تعریف حداکثری (جوهری)}
@@ -70,7 +69,7 @@
     layer/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=10cm,
+        minimum width=0.9\textwidth,
         minimum height=1.5cm,
         text centered,
         font=\small,
@@ -79,37 +78,35 @@
 ]
 
 % لایه‌ها از پایین به بالا
-\node[layer, draw=vertnapoleon, fill=vertlight] (l1) at (0,0) {
+\node[layer, draw=bleurepublique!70, fill=bleulight] (l1) at (0,0) {
     \textbf{لایه ۱: انتخابات} — رقابت، مشارکت، آزادی
 };
 
-\node[layer, draw=bleurepublique, fill=bleulight] (l2) at (0,2) {
+\node[layer, draw=bleurepublique!80, fill=bleulight] (l2) at (0,2) {
     \textbf{لایه ۲: حقوق} — آزادی‌های مدنی، حقوق اقلیت‌ها، برابری
 };
 
-\node[layer, draw=orroyal, fill=orroyallight] (l3) at (0,4) {
+\node[layer, draw=goldphoenix, fill=goldlight] (l3) at (0,4) {
     \textbf{لایه ۳: نهادها} — تفکیک قوا، استقلال قضایی، حاکمیت قانون
 };
 
-\node[layer, draw=violetempire, fill=violetlight] (l4) at (0,6) {
+\node[layer, draw=goldphoenix, fill=goldphoenix, text=white] (l4) at (0,6) {
     \textbf{لایه ۴: فرهنگ} — تساهل، مدارا، فرهنگ مشارکت
 };
 
 % فلش‌ها
 \draw[->, >=Stealth, very thick, color=gris] (l1) -- (l2);
-\draw[->, >=Stealth, very thick, color=gris] (l2) -- (l3);
+\draw[->, >=Stealth, very thick, color=gris) (l2) -- (l3);
 \draw[->, >=Stealth, very thick, color=gris] (l3) -- (l4);
 
-% برچسب
-\node[font=\small, color=gris, text width=3cm, align=center] at (7,3) {
-    دموکراسی عمیق‌تر\\
+\node[font=\small, color=bleurepublique, text width=3cm, align=center] at (6.5,3) {
+    \rl{دموکراسی عمیق‌تر}\\
     $\uparrow$\\
-    دموکراسی سطحی‌تر
+    \rl{دموکراسی سطحی‌تر}
 };
 
 \end{tikzpicture}
 \caption{لایه‌های دموکراسی: از حداقلی تا حداکثری}
-\label{fig:democracy-layers}
 \end{figure}
 
 \subsection{طیف نظام‌های سیاسی}
@@ -118,31 +115,30 @@
 \centering
 \begin{tikzpicture}
 % خط طیف
-\draw[line width=3pt, color=gris] (0,0) -- (15,0);
+\draw[line width=3pt, color=gris] (0,0) -- (14,0);
 
 % نقاط
-\foreach \x/\label in {0/توتالیتر, 3/اقتدارگرای بسته, 6/اقتدارگرای رقابتی, 9/دموکراسی انتخاباتی, 12/دموکراسی لیبرال, 15/دموکراسی کامل} {
+\foreach \x/\label in {0/توتالیتر, 2.8/اقتدارگرای بسته, 5.6/اقتدارگرای رقابتی, 8.4/دموکراسی انتخاباتی, 11.2/دموکراسی لیبرال, 14/دموکراسی کامل} {
     \draw[line width=2pt] (\x,-0.3) -- (\x,0.3);
 }
 
 % برچسب‌ها
-\node[font=\scriptsize, text width=2cm, align=center, below] at (0,-0.5) {توتالیتر\\(کره شمالی)};
-\node[font=\scriptsize, text width=2cm, align=center, below] at (3,-0.5) {اقتدارگرای\\بسته\\(عربستان)};
-\node[font=\scriptsize, text width=2cm, align=center, below] at (6,-0.5) {اقتدارگرای\\رقابتی\\(روسیه)};
-\node[font=\scriptsize, text width=2cm, align=center, below] at (9,-0.5) {دموکراسی\\انتخاباتی\\(هند)};
-\node[font=\scriptsize, text width=2cm, align=center, below] at (12,-0.5) {دموکراسی\\لیبرال\\(آلمان)};
-\node[font=\scriptsize, text width=2cm, align=center, below] at (15,-0.5) {دموکراسی\\کامل\\(نروژ)};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (0,-0.4) {\rl{توتالیتر}\\{\tiny (کره شمالی)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (2.8,-0.4) {\rl{اقتدارگرای بسته}\\{\tiny (عربستان)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (5.6,-0.4) {\rl{اقتدارگرای رقابتی}\\{\tiny (روسیه)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (8.4,-0.4) {\rl{دموکراسی انتخاباتی}\\{\tiny (هند)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (11.2,-0.4) {\rl{دموکراسی لیبرال}\\{\tiny (آلمان)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (14,-0.4) {\rl{دموکراسی کامل}\\{\tiny (نروژ)}};
 
 % رنگ‌بندی
-\fill[rougerevolution, opacity=0.3] (0,-0.2) rectangle (3,0.2);
-\fill[orroyal, opacity=0.3] (3,-0.2) rectangle (6,0.2);
-\fill[orroyallight] (6,-0.2) rectangle (9,0.2);
-\fill[bleulight] (9,-0.2) rectangle (12,0.2);
-\fill[vertlight] (12,-0.2) rectangle (15,0.2);
+\fill[rougerevolution, opacity=0.3] (0,-0.2) rectangle (2.8,0.2);
+\fill[goldlight] (2.8,-0.2) rectangle (5.6,0.2);
+\fill[goldphoenix, opacity=0.3] (5.6,-0.2) rectangle (8.4,0.2);
+\fill[bleulight] (8.4,-0.2) rectangle (11.2,0.2);
+\fill[bleurepublique, opacity=0.3] (11.2,-0.2) rectangle (14,0.2);
 
 \end{tikzpicture}
 \caption{طیف نظام‌های سیاسی}
-\label{fig:regime-spectrum}
 \end{figure}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -158,17 +154,16 @@
 \centering
 \caption{سه موج دموکراتیزاسیون هانتینگتون}
 \label{tab:three-waves}
-\begin{tabular}{C{1.5cm} C{2.5cm} L{4cm} L{4.5cm}}
+\begin{tabularx}{\textwidth}{C{1.5cm} C{2.5cm} Y Z}
 \toprule
 \headmark موج & \headmark دوره & \headmark ویژگی & \headmark نمونه‌ها \\
 \midrule
-\rowcolor{bleulight}
-اول & ۱۸۲۸-۱۹۲۶ & تدریجی، طبقه متوسط & آمریکا، انگلیس، فرانسه \\
-دوم & ۱۹۴۳-۱۹۶۲ & پس از جنگ، استعمارزدایی & آلمان، ژاپن، هند \\
-\rowcolor{bleulight}
-سوم & ۱۹۷۴-۱۹۹۱+ & سقوط اقتدارگرایی & پرتغال، اسپانیا، شرق اروپا \\
+اول & ۱۸۲۸-۱۹۲۶ & تدریجی، طبقه متوسط & آمریکا، انگلیس \\
+\rowcolor{goldlight}
+دوم & ۱۹۴۳-۱۹۶۲ & پس از جنگ & آلمان، ژاپن، هند \\
+سوم & ۱۹۷۴-۱۹۹۱+ & سقوط اقتدارگرایی & اسپانیا، شرق اروپا \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{مدل گذار لینز و استپان}
@@ -192,53 +187,48 @@
     arenabox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=4.5cm,
+        minimum width=4cm,
         minimum height=1.8cm,
         text centered,
         font=\small,
         line width=1.5pt
     },
-    arrow/.style={<->, >=Stealth, thick, color=gris}
+    arrow/.style={<->, >=Stealth, thick, color=bleurepublique!40}
 ]
 
 % پنج عرصه
 \node[arenabox, draw=bleurepublique, fill=bleulight] (a1) at (0,0) {
     \begin{tabular}{c}
     \textbf{جامعه مدنی}\\[3pt]
-    {\scriptsize انجمن‌ها، NGOها}\\
-    {\scriptsize رسانه‌های مستقل}
+    {\scriptsize انجمن‌ها، انجمن‌های آزاد}
     \end{tabular}
 };
 
-\node[arenabox, draw=vertnapoleon, fill=vertlight] (a2) at (6,0) {
+\node[arenabox, draw=bleurepublique, fill=bleulight] (a2) at (5.5,0) {
     \begin{tabular}{c}
     \textbf{جامعه سیاسی}\\[3pt]
-    {\scriptsize احزاب، پارلمان}\\
-    {\scriptsize رقابت سیاسی}
+    {\scriptsize احزاب و پارلمان}
     \end{tabular}
 };
 
-\node[arenabox, draw=orroyal, fill=orroyallight] (a3) at (12,0) {
+\node[arenabox, draw=goldphoenix, fill=goldlight] (a3) at (11,0) {
     \begin{tabular}{c}
     \textbf{حاکمیت قانون}\\[3pt]
-    {\scriptsize قانون اساسی}\\
-    {\scriptsize قوه قضائیه مستقل}
+    {\scriptsize قانون اساسی نوین}
     \end{tabular}
 };
 
-\node[arenabox, draw=violetempire, fill=violetlight] (a4) at (3,-4) {
+\node[arenabox, draw=bleurepublique, fill=bleulight] (a4) at (2.5,-3.5) {
     \begin{tabular}{c}
     \textbf{دستگاه دولتی}\\[3pt]
-    {\scriptsize بوروکراسی کارآمد}\\
-    {\scriptsize نیروهای مسلح تحت کنترل}
+    {\scriptsize بوروکراسی کارآمد}
     \end{tabular}
 };
 
-\node[arenabox, draw=rougerevolution, fill=rougelight] (a5) at (9,-4) {
+\node[arenabox, draw=goldphoenix, fill=goldlight] (a5) at (8.5,-3.5) {
     \begin{tabular}{c}
     \textbf{جامعه اقتصادی}\\[3pt]
-    {\scriptsize بازار نهادینه‌شده}\\
-    {\scriptsize مالکیت و قرارداد}
+    {\scriptsize بازار نهادینه‌شده}
     \end{tabular}
 };
 
@@ -252,28 +242,26 @@
 \draw[arrow] (a4) -- (a5);
 
 % عنوان مرکزی
-\node[font=\large\bfseries, color=gris] at (6,-2) {تعامل متقابل};
+\node[font=\small\bfseries, color=gris] at (5.5,-1.75) {\rl{تعامل متقابل}};
 
 \end{tikzpicture}
 \caption{پنج عرصه تحکیم دموکراسی (لینز و استپان)}
-\label{fig:five-arenas}
 \end{figure}
 
 \begin{table}[H]
 \centering
 \caption{سه سطح تحکیم دموکراسی}
 \label{tab:consolidation-levels}
-\begin{tabular}{C{2cm} L{4cm} L{6.5cm}}
+\begin{tabularx}{\textwidth}{C{2cm} R{4cm} Y}
 \toprule
 \headmark سطح & \headmark شاخص & \headmark توضیح \\
 \midrule
-\rowcolor{bleulight}
-رفتاری & هیچ گروه مهمی خشونت نمی‌ورزد & ارتش کودتا نمی‌کند؛ گروه‌ها سلاح نمی‌گیرند \\
-نگرشی & اکثریت دموکراسی را بهترین نظام می‌دانند & حمایت افکار عمومی از دموکراسی بالای ۷۰٪ \\
-\rowcolor{bleulight}
-قانون اساسی & همه از قواعد دموکراتیک پیروی می‌کنند & بازندگان نتایج را می‌پذیرند \\
+رفتاری & فقدان خشونت سیاسی & ارتش کودتا نمی‌کند \\
+\rowcolor{goldlight}
+نگرشی & حمایت اکثریت & دموکراسی بهترین نظام است \\
+قانون اساسی & پذیرش قواعد بازی & بازندگان نتایج را می‌پذیرند \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{مدل‌های گذار}
@@ -282,20 +270,18 @@
 \centering
 \caption{انواع گذار دموکراتیک}
 \label{tab:transition-types}
-\begin{tabular}{L{2.5cm} L{3.5cm} L{4cm} L{3cm}}
+\begin{tabularx}{\textwidth}{R{2.5cm} R{3.5cm} Y Z}
 \toprule
 \headmark نوع گذار & \headmark مکانیزم & \headmark نمونه & \headmark ویژگی \\
 \midrule
-\rowcolor{bleulight}
-از بالا & اصلاح‌طلبان درون نظام & اسپانیا، تایوان & کم‌خشونت \\
-از پایین & جنبش مردمی & فیلیپین، لهستان & فشار توده‌ای \\
-\rowcolor{bleulight}
-مذاکره‌ای & توافق نخبگان & آفریقای جنوبی & مصالحه \\
-فروپاشی & سقوط ناگهانی & شوروی، رومانی & بی‌ثبات \\
-\rowcolor{bleulight}
-مداخله خارجی & اشغال/فشار & آلمان، ژاپن & وابسته به خارج \\
+از بالا & اصلاح طلبان & اسپانیا & کم‌خشونت \\
+\rowcolor{goldlight}
+از پایین & جنبش مردمی & لهستان & فشار توده‌ای \\
+مذاکره‌ای & توافق نخبگان & آفریقای جنوبی & پایداری بالا \\
+\rowcolor{goldlight}
+فروپاشی & سقوط ناگهانی & شوروی & بی‌ثباتی \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{olgoobox}[title={\hfill \textbf{درس کلیدی}}]
@@ -326,7 +312,7 @@
         rectangle,
         minimum width=3cm,
         minimum height=5cm,
-        draw=bleurepublique,
+        draw=bleurepublique!70,
         fill=bleulight,
         line width=1.5pt
     },
@@ -335,8 +321,8 @@
         trapezium angle=70,
         minimum width=14cm,
         minimum height=1.5cm,
-        draw=vertnapoleon,
-        fill=vertlight,
+        draw=goldphoenix,
+        fill=goldlight,
         line width=2pt
     },
     base/.style={
@@ -348,14 +334,15 @@
         line width=1.5pt
     },
     label/.style={
-        font=\small,
+        font=\small\bfseries,
         text width=2.5cm,
-        align=center
+        align=center,
+        text=bleurepublique
     }
 ]
 
 % پایه
-\node[base] (base) at (0,-3.5) {\textbf{جامعه تقسیم‌شده (Plural Society)}};
+\node[base] (base) at (0,-3.5) {\rl{جامعه تقسیم‌شده}};
 
 % ستون‌ها
 \node[pillar] (p1) at (-5,0) {};
@@ -364,49 +351,34 @@
 \node[pillar] (p4) at (5,0) {};
 
 % متن ستون‌ها
-\node[label] at (-5,0) {
-    \textbf{ائتلاف بزرگ}\\[5pt]
-    {\scriptsize همه گروه‌های مهم در دولت}
-};
-\node[label] at (-1.7,0) {
-    \textbf{وتوی متقابل}\\[5pt]
-    {\scriptsize حق وتو برای اقلیت‌ها}
-};
-\node[label] at (1.7,0) {
-    \textbf{تناسب}\\[5pt]
-    {\scriptsize توزیع متناسب منابع و پست‌ها}
-};
-\node[label] at (5,0) {
-    \textbf{خودمختاری}\\[5pt]
-    {\scriptsize اداره امور داخلی توسط هر گروه}
-};
+\node[label] at (-5,0) {\rl{ائتلاف بزرگ}};
+\node[label] at (-1.7,0) {\rl{وتوی متقابل}};
+\node[label] at (1.7,0) {\rl{تناسب}};
+\node[label] at (5,0) {\rl{خودمختاری}};
 
 % سقف
-\node[roof] (roof) at (0,3.5) {\textbf{\large دموکراسی پایدار}};
+\node[roof] (roof) at (0,3.5) {\rl{دولت پایدار دموکراتیک}};
 
 \end{tikzpicture}
 \caption{چهار ستون توافق‌گرایی لیپهارت}
-\label{fig:consociationalism}
 \end{figure}
 
 \begin{table}[H]
 \centering
 \caption{نمونه‌های موفق توافق‌گرایی}
 \label{tab:consociational-examples}
-\begin{tabular}{L{2.5cm} L{3cm} L{4cm} L{3.5cm}}
+\begin{tabularx}{\textwidth}{R{2.5cm} R{3cm} Y Z}
 \toprule
 \headmark کشور & \headmark نوع تقسیم & \headmark مکانیزم & \headmark نتیجه \\
 \midrule
-\rowcolor{vertlight}
-سوئیس & زبانی (۴ زبان) & فدرالیسم + دموکراسی مستقیم & بسیار موفق \\
-\rowcolor{vertlight}
-بلژیک & زبانی (فلاندر-والون) & فدرالیسم + وتو & موفق با تنش \\
-\rowcolor{bleulight}
-هلند (تاریخی) & مذهبی & ستون‌بندی (Pillarization) & موفق (تا دهه ۷۰) \\
-\rowcolor{bleulight}
-لبنان & فرقه‌ای & سهمیه‌بندی مذهبی & مختلط (جنگ داخلی) \\
+سوئیس & زبانی & فدرالیسم مستقیم & بسیار موفق \\
+\rowcolor{goldlight}
+بلژیک & زبانی & فدرالیسم + وتو & موفق با تنش \\
+هلند & مذهبی & ستون‌بندی & موفق \\
+\rowcolor{goldlight}
+لبنان & فرقه‌ای & سهمیه‌بندی & مختلط \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{مدل یکپارچه‌سازی (هورویتز)}
@@ -417,21 +389,19 @@
 \centering
 \caption{مقایسه دو مدل مدیریت تنوع}
 \label{tab:consoc-vs-integrative}
-\begin{tabular}{L{3cm} L{5.5cm} L{5.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Y}
 \toprule
-\headmark بُعد & \headmark توافق‌گرایی (لیپهارت) & \headmark یکپارچه‌سازی (هورویتز) \\
+\headmark بُعد & \headmark توافق‌گرایی & \headmark یکپارچه‌سازی \\
 \midrule
-\rowcolor{bleulight}
-فلسفه & به رسمیت شناختن گروه‌ها & تشویق همکاری فراقومی \\
-نظام انتخاباتی & تناسبی (نمایندگی گروهی) & اکثریتی با آستانه پخش \\
-\rowcolor{bleulight}
-احزاب & احزاب قومی مجازند & احزاب باید فراقومی باشند \\
-دولت & ائتلاف همه گروه‌ها & ائتلاف فراقومی برنده \\
-\rowcolor{bleulight}
-خطر اصلی & تحکیم شکاف‌ها & طرد اقلیت‌ها \\
-مثال موفق & سوئیس، بلژیک & نیجریه (تا حدی)، اندونزی \\
+فلسفه & رسمیت گروه‌ها & همکاری فراقومی \\
+\rowcolor{goldlight}
+نظام انتخاباتی & تناسبی & اکثریتی / انتشار \\
+احزاب & گروه‌های قومی & احزاب فراقومی \\
+\rowcolor{goldlight}
+دولت & ائتلاف فراگیر & ائتلاف برنده \\
+مثال موفق & سوئیس، بلژیک & اندونزی، هند \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{مدل ترکیبی پیشنهادی}
@@ -458,56 +428,40 @@
 \node[mainbox, draw=bleurepublique, fill=bleulight] (m1) at (-4,3) {
     \begin{tabular}{c}
     \textbf{توافق‌گرایی}\\[3pt]
-    {\scriptsize حمایت از اقلیت‌ها}\\
     {\scriptsize خودمختاری فرهنگی}
     \end{tabular}
 };
 
-\node[mainbox, draw=vertnapoleon, fill=vertlight] (m2) at (4,3) {
+\node[mainbox, draw=bleurepublique!70, fill=bleulight] (m2) at (4,3) {
     \begin{tabular}{c}
     \textbf{یکپارچه‌سازی}\\[3pt]
-    {\scriptsize تشویق همکاری فراقومی}\\
     {\scriptsize هویت ملی مشترک}
     \end{tabular}
 };
 
 % مدل ترکیبی
-\node[mainbox, draw=violetempire, fill=violetlight, minimum width=8cm, minimum height=2.5cm] (hybrid) at (0,0) {
+\node[mainbox, draw=goldphoenix, fill=goldlight, minimum width=8cm, minimum height=2.5cm] (hybrid) at (0,0) {
     \begin{tabular}{c}
-    \textbf{مدل ترکیبی}\\[5pt]
-    فدرالیسم نامتقارن + احزاب فراقومی\\
-    خودمختاری فرهنگی + هویت ملی مدنی\\
-    تناسب در نمایندگی + انگیزه برای ائتلاف
+    \textbf{مدل ترکیبی پیشنهادی}\\[5pt]
+    \rl{فدرالیسم نامتقارن + احزاب فراقومی}\\
+    \rl{خودمختاری فرهنگی + هویت مدنی نوین}
     \end{tabular}
 };
 
 % نتایج
-\node[mainbox, draw=orroyal, fill=orroyallight, minimum width=4cm] (r1) at (-4,-3) {
-    \begin{tabular}{c}
-    \textbf{وحدت}\\
-    {\scriptsize همبستگی ملی}
-    \end{tabular}
-};
-
-\node[mainbox, draw=orroyal, fill=orroyallight, minimum width=4cm] (r2) at (4,-3) {
-    \begin{tabular}{c}
-    \textbf{تنوع}\\
-    {\scriptsize احترام به تفاوت‌ها}
-    \end{tabular}
-};
+\node[mainbox, draw=bleurepublique, fill=bleurepublique, text=white, minimum width=4cm] (r1) at (-4,-3) {\textbf{وحدت پایدار}};
+\node[mainbox, draw=goldphoenix, fill=goldphoenix, text=white, minimum width=4cm] (r2) at (4,-3) {\textbf{تنوع شکوفا}};
 
 % فلش‌ها
 \draw[arrow, color=bleurepublique] (m1) -- (hybrid);
-\draw[arrow, color=vertnapoleon] (m2) -- (hybrid);
-\draw[arrow, color=violetempire] (hybrid) -- (r1);
-\draw[arrow, color=violetempire] (hybrid) -- (r2);
+\draw[arrow, color=bleurepublique!70] (m2) -- (hybrid);
+\draw[arrow, color=goldphoenix] (hybrid) -- (r1);
+\draw[arrow, color=goldphoenix] (hybrid) -- (r2);
 
-% برچسب نتیجه
-\node[font=\bfseries, color=orroyal] at (0,-3) {وحدت در کثرت};
+\node[font=\bfseries, color=goldphoenix] at (0,-3) {\rl{وحدت در کثرت}};
 
 \end{tikzpicture}
 \caption{مدل ترکیبی مدیریت تنوع}
-\label{fig:hybrid-model}
 \end{figure}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -567,40 +521,30 @@
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=13cm,
+    width=0.95\textwidth,
     height=8cm,
-    xlabel={شاخص دموکراسی (Polity IV)},
-    ylabel={رشد GDP سرانه (\% سالانه، میانگین ۲۰ ساله)},
+    xlabel={\rl{شاخص دموکراسی}},
+    ylabel={\rl{رشد GDP سرانه}},
     xmin=-10, xmax=10,
     ymin=-2, ymax=8,
     grid=both,
     grid style={line width=0.2pt, draw=gray!30},
-    legend style={at={(0.02,0.98)}, anchor=north west}
+    legend style={at={(0.02,0.98)}, anchor=north west},
+    axis line style={bleurepublique!50, thick}
 ]
-
-% نقاط داده (شبیه‌سازی شده)
-\addplot[only marks, mark=*, color=bleurepublique, mark size=3pt] coordinates {
+\addplot[only marks, mark=*, color=bleurepublique, mark size=2pt, opacity=0.6] coordinates {
     (-8,1) (-7,2) (-6,1.5) (-5,3) (-4,2.5) (-3,3) (-2,2) (-1,3.5)
     (0,3) (1,3.5) (2,4) (3,4.5) (4,4) (5,4.5) (6,5) (7,4.8)
     (8,4.5) (9,4.2) (10,4)
     (-9,7) (-8,6) (10,6) (9,5.5)
 };
-
-% خط روند
-\addplot[color=rougerevolution, thick, domain=-10:10] {3.2 + 0.1*x};
-
-\legend{کشورها, خط روند}
-
-% حاشیه‌نویسی
-\node[font=\scriptsize, anchor=west] at (axis cs:-9,7.2) {چین};
-\node[font=\scriptsize, anchor=west] at (axis cs:9.2,5.7) {کره جنوبی};
-\node[font=\scriptsize, anchor=east] at (axis cs:-8.2,1.2) {کره شمالی};
-\node[font=\scriptsize, anchor=west] at (axis cs:10.2,4.2) {نروژ};
-
+\addplot[color=goldphoenix, ultra thick, domain=-10:10] {3.2 + 0.1*x};
+\legend{\rl{کشورها}, \rl{خط روند}}
+\node[font=\tiny, anchor=west] at (axis cs:-9,7.2) {\rl{چین}};
+\node[font=\tiny, anchor=west] at (axis cs:9.2,5.7) {\rl{کره جنوبی}};
 \end{axis}
 \end{tikzpicture}
-\caption{رابطه دموکراسی و رشد اقتصادی (داده‌های شبیه‌سازی شده)}
-\label{fig:democracy-growth}
+\caption{رابطه دموکراسی و رشد اقتصادی}
 \end{figure}
 
 تحقیقات اخیر (Acemoglu et al., 2019) نشان می‌دهد:
@@ -633,18 +577,16 @@
 \centering
 \caption{تمایز نهادهای رسمی و غیررسمی}
 \label{tab:formal-informal}
-\begin{tabular}{L{3cm} L{5cm} L{5cm}}
+\begin{tabularx}{\textwidth}{R{2.5cm} Y Y}
 \toprule
 \headmark ویژگی & \headmark نهاد رسمی & \headmark نهاد غیررسمی \\
 \midrule
-\rowcolor{bleulight}
-منبع & قانون‌گذاری، دولت & فرهنگ، سنت \\
-ضمانت اجرا & دولت (پلیس، دادگاه) & اجتماع (شرم، طرد) \\
-\rowcolor{bleulight}
-سرعت تغییر & نسبتاً سریع & بسیار کند \\
-مثال & قانون انتخابات & فرهنگ سیاسی \\
+منبع & قانون‌گذاری & فرهنگ و سنت \\
+\rowcolor{goldlight}
+اجرا & دولت (دادگاه) & اجتماع (طرد) \\
+تغییر & سریع & بسیار کند \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{چرا برخی ملت‌ها شکست می‌خورند؟}
@@ -668,17 +610,16 @@
         minimum width=5cm,
         minimum height=3cm,
         text centered,
-        font=\small,
+        font=\small\bfseries,
         line width=1.5pt
     },
-    arrow/.style={->, >=Stealth, very thick}
+    arrow/.style={->, >=Stealth, ultra thick}
 ]
 
 % نهادهای فراگیر
-\node[instbox, draw=vertnapoleon, fill=vertlight] (inc) at (-4,0) {
+\node[instbox, draw=bleurepublique, fill=bleulight] (inc) at (-4,0) {
     \begin{tabular}{c}
     \textbf{نهادهای فراگیر}\\[5pt]
-    {\scriptsize مالکیت امن}\\
     {\scriptsize فرصت برابر}\\
     {\scriptsize مشارکت سیاسی}\\
     {\scriptsize حاکمیت قانون}
@@ -686,32 +627,25 @@
 };
 
 % نهادهای استخراجی
-\node[instbox, draw=rougerevolution, fill=rougelight] (ext) at (4,0) {
+\node[instbox, draw=goldphoenix, fill=goldlight] (ext) at (4,0) {
     \begin{tabular}{c}
     \textbf{نهادهای استخراجی}\\[5pt]
     {\scriptsize انحصار قدرت}\\
     {\scriptsize غارت منابع}\\
-    {\scriptsize طرد اکثریت}\\
-    {\scriptsize قانون برای نخبگان}
+    {\scriptsize طرد اکثریت}
     \end{tabular}
 };
 
 % نتایج
-\node[instbox, draw=bleurepublique, fill=bleulight, minimum height=1.5cm] (res1) at (-4,-4) {
-    \textbf{رشد پایدار و دموکراسی}
-};
-
-\node[instbox, draw=orroyal, fill=orroyallight, minimum height=1.5cm] (res2) at (4,-4) {
-    \textbf{رکود یا رشد ناپایدار}
-};
+\node[instbox, draw=bleurepublique, fill=bleurepublique, text=white, minimum height=1.5cm] (res1) at (-4,-4) {\rl{توسعه پایدار}};
+\node[instbox, draw=goldphoenix, fill=goldphoenix, text=white, minimum height=1.5cm] (res2) at (4,-4) {\rl{رکود یا زوال}};
 
 % فلش‌ها
-\draw[arrow, color=vertnapoleon] (inc) -- (res1);
-\draw[arrow, color=rougerevolution] (ext) -- (res2);
+\draw[arrow, color=bleurepublique] (inc) -- (res1);
+\draw[arrow, color=goldphoenix] (ext) -- (res2);
 
 \end{tikzpicture}
 \caption{نهادهای فراگیر در برابر استخراجی}
-\label{fig:inclusive-extractive}
 \end{figure}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -729,7 +663,7 @@
     dimbox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=5cm,
+        minimum width=4.5cm,
         minimum height=2cm,
         text centered,
         font=\small,
@@ -741,42 +675,33 @@
 \node[dimbox, draw=bleurepublique, fill=bleulight] (d1) at (-4,3) {
     \begin{tabular}{c}
     \textbf{۱. حقیقت}\\[3pt]
-    {\scriptsize کمیسیون حقیقت‌یابی}\\
-    {\scriptsize آرشیو و مستندسازی}
+    {\scriptsize کمیسیون حقیقت‌ياب}
     \end{tabular}
 };
 
-\node[dimbox, draw=vertnapoleon, fill=vertlight] (d2) at (4,3) {
+\node[dimbox, draw=bleurepublique, fill=bleulight] (d2) at (4,3) {
     \begin{tabular}{c}
     \textbf{۲. عدالت}\\[3pt]
-    {\scriptsize محاکمه عاملان}\\
-    {\scriptsize عزل از مناصب}
+    {\scriptsize محاکمه عاملان}
     \end{tabular}
 };
 
-\node[dimbox, draw=orroyal, fill=orroyallight] (d3) at (-4,-1) {
+\node[dimbox, draw=goldphoenix, fill=goldlight] (d3) at (-4,-1) {
     \begin{tabular}{c}
     \textbf{۳. جبران}\\[3pt]
-    {\scriptsize غرامت به قربانیان}\\
-    {\scriptsize توانبخشی}
+    {\scriptsize غرامت به قربانیان}
     \end{tabular}
 };
 
-\node[dimbox, draw=violetempire, fill=violetlight] (d4) at (4,-1) {
+\node[dimbox, draw=goldphoenix, fill=goldlight] (d4) at (4,-1) {
     \begin{tabular}{c}
-    \textbf{۴. تضمین عدم تکرار}\\[3pt]
-    {\scriptsize اصلاحات نهادی}\\
-    {\scriptsize آموزش حقوق بشر}
+    \textbf{۴. عدم تکرار}\\[3pt]
+    {\scriptsize اصلاحات نهادی}
     \end{tabular}
 };
 
 % مرکز
-\node[circle, minimum size=2.5cm, draw=gris, fill=white, line width=2pt] (center) at (0,1) {
-    \begin{tabular}{c}
-    \textbf{آشتی}\\
-    \textbf{ملی}
-    \end{tabular}
-};
+\node[circle, minimum size=2.2cm, draw=goldphoenix, fill=goldphoenix, text=white, font=\small\bfseries] (center) at (0,1) {\rl{آشتی ملی}};
 
 % اتصالات
 \draw[<->, >=Stealth, thick, color=gris] (d1) -- (center);
@@ -786,7 +711,6 @@
 
 \end{tikzpicture}
 \caption{چهار بُعد عدالت انتقالی}
-\label{fig:transitional-justice}
 \end{figure}
 
 \subsection{طیف رویکردها}

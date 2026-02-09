@@ -49,80 +49,35 @@
     transform shape,
     priority/.style={
         rectangle,
-        rounded corners=5pt,
-        minimum width=3.2cm,
-        minimum height=1.4cm,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
+        rounded corners=6pt,
+        minimum width=3.5cm,
+        minimum height=1.5cm,
+        text centered,
         font=\small\bfseries,
-        align=center
-    }
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt
+    },
+    label/.style={font=\bfseries, color=goldphoenix}
 ]
 
-% ستون اول - اولویت حیاتی
-\node[font=\bfseries, text=red!70] at (0,4) {اولویت حیاتی};
-\node[priority=red] (p1) at (0,2.5) {
-    \begin{tabular}{c}
-    استقلال\\
-    قوه قضائیه
-    \end{tabular}
-};
-\node[priority=red] (p2) at (0,0.5) {
-    \begin{tabular}{c}
-    نظام فدرالی\\
-    و استان‌ها
-    \end{tabular}
-};
+% سطوح
+\node[label] at (0,4.5) {\rl{حیاتی}};
+\node[label] at (4.5,4.5) {\rl{بالا}};
+\node[label] at (9,4.5) {\rl{متوسط}};
 
-% ستون دوم - اولویت بالا
-\node[font=\bfseries, text=orange!70] at (4.5,4) {اولویت بالا};
-\node[priority=orange] (p3) at (4.5,2.5) {
-    \begin{tabular}{c}
-    نهادهای\\
-    نظارتی مستقل
-    \end{tabular}
-};
-\node[priority=orange] (p4) at (4.5,0.5) {
-    \begin{tabular}{c}
-    اصلاح نظام\\
-    آموزشی
-    \end{tabular}
-};
+% اولویت‌ها
+\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (p1) at (0,2.5) {\rl{استقلال قضا}};
+\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (p2) at (0,0.5) {\rl{فدرالیسم}};
 
-% ستون سوم - اولویت متوسط
-\node[font=\bfseries, text=yellow!70!black] at (9,4) {اولویت متوسط};
-\node[priority=yellow] (p5) at (9,2.5) {
-    \begin{tabular}{c}
-    تقویت\\
-    جامعه مدنی
-    \end{tabular}
-};
-\node[priority=yellow] (p6) at (9,0.5) {
-    \begin{tabular}{c}
-    اصلاح\\
-    بوروکراسی
-    \end{tabular}
-};
+\node[priority] (p3) at (4.5,2.5) {\rl{عدالت انتقالی}};
+\node[priority] (p4) at (4.5,0.5) {\rl{اصلاح آموزش}};
 
-% ستون چهارم - در حال انجام
-\node[font=\bfseries, text=green!70!black] at (13.5,4) {تداوم از فاز ۱};
-\node[priority=green] (p7) at (13.5,2.5) {
-    \begin{tabular}{c}
-    رفع تحریم\\
-    و بازسازی اقتصاد
-    \end{tabular}
-};
-\node[priority=green] (p8) at (13.5,0.5) {
-    \begin{tabular}{c}
-    عدالت\\
-    انتقالی
-    \end{tabular}
-};
+\node[priority] (p5) at (9,2.5) {\rl{جامعه مدنی}};
+\node[priority] (p6) at (9,0.5) {\rl{بوروکراسی}};
 
-% خط پایه
-\draw[thick, gray!40] (-1.5,-0.8) -- (15,-0.8);
-\node[below, font=\small, text=gray] at (6.75,-1.2) {سال ۳ تا ۵ پس از گذار};
+\draw[thick, goldphoenix] (-1.5,-0.5) -- (10.5,-0.5);
+\node[below, font=\tiny] at (4.5,-0.6) {\rl{فاز ۲: سال ۳ تا ۵}};
 
 \end{tikzpicture}
 \caption{اولویت‌بندی نهادسازی در فاز دوم}
@@ -151,22 +106,23 @@
 \centering
 \caption{مقایسه مدل‌های فدرالیسم و انتخاب برای ایران}
 \label{tab:federalism-models}
-\begin{tabular}{>{\columncolor{blue!8}}r p{2.5cm} p{2.5cm} p{2.5cm} p{2.5cm} p{2cm}}
+\begin{table}[htbp]
+\centering
+\caption{مقایسه مدل‌های فدرالیسم و انتخاب برای ایران}
+\label{tab:federalism-models}
+\begin{tabularx}{\textwidth}{R{2.5cm} C{2.5cm} C{2.5cm} C{2.5cm} Y}
 \toprule
-\rowcolor{blue!25}
-\textbf{ویژگی} & \textbf{آمریکا} & \textbf{آلمان} & \textbf{هند} & \textbf{سوئیس} & \textbf{پیشنهاد ایران} \\
+\headmark ویژگی & \headmark آمریکا & \headmark آلمان & \headmark هند & \headmark پیشنهاد ما \\
 \midrule
-نوع & دوگانه & همبسته & نامتقارن & مشارکتی & همبسته \\
-\rowcolor{gray!10}
-تعداد واحدها & ۵۰ & ۱۶ & ۲۸ & ۲۶ & ۵ منطقه + ۳۱ استان \\
-استقلال مالی & بالا & متوسط & پایین & بالا & متوسط \\
-\rowcolor{gray!10}
-زبان رسمی & ۱ & ۱ & ۲۲ & ۴ & ۱ ملی + ۶ منطقه‌ای \\
-انحلال واحد & ممکن نیست & ممکن نیست & ممکن & ممکن نیست & ممکن نیست \\
-\rowcolor{gray!10}
-مجلس دوم & سنا (ایالتی) & بوندسرات & راجیا سابا & شورای ایالات & مجلس اقوام \\
+نوع & دوگانه & همبسته & نامتقارن & همبسته \\
+\rowcolor{goldlight}
+زبان رسمی & ۱ & ۱ & ۲۲ & ۱ ملی+منطقه‌ای \\
+مجلس دوم & سنا & بوندسرات & راجیا سابا & مجلس اقوام \\
+\rowcolor{goldlight}
+استقلال مالی & بالا & متوسط & پایین & متوسط \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
+\end{table}
 \end{table}
 
 \subsection{تقسیمات پیشنهادی کشوری}
@@ -175,60 +131,31 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.8,
+    scale=0.85,
     transform shape,
     level/.style={
         rectangle,
-        rounded corners=6pt,
-        minimum height=1.8cm,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
+        rounded corners=8pt,
+        minimum width=12cm,
+        minimum height=1.6cm,
+        text centered,
         font=\small\bfseries,
-        align=center
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.5pt
     }
 ]
 
-% سطح ملی
-\node[level=purple, minimum width=14cm] (national) at (0,6) {
-    \begin{tabular}{c}
-    سطح ملی (فدرال)\\
-    \small دولت مرکزی — پارلمان دو مجلسی — دادگاه قانون اساسی
-    \end{tabular}
-};
-
-% سطح منطقه‌ای
-\node[level=blue, minimum width=14cm] (regional) at (0,3) {
-    \begin{tabular}{c}
-    سطح منطقه‌ای (۵ منطقه خودمختار)\\
-    \small آذربایجان | کردستان | بلوچستان | عرب‌نشین | مرکزی
-    \end{tabular}
-};
-
-% سطح استانی
-\node[level=green, minimum width=14cm] (provincial) at (0,0) {
-    \begin{tabular}{c}
-    سطح استانی (۳۱ استان)\\
-    \small استاندار منتخب — شورای استان — دادگاه‌های استانی
-    \end{tabular}
-};
-
-% سطح محلی
-\node[level=orange, minimum width=14cm] (local) at (0,-3) {
-    \begin{tabular}{c}
-    سطح محلی (شهرها و دهستان‌ها)\\
-    \small شهردار منتخب — شورای شهر/روستا — خدمات محلی
-    \end{tabular}
-};
+% سطوح
+\node[level, draw=goldphoenix, fill=goldphoenix, text=white] (nat) at (0,6) {\rl{سطح ملی (فدرال)}\\\rl{\tiny دولت مرکزی | پارلمان دو مجلسی}};
+\node[level] (reg) at (0,3.5) {\rl{سطح منطقه‌ای (۵ منطقه)}\\\rl{\tiny خودمختاری در آموزش و توسعه منطقه‌ای}};
+\node[level] (prov) at (0,1) {\rl{سطح استانی (۳۱ استان)}\\\rl{\tiny استاندار منتخب | خدمات تخصصی}};
+\node[level] (loc) at (0,-1.5) {\rl{سطح محلی (شهر و روستا)}\\\rl{\tiny شهردار منتخب | خدمات رفاهی روزمره}};
 
 % فلش‌ها
-\draw[->, very thick, gray!60] (national) -- (regional) node[midway, right, font=\scriptsize] {تفویض اختیار};
-\draw[->, very thick, gray!60] (regional) -- (provincial) node[midway, right, font=\scriptsize] {هماهنگی};
-\draw[->, very thick, gray!60] (provincial) -- (local) node[midway, right, font=\scriptsize] {نظارت};
-
-% بازخورد
-\draw[->, thick, red!40] (local.west) -- ++(-1,0) -- ++(0,9) -- (national.west);
-\node[font=\tiny, text=red!60, rotate=90] at (-8.5,1.5) {نمایندگی و مشارکت};
+\draw[->, ultra thick, color=goldphoenix] (nat) -- (reg);
+\draw[->, ultra thick, color=goldphoenix] (reg) -- (prov);
+\draw[->, ultra thick, color=goldphoenix] (prov) -- (loc);
 
 \end{tikzpicture}
 \caption{ساختار چهارلایه حکومت در نظام فدرالی پیشنهادی}
@@ -241,23 +168,19 @@
 \centering
 \caption{مشخصات پنج منطقه خودمختار پیشنهادی}
 \label{tab:autonomous-regions}
-\begin{tabular}{>{\columncolor{teal!8}}r p{2.3cm} c c p{2.5cm} p{3cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{2cm} C{2cm} C{2cm}}
 \toprule
-\rowcolor{teal!25}
-\textbf{منطقه} & \textbf{استان‌ها} & \textbf{جمعیت (م)} & \textbf{مساحت (هزار km²)} & \textbf{زبان منطقه‌ای} & \textbf{مرکز پیشنهادی} \\
+\headmark منطقه & \headmark استان‌های کلیدی & \headmark جمعیت & \headmark زبان & \headmark مرکز \\
 \midrule
-آذربایجان & شرقی، غربی، اردبیل، زنجان & ۱۲ & ۱۰۵ & ترکی آذربایجانی & تبریز \\
-\rowcolor{gray!10}
-کردستان & کردستان، کرمانشاه، ایلام، بخشی از همدان & ۶ & ۶۵ & کردی & سنندج \\
-بلوچستان & سیستان و بلوچستان & ۳ & ۱۸۷ & بلوچی & زاهدان \\
-\rowcolor{gray!10}
-عربستان & خوزستان & ۵ & ۶۴ & عربی & اهواز \\
-مرکزی & ۲۳ استان باقیمانده & ۵۹ & ۱,۲۲۷ & فارسی & تهران \\
-\midrule
-\rowcolor{teal!15}
-\textbf{جمع} & \textbf{۳۱} & \textbf{۸۵} & \textbf{۱,۶۴۸} & & \\
+آذربایجان & تبریز، ارومیه، اردبیل & ۱۲ م & ترکی & تبریز \\
+\rowcolor{goldlight}
+کردستان & سنندج، کرمانشاه، ایلام & ۶ م & کردی & سنندج \\
+بلوچستان & زاهدان، ایرانشهر & ۳ م & بلوچی & زاهدان \\
+\rowcolor{goldlight}
+عربستان & اهواز، آبادان & ۵ م & عربی & اهواز \\
+مرکزی & تهران، اصفهان، مشهد & ۵۹ م & فارسی & تهران \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{olgoobox}
@@ -314,83 +237,45 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.75,
+    scale=0.85,
     transform shape,
     box/.style={
         rectangle,
-        rounded corners=4pt,
-        minimum width=2.5cm,
+        rounded corners=5pt,
+        minimum width=2.8cm,
         minimum height=1.2cm,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
-        font=\scriptsize\bfseries,
-        align=center
+        text centered,
+        font=\tiny\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.3pt
     },
-    flow/.style={
-        ->,
-        >=stealth,
-        thick,
-        draw=#1!60
-    }
+    flow/.style={->, >=Stealth, thick, color=goldphoenix}
 ]
 
-% منابع درآمد
-\node[box=green] (oil) at (-6,4) {درآمد نفت و گاز};
-\node[box=green] (vat) at (-6,2) {مالیات ارزش افزوده};
-\node[box=green] (income) at (-6,0) {مالیات درآمد};
-\node[box=green] (customs) at (-6,-2) {گمرک و تعرفه};
+% خزانه مرکزی
+\node[circle, minimum size=2.5cm, draw=goldphoenix, fill=goldphoenix, text=white, font=\small\bfseries] (treasury) at (0,0) {\rl{خزانه ملی}};
 
-% خزانه ملی
-\node[box=purple, minimum width=3cm, minimum height=3cm] (treasury) at (0,1) {
-    \begin{tabular}{c}
-    خزانه ملی\\
-    \\
-    \tiny توزیع بر اساس\\
-    \tiny فرمول عدالت
-    \end{tabular}
-};
+% ورودی‌ها
+\node[box] (oil) at (-5,2) {\rl{درآمد نفت/گاز}};
+\node[box] (tax) at (-5,0) {\rl{مالیات‌های ملی}};
+\node[box] (cust) at (-5,-2) {\rl{گمرک}};
 
-% توزیع
-\node[box=blue] (fed) at (6,4) {بودجه فدرال (۵۰٪)};
-\node[box=teal] (region) at (6,2) {سهم مناطق (۲۰٪)};
-\node[box=orange] (province) at (6,0) {سهم استان‌ها (۲۰٪)};
-\node[box=yellow] (equal) at (6,-2) {صندوق توازن (۱۰٪)};
+% خروجی‌ها
+\node[box] (fed) at (5,2) {\rl{بودجه فدرال}\\\rl{(۵۰٪)}};
+\node[box] (reg) at (5,0) {\rl{سهم مناطق}\\\rl{(۳۰٪)}};
+\node[box] (equal) at (5,-2) {\rl{توازن منطقه‌ای}\\\rl{(۲۰٪)}};
 
-% جریان ورودی
-\draw[flow=green] (oil) -- (treasury);
-\draw[flow=green] (vat) -- (treasury);
-\draw[flow=green] (income) -- (treasury);
-\draw[flow=green] (customs) -- (treasury);
-
-% جریان خروجی
-\draw[flow=blue] (treasury) -- (fed);
-\draw[flow=teal] (treasury) -- (region);
-\draw[flow=orange] (treasury) -- (province);
-\draw[flow=yellow] (treasury) -- (equal);
-
-% صندوق توازن
-\node[box=red, minimum width=2.5cm] (poor) at (10,-2) {
-    \begin{tabular}{c}
-    مناطق محروم\\
-    \tiny (سیستان، کردستان، ...)
-    \end{tabular}
-};
-\draw[flow=red] (equal) -- (poor);
-
-% توضیح
-\node[rectangle, draw=gray!40, fill=gray!5, font=\tiny, align=right,
-      text width=4cm] at (0,-3.5) {
-    \textbf{فرمول توزیع:}\\
-    ۴۰٪ بر اساس جمعیت\\
-    ۳۰٪ بر اساس محرومیت\\
-    ۲۰٪ بر اساس مساحت\\
-    ۱۰٪ بر اساس تولید
-};
+% اتصالات
+\draw[flow] (oil) -- (treasury);
+\draw[flow] (tax) -- (treasury);
+\draw[flow] (cust) -- (treasury);
+\draw[flow] (treasury) -- (fed);
+\draw[flow] (treasury) -- (reg);
+\draw[flow] (treasury) -- (equal);
 
 \end{tikzpicture}
 \caption{نظام مالی فدرالی: جریان درآمدها و توزیع بودجه}
-\label{fig:fiscal-federalism}
 \end{figure}
 
 %───────────────────────────────────────────────────────────────────────────────
@@ -417,78 +302,35 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.8,
+    scale=0.85,
     transform shape,
     court/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3cm,
-        minimum height=1.3cm,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
-        font=\scriptsize\bfseries,
-        align=center
-    }
+        minimum width=3.5cm,
+        minimum height=1.5cm,
+        text centered,
+        font=\small\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
+    },
+    arrow/.style={->, >=Stealth, thick, color=goldphoenix}
 ]
 
-% دادگاه قانون اساسی - بالاترین
-\node[court=purple, minimum width=5cm] (const) at (0,6) {
-    \begin{tabular}{c}
-    دادگاه قانون اساسی\\
-    \small ۱۵ قاضی — دوره ۱۲ ساله
-    \end{tabular}
-};
-
-% دیوان عالی
-\node[court=red, minimum width=4cm] (supreme) at (0,4) {
-    \begin{tabular}{c}
-    دیوان عالی کشور\\
-    \small ۳۰ قاضی — مرجع تجدیدنظر نهایی
-    \end{tabular}
-};
-
-% دادگاه‌های تجدیدنظر
-\node[court=orange] (appeal1) at (-4,2) {دادگاه تجدیدنظر منطقه};
-\node[court=orange] (appeal2) at (4,2) {دادگاه تجدیدنظر منطقه};
-
-% دادگاه‌های بدوی
-\node[court=green] (trial1) at (-6,0) {دادگاه‌های استان};
-\node[court=green] (trial2) at (-2,0) {دادگاه‌های استان};
-\node[court=green] (trial3) at (2,0) {دادگاه‌های استان};
-\node[court=green] (trial4) at (6,0) {دادگاه‌های استان};
-
-% دادگاه‌های تخصصی
-\node[court=blue] (admin) at (-5,-2) {دیوان عدالت اداری};
-\node[court=teal] (labor) at (0,-2) {دادگاه‌های کار};
-\node[court=cyan] (family) at (5,-2) {دادگاه‌های خانواده};
+% دادگاه‌ها
+\node[court, draw=goldphoenix, fill=goldphoenix, text=white] (const) at (0,6) {\rl{دادگاه قانون اساسی}\\\rl{\tiny ۱۵ قاضی | صیانت از ج.ا}};
+\node[court] (supreme) at (0,4) {\rl{دیوان عالی کشور}\\\rl{\tiny مرجع تجدیدنظر نهایی}};
+\node[court] (appeal) at (0,2) {\rl{دادگاه‌های تجدیدنظر}\\\rl{\tiny ۵ منطقه خودمختار}};
+\node[court] (trial) at (0,0) {\rl{دادگاه‌های بدوی}\\\rl{\tiny ۳۱ استان}};
 
 % اتصالات
-\draw[->, gray!60] (const) -- (supreme);
-\draw[->, gray!60] (supreme) -- (appeal1);
-\draw[->, gray!60] (supreme) -- (appeal2);
-\draw[->, gray!60] (appeal1) -- (trial1);
-\draw[->, gray!60] (appeal1) -- (trial2);
-\draw[->, gray!60] (appeal2) -- (trial3);
-\draw[->, gray!60] (appeal2) -- (trial4);
-
-% خط جدا
-\draw[dashed, gray!40] (-7,-1) -- (7,-1);
-\node[font=\tiny, text=gray] at (0,-1.3) {دادگاه‌های تخصصی};
-
-% دادستانی مستقل
-\node[court=yellow, minimum width=3.5cm] (prosecutor) at (8,4) {
-    \begin{tabular}{c}
-    دادستانی کل\\
-    \small مستقل از قوه مجریه
-    \end{tabular}
-};
-
-\draw[<->, gray!60] (supreme) -- (prosecutor);
+\draw[arrow] (const) -- (supreme);
+\draw[arrow] (supreme) -- (appeal);
+\draw[arrow] (appeal) -- (trial);
 
 \end{tikzpicture}
 \caption{ساختار پیشنهادی قوه قضائیه مستقل}
-\label{fig:judiciary-structure}
 \end{figure}
 
 \subsection{اصول کلیدی قضایی}
@@ -497,26 +339,19 @@
 \centering
 \caption{اصول بنیادین نظام قضایی جدید}
 \label{tab:judicial-principles}
-\begin{tabular}{>{\columncolor{red!8}}r p{3.5cm} p{7cm}}
+\begin{tabularx}{\textwidth}{R{2cm} Y R{3cm}}
 \toprule
-\rowcolor{red!25}
-\textbf{ردیف} & \textbf{اصل} & \textbf{تضمین اجرایی} \\
+\headmark اصل & \headmark شرح و تضمین & \headmark فاز \\
 \midrule
-۱ & استقلال قضات & انتخاب توسط شورای قضایی مستقل، نه دولت \\
-\rowcolor{gray!10}
-۲ & تصدی مادام‌العمر & عزل تنها به حکم دادگاه انتظامی قضات \\
-۳ & برابری در برابر قانون & حذف تبعیض جنسیتی، قومی، دینی \\
-\rowcolor{gray!10}
-۴ & اصل برائت & متهم بی‌گناه است تا اثبات جرم \\
-۵ & حق وکیل & وکیل رایگان برای ناتوانان مالی \\
-\rowcolor{gray!10}
-۶ & منع شکنجه & اعترافات تحت فشار باطل است \\
-۷ & علنی بودن محاکمات & جز در موارد استثنایی \\
-\rowcolor{gray!10}
-۸ & حق تجدیدنظر & حداقل دو درجه رسیدگی \\
-۹ & تناسب مجازات & ممنوعیت مجازات‌های غیرانسانی \\
+استقلال قضا & عدم عزل قضات جز به حکم دادگاه عالی & ۲ \\
+\rowcolor{goldlight}
+برابری کامل & حذف جنسیت/مذهب از قوانین مدنی و کیفری & ۲ \\
+حق وکیل & وکیل رایگان برای دهک‌های پایین & ۲ \\
+\rowcolor{goldlight}
+منع شکنجه & بطلان هرگونه اعتراف تحت فشار & ۲ \\
+شفافیت & علنی بودن تمام محاکمات غیرامنیتی & ۳ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \subsection{دادگاه قانون اساسی}
@@ -694,96 +529,36 @@
     transform shape,
     unit/.style={
         rectangle,
-        rounded corners=4pt,
-        minimum width=2.5cm,
-        minimum height=1.1cm,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
-        font=\scriptsize\bfseries,
-        align=center
-    }
+        rounded corners=5pt,
+        minimum width=3cm,
+        minimum height=1.3cm,
+        text centered,
+        font=\tiny\bfseries,
+        draw=bleurepublique,
+        fill=bleulight,
+        line width=1.2pt
+    },
+    arrow/.style={->, >=Stealth, thick, color=goldphoenix}
 ]
 
 % کمیسیون مرکزی
-\node[unit=purple, minimum width=6cm, minimum height=1.8cm] (central) at (0,4) {
-    \begin{tabular}{c}
-    کمیسیون ملی انتخابات\\
-    \small ۹ عضو — اجماع پارلمانی — دوره ۷ ساله
-    \end{tabular}
-};
+\node[unit, draw=goldphoenix, fill=goldphoenix, text=white] (central) at (0,4) {\rl{کمیسیون ملی انتخابات}\\\rl{\tiny نظارت عالی بر سلامت آراء}};
 
-% واحدهای زیرمجموعه
-\node[unit=blue] (register) at (-5,1.5) {
-    \begin{tabular}{c}
-    ثبت‌نام\\
-    رأی‌دهندگان
-    \end{tabular}
-};
+% واحدها
+\node[unit] (reg) at (-4,2) {\rl{ثبت‌نام}\\\rl{رأی‌دهندگان}};
+\node[unit] (cand) at (0,2) {\rl{تأیید صلاحیت}\\\rl{بر اساس قانون}};
+\node[unit] (count) at (4,2) {\rl{شمارش و اعلام}\\\rl{نتایج فوری}};
 
-\node[unit=green] (candidate) at (-2,1.5) {
-    \begin{tabular}{c}
-    تأیید\\
-    نامزدها
-    \end{tabular}
-};
-
-\node[unit=orange] (campaign) at (1,1.5) {
-    \begin{tabular}{c}
-    نظارت بر\\
-    تبلیغات
-    \end{tabular}
-};
-
-\node[unit=red] (voting) at (4,1.5) {
-    \begin{tabular}{c}
-    برگزاری\\
-    رأی‌گیری
-    \end{tabular}
-};
-
-\node[unit=teal] (count) at (7,1.5) {
-    \begin{tabular}{c}
-    شمارش و\\
-    اعلام نتایج
-    \end{tabular}
-};
-
-% کمیسیون‌های استانی
-\node[unit=gray, minimum width=12cm] (provincial) at (1,-0.5) {
-    کمیسیون‌های استانی (۳۱ کمیسیون) — نظارت محلی
-};
+\node[unit, minimum width=11cm] (prov) at (0,0) {\rl{کمیسیون‌های استانی (۳۱ مرکز) — نظارت عملیاتی بر شعب}};
 
 % اتصالات
-\draw[->, gray!60] (central) -- (register);
-\draw[->, gray!60] (central) -- (candidate);
-\draw[->, gray!60] (central) -- (campaign);
-\draw[->, gray!60] (central) -- (voting);
-\draw[->, gray!60] (central) -- (count);
-\draw[->, gray!60] (1,0.9) -- (provincial);
-
-% تضمینات
-\node[rectangle, draw=green!60, fill=green!10, font=\tiny, align=right,
-      text width=4cm] at (-5,-2.5) {
-    \textbf{تضمینات استقلال:}\\
-    • بودجه مستقل (۰.۵٪ بودجه ملی)\\
-    • عزل تنها با ۲/۳ پارلمان\\
-    • ممنوعیت عضویت حزبی\\
-    • انتشار عمومی همه تصمیمات
-};
-
-\node[rectangle, draw=blue!60, fill=blue!10, font=\tiny, align=right,
-      text width=4cm] at (7,-2.5) {
-    \textbf{ناظران:}\\
-    • ناظران داخلی: احزاب\\
-    • ناظران بین‌المللی: UN، EU\\
-    • ناظران مدنی: NGOها\\
-    • رسانه‌ها: دسترسی کامل
-};
+\draw[arrow] (central) -- (reg);
+\draw[arrow] (central) -- (cand);
+\draw[arrow] (central) -- (count);
+\draw[arrow] (0,1.3) -- (prov);
 
 \end{tikzpicture}
 \caption{ساختار کمیسیون ملی انتخابات}
-\label{fig:election-commission}
 \end{figure}
 
 %───────────────────────────────────────────────────────────────────────────────

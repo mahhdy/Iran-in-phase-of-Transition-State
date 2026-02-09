@@ -59,22 +59,21 @@
 \centering
 \caption{تحلیل شش رکن چشم‌انداز ایران ۱۴۲۹}
 \label{tab:vision-components}
-\begin{tabular}{>{\columncolor{blue!8}}r p{3.2cm} p{4.5cm} p{3.5cm}}
+\begin{tabularx}{\textwidth}{R{3cm} Y Z}
 \toprule
-\rowcolor{blue!25}
-\textbf{ردیف} & \textbf{رکن چشم‌انداز} & \textbf{شاخص موفقیت} & \textbf{وضعیت کنونی ایران} \\
+\headmark رکن چشم‌انداز & \headmark شاخص موفقیت & \headmark وضعیت کنونی \\
 \midrule
-۱ & حقوق برابر شهروندی & شاخص برابری جنسیتی > ۰.۸ & ۰.۵۷ (رتبه ۱۴۳ جهان) \\
-\rowcolor{gray!10}
-۲ & حکومت پاسخگو & شاخص دموکراسی > ۷ & ۱.۹۶ (رتبه ۱۵۴ جهان) \\
-۳ & خودمدیریت اقوام & رضایت قومی > ۷۵٪ & داده معتبر موجود نیست \\
-\rowcolor{gray!10}
-۴ & احیای محیط زیست & سطح سفره‌های آب > ۸۰٪ & ۴۵٪ و کاهنده \\
-۵ & اقتصاد متنوع & سهم نفت از صادرات < ۲۰٪ & ۷۲٪ \\
-\rowcolor{gray!10}
-۶ & عضویت محترم جهانی & پایان تحریم‌ها & ۳۸۰۰+ تحریم فعال \\
+حقوق برابر شهروندی & شاخص برابری > ۰.۸ & ۰.۵۷ (رتبه ۱۴۳) \\
+\rowcolor{goldlight}
+حکومت پاسخگو & شاخص دموکراسی > ۷ & ۱.۹۶ (رتبه ۱۵۴) \\
+خودمدیریت اقوام & رضایت قومی > ۷۵٪ & نامعلوم \\
+\rowcolor{goldlight}
+احیای محیط زیست & سفره‌های آب > ۸۰٪ & ۴۵٪ (کاهنده) \\
+اقتصاد متنوع & سهم نفت < ۲۰٪ & ۷۲٪ \\
+\rowcolor{goldlight}
+عضویت جهانی & رفع تحریم‌ها & ۳۸۰۰+ تحریم فعال \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 %───────────────────────────────────────────────────────────────────────────────
@@ -88,25 +87,25 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.85,
+    scale=0.8,
     transform shape,
     principle/.style={
         rectangle,
-        rounded corners=3pt,
+        rounded corners=5pt,
         minimum width=3.2cm,
         minimum height=0.9cm,
-        draw=#1!70!black,
-        fill=#1!20,
-        text=#1!40!black,
+        draw=bleurepublique!70,
+        fill=bleulight,
+        text=bleurepublique,
         font=\small\bfseries,
         align=center
     },
     core/.style={
         circle,
         minimum size=2.8cm,
-        draw=purple!70!black,
-        fill=purple!15,
-        text=purple!40!black,
+        draw=goldphoenix,
+        fill=goldlight,
+        text=goldphoenix,
         font=\large\bfseries,
         align=center
     },
@@ -114,7 +113,7 @@
         ->,
         >=stealth,
         thick,
-        draw=gray!60
+        draw=bleurepublique!40
     }
 ]
 
@@ -127,65 +126,23 @@
 };
 
 % اصول - دایره بیرونی
-\node[principle=blue] (p1) at (90:4.5) {
-    \begin{tabular}{c}
-    ۱. حاکمیت ملی
-    \end{tabular}
-};
-\node[principle=teal] (p2) at (54:4.5) {
-    \begin{tabular}{c}
-    ۲. کثرت‌گرایی
-    \end{tabular}
-};
-\node[principle=green] (p3) at (18:4.5) {
-    \begin{tabular}{c}
-    ۳. عدالت توزیعی
-    \end{tabular}
-};
-\node[principle=lime] (p4) at (-18:4.5) {
-    \begin{tabular}{c}
-    ۴. حقوق بشر
-    \end{tabular}
-};
-\node[principle=yellow] (p5) at (-54:4.5) {
-    \begin{tabular}{c}
-    ۵. پایداری محیطی
-    \end{tabular}
-};
-\node[principle=orange] (p6) at (-90:4.5) {
-    \begin{tabular}{c}
-    ۶. تمرکززدایی
-    \end{tabular}
-};
-\node[principle=red] (p7) at (-126:4.5) {
-    \begin{tabular}{c}
-    ۷. پاسخگویی
-    \end{tabular}
-};
-\node[principle=pink] (p8) at (-162:4.5) {
-    \begin{tabular}{c}
-    ۸. صلح‌طلبی
-    \end{tabular}
-};
-\node[principle=violet] (p9) at (162:4.5) {
-    \begin{tabular}{c}
-    ۹. حکمرانی علمی
-    \end{tabular}
-};
-\node[principle=cyan] (p10) at (126:4.5) {
-    \begin{tabular}{c}
-    ۱۰. عدالت انتقالی
-    \end{tabular}
-};
+\node[principle] (p1) at (90:4.2) {\rl{۱. حاکمیت ملی}};
+\node[principle] (p2) at (54:4.2) {\rl{۲. کثرت‌گرایی}};
+\node[principle] (p3) at (18:4.2) {\rl{۳. عدالت توزیعی}};
+\node[principle] (p4) at (-18:4.2) {\rl{۴. حقوق بشر}};
+\node[principle] (p5) at (-54:4.2) {\rl{۵. پایداری محیطی}};
+\node[principle] (p6) at (-90:4.2) {\rl{۶. تمرکززدایی}};
+\node[principle] (p7) at (-126:4.2) {\rl{۷. پاسخگویی}};
+\node[principle] (p8) at (-162:4.2) {\rl{۸. صلح‌طلبی}};
+\node[principle] (p9) at (162:4.2) {\rl{۹. حکمرانی علمی}};
+\node[principle] (p10) at (126:4.2) {\rl{۱۰. عدالت انتقالی}};
 
 % اتصالات
 \foreach \i in {p1,p2,p3,p4,p5,p6,p7,p8,p9,p10} {
     \draw[arrow] (\i) -- (center);
 }
-
 \end{tikzpicture}
 \caption{ده اصل بنیادین نظام دموکراتیک ایران}
-\label{fig:ten-principles}
 \end{figure}
 
 \subsection{اصل اول: حاکمیت ملی و مردم‌سالاری}
@@ -218,28 +175,26 @@
 \centering
 \caption{ترکیب قومی-زبانی ایران (برآورد ۱۴۰۳)}
 \label{tab:ethnic-composition}
-\begin{tabular}{>{\columncolor{teal!8}}r l r r l}
+\begin{tabularx}{\textwidth}{R{3cm} C{2cm} C{2cm} Y}
 \toprule
-\rowcolor{teal!25}
-\textbf{ردیف} & \textbf{گروه قومی} & \textbf{جمعیت (میلیون)} & \textbf{درصد} & \textbf{زبان اصلی} \\
+\headmark گروه قومی & \headmark جمعیت & \headmark درصد & \headmark زبان اصلی \\
 \midrule
-۱ & فارس & ۴۵-۵۰ & ۵۳-۵۹٪ & فارسی \\
-\rowcolor{gray!10}
-۲ & آذربایجانی & ۱۵-۲۰ & ۱۸-۲۴٪ & ترکی آذربایجانی \\
-۳ & کُرد & ۷-۹ & ۸-۱۰٪ & کردی (سورانی/کرمانجی) \\
-\rowcolor{gray!10}
-۴ & لُر و بختیاری & ۵-۶ & ۶-۷٪ & لری/بختیاری \\
-۵ & عرب & ۲-۳ & ۲-۴٪ & عربی \\
-\rowcolor{gray!10}
-۶ & بلوچ & ۲-۳ & ۲-۳٪ & بلوچی \\
-۷ & ترکمن & ۱-۲ & ۱-۲٪ & ترکمنی \\
-\rowcolor{gray!10}
-۸ & سایر & ۲-۳ & ۲-۳٪ & متنوع \\
+فارس & ۴۵-۵۰ & ۵۳-۵۹٪ & فارسی \\
+\rowcolor{goldlight}
+آذربایجانی & ۱۵-۲۰ & ۱۸-۲۴٪ & ترکی آذربایجانی \\
+کُرد & ۷-۹ & ۸-۱۰٪ & کردی \\
+\rowcolor{goldlight}
+لُر و بختیاری & ۵-۶ & ۶-۷٪ & لری/بختیاری \\
+عرب & ۲-۳ & ۲-۴٪ & عربی \\
+\rowcolor{goldlight}
+بلوچ & ۲-۳ & ۲-۳٪ & بلوچی \\
+ترکمن & ۱-۲ & ۱-۲٪ & ترکمنی \\
+\rowcolor{goldlight}
+سایر & ۲-۳ & ۲-۳٪ & متنوع \\
 \midrule
-\rowcolor{teal!15}
-& \textbf{جمع} & \textbf{۸۵} & \textbf{۱۰۰٪} & \\
+\headmark مجموع & \textbf{۸۵} & \textbf{۱۰۰٪} & \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \textbf{الزامات عملیاتی:}
@@ -263,44 +218,33 @@
 \begin{tikzpicture}
 \begin{axis}[
     ybar,
-    width=14cm,
+    width=0.95\textwidth,
     height=7cm,
-    ylabel={درآمد سرانه (میلیون ریال/سال)},
-    xlabel={استان},
-    ymin=0,
-    ymax=900,
+    ylabel={\rl{درآمد سرانه}},
+    xlabel={\rl{استان}},
+    ymin=0, ymax=900,
     xtick=data,
-    xticklabels={
-        تهران,
-        اصفهان,
-        یزد,
-        میانگین,
-        آذربایجان غ.,
-        کردستان,
-        خوزستان,
-        سیستان
-    },
-    xticklabel style={rotate=45, anchor=east, font=\small},
+    xticklabels={\rl{تهران}, \rl{اصفهان}, \rl{یزد}, \rl{میانگین}, \rl{آذربایجان}, \rl{کردستان}, \rl{خوزستان}, \rl{سیستان}},
+    xticklabel style={rotate=45, anchor=east, font=\tiny},
     nodes near coords,
     nodes near coords align={vertical},
     every node near coord/.append style={font=\tiny},
-    bar width=0.6cm,
+    bar width=0.5cm,
     enlarge x limits=0.1,
     grid=major,
     grid style={dashed, gray!30},
-    legend style={at={(0.02,0.98)}, anchor=north west}
+    axis line style={bleurepublique!50, thick}
 ]
-\addplot[fill=blue!60, draw=blue!80] coordinates {
+\addplot[fill=bleurepublique!70, draw=bleurepublique] coordinates {
     (1,780) (2,520) (3,490) (4,380) (5,310) (6,290) (7,340) (8,180)
 };
-\addplot[fill=red!60, draw=red!80] coordinates {
+\addplot[fill=goldphoenix!70, draw=goldphoenix] coordinates {
     (1,380) (2,380) (3,380) (4,380) (5,380) (6,380) (7,380) (8,380)
 };
-\legend{درآمد سرانه استانی, میانگین کشوری}
+\legend{\rl{درآمد استانی}, \rl{میانگین کشوری}}
 \end{axis}
 \end{tikzpicture}
 \caption{نابرابری درآمد سرانه بین استان‌های ایران (۱۴۰۲)}
-\label{fig:regional-inequality}
 \end{figure}
 
 \begin{enghelabbox}
@@ -326,22 +270,19 @@
 \centering
 \caption{شاخص‌های حقوق بشر: ایران در مقایسه با کشورهای منتخب}
 \label{tab:human-rights-comparison}
-\begin{tabular}{>{\columncolor{red!5}}r l c c c c}
+\begin{tabularx}{\textwidth}{R{2.8cm} C{1.2cm} C{1.2cm} C{1.4cm} Y}
 \toprule
-\rowcolor{red!20}
-\textbf{ردیف} & \textbf{شاخص} & \textbf{ایران} & \textbf{ترکیه} & \textbf{آفریقای ج.} & \textbf{هدف ۱۴۲۹} \\
+\headmark شاخص & \headmark ایران & \headmark ترکیه & \headmarkآفریقای ج. & \headmark هدف ۱۴۲۹ \\
 \midrule
-۱ & آزادی مطبوعات (۱-۱۰۰) & ۱۷۶/۱۸۰ & ۱۴۹ & ۳۲ & زیر ۵۰ \\
-\rowcolor{gray!10}
-۲ & آزادی اینترنت (۱-۱۰۰) & ۱۶ & ۳۲ & ۵۸ & بالای ۶۰ \\
-۳ & اعدام سالانه & ۵۸۰+ & ۰ & ۰ & ۰ \\
-\rowcolor{gray!10}
-۴ & زندانی سیاسی & ۱۰۰۰+ & ۴۰۰۰۰+ & زیر ۱۰ & ۰ \\
-۵ & شکنجه (گزارش‌شده) & سیستماتیک & گسترده & موردی & ممنوع \\
-\rowcolor{gray!10}
-۶ & برابری جنسیتی & ۱۴۳/۱۴۶ & ۱۲۹ & ۲۰ & زیر ۵۰ \\
+آزادی مطبوعات & ۱۷۶ & ۱۴۹ & ۳۲ & زیر ۵۰ \\
+\rowcolor{goldlight}
+آزادی اینترنت & ۱۶ & ۳۲ & ۵۸ & بالای ۶۰ \\
+اعدام سالانه & ۵۸۰+ & ۰ & ۰ & ۰ \\
+\rowcolor{goldlight}
+زندانی سیاسی & ۱۰۰۰+ & ۴۰۰۰۰+ & زیر ۱۰ & ۰ \\
+برابری جنسیتی & ۱۴۳ & ۱۲۹ & ۲۰ & زیر ۵۰ \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \begin{naghlbox}
@@ -369,50 +310,42 @@
 \centering
 \begin{tikzpicture}
 \begin{axis}[
-    width=13cm,
+    width=0.95\textwidth,
     height=7cm,
-    xlabel={سال (شمسی)},
-    ylabel={میلیارد مترمکعب/سال},
-    xmin=1380,
-    xmax=1430,
-    ymin=0,
-    ymax=140,
+    xlabel={\rl{سال (شمسی)}},
+    ylabel={\rl{میلیارد مترمکعب/سال}},
+    xmin=1380, xmax=1430,
+    ymin=0, ymax=140,
     grid=major,
     grid style={dashed, gray!30},
-    legend style={at={(0.98,0.98)}, anchor=north east, font=\small},
-    legend cell align=left
+    legend style={at={(0.5,-0.15)}, anchor=north, font=\tiny, legend columns=2},
+    axis line style={bleurepublique!50, thick}
 ]
-% منابع آب تجدیدپذیر
-\addplot[thick, color=blue, mark=*] coordinates {
+\addplot[thick, color=bleurepublique!80, mark=*] coordinates {
     (1380,130) (1385,125) (1390,115) (1395,105) (1400,95) (1403,88)
 };
-% مصرف آب
-\addplot[thick, color=red, mark=square*] coordinates {
+\addplot[thick, color=rougerevolution, mark=square*] coordinates {
     (1380,88) (1385,94) (1390,102) (1395,108) (1400,112) (1403,115)
 };
-% پیش‌بینی منابع (بدون اقدام)
-\addplot[thick, dashed, color=blue!50] coordinates {
+\addplot[thick, dashed, color=bleurepublique!40] coordinates {
     (1403,88) (1410,75) (1420,60) (1429,50)
 };
-% پیش‌بینی مصرف (بدون اقدام)
-\addplot[thick, dashed, color=red!50] coordinates {
+\addplot[thick, dashed, color=rougerevolution!50] coordinates {
     (1403,115) (1410,120) (1420,125) (1429,130)
 };
-% هدف با اصلاحات
-\addplot[thick, dotted, color=green!70!black, mark=triangle*] coordinates {
+\addplot[thick, dotted, color=goldphoenix, mark=triangle*] coordinates {
     (1403,115) (1410,100) (1420,85) (1429,75)
 };
 \legend{
-    منابع تجدیدپذیر (واقعی),
-    مصرف (واقعی),
-    منابع (بدون اقدام),
-    مصرف (بدون اقدام),
-    مصرف (با اصلاحات)
+    \rl{منابع (واقعی)},
+    \rl{مصرف (واقعی)},
+    \rl{منابع (ادامه روند)},
+    \rl{مصرف (ادامه روند)},
+    \rl{مصرف (با اصلاحات)}
 }
 \end{axis}
 \end{tikzpicture}
 \caption{بحران آب ایران: شکاف فزاینده عرضه و تقاضا}
-\label{fig:water-crisis}
 \end{figure}
 
 \begin{enghelabbox}
@@ -429,14 +362,14 @@
 \begin{figure}[htbp]
 \centering
 \begin{tikzpicture}[
-    scale=0.9,
+    scale=0.85,
     transform shape,
     level/.style={
         rectangle,
-        rounded corners=4pt,
-        draw=#1!70!black,
-        fill=#1!15,
-        text=#1!30!black,
+        rounded corners=5pt,
+        draw=bleurepublique,
+        fill=bleulight,
+        text=bleurepublique,
         minimum width=3.5cm,
         minimum height=1cm,
         font=\small\bfseries,
@@ -444,96 +377,45 @@
     },
     competence/.style={
         rectangle,
-        rounded corners=2pt,
-        draw=gray!50,
-        fill=gray!5,
-        font=\scriptsize,
+        rounded corners=3pt,
+        draw=gray!30,
+        fill=white,
+        font=\tiny,
         align=right,
         text width=4.5cm
     },
     arrow/.style={
         <->,
         thick,
-        draw=purple!60
+        draw=goldphoenix!60
     }
 ]
 
 % سطوح حکومتی
-\node[level=red] (national) at (0,6) {
-    \begin{tabular}{c}
-    سطح ملی\\
-    (دولت مرکزی)
-    \end{tabular}
-};
-
-\node[level=orange] (regional) at (0,3) {
-    \begin{tabular}{c}
-    سطح منطقه‌ای\\
-    (۵ منطقه)
-    \end{tabular}
-};
-
-\node[level=green] (provincial) at (0,0) {
-    \begin{tabular}{c}
-    سطح استانی\\
-    (۳۱ استان)
-    \end{tabular}
-};
-
-\node[level=blue] (local) at (0,-3) {
-    \begin{tabular}{c}
-    سطح محلی\\
-    (شهرها و روستاها)
-    \end{tabular}
-};
+\node[level] (national) at (0,6) {\rl{سطح ملی (مرکزی)}};
+\node[level] (regional) at (0,3) {\rl{سطح منطقه‌ای (۵ منطقه)}};
+\node[level] (provincial) at (0,0) {\rl{سطح استانی (۳۱ استان)}};
+\node[level] (local) at (0,-3) {\rl{سطح محلی (شهر و روستا)}};
 
 % صلاحیت‌ها
-\node[competence] (nat-comp) at (6,6) {
-    دفاع و امنیت ملی\\
-    سیاست خارجی\\
-    پول و بانک مرکزی\\
-    تجارت خارجی\\
-    شهروندی و مهاجرت
-};
-
-\node[competence] (reg-comp) at (6,3) {
-    هماهنگی توسعه منطقه‌ای\\
-    مدیریت حوضه‌های آبریز\\
-    زیرساخت‌های بین‌استانی\\
-    نظارت بر استان‌ها
-};
-
-\node[competence] (prov-comp) at (6,0) {
-    آموزش و پرورش\\
-    بهداشت و درمان\\
-    پلیس محلی\\
-    زبان و فرهنگ محلی\\
-    محیط زیست استانی
-};
-
-\node[competence] (loc-comp) at (6,-3) {
-    شهرسازی و مسکن\\
-    حمل‌ونقل درون‌شهری\\
-    آب و فاضلاب شهری\\
-    فضای سبز و پارک‌ها
-};
+\node[competence] (nat-comp) at (6,6) {دفاع، امنیت، سیاست خارجی، پول، تجارت خارجی};
+\node[competence] (reg-comp) at (6,3) {توسعه منطقه‌ای، حوضه‌های آبریز، زیرساخت بین‌استانی};
+\node[competence] (prov-comp) at (6,0) {آموزش، بهداشت، پلیس محلی، فرهنگ و محیط استانی};
+\node[competence] (loc-comp) at (6,-3) {شهرسازی، مسکن، حمل‌ونقل، آب و فاضلاب شهری};
 
 % اتصالات
 \draw[arrow] (national) -- (regional);
 \draw[arrow] (regional) -- (provincial);
 \draw[arrow] (provincial) -- (local);
 
-\draw[->, gray!50] (nat-comp.west) -- (national.east);
-\draw[->, gray!50] (reg-comp.west) -- (regional.east);
-\draw[->, gray!50] (prov-comp.west) -- (provincial.east);
-\draw[->, gray!50] (loc-comp.west) -- (local.east);
+\draw[->, gray!30] (nat-comp.west) -- (national.east);
+\draw[->, gray!30] (reg-comp.west) -- (regional.east);
+\draw[->, gray!30] (prov-comp.west) -- (provincial.east);
+\draw[->, gray!30] (loc-comp.west) -- (local.east);
 
-% عنوان صلاحیت‌ها
-\node[above, font=\small\bfseries] at (6,7) {صلاحیت‌های انحصاری};
-
+\node[above, font=\small\bfseries, goldphoenix] at (6,7) {\rl{صلاحیت‌ها}};
 \end{tikzpicture}
 \caption{ساختار فدرالیسم همبسته و تقسیم صلاحیت‌ها}
-\label{fig:federalism-structure}
 \end{figure}
 
 \begin{olgoobox}
@@ -551,25 +433,21 @@
 \centering
 \caption{شاخص ادراک فساد (CPI): ایران و کشورهای منطقه}
 \label{tab:corruption-index}
-\begin{tabular}{>{\columncolor{orange!8}}r l c c l}
+\begin{tabularx}{\textwidth}{R{3cm} Y C{1.5cm} C{1.5cm}}
 \toprule
-\rowcolor{orange!25}
-\textbf{رتبه جهانی} & \textbf{کشور} & \textbf{امتیاز (از ۱۰۰)} & \textbf{تغییر ۱۰ ساله} & \textbf{وضعیت} \\
+\headmark کشور & \headmark امتیاز (از ۱۰۰) & \headmark رتبه & \headmark تغییر \\
 \midrule
-۲۵ & امارات & ۶۸ & +۵ & خوب \\
-\rowcolor{gray!10}
-۵۵ & ترکیه & ۳۶ & -۴ & متوسط \\
-۸۳ & هند & ۴۰ & +۲ & متوسط \\
-\rowcolor{gray!10}
-۱۴۹ & ایران & ۲۴ & -۳ & بسیار بد \\
-۱۵۴ & عراق & ۲۳ & +۵ & بسیار بد \\
-\rowcolor{gray!10}
-۱۷۱ & افغانستان & ۱۶ & -۸ & فاجعه \\
+امارات & ۶۸ & ۲۵ & +۵ \\
+\rowcolor{goldlight}
+ترکیه & ۳۶ & ۵۵ & -۴ \\
+هند & ۴۰ & ۸۳ & +۲ \\
+\rowcolor{goldlight}
+ایران & ۲۴ & ۱۴۹ & -۳ \\
+عراق & ۲۳ & ۱۵۴ & +۵ \\
 \midrule
-\rowcolor{green!15}
-— & \textbf{هدف ایران ۱۴۲۹} & \textbf{۵۰+} & — & خوب \\
+\headmark هدف ۱۴۲۹ & \textbf{۵۰+} & \textbf{زیر ۵۰} & \textbf{+۲۶} \\
 \bottomrule
-\end{tabular}
+\end{tabularx}
 \end{table}
 
 \textbf{الزامات عملیاتی:}
@@ -595,46 +473,28 @@
 % نقشه همسایگان
 \begin{figure}[htbp]
 \centering
-\begin{tikzpicture}[scale=0.7, transform shape]
+\begin{tikzpicture}[scale=0.75, transform shape]
     % ایران - مرکز
-    \fill[blue!30, draw=blue!60, thick] (0,0) ellipse (2.5 and 1.8);
-    \node[font=\large\bfseries, text=blue!80] at (0,0) {ایران};
+    \fill[bleurepublique!30, draw=bleurepublique, thick] (0,0) ellipse (2.5 and 1.8);
+    \node[font=\large\bfseries, text=bleurepublique] at (0,0) {\rl{ایران}};
     
     % همسایگان - دایره
-    \node[circle, fill=green!20, draw=green!60, minimum size=1.5cm, font=\small] 
-        (tur) at (120:4.5) {ترکیه};
-    \node[circle, fill=green!20, draw=green!60, minimum size=1.5cm, font=\small] 
-        (arm) at (150:4) {ارمنستان};
-    \node[circle, fill=green!20, draw=green!60, minimum size=1.5cm, font=\small] 
-        (aze) at (90:4) {آذربایجان};
-    \node[circle, fill=yellow!30, draw=yellow!70, minimum size=1.5cm, font=\small] 
-        (tur2) at (60:4.5) {ترکمنستان};
-    \node[circle, fill=red!20, draw=red!60, minimum size=1.5cm, font=\small] 
-        (afg) at (30:4.5) {افغانستان};
-    \node[circle, fill=red!20, draw=red!60, minimum size=1.5cm, font=\small] 
-        (pak) at (-30:4.5) {پاکستان};
-    \node[circle, fill=yellow!30, draw=yellow!70, minimum size=1.5cm, font=\small] 
-        (uae) at (-60:4.5) {امارات};
-    \node[circle, fill=red!20, draw=red!60, minimum size=1.5cm, font=\small] 
-        (irq) at (-120:4.5) {عراق};
-    \node[circle, fill=yellow!30, draw=yellow!70, minimum size=1.5cm, font=\small] 
-        (sau) at (-150:4) {عربستان};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (tur) at (120:4.5) {\rl{ترکیه}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (arm) at (150:4) {\rl{ارمنستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (aze) at (90:4) {\rl{آذربایجان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (tur2) at (60:4.5) {\rl{ترکمنستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (afg) at (30:4.5) {\rl{افغانستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (pak) at (-30:4.5) {\rl{پاکستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (uae) at (-60:4.5) {\rl{امارات}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (irq) at (-120:4.5) {\rl{عراق}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (sau) at (-150:4) {\rl{عربستان}};
     
     % خطوط ارتباطی
     \foreach \neighbor in {tur,arm,aze,tur2,afg,pak,uae,irq,sau} {
-        \draw[gray!40, thick] (0,0) -- (\neighbor);
+        \draw[bleurepublique!30, thick] (0,0) -- (\neighbor);
     }
-    
-    % راهنما
-    \node[fill=green!20, draw=green!60, minimum width=0.5cm, minimum height=0.3cm] at (6,3) {};
-    \node[anchor=west, font=\scriptsize] at (6.4,3) {روابط خوب};
-    \node[fill=yellow!30, draw=yellow!70, minimum width=0.5cm, minimum height=0.3cm] at (6,2.4) {};
-    \node[anchor=west, font=\scriptsize] at (6.4,2.4) {روابط پیچیده};
-    \node[fill=red!20, draw=red!60, minimum width=0.5cm, minimum height=0.3cm] at (6,1.8) {};
-    \node[anchor=west, font=\scriptsize] at (6.4,1.8) {روابط پرتنش};
 \end{tikzpicture}
 \caption{وضعیت روابط ایران با همسایگان (۱۴۰۳)}
-\label{fig:neighbor-relations}
 \end{figure}
 
 \textbf{اولویت‌های سیاست خارجی:}
@@ -682,9 +542,9 @@
         rounded corners=5pt,
         minimum width=3cm,
         minimum height=1.2cm,
-        draw=#1!70!black,
-        fill=#1!20,
-        text=#1!30!black,
+        draw=bleurepublique!70,
+        fill=bleulight,
+        text=bleurepublique,
         font=\small\bfseries,
         align=center
     },
@@ -692,48 +552,20 @@
         ->,
         >=stealth,
         thick,
-        draw=purple!60
+        draw=goldphoenix!60
     }
 ]
 
 % چهار رکن عدالت انتقالی
-\node[element=blue] (truth) at (0,3) {
-    \begin{tabular}{c}
-    کشف حقیقت\\
-    \small کمیسیون حقیقت‌یاب
-    \end{tabular}
-};
-
-\node[element=red] (justice) at (5,3) {
-    \begin{tabular}{c}
-    محاکمه عادلانه\\
-    \small دادگاه‌های ویژه
-    \end{tabular}
-};
-
-\node[element=green] (repair) at (5,0) {
-    \begin{tabular}{c}
-    جبران خسارت\\
-    \small غرامت به قربانیان
-    \end{tabular}
-};
-
-\node[element=orange] (reform) at (0,0) {
-    \begin{tabular}{c}
-    اصلاح نهادها\\
-    \small تطهیر و بازسازی
-    \end{tabular}
-};
+\node[element] (truth) at (0,3) {\rl{کشف حقیقت}\\\tiny کمیسیون حقیقت‌ياب};
+\node[element] (justice) at (5,3) {\rl{محاکمه عادلانه}\text{\tiny دادگاه‌های ویژه}};
+\node[element] (repair) at (5,0) {\rl{جبران خسارت}\\\tiny غرامت به قربانیان};
+\node[element] (reform) at (0,0) {\rl{اصلاح نهادها}\\\tiny تطهیر و بازسازی};
 
 % مرکز
-\node[circle, draw=purple!70, fill=purple!10, minimum size=2.2cm, 
-      font=\small\bfseries, text=purple!70, align=center] 
-      (center) at (2.5,1.5) {
-    \begin{tabular}{c}
-    آشتی\\
-    ملی
-    \end{tabular}
-};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=2.2cm, 
+      font=\small\bfseries, text=goldphoenix, align=center] 
+      (center) at (2.5,1.5) {\rl{آشتی ملی}};
 
 % اتصالات
 \draw[arrow] (truth) -- (justice);
@@ -741,14 +573,12 @@
 \draw[arrow] (repair) -- (reform);
 \draw[arrow] (reform) -- (truth);
 
-\draw[arrow, purple!40] (truth) -- (center);
-\draw[arrow, purple!40] (justice) -- (center);
-\draw[arrow, purple!40] (repair) -- (center);
-\draw[arrow, purple!40] (reform) -- (center);
-
+\draw[arrow, goldphoenix!40] (truth) -- (center);
+\draw[arrow, goldphoenix!40] (justice) -- (center);
+\draw[arrow, goldphoenix!40] (repair) -- (center);
+\draw[arrow, goldphoenix!40] (reform) -- (center);
 \end{tikzpicture}
 \caption{چهار رکن عدالت انتقالی و هدف نهایی آشتی ملی}
-\label{fig:transitional-justice-pillars}
 \end{figure}
 
 \begin{enghelabbox}
