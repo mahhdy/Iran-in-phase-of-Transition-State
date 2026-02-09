@@ -51,7 +51,7 @@
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}[
-		scale=1.2, transform shape,              % ← ۲۰٪ بزرگ‌تر
+		scale=1.0, transform shape,              % ← ۲۰٪ بزرگ‌تر
 		phasebox/.style={
 			rectangle, rounded corners=3pt, 
 			minimum height=1.4cm, text centered, 
@@ -65,40 +65,38 @@
 		desclab/.style={font=\scriptsize, text width=2.5cm, align=center}
 		]
 		\draw[line width=3pt, color=gray] (0,0) -- (12.5,0);
-		\node[phasebox, fill=blue!60!black, minimum width=1cm, 
-		minimum height=1.4cm] at (0.5,1.2) {
+		\node[phasebox, fill=blue!60!black, minimum width=1.2cm] at (0.5,1.2) {
 			\begin{tabular}{c}
 				\rl{فاز ۱}\\[-2pt]
 				\scriptsize \rl{گذار}
 			\end{tabular}
 		};
-		\node[phasebox, fill=green!60!black, minimum width=1.5cm, 
-		minimum height=1.4cm] at (1.75,1.2) {
+		\node[phasebox, fill=green!60!black, minimum width=1.8cm] at (2.1,1.2) {
 			\begin{tabular}{c}
 				\rl{فاز ۲}\\[-2pt]
 				\scriptsize \rl{نهادسازی}
 			\end{tabular}
 		};
-		\node[phasebox, fill=orange!80!black, minimum width=2.5cm] 	at (3.75,1.2) {\rl{فاز ۳: تحکیم}};
-		\node[phasebox, fill=purple!60!black, minimum width=5.0cm] 	at (7.5,1.2) {\rl{فاز ۴: بلوغ}};
-		\node[phasebox, fill=red!70!black, minimum width=2.5cm] at (11.25,1.2) {\rl{فاز ۵: برتری}};
+		\node[phasebox, fill=orange!80!black, minimum width=2.5cm] 	at (4.5,1.2) {\rl{فاز ۳: تحکیم}};
+		\node[phasebox, fill=purple!60!black, minimum width=4.0cm] 	at (8.0,1.2) {\rl{فاز ۴: بلوغ}};
+		\node[phasebox, fill=red!70!black, minimum width=2.0cm] at (11.5,1.2) {\rl{فاز ۵: برتری}};
 		\node[milestone] (y0)  at (0,0)    {};
 		\node[milestone] (y2)  at (1,0) {};
-		\node[milestone] (y5)  at (2.5,0)  {};
-		\node[milestone] (y10) at (5,0)  {};
-		\node[milestone] (y20) at (10,0) {};
-		\node[milestone] (y25) at (12.5,0)   {};
-		\node[yearlab, below=0.4cm of y0]  {۲۰۲۵};
-		\node[yearlab, below=0.4cm of y2]  {۲۰۲۷};
-		\node[yearlab, below=0.4cm of y5]  {۲۰۳۰};
-		\node[yearlab, below=0.4cm of y10] {۲۰۳۵};
-		\node[yearlab, below=0.4cm of y20] {۲۰۴۵};
-		\node[yearlab, below=0.4cm of y25] {۲۰۵۰};
-		\node[desclab, below=1cm of y0] {آغاز\\گذار};
-		\node[desclab, below=1cm of y2] {\rl{قانون اساسی\\انتخابات}};
-		\node[desclab, below=1cm of y5] {نهادها\\استقرار};
-		\node[desclab, below=1cm of y10] {دموکراسی\\تثبیت};
-		\node[desclab, below=1cm of y25] {برتری\\منطقه‌ای};
+		\node[milestone] (y5)  at (3,0)  {};
+		\node[milestone] (y15) at (6,0)  {};
+		\node[milestone] (y25) at (10,0) {};
+		\node[milestone] (y30) at (12.5,0)   {};
+		\node[yearlab, below=0.4cm of y0]  {\rl{۲۰۲۵}};
+		\node[yearlab, below=0.4cm of y2]  {\rl{۲۰۲۷}};
+		\node[yearlab, below=0.4cm of y5]  {\rl{۲۰۳۰}};
+		\node[yearlab, below=0.4cm of y15] {\rl{۲۰۳۵}};
+		\node[yearlab, below=0.4cm of y25] {\rl{۲۰۴۵}};
+		\node[yearlab, below=0.4cm of y30] {\rl{۲۰۵۰}};
+		\node[desclab, below=1cm of y0] {\rl{آغاز}\\[2pt]\rl{گذار}};
+		\node[desclab, below=1cm of y2] {\rl{قانون اساسی}\\[2pt]\rl{انتخابات}};
+		\node[desclab, below=1cm of y5] {\rl{نهادها}\\[2pt]\rl{استقرار}};
+		\node[desclab, below=1cm of y15] {\rl{دموکراسی}\\[2pt]\rl{تثبیت}};
+		\node[desclab, below=1cm of y30] {\rl{برتری}\\[2pt]\rl{منطقه‌ای}};
 	\end{tikzpicture}
 	\caption{خط زمانی نقشه راه ۲۵ ساله}
 	\label{fig:timeline-exec}
@@ -139,14 +137,9 @@
 \rowcolor{goldlight}
 \textbf{۵} & ۵ سال & 
 دوران برتری؛ ثبات پایدار & 
-قدرت اول اقتصادی-فنی منطقه؛ تظاهر برتری \\
+قدرت اول اقتصادی-فنی منطقه؛ الگوی جهانی؛ اقتصاد دانش‌بنیان \\
 \bottomrule
 \end{tabularx}
-\end{table}
-تعالی و برتری جهانی & 
-الگوی جهانی؛ اقتصاد دانش‌بنیان؛ برند ملی \\
-\bottomrule
-\end{tabular}
 \end{table}
 
 %══════════════════════════════════════════════════════════════════════════════
@@ -214,26 +207,26 @@
 % چرخه باطل (چپ)
 \node[cyclebox, draw=red!70, fill=red!10] (b1) at (0,0) {
     \begin{tabular}{c}
-    فساد و\\
-    بی‌اعتمادی
+    \rl{فساد و}\\
+    \rl{بی‌اعتمادی}
     \end{tabular}
 };
 \node[cyclebox, draw=red!70, fill=red!10] (b2) at (2.5,2) {
     \begin{tabular}{c}
-    سرکوب و\\
-    انسداد
+    \rl{سرکوب و}\\
+    \rl{انسداد}
     \end{tabular}
 };
 \node[cyclebox, draw=red!70, fill=red!10] (b3) at (5,0) {
     \begin{tabular}{c}
-    رکود و\\
-    فقر
+    \rl{رکود و}\\
+    \rl{فقر}
     \end{tabular}
 };
 \node[cyclebox, draw=red!70, fill=red!10] (b4) at (2.5,-2) {
     \begin{tabular}{c}
-    نارضایتی و\\
-    بی‌ثباتی
+    \rl{نارضایتی و}\\
+    \rl{بی‌ثباتی}
     \end{tabular}
 };
 
@@ -242,33 +235,31 @@
 \draw[badarrow] (b3) -- (b4);
 \draw[badarrow] (b4) -- (b1);
 
-\node[font=\large\bfseries, color=red!70] at (2.5,0) {چرخه باطل};
+\node[font=\large\bfseries, color=red!70] at (2.5,0) {\rl{چرخه باطل}};
 
 % چرخه فاضل (راست)
-\node[cyclebox, draw=vertnapoleon, fill=bleulight] (g1) at (9,0) {
+\node[cyclebox, draw=vertnapoleon, fill=bleulight] (g1) at (10,0) {
     \begin{tabular}{c}
-    شفافیت و\\
-    اعتماد
+    \rl{شفافیت و}\\
+    \rl{اعتماد}
     \end{tabular}
 };
-\node[cyclebox, draw=vertnapoleon, fill=bleulight] (g2) at (11.5,2) {
+\node[cyclebox, draw=vertnapoleon, fill=bleulight] (g2) at (12.5,2) {
     \begin{tabular}{c}
-    مشارکت و\\
+    \rl{مشارکت و}\\
+    \rl{آزادی}
     \end{tabular}
 };
-    آزادی
+\node[cyclebox, draw=vertnapoleon, fill=vertlight] (g3) at (15,0) {
+    \begin{tabular}{c}
+    \rl{رشد و}\\
+    \rl{رفاه}
     \end{tabular}
 };
-\node[cyclebox, draw=vertnapoleon, fill=vertlight] (g3) at (16,0) {
+\node[cyclebox, draw=vertnapoleon, fill=vertlight] (g4) at (12.5,-2) {
     \begin{tabular}{c}
-    رشد و\\
-    رفاه
-    \end{tabular}
-};
-\node[cyclebox, draw=vertnapoleon, fill=vertlight] (g4) at (13,-2) {
-    \begin{tabular}{c}
-    رضایت و\\
-    ثبات
+    \rl{رضایت و}\\
+    \rl{ثبات}
     \end{tabular}
 };
 
@@ -277,11 +268,11 @@
 \draw[goodarrow] (g3) -- (g4);
 \draw[goodarrow] (g4) -- (g1);
 
-\node[font=\large\bfseries, color=vertnapoleon] at (13,0) {چرخه فاضل};
+\node[font=\large\bfseries, color=vertnapoleon] at (12.5,0) {\rl{چرخه فاضل}};
 
 % فلش تبدیل
-\draw[->, >=Stealth, line width=3pt, color=bleurepublique] (7,0) -- (9,0);
-\node[font=\small\bfseries, color=bleurepublique, above] at (8,0.2) {گذار};
+\draw[->, >=Stealth, line width=3pt, color=bleurepublique] (6,0) -- (9,0);
+\node[font=\small\bfseries, color=bleurepublique, above] at (7.5,0.2) {\rl{گذار}};
 
 \end{tikzpicture}
 \caption{تبدیل چرخه باطل به چرخه فاضل}
@@ -303,25 +294,39 @@
 \begin{tikzpicture}[
     scale=0.85, every node/.style={scale=0.85},
     node distance=1.5cm,
-    \textbf{ماه ۶-۱۲}\\[3pt]
-    شغل، درمان، مسکن\\[2pt]
-    {\scriptsize\color{vertnapoleon} امید به آینده}
+    timebox/.style={rectangle, rounded corners=3pt, minimum width=3.2cm, minimum height=1.5cm, text centered, draw=bleurepublique, fill=bleulight, line width=1pt},
+    arrow/.style={->, >=Stealth, thick, color=bleurepublique}
+]
+
+\node[timebox] (t1) at (0,0) {
+    \begin{tabular}{c}
+    \rl{\textbf{۱۰۰ روز اول}}\\[3pt]
+    \rl{آرامش و معیشت}\\[2pt]
+    {\scriptsize\color{vertnapoleon} \rl{بازگشت آرامش}}
     \end{tabular}
 };
 
-\node[timebox] (t3) at (9,0) {
+\node[timebox] (t2) at (4.2,0) {
     \begin{tabular}{c}
-    \textbf{سال ۱-۳}\\[3pt]
-    زیرساخت، خدمات\\[2pt]
-    {\scriptsize\color{vertnapoleon} اعتماد به نظام}
+    \rl{\textbf{ماه ۶-۱۲}}\\[3pt]
+    \rl{شغل، درمان، مسکن}\\[2pt]
+    {\scriptsize\color{vertnapoleon} \rl{امید به آینده}}
     \end{tabular}
 };
 
-\node[timebox] (t4) at (13.5,0) {
+\node[timebox] (t3) at (8.4,0) {
     \begin{tabular}{c}
-    \textbf{سال ۳-۱۰}\\[3pt]
-    توسعه پایدار\\[2pt]
-    {\scriptsize\color{vertnapoleon} تثبیت دموکراسی}
+    \rl{\textbf{سال ۱-۳}}\\[3pt]
+    \rl{زیرساخت، خدمات}\\[2pt]
+    {\scriptsize\color{vertnapoleon} \rl{اعتماد به نظام}}
+    \end{tabular}
+};
+
+\node[timebox] (t4) at (12.6,0) {
+    \begin{tabular}{c}
+    \rl{\textbf{سال ۳-۱۰}}\\[3pt]
+    \rl{توسعه پایدار}\\[2pt]
+    {\scriptsize\color{vertnapoleon} \rl{تثبیت دموکراسی}}
     \end{tabular}
 };
 
@@ -526,7 +531,7 @@
 \textcolor{bleurepublique}{\rule{0.5\textwidth}{1pt}}
 
 \vspace{0.3cm}
-{\large\bfseries آینده ساخته می‌شود، نه منتظر می‌ماند.}
+{\large\bfseries آینده ساختنی است، نه به انتظار نشستنی!.}
 \vspace{0.3cm}
 
 \textcolor{bleurepublique}{\rule{0.5\textwidth}{1pt}}

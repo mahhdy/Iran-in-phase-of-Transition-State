@@ -13,7 +13,7 @@
 \usepackage{graphicx}
 \usepackage{tikz}
 \usepackage{pgfplots}
-\usepackage{pgf-pie}           % برای نمودارهای دایره‌ای (\pie)
+\usepackage{pgf-pie} 
 \usepackage{tcolorbox}
 \usepackage{booktabs}
 \usepackage{array}
@@ -101,6 +101,17 @@
 \definecolor{phase4}{RGB}{147, 112, 219}
 \definecolor{phase5}{RGB}{220, 20, 60}
 
+% ─── رنگ‌های تکمیلی برای پالت ققنوس (جلوگیری از خطای xcolor) ──────────────────
+\colorlet{rougelight}{rougerevolution!15}
+\colorlet{vertlight}{vertnapoleon!15}
+\colorlet{violetlight}{violetmid!15}
+\colorlet{violetempire}{violetmid!80!black}
+\colorlet{orroyallight}{goldphoenix!15}
+\colorlet{orroyal}{goldphoenix}
+\colorlet{bleunight}{bleurepublique!90!black}
+\colorlet{golddark}{goldphoenix!80!black}
+\colorlet{violetlight}{violetmid!20}
+
 % ─── رنگ‌های معنایی پروژه (استفاده در پیوست‌ها و نمودارها) ──────────────────
 \definecolor{DemocracyBlue}{RGB}{41, 128, 185}
 \definecolor{SuccessGreen}{RGB}{39, 174, 96}
@@ -134,7 +145,7 @@
     boxrule=1pt,
     arc=5pt,
     left=15pt, right=15pt, top=10pt, bottom=10pt,
-    halign=flush right,
+    halign=right,
     before skip=12pt, after skip=12pt
 }
 
@@ -329,7 +340,8 @@
 %──────────────────────────────────────────────────────────────────────────────
 \usepackage{xepersian}
 \settextfont{Vazirmatn}
-\setdigitfont{Vazirmatn}
+\settextdigitfont{Vazirmatn}
+\DefaultMathDigits
 % اگر Linux Libertine O نصب نیست، از Times New Roman استفاده می‌شود
 \IfFontExistsTF{Linux Libertine O}{%
     \setlatintextfont{Linux Libertine O}%

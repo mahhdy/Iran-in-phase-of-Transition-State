@@ -43,38 +43,38 @@
 % شش بحران در شش‌ضلعی
 \node[crisis] (c1) at (90:3.5cm) {
     \begin{tabular}{c}
-    بحران آب\\
-    {\scriptsize تهدید وجودی}
+    \rl{بحران آب}\\
+    {\scriptsize \rl{تهدید وجودی}}
     \end{tabular}
 };
 \node[crisis] (c2) at (30:3.5cm) {
     \begin{tabular}{c}
-    بحران انرژی\\
-    {\scriptsize قاچاق و کمبود}
+    \rl{بحران انرژی}\\
+    {\scriptsize \rl{قاچاق و کمبود}}
     \end{tabular}
 };
 \node[crisis] (c3) at (330:3.5cm) {
     \begin{tabular}{c}
-    بحران اقتصادی\\
-    {\scriptsize تحریم و تورم}
+    \rl{بحران اقتصادی}\\
+    {\scriptsize \rl{تحریم و تورم}}
     \end{tabular}
 };
 \node[crisis] (c4) at (270:3.5cm) {
     \begin{tabular}{c}
-    بحران سیاسی\\
-    {\scriptsize فساد و انسداد}
+    \rl{بحران سیاسی}\\
+    {\scriptsize \rl{فساد و انسداد}}
     \end{tabular}
 };
 \node[crisis] (c5) at (210:3.5cm) {
     \begin{tabular}{c}
-    بحران اجتماعی\\
-    {\scriptsize بی‌اعتمادی}
+    \rl{بحران اجتماعی}\\
+    {\scriptsize \rl{بی‌اعتمادی}}
     \end{tabular}
 };
 \node[crisis] (c6) at (150:3.5cm) {
     \begin{tabular}{c}
-    بحران امنیتی\\
-    {\scriptsize ژئوپلیتیک}
+    \rl{بحران امنیتی}\\
+    {\scriptsize \rl{ژئوپلیتیک}}
     \end{tabular}
 };
 
@@ -93,9 +93,9 @@
 
 % مرکز
 \node[circle, minimum size=1.8cm, fill=goldphoenix, text=white, font=\small\bfseries] at (0,0) {
-    \begin{tabular}{R{1.5cm} C}
-    بحران\\
-    سیستمی
+    \begin{tabular}{c}
+    \rl{بحران}\\
+    \rl{سیستمی}
     \end{tabular}
 };
 
@@ -213,9 +213,9 @@
     ybar stacked,
     width=12cm,
     height=7cm,
-    ylabel={درصد},
-    xlabel={بخش},
-    symbolic x coords={تولید, مصرف داخلی, صادرات, قاچاق/اتلاف},
+    ylabel={\rl{درصد}},
+    xlabel={\rl{بخش}},
+    symbolic x coords={\rl{تولید}, \rl{مصرف داخلی}, \rl{صادرات}, \rl{قاچاق/اتلاف}},
     xtick=data,
     ymin=0, ymax=110,
     legend style={at={(0.5,-0.2)}, anchor=north, legend columns=4},
@@ -228,7 +228,7 @@
 \addplot[fill=chart2] coordinates {(تولید,0) (مصرف داخلی,0) (صادرات,0) (قاچاق/اتلاف,15)};
 \addplot[fill=chart4] coordinates {(تولید,0) (مصرف داخلی,0) (صادرات,0) (قاچاق/اتلاف,10)};
 
-\legend{نفت و گاز, قاچاق, اتلاف}
+\legend{\rl{نفت و گاز}, \rl{قاچاق}, \rl{اتلاف}}
 
 \end{axis}
 \end{tikzpicture}
@@ -289,29 +289,29 @@
 
 \node[rentbox] (a) at (0,0) {
     \begin{tabular}{c}
-    وابستگی به\\
-    درآمد نفت
+    \rl{وابستگی به}\\
+    \rl{درآمد نفت}
     \end{tabular}
 };
 
 \node[rentbox] (b) at (4.5,2) {
     \begin{tabular}{c}
-    دولت بزرگ و\\
-    ناکارآمد
+    \rl{دولت بزرگ و}\\
+    \rl{ناکارآمد}
     \end{tabular}
 };
 
 \node[rentbox] (c) at (9,0) {
     \begin{tabular}{c}
-    فساد و\\
-    رانت‌جویی
+    \rl{فساد و}\\
+    \rl{رانت‌جویی}
     \end{tabular}
 };
 
 \node[rentbox] (d) at (4.5,-2) {
     \begin{tabular}{c}
-    ضعف بخش\\
-    خصوصی مولد
+    \rl{ضعف بخش}\\
+    \rl{خصوصی مولد}
     \end{tabular}
 };
 
@@ -373,7 +373,7 @@ GDP سرانه (\$) & ۷,۰۰۰ & ۳,۰۰۰ & -۵۷٪ \\
     (2010,15) (2024,15)
 };
 
-\legend{نرخ فقر واقعی, آستانه هشدار}
+\legend{\rl{نرخ فقر واقعی}, \rl{آستانه هشدار}}
 
 \end{axis}
 \end{tikzpicture}
@@ -457,29 +457,29 @@ Freedom House & --- & ۱۶/۱۰۰ & غیرآزاد \\
 % سطوح اعتماد
 \node[trustbox, draw=bleurepublique, fill=bleulight] (t1) at (0,0) {
     \begin{tabular}{c}
-    اعتماد به دولت\\
-    {\scriptsize کمتر از ۱۵٪}
+    \rl{اعتماد به دولت}\\
+    {\scriptsize \rl{کمتر از ۱۵٪}}
     \end{tabular}
 };
 
 \node[trustbox, draw=bleurepublique, fill=bleulight] (t2) at (4.5,0) {
     \begin{tabular}{c}
-    اعتماد به نهادها\\
-    {\scriptsize کمتر از ۲۰٪}
+    \rl{اعتماد به نهادها}\\
+    {\scriptsize \rl{کمتر از ۲۰٪}}
     \end{tabular}
 };
 
 \node[trustbox, draw=goldphoenix, fill=goldlight] (t3) at (9,0) {
     \begin{tabular}{c}
-    اعتماد بین‌فردی\\
-    {\scriptsize حدود ۳۰٪}
+    \rl{اعتماد بین‌فردی}\\
+    {\scriptsize \rl{حدود ۳۰٪}}
     \end{tabular}
 };
 
 \node[trustbox, draw=white, fill=goldphoenix, text=white] (t4) at (4.5,-2.5) {
     \begin{tabular}{c}
-    اعتماد به خانواده\\
-    {\scriptsize بالای ۸۰٪}
+    \rl{اعتماد به خانواده}\\
+    {\scriptsize \rl{بالای ۸۰٪}}
     \end{tabular}
 };
 
@@ -533,12 +533,12 @@ Freedom House & --- & ۱۶/۱۰۰ & غیرآزاد \\
     color={chart1, chart2, chart3, chart4, chart5, gray!50},
     explode={0.1, 0, 0, 0, 0, 0}
 ]{
-    50/قوم اصلی الف,
-    20/قوم ب,
-    15/قوم ج,
-    8/قوم د,
-    4/قوم ه,
-    3/سایر اقلیت‌ها
+    50/\rl{قوم اصلی الف},
+    20/\rl{قوم ب},
+    15/\rl{قوم ج},
+    8/\rl{قوم د},
+    4/\rl{قوم ه},
+    3/\rl{سایر اقلیت‌ها}
 }
 \end{tikzpicture}
 \caption{ترکیب تقریبی قومی-زبانی کشور}
@@ -618,69 +618,69 @@ Freedom House & --- & ۱۶/۱۰۰ & غیرآزاد \\
 
 % قوت‌ها (بالا چپ)
 \node[swotbox, draw=vertnapoleon, fill=vertlight] (s) at (0,4) {
-    \textbf{\large قوت‌ها (Strengths)}
+    \textbf{\large \rl{قوت‌ها (Strengths)}}
     \begin{itemize}[nosep, rightmargin=0.3cm]
-        \item میراث تمدنی کهن و هویت‌ساز
-        \item جمعیت جوان (۶۰\% زیر ۳۰ سال)
-        \item نیروی کار تحصیل‌کرده
-        \item موقعیت جغرافیایی استراتژیک
-        \item منابع طبیعی متنوع (نفت، گاز، معادن)
-        \item دیاسپورای قدرتمند و متخصص
-        \item سنت‌های مشورتی تاریخی
-        \item تجربه جنبش‌های مدنی
+        \item \rl{میراث تمدنی کهن و هویت‌ساز}
+        \item \rl{جمعیت جوان (۶۰٪ زیر ۳۰ سال)}
+        \item \rl{نیروی کار تحصیل‌کرده}
+        \item \rl{موقعیت جغرافیایی استراتژیک}
+        \item \rl{منابع طبیعی متنوع (نفت، گاز، معادن)}
+        \item \rl{دیاسپورای قدرتمند و متخصص}
+        \item \rl{سنت‌های مشورتی تاریخی}
+        \item \rl{تجربه جنبش‌های مدنی}
     \end{itemize}
 };
 
 % ضعف‌ها (بالا راست)
 \node[swotbox, draw=rougerevolution, fill=rougelight] (w) at (10,4) {
-    \textbf{\large ضعف‌ها (Weaknesses)}
+    \textbf{\large \rl{ضعف‌ها (Weaknesses)}}
     \begin{itemize}[nosep, rightmargin=0.3cm]
-        \item فساد سیستماتیک و مویرگی
-        \item نهادهای ضعیف و ناکارآمد
-        \item بی‌اعتمادی عمیق اجتماعی
-        \item تنش‌های قومی نهفته
-        \item وابستگی به نفت (اقتصاد رانتی)
-        \item فرار مغزها و سرمایه
-        \item زیرساخت فرسوده
-        \item فرهنگ سیاسی اقتدارگرا
+        \item \rl{فساد سیستماتیک و مویرگی}
+        \item \rl{نهادهای ضعیف و ناکارآمد}
+        \item \rl{بی‌اعتمادی عمیق اجتماعی}
+        \item \rl{تنش‌های قومی نهفته}
+        \item \rl{وابستگی به نفت (اقتصاد رانتی)}
+        \item \rl{فرار مغزها و سرمایه}
+        \item \rl{زیرساخت فرسوده}
+        \item \rl{فرهنگ سیاسی اقتدارگرا}
     \end{itemize}
 };
 
 % فرصت‌ها (پایین چپ)
 \node[swotbox, draw=bleurepublique, fill=bleulight] (o) at (0,-4) {
-    \textbf{\large فرصت‌ها (Opportunities)}
+    \textbf{\large \rl{فرصت‌ها (Opportunities)}}
     \begin{itemize}[nosep, rightmargin=0.3cm]
-        \item فرسایش مشروعیت نظام موجود
-        \item تغییرات ژئوپلیتیک منطقه‌ای
-        \item امکان جذب کمک بین‌المللی
-        \item بازار بزرگ داخلی (۸۵+ میلیون)
-        \item پتانسیل انرژی‌های تجدیدپذیر
-        \item امکان بازگشت دیاسپورا
-        \item تقاضا برای تغییر در جامعه
-        \item تجربه موفق کشورهای مشابه
+        \item \rl{فرسایش مشروعیت نظام موجود}
+        \item \rl{تغییرات ژئوپلیتیک منطقه‌ای}
+        \item \rl{امکان جذب کمک بین‌المللی}
+        \item \rl{بازار بزرگ داخلی (۸۵+ میلیون)}
+        \item \rl{پتانسیل انرژی‌های تجدیدپذیر}
+        \item \rl{امکان بازگشت دیاسپورا}
+        \item \rl{تقاضا برای تغییر در جامعه}
+        \item \rl{تجربه موفق کشورهای مشابه}
     \end{itemize}
 };
 
 % تهدیدها (پایین راست)
 \node[swotbox, draw=orroyal, fill=orroyallight] (t) at (10,-4) {
-    \textbf{\large تهدیدها (Threats)}
+    \textbf{\large \rl{تهدیدها (Threats)}}
     \begin{itemize}[nosep, rightmargin=0.3cm]
-        \item بحران آب (نقطه بی‌بازگشت)
-        \item تداوم تحریم‌های بین‌المللی
-        \item مداخله قدرت‌های خارجی
-        \item احتمال خشونت در گذار
-        \item بازگشت اقتدارگرایی
-        \item تجزیه‌طلبی افراطی
-        \item فروپاشی اقتصادی
-        \item محیط منطقه‌ای ناامن
+        \item \rl{بحران آب (نقطه بی‌بازگشت)}
+        \item \rl{تداوم تحریم‌های بین‌المللی}
+        \item \rl{مداخله قدرت‌های خارجی}
+        \item \rl{احتمال خشونت در گذار}
+        \item \rl{بازگشت اقتدارگرایی}
+        \item \rl{تجزیه‌طلبی افراطی}
+        \item \rl{فروپاشی اقتصادی}
+        \item \rl{محیط منطقه‌ای ناامن}
     \end{itemize}
 };
 
 % عناوین گوشه‌ها
-\node[font=\small, color=vertnapoleon] at (-4.5,7.5) {\textbf{داخلی مثبت}};
-\node[font=\small, color=rougerevolution] at (14.5,7.5) {\textbf{داخلی منفی}};
-\node[font=\small, color=bleurepublique] at (-4.5,-0.5) {\textbf{خارجی مثبت}};
-\node[font=\small, color=orroyal] at (14.5,-0.5) {\textbf{خارجی منفی}};
+\node[font=\small, color=vertnapoleon] at (-4.5,7.5) {\textbf{\rl{داخلی مثبت}}};
+\node[font=\small, color=rougerevolution] at (14.5,7.5) {\textbf{\rl{داخلی منفی}}};
+\node[font=\small, color=bleurepublique] at (-4.5,-0.5) {\textbf{\rl{خارجی مثبت}}};
+\node[font=\small, color=orroyal] at (14.5,-0.5) {\textbf{\rl{خارجی منفی}}};
 
 \end{tikzpicture}
 \caption{تحلیل SWOT جامع وضعیت کشور}
