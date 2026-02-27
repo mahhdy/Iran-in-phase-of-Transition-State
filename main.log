@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.1) (preloaded format=xelatex 2026.2.7)  9 FEB 2026 02:07
+This is XeTeX, Version 3.141592653-2.6-0.999998 (MiKTeX 26.1) (preloaded format=xelatex 2026.2.10)  26 FEB 2026 22:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1402,13 +1402,29 @@ ext;"
 (fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
 text;"
 
-LaTeX Info: Redefining \latinfont on input line 355.
+LaTeX Info: Redefining \latinfont on input line 356.
 )
 (C:\Users\mahhd\AppData\Roaming\MiKTeX\tex/latex/bidi\float-xetex-bidi.def
 File: float-xetex-bidi.def 2013/04/04 v0.2 bidi adaptations for float package f
 or XeTeX engine
 )
-(main.aux)
+(main.aux
+
+LaTeX Warning: Label `i' multiply defined.
+
+
+LaTeX Warning: Label `i' multiply defined.
+
+
+LaTeX Warning: Label `/' multiply defined.
+
+
+LaTeX Warning: Label `/' multiply defined.
+
+
+LaTeX Warning: Label `/' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
@@ -1475,11 +1491,14 @@ Package hyperref Info: Link coloring ON on input line 12.
 \@outlinefile=\write4
 \openout4 = `main.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 File: images/Goognoos.png Graphic file (type bmp)
 <images/Goognoos.png>
-
 
 LaTeX Font Warning: Font shape `TU/Vazirmatn(0)/m/it' undefined
 (Font)              using `TU/Vazirmatn(0)/m/n' instead on input line 60.
@@ -1492,44 +1511,1507 @@ LaTeX Font Warning: Font shape `TU/Vazirmatn(0)/m/it' undefined
 
 ] [5] [6
 
-] (main.toc)
-\tf@toc=\write5
-\openout5 = `main.toc'.
-
- [7] [8
-
-] (main.lof)
-\tf@lof=\write6
-\openout6 = `main.lof'.
-
- [9
-
-] [10
-
-] (main.lot)
-\tf@lot=\write7
-\openout7 = `main.lot'.
-
-
-[11
-
-] [12
-
-] [1
-
-] [2] (chapters/ch00-executive.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
-
+] (main.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 7.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 7.
 
 (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [7] [8] [9] [10] [11]
+[12]
+Overfull \hbox (0.67145pt too wide) detected at line 249
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۱۳۳[][][]
+ []
+
+
+Overfull \hbox (0.67145pt too wide) detected at line 250
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۱۳۳[][][]
+ []
+
+
+Overfull \hbox (0.67145pt too wide) detected at line 251
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۱۳۳[][][]
+ []
+
+
+Overfull \hbox (0.67145pt too wide) detected at line 252
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۱۳۳[][][]
+ []
+
+[13]
+Overfull \hbox (0.67145pt too wide) detected at line 253
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۱۳۳[][][]
+ []
+
+
+Overfull \hbox (0.67145pt too wide) detected at line 254
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۱۳۳[][][]
+ []
+
+[14] [15] [16]
+Overfull \hbox (0.64801pt too wide) detected at line 401
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۰۳[][][]
+ []
+
+
+Overfull \hbox (0.64801pt too wide) detected at line 402
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۰۳[][][]
+ []
+
+[17]
+Overfull \hbox (1.86676pt too wide) detected at line 446
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۳[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 447
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۳[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 448
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۳[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 449
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۳[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 450
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۳[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 451
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۳[][][]
+ []
+
+
+Overfull \hbox (1.04059pt too wide) detected at line 452
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۵[][][]
+ []
+
+
+Overfull \hbox (1.02887pt too wide) detected at line 457
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۸[][][]
+ []
+
+
+Overfull \hbox (1.02887pt too wide) detected at line 458
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۸[][][]
+ []
+
+
+Overfull \hbox (1.02887pt too wide) detected at line 459
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۸[][][]
+ []
+
+
+Overfull \hbox (0.64801pt too wide) detected at line 464
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۰[][][]
+ []
+
+
+Overfull \hbox (0.64801pt too wide) detected at line 465
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۰[][][]
+ []
+
+
+Overfull \hbox (0.64801pt too wide) detected at line 466
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۰[][][]
+ []
+
+[18]
+Overfull \hbox (1.86676pt too wide) detected at line 471
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۲[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 472
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۲[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 473
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۳[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 474
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۳[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 475
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 476
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 477
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 478
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 479
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 480
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 481
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 482
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۶[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 483
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۶[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 484
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۶[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 485
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۶[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 486
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۷[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 487
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۷[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 488
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۸[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 489
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۸[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 490
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۸[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 491
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۸[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 492
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۹[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 493
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۹[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 494
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۹[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 495
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۹[][][]
+ []
+
+
+Overfull \hbox (1.6148pt too wide) detected at line 501
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۵[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 502
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۷[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 503
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۷[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 504
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۷[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 505
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۷[][][]
+ []
+
+[19]
+Overfull \hbox (1.60309pt too wide) detected at line 506
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۷[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 507
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۸[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 508
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۸[][][]
+ []
+
+
+Overfull \hbox (1.04059pt too wide) detected at line 516
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۲[][][]
+ []
+
+
+Overfull \hbox (1.04059pt too wide) detected at line 517
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۲[][][]
+ []
+
+
+Overfull \hbox (1.04059pt too wide) detected at line 518
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۲[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 519
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۳[][][]
+ []
+
+
+Overfull \hbox (1.6148pt too wide) detected at line 520
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۴[][][]
+ []
+
+
+Overfull \hbox (1.6148pt too wide) detected at line 521
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۴[][][]
+ []
+
+
+Overfull \hbox (1.83746pt too wide) detected at line 522
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۵[][][]
+ []
+
+
+Overfull \hbox (1.83746pt too wide) detected at line 523
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۵[][][]
+ []
+
+
+Overfull \hbox (1.83746pt too wide) detected at line 524
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۵[][][]
+ []
+
+
+Overfull \hbox (0.60114pt too wide) detected at line 525
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۶[][][]
+ []
+
+
+Overfull \hbox (0.60114pt too wide) detected at line 526
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۶[][][]
+ []
+
+
+Overfull \hbox (0.60114pt too wide) detected at line 527
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۶[][][]
+ []
+
+
+Overfull \hbox (0.60114pt too wide) detected at line 528
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۶[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 529
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۷[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 530
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۷[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 531
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۷[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 532
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۸[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 533
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۸[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 534
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۸[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 535
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۸[][][]
+ []
+
+
+Overfull \hbox (0.60114pt too wide) detected at line 542
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۶۵[][][]
+ []
+
+[20]
+Overfull \hbox (0.58942pt too wide) detected at line 546
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۶۷[][][]
+ []
+
+
+Overfull \hbox (0.58942pt too wide) detected at line 547
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۶۷[][][]
+ []
+
+
+Overfull \hbox (0.58942pt too wide) detected at line 548
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۶۸[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 556
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۳[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 560
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۵[][][]
+ []
+
+
+Overfull \hbox (1.81403pt too wide) detected at line 561
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۸[][][]
+ []
+
+
+Overfull \hbox (0.53082pt too wide) detected at line 562
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۹[][][]
+ []
+
+
+Overfull \hbox (1.02887pt too wide) detected at line 565
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۲[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 566
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۳[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 567
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۳[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 568
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۴[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 569
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۴[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 570
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۴[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 571
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۴[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 572
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۴[][][]
+ []
+
+
+Overfull \hbox (1.81403pt too wide) detected at line 574
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۷[][][]
+ []
+
+
+Overfull \hbox (1.81403pt too wide) detected at line 575
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۸[][][]
+ []
+
+
+Overfull \hbox (1.81403pt too wide) detected at line 576
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۸[][][]
+ []
+
+
+Overfull \hbox (1.81403pt too wide) detected at line 577
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۸[][][]
+ []
+
+
+Overfull \hbox (1.81403pt too wide) detected at line 578
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۸[][][]
+ []
+
+
+Overfull \hbox (0.53082pt too wide) detected at line 579
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۹[][][]
+ []
+
+[21]
+Overfull \hbox (1.36871pt too wide) detected at line 590
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۳[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 591
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۳[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 592
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۳[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 593
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۳[][][]
+ []
+
+
+Overfull \hbox (0.31989pt too wide) detected at line 594
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۴[][][]
+ []
+
+
+Overfull \hbox (0.31989pt too wide) detected at line 595
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۴[][][]
+ []
+
+
+Overfull \hbox (0.31989pt too wide) detected at line 596
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۴[][][]
+ []
+
+
+Overfull \hbox (0.31989pt too wide) detected at line 597
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۴[][][]
+ []
+
+
+Overfull \hbox (0.54254pt too wide) detected at line 598
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۵[][][]
+ []
+
+
+Overfull \hbox (0.54254pt too wide) detected at line 599
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۵[][][]
+ []
+
+
+Overfull \hbox (0.54254pt too wide) detected at line 600
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۵[][][]
+ []
+
+
+Overfull \hbox (0.53082pt too wide) detected at line 603
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۷[][][]
+ []
+
+
+Overfull \hbox (0.53082pt too wide) detected at line 604
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۷[][][]
+ []
+
+
+Overfull \hbox (0.53082pt too wide) detected at line 605
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۸[][][]
+ []
+
+
+Overfull \hbox (0.53082pt too wide) detected at line 606
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۹۸[][][]
+ []
+
+
+Overfull \hbox (0.64801pt too wide) detected at line 614
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۲[][][]
+ []
+
+
+Overfull \hbox (0.64801pt too wide) detected at line 615
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۲[][][]
+ []
+
+
+Overfull \hbox (2.27106pt too wide) detected at line 616
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۳[][][]
+ []
+
+
+Overfull \hbox (2.27106pt too wide) detected at line 617
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۳[][][]
+ []
+
+
+Overfull \hbox (1.22223pt too wide) detected at line 618
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۴[][][]
+ []
+
+
+Overfull \hbox (1.22223pt too wide) detected at line 619
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۴[][][]
+ []
+
+
+Overfull \hbox (1.22223pt too wide) detected at line 620
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۴[][][]
+ []
+
+
+Overfull \hbox (1.22223pt too wide) detected at line 621
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۴[][][]
+ []
+
+
+Overfull \hbox (1.44489pt too wide) detected at line 622
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۵[][][]
+ []
+
+
+Overfull \hbox (1.44489pt too wide) detected at line 623
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۵[][][]
+ []
+
+
+Overfull \hbox (1.44489pt too wide) detected at line 624
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۵[][][]
+ []
+
+[22]
+Overfull \hbox (1.44489pt too wide) detected at line 625
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۵[][][]
+ []
+
+
+Overfull \hbox (1.44489pt too wide) detected at line 626
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۵[][][]
+ []
+
+
+Overfull \hbox (1.44489pt too wide) detected at line 627
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۵[][][]
+ []
+
+
+Overfull \hbox (0.20856pt too wide) detected at line 628
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۶[][][]
+ []
+
+
+Overfull \hbox (0.20856pt too wide) detected at line 629
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۶[][][]
+ []
+
+
+Overfull \hbox (0.20856pt too wide) detected at line 630
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۶[][][]
+ []
+
+
+Overfull \hbox (0.20856pt too wide) detected at line 631
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۶[][][]
+ []
+
+
+Overfull \hbox (1.43317pt too wide) detected at line 632
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۷[][][]
+ []
+
+
+Overfull \hbox (1.43317pt too wide) detected at line 633
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۷[][][]
+ []
+
+
+Overfull \hbox (0.14996pt too wide) detected at line 635
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۹[][][]
+ []
+
+
+Overfull \hbox (0.14996pt too wide) detected at line 636
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۰۹[][][]
+ []
+
+
+Overfull \hbox (0.64801pt too wide) detected at line 652
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۰[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 655
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۲[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 656
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۳[][][]
+ []
+
+
+Overfull \hbox (2.44098pt too wide) detected at line 657
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۴[][][]
+ []
+
+
+Overfull \hbox (2.44098pt too wide) detected at line 658
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۴[][][]
+ []
+
+
+Overfull \hbox (2.44098pt too wide) detected at line 659
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۴[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 660
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۵[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 661
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۶[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 662
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۶[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 663
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۶[][][]
+ []
+
+[23]
+Overfull \hbox (2.65192pt too wide) detected at line 664
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۷[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 665
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۷[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 666
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۸[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 667
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۲۹[][][]
+ []
+
+
+Overfull \hbox (0.67145pt too wide) detected at line 669
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۱[][][]
+ []
+
+
+Overfull \hbox (0.67145pt too wide) detected at line 670
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۱[][][]
+ []
+
+
+Overfull \hbox (0.67145pt too wide) detected at line 671
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۱[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 672
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۲[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 673
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۲[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 674
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۲[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 675
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۲[][][]
+ []
+
+
+Overfull \hbox (5.11285pt too wide) detected at line 676
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۳[][][]
+ []
+
+
+Overfull \hbox (5.11285pt too wide) detected at line 677
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۳[][][]
+ []
+
+
+Overfull \hbox (5.11285pt too wide) detected at line 678
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۳[][][]
+ []
+
+
+Overfull \hbox (5.11285pt too wide) detected at line 679
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۳[][][]
+ []
+
+
+Overfull \hbox (4.06403pt too wide) detected at line 680
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۴[][][]
+ []
+
+
+Overfull \hbox (4.06403pt too wide) detected at line 681
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۴[][][]
+ []
+
+
+Overfull \hbox (4.06403pt too wide) detected at line 682
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۴[][][]
+ []
+
+
+Overfull \hbox (4.06403pt too wide) detected at line 683
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۴[][][]
+ []
+
+
+Overfull \hbox (4.28668pt too wide) detected at line 684
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۵[][][]
+ []
+
+
+Overfull \hbox (4.28668pt too wide) detected at line 685
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۵[][][]
+ []
+
+
+Overfull \hbox (4.28668pt too wide) detected at line 686
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۵[][][]
+ []
+
+
+Overfull \hbox (4.28668pt too wide) detected at line 687
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۵[][][]
+ []
+
+
+Overfull \hbox (4.28668pt too wide) detected at line 688
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۵[][][]
+ []
+
+
+Overfull \hbox (4.28668pt too wide) detected at line 689
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۵[][][]
+ []
+
+
+Overfull \hbox (3.05035pt too wide) detected at line 690
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۶[][][]
+ []
+
+
+Overfull \hbox (3.05035pt too wide) detected at line 691
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۶[][][]
+ []
+
+
+Overfull \hbox (4.27496pt too wide) detected at line 692
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۷[][][]
+ []
+
+
+Overfull \hbox (4.27496pt too wide) detected at line 693
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۷[][][]
+ []
+
+
+Overfull \hbox (4.27496pt too wide) detected at line 694
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۷[][][]
+ []
+
+
+Overfull \hbox (4.27496pt too wide) detected at line 695
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۷[][][]
+ []
+
+
+Overfull \hbox (4.27496pt too wide) detected at line 696
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۸[][][]
+ []
+
+
+Overfull \hbox (4.27496pt too wide) detected at line 697
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۸[][][]
+ []
+
+
+Overfull \hbox (2.99176pt too wide) detected at line 699
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۹[][][]
+ []
+
+
+Overfull \hbox (2.99176pt too wide) detected at line 700
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۹[][][]
+ []
+
+
+Overfull \hbox (2.99176pt too wide) detected at line 701
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۳۹[][][]
+ []
+
+
+Overfull \hbox (1.22223pt too wide) detected at line 702
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۴۰[][][]
+ []
+
+[24]
+Overfull \hbox (1.22223pt too wide) detected at line 703
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۴۰[][][]
+ []
+
+
+Overfull \hbox (1.22223pt too wide) detected at line 704
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۴۰[][][]
+ []
+
+
+Overfull \hbox (4.06403pt too wide) detected at line 706
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۴۳[][][]
+ []
+
+
+Overfull \hbox (3.23785pt too wide) detected at line 707
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۴۵[][][]
+ []
+
+
+Overfull \hbox (2.00153pt too wide) detected at line 708
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۴۶[][][]
+ []
+
+
+Overfull \hbox (3.22614pt too wide) detected at line 709
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۴۸[][][]
+ []
+
+
+Overfull \hbox (1.94293pt too wide) detected at line 710
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۴۹[][][]
+ []
+
+
+Overfull \hbox (1.44489pt too wide) detected at line 711
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۵۰[][][]
+ []
+
+
+Overfull \hbox (1.44489pt too wide) detected at line 712
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۵۰[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 714
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۵۲[][][]
+ []
+
+
+Overfull \hbox (3.46051pt too wide) detected at line 716
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۵۵[][][]
+ []
+
+
+Overfull \hbox (3.46051pt too wide) detected at line 717
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۵۵[][][]
+ []
+
+
+Overfull \hbox (2.22418pt too wide) detected at line 718
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۵۶[][][]
+ []
+
+
+Overfull \hbox (3.44879pt too wide) detected at line 719
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۵۷[][][]
+ []
+
+
+Overfull \hbox (2.16559pt too wide) detected at line 720
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۵۹[][][]
+ []
+
+
+Overfull \hbox (0.20856pt too wide) detected at line 721
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۰[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 723
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۲[][][]
+ []
+
+
+Overfull \hbox (3.05035pt too wide) detected at line 724
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۳[][][]
+ []
+
+
+Overfull \hbox (2.00153pt too wide) detected at line 725
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۴[][][]
+ []
+
+
+Overfull \hbox (2.22418pt too wide) detected at line 726
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۵[][][]
+ []
+
+
+Overfull \hbox (0.98785pt too wide) detected at line 727
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۶[][][]
+ []
+
+
+Overfull \hbox (0.98785pt too wide) detected at line 728
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۶[][][]
+ []
+
+
+Overfull \hbox (0.98785pt too wide) detected at line 729
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۶[][][]
+ []
+
+
+Overfull \hbox (2.21246pt too wide) detected at line 730
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۷[][][]
+ []
+
+
+Overfull \hbox (2.21246pt too wide) detected at line 731
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۸[][][]
+ []
+
+
+Overfull \hbox (0.92926pt too wide) detected at line 732
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۶۹[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 735
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۳۷۲[][][]
+ []
+
 )
+\tf@toc=\write5
+\openout5 = `main.toc'.
+
+ [25] [26
+
+] (main.lof [27
+
+] [28]
+Overfull \hbox (0.81793pt too wide) detected at line 109
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۴[][][]
+ []
+
+
+Overfull \hbox (0.81793pt too wide) detected at line 110
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۴[][][]
+ []
+
+
+Overfull \hbox (1.02887pt too wide) detected at line 111
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۷[][][]
+ []
+
+
+Overfull \hbox (2.44098pt too wide) detected at line 112
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۴[][][]
+ []
+
+
+Overfull \hbox (2.44098pt too wide) detected at line 113
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۴[][][]
+ []
+
+
+Overfull \hbox (0.37848pt too wide) detected at line 115
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۶[][][]
+ []
+
+
+Overfull \hbox (1.04059pt too wide) detected at line 117
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۲[][][]
+ []
+
+
+Overfull \hbox (1.6148pt too wide) detected at line 118
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۴[][][]
+ []
+
+[29]
+Overfull \hbox (1.82574pt too wide) detected at line 119
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۷[][][]
+ []
+
+
+Overfull \hbox (0.54254pt too wide) detected at line 120
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۹[][][]
+ []
+
+
+Overfull \hbox (1.02887pt too wide) detected at line 122
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۲[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 123
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۳[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 124
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۴[][][]
+ []
+
+
+Overfull \hbox (0.58942pt too wide) detected at line 125
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۶[][][]
+ []
+
+
+Overfull \hbox (1.81403pt too wide) detected at line 126
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۸[][][]
+ []
+
+
+Overfull \hbox (0.53082pt too wide) detected at line 127
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۷۹[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 128
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۸۵[][][]
+ []
+
+)
+\tf@lof=\write6
+\openout6 = `main.lof'.
+
+ [30] (main.lot [31
+
+
+] [32]
+Overfull \hbox (0.67145pt too wide) detected at line 95
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۱۳۳[][][]
+ []
+
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 ...ص‌های کلیدی موفقیت (KPI) فاز سوم}}{155}{}
+                                                  %
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[33]
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 ...ر و وظایف شورای عالی اقوام ایران}}{197}{}
+                                                  %
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[34]
+Overfull \hbox (1.21051pt too wide) detected at line 184
+\TU/Vazirmatn(1)/m/n/12 ۱۳\TU/Vazirmatn(0)/m/n/12 .‏\TU/Vazirmatn(1)/m/n/12 ۲۳ 
+
+ []
+
+
+Overfull \hbox (0.16168pt too wide) detected at line 185
+\TU/Vazirmatn(1)/m/n/12 ۱۳\TU/Vazirmatn(0)/m/n/12 .‏\TU/Vazirmatn(1)/m/n/12 ۲۴ 
+
+ []
+
+
+Overfull \hbox (0.38434pt too wide) detected at line 186
+\TU/Vazirmatn(1)/m/n/12 ۱۳\TU/Vazirmatn(0)/m/n/12 .‏\TU/Vazirmatn(1)/m/n/12 ۲۵ 
+
+ []
+
+
+Overfull \hbox (0.81793pt too wide) detected at line 188
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۴[][][]
+ []
+
+
+Overfull \hbox (1.04059pt too wide) detected at line 189
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۵[][][]
+ []
+
+
+Overfull \hbox (1.04059pt too wide) detected at line 190
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۵[][][]
+ []
+
+
+Overfull \hbox (1.02887pt too wide) detected at line 193
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۸[][][]
+ []
+
+
+Overfull \hbox (1.02887pt too wide) detected at line 194
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۲۸[][][]
+ []
+
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 ...برنامه کاهش مصرف آب شهری و صنعتی}}{229}{}
+                                                  %
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[35]
+Overfull \hbox (0.64801pt too wide) detected at line 197
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۰[][][]
+ []
+
+
+Overfull \hbox (0.64801pt too wide) detected at line 198
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۰[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 201
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۲[][][]
+ []
+
+
+Overfull \hbox (1.86676pt too wide) detected at line 202
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۲[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 203
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۳[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 204
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۳[][][]
+ []
+
+
+Overfull \hbox (3.4898pt too wide) detected at line 205
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۳[][][]
+ []
+
+
+Overfull \hbox (2.44098pt too wide) detected at line 206
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۴[][][]
+ []
+
+
+Overfull \hbox (2.44098pt too wide) detected at line 207
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۴[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 208
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 209
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۵[][][]
+ []
+
+
+Overfull \hbox (0.16168pt too wide) detected at line 210
+\TU/Vazirmatn(1)/m/n/12 ۱۴\TU/Vazirmatn(0)/m/n/12 .‏\TU/Vazirmatn(1)/m/n/12 ۲۳ 
+
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 210
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۶[][][]
+ []
+
+
+Overfull \hbox (1.4273pt too wide) detected at line 211
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۶[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 212
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۷[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 213
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۷[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 214
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۷[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 215
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۸[][][]
+ []
+
+
+Overfull \hbox (2.65192pt too wide) detected at line 216
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۸[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 217
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۹[][][]
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 218
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۹[][][]
+ []
+
+
+Overfull \hbox (0.16168pt too wide) detected at line 219
+\TU/Vazirmatn(1)/m/n/12 ۱۴\TU/Vazirmatn(0)/m/n/12 .‏\TU/Vazirmatn(1)/m/n/12 ۳۲ 
+
+ []
+
+
+Overfull \hbox (1.36871pt too wide) detected at line 219
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۳۹[][][]
+ []
+
+
+Overfull \hbox (1.78473pt too wide) detected at line 220
+\TU/Vazirmatn(1)/m/n/12 ۱۴\TU/Vazirmatn(0)/m/n/12 .‏\TU/Vazirmatn(1)/m/n/12 ۳۳ 
+
+ []
+
+
+Overfull \hbox (0.37848pt too wide) detected at line 222
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۶[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 223
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۷[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 224
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۷[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 225
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۸[][][]
+ []
+
+
+Overfull \hbox (1.60309pt too wide) detected at line 226
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۸[][][]
+ []
+
+
+Overfull \hbox (0.31989pt too wide) detected at line 227
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۹[][][]
+ []
+
+
+Overfull \hbox (0.31989pt too wide) detected at line 228
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۹[][][]
+ []
+
+
+Overfull \hbox (0.31989pt too wide) detected at line 229
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۴۹[][][]
+ []
+
+
+Overfull \hbox (1.04059pt too wide) detected at line 231
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۲[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 232
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۳[][][]
+ []
+
+
+Overfull \hbox (2.66364pt too wide) detected at line 233
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۳[][][]
+ []
+
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.234 ...es ابزارهای پایش مشارکتی و مردمی}}{254}{}
+                                                  %
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[36]
+Overfull \hbox (1.6148pt too wide) detected at line 234
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۴[][][]
+ []
+
+
+Overfull \hbox (1.83746pt too wide) detected at line 235
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۵[][][]
+ []
+
+
+Overfull \hbox (1.83746pt too wide) detected at line 236
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۵[][][]
+ []
+
+
+Overfull \hbox (0.60114pt too wide) detected at line 237
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۶[][][]
+ []
+
+
+Overfull \hbox (0.60114pt too wide) detected at line 238
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۶[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 239
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۷[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 240
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۸[][][]
+ []
+
+
+Overfull \hbox (1.82574pt too wide) detected at line 241
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۸[][][]
+ []
+
+
+Overfull \hbox (0.54254pt too wide) detected at line 242
+ [][][]\TU/Vazirmatn(1)/m/n/12 ۲۵۹[][][]
+ []
+
+)
+\tf@lot=\write7
+\openout7 = `main.lot'.
+
+
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ^^I\mainmatter
+                    
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[37]
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 ^^I\mainmatter
+                    
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[38
+
+] [1
+
+] [2] (chapters/ch00-executive.tex
 Overfull \hbox (7.99893pt too wide) in paragraph at lines 66--101
  [][][][][][] 
  []
@@ -24782,11 +26264,6 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [243
 
 ]
-Missing character: There is no ⚠ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no ️ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [244]
@@ -26940,10 +28417,6 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-Missing character: There is no ⚠ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no ️ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
 ! Undefined control sequence.
 \endtikzpicture ...r@layerlist@globally \endscope 
                                                   \let \pgf@baseline =\pgf@s...
@@ -27077,10 +28550,6 @@ Package longtable Warning: Column widths have changed
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [257]
-Missing character: There is no ⚠ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no ️ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
 
 ! Package longtable Error: Longtable head or foot not at start of table.
 
@@ -27831,10 +29300,6 @@ Increase LTchunksize
 Package longtable Warning: Column widths have changed
 (longtable)                in table ب.5 on input line 326.
 
-Missing character: There is no ⚠ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no ️ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -28144,10 +29609,6 @@ Package longtable Warning: Column widths have changed
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [274]
-Missing character: There is no ⚠ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no ️ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
 
 ! Package longtable Error: Longtable head or foot not at start of table.
 
@@ -28583,10 +30044,6 @@ Package longtable Warning: Column widths have changed
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [287]
-Missing character: There is no ⚠ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no ️ in font Vazirmatn ExtraBold/OT:script=latn;lan
-guage=dflt;script=arab;mapping=persian-tex-text;!
 
 ! Package longtable Error: Longtable head or foot not at start of table.
 
@@ -28885,14 +30342,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 930--931
  [][][][]
  []
 
-Missing character: There is no ⚠ in font Vazirmatn Regular/OT:script=latn;langu
-age=dflt;script=arab;mapping=persian-tex-text;!
-Missing character: There is no ️ in font Vazirmatn Regular/OT:script=latn;langu
-age=dflt;script=arab;mapping=persian-tex-text;!
 
 Underfull \hbox (badness 10000) in paragraph at lines 939--941
- [][]\TU/Vazirmatn(0)/m/n/8 ⚠️ این فرم محرمانه است. هویت گزارش‌دهنده محفوظ می‌م
-اند. []
+ [][]\TU/Vazirmatn(0)/m/n/8 (!) این فرم محرمانه است. هویت گزارش‌دهنده محفوظ می‌
+ماند. []
  []
 
 
@@ -30790,12 +32243,12 @@ l.646     }
            
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
- 48999 strings out of 402982
- 1162892 string characters out of 5452821
- 1808234 words of memory out of 5000000
- 76880 multiletter control sequences out of 15000+600000
+ 49713 strings out of 402982
+ 1176599 string characters out of 5452820
+ 1907454 words of memory out of 5000000
+ 77594 multiletter control sequences out of 15000+600000
  637998 words of font info for 139 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 93i,18n,107p,1223b,2585s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 93i,18n,107p,1200b,2585s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (328 pages).
+Output written on main.pdf (354 pages).
