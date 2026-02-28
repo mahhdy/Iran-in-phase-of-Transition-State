@@ -3,6 +3,7 @@
 % نویسنده: مهدی سالم | ریچموندهیل | ۱۴۰۴
 
 \chapter{فاز ۴ و ۵: بلوغ و تعالی دموکراتیک (سال ۱۱-۲۵)}
+\chapterheader{۱۱}{فاز ۴ و ۵: بلوغ و تعالی}{افق روشن ایران در تراز جهانی}{AccentGold}
 \label{ch:phase45}
 
 \begin{kholasebox}
@@ -70,9 +71,9 @@
     box/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.5cm,
+        minimum width=3.5cm, text width=3.5cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -83,20 +84,20 @@
 
 % عنوان
 \node[rectangle, rounded corners=8pt, draw=goldphoenix, fill=goldphoenix, text=white,
-      minimum width=12cm, minimum height=1cm, font=\large\bfseries] (title) at (0,6) {\rl{چشم‌انداز فاز چهارم: ایران بالغ دموکراتیک}};
+      minimum width=12cm, text width=12cm, minimum height=1cm, font=\large\bfseries] (title) at (0,6) {\rl{چشم‌انداز فاز چهارم: ایران بالغ دموکراتیک}};
 
 % ردیف اول
-\node[box] (n1) at (-4,3.5) {\rl{نهادها}\\\rl{\tiny پختگی و کارآمدی}};
-\node[box] (n2) at (0,3.5) {\rl{فرهنگ}\\\rl{\tiny درونی‌سازی ارزش‌ها}};
-\node[box] (n3) at (4,3.5) {\rl{اقتصاد}\\\rl{\tiny دانش‌بنیان و متنوع}};
+\node[box] (n1) at (-4,3.5) {\rl{نهادها}\\ \tiny \rl{پختگی و کارآمدی}};
+\node[box] (n2) at (0,3.5) {\rl{فرهنگ}\\ \tiny \rl{درونی‌سازی ارزش‌ها}};
+\node[box] (n3) at (4,3.5) {\rl{اقتصاد}\\ \tiny \rl{دانش‌بنیان و متنوع}};
 
 % ردیف دوم
-\node[box] (n4) at (-2,1) {\rl{منطقه}\\\rl{\tiny قدرت متوسط مؤثر}};
-\node[box] (n5) at (2,1) {\rl{جهان}\\\rl{\tiny عضو محترم جامعه بین‌الملل}};
+\node[box] (n4) at (-2,1) {\rl{منطقه}\\ \tiny \rl{قدرت متوسط مؤثر}};
+\node[box] (n5) at (2,1) {\rl{جهان}\\ \tiny \rl{عضو محترم جامعه بین‌الملل}};
 
 % هدف
 \node[rectangle, rounded corners=5pt, draw=goldphoenix, fill=goldlight, text=goldphoenix,
-      minimum width=8cm, minimum height=1cm, font=\bfseries] (goal) at (0,-1.5) {\rl{هدف: دموکراسی تثبیت‌شده و برگشت‌ناپذیر}};
+      minimum width=8cm, text width=8cm, minimum height=1cm, font=\bfseries] (goal) at (0,-1.5) {\rl{هدف: دموکراسی تثبیت‌شده و برگشت‌ناپذیر}};
 
 % اتصالات
 \draw[arrow] (title) -- (n1);
@@ -286,9 +287,9 @@
     priority/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.5cm,
+        minimum width=3.5cm, text width=3.5cm,
         minimum height=1.3cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -298,14 +299,14 @@
 ]
 
 % ردیف اول
-\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (ai) at (0,0) {\rl{هوش مصنوعی}\\\rl{\tiny پردازش زبان فارسی}};
-\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (bio) at (-4,0) {\rl{زیست‌فناوری}\\\rl{\tiny دارو و تجهیزات}};
-\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (energy) at (4,0) {\rl{انرژی پاک}\\\rl{\tiny خورشیدی و هیدروژن}};
+\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (ai) at (0,0) {\rl{هوش مصنوعی}\\ \tiny \rl{پردازش زبان فارسی}};
+\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (bio) at (-4,0) {\rl{زیست‌فناوری}\\ \tiny \rl{دارو و تجهیزات}};
+\node[priority, draw=goldphoenix, fill=goldphoenix, text=white] (energy) at (4,0) {\rl{انرژی پاک}\\ \tiny \rl{خورشیدی و هیدروژن}};
 
 % ردیف دوم
-\node[priority] (water) at (0,-2) {\rl{فناوری آب}\\\rl{\tiny بازیافت و تصفیه}};
-\node[priority] (space) at (-4,-2) {\rl{فناوری فضایی}\\\rl{\tiny ماهواره و سنجش}};
-\node[priority] (nano) at (4,-2) {\rl{نانوفناوری}\\\rl{\tiny مواد پیشرفته}};
+\node[priority] (water) at (0,-2) {\rl{فناوری آب}\\ \tiny \rl{بازیافت و تصفیه}};
+\node[priority] (space) at (-4,-2) {\rl{فناوری فضایی}\\ \tiny \rl{ماهواره و سنجش}};
+\node[priority] (nano) at (4,-2) {\rl{نانوفناوری}\\ \tiny \rl{مواد پیشرفته}};
 
 % برچسب‌ها
 \node[label] at (-6,0) {\rl{اولویت اول}};
@@ -369,8 +370,8 @@
         circle,
         draw=bleurepublique,
         fill=bleulight,
-        minimum size=2.8cm,
-        text centered,
+        minimum size=2.8cm, text width=2.8cm,
+        align=center,
         font=\small\bfseries,
         line width=1.5pt
     },
@@ -378,13 +379,13 @@
 ]
 
 % مرکز
-\node[circle_node, draw=goldphoenix, fill=goldphoenix, text=white, minimum size=3.2cm] (iran) at (0,0) {\rl{ایران}\\\rl{\tiny قدرت متوسط مسئول}};
+\node[circle_node, draw=goldphoenix, fill=goldphoenix, text=white, minimum size=3.2cm, text width=3.2cm] (iran) at (0,0) {\rl{ایران}\\ \tiny \rl{قدرت متوسط مسئول}};
 
 % اطراف
-\node[circle_node] (eco) at (0,3.5) {\rl{اقتصادی}\\\rl{\tiny هاب تجاری}};
-\node[circle_node] (sec) at (0,-3.5) {\rl{امنیتی}\\\rl{\tiny ثبات‌بخش}};
-\node[circle_node] (cul) at (-4,0) {\rl{فرهنگی}\\\rl{\tiny تمدن‌ساز}};
-\node[circle_node] (dip) at (4,0) {\rl{دیپلماتیک}\\\rl{\tiny میانجی}};
+\node[circle_node] (eco) at (0,3.5) {\rl{اقتصادی}\\ \tiny \rl{هاب تجاری}};
+\node[circle_node] (sec) at (0,-3.5) {\rl{امنیتی}\\ \tiny \rl{ثبات‌بخش}};
+\node[circle_node] (cul) at (-4,0) {\rl{فرهنگی}\\ \tiny \rl{تمدن‌ساز}};
+\node[circle_node] (dip) at (4,0) {\rl{دیپلماتیک}\\ \tiny \rl{میانجی}};
 
 % اتصالات
 \draw[flow] (iran) -- (eco);
@@ -546,7 +547,7 @@
 \begin{tikzpicture}
 % کادر اصلی
 \node[rectangle, rounded corners=15pt, draw=green!70!black, fill=green!5,
-      thick, minimum width=14cm, minimum height=10cm] (main) {};
+      thick, minimum width=14cm, text width=14cm, minimum height=10cm] (main) {};
 
 % عنوان
 \node[above=0.2cm of main.north, font=\Large\bfseries] 
@@ -554,32 +555,32 @@
 
 % محورها
 \node[rectangle, rounded corners=8pt, draw=blue!70, fill=blue!15,
-      minimum width=4cm, minimum height=1.5cm, align=center]
+      minimum width=4cm, text width=4cm, minimum height=1.5cm, align=center]
       at (-4, 3) (p1) {\textbf{سیاسی}\\ دموکراسی پایدار};
       
 \node[rectangle, rounded corners=8pt, draw=green!70, fill=green!15,
-      minimum width=4cm, minimum height=1.5cm, align=center]
+      minimum width=4cm, text width=4cm, minimum height=1.5cm, align=center]
       at (0, 3) (p2) {\textbf{اقتصادی}\\ ۲۵ اقتصاد برتر};
       
 \node[rectangle, rounded corners=8pt, draw=orange!70, fill=orange!15,
-      minimum width=4cm, minimum height=1.5cm, align=center]
+      minimum width=4cm, text width=4cm, minimum height=1.5cm, align=center]
       at (4, 3) (p3) {\textbf{اجتماعی}\\ HDI بالای ۰.۸۵};
 
 \node[rectangle, rounded corners=8pt, draw=purple!70, fill=purple!15,
-      minimum width=4cm, minimum height=1.5cm, align=center]
+      minimum width=4cm, text width=4cm, minimum height=1.5cm, align=center]
       at (-4, 0.5) (p4) {\textbf{فرهنگی}\\ قطب تمدنی جهان};
       
 \node[rectangle, rounded corners=8pt, draw=teal!70, fill=teal!15,
-      minimum width=4cm, minimum height=1.5cm, align=center]
+      minimum width=4cm, text width=4cm, minimum height=1.5cm, align=center]
       at (0, 0.5) (p5) {\textbf{محیط‌زیستی}\\ پایداری و سبز};
       
 \node[rectangle, rounded corners=8pt, draw=red!70, fill=red!15,
-      minimum width=4cm, minimum height=1.5cm, align=center]
+      minimum width=4cm, text width=4cm, minimum height=1.5cm, align=center]
       at (4, 0.5) (p6) {\textbf{بین‌المللی}\\ الگوی منطقه‌ای};
 
 % شعار
 \node[rectangle, rounded corners=10pt, draw=yellow!70!black, fill=yellow!20,
-      thick, minimum width=10cm, minimum height=1.2cm, align=center]
+      thick, minimum width=10cm, text width=10cm, minimum height=1.2cm, align=center]
       at (0, -2) {\large\textbf{«ایرانی آباد برای همه ایرانیان — در صلح با جهان»}};
 \end{tikzpicture}
 \end{center}
@@ -970,9 +971,9 @@
     org/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.2cm,
+        minimum width=3.2cm, text width=3.2cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -983,13 +984,13 @@
 
 % مرکز
 \node[rectangle, rounded corners=8pt, draw=goldphoenix, fill=goldphoenix, text=white,
-      minimum width=4cm, minimum height=1.8cm, font=\small\bfseries] (iran) at (0,0) {\rl{ایران ۱۴۲۹}\\\rl{\tiny قدرت متوسط جهانی}};
+      minimum width=4cm, text width=4cm, minimum height=1.8cm, align=center, font=\small\bfseries] (iran) at (0,0) {\rl{ایران ۱۴۲۹}\\ \tiny \rl{قدرت متوسط جهانی}};
 
 % سازمان‌ها
-\node[org] (un) at (-4,2.5) {\rl{سازمان ملل}\\\rl{\tiny عضو فعال حاکمیتی}};
-\node[org] (wto) at (4,2.5) {\rl{WTO}\\\rl{\tiny عضویت کامل و فعال}};
-\node[org] (oecd) at (-4,-2.5) {\rl{OECD}\\\rl{\tiny همسویی با استانداردها}};
-\node[org] (gulf) at (4,-2.5) {\rl{پیمان پارس}\\\rl{\tiny بنیان‌گذار نظم منطقه}};
+\node[org] (un) at (-4,2.5) {\rl{سازمان ملل}\\ \tiny \rl{عضو فعال حاکمیتی}};
+\node[org] (wto) at (4,2.5) {\rl{WTO}\\ \tiny \rl{عضویت کامل و فعال}};
+\node[org] (oecd) at (-4,-2.5) {\rl{OECD}\\ \tiny \rl{همسویی با استانداردها}};
+\node[org] (gulf) at (4,-2.5) {\rl{پیمان پارس}\\ \tiny \rl{بنیان‌گذار نظم منطقه}};
 
 % اتصالات
 \draw[flow] (iran) -- (un);
@@ -1094,9 +1095,9 @@
     box/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=4cm,
+        minimum width=4cm, text width=4cm,
         minimum height=2.2cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -1107,17 +1108,17 @@
 
 % کادر داشبورد
 \node[rectangle, rounded corners=10pt, draw=bleurepublique!50, fill=gray!5,
-      minimum width=14cm, minimum height=9cm] (dash) at (0,0) {};
+      minimum width=14cm, text width=14cm, minimum height=9cm] (dash) at (0,0) {};
 
 % ردیف اول
-\node[box] (b1) at (-4.5,2.5) {\rl{دموکراسی (EIU)}\\\rl{\tiny هدف: ۸.۵/۱۰}\\\rl{\tiny وضعیت: کامل}};
-\node[box] (b2) at (0,2.5) {\rl{توسعه انسانی (HDI)}\\\rl{\tiny هدف: ۰.۸۷}\\\rl{\tiny رتبه: استاندارد OECD}};
-\node[box] (b3) at (4.5,2.5) {\rl{ضریب جینی}\\\rl{\tiny هدف: ۰.۳۵}\\\rl{\tiny بازتوزیع عادلانه ثروت}};
+\node[box] (b1) at (-4.5,2.5) {\rl{دموکراسی (EIU)}\\ \tiny \rl{هدف: ۸.۵/۱۰}\\\rl{\tiny وضعیت: کامل}};
+\node[box] (b2) at (0,2.5) {\rl{توسعه انسانی (HDI)}\\ \tiny \rl{هدف: ۰.۸۷}\\\rl{\tiny رتبه: استاندارد OECD}};
+\node[box] (b3) at (4.5,2.5) {\rl{ضریب جینی}\\ \tiny \rl{هدف: ۰.۳۵}\\\rl{\tiny بازتوزیع عادلانه ثروت}};
 
 % ردیف دوم
-\node[box] (b4) at (-4.5,-0.5) {\rl{فساد (CPI)}\\\rl{\tiny هدف: ۷۰/۱۰۰}\\\rl{\tiny شفافیت سیستمی}};
-\node[box] (b5) at (0,-0.5) {\rl{محیط‌زیست (EPI)}\\\rl{\tiny هدف: ۶۰/۱۰۰}\\\rl{\tiny پایداری اکولوژیک}};
-\node[box] (b6) at (4.5,-0.5) {\rl{نوآوری (GII)}\\\rl{\tiny رتبه هدف: ۲۵}\\\rl{\tiny اقتصاد دانش‌بنیان}};
+\node[box] (b4) at (-4.5,-0.5) {\rl{فساد (CPI)}\\ \tiny \rl{هدف: ۷۰/۱۰۰}\\\rl{\tiny شفافیت سیستمی}};
+\node[box] (b5) at (0,-0.5) {\rl{محیط‌زیست (EPI)}\\ \tiny \rl{هدف: ۶۰/۱۰۰}\\\rl{\tiny پایداری اکولوژیک}};
+\node[box] (b6) at (4.5,-0.5) {\rl{نوآوری (GII)}\\ \tiny \rl{رتبه هدف: ۲۵}\\\rl{\tiny اقتصاد دانش‌بنیان}};
 
 \node[below=0.2cm of dash, font=\bfseries, color=bleurepublique] {\rl{داشبورد ملی پایش پیشرفت ایران ۱۴۲۹}};
 
@@ -1275,7 +1276,7 @@
 \centering
 \begin{tikzpicture}
 \node[rectangle, rounded corners=15pt, draw=goldphoenix, fill=bleulight,
-      thick, minimum width=12cm, minimum height=3.5cm, align=center] {
+      thick, minimum width=12cm, text width=12cm, minimum height=3.5cm, align=center] {
     {\Large\textbf{ایران ۱۴۲۹: یک رؤیای دست‌یافتنی}}\\[0.4cm]
     {\large آباد | آزاد | سربلند}\\[0.2cm]
     {\normalsize\rl{وطن ما، مسئولیت ما، آینده ما}}

@@ -5,6 +5,7 @@
 % نویسنده: مهدی سالم | ریچموندهیل | ۱۴۰۴
 
 \chapter{بازسازی اقتصادی و رهایی از تحریم}
+\chapterheader{۱۳}{توسعه اقتصادی}{اقتصادی پویا برای رفاه هر ایرانی}{SuccessGreen}
 \label{ch:economy}
 
 \begin{kholasebox}
@@ -34,7 +35,7 @@
         draw=#1!70,
         fill=#1!5,
         thick,
-        minimum width=3.8cm,
+        minimum width=3.8cm, text width=3.8cm,
         minimum height=1.6cm,
         align=center,
         font=\small
@@ -107,7 +108,7 @@
         draw=bleurepublique!70,
         fill=bleulight,
         thick,
-        minimum width=4.5cm,
+        minimum width=4.5cm, text width=4.5cm,
         minimum height=1cm,
         align=center,
         font=\small
@@ -127,7 +128,7 @@
 \node[problem] at (3.8,-1.5) (p8) {\textbf{۸. فرار مغزها}\\ ۱۵۰,۰۰۰ نخبه/سال};
 
 % اتصال به مرکز
-\node[ellipse, draw=goldphoenix, fill=goldlight, thick, minimum width=2.8cm] at (0,0.7) (center) 
+\node[ellipse, draw=goldphoenix, fill=goldlight, thick, minimum width=2.8cm, text width=2.8cm] at (0,0.7) (center) 
     {\textbf{بحران اقتصادی}};
 \foreach \p in {p1,p2,p3,p4,p5,p6,p7,p8} {
     \draw[thick, goldphoenix!40, dashed] (\p) -- (center);
@@ -186,7 +187,7 @@
         draw=#1!70,
         fill=#1!5,
         thick,
-        minimum width=3.8cm,
+        minimum width=3.8cm, text width=3.8cm,
         minimum height=2.8cm,
         align=center
     }
@@ -634,15 +635,15 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
 \node[font=\large\bfseries, color=bleurepublique] at (0,2.5) {ایران: هاب ترانزیت منطقه‌ای};
 
 % مسیرها
-\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n1) at (-5,0) {\scriptsize اروپا};
-\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n2) at (5,0) {\scriptsize چین};
-\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n3) at (0,2) {\scriptsize روسیه};
-\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n4) at (0,-2) {\scriptsize هند};
-\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n5) at (-3,-1.5) {\scriptsize خلیج فارس};
-\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm] (n6) at (3,1.5) {\scriptsize میانه};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm, text width=0.9cm] (n1) at (-5,0) {\scriptsize اروپا};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm, text width=0.9cm] (n2) at (5,0) {\scriptsize چین};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm, text width=0.9cm] (n3) at (0,2) {\scriptsize روسیه};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm, text width=0.9cm] (n4) at (0,-2) {\scriptsize هند};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm, text width=0.9cm] (n5) at (-3,-1.5) {\scriptsize خلیج فارس};
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=0.9cm, text width=0.9cm] (n6) at (3,1.5) {\scriptsize میانه};
 
 % ایران در مرکز
-\node[rectangle, rounded corners, draw=bleurepublique, fill=goldphoenix, text=white, minimum width=2cm, minimum height=1cm] (iran) at (0,0) {\textbf{ایران}};
+\node[rectangle, rounded corners, draw=bleurepublique, fill=goldphoenix, text=white, minimum width=2cm, text width=2cm, minimum height=1cm] (iran) at (0,0) {\textbf{ایران}};
 
 % مسیرها
 \foreach \n in {n1,n2,n3,n4,n5,n6} {
@@ -813,15 +814,16 @@ FDI سالانه (میلیارد \$) & ۱ & ۱۰ & ۲۵ & ۴۰ & ۶۰ \\
         draw=#1!70,
         fill=#1!20,
         thick,
-        minimum width=2.5cm,
+        minimum width=2.5cm, text width=2.5cm,
         minimum height=1.2cm,
+        text width=2.5cm,
         align=center,
         font=\small
     }
 ]
 % ایران در مرکز
 \node[rectangle, rounded corners=10pt, draw=blue!70, fill=blue!20,
-      thick, minimum width=2.5cm, minimum height=1.5cm] (iran) 
+      thick, minimum width=2.5cm, text width=2.5cm, minimum height=1.5cm, text width=2.5cm, align=center] (iran) 
     {\textbf{ایران}\\هاب تجاری};
 
 % شرکای تجاری

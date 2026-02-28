@@ -266,7 +266,8 @@
         width=14cm,
         height=8cm,
         ylabel={درصد از GDP},
-        symbolic x coords={نفت و گاز, صنعت, خدمات, کشاورزی, معدن, ساختمان},
+        symbolic x coords={A, B, C, D, E, F},
+        xticklabels={\rl{نفت و گاز}, \rl{صنعت}, \rl{خدمات}, \rl{کشاورزی}, \rl{معدن}, \rl{ساختمان}},
         xtick=data,
         ymin=0, ymax=50,
         bar width=20pt,
@@ -275,12 +276,12 @@
         legend style={at={(0.5,-0.2)}, anchor=north},
     ]
     \addplot[fill=DemocracyBlue!70] coordinates {
-        (نفت و گاز,18)
-        (صنعت,22)
-        (خدمات,45)
-        (کشاورزی,9)
-        (معدن,2)
-        (ساختمان,4)
+        (A,18)
+        (B,22)
+        (C,45)
+        (D,9)
+        (E,2)
+        (F,4)
     };
     \end{axis}
     
@@ -379,7 +380,7 @@ GDP سرانه (سال ۱۰) & ۱۵,۰۰۰ \$ & ۲۰,۰۰۰ \$ & ۲۵,۰۰۰ \$ 
         line width=2pt,
         fill=DemocracyBlue!20,
         rounded corners=10pt,
-        minimum width=5cm,
+        minimum width=5cm, text width=5cm,
         minimum height=2cm,
         font=\bfseries
     ] (supply) at (-4,0) {\shortstack{عرضه آب\\۹۷ میلیارد م³}};
@@ -389,7 +390,7 @@ GDP سرانه (سال ۱۰) & ۱۵,۰۰۰ \$ & ۲۰,۰۰۰ \$ & ۲۵,۰۰۰ \$ 
         line width=2pt,
         fill=WarningRed!20,
         rounded corners=10pt,
-        minimum width=5cm,
+        minimum width=5cm, text width=5cm,
         minimum height=2cm,
         font=\bfseries
     ] (demand) at (4,0) {\shortstack{تقاضای آب\\۱۱۵ میلیارد م³}};
@@ -399,7 +400,7 @@ GDP سرانه (سال ۱۰) & ۱۵,۰۰۰ \$ & ۲۰,۰۰۰ \$ & ۲۵,۰۰۰ \$ 
         line width=3pt,
         fill=WarningRed!40,
         rounded corners=10pt,
-        minimum width=5cm,
+        minimum width=5cm, text width=5cm,
         minimum height=1.5cm,
         font=\bfseries
     ] (deficit) at (0,-3) {\shortstack{کسری سالانه\\۱۸ میلیارد م³}};
@@ -624,7 +625,7 @@ GDP سرانه (سال ۱۰) & ۱۵,۰۰۰ \$ & ۲۰,۰۰۰ \$ & ۲۵,۰۰۰ \$ 
         text=white,
         rounded corners=5pt,
         font=\bfseries,
-        minimum width=14cm
+        minimum width=14cm, text width=14cm
     ] at (0,6) {\rl{شاخص‌های کلیدی عملکرد (KPI) — اهداف ۲۵ ساله}};
     
     % جدول بصری
@@ -639,10 +640,10 @@ GDP سرانه (سال ۱۰) & ۱۵,۰۰۰ \$ & ۲۰,۰۰۰ \$ & ۲۵,۰۰۰ \$ 
         \node[font=\small, align=left] at (-5.5,\y) {\name};
         
         % مقادیر
-        \node[font=\scriptsize, fill=WarningRed!30, rounded corners=2pt, minimum width=1.5cm] at (-2.5,\y) {\current};
-        \node[font=\scriptsize, fill=orange!30, rounded corners=2pt, minimum width=1.5cm] at (-0.5,\y) {\y5};
-        \node[font=\scriptsize, fill=WisdomGold!30, rounded corners=2pt, minimum width=1.5cm] at (1.5,\y) {\y10};
-        \node[font=\scriptsize, fill=SuccessGreen!30, rounded corners=2pt, minimum width=1.5cm] at (3.5,\y) {\y25};
+        \node[font=\scriptsize, fill=WarningRed!30, rounded corners=2pt, minimum width=1.5cm, text width=1.5cm] at (-2.5,\y) {\current};
+        \node[font=\scriptsize, fill=orange!30, rounded corners=2pt, minimum width=1.5cm, text width=1.5cm] at (-0.5,\y) {\y5};
+        \node[font=\scriptsize, fill=WisdomGold!30, rounded corners=2pt, minimum width=1.5cm, text width=1.5cm] at (1.5,\y) {\y10};
+        \node[font=\scriptsize, fill=SuccessGreen!30, rounded corners=2pt, minimum width=1.5cm, text width=1.5cm] at (3.5,\y) {\y25};
     }
     
     % عناوین ستون‌ها
@@ -740,7 +741,7 @@ GDP سرانه (سال ۱۰) & ۱۵,۰۰۰ \$ & ۲۰,۰۰۰ \$ & ۲۵,۰۰۰ \$ 
         line width=2pt,
         fill=SuccessGreen!10,
         rounded corners=10pt,
-        minimum width=6.5cm,
+        minimum width=6.5cm, text width=6.5cm,
         minimum height=8cm,
         align=right
     ] (success) at (-3.5,0) {};
@@ -750,7 +751,7 @@ GDP سرانه (سال ۱۰) & ۱۵,۰۰۰ \$ & ۲۰,۰۰۰ \$ & ۲۵,۰۰۰ \$ 
         line width=2pt,
         fill=WarningRed!10,
         rounded corners=10pt,
-        minimum width=6.5cm,
+        minimum width=6.5cm, text width=6.5cm,
         minimum height=8cm,
         align=right
     ] (failure) at (3.5,0) {};
@@ -1045,7 +1046,7 @@ GDP سرانه ۲۰,۰۰۰\$ \\
         line width=2pt,
         fill=DemocracyBlue!15,
         rounded corners=10pt,
-        minimum width=4.5cm,
+        minimum width=4.5cm, text width=4.5cm,
         minimum height=9cm,
         align=center
     ] (fed) at (-5,0) {};
@@ -1055,7 +1056,7 @@ GDP سرانه ۲۰,۰۰۰\$ \\
         line width=2pt,
         fill=SuccessGreen!15,
         rounded corners=10pt,
-        minimum width=4.5cm,
+        minimum width=4.5cm, text width=4.5cm,
         minimum height=9cm,
         align=center
     ] (shared) at (0,0) {};
@@ -1065,7 +1066,7 @@ GDP سرانه ۲۰,۰۰۰\$ \\
         line width=2pt,
         fill=WisdomGold!15,
         rounded corners=10pt,
-        minimum width=4.5cm,
+        minimum width=4.5cm, text width=4.5cm,
         minimum height=9cm,
         align=center
     ] (local) at (5,0) {};
@@ -1192,12 +1193,12 @@ GDP سرانه ۲۰,۰۰۰\$ \\
         line width=2pt,
         fill=white,
         rounded corners=15pt,
-        minimum width=15cm,
+        minimum width=15cm, text width=15cm,
         minimum height=10cm
     ] at (0,0) {};
     
     % عنوان
-    \node[fill=DemocracyBlue, text=white, rounded corners=5pt, font=\large\bfseries, minimum width=10cm] at (0,4.5) {داشبورد ملی پایش گذار دموکراتیک};
+    \node[fill=DemocracyBlue, text=white, rounded corners=5pt, font=\large\bfseries, minimum width=10cm, text width=10cm] at (0,4.5) {داشبورد ملی پایش گذار دموکراتیک};
     
     % چهار بخش
     % بخش ۱: سیاسی
@@ -1205,7 +1206,7 @@ GDP سرانه ۲۰,۰۰۰\$ \\
         draw=WarningRed,
         fill=WarningRed!10,
         rounded corners=5pt,
-        minimum width=6.5cm,
+        minimum width=6.5cm, text width=6.5cm,
         minimum height=3.5cm
     ] at (-3.5,1.5) {};
     \node[fill=WarningRed, text=white, rounded corners=3pt, font=\small\bfseries] at (-3.5,3) {شاخص‌های سیاسی};
@@ -1221,7 +1222,7 @@ GDP سرانه ۲۰,۰۰۰\$ \\
         draw=SuccessGreen,
         fill=SuccessGreen!10,
         rounded corners=5pt,
-        minimum width=6.5cm,
+        minimum width=6.5cm, text width=6.5cm,
         minimum height=3.5cm
     ] at (3.5,1.5) {};
     \node[fill=SuccessGreen, text=white, rounded corners=3pt, font=\small\bfseries] at (3.5,3) {شاخص‌های اقتصادی};
@@ -1237,7 +1238,7 @@ GDP سرانه ۲۰,۰۰۰\$ \\
         draw=WisdomGold,
         fill=WisdomGold!10,
         rounded corners=5pt,
-        minimum width=6.5cm,
+        minimum width=6.5cm, text width=6.5cm,
         minimum height=3.5cm
     ] at (-3.5,-2.5) {};
     \node[fill=WisdomGold, text=white, rounded corners=3pt, font=\small\bfseries] at (-3.5,-1) {شاخص‌های اجتماعی};
@@ -1253,7 +1254,7 @@ GDP سرانه ۲۰,۰۰۰\$ \\
         draw=purple,
         fill=purple!10,
         rounded corners=5pt,
-        minimum width=6.5cm,
+        minimum width=6.5cm, text width=6.5cm,
         minimum height=3.5cm
     ] at (3.5,-2.5) {};
     \node[fill=purple, text=white, rounded corners=3pt, font=\small\bfseries] at (3.5,-1) {شاخص‌های محیطی};

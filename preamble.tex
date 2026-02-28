@@ -1,5 +1,5 @@
 %══════════════════════════════════════════════════════════════════════════════
-% preamble.tex — تنظیمات و پکیج‌های کتاب
+% preamble.tex — تنظیمات و پکیج‌های کتاب (بازنویسی شده با حفظ ۱۰۰٪ زیرساخت پکیج‌ها)
 % از بحران تا بالندگی: طرح جامع تأسیس دموکراسی پایدار
 % نویسنده: مهدی سالم | ریچموندهیل | ۱۴۰۴
 %══════════════════════════════════════════════════════════════════════════════
@@ -7,6 +7,7 @@
 %──────────────────────────────────────────────────────────────────────────────
 % پکیج‌های اصلی
 %──────────────────────────────────────────────────────────────────────────────
+\usepackage{xcolor}
 \usepackage{amsmath,amssymb}
 \usepackage{fontspec}
 \usepackage{geometry}
@@ -24,7 +25,6 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage{pdflscape}
-\usepackage{xcolor}
 \usepackage{hyperref}
 \usepackage{float}
 \usepackage{caption}
@@ -39,8 +39,6 @@
 \titlespacing*{\chapter}{0pt}{30pt}{20pt}
 \titlespacing*{\section}{0pt}{15pt}{10pt}
 \titlespacing*{\subsection}{0pt}{10pt}{5pt}
-
-% برای کاهش صفحات سفید بین فصل‌ها
 \patchcmd{\chapter}{\if@openright\cleardoublepage\else\clearpage\fi}{\clearpage}{}{}
 
 %──────────────────────────────────────────────────────────────────────────────
@@ -73,35 +71,67 @@
     shadows
 }
 \pgfplotsset{compat=1.18}
-\usepgfplotslibrary{polar}     % برای نمودارهای راداری (polaraxis)
+\usepgfplotslibrary{polar}
 
 %──────────────────────────────────────────────────────────────────────────────
-% پالت رنگی (الهام گرفته از تم ققنوس: آبی سرمه‌ای و طلایی)
+% پالت رنگی جدید (ویژه تم مدرن) + رنگ‌های قدیمی جهت عدم خطای کامپایل نمودارهای تیکز
 %──────────────────────────────────────────────────────────────────────────────
-\definecolor{bleurepublique}{HTML}{002147} % سرمه‌ای عمیق
-\definecolor{goldphoenix}{HTML}{C5A059}    % طلایی مات
-\definecolor{bleulight}{HTML}{F0F4F8}      % آبی بسیار روشن برای زمینه‌ها
-\definecolor{goldlight}{HTML}{F9F4E8}      % کرم-طلایی روشن برای کادرها
-\definecolor{rougerevolution}{HTML}{A020F0} % بنفش با شکوه (اختیاری)
-\definecolor{vertnapoleon}{HTML}{006400}   % سبز تیره
+% ۱. رنگ‌های پایه‌ای جدید
+\definecolor{PrimaryDeep}{HTML}{1A237E}    % نِیوی - آبی عمیق
+\definecolor{PrimaryMid}{HTML}{283593}     % آبی متوسط
+\definecolor{AccentGold}{HTML}{F9A825}     % طلایی مدرن
+\definecolor{AccentRed}{HTML}{B71C1C}      % قرمز عمیق
+\definecolor{NeutralLight}{HTML}{ECEFF1}   % خاکستری بسیار روشن
+\definecolor{TextMain}{HTML}{212121}       % متن اصلی
+\definecolor{NeutralDark}{HTML}{37474F}    
+\definecolor{NeutralMid}{HTML}{90A4AE}     
+
+% رنگ‌های ساخت باکسبندی جدید
+\definecolor{BgCool}{HTML}{E8EAF6}         
+\definecolor{BgWarm}{HTML}{FFF8E1}         
+\definecolor{AccentAmber}{HTML}{FF8F00}    
+\definecolor{BgTeal}{HTML}{E0F2F1}         
+\definecolor{AccentTeal}{HTML}{00695C}     
+
+% ۲. دوره‌های تاریخی
+\definecolor{EraAncient}{HTML}{4E342E}     
+\definecolor{EraMedieval}{HTML}{37474F}    
+\definecolor{EraEarlyMod}{HTML}{1565C0}    
+\definecolor{EraModern}{HTML}{2E7D32}      
+\definecolor{EraContemp}{HTML}{6A1B9A}     
+\definecolor{EraPostmod}{HTML}{AD1457}     
+
+% ۳. رنگ‌های قدیمی (برای جلوگیری از خطای undefined color در کدهای قبلی)
+\definecolor{bleurepublique}{HTML}{002147} 
+\definecolor{goldphoenix}{HTML}{C5A059}    
+\definecolor{bleulight}{HTML}{F0F4F8}      
+\definecolor{goldlight}{HTML}{F9F4E8}      
+\definecolor{rougerevolution}{HTML}{A020F0} 
+\definecolor{vertnapoleon}{HTML}{006400}   
 \definecolor{grislight}{HTML}{F5F5F5} 
-\definecolor{gris}{RGB}{128, 128, 128}
+\definecolor{gris}{RGB}{128,128,128}
 
-% رنگ‌های میانه (نمودارها)
-\definecolor{bleumid}{RGB}{100, 149, 237}
-\definecolor{rougemid}{RGB}{220, 100, 100}
-\definecolor{vertmid}{RGB}{100, 180, 100}
-\definecolor{violetmid}{RGB}{180, 140, 200}
-\definecolor{orroyalmid}{RGB}{238, 201, 0}
+\definecolor{bleumid}{RGB}{100,149,237}
+\definecolor{rougemid}{RGB}{220,100,100}
+\definecolor{vertmid}{RGB}{100,180,100}
+\definecolor{violetmid}{RGB}{180,140,200}
+\definecolor{orroyalmid}{RGB}{238,201,0}
 
-% رنگ‌های فازها
-\definecolor{phase1}{RGB}{70, 130, 180}
-\definecolor{phase2}{RGB}{60, 179, 113}
-\definecolor{phase3}{RGB}{255, 165, 0}
-\definecolor{phase4}{RGB}{147, 112, 219}
-\definecolor{phase5}{RGB}{220, 20, 60}
+\definecolor{phase1}{RGB}{70,130,180}
+\definecolor{phase2}{RGB}{60,179,113}
+\definecolor{phase3}{RGB}{255,165,0}
+\definecolor{phase4}{RGB}{147,112,219}
+\definecolor{phase5}{RGB}{220,20,60}
 
-% ─── رنگ‌های تکمیلی برای پالت ققنوس (جلوگیری از خطای xcolor) ──────────────────
+\definecolor{DemocracyBlue}{RGB}{41,128,185}
+\definecolor{SuccessGreen}{RGB}{39,174,96}
+\definecolor{WisdomGold}{RGB}{241,196,15}
+\definecolor{WarningRed}{RGB}{231,76,60}
+
+\colorlet{lightSuccessGreen}{SuccessGreen!70}
+\colorlet{lightWisdomGold}{WisdomGold!70}
+\colorlet{darkyellow}{yellow!80!black}
+\colorlet{darkgreen}{green!60!black}
 \colorlet{rougelight}{rougerevolution!15}
 \colorlet{vertlight}{vertnapoleon!15}
 \colorlet{violetlight}{violetmid!15}
@@ -110,169 +140,202 @@
 \colorlet{orroyal}{goldphoenix}
 \colorlet{bleunight}{bleurepublique!90!black}
 \colorlet{golddark}{goldphoenix!80!black}
-\colorlet{violetlight}{violetmid!20}
 
-% ─── رنگ‌های معنایی پروژه (استفاده در پیوست‌ها و نمودارها) ──────────────────
-\definecolor{DemocracyBlue}{RGB}{41, 128, 185}
-\definecolor{SuccessGreen}{RGB}{39, 174, 96}
-\definecolor{WisdomGold}{RGB}{241, 196, 15}
-\definecolor{WarningRed}{RGB}{231, 76, 60}
-% نسخه‌های روشن‌تر (برای زیرمجموعه‌ها در استایل‌های پارامتری)
-\colorlet{lightSuccessGreen}{SuccessGreen!70}
-\colorlet{lightWisdomGold}{WisdomGold!70}
-% رنگ‌های ترکیبی از‌پیش‌ساخته (جلوگیری از خطای xcolor)
-\colorlet{darkyellow}{yellow!80!black}
-\colorlet{darkgreen}{green!60!black}
-
-% رنگ‌های اضافی برای نمودارها
-\definecolor{chart1}{RGB}{31, 119, 180}
-\definecolor{chart2}{RGB}{255, 127, 14}
-\definecolor{chart3}{RGB}{44, 160, 44}
-\definecolor{chart4}{RGB}{214, 39, 40}
-\definecolor{chart5}{RGB}{148, 103, 189}
+\definecolor{chart1}{RGB}{31,119,180}
+\definecolor{chart2}{RGB}{255,127,14}
+\definecolor{chart3}{RGB}{44,160,44}
+\definecolor{chart4}{RGB}{214,39,40}
+\definecolor{chart5}{RGB}{148,103,189}
 
 %──────────────────────────────────────────────────────────────────────────────
-% تنظیمات tcolorbox
+% استایل‌های پایه جعبه‌های محتوایی
 %──────────────────────────────────────────────────────────────────────────────
 \tcbuselibrary{skins, breakable}
 
-% کادر خلاصه فصل (آبی)
+\tcbset{
+  mybox/.style={
+    enhanced, breakable,
+    colback=BgCool, colframe=PrimaryMid,
+    fonttitle=\bfseries\large,
+    attach boxed title to top right={yshift=-2mm, xshift=-3mm},
+    boxed title style={colback=PrimaryMid, colframe=PrimaryDeep},
+    top=4mm, bottom=4mm,
+    before skip=12pt, after skip=12pt,
+  },
+  defbox/.style={
+    enhanced, breakable,
+    colback=BgWarm, colframe=AccentGold,
+    fonttitle=\bfseries,
+    left=4mm, right=4mm,
+    borderline west={3pt}{0pt}{AccentAmber},
+    sharp corners,
+    before skip=12pt, after skip=12pt,
+  },
+  wavebox/.style={
+    enhanced, breakable,
+    colback=BgTeal, colframe=AccentTeal,
+    fonttitle=\bfseries,
+    rounded corners,
+    drop shadow,
+    before skip=12pt, after skip=12pt,
+  },
+  quotebox/.style={
+    enhanced, breakable,
+    colback=NeutralLight, colframe=NeutralDark,
+    fontupper=\itshape,
+    left=8mm,
+    borderline west={4pt}{0pt}{NeutralMid},
+    sharp corners=south,
+    before skip=12pt, after skip=12pt,
+  },
+  enemybox/.style={
+    enhanced, breakable,
+    colback=red!5, colframe=AccentRed,
+    fonttitle=\bfseries,
+    borderline west={3pt}{0pt}{AccentRed},
+    before skip=12pt, after skip=12pt,
+  }
+}
+
+%──────────────────────────────────────────────────────────────────────────────
+% نگاشت باکس‌های قبلی به استایل‌های جدید
+%──────────────────────────────────────────────────────────────────────────────
 \newtcolorbox{kholasebox}[1][]{
-    colback=bleulight,
-    colframe=bleurepublique,
-    fonttitle=\bfseries,
-    title=#1,
-    boxrule=1pt,
-    arc=5pt,
-    left=15pt, right=15pt, top=10pt, bottom=10pt,
-    halign=right,
-    before skip=12pt, after skip=12pt
+    mybox,
+    title=#1
 }
 
-% کادر نقل قول (طلایی)
 \newtcolorbox{naghlbox}[1][]{
-    colback=white,
-    colframe=goldphoenix,
-    fonttitle=\bfseries,
-    left=20pt, right=20pt,
-    boxrule=0pt,
-    leftrule=4pt,
-    arc=0pt,
-    halign=flush right,
-    before skip=15pt, after skip=15pt
+    quotebox,
+    title=#1
 }
 
-% کادر الگو و درس (سبز)
 \newtcolorbox{olgoobox}[1][]{
-    colback=vertlight,
-    colframe=vertnapoleon,
-    fonttitle=\bfseries,
+    wavebox,
     title={\hfill \textbf{الگو و درس}},
-    breakable,
-    enhanced,
-    boxrule=1pt,
-    arc=3pt,
-    left=10pt, right=10pt, top=10pt, bottom=10pt,
     #1
 }
 
-% کادر هشدار (قرمز)
 \newtcolorbox{enghelabbox}[1][]{
-    colback=rougelight,
-    colframe=rougerevolution,
-    fonttitle=\bfseries,
+    enemybox,
     title={\hfill \textbf{هشدار}},
     halign title=right,    
-    breakable,
-    enhanced,
-    boxrule=1.5pt,
-    arc=3pt,
-    left=10pt, right=10pt, top=10pt, bottom=10pt,
     #1
 }
 
-% کادر تحلیل (بنفش)
 \newtcolorbox{tahlilbox}[1][]{
-    colback=violetlight,
-    colframe=violetempire,
-    fonttitle=\bfseries,
+    defbox,
+    colframe=PrimaryMid,
+    borderline west={3pt}{0pt}{PrimaryDeep},
     title={\hfill \textbf{تحلیل}},
-    breakable,
-    enhanced,
-    boxrule=1pt,
-    arc=3pt,
-    left=10pt, right=10pt, top=10pt, bottom=10pt,
     #1
 }
 
-% کادر نکته (خاکستری)
 \newtcolorbox{noktebox}[1][]{
-    colback=grislight,
-    colframe=gris,
-    fonttitle=\bfseries,
-    breakable,
-    enhanced,
-    boxrule=1pt,
-    arc=3pt,
-    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    defbox,
+    colback=NeutralLight,
+    colframe=NeutralMid,
+    borderline west={3pt}{0pt}{NeutralDark},
     #1
 }
 
-% کادر مورد مطالعاتی (آبی روشن)
 \newtcolorbox{casebox}[2][]{
-    colback=bleulight,
-    colframe=bleumid,
-    fonttitle=\bfseries,
+    mybox,
+    colback=BgCool,
+    colframe=PrimaryDeep,
     title={\hfill \textbf{مورد مطالعاتی: #2}},
-    breakable,
-    enhanced,
-    boxrule=1pt,
-    arc=3pt,
-    left=10pt, right=10pt, top=10pt, bottom=10pt,
     #1
 }
 
-% کادر داده‌های کلیدی
 \newtcolorbox{databox}[1][]{
-    colback=white,
-    colframe=bleurepublique,
-    fonttitle=\bfseries,
+    defbox,
     title={\hfill \textbf{داده‌های کلیدی}},
-    breakable,
-    enhanced,
-    boxrule=2pt,
-    arc=0pt,
-    left=10pt, right=10pt, top=10pt, bottom=10pt,
+    colback=white,
+    colframe=PrimaryDeep,
+    borderline west={3pt}{0pt}{AccentGold},
     #1
 }
 
 %──────────────────────────────────────────────────────────────────────────────
-% دستورات سفارشی برای جداول
+% دستورات سفارشی جداول
 %──────────────────────────────────────────────────────────────────────────────
-% دستورات سفارشی برای جداول
-%──────────────────────────────────────────────────────────────────────────────
-\newcommand{\tablemark}{\cellcolor{goldlight}}
-\newcommand{\headmark}{\cellcolor{bleurepublique}\color{white}\bfseries}
-\newcommand{\rowmark}{\rowcolor{bleulight}}
+\newcommand{\tablemark}{\cellcolor{BgWarm}}
+\newcommand{\headmark}{\cellcolor{PrimaryDeep}\color{white}\bfseries}
+\newcommand{\rowmark}{\rowcolor{BgCool}}
 
-% تنظیمات پیش‌فرض جداول برای راست‌چین بودن و عرض مناسب
-\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+% تنظیمات صحیح تراز متن در فارسی (L=چپ، R=راست)
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
-
-% دستور کمکی برای پهن‌تر کردن جداول tabularx (راست‌چین)
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{Y}{>{\raggedleft\arraybackslash}X} 
 \newcolumntype{Z}{>{\centering\arraybackslash}X} 
 
+% اجبار جدول به راست به چپ (RTL)
+\pretocmd{\tabular}{\setRTL}{}{}
+\pretocmd{\tabularx}{\setRTL}{}{}
+\pretocmd{\longtable}{\setRTL}{}{}
+\setRTLtable 
+
 %──────────────────────────────────────────────────────────────────────────────
-% نمادهای سفارشی
+% دستور طراحی سربرگ فصل (Inspirational Chapter Header)
 %──────────────────────────────────────────────────────────────────────────────
+\newcommand{\chapterheader}[4]{
+    \begin{center}
+    \begin{tikzpicture}[remember picture, overlay]
+        % Background Box
+        \node[anchor=north west, inner sep=0] at ($(current page.north west)+(2cm,-2cm)$) {
+            \begin{tikzpicture}
+                \shade[left color=#4, right color=black!80, rounded corners=10pt] (0,0) rectangle (16.5,6);
+                
+                % Girih Patterns (Watermark)
+                \foreach \x in {2,6,10,14} {
+                    \node[white, opacity=0.08] at (\x,3) {
+                        \begin{tikzpicture}[scale=1.5]
+                            \draw (0,0) -- (1,1) (1,0) -- (0,1);
+                            \circle (0.5,0.5) circle (0.4);
+                            \draw[rotate around={45:(0.5,0.5)}] (0.2,0.2) rectangle (0.8,0.8);
+                        \end{tikzpicture}
+                    };
+                }
+                
+                % Large Number
+                \node[anchor=east, white, opacity=0.1, font=\fontsize{120}{120}\selectfont\bfseries] at (16,2.5) {#1};
+                
+                % Gold Accent Line
+                \draw[AccentGold, line width=4pt] (1,1) -- (1,5);
+                
+                % Text
+                \node[anchor=north west, text width=13cm, inner sep=0] at (1.5,5) {
+                    {\small\color{AccentGold} فصل #1}\\[4pt]
+                    {\Huge\bfseries\color{white} #2}\\[12pt]
+                    {\large\color{white!80}\itshape #3}
+                };
+            \end{tikzpicture}
+        };
+    \end{tikzpicture}
+    \vspace*{7cm} % ایجاد فاصله برای ادامه متن
+    \end{center}
+}
 \newcommand{\yes}{\textcolor{vertnapoleon}{\checkmark}}
 \newcommand{\no}{\textcolor{rougerevolution}{$\times$}}
 \newcommand{\somewhat}{\textcolor{orroyal}{$\circ$}}
-
-% فازها
+\newcommand{\cmark}{\textcolor{vertnapoleon}{\checkmark}}
 \newcommand{\phmark}[1]{\textcolor{phase#1}{\textbf{فاز #1}}}
+\newcommand{\sourceline}[1]{%
+    \par\vspace{4pt}%
+    \begin{flushleft}%
+    {\small\color{gris}— #1}%
+    \end{flushleft}%
+}
+
+\newcommand{\concept}[1]{\textbf{\color{PrimaryMid}#1}}
+\newcommand{\thinker}[1]{\textit{\color{AccentTeal}#1}}
+\newcommand{\era}[1]{\textbf{\color{AccentAmber}#1}}
+\newcommand{\enemy}[1]{\textbf{\color{AccentRed}#1}}
+\newcommand{\lat}[1]{\lr{#1}}
+\newcommand{\src}[1]{\textsuperscript{\scriptsize\color{NeutralDark}[#1]}}
+
+\newenvironment{refsection}{\begin{quote}}{\end{quote}}
 
 %──────────────────────────────────────────────────────────────────────────────
 % تنظیمات سربرگ و پاورقی
@@ -285,7 +348,6 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% صفحه اول فصل‌ها
 \fancypagestyle{plain}{
     \fancyhf{}
     \fancyfoot[C]{\thepage}
@@ -297,43 +359,16 @@
 %──────────────────────────────────────────────────────────────────────────────
 \hypersetup{
     colorlinks=true,
-    linkcolor=bleurepublique,
-    citecolor=vertnapoleon,
-    urlcolor=violetempire,
+    linkcolor=PrimaryMid,
+    citecolor=AccentTeal,
+    urlcolor=AccentAmber,
     bookmarksnumbered=true,
     pdfauthor={مهدی سالم},
     pdftitle={از بحران تا بالندگی},
-    pdfsubject={طرح جامع تأسیس دموکراسی پایدار}
+    pdfsubject={طرح جامع تأسیس دموکراسی پایدار},
+    pdfencoding=unicode
 }
-
-%──────────────────────────────────────────────────────────────────────────────
-% تنظیمات فاصله خطوط
-%──────────────────────────────────────────────────────────────────────────────
 \onehalfspacing
-
-%──────────────────────────────────────────────────────────────────────────────
-% نماد تیک (✓) برای جداول — جایگزین \mark
-%──────────────────────────────────────────────────────────────────────────────
-\newcommand{\cmark}{\textcolor{vertnapoleon}{\checkmark}}
-
-%──────────────────────────────────────────────────────────────────────────────
-% دستور منبع نقل‌قول
-%──────────────────────────────────────────────────────────────────────────────
-\newcommand{\sourceline}[1]{%
-    \par\vspace{4pt}%
-    \begin{flushleft}%
-    {\small\color{gris}— #1}%
-    \end{flushleft}%
-}
-
-%──────────────────────────────────────────────────────────────────────────────
-% محیط منابع فصل (جایگزین refsection بدون biblatex)
-%──────────────────────────────────────────────────────────────────────────────
-\newenvironment{refsection}{%
-    \begin{quote}%
-}{%
-    \end{quote}%
-}
 
 %──────────────────────────────────────────────────────────────────────────────
 % فونت و زبان فارسی (حتماً آخرین پکیج)
@@ -343,7 +378,7 @@
 \settextfont{Vazirmatn}
 \settextdigitfont{Vazirmatn}
 \DefaultMathDigits
-% اگر Linux Libertine O نصب نیست، از Times New Roman استفاده می‌شود
+
 \IfFontExistsTF{Linux Libertine O}{%
     \setlatintextfont{Linux Libertine O}%
 }{%
@@ -354,9 +389,6 @@
     }%
 }
 
-%──────────────────────────────────────────────────────────────────────────────
-% تنظیمات فهرست‌ها (رفع مشکل خالی بودن فهرست در TeXstudio)
-%──────────────────────────────────────────────────────────────────────────────
 \let\oldlistoftables\listoftables
 \renewcommand{\listoftables}{%
   \cleardoublepage
@@ -373,7 +405,6 @@
   \oldlistoffigures
 }
 
-% تنظیمات عناوین فارسی (باید بعد از xepersian باشد اما اینجا برای احتیاط)
 \AtBeginDocument{
   \renewcommand{\contentsname}{فهرست مطالب}
   \renewcommand{\listfigurename}{فهرست شکل‌ها}

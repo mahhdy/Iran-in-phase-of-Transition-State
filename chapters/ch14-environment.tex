@@ -3,6 +3,7 @@
 % نویسنده: مهدی سالم | ریچموندهیل | ۱۴۰۴
 
 \chapter{بحران آب و محیط زیست: چالش حیاتی}
+\chapterheader{۱۴}{محیط زیست}{امانت‌داری برای نسل‌های فردا}{EraModern}
 \label{ch:environment}
 
 \begin{kholasebox}
@@ -33,25 +34,25 @@
         draw=bleurepublique,
         fill=bleulight,
         line width=1.5pt,
-        minimum width=3.2cm,
+        minimum width=3.2cm, text width=3.2cm,
         minimum height=1.4cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries
     }
 ]
 % بحران آب در مرکز
-\node[circle, draw=goldphoenix, fill=goldphoenix, text=white, thick, minimum size=2.5cm, font=\small\bfseries] (water) 
+\node[circle, draw=goldphoenix, fill=goldphoenix, text=white, thick, minimum size=2.5cm, text width=2.5cm, font=\small\bfseries] (water) 
     {\rl{بحران آب}};
 
 % پیامدها
-\node[box, above=1.5cm of water] (food) {\rl{امنیت غذایی}\\\rl{\tiny کاهش تولید}};
-\node[box, above right=0.8cm and 1.2cm of water] (health) {\rl{سلامت عمومی}\\\rl{\tiny بیماری‌های آبی}};
-\node[box, right=2cm of water] (eco) {\rl{اقتصاد}\\\rl{\tiny زیان صنایع}};
-\node[box, below right=0.8cm and 1.2cm of water] (social) {\rl{اجتماعی}\\\rl{\tiny مهاجرت و تنش}};
-\node[box, below=1.5cm of water] (env) {\rl{محیط زیست}\\\rl{\tiny نابودی زیست‌بوم}};
-\node[box, below left=0.8cm and 1.2cm of water] (security) {\rl{امنیت ملی}\\\rl{\tiny تنش‌های مرزی}};
-\node[box, left=2cm of water] (energy) {\rl{انرژی}\\\rl{\tiny نیروگاه‌های آبی}};
-\node[box, above left=0.8cm and 1.2cm of water] (urban) {\rl{شهرها}\\\rl{\tiny فرونشست}};
+\node[box, above=1.5cm of water] (food) {\rl{امنیت غذایی}\\ \tiny \rl{کاهش تولید}};
+\node[box, above right=0.8cm and 1.2cm of water] (health) {\rl{سلامت عمومی}\\ \tiny \rl{بیماری‌های آبی}};
+\node[box, right=2cm of water] (eco) {\rl{اقتصاد}\\ \tiny \rl{زیان صنایع}};
+\node[box, below right=0.8cm and 1.2cm of water] (social) {\rl{اجتماعی}\\ \tiny \rl{مهاجرت و تنش}};
+\node[box, below=1.5cm of water] (env) {\rl{محیط زیست}\\ \tiny \rl{نابودی زیست‌بوم}};
+\node[box, below left=0.8cm and 1.2cm of water] (security) {\rl{امنیت ملی}\\ \tiny \rl{تنش‌های مرزی}};
+\node[box, left=2cm of water] (energy) {\rl{انرژی}\\ \tiny \rl{نیروگاه‌های آبی}};
+\node[box, above left=0.8cm and 1.2cm of water] (urban) {\rl{شهرها}\\ \tiny \rl{فرونشست}};
 
 % اتصالات
 \foreach \n in {food, health, eco, social, env, security, energy, urban} {
@@ -228,7 +229,7 @@
         draw=bleurepublique,
         fill=bleulight,
         line width=1.5pt,
-        minimum width=4cm,
+        minimum width=4cm, text width=4cm,
         minimum height=1.3cm,
         align=center,
         font=\tiny\bfseries
@@ -238,18 +239,18 @@
 \node[font=\small\bfseries, color=goldphoenix] at (0,5.5) {\rl{ریشه‌های ساختاری بحران آب و محیط زیست}};
 
 % علل ساختاری
-\node[cause] at (-4.5,4) (c1) {\rl{حکمرانی ضعیف}\\\rl{\tiny عدم هماهنگی بین‌بخشی}};
-\node[cause] at (0,4) (c2) {\rl{سیاست‌های غلط}\\\rl{\tiny خودکفایی کاذب محصولات}};
-\node[cause] at (4.5,4) (c3) {\rl{اقتصاد رانتی}\\\rl{\tiny بی‌توجهی به پایداری}};
+\node[cause] at (-4.5,4) (c1) {\rl{حکمرانی ضعیف}\\ \tiny \rl{عدم هماهنگی بین‌بخشی}};
+\node[cause] at (0,4) (c2) {\rl{سیاست‌های غلط}\\ \tiny \rl{خودکفایی کاذب محصولات}};
+\node[cause] at (4.5,4) (c3) {\rl{اقتصاد رانتی}\\ \tiny \rl{بی‌توجهی به پایداری}};
 
 % علل مستقیم
-\node[cause] at (-4.5,2) (c4) {\rl{سدسازی بی‌رویه}\\\rl{\tiny نابودی رودخانه‌ها}};
-\node[cause] at (0,2) (c5) {\rl{کشاورزی سنتی}\\\rl{\tiny راندمان بسیار پایین}};
-\node[cause] at (4.5,2) (c6) {\rl{برداشت غیرمجاز}\\\rl{\tiny تخلیه سفره‌های زیرزمینی}};
+\node[cause] at (-4.5,2) (c4) {\rl{سدسازی بی‌رویه}\\ \tiny \rl{نابودی رودخانه‌ها}};
+\node[cause] at (0,2) (c5) {\rl{کشاورزی سنتی}\\ \tiny \rl{راندمان بسیار پایین}};
+\node[cause] at (4.5,2) (c6) {\rl{برداشت غیرمجاز}\\ \tiny \rl{تخلیه سفره‌های زیرزمینی}};
 
 % بحران در مرکز طلا
 \node[rectangle, rounded corners=10pt, draw=goldphoenix, fill=goldphoenix, text=white, 
-      thick, minimum width=6cm, minimum height=1.5cm, font=\small\bfseries] at (0,-0.5) (crisis)
+      thick, minimum width=6cm, text width=6cm, minimum height=1.5cm, font=\small\bfseries] at (0,-0.5) (crisis)
     {\rl{بحران چندلایه محیط زیست}};
 
 % اتصالات
@@ -278,7 +279,7 @@
         draw=#1!70,
         fill=#1!15,
         thick,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=4cm,
         align=center
     }
@@ -462,7 +463,7 @@
 
 % واحدهای شیرین‌سازی
 \foreach \x/\name/\cap in {1/بوشهر/۵۰۰, 3/عسلویه/۸۰۰, 5/بندرعباس/۱۰۰۰, 7/جاسک/۴۰۰, 9/چابهار/۳۰۰} {
-    \node[circle, fill=green!60, minimum size=0.5cm] at (\x, 0.5) {};
+    \node[circle, fill=green!60, minimum size=0.5cm, text width=0.5cm] at (\x, 0.5) {};
     \node[font=\tiny, above] at (\x, 0.8) {\name};
     \node[font=\tiny, below] at (\x, 0.2) {\cap MCM};
 }

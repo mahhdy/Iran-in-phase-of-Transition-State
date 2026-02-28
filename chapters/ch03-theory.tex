@@ -4,6 +4,7 @@
 %══════════════════════════════════════════════════════════════════════════════
 
 \chapter{مبانی نظری: دموکراسی، تنوع، توسعه}
+\chapterheader{۳}{مبانی نظری}{ساختن بر بنیادهای استوار اندیشه}{EraContemp}
 \label{ch:theory}
 
 %──────────────────────────────────────────────────────────────────────────────
@@ -71,7 +72,7 @@
         rounded corners=5pt,
         minimum width=0.9\textwidth,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\small,
         line width=1.5pt
     }
@@ -96,7 +97,7 @@
 
 % فلش‌ها
 \draw[->, >=Stealth, very thick, color=gris] (l1) -- (l2);
-\draw[->, >=Stealth, very thick, color=gris) (l2) -- (l3);
+\draw[->, >=Stealth, very thick, color=gris] (l2) -- (l3);
 \draw[->, >=Stealth, very thick, color=gris] (l3) -- (l4);
 
 \node[font=\small, color=bleurepublique, text width=3cm, align=center] at (6.5,3) {
@@ -123,12 +124,12 @@
 }
 
 % برچسب‌ها
-\node[font=\tiny, text width=1.8cm, align=center, below] at (0,-0.4) {\rl{توتالیتر}\\{\tiny (کره شمالی)}};
-\node[font=\tiny, text width=1.8cm, align=center, below] at (2.8,-0.4) {\rl{اقتدارگرای بسته}\\{\tiny (عربستان)}};
-\node[font=\tiny, text width=1.8cm, align=center, below] at (5.6,-0.4) {\rl{اقتدارگرای رقابتی}\\{\tiny (روسیه)}};
-\node[font=\tiny, text width=1.8cm, align=center, below] at (8.4,-0.4) {\rl{دموکراسی انتخاباتی}\\{\tiny (هند)}};
-\node[font=\tiny, text width=1.8cm, align=center, below] at (11.2,-0.4) {\rl{دموکراسی لیبرال}\\{\tiny (آلمان)}};
-\node[font=\tiny, text width=1.8cm, align=center, below] at (14,-0.4) {\rl{دموکراسی کامل}\\{\tiny (نروژ)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (0,-0.4) {\rl{توتالیتر}\\ \tiny \rl{(کره شمالی)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (2.8,-0.4) {\rl{اقتدارگرای بسته}\\ \tiny \rl{(عربستان)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (5.6,-0.4) {\rl{اقتدارگرای رقابتی}\\ \tiny \rl{(روسیه)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (8.4,-0.4) {\rl{دموکراسی انتخاباتی}\\ \tiny \rl{(هند)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (11.2,-0.4) {\rl{دموکراسی لیبرال}\\ \tiny \rl{(آلمان)}};
+\node[font=\tiny, text width=1.8cm, align=center, below] at (14,-0.4) {\rl{دموکراسی کامل}\\ \tiny \rl{(نروژ)}};
 
 % رنگ‌بندی
 \fill[rougerevolution, opacity=0.3] (0,-0.2) rectangle (2.8,0.2);
@@ -187,9 +188,9 @@
     arenabox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=4cm,
+        minimum width=4cm, text width=4cm,
         minimum height=1.8cm,
-        text centered,
+        align=center,
         font=\small,
         line width=1.5pt
     },
@@ -310,7 +311,7 @@
 \begin{tikzpicture}[
     pillar/.style={
         rectangle,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=5cm,
         draw=bleurepublique!70,
         fill=bleulight,
@@ -319,7 +320,7 @@
     roof/.style={
         trapezium,
         trapezium angle=70,
-        minimum width=14cm,
+        minimum width=14cm, text width=14cm,
         minimum height=1.5cm,
         draw=goldphoenix,
         fill=goldlight,
@@ -327,7 +328,7 @@
     },
     base/.style={
         rectangle,
-        minimum width=14cm,
+        minimum width=14cm, text width=14cm,
         minimum height=1cm,
         draw=gris,
         fill=grislight,
@@ -415,9 +416,9 @@
     mainbox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=5cm,
+        minimum width=5cm, text width=5cm,
         minimum height=2cm,
-        text centered,
+        align=center,
         font=\small,
         line width=1.5pt
     },
@@ -440,7 +441,7 @@
 };
 
 % مدل ترکیبی
-\node[mainbox, draw=goldphoenix, fill=goldlight, minimum width=8cm, minimum height=2.5cm] (hybrid) at (0,0) {
+\node[mainbox, draw=goldphoenix, fill=goldlight, minimum width=8cm, text width=8cm, minimum height=2.5cm] (hybrid) at (0,0) {
     \begin{tabular}{c}
     \textbf{مدل ترکیبی پیشنهادی}\\[5pt]
     \rl{فدرالیسم نامتقارن + احزاب فراقومی}\\
@@ -449,8 +450,8 @@
 };
 
 % نتایج
-\node[mainbox, draw=bleurepublique, fill=bleurepublique, text=white, minimum width=4cm] (r1) at (-4,-3) {\textbf{وحدت پایدار}};
-\node[mainbox, draw=goldphoenix, fill=goldphoenix, text=white, minimum width=4cm] (r2) at (4,-3) {\textbf{تنوع شکوفا}};
+\node[mainbox, draw=bleurepublique, fill=bleurepublique, text=white, minimum width=4cm, text width=4cm] (r1) at (-4,-3) {\textbf{وحدت پایدار}};
+\node[mainbox, draw=goldphoenix, fill=goldphoenix, text=white, minimum width=4cm, text width=4cm] (r2) at (4,-3) {\textbf{تنوع شکوفا}};
 
 % فلش‌ها
 \draw[arrow, color=bleurepublique] (m1) -- (hybrid);
@@ -607,9 +608,9 @@
     instbox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=5cm,
+        minimum width=5cm, text width=5cm,
         minimum height=3cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         line width=1.5pt
     },
@@ -663,9 +664,9 @@
     dimbox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=4.5cm,
+        minimum width=4.5cm, text width=4.5cm,
         minimum height=2cm,
-        text centered,
+        align=center,
         font=\small,
         line width=1.5pt
     }
@@ -701,7 +702,7 @@
 };
 
 % مرکز
-\node[circle, minimum size=2.2cm, draw=goldphoenix, fill=goldphoenix, text=white, font=\small\bfseries] (center) at (0,1) {\rl{آشتی ملی}};
+\node[circle, minimum size=2.2cm, text width=2.2cm, draw=goldphoenix, fill=goldphoenix, text=white, font=\small\bfseries] (center) at (0,1) {\rl{آشتی ملی}};
 
 % اتصالات
 \draw[<->, >=Stealth, thick, color=gris] (d1) -- (center);
@@ -759,9 +760,9 @@
     mainbox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=4cm,
+        minimum width=4cm, text width=4cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\small,
         line width=1.5pt
     },
@@ -789,7 +790,7 @@
 };
 
 % سطح ۲: گذار
-\node[mainbox, draw=phase1, fill=phase1!20, minimum width=12cm] (trans) at (0,3.5) {
+\node[mainbox, draw=phase1, fill=phase1!20, minimum width=12cm, text width=12cm] (trans) at (0,3.5) {
     \textbf{گذار دموکراتیک:} قانون اساسی + انتخابات + عدالت انتقالی
 };
 
@@ -814,12 +815,12 @@
 };
 
 % سطح ۴: تحکیم
-\node[mainbox, draw=phase3, fill=phase3!20, minimum width=12cm] (cons) at (0,-1.5) {
+\node[mainbox, draw=phase3, fill=phase3!20, minimum width=12cm, text width=12cm] (cons) at (0,-1.5) {
     \textbf{تحکیم:} نهادینه‌سازی + فرهنگ دموکراتیک + توسعه پایدار
 };
 
 % سطح ۵: نتیجه
-\node[mainbox, draw=vertnapoleon, fill=vertlight, minimum width=8cm, minimum height=2cm] (result) at (0,-4.5) {
+\node[mainbox, draw=vertnapoleon, fill=vertlight, minimum width=8cm, text width=8cm, minimum height=2cm] (result) at (0,-4.5) {
     \begin{tabular}{c}
     \textbf{دموکراسی پایدار و کارآمد}\\[3pt]
     وحدت در کثرت | رفاه فراگیر | برتری منطقه‌ای

@@ -4,6 +4,7 @@
 %══════════════════════════════════════════════════════════════════════════════
 
 \chapter{تشخیص: تحلیل وضعیت موجود}
+\chapterheader{۲}{تشخیص: تحلیل وضعیت موجود}{روبرویی با حقیقت، اولین قدم درمان}{AccentRed}
 \label{ch:diagnosis}
 
 %──────────────────────────────────────────────────────────────────────────────
@@ -29,9 +30,9 @@
     crisis/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=2.8cm,
+        minimum width=2.8cm, text width=2.8cm,
         minimum height=1.4cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -92,7 +93,7 @@
 \draw[link, dashed, color=gray!50] (c3) -- (c6);
 
 % مرکز
-\node[circle, minimum size=1.8cm, fill=goldphoenix, text=white, font=\small\bfseries] at (0,0) {
+\node[circle, minimum size=1.8cm, text width=1.8cm, fill=goldphoenix, text=white, font=\small\bfseries] at (0,0) {
     \begin{tabular}{c}
     \rl{بحران}\\
     \rl{سیستمی}
@@ -215,7 +216,8 @@
     height=7cm,
     ylabel={\rl{درصد}},
     xlabel={\rl{بخش}},
-    symbolic x coords={\rl{تولید}, \rl{مصرف داخلی}, \rl{صادرات}, \rl{قاچاق/اتلاف}},
+    symbolic x coords={A, B, C, D},
+    xticklabels={\rl{تولید}, \rl{مصرف داخلی}, \rl{صادرات}, \rl{قاچاق/اتلاف}},
     xtick=data,
     ymin=0, ymax=110,
     legend style={at={(0.5,-0.2)}, anchor=north, legend columns=4},
@@ -224,9 +226,9 @@
     every node near coord/.append style={font=\tiny}
 ]
 
-\addplot[fill=chart1] coordinates {(تولید,100) (مصرف داخلی,60) (صادرات,15) (قاچاق/اتلاف,0)};
-\addplot[fill=chart2] coordinates {(تولید,0) (مصرف داخلی,0) (صادرات,0) (قاچاق/اتلاف,15)};
-\addplot[fill=chart4] coordinates {(تولید,0) (مصرف داخلی,0) (صادرات,0) (قاچاق/اتلاف,10)};
+\addplot[fill=chart1] coordinates {(A,100) (B,60) (C,15) (D,0)};
+\addplot[fill=chart2] coordinates {(A,0) (B,0) (C,0) (D,15)};
+\addplot[fill=chart4] coordinates {(A,0) (B,0) (C,0) (D,10)};
 
 \legend{\rl{نفت و گاز}, \rl{قاچاق}, \rl{اتلاف}}
 
@@ -276,9 +278,9 @@
     rentbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=1.2cm,
-        text centered,
+        align=center,
         font=\small,
         draw=bleurepublique,
         fill=bleulight,
@@ -445,9 +447,9 @@ Freedom House & --- & ۱۶/۱۰۰ & غیرآزاد \\
     trustbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=1.3cm,
-        text centered,
+        align=center,
         font=\small,
         line width=1pt
     },
@@ -607,7 +609,7 @@ Freedom House & --- & ۱۶/۱۰۰ & غیرآزاد \\
     swotbox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=9cm,
+        minimum width=9cm, text width=9cm,
         minimum height=6cm,
         text width=8.5cm,
         font=\small,

@@ -3,6 +3,7 @@
 % نویسنده: مهدی سالم | ریچموندهیل | ۱۴۰۴
 
 \chapter{پایش، ارزیابی و مدیریت ریسک}
+\chapterheader{۱۵}{پایش و ارزیابی}{هوشیاری مستمر در مسیر تعالی}{NeutralDark}
 \label{ch:monitoring}
 
 \begin{kholasebox}
@@ -68,9 +69,9 @@
         draw=bleurepublique,
         fill=bleulight,
         line width=1.5pt,
-        minimum width=2.4cm,
+        minimum width=2.4cm, text width=2.4cm,
         minimum height=1.6cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries
     },
     arrow/.style={->, ultra thick, bleurepublique!60, >=stealth}
@@ -137,9 +138,9 @@ T & Time-bound & زمان‌بندی مشخص برای تحقق داشته با�
 \centering
 \caption{شاخص‌های کلیدی عملکرد در حوزه سیاسی (KPIs)}
 \label{tab:political-kpis}
-\begin{tabularx}{\textwidth}{Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
+\begin{tabularx}{\textwidth}{C{0.5cm} Y C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm} C{0.8cm}}
 \toprule
-\headmark شاخص پایش دموکراتیک & \headmark مبدأ & \headmark س۲ & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
+\headmark ردیف & \headmark شاخص پایش دموکراتیک & \headmark مبدأ & \headmark س۲ & \headmark س۵ & \headmark س۱۰ & \headmark س۱۵ \\
 \midrule
 ۱ & شاخص دموکراسی (EIU, از ۱۰) & ۲.۲ & ۴.۵ & ۶.۰ & ۷.۵ & ۸.۰ \\
 \rowcolor{gray!10}
@@ -268,9 +269,9 @@ PM2.5 تهران & ۳۵ & ۲۸ & ۲۰ & ۱۲ & ۸ \\
         draw=bleurepublique,
         fill=bleulight,
         line width=1.5pt,
-        minimum width=3.5cm,
+        minimum width=3.5cm, text width=3.5cm,
         minimum height=2.5cm,
-        text centered
+        align=center
     }
 ]
 % داشبورد ملی
@@ -514,21 +515,21 @@ PM2.5 تهران & ۳۵ & ۲۸ & ۲۰ & ۱۲ & ۸ \\
         draw=bleurepublique,
         fill=bleulight,
         line width=1.5pt,
-        minimum width=3.5cm,
+        minimum width=3.5cm, text width=3.5cm,
         minimum height=1.4cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries
     }
 ]
 % نهادهای رسمی
-\node[box] (stats) at (0,4) {\rl{مرکز ملی آمار}\\\rl{\tiny جمع‌آوری و صحت‌سنجی}};
-\node[box] (eval) at (0,2) {\rl{سازمان پایش و ارزیابی}\\\rl{\tiny تحلیل استراتژیک}};
-\node[box] (audit) at (0,0) {\rl{دیوان محاسبات}\\\rl{\tiny ممیزی و تطبیق}};
+\node[box] (stats) at (0,4) {\rl{مرکز ملی آمار}\\ \tiny \rl{جمع‌آوری و صحت‌سنجی}};
+\node[box] (eval) at (0,2) {\rl{سازمان پایش و ارزیابی}\\ \tiny \rl{تحلیل استراتژیک}};
+\node[box] (audit) at (0,0) {\rl{دیوان محاسبات}\\ \tiny \rl{ممیزی و تطبیق}};
 
 % نظارت مدنی
-\node[box, draw=goldphoenix, fill=goldlight] (civil) at (5,4) {\rl{رصدخانه‌های مردمی}\\\rl{\tiny پایش از پایین به بالا}};
-\node[box, draw=goldphoenix, fill=goldlight] (media) at (5,2) {\rl{رسانه‌های آزاد}\\\rl{\tiny رکن چهارم نظارت}};
-\node[box, draw=goldphoenix, fill=goldlight] (intl) at (5,0) {\rl{ناظران بین‌المللی}\\\rl{\tiny مطابقت با استانداردها}};
+\node[box, draw=goldphoenix, fill=goldlight] (civil) at (5,4) {\rl{رصدخانه‌های مردمی}\\ \tiny \rl{پایش از پایین به بالا}};
+\node[box, draw=goldphoenix, fill=goldlight] (media) at (5,2) {\rl{رسانه‌های آزاد}\\ \tiny \rl{رکن چهارم نظارت}};
+\node[box, draw=goldphoenix, fill=goldlight] (intl) at (5,0) {\rl{ناظران بین‌المللی}\\ \tiny \rl{مطابقت با استانداردها}};
 
 % اتصالات
 \foreach \a/\b in {stats/civil, eval/media, audit/intl} {
@@ -744,20 +745,20 @@ PM2.5 تهران & ۳۵ & ۲۸ & ۲۰ & ۱۲ & ۸ \\
         draw=bleurepublique,
         fill=bleulight,
         line width=1.5pt,
-        minimum width=2.4cm,
+        minimum width=2.4cm, text width=2.4cm,
         minimum height=1.4cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries
     },
     arrow/.style={->, ultra thick, bleurepublique!60, >=stealth}
 ]
 % مراحل چرخه اصلاح
-\node[box] (detect) {\rl{شناسایی}\\\rl{\tiny انحراف از هدف}};
-\node[box, right=0.8cm of detect] (analyze) {\rl{علت‌یابی}\\\rl{\tiny تحلیل ریشه‌ای}};
-\node[box, right=0.8cm of analyze] (design) {\rl{طراحی}\\\rl{\tiny تدوین راه‌حل}};
-\node[box, below=1.2cm of design, draw=goldphoenix, fill=goldlight] (decide) {\rl{تصمیم‌گیری}\\\rl{\tiny تصویب در کابینه}};
-\node[box, left=0.8cm of decide] (implement) {\rl{اجرا}\\\rl{\tiny پیاده‌سازی اصلاح}};
-\node[box, left=0.8cm of implement] (monitor) {\rl{پایش مجدد}\\\rl{\tiny ارزیابی اثربخشی}};
+\node[box] (detect) {\rl{شناسایی}\\ \tiny \rl{انحراف از هدف}};
+\node[box, right=0.8cm of detect] (analyze) {\rl{علت‌یابی}\\ \tiny \rl{تحلیل ریشه‌ای}};
+\node[box, right=0.8cm of analyze] (design) {\rl{طراحی}\\ \tiny \rl{تدوین راه‌حل}};
+\node[box, below=1.2cm of design, draw=goldphoenix, fill=goldlight] (decide) {\rl{تصمیم‌گیری}\\ \tiny \rl{تصویب در کابینه}};
+\node[box, left=0.8cm of decide] (implement) {\rl{اجرا}\\ \tiny \rl{پیاده‌سازی اصلاح}};
+\node[box, left=0.8cm of implement] (monitor) {\rl{پایش مجدد}\\ \tiny \rl{ارزیابی اثربخشی}};
 
 % اتصالات
 \draw[arrow] (detect) -- (analyze);
@@ -868,19 +869,19 @@ PM2.5 تهران & ۳۵ & ۲۸ & ۲۰ & ۱۲ & ۸ \\
         draw=bleurepublique,
         fill=bleulight,
         line width=1.5pt,
-        minimum size=2cm,
-        text centered,
+        minimum size=2cm, text width=2cm,
+        align=center,
         font=\tiny\bfseries
     }
 ]
 % مرکز - دولت
-\node[actor, minimum size=2.8cm, draw=goldphoenix, fill=goldlight] (gov) {\rl{دولت نوین}\\\rl{\tiny پاسخگوی اصلی}};
+\node[actor, minimum size=2.8cm, text width=2.8cm, draw=goldphoenix, fill=goldlight] (gov) {\rl{دولت نوین}\\ \tiny \rl{پاسخگوی اصلی}};
 
 % حلقه‌های پاسخگویی
-\node[actor, above=2cm of gov] (parl) {\rl{مجلس}\\\rl{\tiny نظارت سیاسی}};
-\node[actor, right=2.5cm of gov] (audit) {\rl{دیوان محاسبات}\\\rl{\tiny نظارت مالی}};
-\node[actor, below=2cm of gov] (civil) {\rl{جامعه مدنی}\\\rl{\tiny نظارت مردمی}};
-\node[actor, left=2.5cm of gov] (media) {\rl{رسانه‌ها}\\\rl{\tiny نظارت افکار عمومی}};
+\node[actor, above=2cm of gov] (parl) {\rl{مجلس}\\ \tiny \rl{نظارت سیاسی}};
+\node[actor, right=2.5cm of gov] (audit) {\rl{دیوان محاسبات}\\ \tiny \rl{نظارت مالی}};
+\node[actor, below=2cm of gov] (civil) {\rl{جامعه مدنی}\\ \tiny \rl{نظارت مردمی}};
+\node[actor, left=2.5cm of gov] (media) {\rl{رسانه‌ها}\\ \tiny \rl{نظارت افکار عمومی}};
 
 % اتصالات
 \foreach \n in {parl, audit, civil, media} {
@@ -889,7 +890,7 @@ PM2.5 تهران & ۳۵ & ۲۸ & ۲۰ & ۱۲ & ۸ \\
 
 % دایره‌های تکمیلی
 \foreach \ang/\label/\name in {45/قضا/court, 135/آمبودزمان/omb, 225/احزاب/party, 315/بین‌الملل/intl} {
-    \node[actor, minimum size=1.8cm] (\name) at (\ang:4.5) {\rl{\label}};
+    \node[actor, minimum size=1.8cm, text width=1.8cm] (\name) at (\ang:4.5) {\rl{\label}};
     \draw[thick, bleurepublique!20, <->] (gov) -- (\name);
 }
 

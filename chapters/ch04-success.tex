@@ -4,6 +4,7 @@
 %══════════════════════════════════════════════════════════════════════════════
 
 \chapter{درس‌های گذارهای موفق}
+\chapterheader{۴}{تجارب موفق جهانی}{یادگیری از آنان که از طوفان گذشتند}{SuccessGreen}
 \label{ch:success}
 
 %──────────────────────────────────────────────────────────────────────────────
@@ -66,9 +67,9 @@
     eventbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.4cm,
+        minimum width=2.4cm, text width=2.4cm,
         minimum height=1.2cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         line width=1pt
     },
@@ -202,9 +203,9 @@
     eventbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.4cm,
+        minimum width=2.4cm, text width=2.4cm,
         minimum height=1.2cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         line width=1pt
     }
@@ -346,9 +347,9 @@
     eventbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.4cm,
+        minimum width=2.4cm, text width=2.4cm,
         minimum height=1.2cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         line width=1pt
     }
@@ -427,9 +428,9 @@
     levelbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=4.2cm,
+        minimum width=4.2cm, text width=4.2cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         line width=1pt
     },
@@ -437,8 +438,8 @@
 ]
 
 % قبل
-\node[levelbox, draw=rougerevolution, fill=rougelight] (before) at (-4,0) {\rl{قبل از ۱۹۹۹}\\{\tiny تمرکز شدید}};
-\node[levelbox, draw=bleurepublique, fill=bleulight] (after) at (4,0) {\rl{بعد از ۱۹۹۹}\\{\tiny تمرکززدایی}};
+\node[levelbox, draw=rougerevolution, fill=rougelight] (before) at (-4,0) {\begin{tabular}{c}\rl{قبل از ۱۹۹۹}\\ \tiny \rl{تمرکز شدید}\end{tabular}};
+\node[levelbox, draw=bleurepublique, fill=bleulight] (after) at (4,0) {\begin{tabular}{c}\rl{بعد از ۱۹۹۹}\\ \tiny \rl{تمرکززدایی}\end{tabular}};
 
 % فلش
 \draw[arrow, ultra thick, color=goldphoenix] (before) -- node[above, font=\tiny\bfseries] {\rl{اصلاحات ساختاری}} (after);
@@ -550,9 +551,9 @@
     factor/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.8cm,
+        minimum width=3.8cm, text width=3.8cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -560,8 +561,8 @@
     },
     center/.style={
         circle,
-        minimum size=2.8cm,
-        text centered,
+        minimum size=2.8cm, text width=2.8cm,
+        align=center,
         font=\small\bfseries,
         draw=goldphoenix,
         fill=goldphoenix,

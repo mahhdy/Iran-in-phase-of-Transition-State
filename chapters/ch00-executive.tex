@@ -4,6 +4,7 @@
 %══════════════════════════════════════════════════════════════════════════════
 
 \chapter*{خلاصه مدیریتی}
+\chapterheader{۰}{خلاصه مدیریتی}{نقشه راهی برای نوزایی ملی}{PrimaryDeep}
 \addcontentsline{toc}{chapter}{خلاصه مدیریتی}
 \markboth{خلاصه مدیریتی}{خلاصه مدیریتی}
 
@@ -54,32 +55,32 @@
 		scale=1.0, transform shape,              % ← ۲۰٪ بزرگ‌تر
 		phasebox/.style={
 			rectangle, rounded corners=3pt, 
-			minimum height=1.4cm, text centered, 
+			minimum height=1.4cm, align=center, 
 			font=\small\bfseries, text=white, drop shadow
 		},
 		milestone/.style={
-			circle, minimum size=0.6cm, 
+			circle, minimum size=0.6cm, text width=0.6cm, 
 			fill=white, draw=black, line width=1.5pt
 		},
 		yearlab/.style={font=\footnotesize\bfseries},
 		desclab/.style={font=\scriptsize, text width=2.5cm, align=center}
 		]
 		\draw[line width=3pt, color=gray] (0,0) -- (12.5,0);
-		\node[phasebox, fill=blue!60!black, minimum width=1.2cm] at (0.5,1.2) {
+		\node[phasebox, fill=blue!60!black, minimum width=1.2cm, text width=1.2cm] at (0.5,1.2) {
 			\begin{tabular}{c}
 				\rl{فاز ۱}\\[-2pt]
 				\scriptsize \rl{گذار}
 			\end{tabular}
 		};
-		\node[phasebox, fill=green!60!black, minimum width=1.8cm] at (2.1,1.2) {
+		\node[phasebox, fill=green!60!black, minimum width=1.8cm, text width=1.8cm] at (2.1,1.2) {
 			\begin{tabular}{c}
 				\rl{فاز ۲}\\[-2pt]
 				\scriptsize \rl{نهادسازی}
 			\end{tabular}
 		};
-		\node[phasebox, fill=orange!80!black, minimum width=2.5cm] 	at (4.5,1.2) {\rl{فاز ۳: تحکیم}};
-		\node[phasebox, fill=purple!60!black, minimum width=4.0cm] 	at (8.0,1.2) {\rl{فاز ۴: بلوغ}};
-		\node[phasebox, fill=red!70!black, minimum width=2.0cm] at (11.5,1.2) {\rl{فاز ۵: برتری}};
+		\node[phasebox, fill=orange!80!black, minimum width=2.5cm, text width=2.5cm] 	at (4.5,1.2) {\rl{فاز ۳: تحکیم}};
+		\node[phasebox, fill=purple!60!black, minimum width=4.0cm, text width=4.0cm] 	at (8.0,1.2) {\rl{فاز ۴: بلوغ}};
+		\node[phasebox, fill=red!70!black, minimum width=2.0cm, text width=2.0cm] at (11.5,1.2) {\rl{فاز ۵: برتری}};
 		\node[milestone] (y0)  at (0,0)    {};
 		\node[milestone] (y2)  at (1,0) {};
 		\node[milestone] (y5)  at (3,0)  {};
@@ -194,9 +195,9 @@
     cyclebox/.style={
         rectangle, 
         rounded corners=5pt, 
-        minimum width=2.8cm, 
+        minimum width=2.8cm, text width=2.8cm, 
         minimum height=1cm, 
-        text centered, 
+        align=center, 
         font=\small,
         line width=1pt
     },
@@ -294,7 +295,7 @@
 \begin{tikzpicture}[
     scale=0.85, every node/.style={scale=0.85},
     node distance=1.5cm,
-    timebox/.style={rectangle, rounded corners=3pt, minimum width=3.2cm, minimum height=1.5cm, text centered, draw=bleurepublique, fill=bleulight, line width=1pt},
+    timebox/.style={rectangle, rounded corners=3pt, minimum width=3.2cm, text width=3.2cm, minimum height=1.5cm, align=center, draw=bleurepublique, fill=bleulight, line width=1pt},
     arrow/.style={->, >=Stealth, thick, color=bleurepublique}
 ]
 
@@ -427,7 +428,8 @@
     height=7cm,
     ylabel={\rl{میلیارد دلار}},
     xlabel={\rl{فاز}},
-    symbolic x coords={\rl{فاز ۱}, \rl{فاز ۲}, \rl{فاز ۳}, \rl{فاز ۴}, \rl{فاز ۵}},
+    symbolic x coords={P1, P2, P3, P4, P5},
+    xticklabels={\rl{فاز ۱}, \rl{فاز ۲}, \rl{فاز ۳}, \rl{فاز ۴}, \rl{فاز ۵}},
     xtick=data,
     ymin=0,
     ymax=220,
@@ -439,8 +441,8 @@
     grid style={line width=0.2pt, draw=gray!30},
     axis line style={bleurepublique!50, thick}
 ]
-\addplot[fill=goldphoenix, draw=goldphoenix!70!black] coordinates {(\rl{فاز ۱},15) (\rl{فاز ۲},0) (\rl{فاز ۳},0) (\rl{فاز ۴},0) (\rl{فاز ۵},0)};
-\addplot[fill=bleurepublique, draw=bleurepublique!70!white] coordinates {(\rl{فاز ۱},35) (\rl{فاز ۲},0) (\rl{فاز ۳},0) (\rl{فاز ۴},0) (\rl{فاز ۵},0)};
+\addplot[fill=goldphoenix, draw=goldphoenix!70!black] coordinates {(P1,15) (P2,0) (P3,0) (P4,0) (P5,0)};
+\addplot[fill=bleurepublique, draw=bleurepublique!70!white] coordinates {(P1,35) (P2,0) (P3,0) (P4,0) (P5,0)};
 \legend{\rl{بودجه جاری}, \rl{بودجه توسعه}}
 \end{axis}
 \end{tikzpicture}

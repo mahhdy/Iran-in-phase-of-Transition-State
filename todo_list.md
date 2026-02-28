@@ -40,7 +40,7 @@ Act as a Senior UI/UX Designer and Content Strategist. Create a professional Ins
 
 ## 2- Change the Theme of book and its content
 
-Use below Preamble & System Prompt to rewrite and reshape the whole book. Add packages, styles, colors, commands and boxes as you need and see fit for the books need. Give me an integrated and same filling for the theme, design and look of file. Cretae SVG colorfull pictures for the books as well when you see usefull. 
+Use below Preamble & System Prompt to rewrite and reshape the whole book. Add packages, styles, colors, commands and boxes as you need and see fit for the books need. Give me an integrated and same filling for the theme, design and look of file. Cretae SVG colorfull pictures for the books as well when you see usefull.
 
 ````markdown
 ### Preamble (Optimized for Book)

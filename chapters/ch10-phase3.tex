@@ -4,6 +4,7 @@
 %═══════════════════════════════════════════════════════════════════════════════
 
 \chapter{فاز ۳: تحکیم (سال ۶-۱۰)}
+\chapterheader{۱۰}{فاز ۳: تحکیم}{جایی که دموکراسی تنها بازی شهر می‌شود}{EraModern}
 \label{chap:phase3}
 
 \begin{kholasebox}
@@ -71,9 +72,9 @@
     election/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.2cm,
+        minimum width=3.2cm, text width=3.2cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -273,9 +274,9 @@
     action/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.5cm,
+        minimum width=3.5cm, text width=3.5cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -285,13 +286,13 @@
 ]
 
 % مرکز
-\node[circle, minimum size=3cm, draw=goldphoenix, fill=goldphoenix, text=white] (center) at (0,0) {\rl{برنامه ملی آب}};
+\node[circle, minimum size=3cm, text width=3cm, draw=goldphoenix, fill=goldphoenix, text=white] (center) at (0,0) {\rl{برنامه ملی آب}};
 
 % محورها
-\node[action] (agri) at (-4,2.5) {\rl{کشاورزی هوشمند}\\\rl{\tiny کاهش ۴۰٪ مصرف}};
-\node[action] (urban) at (4,2.5) {\rl{مدیریت شهری}\\\rl{\tiny بازیافت ۱۰۰٪ فاضلاب}};
-\node[action] (ind) at (-4,-2.5) {\rl{بخش صنعت}\\\rl{\tiny بازچرخانی داخلی}};
-\node[action] (env) at (4,-2.5) {\rl{احیای تالاب‌ها}\\\rl{\tiny اولویت دریاچه ارومیه}};
+\node[action] (agri) at (-4,2.5) {\rl{کشاورزی هوشمند}\\ \tiny \rl{کاهش ۴۰٪ مصرف}};
+\node[action] (urban) at (4,2.5) {\rl{مدیریت شهری}\\ \tiny \rl{بازیافت ۱۰۰٪ فاضلاب}};
+\node[action] (ind) at (-4,-2.5) {\rl{بخش صنعت}\\ \tiny \rl{بازچرخانی داخلی}};
+\node[action] (env) at (4,-2.5) {\rl{احیای تالاب‌ها}\\ \tiny \rl{اولویت دریاچه ارومیه}};
 
 % اتصالات
 \draw[arrow] (center) -- (agri);
@@ -440,7 +441,7 @@
         ellipse,
         draw=#1!70!black,
         fill=#1!20,
-        minimum width=2cm,
+        minimum width=2cm, text width=2cm,
         minimum height=1.2cm,
         font=\scriptsize\bfseries,
         align=center
@@ -453,7 +454,7 @@
 ]
 
 % ایران در مرکز
-\node[country=blue, minimum width=3cm, minimum height=2cm] (iran) at (0,0) {ایران};
+\node[country=blue, minimum width=3cm, text width=3cm, minimum height=2cm] (iran) at (0,0) {ایران};
 
 % همسایگان و شرکا
 \node[country=green] (turkey) at (-5,3) {ترکیه};
@@ -524,7 +525,7 @@
     value/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=1.5cm,
         draw=#1!70!black,
         fill=#1!15,
@@ -535,7 +536,7 @@
 ]
 
 % مرکز
-\node[ellipse, draw=purple!70, fill=purple!10, minimum width=4cm, 
+\node[ellipse, draw=purple!70, fill=purple!10, minimum width=4cm, text width=4cm, 
       minimum height=2.5cm, font=\bfseries, text=purple!70] (center) at (0,0) {
     \begin{tabular}{c}
     فرهنگ\\
@@ -649,7 +650,7 @@ C11 & شاخص ادراک فساد & ۴۵+ (از ۱۰۰) & ۵٪ \\
     achieve/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=2.5cm,
+        minimum width=2.5cm, text width=2.5cm,
         minimum height=1.5cm,
         draw=#1!70!black,
         fill=#1!15,
@@ -660,7 +661,7 @@ C11 & شاخص ادراک فساد & ۴۵+ (از ۱۰۰) & ۵٪ \\
 ]
 
 % ورودی
-\node[achieve=gray, minimum width=4cm] (input) at (0,0) {
+\node[achieve=gray, minimum width=4cm, text width=4cm] (input) at (0,0) {
     \begin{tabular}{c}
     ورودی از فاز ۲:\\
     نهادهای نوپا
@@ -676,7 +677,7 @@ C11 & شاخص ادراک فساد & ۴۵+ (از ۱۰۰) & ۵٪ \\
 \node[achieve=yellow] at (10,-2) {نهادهای مستحکم};
 
 % خروجی
-\node[achieve=red, minimum width=4.5cm, minimum height=2cm] (output) at (15,0) {
+\node[achieve=red, minimum width=4.5cm, text width=4.5cm, minimum height=2cm] (output) at (15,0) {
     \begin{tabular}{c}
     خروجی به فاز ۴:\\
     \textbf{دموکراسی تحکیم‌شده}\\

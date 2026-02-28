@@ -4,6 +4,7 @@
 %══════════════════════════════════════════════════════════════════════════════
 
 \chapter{درس‌های مدیریت بحران آب}
+\chapterheader{۶}{مدیریت بحران آب}{حیات سرزمین در گرو مدیریت خردمندانه}{EraEarlyMod}
 \label{ch:water}
 
 %──────────────────────────────────────────────────────────────────────────────
@@ -60,17 +61,17 @@
 ]
 
 % منابع سنتی
-\addplot[color=bleurepublique, ultrathick, mark=*] coordinates {
+\addplot[color=bleurepublique, ultra thick, mark=*] coordinates {
     (1960,1400) (1970,1500) (1980,1600) (1990,1650) (2000,1600) (2010,1500) (2020,1400)
 };
 
 % شیرین‌سازی
-\addplot[color=goldphoenix, ultrathick, mark=square*] coordinates {
+\addplot[color=goldphoenix, ultra thick, mark=square*] coordinates {
     (1960,0) (1970,0) (1980,0) (1990,0) (2000,50) (2010,300) (2020,700)
 };
 
 % بازچرخانی
-\addplot[color=goldlight, ultrathick, mark=triangle*] coordinates {
+\addplot[color=goldlight, ultra thick, mark=triangle*] coordinates {
     (1960,0) (1970,50) (1980,100) (1990,200) (2000,300) (2010,450) (2020,600)
 };
 
@@ -155,19 +156,19 @@
     tapbox/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.2cm,
+        minimum width=3.2cm, text width=3.2cm,
         minimum height=2cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         line width=1.5pt
     }
 ]
 
 % چهار شیر
-\node[tapbox, draw=bleurepublique, fill=bleulight] (t1) at (0,0) {\rl{شیر ۱}\\\rl{واردات آب}\\{\tiny ۴۰٪}};
-\node[tapbox, draw=goldphoenix, fill=goldlight] (t2) at (4,0) {\rl{شیر ۲}\\\rl{جمع‌آوری باران}\\{\tiny ۲۰٪}};
-\node[tapbox, draw=bleurepublique, fill=bleurepublique, text=white] (t3) at (8,0) {\rl{شیر ۳}\\\rl{NEWater}\\{\tiny ۳۰٪}};
-\node[tapbox, draw=goldphoenix, fill=goldphoenix, text=white] (t4) at (12,0) {\rl{شیر ۴}\\\rl{شیرین‌سازی}\\{\tiny ۱۰٪}};
+\node[tapbox, draw=bleurepublique, fill=bleulight] (t1) at (0,0) {\rl{شیر ۱}\\\rl{واردات آب}\\ \tiny \rl{۴۰٪}};
+\node[tapbox, draw=goldphoenix, fill=goldlight] (t2) at (4,0) {\rl{شیر ۲}\\\rl{جمع‌آوری باران}\\ \tiny \rl{۲۰٪}};
+\node[tapbox, draw=bleurepublique, fill=bleurepublique, text=white] (t3) at (8,0) {\rl{شیر ۳}\\\rl{NEWater}\\ \tiny \rl{۳۰٪}};
+\node[tapbox, draw=goldphoenix, fill=goldphoenix, text=white] (t4) at (12,0) {\rl{شیر ۴}\\\rl{شیرین‌سازی}\\ \tiny \rl{۱۰٪}};
 
 \end{tikzpicture}
 \caption{استراتژی چهار شیر ملی سنگاپور}
@@ -240,9 +241,9 @@ NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است
     box/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=4cm,
+        minimum width=4cm, text width=4cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         line width=1pt
     },
@@ -250,8 +251,8 @@ NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است
 ]
 
 % قبل
-\node[box, draw=rougerevolution, fill=rougelight] (b1) at (0,0) {\rl{قبل از اصلاحات}\\{\tiny حق نامحدود}};
-\node[box, draw=bleurepublique, fill=bleulight] (b2) at (8,0) {\rl{بعد از اصلاحات}\\{\tiny دارایی قابل معامله}};
+\node[box, draw=rougerevolution, fill=rougelight] (b1) at (0,0) {\rl{قبل از اصلاحات}\\ \tiny \rl{حق نامحدود}};
+\node[box, draw=bleurepublique, fill=bleulight] (b2) at (8,0) {\rl{بعد از اصلاحات}\\ \tiny \rl{دارایی قابل معامله}};
 
 % فلش
 \draw[arrow, ultra thick, color=goldphoenix] (b1) -- node[above, font=\tiny\bfseries] {\rl{اصلاحات بازار آب}} (b2);
@@ -292,9 +293,9 @@ NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است
     principle/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.8cm,
+        minimum width=3.8cm, text width=3.8cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -302,8 +303,8 @@ NEWater فاضلاب تصفیه‌شده با فناوری پیشرفته است
     },
     center/.style={
         circle,
-        minimum size=2.8cm,
-        text centered,
+        minimum size=2.8cm, text width=2.8cm,
+        align=center,
         font=\small\bfseries,
         draw=goldphoenix,
         fill=goldphoenix,

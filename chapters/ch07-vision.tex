@@ -4,6 +4,7 @@
 %═══════════════════════════════════════════════════════════════════════════════
 
 \chapter{چشم‌انداز و اصول راهنما}
+\chapterheader{۷}{چشم‌انداز و اصول}{ترسیم ایرانی که آرزویش را داریم}{AccentGold}
 \label{chap:vision}
 
 \begin{kholasebox}
@@ -92,7 +93,7 @@
     principle/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.2cm,
+        minimum width=3.2cm, text width=3.2cm,
         minimum height=0.9cm,
         draw=bleurepublique!70,
         fill=bleulight,
@@ -102,7 +103,7 @@
     },
     core/.style={
         circle,
-        minimum size=2.8cm,
+        minimum size=2.8cm, text width=2.8cm,
         draw=goldphoenix,
         fill=goldlight,
         text=goldphoenix,
@@ -272,7 +273,7 @@
 \label{tab:human-rights-comparison}
 \begin{tabularx}{\textwidth}{R{2.8cm} C{1.2cm} C{1.2cm} C{1.4cm} Y}
 \toprule
-\headmark شاخص & \headmark ایران & \headmark ترکیه & \headmarkآفریقای ج. & \headmark هدف ۱۴۲۹ \\
+\headmark شاخص & \headmark ایران & \headmark ترکیه & \headmark آفریقای ج. & \headmark هدف ۱۴۲۹ \\
 \midrule
 آزادی مطبوعات & ۱۷۶ & ۱۴۹ & ۳۲ & زیر ۵۰ \\
 \rowcolor{goldlight}
@@ -370,7 +371,7 @@
         draw=bleurepublique,
         fill=bleulight,
         text=bleurepublique,
-        minimum width=3.5cm,
+        minimum width=3.5cm, text width=3.5cm,
         minimum height=1cm,
         font=\small\bfseries,
         align=center
@@ -479,15 +480,15 @@
     \node[font=\large\bfseries, text=bleurepublique] at (0,0) {\rl{ایران}};
     
     % همسایگان - دایره
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (tur) at (120:4.5) {\rl{ترکیه}};
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (arm) at (150:4) {\rl{ارمنستان}};
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (aze) at (90:4) {\rl{آذربایجان}};
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (tur2) at (60:4.5) {\rl{ترکمنستان}};
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (afg) at (30:4.5) {\rl{افغانستان}};
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (pak) at (-30:4.5) {\rl{پاکستان}};
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (uae) at (-60:4.5) {\rl{امارات}};
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (irq) at (-120:4.5) {\rl{عراق}};
-    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, font=\small] (sau) at (-150:4) {\rl{عربستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (tur) at (120:4.5) {\rl{ترکیه}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (arm) at (150:4) {\rl{ارمنستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (aze) at (90:4) {\rl{آذربایجان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (tur2) at (60:4.5) {\rl{ترکمنستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (afg) at (30:4.5) {\rl{افغانستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (pak) at (-30:4.5) {\rl{پاکستان}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (uae) at (-60:4.5) {\rl{امارات}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (irq) at (-120:4.5) {\rl{عراق}};
+    \node[circle, fill=goldlight, draw=goldphoenix, minimum size=1.5cm, text width=1.5cm, font=\small] (sau) at (-150:4) {\rl{عربستان}};
     
     % خطوط ارتباطی
     \foreach \neighbor in {tur,arm,aze,tur2,afg,pak,uae,irq,sau} {
@@ -540,7 +541,7 @@
     element/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=1.2cm,
         draw=bleurepublique!70,
         fill=bleulight,
@@ -563,7 +564,7 @@
 \node[element] (reform) at (0,0) {\rl{اصلاح نهادها}\\\tiny تطهیر و بازسازی};
 
 % مرکز
-\node[circle, draw=goldphoenix, fill=goldlight, minimum size=2.2cm, 
+\node[circle, draw=goldphoenix, fill=goldlight, minimum size=2.2cm, text width=2.2cm, 
       font=\small\bfseries, text=goldphoenix, align=center] 
       (center) at (2.5,1.5) {\rl{آشتی ملی}};
 
@@ -603,7 +604,7 @@
     power/.style={
         rectangle,
         rounded corners=8pt,
-        minimum width=4cm,
+        minimum width=4cm, text width=4cm,
         minimum height=2cm,
         draw=#1!70!black,
         fill=#1!15,
@@ -614,7 +615,7 @@
     subunit/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.8cm,
+        minimum width=2.8cm, text width=2.8cm,
         minimum height=0.7cm,
         draw=#1!50!black,
         fill=#1!10,
@@ -676,7 +677,7 @@
 \draw[check] (exe) -- (jud) node[midway, right, font=\tiny] {عفو/انتصاب};
 
 % رأی مردم
-\node[ellipse, draw=cyan!70, fill=cyan!10, minimum width=3cm, minimum height=1cm,
+\node[ellipse, draw=cyan!70, fill=cyan!10, minimum width=3cm, text width=3cm, minimum height=1cm,
       font=\small\bfseries, text=cyan!70] (people) at (0,-4.5) {رأی مستقیم مردم};
 \draw[->, thick, cyan!60] (people) -- (leg);
 \draw[->, thick, cyan!60] (people) -- (exe);
@@ -783,7 +784,7 @@
     generation/.style={
         rectangle,
         rounded corners=6pt,
-        minimum width=4.5cm,
+        minimum width=4.5cm, text width=4.5cm,
         minimum height=3.5cm,
         draw=#1!70!black,
         fill=#1!10,
@@ -846,7 +847,7 @@
 
 % پایه مشترک
 \node[rectangle, rounded corners=3pt, draw=purple!60, fill=purple!10,
-      minimum width=14cm, minimum height=0.8cm, font=\small\bfseries,
+      minimum width=14cm, text width=14cm, minimum height=0.8cm, font=\small\bfseries,
       text=purple!60] at (5.5,-2.5) {کرامت ذاتی انسان: پایه مشترک همه حقوق};
 
 \draw[->, purple!40] (0,-1.8) -- (0,-2.1);
@@ -927,7 +928,7 @@
         draw=#1!70!black,
         fill=#1!15,
         text=#1!30!black,
-        minimum width=2.8cm,
+        minimum width=2.8cm, text width=2.8cm,
         minimum height=1.3cm,
         font=\small\bfseries,
         align=center
@@ -976,7 +977,7 @@
 \draw[arrow=orange] (reform) -- (improve);
 
 % مرکز
-\node[circle, draw=red!60, fill=red!10, minimum size=1.5cm,
+\node[circle, draw=red!60, fill=red!10, minimum size=1.5cm, text width=1.5cm,
       font=\scriptsize\bfseries, text=red!60, align=center] at (2,-1.5) {
     \begin{tabular}{c}
     چرخه\\
@@ -1250,7 +1251,7 @@ V10 & رضایت قومی & درصد راضی & — & ۶۰٪ & ۸۰٪ \\
 }
 
 % فازها
-\node[phase=red, minimum width=2.8cm] at (1.5,1.5) {
+\node[phase=red, minimum width=2.8cm, text width=2.8cm] at (1.5,1.5) {
     \begin{tabular}{c}
     فاز ۱\\
     گذار\\
@@ -1258,7 +1259,7 @@ V10 & رضایت قومی & درصد راضی & — & ۶۰٪ & ۸۰٪ \\
     \end{tabular}
 };
 
-\node[phase=orange, minimum width=3.8cm] at (5,1.5) {
+\node[phase=orange, minimum width=3.8cm, text width=3.8cm] at (5,1.5) {
     \begin{tabular}{c}
     فاز ۲\\
     نهادسازی\\
@@ -1266,7 +1267,7 @@ V10 & رضایت قومی & درصد راضی & — & ۶۰٪ & ۸۰٪ \\
     \end{tabular}
 };
 
-\node[phase=yellow, minimum width=4.8cm] at (9.5,1.5) {
+\node[phase=yellow, minimum width=4.8cm, text width=4.8cm] at (9.5,1.5) {
     \begin{tabular}{c}
     فاز ۳\\
     تحکیم\\
@@ -1274,7 +1275,7 @@ V10 & رضایت قومی & درصد راضی & — & ۶۰٪ & ۸۰٪ \\
     \end{tabular}
 };
 
-\node[phase=green, minimum width=3.8cm] at (14,1.5) {
+\node[phase=green, minimum width=3.8cm, text width=3.8cm] at (14,1.5) {
     \begin{tabular}{c}
     فاز ۴\\
     بلوغ\\
@@ -1282,7 +1283,7 @@ V10 & رضایت قومی & درصد راضی & — & ۶۰٪ & ۸۰٪ \\
     \end{tabular}
 };
 
-\node[phase=blue, minimum width=3.8cm] at (18,1.5) {
+\node[phase=blue, minimum width=3.8cm, text width=3.8cm] at (18,1.5) {
     \begin{tabular}{c}
     فاز ۵\\
     تعالی\\
@@ -1423,7 +1424,7 @@ V10 & رضایت قومی & درصد راضی & — & ۶۰٪ & ۸۰٪ \\
         draw=#1!70!black,
         fill=#1!15,
         text=#1!30!black,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=1.5cm,
         font=\small\bfseries,
         align=center
@@ -1465,7 +1466,7 @@ V10 & رضایت قومی & درصد راضی & — & ۶۰٪ & ۸۰٪ \\
 \draw[->, thick, gray!60] (constitution) -- (prosperity);
 
 % اتصال به فصول بعدی
-\node[box=red, minimum width=12cm] (next) at (6,-3) {
+\node[box=red, minimum width=12cm, text width=12cm] (next) at (6,-3) {
     \begin{tabular}{c}
     فصول ۸-۱۱: نقشه راه تفصیلی پنج فاز گذار
     \end{tabular}

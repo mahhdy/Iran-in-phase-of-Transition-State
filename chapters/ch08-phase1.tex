@@ -4,6 +4,7 @@
 %═══════════════════════════════════════════════════════════════════════════════
 
 \chapter{فاز ۱: گذار اولیه (سال ۱-۲)}
+\chapterheader{۸}{فاز ۱: گذار}{عبور امن از پرتگاه بحران}{EraEarlyMod}
 \label{chap:phase1}
 
 \begin{kholasebox}
@@ -52,9 +53,9 @@
     hour/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=2.4cm,
+        minimum width=2.4cm, text width=2.4cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -151,9 +152,9 @@
     organ/.style={
         rectangle,
         rounded corners=6pt,
-        minimum width=4cm,
+        minimum width=4cm, text width=4cm,
         minimum height=1.3cm,
-        text centered,
+        align=center,
         font=\small\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -164,7 +165,7 @@
         rounded corners=4pt,
         draw=goldphoenix,
         fill=goldlight,
-        minimum width=2.2cm,
+        minimum width=2.2cm, text width=2.2cm,
         minimum height=0.9cm,
         font=\tiny\bfseries,
         align=center
@@ -263,9 +264,9 @@
     event/.style={
         rectangle,
         rounded corners=4pt,
-        minimum width=2.2cm,
+        minimum width=2.2cm, text width=2.2cm,
         minimum height=1cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -409,9 +410,9 @@
     step/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=2.8cm,
+        minimum width=2.8cm, text width=2.8cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -489,9 +490,9 @@
     source/.style={
         rectangle,
         rounded corners=4pt,
-        minimum width=2.8cm,
+        minimum width=2.8cm, text width=2.8cm,
         minimum height=1cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=bleurepublique,
         fill=bleulight,
@@ -500,9 +501,9 @@
     use/.style={
         rectangle,
         rounded corners=4pt,
-        minimum width=2.8cm,
+        minimum width=2.8cm, text width=2.8cm,
         minimum height=1cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=goldphoenix,
         fill=goldlight,
@@ -512,7 +513,7 @@
 ]
 
 % مرکز
-\node[circle, minimum size=2cm, draw=goldphoenix, fill=goldphoenix, text=white, font=\tiny\bfseries] (treasury) at (5,0) {\rl{خزانه دولت}};
+\node[circle, minimum size=2cm, text width=2cm, draw=goldphoenix, fill=goldphoenix, text=white, font=\tiny\bfseries] (treasury) at (5,0) {\rl{خزانه دولت}};
 
 % منابع
 \node[source] (oil) at (0,2) {\rl{درآمد نفت}};
@@ -687,9 +688,9 @@
         ellipse,
         draw=bleurepublique,
         fill=bleulight,
-        minimum width=2.4cm,
+        minimum width=2.4cm, text width=2.4cm,
         minimum height=1.4cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         line width=1pt
     }
@@ -757,7 +758,7 @@
     stage/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=1.8cm,
         draw=#1!70!black,
         fill=#1!15,
@@ -908,7 +909,7 @@
     channel/.style={
         rectangle,
         rounded corners=4pt,
-        minimum width=3cm,
+        minimum width=3cm, text width=3cm,
         minimum height=1.3cm,
         draw=#1!70!black,
         fill=#1!15,
@@ -959,7 +960,7 @@
 
 % مرکز جمع‌آوری
 \node[rectangle, rounded corners=6pt, draw=black!70, fill=black!10,
-      minimum width=4cm, minimum height=1.5cm, font=\small\bfseries,
+      minimum width=4cm, text width=4cm, minimum height=1.5cm, font=\small\bfseries,
       align=center] (collect) at (6,0) {
     \begin{tabular}{c}
     دبیرخانه مشارکت عمومی\\
@@ -976,7 +977,7 @@
 
 % خروجی
 \node[rectangle, rounded corners=4pt, draw=teal!70, fill=teal!15,
-      minimum width=3cm, minimum height=1cm, font=\scriptsize\bfseries,
+      minimum width=3cm, text width=3cm, minimum height=1cm, font=\scriptsize\bfseries,
       text=teal!30!black, align=center] (output) at (6,-2) {
     گزارش به کمیسیون‌ها
 };
@@ -1047,7 +1048,7 @@
     unit/.style={
         rectangle,
         rounded corners=4pt,
-        minimum width=2.8cm,
+        minimum width=2.8cm, text width=2.8cm,
         minimum height=1.2cm,
         draw=#1!70!black,
         fill=#1!15,
@@ -1058,7 +1059,7 @@
 ]
 
 % کمیسیون مرکزی
-\node[unit=purple, minimum width=5cm, minimum height=1.8cm] (main) at (0,4) {
+\node[unit=purple, minimum width=5cm, text width=5cm, minimum height=1.8cm] (main) at (0,4) {
     \begin{tabular}{c}
     کمیسیون حقیقت‌یاب\\
     \small ۱۵ عضو (۷ زن، ۸ مرد)\\
@@ -1103,7 +1104,7 @@
 };
 
 % دفاتر استانی
-\node[unit=gray, minimum width=10cm] (regional) at (0,-0.5) {
+\node[unit=gray, minimum width=10cm, text width=10cm] (regional) at (0,-0.5) {
     \begin{tabular}{c}
     دفاتر استانی (۳۱ استان)\\
     \tiny جمع‌آوری شهادت‌ها و مدارک محلی
@@ -1220,21 +1221,21 @@ R8 & کمبود نیروی کارآمد & بالا & متوسط & بازگشت �
 \fill[red!20, opacity=0.5] (70,40) rectangle (100,100);
 
 % ریسک‌ها
-\node[circle, fill=red!70, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+\node[circle, fill=red!70, minimum size=0.4cm, text width=0.4cm, font=\tiny\bfseries, text=white] 
     at (axis cs:50,90) {R1};
-\node[circle, fill=purple!70, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+\node[circle, fill=purple!70, minimum size=0.4cm, text width=0.4cm, font=\tiny\bfseries, text=white] 
     at (axis cs:25,85) {R2};
-\node[circle, fill=orange!70, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+\node[circle, fill=orange!70, minimum size=0.4cm, text width=0.4cm, font=\tiny\bfseries, text=white] 
     at (axis cs:75,75) {R3};
-\node[circle, fill=red!60, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+\node[circle, fill=red!60, minimum size=0.4cm, text width=0.4cm, font=\tiny\bfseries, text=white] 
     at (axis cs:50,70) {R4};
-\node[circle, fill=orange!60, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+\node[circle, fill=orange!60, minimum size=0.4cm, text width=0.4cm, font=\tiny\bfseries, text=white] 
     at (axis cs:55,65) {R5};
-\node[circle, fill=yellow!70, minimum size=0.4cm, font=\tiny\bfseries, text=black] 
+\node[circle, fill=yellow!70, minimum size=0.4cm, text width=0.4cm, font=\tiny\bfseries, text=black] 
     at (axis cs:30,50) {R6};
-\node[circle, fill=yellow!60, minimum size=0.4cm, font=\tiny\bfseries, text=black] 
+\node[circle, fill=yellow!60, minimum size=0.4cm, text width=0.4cm, font=\tiny\bfseries, text=black] 
     at (axis cs:70,55) {R7};
-\node[circle, fill=orange!50, minimum size=0.4cm, font=\tiny\bfseries, text=white] 
+\node[circle, fill=orange!50, minimum size=0.4cm, text width=0.4cm, font=\tiny\bfseries, text=white] 
     at (axis cs:75,50) {R8};
 
 % راهنما
@@ -1320,7 +1321,7 @@ K10 & بازگشت مهاجران & ۱۰۰,۰۰۰ & ۳۰۰,۰۰۰ & ۵۰۰,۰۰�
     milestone/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=2.5cm,
+        minimum width=2.5cm, text width=2.5cm,
         minimum height=1.2cm,
         draw=#1!70!black,
         fill=#1!20,
@@ -1382,7 +1383,7 @@ K10 & بازگشت مهاجران & ۱۰۰,۰۰۰ & ۳۰۰,۰۰۰ & ۵۰۰,۰۰�
 
 % نتیجه نهایی
 \node[rectangle, rounded corners=8pt, draw=purple!70, fill=purple!10,
-      minimum width=6cm, minimum height=1.5cm, font=\small\bfseries,
+      minimum width=6cm, text width=6cm, minimum height=1.5cm, font=\small\bfseries,
       text=purple!70, align=center] at (9,-2.5) {
     \begin{tabular}{c}
     پایان فاز ۱: دولت منتخب دموکراتیک\\

@@ -1,0 +1,733 @@
+\contentsline {chapter}{پیشگفتار}{ث}{chapter*.1}%
+\contentsline {chapter}{فهرست شکل‌ها}{ل}{section*.3}%
+\contentsline {chapter}{فهرست جدول‌ها}{ه}{section*.5}%
+\contentsline {part}{اول\hspace {1em}مبانی}{1}{part.1}%
+\contentsline {chapter}{خلاصه مدیریتی}{3}{chapter*.7}%
+\contentsline {chapter}{\numberline {1}مقدمه: چرا این کتاب؟}{11}{chapter.1}%
+\contentsline {section}{\numberline {1.1}بیان مسئله: بن‌بست تاریخی}{11}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}ابعاد بن‌بست}{12}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}چرا اکنون؟ فرصت و تهدید}{12}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}پنجره فرصت}{12}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}تهدید تأخیر}{13}{subsection.1.2.2}%
+\contentsline {section}{\numberline {1.3}چرا دموکراسی؟ نقد آلترناتیوها}{13}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}نقد اقتدارگرایی توسعه‌گرا}{13}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}مزیت‌های دموکراسی}{14}{subsection.1.3.2}%
+\contentsline {section}{\numberline {1.4}دموکراسی بومی‌شده: نه کپی، نه رد}{14}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}اصول جهانی غیرقابل مذاکره}{15}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}انعطاف در شکل نهادها}{15}{subsection.1.4.2}%
+\contentsline {section}{\numberline {1.5}اصل محوری: آبادانی ملموس و فوری}{15}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}چرا این اصل حیاتی است؟}{16}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}مکانیزم اثرگذاری}{16}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}چه چیزی باید در ۱۰۰ روز اول تغییر کند؟}{17}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}چرخه‌های باطل و فاضل}{17}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}چرخه باطل فساد-بی‌اعتمادی}{17}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}چرخه باطل آب-فقر-مهاجرت}{18}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}تبدیل به چرخه فاضل}{18}{subsection.1.6.3}%
+\contentsline {section}{\numberline {1.7}روش‌شناسی این پژوهش}{18}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}تحلیل تطبیقی-تاریخی}{18}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}چارچوب نظری}{19}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}رویکرد طراحی مبتنی بر شواهد}{19}{subsection.1.7.3}%
+\contentsline {section}{\numberline {1.8}تاریخ از پایین و از بالا}{19}{section.1.8}%
+\contentsline {subsection}{\numberline {1.8.1}چرا این ترکیب مهم است؟}{20}{subsection.1.8.1}%
+\contentsline {section}{\numberline {1.9}ساختار این کتاب}{20}{section.1.9}%
+\contentsline {subsection}{\numberline {1.9.1}راهنمای خواندن}{21}{subsection.1.9.1}%
+\contentsline {section}{\numberline {1.10}محدودیت‌ها و احتیاط‌ها}{21}{section.1.10}%
+\contentsline {section}{\numberline {1.11}هم‌افزایی نسلی: پیوند تخصص و تجربه}{21}{section.1.11}%
+\contentsline {subsection}{\numberline {1.11.1}مدل نقشه راه همکاری میان‌نسلی}{22}{subsection.1.11.1}%
+\contentsline {subsection}{\numberline {1.11.2}نهادینه کردن همکاری: صندوق توسعه دانش}{22}{subsection.1.11.2}%
+\contentsline {section}{\numberline {1.12}دعوت به گفتگو}{22}{section.1.12}%
+\contentsline {chapter}{\numberline {2}تشخیص: تحلیل وضعیت موجود}{25}{chapter.2}%
+\contentsline {section}{\numberline {2.1}مقدمه: شش بحران به‌هم‌پیوسته}{25}{section.2.1}%
+\contentsline {section}{\numberline {2.2}بحران آب و محیط زیست: تهدید وجودی}{26}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}وضعیت سفره‌های زیرزمینی}{26}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}روند تخلیه تاریخی}{27}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}پیامدهای انسانی}{27}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}توزیع جغرافیایی بحران}{27}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}بحران انرژی و سوخت}{28}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}ساختار مصرف و تولید}{28}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}مشکل قاچاق سوخت}{28}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}بحران اقتصادی و تحریم‌ها}{29}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}ساختار اقتصاد رانتی}{29}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}تأثیر تحریم‌ها}{29}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}شاخص‌های فقر و نابرابری}{29}{subsection.2.4.3}%
+\contentsline {section}{\numberline {2.5}بحران سیاسی و فساد}{30}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}فساد مویرگی}{30}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}شاخص‌های بین‌المللی}{30}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}بحران اجتماعی و بی‌اعتمادی}{31}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}فروپاشی سرمایه اجتماعی}{31}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}شکاف‌های اجتماعی}{31}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}بحران هویتی و تنوع قومی}{32}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}ترکیب قومی-زبانی}{32}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}ریشه‌های بی‌اعتمادی تاریخی به مرکز}{32}{subsection.2.7.2}%
+\contentsline {section}{\numberline {2.8}بحران امنیتی و ژئوپلیتیک}{33}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}محیط منطقه‌ای}{33}{subsection.2.8.1}%
+\contentsline {section}{\numberline {2.9}تحلیل SWOT جامع}{33}{section.2.9}%
+\contentsline {section}{\numberline {2.10}نتیجه‌گیری: تشخیص نهایی}{36}{section.2.10}%
+\contentsline {chapter}{\numberline {3}مبانی نظری: دموکراسی، تنوع، توسعه}{37}{chapter.3}%
+\contentsline {section}{\numberline {3.1}دموکراسی چیست؟}{38}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}تعریف حداقلی (رویه‌ای)}{38}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}تعریف حداکثری (جوهری)}{38}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}طیف نظام‌های سیاسی}{39}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}نظریه‌های گذار دموکراتیک}{39}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}موج سوم دموکراتیزاسیون}{39}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}مدل گذار لینز و استپان}{40}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}مدل‌های گذار}{41}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}مدیریت تنوع قومی-فرهنگی}{41}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}مدل توافق‌گرایی (لیپهارت)}{41}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}مدل یکپارچه‌سازی (هورویتز)}{42}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}مدل ترکیبی پیشنهادی}{42}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}دموکراسی و توسعه}{43}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}نظریه مدرنیزاسیون (لیپست)}{43}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}توسعه به‌مثابه آزادی (آمارتیا سن)}{44}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}شواهد تجربی جدید}{44}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}نقش نهادها}{45}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}نهادگرایی جدید (نورث)}{45}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}چرا برخی ملت‌ها شکست می‌خورند؟}{45}{subsection.3.5.2}%
+\contentsline {section}{\numberline {3.6}عدالت انتقالی}{46}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}چهار بُعد عدالت انتقالی}{46}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}طیف رویکردها}{47}{subsection.3.6.2}%
+\contentsline {section}{\numberline {3.7}چارچوب نظری تلفیقی این کتاب}{47}{section.3.7}%
+\contentsline {section}{\numberline {3.8}نتیجه‌گیری}{48}{section.3.8}%
+\contentsline {part}{دوم\hspace {1em}تجارب جهانی}{51}{part.2}%
+\contentsline {chapter}{\numberline {4}درس‌های گذارهای موفق}{53}{chapter.4}%
+\contentsline {section}{\numberline {4.1}چرا این چهار کشور؟}{54}{section.4.1}%
+\contentsline {section}{\numberline {4.2}اسپانیا: میثاق نخبگان و خودمختاری}{54}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}زمینه: چهار دهه فرانکیسم}{54}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}عوامل کلیدی موفقیت}{54}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}کودتای نافرجام ۱۹۸۱}{55}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}مسئله عدالت انتقالی}{55}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}درس‌های اسپانیا برای ما}{56}{subsection.4.2.5}%
+\contentsline {section}{\numberline {4.3}آفریقای جنوبی: آشتی و قانون اساسی فراگیر}{56}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}زمینه: نظام آپارتاید}{56}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}عوامل کلیدی موفقیت}{56}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}کمیسیون حقیقت و آشتی (TRC)}{57}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}قانون اساسی ۱۹۹۶}{57}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}چالش‌های باقیمانده}{57}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}درس‌های آفریقای جنوبی برای ما}{57}{subsection.4.3.6}%
+\contentsline {section}{\numberline {4.4}اندونزی: مدیریت تنوع و تمرکززدایی}{58}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}زمینه: سه دهه سوهارتو}{58}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}عوامل کلیدی موفقیت}{58}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}مدل پانچاسیلا}{59}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}تمرکززدایی}{59}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}درس‌های اندونزی برای ما}{59}{subsection.4.4.5}%
+\contentsline {section}{\numberline {4.5}کره جنوبی: از دیکتاتوری توسعه‌گرا به دموکراسی}{59}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}زمینه: معجزه اقتصادی بدون آزادی}{59}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}عوامل کلیدی موفقیت}{60}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}عدالت انتقالی: محاکمه روسای جمهور}{60}{subsection.4.5.3}%
+\contentsline {subsection}{\numberline {4.5.4}درس‌های کره جنوبی برای ما}{60}{subsection.4.5.4}%
+\contentsline {section}{\numberline {4.6}الگوهای مشترک موفقیت}{61}{section.4.6}%
+\contentsline {section}{\numberline {4.7}نتیجه‌گیری: چه باید آموخت؟}{61}{section.4.7}%
+\contentsline {chapter}{\numberline {5}درس‌های گذارهای ناموفق}{63}{chapter.5}%
+\contentsline {section}{\numberline {5.1}چرا شکست‌ها را مطالعه کنیم؟}{63}{section.5.1}%
+\contentsline {section}{\numberline {5.2}عراق: فروپاشی نهادها و فرقه‌گرایی}{64}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}اشتباهات کلیدی}{64}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}مشکل محاصصه فرقه‌ای}{65}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}درس‌های عراق برای ما}{65}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}لیبی: دولت‌سازی بدون ملت‌سازی}{65}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}میراث قذافی: فقدان نهاد}{65}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}تکه‌تکه شدن}{66}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}درس‌های لیبی}{66}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}مصر: شکست ائتلاف و بازگشت نظامیان}{66}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}چرا انقلاب ۲۰۱۱ شکست خورد؟}{66}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}درس کلیدی مصر}{67}{subsection.5.4.2}%
+\contentsline {section}{\numberline {5.5}یمن: گفتگوی ملی بدون پشتوانه}{67}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}چرا گفتگوی ملی یمن شکست خورد؟}{67}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}ونزوئلا: پوپولیسم و نفرین منابع}{68}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}مسیر فروپاشی}{68}{subsection.5.6.1}%
+\contentsline {section}{\numberline {5.7}الگوهای مشترک شکست}{68}{section.5.7}%
+\contentsline {section}{\numberline {5.8}چک‌لیست: آنچه نباید کرد}{69}{section.5.8}%
+\contentsline {chapter}{\numberline {6}درس‌های مدیریت بحران آب}{71}{chapter.6}%
+\contentsline {section}{\numberline {6.1}چرا مدیریت آب حیاتی است؟}{72}{section.6.1}%
+\contentsline {section}{\numberline {6.2}اسرائیل: از کمبود به فراوانی}{72}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}معجزه آب اسرائیل}{72}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}چهار ستون موفقیت اسرائیل}{73}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}درس‌های اسرائیل}{73}{subsection.6.2.3}%
+\contentsline {section}{\numberline {6.3}سنگاپور: چهار شیر ملی}{73}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}چالش سنگاپور}{73}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}استراتژی چهار شیر ملی}{74}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.3}درس‌های سنگاپور}{74}{subsection.6.3.3}%
+\contentsline {section}{\numberline {6.4}استرالیا: مدیریت خشکسالی هزاره}{74}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}بحران Murray-Darling}{74}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}راه‌حل: بازار آب}{75}{subsection.6.4.2}%
+\contentsline {subsection}{\numberline {6.4.3}درس‌های استرالیا}{75}{subsection.6.4.3}%
+\contentsline {section}{\numberline {6.5}جمع‌بندی: اصول جهانی مدیریت پایدار آب}{76}{section.6.5}%
+\contentsline {section}{\numberline {6.6}کاربرد برای کشور ما}{76}{section.6.6}%
+\contentsline {part}{سوم\hspace {1em}طرح جامع}{79}{part.3}%
+\contentsline {chapter}{\numberline {7}چشم‌انداز و اصول راهنما}{81}{chapter.7}%
+\contentsline {section}{\numberline {7.1}مقدمه: ضرورت چشم‌انداز روشن}{81}{section.7.1}%
+\contentsline {section}{\numberline {7.2}بیانیه چشم‌انداز ایران ۱۴۲۹}{82}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}تحلیل اجزای چشم‌انداز}{82}{subsection.7.2.1}%
+\contentsline {section}{\numberline {7.3}ده اصل بنیادین نظام نوین}{82}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}اصل اول: حاکمیت ملی و مردم‌سالاری}{82}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}اصل دوم: کثرت‌گرایی و حقوق اقلیت‌ها}{84}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}اصل سوم: عدالت توزیعی و فرصت‌های برابر}{85}{subsection.7.3.3}%
+\contentsline {subsection}{\numberline {7.3.4}اصل چهارم: حقوق بشر و کرامت انسانی}{85}{subsection.7.3.4}%
+\contentsline {subsection}{\numberline {7.3.5}اصل پنجم: پایداری محیط‌زیستی}{86}{subsection.7.3.5}%
+\contentsline {subsection}{\numberline {7.3.6}اصل ششم: تمرکززدایی و فدرالیسم همبسته}{86}{subsection.7.3.6}%
+\contentsline {subsection}{\numberline {7.3.7}اصل هفتم: پاسخگویی و شفافیت}{87}{subsection.7.3.7}%
+\contentsline {subsection}{\numberline {7.3.8}اصل هشتم: صلح‌طلبی و همزیستی منطقه‌ای}{88}{subsection.7.3.8}%
+\contentsline {subsection}{\numberline {7.3.9}اصل نهم: حکمرانی علمی و مبتنی بر شواهد}{89}{subsection.7.3.9}%
+\contentsline {subsection}{\numberline {7.3.10}اصل دهم: عدالت انتقالی و آشتی ملی}{90}{subsection.7.3.10}%
+\contentsline {section}{\numberline {7.4}چارچوب قانون اساسی پیشنهادی}{90}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}ساختار قوای حکومتی}{90}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}ویژگی‌های نظام پارلمانی-ریاستی ترکیبی}{90}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}مجلس دوم: مجلس اقوام و مناطق}{91}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}منشور حقوق بنیادین}{92}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}دسته‌بندی حقوق بنیادین}{92}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}حقوق ویژه زنان}{92}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}حقوق اقلیت‌های دینی}{92}{subsection.7.5.3}%
+\contentsline {section}{\numberline {7.6}مدل «آبادانی ملموس»: استراتژی اعتمادسازی}{93}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}منطق آبادانی ملموس}{93}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}دستور کار ۱۰۰ روز اول}{94}{subsection.7.6.2}%
+\contentsline {subsection}{\numberline {7.6.3}برنامه‌های آبادانی سریع (Quick Wins)}{94}{subsection.7.6.3}%
+\contentsline {section}{\numberline {7.7}شاخص‌های پایش چشم‌انداز}{94}{section.7.7}%
+\contentsline {subsection}{\numberline {7.7.1}داشبورد ملی پیشرفت}{97}{subsection.7.7.1}%
+\contentsline {subsection}{\numberline {7.7.2}نمودار راداری وضعیت کنونی و اهداف}{97}{subsection.7.7.2}%
+\contentsline {section}{\numberline {7.8}نقشه راه کلان ۲۵ ساله}{97}{section.7.8}%
+\contentsline {section}{\numberline {7.9}میثاق ملی: توافق همه با همه}{97}{section.7.9}%
+\contentsline {subsection}{\numberline {7.9.1}طرفین میثاق ملی ایران}{97}{subsection.7.9.1}%
+\contentsline {section}{\numberline {7.10}خطوط قرمز و خطوط سبز}{98}{section.7.10}%
+\contentsline {subsection}{\numberline {7.10.1}خطوط قرمز غیرقابل عبور}{98}{subsection.7.10.1}%
+\contentsline {subsection}{\numberline {7.10.2}خطوط سبز: فضای مذاکره}{98}{subsection.7.10.2}%
+\contentsline {section}{\numberline {7.11}جمع‌بندی: از چشم‌انداز تا عمل}{98}{section.7.11}%
+\contentsline {chapter}{\numberline {8}فاز ۱: گذار اولیه (سال ۱-۲)}{101}{chapter.8}%
+\contentsline {section}{\numberline {8.1}لحظه صفر: مدیریت فروپاشی}{102}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}سناریوهای محتمل فروپاشی}{102}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}پروتکل ساعات اولیه}{102}{subsection.8.1.2}%
+\contentsline {section}{\numberline {8.2}شورای انتقالی: ساختار و ترکیب}{103}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}ترکیب پیشنهادی شورای انتقالی}{103}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}ساختار تصمیم‌گیری}{103}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}دولت موقت: ساختار و وظایف}{104}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}معیارهای انتخاب نخست‌وزیر موقت}{104}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}ساختار کابینه موقت}{104}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}تقویم گذار: ۲۴ ماه اول}{104}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}فاز ۱-الف: تثبیت اولیه (ماه ۱-۶)}{106}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}فاز ۱-ب: نهادسازی اولیه (ماه ۷-۱۲)}{106}{subsection.8.4.2}%
+\contentsline {subsection}{\numberline {8.4.3}فاز ۱-ج: قانون اساسی (ماه ۱۳-۲۴)}{106}{subsection.8.4.3}%
+\contentsline {section}{\numberline {8.5}مدیریت نیروهای امنیتی}{106}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}استراتژی مواجهه با نهادهای امنیتی}{106}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}فرآیند تطهیر (Vetting)}{107}{subsection.8.5.2}%
+\contentsline {section}{\numberline {8.6}مدیریت بحران اقتصادی فوری}{107}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}بسته اقدامات اضطراری اقتصادی}{108}{subsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.6.2}نمودار جریان منابع مالی دوره گذار}{108}{subsection.8.6.2}%
+\contentsline {section}{\numberline {8.7}دیپلماسی گذار و رفع تحریم}{108}{section.8.7}%
+\contentsline {subsection}{\numberline {8.7.1}نقشه راه دیپلماتیک}{108}{subsection.8.7.1}%
+\contentsline {subsection}{\numberline {8.7.2}پیشنهاد «معامله بزرگ» (Grand Bargain)}{109}{subsection.8.7.2}%
+\contentsline {subsection}{\numberline {8.7.3}نمودار مراحل رفع تحریم}{109}{subsection.8.7.3}%
+\contentsline {section}{\numberline {8.8}انتخابات مجلس مؤسسان}{109}{section.8.8}%
+\contentsline {subsection}{\numberline {8.8.1}نظام انتخاباتی پیشنهادی}{110}{subsection.8.8.1}%
+\contentsline {subsection}{\numberline {8.8.2}نقشه حوزه‌های انتخابیه}{110}{subsection.8.8.2}%
+\contentsline {subsection}{\numberline {8.8.3}تضمینات انتخابات آزاد}{110}{subsection.8.8.3}%
+\contentsline {section}{\numberline {8.9}فرآیند تدوین قانون اساسی}{111}{section.8.9}%
+\contentsline {subsection}{\numberline {8.9.1}مراحل تدوین قانون اساسی}{111}{subsection.8.9.1}%
+\contentsline {subsection}{\numberline {8.9.2}ساختار کمیسیون‌های تخصصی مجلس مؤسسان}{111}{subsection.8.9.2}%
+\contentsline {subsection}{\numberline {8.9.3}مشارکت عمومی در تدوین قانون اساسی}{111}{subsection.8.9.3}%
+\contentsline {section}{\numberline {8.10}عدالت انتقالی در فاز اول}{113}{section.8.10}%
+\contentsline {subsection}{\numberline {8.10.1}اقدامات فوری عدالت انتقالی}{113}{subsection.8.10.1}%
+\contentsline {subsection}{\numberline {8.10.2}ساختار کمیسیون حقیقت‌یاب}{113}{subsection.8.10.2}%
+\contentsline {section}{\numberline {8.11}چالش‌ها و ریسک‌های فاز اول}{115}{section.8.11}%
+\contentsline {subsection}{\numberline {8.11.1}ماتریس ریسک فاز اول}{115}{subsection.8.11.1}%
+\contentsline {subsection}{\numberline {8.11.2}نمودار ریسک}{115}{subsection.8.11.2}%
+\contentsline {section}{\numberline {8.12}شاخص‌های موفقیت فاز اول}{115}{section.8.12}%
+\contentsline {section}{\numberline {8.13}جمع‌بندی: ۲۴ ماه سرنوشت‌ساز}{115}{section.8.13}%
+\contentsline {chapter}{\numberline {9}فاز ۲: نهادسازی (سال ۳-۵)}{119}{chapter.9}%
+\contentsline {section}{\numberline {9.1}مقدمه: از قانون تا نهاد}{119}{section.9.1}%
+\contentsline {subsection}{\numberline {9.1.1}تعریف نهاد}{120}{subsection.9.1.1}%
+\contentsline {subsection}{\numberline {9.1.2}اولویت‌های نهادسازی فاز دوم}{120}{subsection.9.1.2}%
+\contentsline {section}{\numberline {9.2}استقرار ساختار فدرالی}{121}{section.9.2}%
+\contentsline {subsection}{\numberline {9.2.1}مدل فدرالیسم همبسته برای ایران}{121}{subsection.9.2.1}%
+\contentsline {subsection}{\numberline {9.2.2}تقسیمات پیشنهادی کشوری}{121}{subsection.9.2.2}%
+\contentsline {subsection}{\numberline {9.2.3}پنج منطقه خودمختار}{122}{subsection.9.2.3}%
+\contentsline {subsection}{\numberline {9.2.4}تقسیم صلاحیت‌ها}{122}{subsection.9.2.4}%
+\contentsline {subsection}{\numberline {9.2.5}نظام مالی فدرالی}{122}{subsection.9.2.5}%
+\contentsline {section}{\numberline {9.3}بازسازی قوه قضائیه}{123}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}ساختار جدید قوه قضائیه}{125}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}اصول کلیدی قضایی}{125}{subsection.9.3.2}%
+\contentsline {subsection}{\numberline {9.3.3}دادگاه قانون اساسی}{125}{subsection.9.3.3}%
+\contentsline {subsection}{\numberline {9.3.4}بازآموزی و جایگزینی قضات}{125}{subsection.9.3.4}%
+\contentsline {section}{\numberline {9.4}نهادهای نظارتی مستقل}{125}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}معماری نهادهای نظارتی}{127}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}کمیسیون ملی انتخابات}{127}{subsection.9.4.2}%
+\contentsline {section}{\numberline {9.5}اصلاح نظام آموزشی}{127}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}اهداف اصلاح آموزشی}{127}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}ساختار جدید آموزش}{127}{subsection.9.5.2}%
+\contentsline {subsection}{\numberline {9.5.3}آموزش چندزبانه}{128}{subsection.9.5.3}%
+\contentsline {section}{\numberline {9.6}تقویت جامعه مدنی}{128}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}وضعیت جامعه مدنی در نقطه گذار}{130}{subsection.9.6.1}%
+\contentsline {subsection}{\numberline {9.6.2}چارچوب حمایت از جامعه مدنی}{130}{subsection.9.6.2}%
+\contentsline {subsection}{\numberline {9.6.3}قانون جامع تشکل‌ها و NGOها}{130}{subsection.9.6.3}%
+\contentsline {subsection}{\numberline {9.6.4}صندوق ملی حمایت از جامعه مدنی}{130}{subsection.9.6.4}%
+\contentsline {section}{\numberline {9.7}اصلاح بوروکراسی دولتی}{130}{section.9.7}%
+\contentsline {subsection}{\numberline {9.7.1}اصول اصلاح اداری}{131}{subsection.9.7.1}%
+\contentsline {subsection}{\numberline {9.7.2}دولت الکترونیک}{131}{subsection.9.7.2}%
+\contentsline {subsection}{\numberline {9.7.3}نظام جدید استخدام و ارتقا}{132}{subsection.9.7.3}%
+\contentsline {section}{\numberline {9.8}رسانه‌های عمومی مستقل}{132}{section.9.8}%
+\contentsline {subsection}{\numberline {9.8.1}تبدیل صداوسیما به رسانه عمومی مستقل}{132}{subsection.9.8.1}%
+\contentsline {subsection}{\numberline {9.8.2}ساختار سازمان رسانه عمومی ایران (رعا)}{132}{subsection.9.8.2}%
+\contentsline {section}{\numberline {9.9}تداوم عدالت انتقالی}{132}{section.9.9}%
+\contentsline {subsection}{\numberline {9.9.1}اقدامات عدالت انتقالی سال‌های ۳-۵}{133}{subsection.9.9.1}%
+\contentsline {subsection}{\numberline {9.9.2}دادگاه ویژه جنایات دوره استبداد}{133}{subsection.9.9.2}%
+\contentsline {section}{\numberline {9.10}شاخص‌های موفقیت فاز دوم}{134}{section.9.10}%
+\contentsline {section}{\numberline {9.11}چالش‌ها و ریسک‌های فاز دوم}{134}{section.9.11}%
+\contentsline {section}{\numberline {9.12}جمع‌بندی فصل}{135}{section.9.12}%
+\contentsline {chapter}{\numberline {10}فاز ۳: تحکیم (سال ۶-۱۰)}{139}{chapter.10}%
+\contentsline {section}{\numberline {10.1}مقدمه: آزمون واقعی دموکراسی}{139}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}معیارهای تحکیم دموکراسی}{140}{subsection.10.1.1}%
+\contentsline {section}{\numberline {10.2}انتقال مسالمت‌آمیز قدرت}{140}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}تقویم انتخاباتی فاز سوم}{141}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}سناریوهای انتقال قدرت}{141}{subsection.10.2.2}%
+\contentsline {section}{\numberline {10.3}تثبیت اقتصادی}{142}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}اهداف اقتصادی فاز سوم}{142}{subsection.10.3.1}%
+\contentsline {subsection}{\numberline {10.3.2}استراتژی تنوع‌بخشی اقتصاد}{142}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}توسعه صنعتی هدفمند}{143}{subsection.10.3.3}%
+\contentsline {section}{\numberline {10.4}احیای محیط زیست و بحران آب}{143}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}برنامه جامع احیای آب}{144}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}اهداف کمّی بخش آب}{144}{subsection.10.4.2}%
+\contentsline {subsection}{\numberline {10.4.3}احیای دریاچه‌ها و رودخانه‌ها}{144}{subsection.10.4.3}%
+\contentsline {subsection}{\numberline {10.4.4}انتقال به انرژی پاک}{145}{subsection.10.4.4}%
+\contentsline {section}{\numberline {10.5}همگرایی منطقه‌ای}{145}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}اهداف سیاست خارجی فاز سوم}{147}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}نقشه همگرایی منطقه‌ای}{147}{subsection.10.5.2}%
+\contentsline {subsection}{\numberline {10.5.3}پیمان همکاری خلیج فارس}{147}{subsection.10.5.3}%
+\contentsline {section}{\numberline {10.6}فرهنگ دموکراتیک}{147}{section.10.6}%
+\contentsline {subsection}{\numberline {10.6.1}ارکان فرهنگ دموکراتیک}{147}{subsection.10.6.1}%
+\contentsline {subsection}{\numberline {10.6.2}برنامه‌های ترویج فرهنگ دموکراتیک}{148}{subsection.10.6.2}%
+\contentsline {section}{\numberline {10.7}شاخص‌های موفقیت فاز سوم}{148}{section.10.7}%
+\contentsline {section}{\numberline {10.8}جمع‌بندی فصل}{148}{section.10.8}%
+\contentsline {chapter}{\numberline {11}فاز ۴ و ۵: بلوغ و تعالی دموکراتیک (سال ۱۱-۲۵)}{151}{chapter.11}%
+\contentsline {section}{\numberline {11.1}مقدمه: از تثبیت به تعالی}{151}{section.11.1}%
+\contentsline {subsection}{\numberline {11.1.1}تفاوت ماهوی فازهای پایانی}{152}{subsection.11.1.1}%
+\contentsline {subsection}{\numberline {11.1.2}پیش‌شرط‌های ورود به فاز چهارم}{152}{subsection.11.1.2}%
+\contentsline {section}{\numberline {11.2}فاز چهارم: بلوغ دموکراتیک (سال ۱۱-۱۵)}{152}{section.11.2}%
+\contentsline {subsection}{\numberline {11.2.1}چشم‌انداز فاز چهارم}{152}{subsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.2.2}ستون اول: نهادینه‌سازی کامل رویه‌ها}{152}{subsection.11.2.2}%
+\contentsline {subsubsection}{بلوغ قوه مقننه}{152}{subsection.11.2.2}%
+\contentsline {subsubsection}{تکامل قوه قضائیه}{154}{table.caption.203}%
+\contentsline {subsubsection}{پختگی قوه مجریه}{154}{table.caption.204}%
+\contentsline {subsection}{\numberline {11.2.3}ستون دوم: اقتصاد دانش‌بنیان}{155}{subsection.11.2.3}%
+\contentsline {subsubsection}{تحول ساختاری اقتصاد}{155}{subsection.11.2.3}%
+\contentsline {subsubsection}{زیست‌بوم نوآوری}{155}{figure.caption.205}%
+\contentsline {subsubsection}{سرمایه انسانی}{156}{figure.caption.207}%
+\contentsline {subsection}{\numberline {11.2.4}ستون سوم: جایگاه منطقه‌ای ایران}{156}{subsection.11.2.4}%
+\contentsline {subsubsection}{قدرت متوسط مسئول}{156}{subsection.11.2.4}%
+\contentsline {subsubsection}{نقش‌های منطقه‌ای ایران}{157}{figure.caption.209}%
+\contentsline {subsubsection}{سازمان‌های منطقه‌ای}{158}{table.caption.210}%
+\contentsline {subsection}{\numberline {11.2.5}ستون چهارم: فرهنگ دموکراتیک عمیق}{158}{subsection.11.2.5}%
+\contentsline {subsubsection}{از قواعد به عادات}{158}{subsection.11.2.5}%
+\contentsline {subsubsection}{برنامه‌های فرهنگ‌سازی}{158}{table.caption.211}%
+\contentsline {subsection}{\numberline {11.2.6}تقویم فاز چهارم}{159}{subsection.11.2.6}%
+\contentsline {section}{\numberline {11.3}فاز پنجم: تعالی (سال ۱۶-۲۵)}{160}{section.11.3}%
+\contentsline {subsection}{\numberline {11.3.1}چشم‌انداز ایران ۱۴۲۹}{160}{subsection.11.3.1}%
+\contentsline {subsection}{\numberline {11.3.2}شاخص‌های کلان هدف سال ۲۵}{160}{subsection.11.3.2}%
+\contentsline {subsection}{\numberline {11.3.3}محور اول: الگوی توسعه برای منطقه}{161}{subsection.11.3.3}%
+\contentsline {subsubsection}{ایران به‌عنوان مدل}{161}{subsection.11.3.3}%
+\contentsline {subsubsection}{مؤسسات انتقال تجربه}{161}{Item.239}%
+\contentsline {subsection}{\numberline {11.3.4}محور دوم: نوآوری و فناوری پیشرفته}{162}{subsection.11.3.4}%
+\contentsline {subsubsection}{اهداف بلندپروازانه فناوری}{162}{subsection.11.3.4}%
+\contentsline {subsubsection}{پروژه‌های کلان فناوری}{162}{figure.11.5}%
+\contentsline {subsection}{\numberline {11.3.5}محور سوم: کیفیت زندگی در سطح OECD}{163}{subsection.11.3.5}%
+\contentsline {subsubsection}{شاخص‌های کیفیت زندگی}{163}{subsection.11.3.5}%
+\contentsline {subsubsection}{تأمین اجتماعی فراگیر}{163}{table.caption.216}%
+\contentsline {subsubsection}{شهرها و زیرساخت‌ها}{165}{table.caption.217}%
+\contentsline {subsection}{\numberline {11.3.6}محور چهارم: محیط‌زیست و پایداری}{165}{subsection.11.3.6}%
+\contentsline {subsubsection}{بحران آب: راه‌حل نهایی}{165}{subsection.11.3.6}%
+\contentsline {subsubsection}{انتقال انرژی}{165}{table.caption.220}%
+\contentsline {subsubsection}{بازسازی محیط‌زیست}{166}{table.caption.221}%
+\contentsline {subsection}{\numberline {11.3.7}محور پنجم: جایگاه بین‌المللی}{166}{subsection.11.3.7}%
+\contentsline {subsubsection}{ایران در نظم جهانی}{166}{subsection.11.3.7}%
+\contentsline {subsubsection}{روابط با قدرت‌های بزرگ}{169}{figure.caption.223}%
+\contentsline {subsubsection}{دیپلماسی فرهنگی}{169}{table.caption.224}%
+\contentsline {subsection}{\numberline {11.3.8}تقویم فاز پنجم}{169}{subsection.11.3.8}%
+\contentsline {section}{\numberline {11.4}شاخص‌های جامع پایش بلندمدت}{169}{section.11.4}%
+\contentsline {subsection}{\numberline {11.4.1}داشبورد ملی پیشرفت}{169}{subsection.11.4.1}%
+\contentsline {subsection}{\numberline {11.4.2}مسیر حرکت شاخص‌ها}{169}{subsection.11.4.2}%
+\contentsline {section}{\numberline {11.5}ریسک‌ها و سناریوهای جایگزین}{169}{section.11.5}%
+\contentsline {subsection}{\numberline {11.5.1}ریسک‌های بلندمدت}{169}{subsection.11.5.1}%
+\contentsline {subsection}{\numberline {11.5.2}سه سناریوی بلندمدت}{169}{subsection.11.5.2}%
+\contentsline {subsection}{\numberline {11.5.3}مکانیزم‌های تاب‌آوری}{170}{subsection.11.5.3}%
+\contentsline {section}{\numberline {11.6}پیام پایانی: میراثی برای نسل‌های آینده}{170}{section.11.6}%
+\contentsline {subsection}{\numberline {11.6.1}عهد با آیندگان}{170}{subsection.11.6.1}%
+\contentsline {subsection}{\numberline {11.6.2}آخرین سخن}{171}{subsection.11.6.2}%
+\contentsline {section}{منابع فصل یازدهم}{171}{figure.caption.230}%
+\contentsline {part}{چهارم\hspace {1em}حوزه‌های تخصصی}{173}{part.4}%
+\contentsline {chapter}{\numberline {12}مدیریت تنوع قومی-فرهنگی: وحدت در کثرت}{175}{chapter.12}%
+\contentsline {section}{\numberline {12.1}مقدمه: تنوع به‌مثابه ثروت یا تهدید؟}{176}{section.12.1}%
+\contentsline {subsection}{\numberline {12.1.1}دوگانه کاذب: وحدت یا تنوع}{176}{subsection.12.1.1}%
+\contentsline {subsection}{\numberline {12.1.2}چرا این موضوع حیاتی است؟}{176}{subsection.12.1.2}%
+\contentsline {section}{\numberline {12.2}نقشه قومی-زبانی ایران}{177}{section.12.2}%
+\contentsline {subsection}{\numberline {12.2.1}ترکیب جمعیتی}{177}{subsection.12.2.1}%
+\contentsline {subsection}{\numberline {12.2.2}توزیع جغرافیایی}{177}{subsection.12.2.2}%
+\contentsline {subsection}{\numberline {12.2.3}تنوع مذهبی}{178}{subsection.12.2.3}%
+\contentsline {section}{\numberline {12.3}میراث تاریخی: بی‌اعتمادی حاشیه به مرکز}{178}{section.12.3}%
+\contentsline {subsection}{\numberline {12.3.1}سیاست‌های همگون‌سازی}{178}{subsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.3.2}شکاف توسعه‌ای}{179}{subsection.12.3.2}%
+\contentsline {subsection}{\numberline {12.3.3}نارضایتی‌های انباشته}{179}{subsection.12.3.3}%
+\contentsline {section}{\numberline {12.4}چارچوب نظری: مدل‌های مدیریت تنوع}{179}{section.12.4}%
+\contentsline {subsection}{\numberline {12.4.1}طیف گزینه‌ها}{179}{subsection.12.4.1}%
+\contentsline {subsection}{\numberline {12.4.2}مدل‌های موفق جهانی}{180}{subsection.12.4.2}%
+\contentsline {subsection}{\numberline {12.4.3}مدل‌های ناموفق: درس‌های منفی}{181}{subsection.12.4.3}%
+\contentsline {subsection}{\numberline {12.4.4}همزیستی در سطح خرد: فراتر از ساختار سیاسی}{181}{subsection.12.4.4}%
+\contentsline {section}{\numberline {12.5}مدل پیشنهادی: فدرالیسم همبسته}{182}{section.12.5}%
+\contentsline {subsection}{\numberline {12.5.1}اصول بنیادین}{182}{subsection.12.5.1}%
+\contentsline {subsection}{\numberline {12.5.2}ساختار پیشنهادی: پنج منطقه خودمختار}{182}{subsection.12.5.2}%
+\contentsline {subsection}{\numberline {12.5.3}صلاحیت‌های هر سطح}{183}{subsection.12.5.3}%
+\contentsline {subsection}{\numberline {12.5.4}مجلس اقوام و مناطق}{183}{subsection.12.5.4}%
+\contentsline {section}{\numberline {12.6}حقوق زبانی و فرهنگی}{184}{section.12.6}%
+\contentsline {subsection}{\numberline {12.6.1}سیاست زبانی}{184}{subsection.12.6.1}%
+\contentsline {subsection}{\numberline {12.6.2}برنامه آموزش چندزبانه}{184}{subsection.12.6.2}%
+\contentsline {subsection}{\numberline {12.6.3}حقوق فرهنگی}{185}{subsection.12.6.3}%
+\contentsline {section}{\numberline {12.7}عدالت اقتصادی و جبران نابرابری‌ها}{185}{section.12.7}%
+\contentsline {subsection}{\numberline {12.7.1}برنامه توسعه متوازن}{185}{subsection.12.7.1}%
+\contentsline {subsection}{\numberline {12.7.2}تقسیم عادلانه درآمدهای ملی}{186}{subsection.12.7.2}%
+\contentsline {subsection}{\numberline {12.7.3}اصل سهم منطقه از منابع}{186}{subsection.12.7.3}%
+\contentsline {subsection}{\numberline {12.7.4}پروژه‌های کلان توسعه مناطق قومی}{187}{subsection.12.7.4}%
+\contentsline {section}{\numberline {12.8}مشارکت در قدرت ملی}{187}{section.12.8}%
+\contentsline {subsection}{\numberline {12.8.1}اصل حضور متناسب}{187}{subsection.12.8.1}%
+\contentsline {subsection}{\numberline {12.8.2}شورای عالی اقوام}{188}{subsection.12.8.2}%
+\contentsline {subsection}{\numberline {12.8.3}نمایندگی در نهادهای کلیدی}{188}{subsection.12.8.3}%
+\contentsline {section}{\numberline {12.9}هویت ملی مشترک: چتر فراگیر}{188}{section.12.9}%
+\contentsline {subsection}{\numberline {12.9.1}بازتعریف «ایرانی بودن»}{188}{subsection.12.9.1}%
+\contentsline {subsection}{\numberline {12.9.2}عناصر هویت مشترک}{189}{subsection.12.9.2}%
+\contentsline {subsection}{\numberline {12.9.3}برنامه‌های تقویت همبستگی}{189}{subsection.12.9.3}%
+\contentsline {section}{\numberline {12.10}مدیریت تنش‌ها و پیشگیری از بحران}{190}{section.12.10}%
+\contentsline {subsection}{\numberline {12.10.1}سیستم هشدار زودهنگام}{190}{subsection.12.10.1}%
+\contentsline {subsection}{\numberline {12.10.2}مکانیزم‌های حل اختلاف}{190}{subsection.12.10.2}%
+\contentsline {subsection}{\numberline {12.10.3}خطوط قرمز و قواعد بازی}{190}{subsection.12.10.3}%
+\contentsline {section}{\numberline {12.11}تقویم اجرایی}{191}{section.12.11}%
+\contentsline {section}{\numberline {12.12}شاخص‌های پایش}{192}{section.12.12}%
+\contentsline {section}{\numberline {12.13}همگرایی اجتماعی: پیوندهای نامرئی}{192}{section.12.13}%
+\contentsline {section}{منابع فصل دوازدهم}{193}{Item.246}%
+\contentsline {chapter}{\numberline {13}بازسازی اقتصادی و رهایی از تحریم}{195}{chapter.13}%
+\contentsline {section}{\numberline {13.1}مقدمه: اقتصاد بیمار، دموکراسی شکننده}{196}{section.13.1}%
+\contentsline {subsection}{\numberline {13.1.1}چرا اقتصاد اولویت است؟}{196}{subsection.13.1.1}%
+\contentsline {section}{\numberline {13.2}تشخیص: وضعیت اقتصاد ایران}{197}{section.13.2}%
+\contentsline {subsection}{\numberline {13.2.1}شاخص‌های کلان اقتصادی}{197}{subsection.13.2.1}%
+\contentsline {subsection}{\numberline {13.2.2}مشکلات ساختاری}{197}{subsection.13.2.2}%
+\contentsline {subsection}{\numberline {13.2.3}تحریم‌ها: چالش اصلی}{197}{subsection.13.2.3}%
+\contentsline {section}{\numberline {13.3}استراتژی سه‌مرحله‌ای بازسازی اقتصادی}{198}{section.13.3}%
+\contentsline {section}{\numberline {13.4}فاز اول: تثبیت (سال ۱-۲)}{198}{section.13.4}%
+\contentsline {subsection}{\numberline {13.4.1}اولویت اول: رفع تحریم‌ها}{198}{subsection.13.4.1}%
+\contentsline {subsection}{\numberline {13.4.2}کنترل تورم}{199}{subsection.13.4.2}%
+\contentsline {subsection}{\numberline {13.4.3}برنامه ۱۰۰ روز اول اقتصادی}{199}{subsection.13.4.3}%
+\contentsline {subsection}{\numberline {13.4.4}حمایت از اقشار آسیب‌پذیر}{199}{subsection.13.4.4}%
+\contentsline {section}{\numberline {13.5}فاز دوم: بازسازی (سال ۳-۷)}{201}{section.13.5}%
+\contentsline {subsection}{\numberline {13.5.1}اصلاحات ساختاری}{201}{subsection.13.5.1}%
+\contentsline {subsection}{\numberline {13.5.2}خصوصی‌سازی: این‌بار درست}{201}{subsection.13.5.2}%
+\contentsline {subsection}{\numberline {13.5.3}جذب سرمایه‌گذاری خارجی}{202}{subsection.13.5.3}%
+\contentsline {subsection}{\numberline {13.5.4}نوسازی صنایع}{203}{subsection.13.5.4}%
+\contentsline {section}{\numberline {13.6}فاز سوم: تحول ساختاری (سال ۸-۱۵)}{203}{section.13.6}%
+\contentsline {subsection}{\numberline {13.6.1}تنوع‌بخشی به اقتصاد}{203}{subsection.13.6.1}%
+\contentsline {subsection}{\numberline {13.6.2}موتورهای رشد جدید}{204}{subsection.13.6.2}%
+\contentsline {subsubsection}{گردشگری: گنج پنهان}{204}{table.caption.262}%
+\contentsline {subsubsection}{ترانزیت: پل بین قاره‌ها}{205}{table.caption.262}%
+\contentsline {subsection}{\numberline {13.6.3}اشتغال‌زایی}{205}{subsection.13.6.3}%
+\contentsline {section}{\numberline {13.7}مبارزه با فساد اقتصادی}{205}{section.13.7}%
+\contentsline {section}{\numberline {13.8}نظام مالیاتی جدید}{206}{section.13.8}%
+\contentsline {subsection}{\numberline {13.8.1}اصلاح ساختار مالیاتی}{206}{subsection.13.8.1}%
+\contentsline {section}{\numberline {13.9}ادغام در اقتصاد جهانی}{207}{section.13.9}%
+\contentsline {subsection}{\numberline {13.9.1}توافقات تجاری هدف}{207}{subsection.13.9.1}%
+\contentsline {subsection}{\numberline {13.9.2}هدف صادرات}{208}{subsection.13.9.2}%
+\contentsline {section}{\numberline {13.10}نظام بانکی و مالی}{208}{section.13.10}%
+\contentsline {subsection}{\numberline {13.10.1}بحران نظام بانکی}{208}{subsection.13.10.1}%
+\contentsline {subsection}{\numberline {13.10.2}توسعه بازار سرمایه}{208}{subsection.13.10.2}%
+\contentsline {subsection}{\numberline {13.10.3}فین‌تک و بانکداری دیجیتال}{208}{subsection.13.10.3}%
+\contentsline {section}{\numberline {13.11}انرژی و پایداری اقتصادی}{210}{section.13.11}%
+\contentsline {subsection}{\numberline {13.11.1}اصلاح یارانه انرژی}{210}{subsection.13.11.1}%
+\contentsline {subsection}{\numberline {13.11.2}سرمایه‌گذاری در انرژی‌های تجدیدپذیر}{211}{subsection.13.11.2}%
+\contentsline {section}{\numberline {13.12}مسکن و زمین}{211}{section.13.12}%
+\contentsline {subsection}{\numberline {13.12.1}بحران مسکن}{211}{subsection.13.12.1}%
+\contentsline {subsection}{\numberline {13.12.2}برنامه جامع مسکن}{211}{subsection.13.12.2}%
+\contentsline {section}{\numberline {13.13}شاخص‌های کلیدی و اهداف}{212}{section.13.13}%
+\contentsline {section}{\numberline {13.14}ریسک‌ها و سناریوها}{213}{section.13.14}%
+\contentsline {subsection}{\numberline {13.14.1}سه سناریوی اقتصادی}{213}{subsection.13.14.1}%
+\contentsline {section}{\numberline {13.15}جمع‌بندی: اقتصادی که برای همه کار می‌کند}{213}{section.13.15}%
+\contentsline {section}{منابع فصل سیزدهم}{214}{section.13.15}%
+\contentsline {chapter}{\numberline {14}بحران آب و محیط زیست: چالش حیاتی}{215}{chapter.14}%
+\contentsline {section}{\numberline {14.1}مقدمه: بحرانی که انکارش دیگر ممکن نیست}{216}{section.14.1}%
+\contentsline {subsection}{\numberline {14.1.1}چرا این موضوع اولویت است؟}{216}{subsection.14.1.1}%
+\contentsline {section}{\numberline {14.2}تشخیص: ابعاد بحران زیست‌محیطی}{218}{section.14.2}%
+\contentsline {subsection}{\numberline {14.2.1}بحران آب: اعداد و ارقام}{218}{subsection.14.2.1}%
+\contentsline {subsection}{\numberline {14.2.2}توزیع مصرف آب}{218}{subsection.14.2.2}%
+\contentsline {subsection}{\numberline {14.2.3}خشک‌شدن منابع آبی}{218}{subsection.14.2.3}%
+\contentsline {subsection}{\numberline {14.2.4}فرونشست زمین}{218}{subsection.14.2.4}%
+\contentsline {subsection}{\numberline {14.2.5}آلودگی هوا}{218}{subsection.14.2.5}%
+\contentsline {subsection}{\numberline {14.2.6}سایر بحران‌های زیست‌محیطی}{218}{subsection.14.2.6}%
+\contentsline {section}{\numberline {14.3}علل ریشه‌ای بحران}{218}{section.14.3}%
+\contentsline {section}{\numberline {14.4}استراتژی جامع مدیریت آب}{220}{section.14.4}%
+\contentsline {section}{\numberline {14.5}ستون اول: مدیریت تقاضا}{220}{section.14.5}%
+\contentsline {subsection}{\numberline {14.5.1}اصلاح بخش کشاورزی}{220}{subsection.14.5.1}%
+\contentsline {subsection}{\numberline {14.5.2}قیمت‌گذاری واقعی آب}{221}{subsection.14.5.2}%
+\contentsline {subsection}{\numberline {14.5.3}کاهش مصرف شهری و صنعتی}{221}{subsection.14.5.3}%
+\contentsline {section}{\numberline {14.6}ستون دوم: افزایش عرضه پایدار}{222}{section.14.6}%
+\contentsline {subsection}{\numberline {14.6.1}منابع جدید آب}{222}{subsection.14.6.1}%
+\contentsline {subsection}{\numberline {14.6.2}شیرین‌سازی آب دریا}{222}{subsection.14.6.2}%
+\contentsline {subsection}{\numberline {14.6.3}بازیافت فاضلاب}{223}{subsection.14.6.3}%
+\contentsline {section}{\numberline {14.7}ستون سوم: حکمرانی نوین آب}{223}{section.14.7}%
+\contentsline {subsection}{\numberline {14.7.1}اصلاح ساختار نهادی}{223}{subsection.14.7.1}%
+\contentsline {subsection}{\numberline {14.7.2}مدیریت حوضه‌ای}{224}{subsection.14.7.2}%
+\contentsline {subsection}{\numberline {14.7.3}شفافیت و داده‌محوری}{224}{subsection.14.7.3}%
+\contentsline {section}{\numberline {14.8}ستون چهارم: احیای اکوسیستم‌ها}{225}{section.14.8}%
+\contentsline {subsection}{\numberline {14.8.1}برنامه احیای دریاچه ارومیه}{225}{subsection.14.8.1}%
+\contentsline {subsection}{\numberline {14.8.2}احیای سایر اکوسیستم‌ها}{225}{subsection.14.8.2}%
+\contentsline {section}{\numberline {14.9}تغییرات اقلیمی و سازگاری}{225}{section.14.9}%
+\contentsline {subsection}{\numberline {14.9.1}پیش‌بینی‌های اقلیمی برای ایران}{226}{subsection.14.9.1}%
+\contentsline {subsection}{\numberline {14.9.2}استراتژی سازگاری}{229}{subsection.14.9.2}%
+\contentsline {section}{\numberline {14.10}کاهش انتشار و انتقال انرژی}{229}{section.14.10}%
+\contentsline {subsection}{\numberline {14.10.1}وضعیت فعلی انتشار}{229}{subsection.14.10.1}%
+\contentsline {subsection}{\numberline {14.10.2}منابع انتشار}{229}{subsection.14.10.2}%
+\contentsline {subsection}{\numberline {14.10.3}اهداف کاهش انتشار}{229}{subsection.14.10.3}%
+\contentsline {subsection}{\numberline {14.10.4}برنامه انتقال انرژی}{229}{subsection.14.10.4}%
+\contentsline {section}{\numberline {14.11}هوای پاک: حق شهروندان}{229}{section.14.11}%
+\contentsline {subsection}{\numberline {14.11.1}برنامه هوای پاک شهرها}{229}{subsection.14.11.1}%
+\contentsline {section}{\numberline {14.12}حفاظت از تنوع زیستی}{230}{section.14.12}%
+\contentsline {subsection}{\numberline {14.12.1}ثروت زیستی ایران}{230}{subsection.14.12.1}%
+\contentsline {subsection}{\numberline {14.12.2}برنامه حفاظت از حیات‌وحش}{230}{subsection.14.12.2}%
+\contentsline {section}{\numberline {14.13}اقتصاد سبز و مشاغل جدید}{230}{section.14.13}%
+\contentsline {subsection}{\numberline {14.13.1}مشاغل سبز جدید}{231}{subsection.14.13.1}%
+\contentsline {subsection}{\numberline {14.13.2}فرصت‌های اقتصادی سبز}{231}{subsection.14.13.2}%
+\contentsline {section}{\numberline {14.14}حکمرانی زیست‌محیطی}{231}{section.14.14}%
+\contentsline {subsection}{\numberline {14.14.1}ضعف‌های نهادی فعلی}{231}{subsection.14.14.1}%
+\contentsline {subsection}{\numberline {14.14.2}ساختار پیشنهادی}{232}{subsection.14.14.2}%
+\contentsline {subsection}{\numberline {14.14.3}حقوق زیست‌محیطی در قانون اساسی}{232}{subsection.14.14.3}%
+\contentsline {section}{\numberline {14.15}همکاری بین‌المللی}{232}{section.14.15}%
+\contentsline {subsection}{\numberline {14.15.1}توافقات و تعهدات}{232}{subsection.14.15.1}%
+\contentsline {subsection}{\numberline {14.15.2}همکاری منطقه‌ای آب}{233}{subsection.14.15.2}%
+\contentsline {section}{\numberline {14.16}تقویم اجرایی}{233}{section.14.16}%
+\contentsline {section}{\numberline {14.17}شاخص‌های پایش}{233}{section.14.17}%
+\contentsline {section}{\numberline {14.18}جمع‌بندی: سبز یا نابود}{234}{section.14.18}%
+\contentsline {section}{منابع فصل چهاردهم}{234}{section.14.18}%
+\contentsline {part}{پنجم\hspace {1em}اجرا و پایش}{237}{part.5}%
+\contentsline {chapter}{\numberline {15}پایش، ارزیابی و مدیریت ریسک}{239}{chapter.15}%
+\contentsline {section}{\numberline {15.1}مقدمه: چرا پایش حیاتی است؟}{239}{section.15.1}%
+\contentsline {subsection}{\numberline {15.1.1}تفاوت پایش و ارزیابی}{240}{subsection.15.1.1}%
+\contentsline {section}{\numberline {15.2}چارچوب پایش: مدل منطقی}{240}{section.15.2}%
+\contentsline {section}{\numberline {15.3}شاخص‌های کلیدی عملکرد (KPIs)}{242}{section.15.3}%
+\contentsline {subsection}{\numberline {15.3.1}اصول انتخاب شاخص}{242}{subsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.3.2}شاخص‌های حوزه سیاسی}{242}{subsection.15.3.2}%
+\contentsline {subsection}{\numberline {15.3.3}شاخص‌های حوزه اقتصادی}{242}{subsection.15.3.3}%
+\contentsline {subsection}{\numberline {15.3.4}شاخص‌های حوزه اجتماعی}{242}{subsection.15.3.4}%
+\contentsline {subsection}{\numberline {15.3.5}شاخص‌های حوزه محیط زیست}{242}{subsection.15.3.5}%
+\contentsline {subsection}{\numberline {15.3.6}شاخص‌های حوزه امنیت و بین‌الملل}{244}{subsection.15.3.6}%
+\contentsline {section}{\numberline {15.4}داشبورد ملی پیشرفت}{244}{section.15.4}%
+\contentsline {subsection}{\numberline {15.4.1}ویژگی‌های داشبورد}{244}{subsection.15.4.1}%
+\contentsline {section}{\numberline {15.5}نظام ارزیابی دوره‌ای}{244}{section.15.5}%
+\contentsline {subsection}{\numberline {15.5.1}تقویم ارزیابی}{244}{subsection.15.5.1}%
+\contentsline {subsection}{\numberline {15.5.2}معیارهای ارزیابی موفقیت}{244}{subsection.15.5.2}%
+\contentsline {section}{\numberline {15.6}مدیریت ریسک}{244}{section.15.6}%
+\contentsline {subsection}{\numberline {15.6.1}ماتریس ریسک‌های گذار}{244}{subsection.15.6.1}%
+\contentsline {subsection}{\numberline {15.6.2}سیستم هشدار زودهنگام}{245}{subsection.15.6.2}%
+\contentsline {section}{\numberline {15.7}ساختار نهادی پایش}{246}{section.15.7}%
+\contentsline {section}{\numberline {15.8}پایش مشارکتی: صدای مردم}{246}{section.15.8}%
+\contentsline {subsection}{\numberline {15.8.1}ابزارهای پایش مردمی}{247}{subsection.15.8.1}%
+\contentsline {subsection}{\numberline {15.8.2}نظرسنجی ملی سالانه}{247}{subsection.15.8.2}%
+\contentsline {section}{\numberline {15.9}مقایسه بین‌المللی (بنچ‌مارکینگ)}{248}{section.15.9}%
+\contentsline {subsection}{\numberline {15.9.1}شاخص‌های بین‌المللی مرجع}{248}{subsection.15.9.1}%
+\contentsline {subsection}{\numberline {15.9.2}کشورهای مرجع برای مقایسه}{248}{subsection.15.9.2}%
+\contentsline {section}{\numberline {15.10}گزارش‌دهی و شفافیت}{248}{section.15.10}%
+\contentsline {subsection}{\numberline {15.10.1}انواع گزارش‌ها}{248}{subsection.15.10.1}%
+\contentsline {subsection}{\numberline {15.10.2}اصول گزارش‌دهی شفاف}{249}{subsection.15.10.2}%
+\contentsline {section}{\numberline {15.11}مکانیزم اصلاح مسیر}{249}{section.15.11}%
+\contentsline {subsection}{\numberline {15.11.1}فرآیند اصلاح مسیر}{249}{subsection.15.11.1}%
+\contentsline {subsection}{\numberline {15.11.2}سطوح اصلاح}{250}{subsection.15.11.2}%
+\contentsline {section}{\numberline {15.12}ارزیابی تأثیر (Impact Evaluation)}{250}{section.15.12}%
+\contentsline {subsection}{\numberline {15.12.1}روش‌های ارزیابی تأثیر}{250}{subsection.15.12.1}%
+\contentsline {subsection}{\numberline {15.12.2}سؤالات کلیدی ارزیابی تأثیر}{250}{subsection.15.12.2}%
+\contentsline {section}{\numberline {15.13}یادگیری سازمانی}{252}{section.15.13}%
+\contentsline {section}{\numberline {15.14}چارچوب پاسخگویی}{252}{section.15.14}%
+\contentsline {section}{\numberline {15.15}تقویم پایش و ارزیابی}{252}{section.15.15}%
+\contentsline {section}{\numberline {15.16}جمع‌بندی: پایش برای موفقیت}{252}{section.15.16}%
+\contentsline {section}{منابع فصل پانزدهم}{253}{section.15.16}%
+\contentsline {part}{ششم\hspace {1em}پیوست‌ها}{255}{part.6}%
+\contentsline {chapter}{\numberline {آ}متن قانون اساسی پیشنهادی}{257}{appendix.Alph1}%
+\contentsline {section}{\numberline {آ.1}دیباچه قانون اساسی}{257}{section.Alph1.1}%
+\contentsline {section}{\numberline {آ.2}فصل اول: اصول کلی و هویت ملی}{258}{section.Alph1.2}%
+\contentsline {subsection}{\numberline {آ.2.1}بخش یکم: ماهیت و شکل حکومت}{258}{subsection.Alph1.2.1}%
+\contentsline {subsection}{\numberline {آ.2.2}بخش دوم: اصول غیرقابل تغییر}{258}{subsection.Alph1.2.2}%
+\contentsline {section}{\numberline {آ.3}فصل دوم: حقوق بنیادین شهروندان}{259}{section.Alph1.3}%
+\contentsline {subsection}{\numberline {آ.3.1}بخش یکم: حقوق مدنی و آزادی‌های فردی (اصول ۱۲-۳۵)}{259}{subsection.Alph1.3.1}%
+\contentsline {subsection}{\numberline {آ.3.2}بخش دوم: حقوق سیاسی (اصول ۳۶-۴۵)}{261}{subsection.Alph1.3.2}%
+\contentsline {subsection}{\numberline {آ.3.3}بخش سوم: حقوق اقتصادی و اجتماعی (اصول ۴۶-۶۵)}{261}{subsection.Alph1.3.3}%
+\contentsline {subsection}{\numberline {آ.3.4}بخش چهارم: حقوق فرهنگی و اقوام (اصول ۶۶-۷۵)}{262}{subsection.Alph1.3.4}%
+\contentsline {subsection}{\numberline {آ.3.5}بخش پنجم: حقوق قضایی (اصول ۷۶-۸۵)}{263}{subsection.Alph1.3.5}%
+\contentsline {section}{\numberline {آ.4}فصل سوم: ساختار حکومت}{264}{section.Alph1.4}%
+\contentsline {subsection}{\numberline {آ.4.1}بخش یکم: قوه مقننه (اصول ۸۶-۱۱۰)}{264}{subsection.Alph1.4.1}%
+\contentsline {subsubsection}{الف) ساختار دومجلسی}{264}{subsection.Alph1.4.1}%
+\contentsline {subsubsection}{ب) فرآیند قانون‌گذاری}{265}{table.آ.7}%
+\contentsline {subsection}{\numberline {آ.4.2}بخش دوم: قوه مجریه (اصول ۱۱۱-۱۳۵)}{266}{subsection.Alph1.4.2}%
+\contentsline {subsubsection}{الف) رئیس‌جمهور}{266}{subsection.Alph1.4.2}%
+\contentsline {subsubsection}{ب) هیئت وزیران}{267}{table.آ.9}%
+\contentsline {subsubsection}{ج) نیروهای مسلح}{267}{table.آ.10}%
+\contentsline {subsection}{\numberline {آ.4.3}بخش سوم: قوه قضائیه (اصول ۱۳۶-۱۵۵)}{267}{subsection.Alph1.4.3}%
+\contentsline {section}{\numberline {آ.7}فصل ششم: حکومت محلی و شوراها}{270}{section.Alph1.7}%
+\contentsline {section}{\numberline {آ.8}فصل هفتم: بازنگری در قانون اساسی}{270}{section.Alph1.8}%
+\contentsline {section}{\numberline {آ.9}فصل هشتم: مقررات انتقالی}{272}{section.Alph1.9}%
+\contentsline {section}{\numberline {آ.10}جداول تطبیقی با قوانین اساسی سایر کشورها}{273}{section.Alph1.10}%
+\contentsline {subsection}{\numberline {آ.10.1}مقایسه ساختار کلی}{273}{subsection.Alph1.10.1}%
+\contentsline {subsection}{\numberline {آ.10.2}مقایسه حقوق بنیادین}{273}{subsection.Alph1.10.2}%
+\contentsline {subsection}{\numberline {آ.10.3}مقایسه ساختار فدرال}{274}{subsection.Alph1.10.3}%
+\contentsline {subsection}{\numberline {آ.10.4}مقایسه فرآیند بازنگری قانون اساسی}{274}{subsection.Alph1.10.4}%
+\contentsline {section}{\numberline {آ.12}خلاصه و جمع‌بندی}{275}{section.Alph1.12}%
+\contentsline {chapter}{\numberline {ب}منشور حقوق اقوام}{277}{appendix.Alph2}%
+\contentsline {section}{\numberline {ب.1}دیباچه منشور}{277}{section.Alph2.1}%
+\contentsline {section}{\numberline {ب.2}فصل اول: اصول کلی و تعاریف}{278}{section.Alph2.2}%
+\contentsline {subsection}{\numberline {ب.2.1}ماده ۱: هدف منشور}{278}{subsection.Alph2.2.1}%
+\contentsline {subsection}{\numberline {ب.2.2}ماده ۲: تعاریف}{278}{subsection.Alph2.2.2}%
+\contentsline {subsection}{\numberline {ب.2.3}ماده ۳: اقوام به رسمیت شناخته‌شده}{279}{subsection.Alph2.2.3}%
+\contentsline {subsection}{\numberline {ب.2.4}ماده ۴: اصول بنیادین}{280}{subsection.Alph2.2.4}%
+\contentsline {section}{\numberline {ب.3}فصل دوم: حقوق فردی اعضای اقوام}{280}{section.Alph2.3}%
+\contentsline {subsection}{\numberline {ب.3.1}ماده ۵: حق هویت قومی}{280}{subsection.Alph2.3.1}%
+\contentsline {subsection}{\numberline {ب.3.2}ماده ۶: حق استفاده از زبان مادری}{281}{subsection.Alph2.3.2}%
+\contentsline {subsection}{\numberline {ب.3.3}ماده ۷: حق مشارکت در زندگی فرهنگی}{281}{subsection.Alph2.3.3}%
+\contentsline {subsection}{\numberline {ب.3.4}ماده ۸: حق عدم تبعیض}{281}{subsection.Alph2.3.4}%
+\contentsline {section}{\numberline {ب.4}فصل سوم: حقوق جمعی اقوام}{282}{section.Alph2.4}%
+\contentsline {subsection}{\numberline {ب.4.1}ماده ۹: حق وجود و حفظ هویت جمعی}{282}{subsection.Alph2.4.1}%
+\contentsline {subsection}{\numberline {ب.4.2}ماده ۱۰: حق خودمختاری داخلی}{282}{subsection.Alph2.4.2}%
+\contentsline {subsection}{\numberline {ب.4.3}ماده ۱۱: حق مشارکت سیاسی}{282}{subsection.Alph2.4.3}%
+\contentsline {subsection}{\numberline {ب.4.4}ماده ۱۲: حق توسعه و منابع}{283}{subsection.Alph2.4.4}%
+\contentsline {section}{\numberline {ب.5}فصل چهارم: حقوق زبانی}{283}{section.Alph2.5}%
+\contentsline {subsection}{\numberline {ب.5.1}ماده ۱۳: وضعیت زبان‌ها}{283}{subsection.Alph2.5.1}%
+\contentsline {subsection}{\numberline {ب.5.2}ماده ۱۴: حقوق زبانی در آموزش}{284}{subsection.Alph2.5.2}%
+\contentsline {subsection}{\numberline {ب.5.3}ماده ۱۵: حقوق زبانی در خدمات عمومی}{284}{subsection.Alph2.5.3}%
+\contentsline {subsection}{\numberline {ب.5.4}ماده ۱۶: آکادمی زبان‌های ایران}{284}{subsection.Alph2.5.4}%
+\contentsline {section}{\numberline {ب.6}فصل پنجم: حقوق فرهنگی}{285}{section.Alph2.6}%
+\contentsline {subsection}{\numberline {ب.6.1}ماده ۱۷: حفاظت از میراث فرهنگی}{285}{subsection.Alph2.6.1}%
+\contentsline {subsection}{\numberline {ب.6.2}ماده ۱۸: هنر و ادبیات}{285}{subsection.Alph2.6.2}%
+\contentsline {subsection}{\numberline {ب.6.3}ماده ۱۹: رسانه و ارتباطات}{285}{subsection.Alph2.6.3}%
+\contentsline {subsection}{\numberline {ب.6.4}ماده ۲۰: آداب، رسوم و جشن‌ها}{285}{subsection.Alph2.6.4}%
+\contentsline {section}{\numberline {ب.7}فصل ششم: حقوق سرزمینی و توسعه}{286}{section.Alph2.7}%
+\contentsline {subsection}{\numberline {ب.7.1}ماده ۲۱: حق سرزمین}{286}{subsection.Alph2.7.1}%
+\contentsline {subsection}{\numberline {ب.7.2}ماده ۲۲: توسعه متوازن}{286}{subsection.Alph2.7.2}%
+\contentsline {subsection}{\numberline {ب.7.3}ماده ۲۳: منابع طبیعی}{287}{subsection.Alph2.7.3}%
+\contentsline {section}{\numberline {ب.8}فصل هفتم: سازوکارهای حمایتی و نظارتی}{287}{section.Alph2.8}%
+\contentsline {subsection}{\numberline {ب.8.1}ماده ۲۴: مجلس اقوام}{287}{subsection.Alph2.8.1}%
+\contentsline {subsection}{\numberline {ب.8.2}ماده ۲۵: کمیسیون ملی حقوق اقوام}{287}{subsection.Alph2.8.2}%
+\contentsline {subsection}{\numberline {ب.8.3}ماده ۲۶: دادرسی قضایی}{288}{subsection.Alph2.8.3}%
+\contentsline {subsection}{\numberline {ب.8.4}ماده ۲۷: نماینده حقوق اقوام (آمبودزمان)}{288}{subsection.Alph2.8.4}%
+\contentsline {section}{\numberline {ب.9}فصل هشتم: ممنوعیت‌ها و ضمانت‌های اجرایی}{289}{section.Alph2.9}%
+\contentsline {subsection}{\numberline {ب.9.1}ماده ۲۸: اقدامات ممنوع}{289}{subsection.Alph2.9.1}%
+\contentsline {subsection}{\numberline {ب.9.2}ماده ۲۹: مجازات‌ها}{289}{subsection.Alph2.9.2}%
+\contentsline {subsection}{\numberline {ب.9.3}ماده ۳۰: جبران خسارت}{290}{subsection.Alph2.9.3}%
+\contentsline {section}{\numberline {ب.10}فصل نهم: عدالت انتقالی و جبران تاریخی}{290}{section.Alph2.10}%
+\contentsline {subsection}{\numberline {ب.10.1}ماده ۳۱: شناسایی بی‌عدالتی‌های تاریخی}{290}{subsection.Alph2.10.1}%
+\contentsline {subsection}{\numberline {ب.10.2}ماده ۳۲: کمیسیون حقیقت و آشتی قومی}{290}{subsection.Alph2.10.2}%
+\contentsline {subsection}{\numberline {ب.10.3}ماده ۳۳: اقدامات جبرانی جمعی}{291}{subsection.Alph2.10.3}%
+\contentsline {subsection}{\numberline {ب.10.4}ماده ۳۴: بازگرداندن نام‌های تاریخی}{291}{subsection.Alph2.10.4}%
+\contentsline {section}{\numberline {ب.11}فصل دهم: تبعیض مثبت و برابری واقعی}{292}{section.Alph2.11}%
+\contentsline {subsection}{\numberline {ب.11.1}ماده ۳۵: اصل تبعیض مثبت}{292}{subsection.Alph2.11.1}%
+\contentsline {subsection}{\numberline {ب.11.2}ماده ۳۶: حوزه‌های تبعیض مثبت}{292}{subsection.Alph2.11.2}%
+\contentsline {subsection}{\numberline {ب.11.3}ماده ۳۷: نظارت بر برابری}{292}{subsection.Alph2.11.3}%
+\contentsline {section}{\numberline {ب.12}فصل یازدهم: آموزش و آگاهی}{293}{section.Alph2.12}%
+\contentsline {subsection}{\numberline {ب.12.1}ماده ۳۸: آموزش چندفرهنگی}{293}{subsection.Alph2.12.1}%
+\contentsline {subsection}{\numberline {ب.12.2}ماده ۳۹: آگاهی‌رسانی عمومی}{293}{subsection.Alph2.12.2}%
+\contentsline {section}{\numberline {ب.13}فصل دوازدهم: مقررات نهایی}{293}{section.Alph2.13}%
+\contentsline {subsection}{\numberline {ب.13.1}ماده ۴۰: جایگاه حقوقی منشور}{293}{subsection.Alph2.13.1}%
+\contentsline {subsection}{\numberline {ب.13.2}ماده ۴۱: بازنگری در منشور}{293}{subsection.Alph2.13.2}%
+\contentsline {subsection}{\numberline {ب.13.3}ماده ۴۲: لازم‌الاجرا شدن}{293}{subsection.Alph2.13.3}%
+\contentsline {section}{\numberline {ب.14}پیوست‌های منشور}{294}{section.Alph2.14}%
+\contentsline {subsection}{\numberline {ب.14.1}پیوست الف: نقشه مناطق خودمختار}{294}{subsection.Alph2.14.1}%
+\contentsline {subsection}{\numberline {ب.14.2}پیوست ب: جدول زبان‌های ملی}{294}{subsection.Alph2.14.2}%
+\contentsline {subsection}{\numberline {ب.14.3}پیوست ج: تقویم اجرایی منشور}{295}{subsection.Alph2.14.3}%
+\contentsline {section}{\numberline {ب.15}خلاصه و جمع‌بندی منشور}{295}{section.Alph2.15}%
+\contentsline {chapter}{\numberline {پ}اسناد پشتیبان}{297}{appendix.Alph3}%
+\contentsline {section}{\numberline {پ.1}بخش اول: پیش‌نویس قوانین کلیدی}{297}{section.Alph3.1}%
+\contentsline {subsection}{\numberline {پ.1.1}سند ۱: قانون شورای انتقالی}{297}{subsection.Alph3.1.1}%
+\contentsline {subsection}{\numberline {پ.1.2}سند ۲: قانون دولت موقت}{298}{subsection.Alph3.1.2}%
+\contentsline {subsection}{\numberline {پ.1.3}سند ۳: قانون انتخابات دوره گذار}{299}{subsection.Alph3.1.3}%
+\contentsline {subsection}{\numberline {پ.1.4}سند ۴: قانون عدالت انتقالی}{300}{subsection.Alph3.1.4}%
+\contentsline {section}{\numberline {پ.2}بخش دوم: پروتکل‌های عملیاتی}{302}{section.Alph3.2}%
+\contentsline {subsection}{\numberline {پ.2.1}سند ۵: پروتکل مدیریت لحظه صفر}{302}{subsection.Alph3.2.1}%
+\contentsline {subsubsection}{چک‌لیست لحظه صفر}{302}{table.ج.5}%
+\contentsline {subsection}{\numberline {پ.2.2}سند ۶: پروتکل امنیت دوره گذار}{303}{subsection.Alph3.2.2}%
+\contentsline {subsection}{\numberline {پ.2.3}سند ۷: پروتکل ارتباطات بحران}{304}{subsection.Alph3.2.3}%
+\contentsline {section}{\numberline {پ.3}بخش سوم: الگوهای توافقنامه}{304}{section.Alph3.3}%
+\contentsline {subsection}{\numberline {پ.3.1}سند ۸: میثاق ملی گذار دموکراتیک}{304}{subsection.Alph3.3.1}%
+\contentsline {subsection}{\numberline {پ.3.2}سند ۹: توافقنامه همکاری بین‌قومی}{305}{subsection.Alph3.3.2}%
+\contentsline {subsection}{\numberline {پ.3.3}سند ۱۰: تفاهم‌نامه نیروهای مسلح}{306}{subsection.Alph3.3.3}%
+\contentsline {section}{\numberline {پ.4}بخش چهارم: فرم‌ها و الگوهای اداری}{306}{section.Alph3.4}%
+\contentsline {subsection}{\numberline {پ.4.1}سند ۱۱: فرم اعلام دارایی مقامات}{306}{subsection.Alph3.4.1}%
+\contentsline {subsection}{\numberline {پ.4.2}سند ۱۲: فرم گزارش فساد (سوت‌زنی)}{307}{subsection.Alph3.4.2}%
+\contentsline {subsection}{\numberline {پ.4.3}سند ۱۳: الگوی تعهدنامه کارکنان دولت}{308}{subsection.Alph3.4.3}%
+\contentsline {section}{\numberline {پ.5}بخش پنجم: چک‌لیست‌های اجرایی}{309}{section.Alph3.5}%
+\contentsline {subsection}{\numberline {پ.5.1}سند ۱۴: چک‌لیست ۱۰۰ روز اول}{309}{subsection.Alph3.5.1}%
+\contentsline {subsection}{\numberline {پ.5.2}سند ۱۵: چک‌لیست برگزاری انتخابات}{310}{subsection.Alph3.5.2}%
+\contentsline {subsection}{\numberline {پ.5.3}سند ۱۶: چک‌لیست استقرار فدرالیسم}{311}{subsection.Alph3.5.3}%
+\contentsline {section}{\numberline {پ.6}بخش ششم: اعلامیه‌ها و بیانیه‌های نمونه}{312}{section.Alph3.6}%
+\contentsline {subsection}{\numberline {پ.6.1}سند ۱۷: اعلامیه روز صفر}{312}{subsection.Alph3.6.1}%
+\contentsline {subsection}{\numberline {پ.6.2}سند ۱۸: پیام به جامعه جهانی}{313}{subsection.Alph3.6.2}%
+\contentsline {subsection}{\numberline {پ.6.3}سند ۱۹: بیانیه آشتی ملی}{314}{subsection.Alph3.6.3}%
+\contentsline {section}{\numberline {پ.7}بخش هفتم: نمونه قراردادها و تفاهم‌نامه‌های بین‌المللی}{315}{section.Alph3.7}%
+\contentsline {subsection}{\numberline {پ.7.1}سند ۲۰: چارچوب مذاکرات رفع تحریم}{315}{subsection.Alph3.7.1}%
+\contentsline {subsection}{\numberline {پ.7.2}سند ۲۱: الگوی توافقنامه همکاری منطقه‌ای}{316}{subsection.Alph3.7.2}%
+\contentsline {section}{\numberline {پ.8}بخش هشتم: راهنماهای آموزشی}{317}{section.Alph3.8}%
+\contentsline {subsection}{\numberline {پ.8.1}سند ۲۲: راهنمای ناظران انتخاباتی}{317}{subsection.Alph3.8.1}%
+\contentsline {subsection}{\numberline {پ.8.2}سند ۲۳: راهنمای شهروندی دوره گذار}{317}{subsection.Alph3.8.2}%
+\contentsline {section}{\numberline {پ.9}خلاصه و فهرست اسناد}{318}{section.Alph3.9}%
+\contentsline {chapter}{\numberline {ت}داده‌ها و جداول آماری}{321}{appendix.Alph4}%
+\contentsline {section}{\numberline {ت.1}بخش اول: داده‌های جمعیتی و قومی}{321}{section.Alph4.1}%
+\contentsline {subsection}{\numberline {ت.1.1}جدول ۱: توزیع جمعیت بر اساس قومیت}{321}{subsection.Alph4.1.1}%
+\contentsline {subsection}{\numberline {ت.1.2}جدول ۲: توزیع جمعیت بر اساس استان}{322}{subsection.Alph4.1.2}%
+\contentsline {subsection}{\numberline {ت.1.3}جدول ۳: شاخص‌های توسعه انسانی به تفکیک منطقه}{323}{subsection.Alph4.1.3}%
+\contentsline {section}{\numberline {ت.2}بخش دوم: داده‌های اقتصادی}{323}{section.Alph4.2}%
+\contentsline {subsection}{\numberline {ت.2.1}جدول ۴: شاخص‌های کلان اقتصادی ایران}{323}{subsection.Alph4.2.1}%
+\contentsline {subsection}{\numberline {ت.2.2}جدول ۵: ترکیب اقتصاد ایران}{324}{subsection.Alph4.2.2}%
+\contentsline {subsection}{\numberline {ت.2.3}جدول ۶: تحریم‌های بین‌المللی علیه ایران}{324}{subsection.Alph4.2.3}%
+\contentsline {subsection}{\numberline {ت.2.4}جدول ۷: سناریوهای اقتصادی پس از رفع تحریم}{325}{subsection.Alph4.2.4}%
+\contentsline {section}{\numberline {ت.3}بخش سوم: داده‌های بحران آب}{325}{section.Alph4.3}%
+\contentsline {subsection}{\numberline {ت.3.1}جدول ۸: بیلان آبی ایران}{325}{subsection.Alph4.3.1}%
+\contentsline {subsection}{\numberline {ت.3.2}جدول ۹: وضعیت حوضه‌های آبریز}{326}{subsection.Alph4.3.2}%
+\contentsline {subsection}{\numberline {ت.3.3}جدول ۱۰: برنامه شیرین‌سازی آب دریا}{326}{subsection.Alph4.3.3}%
+\contentsline {section}{\numberline {ت.4}بخش چهارم: شاخص‌های حکمرانی و دموکراسی}{326}{section.Alph4.4}%
+\contentsline {subsection}{\numberline {ت.4.1}جدول ۱۱: رتبه ایران در شاخص‌های بین‌المللی}{326}{subsection.Alph4.4.1}%
+\contentsline {subsection}{\numberline {ت.4.2}جدول ۱۲: مقایسه با کشورهای منطقه}{327}{subsection.Alph4.4.2}%
+\contentsline {subsection}{\numberline {ت.4.3}جدول ۱۳: اهداف KPI برای دوره گذار}{327}{subsection.Alph4.4.3}%
+\contentsline {section}{\numberline {ت.5}بخش پنجم: تجارب جهانی گذار دموکراتیک}{327}{section.Alph4.5}%
+\contentsline {subsection}{\numberline {ت.5.1}جدول ۱۴: مقایسه گذارهای موفق}{327}{subsection.Alph4.5.1}%
+\contentsline {subsection}{\numberline {ت.5.2}جدول ۱۵: مقایسه گذارهای ناموفق}{328}{subsection.Alph4.5.2}%
+\contentsline {subsection}{\numberline {ت.5.3}جدول ۱۶: درس‌های کلیدی از تجارب جهانی}{328}{subsection.Alph4.5.3}%
+\contentsline {section}{\numberline {ت.6}بخش ششم: جداول زمان‌بندی پروژه}{329}{section.Alph4.6}%
+\contentsline {subsection}{\numberline {ت.6.1}جدول ۱۷: تقویم کلان ۲۵ ساله}{329}{subsection.Alph4.6.1}%
+\contentsline {subsection}{\numberline {ت.6.2}جدول ۱۸: بودجه تخمینی طرح گذار}{329}{subsection.Alph4.6.2}%
+\contentsline {subsection}{\numberline {ت.6.3}جدول ۱۹: منابع تأمین مالی}{330}{subsection.Alph4.6.3}%
+\contentsline {section}{\numberline {ت.7}بخش هفتم: داده‌های مقایسه‌ای فدرالیسم}{330}{section.Alph4.7}%
+\contentsline {subsection}{\numberline {ت.7.1}جدول ۲۰: مقایسه سیستم‌های فدرال جهان}{330}{subsection.Alph4.7.1}%
+\contentsline {subsection}{\numberline {ت.7.2}جدول ۲۱: توزیع صلاحیت‌ها در نظام فدرال پیشنهادی}{331}{subsection.Alph4.7.2}%
+\contentsline {subsection}{\numberline {ت.7.3}جدول ۲۲: فرمول توزیع منابع صندوق توازن}{331}{subsection.Alph4.7.3}%
+\contentsline {subsubsection}{نمونه محاسبه برای مناطق خودمختار}{331}{table.د.18}%
+\contentsline {section}{\numberline {ت.8}بخش هشتم: شاخص‌های پایش و ارزیابی}{332}{section.Alph4.8}%
+\contentsline {subsection}{\numberline {ت.8.1}جدول ۲۳: داشبورد ملی پایش گذار}{332}{subsection.Alph4.8.1}%
+\contentsline {subsection}{\numberline {ت.8.2}جدول ۲۴: ماتریس شاخص‌های KPI}{332}{subsection.Alph4.8.2}%
+\contentsline {subsection}{\numberline {ت.8.3}جدول ۲۵: سیستم هشدار زودهنگام}{333}{subsection.Alph4.8.3}%
+\contentsline {section}{\numberline {ت.9}خلاصه و منابع داده‌ها}{334}{section.Alph4.9}%
+\contentsline {subsection}{\numberline {ت.9.1}منابع اصلی داده‌ها}{334}{subsection.Alph4.9.1}%
+\contentsline {chapter}{\numberline {ث}واژه‌نامه تخصصی}{337}{appendix.Alph5}%
+\contentsline {section}{\numberline {ث.1}بخش اول: مفاهیم سیاسی و حکمرانی}{337}{section.Alph5.1}%
+\contentsline {section}{\numberline {ث.2}بخش دوم: مفاهیم فدرالیسم و تنوع}{339}{section.Alph5.2}%
+\contentsline {section}{\numberline {ث.3}بخش سوم: مفاهیم عدالت انتقالی}{341}{section.Alph5.3}%
+\contentsline {section}{\numberline {ث.4}بخش چهارم: مفاهیم حقوقی و قضایی}{342}{section.Alph5.4}%
+\contentsline {section}{\numberline {ث.5}بخش پنجم: مفاهیم اقتصادی}{343}{section.Alph5.5}%
+\contentsline {section}{\numberline {ث.6}بخش ششم: مفاهیم محیط زیست و آب}{344}{section.Alph5.6}%
+\contentsline {section}{\numberline {ث.7}بخش هفتم: مفاهیم بین‌المللی}{345}{section.Alph5.7}%
+\contentsline {section}{\numberline {ث.8}بخش هشتم: اختصارات}{346}{section.Alph5.8}%
+\contentsline {section}{\numberline {ث.9}نمایه واژگان فارسی-انگلیسی}{347}{section.Alph5.9}%
+\contentsline {chapter}{\numberline {ج}کتاب‌شناسی}{351}{appendix.Alph6}%
+\contentsline {section}{\numberline {ج.1}بخش اول: گذار دموکراتیک و تثبیت}{351}{section.Alph6.1}%
+\contentsline {subsection}{\numberline {ج.1.1}کتاب‌های بنیادین}{351}{subsection.Alph6.1.1}%
+\contentsline {subsection}{\numberline {ج.1.2}مطالعات موردی گذار}{352}{subsection.Alph6.1.2}%
+\contentsline {section}{\numberline {ج.2}بخش دوم: فدرالیسم و مدیریت تنوع}{353}{section.Alph6.2}%
+\contentsline {section}{\numberline {ج.3}بخش سوم: عدالت انتقالی}{355}{section.Alph6.3}%
+\contentsline {section}{\numberline {ج.4}بخش چهارم: حقوق بشر و حقوق اقلیت‌ها}{356}{section.Alph6.4}%
+\contentsline {section}{\numberline {ج.5}بخش پنجم: اقتصاد سیاسی و توسعه}{356}{section.Alph6.5}%
+\contentsline {section}{\numberline {ج.6}بخش ششم: بحران آب و محیط زیست}{357}{section.Alph6.6}%
+\contentsline {section}{\numberline {ج.7}بخش هفتم: ایران‌شناسی و مطالعات منطقه‌ای}{358}{section.Alph6.7}%
+\contentsline {section}{\numberline {ج.8}بخش هشتم: قانون اساسی و نظام‌های حقوقی}{359}{section.Alph6.8}%
+\contentsline {section}{\numberline {ج.9}بخش نهم: منابع فارسی}{360}{section.Alph6.9}%
+\contentsline {section}{\numberline {ج.10}بخش دهم: اسناد و گزارش‌های بین‌المللی}{361}{section.Alph6.10}%
+\contentsline {subsection}{\numberline {ج.10.1}اسناد سازمان ملل}{361}{subsection.Alph6.10.1}%
+\contentsline {subsection}{\numberline {ج.10.2}گزارش‌های شاخص}{361}{subsection.Alph6.10.2}%
+\contentsline {section}{\numberline {ج.11}بخش یازدهم: منابع آنلاین و پایگاه‌های داده}{362}{section.Alph6.11}%
+\contentsline {section}{\numberline {ج.12}راهنمای مطالعه بیشتر}{363}{section.Alph6.12}%
+\contentsline {section}{\numberline {ج.13}درباره استناددهی}{363}{section.Alph6.13}%
+\contentsline {chapter}{\numberline {چ}بررسی تطبیقی قوانین اساسی و مدل‌های گذار}{367}{appendix.Alph7}%
+\contentsline {section}{\numberline {چ.1}ماتریس تطبیقی ابعاد حکمرانی دموکراتیک}{367}{section.Alph7.1}%
+\contentsline {section}{\numberline {چ.2}تحلیل درس‌آموخته‌ها برای گذار ایران}{371}{section.Alph7.2}%
+\contentsline {chapter}{درباره نویسنده}{375}{appendix*.351}%

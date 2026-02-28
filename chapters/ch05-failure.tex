@@ -4,6 +4,7 @@
 %══════════════════════════════════════════════════════════════════════════════
 
 \chapter{درس‌های گذارهای ناموفق}
+\chapterheader{۵}{تجارب ناموفق جهانی}{عبرت از اشتباهات دیگران}{AccentRed}
 \label{ch:failure}
 
 %──────────────────────────────────────────────────────────────────────────────
@@ -68,9 +69,9 @@
     errorbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3.2cm,
+        minimum width=3.2cm, text width=3.2cm,
         minimum height=1.3cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=rougerevolution,
         fill=rougelight,
@@ -79,9 +80,9 @@
     resultbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3.2cm,
+        minimum width=3.2cm, text width=3.2cm,
         minimum height=1.3cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=gris,
         fill=grislight,
@@ -101,7 +102,7 @@
 \node[resultbox] (r3) at (9,0) {\rl{نهادینه شدن شکاف}};
 
 % نتیجه نهایی
-\node[errorbox, draw=rougerevolution, fill=rougerevolution, text=white, minimum width=10cm, minimum height=1.5cm] (final) at (4.5,-2.5) {\textbf{\rl{بحران امنیتی + فروپاشی اجتماعی + دولت شکننده}}};
+\node[errorbox, draw=rougerevolution, fill=rougerevolution, text=white, minimum width=10cm, text width=10cm, minimum height=1.5cm] (final) at (4.5,-2.5) {\textbf{\rl{بحران امنیتی + فروپاشی اجتماعی + دولت شکننده}}};
 
 % فلش‌ها
 \draw[arrow] (e1) -- (r1); \draw[arrow] (e2) -- (r2); \draw[arrow] (e3) -- (r3);
@@ -181,16 +182,16 @@
     fragbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3.2cm,
+        minimum width=3.2cm, text width=3.2cm,
         minimum height=1.2cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         line width=1pt
     }
 ]
 
 % قبل
-\node[fragbox, draw=gris, fill=grislight] (before) at (0,0) {\rl{لیبی واحد}\\{\tiny (دوره قذافی)}};
+\node[fragbox, draw=gris, fill=grislight] (before) at (0,0) {\rl{لیبی واحد}\\ \tiny \rl{(دوره قذافی)}};
 
 % بعد - تکه‌ها
 \node[fragbox, draw=rougerevolution, fill=rougelight] (f1) at (6,2) {\rl{دولت طرابلس}};
@@ -243,9 +244,9 @@
     eventbox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=2.4cm,
+        minimum width=2.4cm, text width=2.4cm,
         minimum height=1.2cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         line width=1pt
     }
@@ -256,7 +257,7 @@
 
 % رویدادها
 \node[eventbox, draw=bleurepublique, fill=bleulight, above] at (0,0.5) {\rl{ژانویه ۲۰۱۱}\\\rl{انقلاب}};
-\node[eventbox, draw=bleurepublique, fill=bleulique, above] at (3.5,0.5) {\rl{فوریه ۲۰۱۱}\\\rl{سقوط مبارک}};
+\node[eventbox, draw=bleurepublique, fill=bleulight, above] at (3.5,0.5) {\rl{فوریه ۲۰۱۱}\\\rl{سقوط مبارک}};
 \node[eventbox, draw=goldphoenix, fill=goldlight, above] at (7,0.5) {\rl{ژوئن ۲۰۱۲}\\\rl{ریاست مرسی}};
 \node[eventbox, draw=rougerevolution, fill=rougelight, above] at (10.5,0.5) {\rl{ژوئیه ۲۰۱۳}\\\rl{کودتای سیسی}};
 \node[eventbox, draw=rougerevolution, fill=rougerevolution, text=white, above] at (14,0.5) {\rl{۲۰۱۴-امروز}\\\rl{اقتدارگرایی}};
@@ -358,9 +359,9 @@
     stagebox/.style={
         rectangle,
         rounded corners=3pt,
-        minimum width=3.5cm,
+        minimum width=3.5cm, text width=3.5cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         line width=1pt
     },
@@ -368,9 +369,9 @@
 ]
 
 % مراحل
-\node[stagebox, draw=bleurepublique, fill=bleulight] (s1) at (0,0) {\rl{۱۹۵۸-۱۹۹۸}\\{\tiny دموکراسی نفتی}};
-\node[stagebox, draw=goldphoenix, fill=goldlight] (s2) at (5,0) {\rl{۱۹۹۹-۲۰۱۳}\\{\tiny از چاوز تا پوپولیسم}};
-\node[stagebox, draw=rougerevolution, fill=rougelight] (s3) at (10,0) {\rl{۲۰۱۳-امروز}\\{\tiny فروپاشی مادورو}};
+\node[stagebox, draw=bleurepublique, fill=bleulight] (s1) at (0,0) {\rl{۱۹۵۸-۱۹۹۸}\\ \tiny \rl{دموکراسی نفتی}};
+\node[stagebox, draw=goldphoenix, fill=goldlight] (s2) at (5,0) {\rl{۱۹۹۹-۲۰۱۳}\\ \tiny \rl{از چاوز تا پوپولیسم}};
+\node[stagebox, draw=rougerevolution, fill=rougelight] (s3) at (10,0) {\rl{۲۰۱۳-امروز}\\ \tiny \rl{فروپاشی مادورو}};
 
 % فلش‌ها
 \draw[arrow, color=goldphoenix] (s1) -- node[above, font=\tiny\bfseries] {\rl{فساد}} (s2);
@@ -404,9 +405,9 @@
     factor/.style={
         rectangle,
         rounded corners=5pt,
-        minimum width=3.5cm,
+        minimum width=3.5cm, text width=3.5cm,
         minimum height=1.5cm,
-        text centered,
+        align=center,
         font=\tiny\bfseries,
         draw=rougerevolution,
         fill=rougelight,
@@ -414,8 +415,8 @@
     },
     center/.style={
         circle,
-        minimum size=2.8cm,
-        text centered,
+        minimum size=2.8cm, text width=2.8cm,
+        align=center,
         font=\small\bfseries,
         draw=gris,
         fill=gris,
